@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+177,100,0,Start(),"Hi, can you show me how to play Quarto?",Start,"Sure, let's get it started!",Ruijie,5,5,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+177,100,1,RequestNewWinCondition(),Can you show me what a win condition looks like?,Inform(),Assume you demonstrate this win condition,Ruijie,5,4,Daniel,,0-0-0-9-0-0-0-16-0-0-0-13-0-0-0-15
+177,100,2,"Same, Request(User_ID=1, Rotate)",Can I rotate the pieces by a certain degree and maintain the win?,"Inform([135, 180])","Sure, just rotate them by 135 or 180 degrees.",Ruijie,5,3,Daniel,,0-0-0-9-0-0-0-16-0-0-0-13-0-0-0-15
+177,100,3,RequestNewWinCondition(),Can you show me a new win condition?,Inform(),Assume you demonstrate this win condition,Ruijie,5,4,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-12-2-14-6
+177,100,4,"Context Switch, Confirm(User_ID=1, Shape)","Back to the previous condition you showed me, is it a win because of the shapes of pieces?",Negate(),"No, it's not because of that.",Ruijie,5,5,Daniel,,0-0-0-9-0-0-0-16-0-0-0-13-0-0-0-15
+177,100,5,"Win Same {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}",Is it a win because there are two pieces that aren't hollow?,Negate(),"No, it's not because of that.",Ruijie,3,5,Daniel,,0-0-0-9-0-0-0-16-0-0-0-13-0-0-0-15
+177,100,6,"Context Switch, Confirm(User_ID=1, Color)","Back to the previous win you showed me, is it a win because of the color of pieces?",Affirm(),"Yes, you're right about that?",Ruijie,5,5,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-12-2-14-6
+177,100,7,"Same, Confirm(User_ID=1, Height)",Is it a win because of the height of the pieces?,Negate(),"No, it's unrelated.",Ruijie,5,5,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-12-2-14-6
+177,100,8,"Context Switch, Confirm(User_ID=1, RemovePiece(0,3))","Back to the previous win you showed me, can I maintain the win if I remove the third piece?",Negate(),"No, that won't be a win.",Ruijie,4,5,Daniel,"""Third piece"" is ambiguous without additional context",0-0-0-9-0-0-0-16-0-0-0-13-0-0-0-15
+177,100,9,"Context Switch, Confirm(User_ID=1, Shape)","Back to the previous win you showed me, is it a win because of the shapes of pieces?",Negate(),"No, it's not because of that.",Ruijie,5,5,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-12-2-14-6
+177,100,10,"Context Switch, Confirm(User_ID=1, Rotate(180))","Back to the other win, is it still a win if I rotate the pieces by 180 degrees?",Affirm(),"Sure, you can do that.",Ruijie,5,4,Daniel,,0-0-0-9-0-0-0-16-0-0-0-13-0-0-0-15
+177,100,11,Finish(),"Thanks, I think I've learned enough.",Finish,You're welcome.,Ruijie,5,5,Daniel,,0-0-0-9-0-0-0-16-0-0-0-13-0-0-0-15

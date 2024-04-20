@@ -1,0 +1,15 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+903,60,0,Start(),"Hi, would you please show me how to play Quarto?",Start,Yea sure. ,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+903,60,1,RequestNewWinCondition(),Please let me see a win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-2-0-0-6-0-0-4-0-0-10-0-0-0
+903,60,2,RequestNewWinCondition(),Can I see one more?,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,13-0-0-0-2-0-0-0-1-0-0-0-5-0-0-0
+903,60,3,"Context Switch, Request(User_ID=1, Rotate)","Let's go back to this board, how can I rotate the pieces to maintain the win?",Inform([90]),You could align them verticallly if you want. ,Anthony,4,5,Yiyen,,0-0-0-2-0-0-6-0-0-4-0-0-10-0-0-0
+903,60,4,"Same, Confirm(User_ID=1, Rotate(90))",Could I align these pieces vertically?,Affirm(),"Yeah, totally. ",Anthony,4,4,Yiyen,,0-0-0-2-0-0-6-0-0-4-0-0-10-0-0-0
+903,60,5,"Context Switch, Confirm(User_ID=1, Shape)","Looking back at this board, is it the shape of the pieces that make this a win?",NotSure(),I'm not sure. ,Anthony,5,5,Yiyen,,13-0-0-0-2-0-0-0-1-0-0-0-5-0-0-0
+903,60,6,RequestNewWinCondition(),Please show me another win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,8-0-0-0-5-0-0-0-6-0-0-0-14-0-0-0
+903,60,7,"Context Switch, Confirm(User_ID=1, Shape)","Looking back at this board, is this a win because of the shape of the pieces?",NotSure(),I don't know. ,Anthony,5,5,Yiyen,,13-0-0-0-2-0-0-0-1-0-0-0-5-0-0-0
+903,60,8,"Context Switch, Confirm(User_ID=1, Hollowness)","Looking at this board, is the hollowness of the pieces what makes this a win?",Negate(),"No, that is not relevant in this case. ",Anthony,5,5,Yiyen,,0-0-0-2-0-0-6-0-0-4-0-0-10-0-0-0
+903,60,9,"Same, Confirm(User_ID=1, Rotate(90))",Could I rotate these pieces to be vertical?,NotSure(),"I'm not sure, sorry about that. ",Anthony,5,5,Yiyen,,0-0-0-2-0-0-6-0-0-4-0-0-10-0-0-0
+903,60,10,"Context Switch, Confirm(User_ID=1, Hollowness)","Let's look at this board now, is the hollowness of the pieces what makes this a win?",Negate(),"No, they're not all the same. ",Anthony,5,5,Yiyen,,8-0-0-0-5-0-0-0-6-0-0-0-14-0-0-0
+903,60,11,"Context Switch, Confirm(User_ID=1, Rotate(90))",How about on this board? Could I rotate the pieces like this?,Affirm(),"Yes, that's still a win condition. ",Anthony,5,5,Yiyen,,0-0-0-2-0-0-6-0-0-4-0-0-10-0-0-0
+903,60,12,"Same, Confirm(User_ID=1, Rotate(90))",Could I rotate these pieces like this?,NotSure(),I'm not sure anymore.,Anthony,3,5,Yiyen,,0-0-0-2-0-0-6-0-0-4-0-0-10-0-0-0
+903,60,13,Finish(),"Okay, thanks. Bye!",Finish,See ya!,Anthony,5,5,Yiyen,,0-0-0-2-0-0-6-0-0-4-0-0-10-0-0-0

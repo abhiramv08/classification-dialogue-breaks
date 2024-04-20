@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+613,60,0,Start(),"Hello, can you teach me how to play Quarto?",Start,"Sure, let's begin!",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+613,60,1,RequestNewWinCondition(),Could you first show me one way to win the game?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,8-0-0-0-0-3-0-0-0-0-5-0-0-0-0-7
+613,60,2,RequestNewWinCondition(),Could you please show me one more win case?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-4-0-0-7-0-0-12-0-0-3-0-0-0
+613,60,3,"Same, Confirm(User_ID=1, RemovePiece(2,2))","For the second case you showed, will it be another win if I remove the piece on the third row?",Negate(),"No, you must have all of the four pieces in order to win.",Yiyan,5,4,Tianyi,,0-0-0-4-0-0-7-0-0-12-0-0-3-0-0-0
+613,60,4,"Context Switch, Confirm(User_ID=1, AddPiece(0,2))","Going back to the first board, will it be a win if I add a piece on the third position of the first row?",Affirm(),"Yes, it will be a new win case.",Yiyan,5,5,Tianyi,,8-0-0-0-0-3-0-0-0-0-5-0-0-0-0-7
+613,60,5,"Same, Confirm(User_ID=1, Color)","For the same condition, does the color affect the win?",Negate(),No. the only thing that affects the win here is the heights of the pieces.,Yiyan,5,5,Tianyi,,8-0-0-0-0-3-0-0-0-0-5-0-0-0-0-7
+613,60,6,RequestNewWinCondition(),Is there any other way to win the game?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,15-0-0-0-0-1-0-0-0-0-11-0-0-0-0-3
+613,60,7,"Same, Confirm(User_ID=1, RemovePiece(3,0))","For the board youjust showed, will it become another win if I remove the piece on the top left corner?",NotSure(),"Well, then you will only have three pieces, so it will not be a win.",Yiyan,5,5,Tianyi,,15-0-0-0-0-1-0-0-0-0-11-0-0-0-0-3
+613,60,8,"Context Switch, Confirm(User_ID=1, Shape)","Let's turn to this condition, is this win related to the shapes of the pieces?",Negate(),"No, it is a win because all the pieces are equally high.",Yiyan,5,5,Tianyi,,8-0-0-0-0-3-0-0-0-0-5-0-0-0-0-7
+613,60,9,"Same, Confirm(User_ID=1, Shape)","For the same board, do the shapes of the pieces matter?",Negate(),"No, as I told you, the shapes do not matter here.",Yiyan,5,5,Tianyi,,8-0-0-0-0-3-0-0-0-0-5-0-0-0-0-7
+613,60,10,Finish(),"Well, thank you a lot for helpign me.",Finish,You are welcome.,Yiyan,4,5,Tianyi,,8-0-0-0-0-3-0-0-0-0-5-0-0-0-0-7

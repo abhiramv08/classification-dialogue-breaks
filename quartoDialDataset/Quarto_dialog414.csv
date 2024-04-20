@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+414,50,0,Start(),"Hi, could you teach me Quarto ?",Start,Sure,Dmytro,,,,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+414,50,1,RequestNewWinCondition(),Could you show me a board configuration that makes me win ?,Inform,Assume you demonstrate this win condition,Dmytro,,,,,16-0-0-0-0-2-0-0-0-0-14-0-0-0-0-6
+414,50,2,RequestNewWinCondition(),"Once again, I would like for you to show me a board that grants me a win
+",Inform,Assume you demonstrate this win condition,Dmytro,,,,,3-0-0-0-0-4-0-0-0-0-11-0-0-0-0-2
+414,50,3,"Same, Confirm(User_ID=1, Hollowness)",Is it a win here because of the hollowness of the figures ?,Negate(),"No, that's not the reason.",Dmytro,,,,,3-0-0-0-0-4-0-0-0-0-11-0-0-0-0-2
+414,50,4,"Same, Confirm(User_ID=1, Shape)",How about that all of the figures are triangles ?,Affirm(),"Yup, that's it.",Dmytro,,,,,3-0-0-0-0-4-0-0-0-0-11-0-0-0-0-2
+414,50,5,RequestNewWinCondition(),I need another example of a desirable board configuration.,Inform,Assume you demonstrate this win condition,Dmytro,,,,,7-0-0-0-0-3-0-0-0-0-12-0-0-0-0-11
+414,50,6,"Same, Confirm(User_ID=1, AddPiece(2,0))",Would I still win here if I add a figure at this place (robot highlights the location) ?,Affirm(),"Sure, that won't change your winning situation.",Dmytro,,,,,7-0-0-0-0-3-0-0-0-0-12-0-0-0-0-11
+414,50,7,"Context Switch, Confirm(User_ID=1, Rotate(90))","Going back to the first board you showed, can I place figures in a first column ?",NotSure(),"Hmm, I am not sure about that.",Dmytro,,,,,16-0-0-0-0-2-0-0-0-0-14-0-0-0-0-6
+414,50,8,"Context Switch, Request(User_ID=1, Rotate)","Back to another board, how can I rotate pieces, and still be winning ?",Inform([90]),You could put them in a first column.,Dmytro,,,,,3-0-0-0-0-4-0-0-0-0-11-0-0-0-0-2
+414,50,9,"Context Switch, Confirm(User_ID=1, RemovePiece(3,0))","Switching to this board; Can I win after removing this piece (robot highlights [3, 0] on a board) ?",NotSure(),"Probably not, but I'd have to double - check.",Dmytro,,,,,7-0-0-0-0-3-0-0-0-0-12-0-0-0-0-11
+414,50,10,RequestNewWinCondition(),Could you show me another winning board ?,Inform,Assume you demonstrate this win condition,Dmytro,,,,,0-0-0-0-0-0-0-0-0-0-0-0-2-3-9-10
+414,50,11,Finish(),"Alright, I am ready; thanks",Finish,No problems !,Dmytro,,,,,0-0-0-0-0-0-0-0-0-0-0-0-2-3-9-10

@@ -1,0 +1,16 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+455,50,0,Start(),"Hello, can you show me how to play the Quarto?",Start,"Sure, let's get started.",Yiyan,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+455,50,1,RequestNewWinCondition(),Can you first show me a win condition?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Shaobo,,0-0-0-11-0-0-13-0-0-7-0-0-5-0-0-0
+455,50,2,RequestNewWinCondition(),Thank you. Can you show me another one?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Shaobo,,0-0-0-13-0-0-14-0-0-6-0-0-7-0-0-0
+455,50,3,RequestNewWinCondition(),Is there any other way to win?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Shaobo,,10-0-0-0-0-11-0-0-0-0-13-0-0-0-0-9
+455,50,4,RequestNewWinCondition(),Could you show me another win condition?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Shaobo,,9-0-0-0-1-0-0-0-14-0-0-0-10-0-0-0
+455,50,5,RequestNewWinCondition(),Can you show me another way to win?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Shaobo,,0-0-0-13-0-0-9-0-0-12-0-0-10-0-0-0
+455,50,6,"Context Switch, Confirm(User_ID=1, Quantity)","For this win condition, is this a win because I have four pieces on the board?",Affirm(),"Yes, although it is not the only reason.",Yiyan,5,5,Shaobo,,0-0-0-11-0-0-13-0-0-7-0-0-5-0-0-0
+455,50,7,"Context Switch, Confirm(User_ID=1, Shape)",Thanks. Let's change to this new board. Is this a win because of the shapes of the pieces?,NotSure(),"Sorry, I am not sure about it. I will check that later.",Yiyan,5,5,Shaobo,,10-0-0-0-0-11-0-0-0-0-13-0-0-0-0-9
+455,50,8,"Context Switch, Confirm(User_ID=1, Hollowness)","For this win condition, is this a win because the blue piece has a hollow?",Negate(),"No, that is not the reason for this board.",Yiyan,3,5,Shaobo,,0-0-0-13-0-0-9-0-0-12-0-0-10-0-0-0
+455,50,9,"Context Switch, Confirm(User_ID=1, RemovePiece(1,0))","For this new win condition, would it still be a win if I remove the piece on the second row?",NotSure(),"I don't know, sorry.",Yiyan,5,5,Shaobo,,9-0-0-0-1-0-0-0-14-0-0-0-10-0-0-0
+455,50,10,"Context Switch, Confirm(User_ID=1, Shape)","For this winning board, is this a win because of the shapes of the pieces?",NotSure(),I am not quite sure.,Yiyan,5,5,Shaobo,,10-0-0-0-0-11-0-0-0-0-13-0-0-0-0-9
+455,50,11,"Context Switch, Confirm(User_ID=1, Height)","Ok, let's take a look at this new board, is this a win condition because of the heights of the pieces?",Negate(),"No, as you can see, there are two different shapes.",Yiyan,5,4,Shaobo,,0-0-0-11-0-0-13-0-0-7-0-0-5-0-0-0
+455,50,12,"Context Switch, Confirm(User_ID=1, Hollowness)","For this board, is it a win because one of the piece has a hole?",Negate(),"No, the hollowness does not relate to the winning at all.",Yiyan,4,5,Shaobo,,0-0-0-13-0-0-14-0-0-6-0-0-7-0-0-0
+455,50,13,"Context Switch, RequestOtherPlayers()","For this winning baord, how can the other player do to stop this win?",Inform([]),There is nothing he or she can do to stop this.,Yiyan,5,5,Shaobo,,0-0-0-11-0-0-13-0-0-7-0-0-5-0-0-0
+455,50,14,Finish(),Thank you. I learnt a lot today.,Finish,You are welcome.,Yiyan,5,5,Shaobo,,0-0-0-11-0-0-13-0-0-7-0-0-5-0-0-0

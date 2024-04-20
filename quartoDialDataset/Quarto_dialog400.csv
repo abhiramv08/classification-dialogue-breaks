@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+400,50,0,Start(),Can you teach me to play Quarto please?,Start,Sure,Daniel,,,,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+400,50,1,RequestNewWinCondition(),Can you show me a board where someone wins please?,Inform,Assume you demonstrate this win condition,Daniel,,,,,0-0-0-5-0-0-9-0-0-3-0-0-13-0-0-0
+400,50,2,RequestNewWinCondition(),Can you show me a different way to win?,Inform,Assume you demonstrate this win condition,Daniel,,,,,0-0-0-10-0-0-13-0-0-14-0-0-16-0-0-0
+400,50,3,"Context Switch, Confirm(User_ID=1, RemovePiece(1,1))","For the first board, if I remove the hollow triangle is it still a win?",Negate(),No,Daniel,,,,,0-0-0-5-0-0-9-0-0-3-0-0-13-0-0-0
+400,50,4,"Context Switch, RequestOtherPlayers()","For this other board, can the other player prevent the win?",Inform([]),No,Daniel,,,,,0-0-0-10-0-0-13-0-0-14-0-0-16-0-0-0
+400,50,5,RequestNewWinCondition(),Can you show me a different winning board please?,Inform,Assume you demonstrate this win condition,Daniel,,,,,9-0-0-0-0-2-0-0-0-0-11-0-0-0-0-4
+400,50,6,"Context Switch, Confirm(User_ID=1, Shape)","For this board, is it a win because of the shape of the pieces?",Negate(),No,Daniel,,,,,0-0-0-5-0-0-9-0-0-3-0-0-13-0-0-0
+400,50,7,"Context Switch, Request(User_ID=1, Rotate)","For this other board, can I rotate these pieces and still win?",Inform([90]),"Yes, you can rotate them to the other diagonal",Daniel,,,,,0-0-0-10-0-0-13-0-0-14-0-0-16-0-0-0
+400,50,8,"Context Switch, Confirm(User_ID=1, Height)","For this other board, is it a win because of the height of the pieces?",NotSure(),I don't know,Daniel,,,,,9-0-0-0-0-2-0-0-0-0-11-0-0-0-0-4
+400,50,9,"Context Switch, Confirm(User_ID=1, Hollowness)","For this other board, is it a win because of the hollowness of the pieces?",NotSure(),I don't know,Daniel,,,,,0-0-0-10-0-0-13-0-0-14-0-0-16-0-0-0
+400,50,10,Finish(),Thank you!,Finish,No problem,Daniel,,,,,0-0-0-10-0-0-13-0-0-14-0-0-16-0-0-0

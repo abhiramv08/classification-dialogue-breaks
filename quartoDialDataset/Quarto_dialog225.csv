@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+225,100,0,Start(),Hi. Can you teach me how to play Quarto?,Start,Sure. Let's begin.,Jacob,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+225,100,1,RequestNewWinCondition(),Could you show me a win condition?,Inform(),Assume you demonstrate this win condition,Jacob,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-7-15-4-16
+225,100,2,"Same , Confirm(User_ID=1, Shape)",Do the shapes of these pieces contribute to this board's win condition?,Negate(),"No, the shapes do not matter.",Jacob,5,4,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-7-15-4-16
+225,100,3,RequestNewWinCondition(),Please show me another win condition.,Inform(),Assume you demonstrate this win condition,Jacob,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-5-2-1-8
+225,100,4,"Context Switch, RequestOtherPlayers()","Regarding this board, could another player take an action to block this win condition?",Inform([]),"No, they cannot.",Jacob,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-7-15-4-16
+225,100,5,RequestNewWinCondition(),Can you please show me another win condition?,Inform(),Assume you demonstrate this win condition,Jacob,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-13-8-16-5
+225,100,6,"Context Switch, Confirm(User_ID=1, RemovePiece(0,2))","Alright. Going back to this board, could I still win without the piece in the third column?",Negate(),"No, you need that piece to win.",Jacob,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-5-2-1-8
+225,100,7,"Context Switch, Confirm(User_ID=1, RemovePiece(0,3))",How about on this board? Could I win without the bottom right piece?,Negate(),"No, that piece is important, too.",Jacob,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-7-15-4-16
+225,100,8,"Context Switch, Confirm(User_ID=1, Rotate(45))","If the pieces on this board were aligned on the diagonal, would this board still be a win?",Affirm(),Yes.,Jacob,4,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-13-8-16-5
+225,100,9,"Same, Request(User_ID=1, Translate)",In which other rows could these pieces be placed for a win?,"Inform(['row1', 'row2', 'row3'])",These pieces could lie in any row.,Jacob,5,3,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-13-8-16-5
+225,100,10,"Context Switch, Confirm(User_ID=1, Translate('row1'))","On this board, could the pieces be moved to the second row to form a new win condition?",Affirm,"Yes, that would still work.",Jacob,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-5-2-1-8
+225,100,11,"Context Switch, Confirm(User_ID=1, RemovePiece(0,3))","If the bottom right piece of this board were removed, would it still be a win?",Negate(),"No, you need that piece to win.",Jacob,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-7-15-4-16
+225,100,12,RequestNewWinCondition(),Can you show me another win condition?,Inform(),Assume you demonstrate this win condition,Jacob,5,5,Yiyen,,10-0-0-0-0-4-0-0-0-0-14-0-0-0-0-6
+225,100,13,"Context Switch, Confirm(User_ID=1, Height)","On this previous board, are the heights of the pieces important to the win condition?",Affirm(),Yes.,Jacob,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-5-2-1-8
+225,100,14,RequestNewWinCondition(),Could you show me another way to win?,Inform(),Assume you demonstrate this win condition,Jacob,5,5,Yiyen,,0-0-0-2-0-0-5-0-0-8-0-0-3-0-0-0
+225,100,15,Finish(),Thank you. I think I know enough to play now.,Finish,No problem. Bye.,Jacob,5,5,Yiyen,,0-0-0-2-0-0-5-0-0-8-0-0-3-0-0-0

@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+626,60,0,Start(),Excuse me. Do you know how to play Quarto?,Start,"Yes, and I can show you how.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+626,60,1,RequestNewWinCondition(),"Thank you. Firstly, could you demostrate a win condition?",Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-14-0-0-0-13-0-0-0-12-0-0-0-16
+626,60,2,"Same, Confirm(User_ID=1, RemovePiece(2,3))","For this win condition, will it still be a win if I remove the green piece?",Negate(),"No, all the pieces are necessary for the win.",Yiyan,5,5,Tianyi,,0-0-0-14-0-0-0-13-0-0-0-12-0-0-0-16
+626,60,3,RequestNewWinCondition(),Can you show me another way to win the game?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-6-4-1-3
+626,60,4,"Same, Confirm(User_ID=1, Hollowness)","For this win condition you showed, is it a win because of the hollows?",Negate(),"No, it is a win because all the pieces have the same height.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-6-4-1-3
+626,60,5,"Context Switch, Confirm(User_ID=1, Hollowness)","Let turn to this board, does the hollowness of the pieces relate to the win?",Negate(),"No, in this case the hollowness does not matter.",Yiyan,5,5,Tianyi,,0-0-0-14-0-0-0-13-0-0-0-12-0-0-0-16
+626,60,6,"Context Switch, Confirm(User_ID=1, Quantity)","Considering this board, is it a win because we have four pieces?",Affirm(),"Yes, you must have at least four pieces to win.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-6-4-1-3
+626,60,7,RequestNewWinCondition(),Can you show me another way to win the game?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,9-0-0-0-13-0-0-0-15-0-0-0-3-0-0-0
+626,60,8,"Same, Confirm(User_ID=1, Rotate(45))","For the win condition you just showed, will it still be a win if I rotate the pieces to the diagonal?",Affirm(),"Yes, it will still be a win.",Yiyan,5,5,Tianyi,,9-0-0-0-13-0-0-0-15-0-0-0-3-0-0-0
+626,60,9,"Context Switch, Confirm(User_ID=1, Quantity)","Let turn to this board, is it a win because of the number of the pieces?",NotSure(),I am not quite sure.,Yiyan,5,5,Tianyi,,0-0-0-14-0-0-0-13-0-0-0-12-0-0-0-16
+626,60,10,Finish(),"That's all the information I want to know, thank you.",Finish,You are welcome!,Yiyan,5,5,Tianyi,,0-0-0-14-0-0-0-13-0-0-0-12-0-0-0-16

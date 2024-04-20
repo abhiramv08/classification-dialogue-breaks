@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+948,60,0,Start(),"Hi, would you mind teaching how to play?",Start,"I would not, let's begin. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+948,60,1,RequestNewWinCondition(),Please show me my first win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-4-2-11-12
+948,60,2,"Same, Confirm(User_ID=1, Hollowness)",Is this a win because some pieces are hollow?,Negate(),"No, they all have to be hollow.",Anthony,5,4,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-4-2-11-12
+948,60,3,"Same, Confirm(User_ID=1, Shape)",Is this a win due to the shape of the pieces?,Affirm(),"Yes, they are all triangles.",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-4-2-11-12
+948,60,4,"Same, Confirm(User_ID=1, Translate([1, 0]))",Could I shift the pieces over here?,NotSure(),I'm not sure enough to give you an answer. ,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-4-2-11-12
+948,60,5,RequestNewWinCondition(),Please show me another win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,12-0-0-0-0-4-0-0-0-0-2-0-0-0-0-6
+948,60,6,"Context Switch, Confirm(User_ID=1, Translate([3, 0]))","Looking back to this baord, could I move the pieces here?",Affirm(),"Yes, that's totally fine. ",Anthony,3,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-4-2-11-12
+948,60,7,"Context Switch, Confirm(User_ID=1, RemovePiece(0,3))","Looking at this board now, could I remove this piece?",Negate(),"No, you can not. ",Anthony,2,4,Yiyen,,12-0-0-0-0-4-0-0-0-0-2-0-0-0-0-6
+948,60,8,"Same, RequestOtherPlayers()",How can another player affect this win. ,Inform([]),There is nothing another player could do.,Anthony,5,4,Yiyen,another -> the other,12-0-0-0-0-4-0-0-0-0-2-0-0-0-0-6
+948,60,9,"Context Switch, Request(User_ID=1, Translate)",How can I shift these pieces?,"Inform(['row1', 'row2', 'row3'])",You could move them to any other row. ,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-4-2-11-12
+948,60,10,"Context Switch, Confirm(User_ID=1, RemovePiece(1,2))",Could I remove the piece here?,Negate(),"No, they need to stay for this to be a win. ",Anthony,2,5,Yiyen,,12-0-0-0-0-4-0-0-0-0-2-0-0-0-0-6
+948,60,11,"Context Switch, Request(User_ID=1, Rotate)",How could I rotate the pieces of this other board?,"Inform([45, 90])",You could move them to the diagonal or to be vertical.,Anthony,3,5,Yiyen,this other?,0-0-0-0-0-0-0-0-0-0-0-0-4-2-11-12
+948,60,12,Finish(),Thanks!,Finish,Bye!,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-4-2-11-12

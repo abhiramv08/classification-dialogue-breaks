@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+747,60,0,Start(),Hey! Can you teach me how to play Quarto?,Start,Sure! Let's do it!,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+747,60,1,RequestNewWinCondition(),Can you show me what a win condition looks like?,Inform,Assume you demonstrate this win condition,Ruijie,5,4,Luke,,0-0-0-3-0-0-7-0-0-1-0-0-4-0-0-0
+747,60,2,"Same, Confirm(User_ID=1, Quantity)",Does the number of pieces make it a win?,Affirm(),"Yes, that's correct!",Ruijie,5,4,Luke,,0-0-0-3-0-0-7-0-0-1-0-0-4-0-0-0
+747,60,3,"Same, Confirm(User_ID=1, Quantity)",Does the number of pieces make it a win?,Affirm(),Yup.,Ruijie,5,4,Luke,,0-0-0-3-0-0-7-0-0-1-0-0-4-0-0-0
+747,60,4,"Same, Confirm(User_ID=1, Color)",Is it a win because the pieces are in the same color?,NotSure(),I'm actually not sure.,Ruijie,5,5,Luke,,0-0-0-3-0-0-7-0-0-1-0-0-4-0-0-0
+747,60,5,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-1-0-0-11-0-0-13-0-0-3-0-0-0
+747,60,6,"Context Switch, Confirm(User_ID=1, RemovePiece(0,0))",Can I remove the piece at the left corner?,NotSure(),I'm actually not quite sure.,Ruijie,3,3,Luke,,0-0-0-3-0-0-7-0-0-1-0-0-4-0-0-0
+747,60,7,"Same, Confirm(User_ID=1, Shape)","Is it a win because the pieces are of the same shape?
+",Negate(),"No, that’s not the reason.",Ruijie,5,5,Luke,,0-0-0-3-0-0-7-0-0-1-0-0-4-0-0-0
+747,60,8,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-16-11-8-4
+747,60,9,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,14-0-0-0-13-0-0-0-11-0-0-0-10-0-0-0
+747,60,10,Finish(),Thanks! I got it!,Finish,You are welcome!,Ruijie,5,5,Luke,,14-0-0-0-13-0-0-0-11-0-0-0-10-0-0-0

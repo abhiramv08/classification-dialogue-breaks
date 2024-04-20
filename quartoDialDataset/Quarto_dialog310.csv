@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+310,50,0,Start(),"What's up, can you show me how to play Quarto?",Start,"Sure, let's get started.",Ruijie,5,5,Jacob,,0-0-0-0-0-0-0-0-0-0-0-0-14-8-16-15
+310,50,1,RequestNewWinCondition(),Can you show me what a win condition looks like?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Jacob,,7-0-0-0-8-0-0-0-2-0-0-0-1-0-0-0
+310,50,2,"Same, Confirm(User_ID=1, Shape)","For the win you showed me, is it a win because the pieces are in the same shape?",NotSure(),"You know what, I'm not sure.",Ruijie,5,5,Jacob,,7-0-0-0-8-0-0-0-2-0-0-0-1-0-0-0
+310,50,3,"Same, RequestOtherPlayers()",Can the other player prevent this win?,Inform([]),"No, this win is absolute.",Ruijie,5,5,Jacob,,7-0-0-0-8-0-0-0-2-0-0-0-1-0-0-0
+310,50,4,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Jacob,,10-0-0-0-0-14-0-0-0-0-5-0-0-0-0-13
+310,50,5,"Context Switch, Request(User_ID=1, Translate)","Back to the previous win you showed me, can I put the pieces elsewhere and maintain","Inform(['col1', 'col2'])",You can put the pieces on the first or the second column.,Ruijie,5,3,Jacob,The system query sentence seems unfinished.,7-0-0-0-8-0-0-0-2-0-0-0-1-0-0-0
+310,50,6,"Context Switch, Confirm(User_ID=1, Height)","Switch to the new win you showed me, is it a win because the pieces are of the same height?",Negate(),"No, it's unrelated.",Ruijie,5,4,Jacob,"""Switch to the new win"" seems a little stilted.",10-0-0-0-0-14-0-0-0-0-5-0-0-0-0-13
+310,50,7,"Context Switch, Confirm(User_ID=1, Translate([0, 1]))","Back to the first win you showed me, can I put the pieces on the second column and maintain a win?",NotSure(),"Actually, I'm not sure.",Ruijie,5,5,Jacob,,7-0-0-0-8-0-0-0-2-0-0-0-1-0-0-0
+310,50,8,"Context Switch, Confirm(User_ID=1, Color)","Switch to the third win you showed me, is it a win because of the colors?",Negate(),"No, it's unrelated.",Ruijie,5,5,Jacob,,10-0-0-0-0-14-0-0-0-0-5-0-0-0-0-13
+310,50,9,RequestNewWinCondition(),Can you show me a new win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Jacob,,0-0-0-0-0-0-0-0-0-0-0-0-2-3-5-8
+310,50,10,Finish(),Thank you so much ! I think I've learned enough!,Finish,You're welcome!,Ruijie,5,4,Jacob,There should be no space before the exclamation mark.,0-0-0-0-0-0-0-0-0-0-0-0-2-3-5-8

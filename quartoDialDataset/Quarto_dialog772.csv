@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+772,60,0,Start(),Can you teach me how to play Quarto?,Start,"Sure, let's start.",Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+772,60,1,RequestNewWinCondition(),Can you give me a win condition to start?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-13-0-0-16-0-0-8-0-0-15-0-0-0
+772,60,2,RequestNewWinCondition(),Please show me on more win condition.,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-9-4-2-10
+772,60,3,"Same, Confirm(User_ID=1, Color)",Is that a win because the color pattern of all pieces?,Negate(),"No, the color does not make it a win.",Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-9-4-2-10
+772,60,4,"Same, Confirm(User_ID=1, Translate([3, 0]))",Can I shift all pieces to the top row and keep winning?,Affirm(),Yes. You can safely do that and keep winning.,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-9-4-2-10
+772,60,5,"Same, Confirm(User_ID=1, Color)",Does the color pattern of all pieces make this board a win?,Negate(),"I think I already told you, it is not the reason why this board wins.",Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-9-4-2-10
+772,60,6,"Same, Request(User_ID=1, Rotate)","Okey, do you know how I can rotate this board and keep winning?","Inform([45, 90])",You can place them diagonally or vertically. ,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-9-4-2-10
+772,60,7,RequestNewWinCondition(),"Thanks for your response, can you show me another win condition?",Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-12-0-0-0-11-0-0-0-4-0-0-0-10-0-0
+772,60,8,"Context Switch, Request(User_ID=1, Rotate)","Switching to this board, how can I rotate the board and keep winning?",Inform([90]),"You can rotate the board to 90 degree. Which means, you can place them vertically.",Derek,4,5,Shaobo,,0-0-0-13-0-0-16-0-0-8-0-0-15-0-0-0
+772,60,9,"Context Switch, Confirm(User_ID=1, Quantity)","Moving to this board, is that a win because the quantity of pieces?",Affirm(),Yes you have to have at least four pieces to win. ,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-9-4-2-10
+772,60,10,Finish(),Thanks for teaching! I learned a lot today.,Finish,No problem!,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-9-4-2-10

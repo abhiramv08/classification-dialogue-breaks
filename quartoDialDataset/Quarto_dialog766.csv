@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+766,60,0,Start(),Can you teach me how to play Quarto?,Start,Sure!,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+766,60,1,RequestNewWinCondition(),Please give me a win condition to start.,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-1-14-2-5
+766,60,2,"Same, Confirm(User_ID=1, Quantity)",Is that a win because there are four pieces in the board?,NotSure(),"There are no right answer for this question, it really depends on how you place these four pieces. ",Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-1-14-2-5
+766,60,3,"Same, Request(User_ID=1, Rotate)",How can I line all pieces in differnet angle and keep winning?,"Inform([45, 90])",You can place them vertically or diagonally.,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-1-14-2-5
+766,60,4,RequestNewWinCondition(),Can you show me another win condition?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-1-0-0-7-0-0-5-0-0-11-0-0-0
+766,60,5,"Context Switch, Confirm(User_ID=1, Rotate(45))","Go back to this win condition, can I aline all pieces diagonally and keep winning?",Affirm(),"Sure, you are do that.",Derek,4,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-1-14-2-5
+766,60,6,RequestNewWinCondition(),Can you show me another win condition?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-9-14-12-13
+766,60,7,"Same, RequestOtherPlayers()",How could another player prevent this win?,Inform([]),I believe another palyer can not do anything to undo this win.,Derek,4,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-9-14-12-13
+766,60,8,"Context Switch, RequestOtherPlayers()","Switching to this win condition, how could another player prevent this win?",Inform([]),Nothing. This win is absolute.,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-1-14-2-5
+766,60,9,RequestNewWinCondition(),Please show me another winning board.,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-12-0-0-10-0-0-1-0-0-2-0-0-0
+766,60,10,"Context Switch, Request(User_ID=1, Rotate)","Go back to this win condition, how can I rotate the board and keep winning?",Inform([90]),You can put all pieces vertically.,Derek,5,5,Shaobo,,0-0-0-1-0-0-7-0-0-5-0-0-11-0-0-0
+766,60,11,Finish(),Thanks! You taught me a lot today.,Finish,No peoblem!,Derek,4,5,Shaobo,,0-0-0-1-0-0-7-0-0-5-0-0-11-0-0-0

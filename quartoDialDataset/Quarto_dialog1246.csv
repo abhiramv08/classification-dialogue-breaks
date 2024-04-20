@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+1246,60,0,Start(),"Hi, do you have time to teach me how to play Quarto?",Start,"Sure, let's get started!",Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+1246,60,1,RequestNewWinCondition(),Could you show me a win first?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,5-0-0-0-0-3-0-0-0-0-7-0-0-0-0-11
+1246,60,2,RequestNewWinCondition(),Is there any other way to win?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,14-0-0-0-0-8-0-0-0-0-13-0-0-0-0-15
+1246,60,3,RequestNewWinCondition(),Could you show me another winning board?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-0-9-0-0-0-10-0-0-0-14-0-0-0-2-0
+1246,60,4,"Context Switch, Confirm(User_ID=1, Rotate(90))","Switching to this board, is it still a win if I rotate the pieces to the first column?",Affirm(),"Yes, it is still a win.",Shaobo,5,5,John,,5-0-0-0-0-3-0-0-0-0-7-0-0-0-0-11
+1246,60,5,"Same, Confirm(User_ID=1, Hollowness)","And is it a win because of the hollowness of the pieces?
+",Negate(),"No, it is a win because all pieces have the same color.",Shaobo,5,5,John,,5-0-0-0-0-3-0-0-0-0-7-0-0-0-0-11
+1246,60,6,"Context Switch, Confirm(User_ID=1, Shape)","Switching to this board, is it a win because of the shape of the pieces?",NotSure(),I don't think so but I am not sure.,Shaobo,4,4,John,,14-0-0-0-0-8-0-0-0-0-13-0-0-0-0-15
+1246,60,7,"Context Switch, Confirm(User_ID=1, Quantity)","Switching to this board, does the number of pieces matter?",NotSure(),"Sorry, I am not sure about it.",Shaobo,4,4,John,,5-0-0-0-0-3-0-0-0-0-7-0-0-0-0-11
+1246,60,8,"Context Switch, Request(User_ID=1, Translate)","Switching to this board, how could I shift the pieces and still keep the win?",Inform(['col1']),You could shift them to the second left column.,Shaobo,5,5,John,,0-0-9-0-0-0-10-0-0-0-14-0-0-0-2-0
+1246,60,9,Finish(),Thanks for the help! I have learned a lot!,Finish,You are welcome!,Shaobo,5,5,John,,0-0-9-0-0-0-10-0-0-0-14-0-0-0-2-0

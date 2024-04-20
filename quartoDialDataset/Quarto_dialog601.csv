@@ -1,0 +1,15 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+601,60,0,Start(),"Hi, can you help me learn Quarto?",Start,I'd love to.,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+601,60,1,RequestNewWinCondition(),"Thank you. Firstly, could you demostrate a win condition?",Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-6-0-0-8-0-0-16-0-0-13-0-0-0
+601,60,2,RequestNewWinCondition(),Is there any other way to win the game?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-9-0-0-15-0-0-11-0-0-12-0-0-0
+601,60,3,"Same, Confirm(User_ID=1, RemovePiece(2,2))","For the win you just showed, will it still be a win if I remove the piece on the third column?",NotSure(),"I guess not, but I am not sure.",Yiyan,5,5,Tianyi,,0-0-0-9-0-0-15-0-0-11-0-0-12-0-0-0
+601,60,4,RequestNewWinCondition(),Can you show me another way to win the game?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-13-0-0-8-0-0-14-0-0-6-0-0-0
+601,60,5,"Same, Confirm(User_ID=1, Quantity)","For this win you just showed, does the number of the pieces relate to the win condition?",Affirm(),"Yes, you must have at least four pieces in order to win.",Yiyan,5,5,Tianyi,,0-0-0-13-0-0-8-0-0-14-0-0-6-0-0-0
+601,60,6,"Context Switch, RequestOtherPlayers()","Let's switch to this board, how can the other player do to prevent the win?",Inform([]),There is nothing he or she can do.,Yiyan,5,5,Tianyi,,0-0-0-9-0-0-15-0-0-11-0-0-12-0-0-0
+601,60,7,"Context Switch, Confirm(User_ID=1, Quantity)","Let turn to this board, does the number of the pieces relate to the win?",NotSure(),I am not quite sure.,Yiyan,5,5,Tianyi,,0-0-0-6-0-0-8-0-0-16-0-0-13-0-0-0
+601,60,8,"Context Switch, Confirm(User_ID=1, AddPiece(3,1))","Let's switch to this board, would it be another win if I add a pieces on the second position of the last row?",Affirm(),"Yes, it would be another win.",Yiyan,5,5,Tianyi,,0-0-0-13-0-0-8-0-0-14-0-0-6-0-0-0
+601,60,9,RequestNewWinCondition(),Can you show me another way to win the game?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-8-10-6-14
+601,60,10,"Same, Confirm(User_ID=1, Color)","For the win you just showed
+, is it a win because all the pieces are blue?",Affirm(),You are correct.,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-8-10-6-14
+601,60,11,"Same, Confirm(User_ID=1, Height)","Still for this board, is it a win because of the heights of the pieces?",Negate(),"No, in this win case the heights of the pieces do not matter.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-8-10-6-14
+601,60,12,Finish(),"I think I know enough about Quarto, thank you very much.",Finish,You are welcome.,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-8-10-6-14

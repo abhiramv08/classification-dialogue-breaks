@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Board
+353,50,0,Start(),Hello. Can you teach me how to play Quarto?,Start,"Sure, let's start.",Jacob,0-0-0-0-0-0-0-0-0-0-0-0-7-15-5-8
+353,50,1,RequestNewWinCondition(),Can you show me a way to win this game?,Inform,Assume you demonstrate this win condition,Jacob,7-0-0-0-0-11-0-0-0-0-8-0-0-0-0-12
+353,50,2,RequestNewWinCondition(),Can you show me another win condition?,Inform,Assume you demonstrate this win condition,Jacob,0-0-0-13-0-0-0-15-0-0-0-8-0-0-0-5
+353,50,3,"Context Switch, Request(User_ID=1, Rotate)",In what ways could this board state be rotated to produce a new winning board?,Inform([90]),"If these pieces were aligned vertically, this would also be a win.",Jacob,7-0-0-0-0-11-0-0-0-0-8-0-0-0-0-12
+353,50,4,"Same, Request(User_ID=1, Rotate)","Sorry, I didn't catch that. Could you answer that again?",Inform([90]),"Once again, these pieces could lie vertically.",Jacob,7-0-0-0-0-11-0-0-0-0-8-0-0-0-0-12
+353,50,5,"Context Switch, Confirm(User_ID=1, Height)","On this board, do the heights of the pieces contribute to the win condition?",NotSure(),I'm not really sure if the height matters here.,Jacob,0-0-0-13-0-0-0-15-0-0-0-8-0-0-0-5
+353,50,6,RequestNewWinCondition(),Can you show me another winning board?,Inform,Assume you demonstrate this win condition,Jacob,0-0-3-0-0-0-15-0-0-0-8-0-0-0-7-0
+353,50,7,"Context Switch, Confirm(User_ID=1, Color)","On this board, do the colors of the pieces matter?",Negate(),"No, these pieces could be any color.",Jacob,0-0-0-13-0-0-0-15-0-0-0-8-0-0-0-5
+353,50,8,"Same, Confirm(User_ID=1, Shape)",What about the pieces' shapes? Do they contribute to the win?,Affirm(),"Yes, this is a win because all the pieces have the same shape.",Jacob,0-0-0-13-0-0-0-15-0-0-0-8-0-0-0-5
+353,50,9,"Same, RequestOtherPlayers()",Are there any actions another player could take to make this board no longer a win condition?,Inform([]),No player could take such an action on this board.,Jacob,0-0-0-13-0-0-0-15-0-0-0-8-0-0-0-5
+353,50,10,RequestNewWinCondition(),Can you show me another winning board?,Inform,Assume you demonstrate this win condition,Jacob,9-0-0-0-0-7-0-0-0-0-1-0-0-0-0-15
+353,50,11,"Context Switch, Request(User_ID=1, Translate)",In which other columns could the pieces on this board lie and remain a win condition?,Inform(['col1']),These pieces could be in the second column from the left.,Jacob,0-0-0-13-0-0-0-15-0-0-0-8-0-0-0-5
+353,50,12,Finish(),Thank you for teaching me how to play Quarto.,Finish,Any time. Bye.,Jacob,0-0-0-13-0-0-0-15-0-0-0-8-0-0-0-5

@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+279,50,0,Start(),Can you teach me how to play Quarto?,Start,Sure!,Derek,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-4-5-7-2
+279,50,1,RequestNewWinCondition(),Can you show me a win condition to start?,Inform,Assume you demonstrate this win condition,Derek,5,5,Tianyi,,5-0-0-0-0-14-0-0-0-0-1-0-0-0-0-2
+279,50,2,"Same, Confirm(User_ID=1, Hollowness)",Is it a win becase all four pieces are not hollow?,Affirm(),Yes that's the reason for this board to win,Derek,5,4,Tianyi,Solid is more natural.,5-0-0-0-0-14-0-0-0-0-1-0-0-0-0-2
+279,50,3,"Same, Confirm(User_ID=1, Hollowness)",Does the propertie that all four pieces are not hollow makes this board a win?,NotSure(),Are you asking the same problem? I am not sure what do you mean.,Derek,5,4,Tianyi,,5-0-0-0-0-14-0-0-0-0-1-0-0-0-0-2
+279,50,4,RequestNewWinCondition(),Can you give me another win condition?,Inform,Assume you demonstrate this win condition,Derek,5,5,Tianyi,,10-0-0-0-11-0-0-0-3-0-0-0-4-0-0-0
+279,50,5,RequestNewWinCondition(),One more please.,Inform,Assume you demonstrate this win condition,Derek,5,4,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-4-3-8-15
+279,50,6,"Context Switch, Confirm(User_ID=1, Rotate(45))","For this winning board, can I place all pieces on diagonal? ",NotSure(),Sorry I am no sure about that. ,Derek,3,5,Tianyi,"Not accurate, need to demostrate how pieces are allocated in diagonal.",10-0-0-0-11-0-0-0-3-0-0-0-4-0-0-0
+279,50,7,"Same, Confirm(User_ID=1, Color)",Is that a win becase of the color pattern of all pieces?,Negate(),"No, it is not the reason this board is winning.",Derek,5,5,Tianyi,,10-0-0-0-11-0-0-0-3-0-0-0-4-0-0-0
+279,50,8,RequestNewWinCondition(),Can you give me another win condition?,Inform,Assume you demonstrate this win condition,Derek,5,5,Tianyi,,4-0-0-0-0-6-0-0-0-0-12-0-0-0-0-16
+279,50,9,"Context Switch, Confirm(User_ID=1, Rotate(90))",Switching to this win condition. Can I I rotate the pieces to be at a 90 degree angle?,NotSure(),I am not sure how do you define the angel.,Derek,3,5,Tianyi,,5-0-0-0-0-14-0-0-0-0-1-0-0-0-0-2
+279,50,10,Finish(),Thanks for teaching me today! Bye!,Finish,Bye!,Derek,5,5,Tianyi,,5-0-0-0-0-14-0-0-0-0-1-0-0-0-0-2

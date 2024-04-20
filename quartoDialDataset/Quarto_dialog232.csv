@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+232,100,0,Start(),Can you teach me how to play Quarto?,Start,Of course! Let's start,John,5,5,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+232,100,1,RequestNewWinCondition(),Can I see an example of a win?,Inform(),Assume you demonstrate this win condition,John,5,5,Daniel,,0-0-0-8-0-0-2-0-0-5-0-0-1-0-0-0
+232,100,2,RequestNewWinCondition(),May I see another example of a win condition?,Inform(),Assume you demonstrate this win condition,John,5,5,Daniel,,0-0-0-8-0-0-4-0-0-6-0-0-14-0-0-0
+232,100,3,"Same , Confirm(User_ID=1, AddPiece(1,2))","Is this still a win if I add a piece in the second row from the bottom, and third column?",Affirm(),"Yes, that piece would have no effect on this win",John,5,4,Daniel,"""Add a piece above the short solid circle""",0-0-0-8-0-0-4-0-0-6-0-0-14-0-0-0
+232,100,4,"Same , Confirm(User_ID=1, AddPiece(2,0))",Is this still a win if I add a piece in the second row from the top and leftmost column?,Affirm(),"Yes, that piece would have no effect on this win.",John,5,4,Daniel,,0-0-0-8-0-0-4-0-0-6-0-0-14-0-0-0
+232,100,5,"Same , Confirm(User_ID=1, Color)","In this win, is the color of the pieces the reason for the win?",Affirm(),"Yes, all the pieces are blue, making this a win.",John,5,5,Daniel,,0-0-0-8-0-0-4-0-0-6-0-0-14-0-0-0
+232,100,6,"Same, Confirm(User_ID=1, Quantity)",Is the number of pieces important to this win?,Affirm(),"Yes, all four pieces are needed for this win.",John,5,5,Daniel,,0-0-0-8-0-0-4-0-0-6-0-0-14-0-0-0
+232,100,7,"Same , Confirm(User_ID=1, RemovePiece(0,0))",Is this still a win if I remove the piece in the bottom left corner?,Negate(),"No, that piece is vital to this win",John,5,5,Daniel,,0-0-0-8-0-0-4-0-0-6-0-0-14-0-0-0
+232,100,8,"Context Switch, Confirm(User_ID=1, Quantity)","Now, for this board here, is the number of pieces important for the win condition?",Affirm(),"Yes, all four pieces are needed for the win.",John,5,5,Daniel,,0-0-0-8-0-0-2-0-0-5-0-0-1-0-0-0
+232,100,9,"Same , Confirm(User_ID=1, Color)",Is the color of pieces important for this winning condition?,Negate(),"No, the pieces are not all the same color",John,5,5,Daniel,,0-0-0-8-0-0-2-0-0-5-0-0-1-0-0-0
+232,100,10,"Win Same {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}",Is the hollowness of the pieces the reason this is a win?,Negate(),"No, the hollowness was not a reason this is a win",John,5,5,Daniel,,0-0-0-8-0-0-2-0-0-5-0-0-1-0-0-0
+232,100,11,Finish(),"Thanks for playing with me, bye!",Finish,Goodbye!,John,5,5,Daniel,,0-0-0-8-0-0-2-0-0-5-0-0-1-0-0-0

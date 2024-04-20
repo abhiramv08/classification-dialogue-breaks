@@ -1,0 +1,11 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+11,100,0,Start(),"Hey, can you teach me how to play Quarto?",Start,"Sure thing, let's get started.",Dave,5,5,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+11,100,1,RequestNewWinCondition(),Can you show me one way I might win the game?,Inform(),Assume you demonstrate this win condition,Dave,5,5,Daniel,,4-0-0-0-0-5-0-0-0-0-3-0-0-0-0-8
+11,100,2,"Same, RequestOtherPlayers()",Is there anything you can do to reverse this win?,Inform([]),"No, nothing at all.",Dave,5,5,Daniel,,4-0-0-0-0-5-0-0-0-0-3-0-0-0-0-8
+11,100,3,RequestNewWinCondition(),Can you show me a second way I might win?,Inform(),Assume you demonstrate this win condition,Dave,5,5,Daniel,,2-0-0-0-0-10-0-0-0-0-12-0-0-0-0-3
+11,100,4,"Same , Confirm(User_ID=1, Shape)",Does this count as a win because all four pieces are triangles?,Affirm(),"Yeah, that's right.",Dave,5,5,Daniel,,2-0-0-0-0-10-0-0-0-0-12-0-0-0-0-3
+11,100,5,"Same, RequestOtherPlayers()",Can you change the shape of the pieces in order to stop me from winning?,Inform([]),"No, I can't do that unfortunately.",Dave,5,5,Daniel,,2-0-0-0-0-10-0-0-0-0-12-0-0-0-0-3
+11,100,6,"Context Switch, Confirm(User_ID=1, Shape)",Does the previous win you showed me count because of the shapes of the pieces?,Negate(),"Not in that case, no.",Dave,5,5,Daniel,,4-0-0-0-0-5-0-0-0-0-3-0-0-0-0-8
+11,100,7,RequestNewWinCondition(),Can you show me another win?,Inform(),Assume you demonstrate this win condition,Dave,5,5,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-7-5-13-14
+11,100,8,"Same , Confirm(User_ID=1, Shape)","Now, does this count because of the shape of the pieces?",Affirm(),That's right!,Dave,5,5,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-7-5-13-14
+11,100,9,Finish(),I think that's enough for now. Thank you for showing me how to play!,Finish,No problem. See ya!,Dave,5,5,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-7-5-13-14

@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+678,60,0,Start(),Hey! Can you teach me how to play Quarto?,Start,Let's get started!,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+678,60,1,RequestNewWinCondition(),Can you show me a win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,7-0-0-0-1-0-0-0-15-0-0-0-13-0-0-0
+678,60,2,"Same, Confirm(User_ID=1, Color)",Is it a win because the pieces are in the same color?,Affirm(),"Yes, that's correct!",Ruijie,5,5,Luke,,7-0-0-0-1-0-0-0-15-0-0-0-13-0-0-0
+678,60,3,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-9-0-0-11-0-0-16-0-0-15-0-0-0
+678,60,4,"Context Switch, Confirm(User_ID=1, Rotate(0))","Switch to this board, can I rotate the pieces by zero degrees?",NotSure(),I'm actually not quite sure.,Ruijie,3,5,Luke,,7-0-0-0-1-0-0-0-15-0-0-0-13-0-0-0
+678,60,5,"Same, Confirm(User_ID=1, Height)",Is it a win because the pieces are of the same height?,Negate(),"No, it’s irrelevant.",Ruijie,5,5,Luke,,7-0-0-0-1-0-0-0-15-0-0-0-13-0-0-0
+678,60,6,"Same, Confirm(User_ID=1, Rotate(0))",Can I rotate the pieces by zero degree?,Affirm(),"Sure, you can do that.",Ruijie,3,5,Luke,,7-0-0-0-1-0-0-0-15-0-0-0-13-0-0-0
+678,60,7,"Same, Confirm(User_ID=1, RemovePiece(0,0))",Can I remove the piece at the bottom?,Negate(),"No, you can’t do that.",Ruijie,5,5,Luke,,7-0-0-0-1-0-0-0-15-0-0-0-13-0-0-0
+678,60,8,"Same, Confirm(User_ID=1, Translate([0, 3]))",Can I put the pieces on the four column?,NotSure(),"You know what, I’m not quite sure.",Ruijie,5,5,Luke,,7-0-0-0-1-0-0-0-15-0-0-0-13-0-0-0
+678,60,9,RequestNewWinCondition(),"Can you show me a new win?
+",Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,9-0-0-0-0-6-0-0-0-0-13-0-0-0-0-10
+678,60,10,Finish(),Thanks! I think I got it!,Finish,You're welcome.,Ruijie,5,5,Luke,,9-0-0-0-0-6-0-0-0-0-13-0-0-0-0-10

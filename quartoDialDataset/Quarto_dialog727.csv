@@ -1,0 +1,16 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+727,60,0,Start(),Hello! Can you show me how to play Quarto?,Start,"Sure, let's get started!",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+727,60,1,RequestNewWinCondition(),Can you show me a win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-1-0-0-0-3-0-0-0-13-0-0-0-11-0-0
+727,60,2,"Same, Confirm(User_ID=1, Shape)","Is it a win because the pieces are of the same shape?
+",Negate(),"No, that's not the reason.",Ruijie,5,5,Luke,,0-1-0-0-0-3-0-0-0-13-0-0-0-11-0-0
+727,60,3,"Same, Confirm(User_ID=1, Color)",Is it a win because the pieces are in the same color?,Affirm(),"Yes, that's the point.",Ruijie,5,5,Luke,,0-1-0-0-0-3-0-0-0-13-0-0-0-11-0-0
+727,60,4,RequestNewWinCondition(),Can you show me a win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-2-14-10-13
+727,60,5,RequestNewWinCondition(),Can you show me a win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,4,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-4-8-5-7
+727,60,6,"Same, Confirm(User_ID=1, Shape)","Is it a win because the pieces are of the same shape?
+",NotSure(),"No, I don't think so.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-4-8-5-7
+727,60,7,"Same, Confirm(User_ID=1, Hollowness)","Does the hollowness of the pieces make it a win?
+",Negate(),"No, I don't think that's the reason.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-4-8-5-7
+727,60,8,"Same, Request(User_ID=1, Rotate)",Can I rotate the pieces by some degrees and maintain the win?,"Inform([45, 90])","Sure, you can rotate them by forty five degrees or ninety degrees.",Ruijie,3,3,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-4-8-5-7
+727,60,9,"Context Switch, Confirm(User_ID=1, RemovePiece(3,1))","Switch to this board, can I remove the piece on the fourth row, the second column?",Negate(),"No, that will break the win.",Ruijie,4,4,Luke,,0-1-0-0-0-3-0-0-0-13-0-0-0-11-0-0
+727,60,10,"Same, Confirm(User_ID=1, Quantity)",Is it a win because of the number of pieces?,Affirm(),"Yes, that's right!",Ruijie,5,5,Luke,,0-1-0-0-0-3-0-0-0-13-0-0-0-11-0-0
+727,60,11,Finish(),Thank you for teaching me!,Finish,You're very welcome!,Ruijie,5,5,Luke,,0-1-0-0-0-3-0-0-0-13-0-0-0-11-0-0

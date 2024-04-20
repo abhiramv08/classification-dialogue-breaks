@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+299,50,0,Start(),"Hi, can you teach me how to play Quarto?",Start,"Sure, let's play",John,,,,,0-0-0-0-0-0-0-0-0-0-0-0-10-9-14-15
+299,50,1,RequestNewWinCondition(),Can I see an example of a winning board?,Inform,Assume you demonstrate this win condition,John,,,,,0-0-0-0-0-0-0-0-0-0-0-0-12-11-8-4
+299,50,2,RequestNewWinCondition(),Can I see another win condition?,Inform,Assume you demonstrate this win condition,John,,,,,0-0-10-0-0-0-14-0-0-0-8-0-0-0-4-0
+299,50,3,RequestNewWinCondition(),Could you show me another example of a win?,Inform,Assume you demonstrate this win condition,John,,,,,0-0-0-0-0-0-0-0-0-0-0-0-13-14-10-11
+299,50,4,RequestNewWinCondition(),Can I see another example of a win condition?,Inform,Assume you demonstrate this win condition,John,,,,,4-0-0-0-0-6-0-0-0-0-8-0-0-0-0-16
+299,50,5,"Context Switch, Confirm(User_ID=1, AddPiece(2,3))","Switching to this board, is it still a win if I add a piece in the second row from the bottom and right column?",NotSure(),I'm not sure if that would still be a win,John,,,,,0-0-0-0-0-0-0-0-0-0-0-0-13-14-10-11
+299,50,6,RequestNewWinCondition(),Can I see another example of a win?,Inform,Assume you demonstrate this win condition,John,,,,,5-0-0-0-0-4-0-0-0-0-2-0-0-0-0-8
+299,50,7,"Same, RequestOtherPlayers()","For this same board, what other moves could another player take to render this not a win?",Inform([]),There are no moves another play could take to undo this win.,John,,,,,5-0-0-0-0-4-0-0-0-0-2-0-0-0-0-8
+299,50,8,"Same, Confirm(User_ID=1, RemovePiece(1,2))",Is this still a win if I remove the piece from the second row from the bottom and third column from the left?,NotSure(),I'm not sure what the outcome of that move would be.,John,,,,,5-0-0-0-0-4-0-0-0-0-2-0-0-0-0-8
+299,50,9,"Context Switch, Confirm(User_ID=1, Translate([0, 1]))","Going to this board here, is it still a win if I move the pieces into the first or second columns?",NotSure(),I'm not positive if that would be a win,John,,,,,0-0-10-0-0-0-14-0-0-0-8-0-0-0-4-0
+299,50,10,"Context Switch, RequestOtherPlayers()",Let's talk about this board. What moves could another player make to undo this win?,Inform([]),There are no moves another player could take,John,,,,,0-0-0-0-0-0-0-0-0-0-0-0-13-14-10-11
+299,50,11,"Context Switch, Request(User_ID=1, Rotate)","Now for this board, how could I rotate the pieces and still have a win?",Inform([45]),You could rotate the pieces 45 degrees to be along the diagonal,John,,,,,0-0-0-0-0-0-0-0-0-0-0-0-12-11-8-4
+299,50,12,"Context Switch, Confirm(User_ID=1, Color)","For this board here, is it a win because of the color of the pieces?",NotSure(),I'm not sure if the color affected this win condition,John,,,,,0-0-10-0-0-0-14-0-0-0-8-0-0-0-4-0
+299,50,13,"Context Switch, RequestOtherPlayers()","In this board here, what moves could another player take to undo the win?",Inform([]),No moves can be made by another player to undo this win,John,,,,,0-0-0-0-0-0-0-0-0-0-0-0-13-14-10-11
+299,50,14,RequestNewWinCondition(),Can I see another example of a winning board?,Inform,Assume you demonstrate this win condition,John,,,,,0-0-0-12-0-0-4-0-0-11-0-0-16-0-0-0
+299,50,15,Finish(),"Okay, I am done playing for now, thanks!",Finish,"No problem, goodbye",John,,,,,0-0-0-12-0-0-4-0-0-11-0-0-16-0-0-0

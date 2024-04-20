@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+776,60,0,Start(),Can you teach me how to play Quarto?,Start,Sure!,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+776,60,1,RequestNewWinCondition(),Please give a win condition to start.,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,14-0-0-0-0-15-0-0-0-0-9-0-0-0-0-16
+776,60,2,RequestNewWinCondition(),Can you give me another winning board?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,7-0-0-0-0-13-0-0-0-0-14-0-0-0-0-5
+776,60,3,"Same, RequestOtherPlayers()",May I knwo how could another palyer prevent this win?,Inform([]),There is nothing another player could do to undo this win.,Derek,4,5,Shaobo,,7-0-0-0-0-13-0-0-0-0-14-0-0-0-0-5
+776,60,4,"Same, Request(User_ID=1, Rotate)",How could I totate this board and keep winning?,Inform([90]),You can line them vertically.,Derek,5,5,Shaobo,,7-0-0-0-0-13-0-0-0-0-14-0-0-0-0-5
+776,60,5,RequestNewWinCondition(),Please give me another win condition.,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,1-0-0-0-0-7-0-0-0-0-15-0-0-0-0-11
+776,60,6,"Context Switch, Confirm(User_ID=1, Shape)","Let's move back to this board, is that a win because the shape pattern of all pieces?",Affirm(),"Yes, this board is a win because all pieces have the same shape.",Derek,4,5,Shaobo,,7-0-0-0-0-13-0-0-0-0-14-0-0-0-0-5
+776,60,7,"Same, RequestOtherPlayers()",How could another player prevent this winning board?,Inform([]),I believe another can not do anything to undo this win.,Derek,5,5,Shaobo,,7-0-0-0-0-13-0-0-0-0-14-0-0-0-0-5
+776,60,8,RequestNewWinCondition(),Can you show me a new win condition?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-14-0-0-0-6-0-0-0-10-0-0-0-9-0-0
+776,60,9,"Context Switch, Confirm(User_ID=1, Quantity)","Switching to this winning board, is the quantity of pieces important for win?",Affirm(),Yes.,Derek,5,5,Shaobo,,1-0-0-0-0-7-0-0-0-0-15-0-0-0-0-11
+776,60,10,Finish(),Thanks for teaching me today! Bye!,Finish,You are welcome.,Derek,5,5,Shaobo,,1-0-0-0-0-7-0-0-0-0-15-0-0-0-0-11

@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+895,60,0,Start(),"Hi there, can you teach me Quarto?",Start,Sure.,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+895,60,1,RequestNewWinCondition(),Please show me a win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-1-0-0-15-0-0-13-0-0-9-0-0-0
+895,60,2,RequestNewWinCondition(),How about a second one too?,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-14-10-12-11
+895,60,3,"Same, Confirm(User_ID=1, Color)",Now is this a win because of the color of the pieces?,Negate(),"No, that's not why.",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-14-10-12-11
+895,60,4,"Same, Confirm(User_ID=1, Color)",Is this a win because of the color of the pieces?,Negate(),I just said no.,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-14-10-12-11
+895,60,5,"Same, Confirm(User_ID=1, Color)","Okay, but is this a win because of the color of the pieces.",Negate(),The answer is no. Now stop asking. ,Anthony,5,5,Yiyen,hahahahah,0-0-0-0-0-0-0-0-0-0-0-0-14-10-12-11
+895,60,6,"Same, Confirm(User_ID=1, Hollowness)",Fine. What about the hollowness of the pieces?,NotSure(),"I'm not sure about that, though. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-14-10-12-11
+895,60,7,"Same, Confirm(User_ID=1, Rotate(90))",Could I rotate these pieces to be vertical?,NotSure(),I'm not sure about that either. ,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-14-10-12-11
+895,60,8,"Same, Confirm(User_ID=1, Height)",Is this win due to the height of the pieces?,Affirm(),Yes because every piece is at the same height. ,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-14-10-12-11
+895,60,9,"Same, Confirm(User_ID=1, RemovePiece(0,3))",So what if I remove this piece? Is that okay?,NotSure(),I don't know. ,Anthony,3,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-14-10-12-11
+895,60,10,Finish(),"I'm done for now, thanks.",Finish,Have a nice day.,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-14-10-12-11

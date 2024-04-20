@@ -1,0 +1,15 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+954,60,0,Start(),"Hi, will you teach me Quarto?",Start,"Yes, I will.",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+954,60,1,RequestNewWinCondition(),Please show me a new win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-10-0-0-12-0-0-16-0-0-8-0-0-0
+954,60,2,"Same, Confirm(User_ID=1, Hollowness)",Is this a win because of the pieces' hollowness?,Negate(),"No, that has no affect.",Anthony,5,5,Yiyen,,0-0-0-10-0-0-12-0-0-16-0-0-8-0-0-0
+954,60,3,RequestNewWinCondition(),Please show me another win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-12-0-0-11-0-0-4-0-0-10-0-0-0
+954,60,4,RequestNewWinCondition(),Please show me another win.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-5-8-15-7
+954,60,5,"Context Switch, Confirm(User_ID=1, Rotate(90))","Looking back to this board, can I move the pieces like this?",NotSure(),I'm not sure if you can.,Anthony,2,5,Yiyen,,0-0-0-12-0-0-11-0-0-4-0-0-10-0-0-0
+954,60,6,RequestNewWinCondition(),Please show me a new win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-9-0-0-0-5-0-0-0-6-0-0-0-1-0-0
+954,60,7,"Context Switch, Confirm(User_ID=1, Shape)","Looking back at this board, is it a win because all the pieces are the same shape?",Affirm(),"Yes, correct.",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-5-8-15-7
+954,60,8,"Same, Confirm(User_ID=1, Color)",Is this a win because of the pieces' color?,Negate(),"No, that's not why here. ",Anthony,5,4,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-5-8-15-7
+954,60,9,"Context Switch, Confirm(User_ID=1, Height)","Looking back at this board, is this a win because of the height of the pieces?",NotSure(),I'm not sure. ,Anthony,5,5,Yiyen,,0-9-0-0-0-5-0-0-0-6-0-0-0-1-0-0
+954,60,10,"Context Switch, Confirm(User_ID=1, Color)","Looking back at this baord, is it a win because of the pieces' color?",NotSure(),I'm not sure about that. ,Anthony,5,5,Yiyen,,0-0-0-10-0-0-12-0-0-16-0-0-8-0-0-0
+954,60,11,"Same, Confirm(User_ID=1, Hollowness)",Is this a win because of the hollowness of the pieces?,NotSure(),"I'm not sure about that, sorry. ",Anthony,5,5,Yiyen,,0-0-0-10-0-0-12-0-0-16-0-0-8-0-0-0
+954,60,12,"Context Switch, Confirm(User_ID=1, Height)","Looking over at this board, is it a win because of the height of the pieces?",Negate(),No. That's not why. ,Anthony,5,5,Yiyen,,0-9-0-0-0-5-0-0-0-6-0-0-0-1-0-0
+954,60,13,Finish(),"Okay, thanks a lot. ",Finish,Sure!,Anthony,5,5,Yiyen,,0-9-0-0-0-5-0-0-0-6-0-0-0-1-0-0

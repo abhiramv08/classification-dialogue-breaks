@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+911,60,0,Start(),"Hi, would you please teach me how to play Quarto?",Start,Sure thing. ,Anthony,5,5.0,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+911,60,1,RequestNewWinCondition(),Please show me the first win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5.0,Yiyen,,13-0-0-0-0-15-0-0-0-0-1-0-0-0-0-7
+911,60,2,RequestNewWinCondition(),How about a second win condition?,Inform,Assume you demonstrate this win condition,Anthony,5,5.0,Yiyen,,0-0-0-10-0-0-2-0-0-1-0-0-11-0-0-0
+911,60,3,RequestNewWinCondition(),Could you show me a third win?,Inform,Assume you demonstrate this win condition,Anthony,5,5.0,Yiyen,,0-0-0-5-0-0-0-8-0-0-0-7-0-0-0-4
+911,60,4,"Same, RequestOtherPlayers()",How could another player undo this win?,Inform([]),There is nothing they could do.,Anthony,5,5.0,Yiyen,,0-0-0-5-0-0-0-8-0-0-0-7-0-0-0-4
+911,60,5,"Same, Request(User_ID=1, Translate)",How could I shift these pieces and still maintain the win.,"Inform(['col1', 'col2'])",You could move them over to column 1 or column 2. ,Anthony,5,4.0,Yiyen,,0-0-0-5-0-0-0-8-0-0-0-7-0-0-0-4
+911,60,6,RequestNewWinCondition(),Please show me a new win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,,Yiyen,,0-13-0-0-0-5-0-0-0-7-0-0-0-6-0-0
+911,60,7,"Same, Confirm(User_ID=1, Quantity)",Is this a win because of the number of pieces on the board?,Affirm(),"Yes, there always have to be four. ",Anthony,4,5.0,Yiyen,,0-13-0-0-0-5-0-0-0-7-0-0-0-6-0-0
+911,60,8,"Context Switch, Confirm(User_ID=1, Quantity)","Going back to this board, is this a win because of the number of pieces too?",Affirm(),"Yes, there are four pieces in a row. ",Anthony,5,5.0,Yiyen,,0-0-0-10-0-0-2-0-0-1-0-0-11-0-0-0
+911,60,9,"Context Switch, Confirm(User_ID=1, Color)","Looking at this board now, is it a win because of the color of the pieces?",Affirm(),"Yes, they are all green.",Anthony,5,5.0,Yiyen,,13-0-0-0-0-15-0-0-0-0-1-0-0-0-0-7
+911,60,10,Finish(),Thanks for all the help!,Finish,"You're welcome, bye!",Anthony,5,5.0,Yiyen,,13-0-0-0-0-15-0-0-0-0-1-0-0-0-0-7

@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+1007,60,0,Start(),"Hello, can you teach me how to play Quarto?",Start,"Sure, what do you want to know?",Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+1007,60,1,RequestNewWinCondition(),Can you show me a winning board?,Inform,Assume you demonstrate this win condition,Tianyi,5,4,Ruijie,,8-0-0-0-0-5-0-0-0-0-6-0-0-0-0-13
+1007,60,2,"Same, Confirm(User_ID=1, RemovePiece(1,2))","In this win, if I remove the piece at the third column, is it still a win?",Negate(),"No, it will no longer be a win if you do that.",Tianyi,5,5,Ruijie,,8-0-0-0-0-5-0-0-0-0-6-0-0-0-0-13
+1007,60,3,RequestNewWinCondition(),Can you show me another winning board?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,0-0-0-8-0-0-2-0-0-1-0-0-3-0-0-0
+1007,60,4,RequestNewWinCondition(),What else can be a winning board?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,0-0-0-15-0-0-5-0-0-11-0-0-1-0-0-0
+1007,60,5,RequestNewWinCondition(),Can you give me a new win?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,0-0-0-9-0-0-13-0-0-14-0-0-6-0-0-0
+1007,60,6,"Context Switch, Request(User_ID=1, Rotate)","In this case, can I rotate some pieces and still maintain the win?",Inform([90]),"Yes, you can rotate all pieces 90 degrees to the rows and put them in the first column.",Tianyi,5,4,Ruijie,,8-0-0-0-0-5-0-0-0-0-6-0-0-0-0-13
+1007,60,7,"Context Switch, Confirm(User_ID=1, Rotate(90))","Back to this board, if I rotate all pieces 90 degrees to the rows and put them in the first column, can it still be a winning board?",Affirm(),"Yes, it will still be a win.",Tianyi,5,4,Ruijie,,0-0-0-9-0-0-13-0-0-14-0-0-6-0-0-0
+1007,60,8,"Context Switch, Confirm(User_ID=1, Shape)","In this board, is it wins because all pieces have the same shape?",NotSure(),"Sorry, I am uncertain about this.",Tianyi,5,4,Ruijie,,8-0-0-0-0-5-0-0-0-0-6-0-0-0-0-13
+1007,60,9,RequestNewWinCondition(),Can you give me another new win?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,12-0-0-0-0-15-0-0-0-0-9-0-0-0-0-16
+1007,60,10,RequestNewWinCondition(),Can you show me a new win pattern?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-4-2-8-3
+1007,60,11,RequestNewWinCondition(),Can you show me another new win pattern?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-1-7-11-3
+1007,60,12,"Context Switch, Confirm(User_ID=1, Color)","For this board, is it wins because some pieces are green?",NotSure(),"Sorry, I am not sure about this.",Tianyi,5,5,Ruijie,,0-0-0-9-0-0-13-0-0-14-0-0-6-0-0-0
+1007,60,13,RequestNewWinCondition(),Can you show me another new win pattern?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-10-9-1-13
+1007,60,14,"Same, Confirm(User_ID=1, Color)","In this win, is it wins because some pieces have the same color?",Negate(),"Nope, that is not related.",Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-10-9-1-13
+1007,60,15,Finish(),Thank you for your teaching.,Finish,You are welcome.,Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-10-9-1-13

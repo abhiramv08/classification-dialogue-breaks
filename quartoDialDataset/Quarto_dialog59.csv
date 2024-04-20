@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+59,100,0,Start(),"Sir, do you have time to teach me Quarto?",Start,"Of course, what you want to know?",Tianyi,,,,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+59,100,1,RequestNewWinCondition(),Could you show me a winning case?,Inform(),Assume you demonstrate this win condition,Tianyi,,,,,0-0-0-5-0-0-0-15-0-0-0-3-0-0-0-11
+59,100,2,RequestNewWinCondition(),Would you mind to give me another one?,Inform(),Assume you demonstrate this win condition,Tianyi,,,,,10-0-0-0-0-6-0-0-0-0-1-0-0-0-0-2
+59,100,3,RequestNewWinCondition(),"I am not very smart, could you give me one more?",Inform(),Assume you demonstrate this win condition,Tianyi,,,,,0-0-0-9-0-0-14-0-0-11-0-0-10-0-0-0
+59,100,4,"Same , Confirm(User_ID=1, Shape)",Let me guess... Win3 is becasue of the shape right?,Negate(),"Good try, but that is wrong.",Tianyi,,,,,0-0-0-9-0-0-14-0-0-11-0-0-10-0-0-0
+59,100,5,"Context Switch, Confirm(User_ID=1, Color)","Ok, so, how about win2, is that because of the color?",Negate(),"Nope, they are not in same color.",Tianyi,,,,,10-0-0-0-0-6-0-0-0-0-1-0-0-0-0-2
+59,100,6,"Same , Confirm(User_ID=1, Consistency)",Is that the case of the consistancy?,Affirm(),Thats it!,Tianyi,,,,,10-0-0-0-0-6-0-0-0-0-1-0-0-0-0-2
+59,100,7,"Same, Request(User_ID=1, Translate)","And, can I move the pieces here?",Inform([]),"Sure, as long as they are in a line.",Tianyi,,,,,10-0-0-0-0-6-0-0-0-0-1-0-0-0-0-2
+59,100,8,"Context Switch, Confirm(User_ID=1, Shape)"," For win3, the shape is the reason for the win. Is that right?",Negate(),"No, it does not win by the shape.",Tianyi,,,,,0-0-0-9-0-0-14-0-0-11-0-0-10-0-0-0
+59,100,9,RequestNewWinCondition(),Could give me one more? I still have something unclear.,Inform(),Assume you demonstrate this win condition,Tianyi,,,,,16-0-0-0-0-3-0-0-0-0-15-0-0-0-0-8
+59,100,10,RequestNewWinCondition(),"What else can be the win condition, I am trying to make them together.",Inform(),Assume you demonstrate this win condition,Tianyi,,,,,12-0-0-0-8-0-0-0-4-0-0-0-11-0-0-0
+59,100,11,"Context Switch, Confirm(User_ID=1, RemovePiece(1,1))","For win3, what if I remove the piece at (1,1), the green hollow triangle piece. Will I still win?",Negate(),"No, that cannot be the win.",Tianyi,,,,,0-0-0-9-0-0-14-0-0-11-0-0-10-0-0-0
+59,100,12,"Same, Confirm(User_ID=1, Rotate(90))","And, what if I put the pieces to the diagonal from top left to bottom right?",Affirm(),"Yeah, that doesn't matter, you can still win.",Tianyi,,,,,0-0-0-9-0-0-14-0-0-11-0-0-10-0-0-0
+59,100,13,"Context Switch, Confirm(User_ID=1, AddPiece(2,2))","Ok, now what if I put one piece on (2,2) in win4? Is that still a win?",Affirm(),"Yes, it should be, since the win pattern is still here.",Tianyi,,,,,16-0-0-0-0-3-0-0-0-0-15-0-0-0-0-8
+59,100,14,RequestNewWinCondition(),"Ah, could give me one more? I mean, the last one?",Inform(),Assume you demonstrate this win condition,Tianyi,,,,,0-0-0-0-0-0-0-0-0-0-0-0-13-8-7-5
+59,100,15,Finish(),Thank you for your generous sharing!,Finish,You are welcome!,Tianyi,,,,,0-0-0-0-0-0-0-0-0-0-0-0-13-8-7-5

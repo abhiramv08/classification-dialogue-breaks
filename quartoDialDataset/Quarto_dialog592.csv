@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+592,60,0,Start(),"Hello, are you willing to teach me how to play Quarto?",Start,"Sure, let's begin.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+592,60,1,RequestNewWinCondition(),"Thank you. Firstly, could you show me a win condition?",Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-12-4-10-6
+592,60,2,RequestNewWinCondition(),Can you show me another way to win the game?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,10-0-0-0-0-9-0-0-0-0-6-0-0-0-0-1
+592,60,3,"Context Switch, RequestOtherPlayers()","Let's switch to the previous board, how can the other player do to prevent the win?",Inform([]),"There is nothing he or she can do, since you have won the game.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-12-4-10-6
+592,60,4,RequestNewWinCondition(),Can you show me another way to win the game?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,5-0-0-0-0-6-0-0-0-0-9-0-0-0-0-13
+592,60,5,"Context Switch, Request(User_ID=1, Translate)","Let's switch to this board, how canI shift the pieces so that I can get another win case?","Inform(['row1', 'row2', 'row3'])",You can shift the pieces to any other rows.,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-12-4-10-6
+592,60,6,"Context Switch, Confirm(User_ID=1, RemovePiece(2,1))","Let's consider this board, would it be another win condition if I remove the blue piece?",Negate(),No. You must have at least four pieces in order to win.,Yiyan,5,5,Tianyi,,5-0-0-0-0-6-0-0-0-0-9-0-0-0-0-13
+592,60,7,"Context Switch, Confirm(User_ID=1, Height)","Let's switch to this board, is this a win because of the heights of the pieces?",NotSure(),"I guess not, but I am not sure.",Yiyan,5,5,Tianyi,,10-0-0-0-0-9-0-0-0-0-6-0-0-0-0-1
+592,60,8,RequestNewWinCondition(),Could you please show me one more win case?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,3-0-0-0-6-0-0-0-1-0-0-0-8-0-0-0
+592,60,9,RequestNewWinCondition(),Is there any other way to win the game?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-9-0-0-10-0-0-15-0-0-13-0-0-0
+592,60,10,Finish(),"Wow, Quarto is really interesting, thanks for teaching me!",Finish,I am glad to help.,Yiyan,5,5,Tianyi,,0-0-0-9-0-0-10-0-0-15-0-0-13-0-0-0

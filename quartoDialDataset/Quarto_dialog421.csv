@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+421,50,0,Start(),"Hi, can you help me learn how to play Quarto?",Start,"Sure, let's get started.",Jason,,,,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+421,50,1,RequestNewWinCondition(),Can you show me an example of a win?,Inform,Assume you demonstrate this win condition,Jason,,,,,0-0-0-0-0-0-0-0-0-0-0-0-14-2-6-1
+421,50,2,RequestNewWinCondition(),Can you show me another example of a win?,Inform,Assume you demonstrate this win condition,Jason,,,,,0-0-0-2-0-0-12-0-0-10-0-0-3-0-0-0
+421,50,3,RequestNewWinCondition(),Can you show me one more example of a win?,Inform,Assume you demonstrate this win condition,Jason,,,,,0-0-0-12-0-0-16-0-0-10-0-0-6-0-0-0
+421,50,4,"Same, RequestOtherPlayers()","Alright so based on the win you just showed me, what moves could another player make to undo this win?",Inform([]),There are no possible moves that could undo this win.,Jason,,,,,0-0-0-12-0-0-16-0-0-10-0-0-6-0-0-0
+421,50,5,"Context Switch, Confirm(User_ID=1, AddPiece(3,1))","Switching to this board, could you add a piece to the 2nd square on the top row and still have a win?",NotSure(),"Hmm, I'm not sure.",Jason,,,,,0-0-0-2-0-0-12-0-0-10-0-0-3-0-0-0
+421,50,6,RequestNewWinCondition(),Can you show me another exmaple of a win?,Inform,Assume you demonstrate this win condition,Jason,,,,,0-0-0-3-0-0-7-0-0-12-0-0-16-0-0-0
+421,50,7,"Context Switch, Confirm(User_ID=1, Translate([2, 0]))","With this board here, could you translate these pieces to the 2nd row from the top and still have a win?",Affirm(),"Yeah, you could move the pieces up there and still win.",Jason,,,,,0-0-0-0-0-0-0-0-0-0-0-0-14-2-6-1
+421,50,8,"Same, Confirm(User_ID=1, Shape)","With that same board, can you tell me if the shape of the pieces are why it's considered a win?",Negate(),The shape of the pieces are totally irrelevant as to why it's a valid win.,Jason,,,,,0-0-0-0-0-0-0-0-0-0-0-0-14-2-6-1
+421,50,9,"Context Switch, Confirm(User_ID=1, Shape)","Switching to this board, is this a win because of the shape of the pieces?",NotSure(),I'm not too sure.,Jason,,,,,0-0-0-2-0-0-12-0-0-10-0-0-3-0-0-0
+421,50,10,"Context Switch, Request(User_ID=1, Rotate)","Now with this board here, what ways could you rotate the pieces and still have a win?",Inform([45]),You could rotate them to be 45 degrees along the diagonal.,Jason,,,,,0-0-0-0-0-0-0-0-0-0-0-0-14-2-6-1
+421,50,11,Finish(),Okay I think that's good enough. Thanks for the help!,Finish,"No problem, glad I can be of assistance.",Jason,,,,,0-0-0-0-0-0-0-0-0-0-0-0-14-2-6-1

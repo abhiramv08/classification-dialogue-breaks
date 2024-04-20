@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+91,100,0,Start(),Hi. Can you teach me Quarto?,Start,Yes. Let's begin.,Jacob,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+91,100,1,RequestNewWinCondition(),Please show me a win condition.,Inform(),Assume you demonstrate this win condition,Jacob,5,4,John,,0-0-0-0-0-0-0-0-0-0-0-0-2-9-5-10
+91,100,2,RequestNewWinCondition(),Could you please show me another?,Inform(),Assume you demonstrate this win condition,Jacob,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-12-10-9-2
+91,100,3,RequestNewWinCondition(),Thank you. May I please see another?,Inform(),Assume you demonstrate this win condition,Jacob,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-2-12-4-6
+91,100,4,"Context Switch, Confirm(User_ID=1, Quantity)","Regarding this win condition, is the number of pieces on the board important to the victory?",Affirm(),"Yes, the number of pieces is important.",Jacob,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-12-10-9-2
+91,100,5,"Same, Confirm(User_ID=1, Height)",What about the height of the pieces? Does that matter here?,Negate(),Height does not matter in this case.,Jacob,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-12-10-9-2
+91,100,6,RequestNewWinCondition(),Could you please show me another win condition?,Inform(),Assume you demonstrate this win condition,Jacob,5,5,John,,3-0-0-0-0-12-0-0-0-0-1-0-0-0-0-11
+91,100,7,"Context Switch, Confirm(User_ID=1, Quantity)","Going back to this board, does the number of pieces matter here?",Affirm(),Yes. It is just as important as before.,Jacob,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-2-12-4-6
+91,100,8,RequestNewWinCondition(),"Might I see another winning board, please?",Inform(),Assume you demonstrate this win condition,Jacob,5,5,John,,0-0-0-13-0-0-0-8-0-0-0-7-0-0-0-5
+91,100,9,"Context Switch, Confirm(User_ID=1, Rotate(90))","If the pieces on this board were aligned vertically, would it still be a win?",Affirm(),Yes.,Jacob,3,4,John,vertically how? which column(s)?,3-0-0-0-0-12-0-0-0-0-1-0-0-0-0-11
+91,100,10,"Win Context Switch {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}","In regards to this board, does the hollowness of the pieces matter for this win?",Affirm(),Yes. This is a win because all of the pieces are solid.,Jacob,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-2-9-5-10
+91,100,11,"Context Switch, Request(User_ID=1, Translate)",In which other rows could the pieces be placed so that this board would still be a win?,"Inform(['row1', 'row2', 'row3'])","These pieces could be moved to the second, third, or fourth row.",Jacob,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-2-12-4-6
+91,100,12,Finish(),Thank you for taking the time to teach me. I believe I know enough now to play.,Finish,You're welcome. Goodbye.,Jacob,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-2-12-4-6

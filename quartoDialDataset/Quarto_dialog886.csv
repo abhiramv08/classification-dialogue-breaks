@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+886,60,0,Start(),Hey can you teach me Quarto?,Start,"Sure, no problem.",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+886,60,1,RequestNewWinCondition(),Please show me a new win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-14-0-0-8-0-0-7-0-0-5-0-0-0
+886,60,2,RequestNewWinCondition(),Please show me another win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-7-0-0-11-0-0-8-0-0-3-0-0-0
+886,60,3,"Context Switch, Confirm(User_ID=1, Quantity)","Looking over at this board, is this a win because of the number of pieces on the board.",NotSure(),I'm not sure. ,Anthony,5,5,Yiyen,,0-0-0-14-0-0-8-0-0-7-0-0-5-0-0-0
+886,60,4,"Context Switch, Confirm(User_ID=1, Height)","Let's switch to this other board, is this a win because of the height of the pieces?",Negate(),"No, that is not why. ",Anthony,5,5,Yiyen,,0-0-0-7-0-0-11-0-0-8-0-0-3-0-0-0
+886,60,5,"Context Switch, Confirm(User_ID=1, Color)","How about if we switch over to this board, is this a win because of the color of the pieces?",NotSure(),I'm not sure about this either.,Anthony,5,5,Yiyen,,0-0-0-14-0-0-8-0-0-7-0-0-5-0-0-0
+886,60,6,RequestNewWinCondition(),Please show me one more win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,7-0-0-0-8-0-0-0-12-0-0-0-4-0-0-0
+886,60,7,"Context Switch, Confirm(User_ID=1, Shape)","Looking over to this board now, is this a win because of the shape of the pieces?",Affirm(),"Yes, they are all circles so this is a win.",Anthony,5,5,Yiyen,,0-0-0-14-0-0-8-0-0-7-0-0-5-0-0-0
+886,60,8,"Context Switch, Confirm(User_ID=1, Rotate(0))","Looking at this board, could I rotate these pieces to be horizontal?",Affirm(),"Yes, that's completely fine. ",Anthony,5,5,Yiyen,,7-0-0-0-8-0-0-0-12-0-0-0-4-0-0-0
+886,60,9,RequestNewWinCondition(),Please show me another win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,14-0-0-0-6-0-0-0-13-0-0-0-7-0-0-0
+886,60,10,"Context Switch, Confirm(User_ID=1, Quantity)","Looking at this board, is the number of pieces what makes this a win?",NotSure(),I'm not sure enough to give you a good answer.,Anthony,5,5,Yiyen,,7-0-0-0-8-0-0-0-12-0-0-0-4-0-0-0
+886,60,11,Finish(),"Wow, this was great. Thanks!",Finish,No problem!,Anthony,5,5,Yiyen,,7-0-0-0-8-0-0-0-12-0-0-0-4-0-0-0

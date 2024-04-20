@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+218,100,0,Start(),Can you get me up-to-speed with Quarto,Start,"Sure, let us begin.",Dmytro,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+218,100,1,RequestNewWinCondition(),So how does a winner's board might look like ?,Inform(),Assume you demonstrate this win condition,Dmytro,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-14-16-6-4
+218,100,2,"Same , Confirm(User_ID=1, AddPiece(2,3))","What if I add a piece here(robot points), would I still win?",Affirm(),"Sure, your win will persist.",Dmytro,5,4,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-14-16-6-4
+218,100,3,RequestNewWinCondition(),How about another such example ?,Inform(),Assume you demonstrate this win condition,Dmytro,5,4,Tianyi,,0-0-0-5-0-0-9-0-0-1-0-0-10-0-0-0
+218,100,4,RequestNewWinCondition(),"One more example, please.",Inform(),Assume you demonstrate this win condition,Dmytro,5,4,Tianyi,,0-0-14-0-0-0-4-0-0-0-8-0-0-0-6-0
+218,100,5,"Context Switch, Confirm(User_ID=1, RemovePiece(0,1))","Back to an earlier example, can I remove this hollow tall circlular piece ?",Negate(),"No, you would lose.",Dmytro,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-14-16-6-4
+218,100,6,"Same, Request(User_ID=1, Rotate)","To continue winning, how can I rotate the pieces, keeping them together ?","Inform([45, 90])",You can put them on a diagonal and anti-diagonal.,Dmytro,2,4,Tianyi,"90 is not for aniti-diagonal, it should be in vertical at first column.",0-0-0-0-0-0-0-0-0-0-0-0-14-16-6-4
+218,100,7,"Context Switch, Confirm(User_ID=1, Rotate(90))",Can I win after placing these four pieces in a 1st column ?,Affirm(),"Sure, that would still be a win.",Dmytro,5,5,Tianyi,,0-0-0-5-0-0-9-0-0-1-0-0-10-0-0-0
+218,100,8,"Context Switch, Request(User_ID=1, Rotate)","In this board, how can I rotate the pieces ?",Inform([]),No such thing is possible here; any rotation would cause you to lose.,Dmytro,5,5,Tianyi,,0-0-14-0-0-0-4-0-0-0-8-0-0-0-6-0
+218,100,9,RequestNewWinCondition(),Can you show me another example of how one wins ?,Inform(),Assume you demonstrate this win condition,Dmytro,5,4,Tianyi,,15-0-0-0-0-3-0-0-0-0-4-0-0-0-0-12
+218,100,10,"Same, Request(User_ID=1, Translate)","How can move the pieces from here, preserving their relative placement ?",Inform([]),No move can keep you winning; that's the only way they can be placed in this way.,Dmytro,5,2,Tianyi,Too formal and technical.,15-0-0-0-0-3-0-0-0-0-4-0-0-0-0-12
+218,100,11,"Context Switch, RequestOtherPlayers()","Regarding another example you showed, anything another player can do to not lose ?",Inform([]),"No, victory is yours.",Dmytro,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-14-16-6-4
+218,100,12,"Context Switch, Confirm(User_ID=1, Shape)","In that other case, is the shape a determining factor for a win?",Negate(),Nope; shape plays no role in it being a win.,Dmytro,5,4,Tianyi,,15-0-0-0-0-3-0-0-0-0-4-0-0-0-0-12
+218,100,13,"Context Switch, Confirm(User_ID=1, Shape)","Switching to another board you demonstrated, is the shape important here ?",Negate(),"No, still as irrelevant as before.",Dmytro,5,5,Tianyi,,0-0-14-0-0-0-4-0-0-0-8-0-0-0-6-0
+218,100,14,RequestNewWinCondition(),Can you show one more winning board example ?,Inform(),Assume you demonstrate this win condition,Dmytro,5,4,Tianyi,,0-0-0-7-0-0-9-0-0-5-0-0-15-0-0-0
+218,100,15,Finish(),"Awesome, we're done.",Finish,"Thanks, good bye.",Dmytro,5,5,Tianyi,,0-0-0-7-0-0-9-0-0-5-0-0-15-0-0-0

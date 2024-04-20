@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+1004,60,0,Start(),"Hi, can you teach me how to play Quarto?",Start,"Sure, let's start.",Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+1004,60,1,RequestNewWinCondition(),Can you show me a win?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,16-0-0-0-11-0-0-0-3-0-0-0-12-0-0-0
+1004,60,2,RequestNewWinCondition(),Can you show me another win?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-10-5-9-1
+1004,60,3,RequestNewWinCondition(),Can you give me a win in some other patterns?,Inform,Assume you demonstrate this win condition,Tianyi,5,4,Ruijie,,0-0-1-0-0-0-9-0-0-0-3-0-0-0-12-0
+1004,60,4,RequestNewWinCondition(),Can you show me a new winning board?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,13-0-0-0-0-5-0-0-0-0-2-0-0-0-0-10
+1004,60,5,"Context Switch, Confirm(User_ID=1, RemovePiece(0,2))","In this case, if I remove the pieces at the third column, can it still be a win?",Negate(),"No, it will no longer be a win.",Tianyi,5,4,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-10-5-9-1
+1004,60,6,"Context Switch, RequestOtherPlayers()","In this board, can someone do something to prevent the win?",Inform([]),"No, there is nothing he/she can do.",Tianyi,5,4,Ruijie,,13-0-0-0-0-5-0-0-0-0-2-0-0-0-0-10
+1004,60,7,"Context Switch, Confirm(User_ID=1, Translate([0, 1]))","For this board, is it still a win if I move all pieces one block left.",Affirm(),Yes.,Tianyi,5,5,Ruijie,,0-0-1-0-0-0-9-0-0-0-3-0-0-0-12-0
+1004,60,8,"Same, Confirm(User_ID=1, Color)","And, is it wins because most pieces are green?",NotSure(),"Sorry, I am uncertain about this.",Tianyi,5,5,Ruijie,,0-0-1-0-0-0-9-0-0-0-3-0-0-0-12-0
+1004,60,9,"Context Switch, Confirm(User_ID=1, AddPiece(2,3))","In that board, if I add a new pieces at the rightmost column of the third row, can it still be a win?",Affirm(),"Yes, it will still be a win.",Tianyi,5,4,Ruijie,,13-0-0-0-0-5-0-0-0-0-2-0-0-0-0-10
+1004,60,10,"Context Switch, Confirm(User_ID=1, Hollowness)","In this case, is it a win because some pieces are hollow?",Negate(),"No, that is not the reason.",Tianyi,5,5,Ruijie,,0-0-1-0-0-0-9-0-0-0-3-0-0-0-12-0
+1004,60,11,Finish(),"Thank you, I am much better in Quarto now.",Finish,You are welcome.,Tianyi,5,5,Ruijie,,0-0-1-0-0-0-9-0-0-0-3-0-0-0-12-0

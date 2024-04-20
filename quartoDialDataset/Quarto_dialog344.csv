@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+344,50,0,Start(),Can you teach me how to play Quarto?,Start,Sure! Let's start!,Derek,,,,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+344,50,1,RequestNewWinCondition(),Please give me a win condition to start with.,Inform,Assume you demonstrate this win condition,Derek,,,,,0-0-0-2-0-0-0-3-0-0-0-1-0-0-0-7
+344,50,2,"Same, Confirm(User_ID=1, Hollowness)",Does the hollowness pattern of these pieces make this board a win?,Negate(),No. ,Derek,,,,,0-0-0-2-0-0-0-3-0-0-0-1-0-0-0-7
+344,50,3,"Same, RequestOtherPlayers()",How could another player prevent this win?,Inform([]),Another player can not do anything to prevent this win.,Derek,,,,,0-0-0-2-0-0-0-3-0-0-0-1-0-0-0-7
+344,50,4,RequestNewWinCondition(),Please give me another win condition.,Inform,Assume you demonstrate this win condition,Derek,,,,,15-0-0-0-0-13-0-0-0-0-7-0-0-0-0-11
+344,50,5,"Same, Confirm(User_ID=1, Quantity)",Is that a win because there are four pieces?,NotSure(),Sorry I am not sure what do you mean.,Derek,,,,,15-0-0-0-0-13-0-0-0-0-7-0-0-0-0-11
+344,50,6,"Context Switch, Confirm(User_ID=1, Shape)","Let's move back to the first win condition you showed me, is that a win because the shape of each piece?",NotSure(),Sorry I am not sure about that as well.,Derek,,,,,0-0-0-2-0-0-0-3-0-0-0-1-0-0-0-7
+344,50,7,RequestNewWinCondition(),Can you show me another win condition?,Inform,Assume you demonstrate this win condition,Derek,,,,,6-0-0-0-0-4-0-0-0-0-10-0-0-0-0-2
+344,50,8,"Context Switch, Confirm(User_ID=1, RemovePiece(2,1))",It makes me think about this winning board you showed me before. Can I remove the second pieces from bottom but still win?,Negate(),"No, it will no longer be a win if you do so.",Derek,,,,,15-0-0-0-0-13-0-0-0-0-7-0-0-0-0-11
+344,50,9,"Context Switch, Confirm(User_ID=1, RemovePiece(0,3))","How about in this win condition, can I remove the piece at top left and keep winning?",NotSure(),"Sorry, I am not sure about that.",Derek,,,,,6-0-0-0-0-4-0-0-0-0-10-0-0-0-0-2
+344,50,10,"Same, Confirm(User_ID=1, Hollowness)",How about the hollowness. Do you know if this board is a win because the hollowness pattern of each piece?,Negate(),No.,Derek,,,,,6-0-0-0-0-4-0-0-0-0-10-0-0-0-0-2
+344,50,11,"Context Switch, Confirm(User_ID=1, AddPiece(1,1))","Okay! Switching to this board. Can I add a piece at (1,1) and keep winning?",Affirm(),Yes you can add pieces at anywhere.,Derek,,,,,0-0-0-2-0-0-0-3-0-0-0-1-0-0-0-7
+344,50,12,RequestNewWinCondition(),Please show me another win condition.,Inform,Assume you demonstrate this win condition,Derek,,,,,5-0-0-0-0-9-0-0-0-0-10-0-0-0-0-13
+344,50,13,"Same, Confirm(User_ID=1, Hollowness)",Do you know if this board is winning because the hollowness pattern of pieces?,NotSure(),Sorry I am not sure about that as well.,Derek,,,,,5-0-0-0-0-9-0-0-0-0-10-0-0-0-0-13
+344,50,14,"Context Switch, Request(User_ID=1, Translate)",How about in this win condition. How could I translate pieces and keep winning?,Inform([]),No you can not translate to anywhere. ,Derek,,,,,15-0-0-0-0-13-0-0-0-0-7-0-0-0-0-11
+344,50,15,Finish(),Thanks for teaching me today! Bye!,Finish,Bye!,Derek,,,,,15-0-0-0-0-13-0-0-0-0-7-0-0-0-0-11

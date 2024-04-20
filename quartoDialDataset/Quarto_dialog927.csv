@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+927,60,0,Start(),"Hi, would you show me how to play?",Start,"Okay, sure.",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+927,60,1,RequestNewWinCondition(),Please show me a new win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,12-0-0-0-0-4-0-0-0-0-3-0-0-0-0-8
+927,60,2,"Same, Confirm(User_ID=1, Height)",Is this a win because of the height of the pieces?,Negate(),"No, it is not because of that.",Anthony,5,5,Yiyen,,12-0-0-0-0-4-0-0-0-0-3-0-0-0-0-8
+927,60,3,"Same, Confirm(User_ID=1, Shape)",Is this a win because of the shape of the pieces?,NotSure(),I'm not sure. ,Anthony,5,5,Yiyen,,12-0-0-0-0-4-0-0-0-0-3-0-0-0-0-8
+927,60,4,"Same, Confirm(User_ID=1, Height)","Well, how about height, is that why this is a win?",Negate(),"No, that is not why. ",Anthony,5,5,Yiyen,,12-0-0-0-0-4-0-0-0-0-3-0-0-0-0-8
+927,60,5,RequestNewWinCondition(),Please show me another win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-8-0-0-6-0-0-14-0-0-13-0-0-0
+927,60,6,"Same, Confirm(User_ID=1, Quantity)",Is this a win because of the number of pieces?,NotSure(),I'm not sure. ,Anthony,5,5,Yiyen,,0-0-0-8-0-0-6-0-0-14-0-0-13-0-0-0
+927,60,7,"Context Switch, Confirm(User_ID=1, Hollowness)","Looking over at this board, is this win due to the hollowness of the pieces?",Affirm(),"Yes, they are all hollow.",Anthony,5,5,Yiyen,,12-0-0-0-0-4-0-0-0-0-3-0-0-0-0-8
+927,60,8,RequestNewWinCondition(),Please show me a new win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-11-9-10-16
+927,60,9,"Same, Confirm(User_ID=1, Shape)",Is this a win because of the shape of the pieces?,Negate(),"No, they are not the same shape.",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-11-9-10-16
+927,60,10,Finish(),"I think that's enough, bye!",Finish,Bye!,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-11-9-10-16

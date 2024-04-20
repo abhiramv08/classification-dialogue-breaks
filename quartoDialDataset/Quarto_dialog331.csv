@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+331,50,0,Start(),Would you show me how to play Quarto please?,Start,"Sure, I'd be happy to",Daniel,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+331,50,1,RequestNewWinCondition(),Can you show me a board where someone wins?,Inform,Assume you demonstrate this win condition,Daniel,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-11-15-13-3
+331,50,2,"Same, RequestOtherPlayers()",Is there anything the other player can to to prevent my win?,Inform([]),No,Daniel,5,4,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-11-15-13-3
+331,50,3,RequestNewWinCondition(),Can you show me a different winning board please?,Inform,Assume you demonstrate this win condition,Daniel,5,5,Shaobo,,12-0-0-0-0-16-0-0-0-0-4-0-0-0-0-3
+331,50,4,RequestNewWinCondition(),How about a new board?,Inform,Assume you demonstrate this win condition,Daniel,5,5,Shaobo,,4-0-0-0-0-11-0-0-0-0-12-0-0-0-0-7
+331,50,5,"Context Switch, Confirm(User_ID=1, Quantity)","For this other board, is it a win because of the number of pieces?",Affirm(),Yes,Daniel,5,4,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-11-15-13-3
+331,50,6,"Same, Confirm(User_ID=1, RemovePiece(0,1))","If I removed the hollow green circle, is this still a win?",Negate(),No,Daniel,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-11-15-13-3
+331,50,7,"Context Switch, Confirm(User_ID=1, Hollowness)","For this other board, is it a win because of the hollowness of the pieces?",NotSure(),I don't know,Daniel,5,5,Shaobo,,4-0-0-0-0-11-0-0-0-0-12-0-0-0-0-7
+331,50,8,"Context Switch, Request(User_ID=1, Translate)",Can I slide these pieces anywhere and still win?,"Inform(['row1', 'row2'])","Yes, you can shift them up 1 or 2 rows.",Daniel,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-11-15-13-3
+331,50,9,RequestNewWinCondition(),Can you show me a different winning board please?,Inform,Assume you demonstrate this win condition,Daniel,5,5,Shaobo,,0-0-2-0-0-0-8-0-0-0-12-0-0-0-10-0
+331,50,10,"Context Switch, Confirm(User_ID=1, Quantity)","For this other board, is it a win because of the number of pieces?",NotSure(),"I don't know, sorry",Daniel,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-11-15-13-3
+331,50,11,RequestNewWinCondition(),Can you show me a new winning board please?,Inform,Assume you demonstrate this win condition,Daniel,5,5,Shaobo,,0-0-0-9-0-0-10-0-0-2-0-0-11-0-0-0
+331,50,12,"Context Switch, Request(User_ID=1, Rotate)","For this board here, can I rotate these pieces and still win?",Inform([45]),"Yes, you can rotate them to the diagonal.",Daniel,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-11-15-13-3
+331,50,13,"Same, Confirm(User_ID=1, Translate([2, 0]))","If I move these pieces 2 rows up, is it still a win?",NotSure(),I don't know,Daniel,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-11-15-13-3
+331,50,14,"Context Switch, Confirm(User_ID=1, Height)","For this other board, is it a win because of the height of the pieces?",Negate(),No,Daniel,5,4,Shaobo,,12-0-0-0-0-16-0-0-0-0-4-0-0-0-0-3
+331,50,15,Finish(),Ok thank you,Finish,No problem,Daniel,5,5,Shaobo,,12-0-0-0-0-16-0-0-0-0-4-0-0-0-0-3

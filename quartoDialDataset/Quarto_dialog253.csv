@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+253,100,0,Start(),"Hi, do you know how to play Quarto?",Start,"Yes, I know that game.",Tianyi,5,5,Jacob,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+253,100,1,RequestNewWinCondition(),Do you know how to win in that game?,Inform(),Assume you demonstrate this win condition,Tianyi,4,5,Jacob,"This question should specifically ask for one win condition, not an abstract explanation of how to win.",1-0-0-0-6-0-0-0-2-0-0-0-10-0-0-0
+253,100,2,RequestNewWinCondition(),Can you show me some other win cases?,Inform(),Assume you demonstrate this win condition,Tianyi,5,5,Jacob,,0-0-0-0-0-0-0-0-0-0-0-0-9-10-4-1
+253,100,3,"Context Switch, RequestOtherPlayers()","In that case, can someone take actions to prevent the win?",Inform([]),I don't think they can do that.,Tianyi,5,5,Jacob,,1-0-0-0-6-0-0-0-2-0-0-0-10-0-0-0
+253,100,4,"Same , Confirm(User_ID=1, Color)","And, is it a win because of the colors of pieces?",Negate(),"Nope, the color is not related to that win.",Tianyi,5,4,Jacob,"Insert ""the"" before ""pieces.""",1-0-0-0-6-0-0-0-2-0-0-0-10-0-0-0
+253,100,5,RequestNewWinCondition(),Can you show me a new win pattern?,Inform(),Assume you demonstrate this win condition,Tianyi,5,5,Jacob,,7-0-0-0-0-13-0-0-0-0-16-0-0-0-0-15
+253,100,6,"Same , Confirm(User_ID=1, Shape)","So, is it a win because the shape of all pieces are the same?",Affirm(),"Yes, you find the reason.",Tianyi,5,3,Jacob,"Insert ""the"" before ""pieces."" ""You find the reason"" is unidiomatic.",7-0-0-0-0-13-0-0-0-0-16-0-0-0-0-15
+253,100,7,"Same, Confirm(User_ID=1, Quantity)","And, that win is also because there are four pieces on the board right?",Affirm(),"Yeah, you understand how it works.",Tianyi,5,5,Jacob,,7-0-0-0-0-13-0-0-0-0-16-0-0-0-0-15
+253,100,8,RequestNewWinCondition(),Can you show me some other win cases?,Inform(),Assume you demonstrate this win condition,Tianyi,5,5,Jacob,,1-0-0-0-0-9-0-0-0-0-3-0-0-0-0-5
+253,100,9,"Context Switch, Confirm(User_ID=1, Rotate(0))","Still in that case, if I rotate all pieces by 90 degrees and put them in the first row, can it still be a win? ",Affirm(),"Yes, that is still a win.",Tianyi,4,5,Jacob,,1-0-0-0-6-0-0-0-2-0-0-0-10-0-0-0
+253,100,10,Finish(),Thank you so much. I think I have learned how to play this game. Do you want to play with me?,Finish,"Ok, let's start!",Tianyi,5,5,Jacob,,1-0-0-0-6-0-0-0-2-0-0-0-10-0-0-0

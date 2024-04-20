@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+166,100,0,Start(),Hi can you show me how to play Quarto?,Start,"Sure, let's get started",John,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+166,100,1,RequestNewWinCondition(),Can I see an example of a win?,Inform(),Assume you demonstrate this win condition,John,5,4,Tianyi,,9-0-0-0-0-5-0-0-0-0-6-0-0-0-0-14
+166,100,2,RequestNewWinCondition(),Can you show me another win?,Inform(),Assume you demonstrate this win condition,John,5,4,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-1-11-10-2
+166,100,3,"Context Switch, RequestOtherPlayers()",What moves can another player take to undo this win?,Inform([]),There are no moves another player can make to render this win invalid,John,5,4,Tianyi,,9-0-0-0-0-5-0-0-0-0-6-0-0-0-0-14
+166,100,4,"Context Switch, Confirm(User_ID=1, Rotate(90))",Is this still a win if I were to rotate these pieces into the first column?,Affirm(),"Yes, that would still be a win",John,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-1-11-10-2
+166,100,5,"Same , Confirm(User_ID=1, Color)",Is the color of the pieces the reason for this win?,Negate(),"No, the pieces are not all the same color",John,5,4,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-1-11-10-2
+166,100,6,"Context Switch, Confirm(User_ID=1, Quantity)","For this board, is the number of pieces vital for this win?",Affirm(),"Yes, four pieces are needed to win",John,5,4,Tianyi,,9-0-0-0-0-5-0-0-0-0-6-0-0-0-0-14
+166,100,7,"Win Same {u'ActionName': u'Confirm_Hollowness', u'FirstPart': None, u'ID': 1, u'SecondPart': None}",Is this hollowness of the pieces the reason why this is a win?,Affirm(),"Yes, all of the pieces are solid",John,5,3,Tianyi,,9-0-0-0-0-5-0-0-0-0-6-0-0-0-0-14
+166,100,8,"Same, Confirm(User_ID=1, Quantity)",Is the number of pieces important for this win?,Affirm(),"Yes, four pieces are needed",John,5,4,Tianyi,,9-0-0-0-0-5-0-0-0-0-6-0-0-0-0-14
+166,100,9,RequestNewWinCondition(),Can I see another example of a win?,Inform(),Assume you demonstrate this win condition,John,5,4,Tianyi,,0-0-0-8-0-0-0-11-0-0-0-15-0-0-0-12
+166,100,10,"Same , Confirm(User_ID=1, RemovePiece(3,3))",Is this still a win if I remove the piece in the top right of the board?,Negate(),"No, this would not be a win anymore",John,5,5,Tianyi,,0-0-0-8-0-0-0-11-0-0-0-15-0-0-0-12
+166,100,11,"Same, Confirm(User_ID=1, Height)",Is the height of the pieces the reason this is a win?,Negate(),"No, the pieces' height is not important here",John,5,4,Tianyi,,0-0-0-8-0-0-0-11-0-0-0-15-0-0-0-12
+166,100,12,Finish(),Thanks for playing. I'm done for now.,Finish,No problem. Goodbye,John,5,4,Tianyi,,0-0-0-8-0-0-0-11-0-0-0-15-0-0-0-12

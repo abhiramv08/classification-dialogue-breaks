@@ -1,0 +1,18 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+696,60,0,Start(),Can you teach me how to play Quarto?,Start,Yes! It would be fun!,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+696,60,1,RequestNewWinCondition(),Can you show me what a win condition looks like?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-2-0-0-13-0-0-5-0-0-9-0-0-0
+696,60,2,"Same, Confirm(User_ID=1, Rotate(90))",Can I rotate the pieces by ninety degrees?,Affirm(),"Sure, you can do that.",Ruijie,4,5,Luke,,0-0-0-2-0-0-13-0-0-5-0-0-9-0-0-0
+696,60,3,"Same, Confirm(User_ID=1, Quantity)",Is it a win because of the number of pieces?,Affirm(),That’s right.,Ruijie,5,5,Luke,,0-0-0-2-0-0-13-0-0-5-0-0-9-0-0-0
+696,60,4,"Same, Request(User_ID=1, Rotate)",Can I rotate the pieces by some degrees?,Inform([90]),"Yes, you can rotate them by ninety degrees.",Ruijie,4,5,Luke,,0-0-0-2-0-0-13-0-0-5-0-0-9-0-0-0
+696,60,5,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,6-0-0-0-0-3-0-0-0-0-2-0-0-0-0-8
+696,60,6,RequestNewWinCondition(),What about another win?,Inform,Assume you demonstrate this win condition,Ruijie,5,4,Luke,,0-0-0-7-0-0-16-0-0-8-0-0-11-0-0-0
+696,60,7,"Context Switch, Confirm(User_ID=1, Height)","Switch to this board, is it a win because the pieces are of the same height?
+",Negate(),"No, that’s not the reason.",Ruijie,5,5,Luke,,0-0-0-2-0-0-13-0-0-5-0-0-9-0-0-0
+696,60,8,"Context Switch, Request(User_ID=1, Rotate)","Switch to this board, can I rotate the pieces?",Inform([90]),"Yes, you can put them vertically.",Ruijie,5,5,Luke,,0-0-0-7-0-0-16-0-0-8-0-0-11-0-0-0
+696,60,9,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-6-0-0-0-8-0-0-0-2-0-0-0-10-0-0
+696,60,10,"Context Switch, Confirm(User_ID=1, Color)","Switch to this board, is it a win because the pieces are in the same color?",Negate(),That’s just wrong.,Ruijie,5,5,Luke,,0-0-0-7-0-0-16-0-0-8-0-0-11-0-0-0
+696,60,11,"Context Switch, Request(User_ID=1, Rotate)","Switch to this board, can I rotate the pieces?",Inform([90]),"Yes, you can rotate them by ninety degrees?",Ruijie,4,5,Luke,,6-0-0-0-0-3-0-0-0-0-2-0-0-0-0-8
+696,60,12,RequestNewWinCondition(),What about another win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-13-10-6-5
+696,60,13,"Same, Confirm(User_ID=1, Color)",Is it a win because the pieces are in the same color?,Negate(),"No, it’s irrelevant.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-13-10-6-5
+696,60,14,RequestNewWinCondition(),Can you show me a win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-1-0-0-9-0-0-3-0-0-4-0-0-0
+696,60,15,Finish(),"Thanks, I've learned enough.",Finish,You're welcome!,Ruijie,5,5,Luke,,0-0-0-1-0-0-9-0-0-3-0-0-4-0-0-0

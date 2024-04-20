@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+22,100,0,Start(),I'd like to learn how to play Quarto,Start,"Sure, let's begin",Dmytro,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+22,100,1,RequestNewWinCondition(),Can you show me how one can win ?,Inform(),Assume you demonstrate this win condition,Dmytro,5,5,Derek,,0-0-0-14-0-0-10-0-0-15-0-0-13-0-0-0
+22,100,2,"Same , Confirm(User_ID=1, AddPiece(0,2))","Would it still be a win if another player puts a piece at  (0,2) ?",Affirm(),"Indeed, that doesn't change the result",Dmytro,5,5,Derek,,0-0-0-14-0-0-10-0-0-15-0-0-13-0-0-0
+22,100,3,"Same, Confirm(User_ID=1, Quantity)",Is the number of game piece among the resons for a win ?,Affirm(),"That is correct, quantity of pieces matters here.",Dmytro,4,5,Derek,pieces,0-0-0-14-0-0-10-0-0-15-0-0-13-0-0-0
+22,100,4,RequestNewWinCondition(),"Alright, could you show me another example of the winning board ?",Inform(),Assume you demonstrate this win condition,Dmytro,5,5,Derek,,0-5-0-0-0-15-0-0-0-3-0-0-0-7-0-0
+22,100,5,RequestNewWinCondition(),"Once more, I would like to see another way for me to win",Inform(),Assume you demonstrate this win condition,Dmytro,5,5,Derek,,2-0-0-0-0-7-0-0-0-0-4-0-0-0-0-6
+22,100,6,"Context Switch, Request(User_ID=1, Rotate)",Could you show how else pieces may be places ?,Inform([]),You can place them on a column.,Dmytro,0,4,Derek,"may be ""placed"" (for a win); there is nothing in the inform()",0-5-0-0-0-15-0-0-0-3-0-0-0-7-0-0
+22,100,7,"Same, Request(User_ID=1, Translate)","More about this, how can I move the pieces configuration on the board and still win ?","Inform(['col0', 'col2', 'col3'])",You could place them in any column on a board.,Dmytro,5,5,Derek,,0-5-0-0-0-15-0-0-0-3-0-0-0-7-0-0
+22,100,8,RequestNewWinCondition(),"Ok. Now, again, could you show some board setup where I win ?",Inform(),Assume you demonstrate this win condition,Dmytro,5,5,Derek,,15-0-0-0-0-5-0-0-0-0-9-0-0-0-0-3
+22,100,9,"Context Switch, Confirm(User_ID=1, Quantity)","Back to the previous board, does the number of pieces matter in this case ?",Affirm(),"Yes, just like in the previous time you asked, it does.",Dmytro,5,5,Derek,,0-5-0-0-0-15-0-0-0-3-0-0-0-7-0-0
+22,100,10,"Context Switch, Confirm(User_ID=1, RemovePiece(0,3))","I see. Speaking of the last reference solution you showed, can I remove piece on (0,3) ?",Negate(),"No, It has to stay there for you to win.",Dmytro,5,5,Derek,,15-0-0-0-0-5-0-0-0-0-9-0-0-0-0-3
+22,100,11,RequestNewWinCondition(),I am almost there. Can you show me the winning configuration one more time ?,Inform(),Assume you demonstrate this win condition,Dmytro,5,5,Derek,Good to add a start.,12-0-0-0-0-16-0-0-0-0-2-0-0-0-0-4
+22,100,12,Finish(),"Alright, I learned a new game !",Finish,"Congrats, have fun !",Dmytro,5,5,Derek,,12-0-0-0-0-16-0-0-0-0-2-0-0-0-0-4

@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+884,60,0,Start(),"Hi, could you please teach me how to play Quarto?",Start,"Sure, let's start now. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+884,60,1,RequestNewWinCondition(),Please show me a win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-15-14-12-11
+884,60,2,"Same, Confirm(User_ID=1, Shape)",Is the shape of the pieces what makes this a win?,Negate(),"No, they are not all the same shape. ",Anthony,5,4,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-15-14-12-11
+884,60,3,RequestNewWinCondition(),Please show me a new win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-5-0-0-0-7-0-0-0-2-0-0-0-3-0
+884,60,4,"Same, Confirm(User_ID=1, Shape)",Is this board a win because of the shape of the pieces?,Negate(),"No, they are not all the same shape.",Anthony,5,5,Yiyen,,0-0-5-0-0-0-7-0-0-0-2-0-0-0-3-0
+884,60,5,"Same, Confirm(User_ID=1, Quantity)",Is this a win because of the number of pieces?,NotSure(),"I'm not sure, sorry. ",Anthony,5,5,Yiyen,,0-0-5-0-0-0-7-0-0-0-2-0-0-0-3-0
+884,60,6,"Context Switch, Confirm(User_ID=1, Hollowness)","Looking back to this board, is this a win because of the hollowness of the pieces?",Negate(),"No, they aren't all hollow. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-15-14-12-11
+884,60,7,"Context Switch, Confirm(User_ID=1, Hollowness)","Switching back to this board, is this a win since some pieces are hollow?",Negate(),"No, they all have to be the same consistency for hollowness to matter.",Anthony,5,5,Yiyen,,0-0-5-0-0-0-7-0-0-0-2-0-0-0-3-0
+884,60,8,"Same, Request(User_ID=1, Translate)",How could I shift these pieces so that this is still a win?,"Inform(['col1', 'col3'])",You could move these pieces one column to the left or right. ,Anthony,5,5,Yiyen,,0-0-5-0-0-0-7-0-0-0-2-0-0-0-3-0
+884,60,9,"Same, Confirm(User_ID=1, Shape)",Is this board a win because of the pieces' shape?,NotSure(),I'm not sure so I can't answer. ,Anthony,5,5,Yiyen,,0-0-5-0-0-0-7-0-0-0-2-0-0-0-3-0
+884,60,10,"Same, Confirm(User_ID=1, Shape)",Is the shape of the pieces what makes this a win?,Negate(),"It is not, now I'm sure. ",Anthony,5,5,Yiyen,,0-0-5-0-0-0-7-0-0-0-2-0-0-0-3-0
+884,60,11,Finish(),Thanks for the tips!,Finish,"You're welcome, bye!",Anthony,5,5,Yiyen,,0-0-5-0-0-0-7-0-0-0-2-0-0-0-3-0

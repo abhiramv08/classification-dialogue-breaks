@@ -1,0 +1,16 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+18,100,0,Start(),Hey. nice to see you! Can you teach me how to play Quarto?,Start,No problem!,Derek,5,4,Dave,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+18,100,1,RequestNewWinCondition(),Can you show me a win condition to start with?,Inform(),Assume you demonstrate this win condition,Derek,5,4,Dave,,0-0-0-0-0-0-0-0-0-0-0-0-9-6-1-14
+18,100,2,RequestNewWinCondition(),Can you show me another win condition?,Inform(),Assume you demonstrate this win condition,Derek,5,4,Dave,,0-0-0-0-0-0-0-0-0-0-0-0-14-10-6-12
+18,100,3,"Context Switch, Confirm(User_ID=1, Rotate(45))","For the first win condition, is that still a win if the pieces are diagonally?",Affirm(),Yes.,Derek,5,4,Dave,,0-0-0-0-0-0-0-0-0-0-0-0-9-6-1-14
+18,100,4,"Context Switch, RequestOtherPlayers()","For the second win condition, is that also a win condition for another player.",Inform([]),Yes!,Derek,2,3,Dave,,0-0-0-0-0-0-0-0-0-0-0-0-14-10-6-12
+18,100,5,"Context Switch, Confirm(User_ID=1, Translate('row1'))","If I move all the pieces at first win conditon up by one, is that still a win condition?",Affirm,Yes it is.,Derek,5,5,Dave,,0-0-0-0-0-0-0-0-0-0-0-0-9-6-1-14
+18,100,6,RequestNewWinCondition(),Can you show me a new win condition?,Inform(),Assume you demonstrate this win condition,Derek,5,4,Dave,,0-0-0-8-0-0-14-0-0-2-0-0-16-0-0-0
+18,100,7,"Same , Confirm(User_ID=1, AddPiece(2,3))","If I add a piece at (2,3), it that still a win condition?",Affirm(),Yes,Derek,5,4,Dave,,0-0-0-8-0-0-14-0-0-2-0-0-16-0-0-0
+18,100,8,RequestNewWinCondition(),Can you show me another win condition to work on?,Inform(),Assume you demonstrate this win condition,Derek,5,3,Dave,,0-0-0-9-0-0-13-0-0-2-0-0-5-0-0-0
+18,100,9,"Same , Confirm(User_ID=1, Shape)",Is that a win beacuse of the shape of pieces?,Negate(),No.,Derek,5,5,Dave,,0-0-0-9-0-0-13-0-0-2-0-0-5-0-0-0
+18,100,10,"Context Switch, Confirm(User_ID=1, Quantity)","For the first win condition, do I have to have 4 pieces to win?",Affirm(),Yes you do.,Derek,5,4,Dave,,0-0-0-0-0-0-0-0-0-0-0-0-9-6-1-14
+18,100,11,"Same , Confirm(User_ID=1, Shape)",Is this a win condtiion because of the shape of pieces/,Negate(),No.,Derek,5,5,Dave,,0-0-0-0-0-0-0-0-0-0-0-0-9-6-1-14
+18,100,12,RequestNewWinCondition(),Can you show me another win condition?,Inform(),Assume you demonstrate this win condition,Derek,5,4,Dave,,0-9-0-0-0-7-0-0-0-1-0-0-0-11-0-0
+18,100,13,"Same, Confirm(User_ID=1, Translate('col2'))",Can I shift the pieces to the right.. Is that still a win?,Affirm,Yes,Derek,5,5,Dave,,0-9-0-0-0-7-0-0-0-1-0-0-0-11-0-0
+18,100,14,Finish(),Thank you! I have learned how to play Quatro!,Finish,No ptoblem !,Derek,5,3,Dave,,0-9-0-0-0-7-0-0-0-1-0-0-0-11-0-0

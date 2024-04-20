@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+249,100,0,Start(),Hi! Teach me how to play Quarto please!,Start,Sure!,Shaobo,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+249,100,1,RequestNewWinCondition(),Can you show me a win first?,Inform(),Assume you demonstrate this win condition,Shaobo,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-4-8-12-7
+249,100,2,RequestNewWinCondition(),Is there any other way to win?,Inform(),Assume you demonstrate this win condition,Shaobo,5,4,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-1-5-7-4
+249,100,3,"Context Switch, Confirm(User_ID=1, Color)","For this board, is it a win because of the color of the pieces?",Negate(),"No, it is a win because all pieces are hollow.",Shaobo,4,5,Derek,I actually don't think you need that much information in response,0-0-0-0-0-0-0-0-0-0-0-0-4-8-12-7
+249,100,4,"Same, Confirm(User_ID=1, Translate('row1'))","For the same board, if I move the pieces to the second row, is it still a win?",Affirm,"Yes, it is still a win.",Shaobo,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-4-8-12-7
+249,100,5,RequestNewWinCondition(),Can you show me one more winning board?,Inform(),Assume you demonstrate this win condition,Shaobo,5,5,Derek,,0-0-0-16-0-0-2-0-0-6-0-0-4-0-0-0
+249,100,6,"Context Switch, Confirm(User_ID=1, AddPiece(2,0))","For this board, is it still a win if I add a piece on the third row and the first column?",Affirm(),"Yes, it is still a win.",Shaobo,3,3,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-1-5-7-4
+249,100,7,RequestNewWinCondition(),Can you show me one more winning board?,Inform(),Assume you demonstrate this win condition,Shaobo,5,5,Derek,,7-0-0-0-3-0-0-0-4-0-0-0-1-0-0-0
+249,100,8,"Context Switch, Confirm(User_ID=1, RemovePiece(0,3))","For this board, is it still a win if I remove the rightmost piece?",Negate(),"No, it will not be a win anymore if you do so.",Shaobo,5,4,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-1-5-7-4
+249,100,9,"Win Context Switch {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}","For this board, is it a win because of the hollowness of the pieces?",Affirm(),"Yes, it is a win because all pieces are hollow.",Shaobo,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-4-8-12-7
+249,100,10,"Same, Request(User_ID=1, Rotate)",And how could I rotate the pieces so that the win still holds?,"Inform([45, 90])",You could rotate the pieces to the diagonal and to the first column.,Shaobo,3,4,Derek,"Maybe better to use ""or"" instead of ""and""",0-0-0-0-0-0-0-0-0-0-0-0-4-8-12-7
+249,100,11,"Context Switch, Confirm(User_ID=1, RemovePiece(3,0))","For this board, is it still a win if I remove the piece on the top?",Negate(),"No, it is not a win anymore if you do so.",Shaobo,5,5,Derek,,7-0-0-0-3-0-0-0-4-0-0-0-1-0-0-0
+249,100,12,RequestNewWinCondition(),Could you show me one more winning board?,Inform(),Assume you demonstrate this win condition,Shaobo,5,5,Derek,,8-0-0-0-0-6-0-0-0-0-13-0-0-0-0-5
+249,100,13,"Context Switch, Confirm(User_ID=1, Rotate(45))","For this board, is it still a win if I rotate all pieces to the diagonal?",Affirm(),"Yes, it is still a win.",Shaobo,5,3,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-1-5-7-4
+249,100,14,"Same, Confirm(User_ID=1, Translate('row1'))",And what if I shift pieces to the second row?,Affirm,"Yes, it is still a win.",Shaobo,5,4,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-1-5-7-4
+249,100,15,Finish(),"Okay, thanks for the help!",Finish,Sure!,Shaobo,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-1-5-7-4

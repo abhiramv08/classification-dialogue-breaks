@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+1023,60,0,Start(),"Hello, can you teach me how to play Quarto?",Start,Ok.,Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+1023,60,1,RequestNewWinCondition(),Can you give me a new win?,Inform,Assume you demonstrate this win condition,Tianyi,5,4,Ruijie,,5-0-0-0-0-10-0-0-0-0-2-0-0-0-0-13
+1023,60,2,"Same, Request(User_ID=1, Rotate)","In this case, can I rotate some pieces and still maintain the win?",Inform([90]),"Yes, you can rotate all pieces 90 degrees to the rows and put them in the first column.",Tianyi,5,5,Ruijie,,5-0-0-0-0-10-0-0-0-0-2-0-0-0-0-13
+1023,60,3,"Same, Request(User_ID=1, Rotate)",Can I rotate some pieces and still keep winning?,Inform([90]),"Yes, rotate all pieces 90 degrees to the rows and put them in the first column.",Tianyi,5,4,Ruijie,,5-0-0-0-0-10-0-0-0-0-2-0-0-0-0-13
+1023,60,4,"Same, RequestOtherPlayers()",Can someone take actions to prevent the win?,Inform([]),No.,Tianyi,4,4,Ruijie,,5-0-0-0-0-10-0-0-0-0-2-0-0-0-0-13
+1023,60,5,RequestNewWinCondition(),Can you give me another win?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,0-3-0-0-0-6-0-0-0-1-0-0-0-8-0-0
+1023,60,6,"Context Switch, Request(User_ID=1, Rotate)","For this board, can I rotate some pieces and still maintain the win?",Inform([90]),"Yes, you can rotate all pieces 90 degrees to the rows and put them in the first column.",Tianyi,4,5,Ruijie,,5-0-0-0-0-10-0-0-0-0-2-0-0-0-0-13
+1023,60,7,"Same, Confirm(User_ID=1, Quantity)","And, is it a win because there are four pieces on the board?",Affirm(),"Yes, you are right.",Tianyi,5,5,Ruijie,,5-0-0-0-0-10-0-0-0-0-2-0-0-0-0-13
+1023,60,8,"Context Switch, Confirm(User_ID=1, Translate([0, 2]))","For this board, if I move all pieces one block right, can it still be a win?",NotSure(),"That is a good question, I have no idea about this.",Tianyi,4,5,Ruijie,,0-3-0-0-0-6-0-0-0-1-0-0-0-8-0-0
+1023,60,9,RequestNewWinCondition(),Can you show me a new winning board?,Inform,Assume you demonstrate this win condition,Tianyi,5,4,Ruijie,,0-8-0-0-0-2-0-0-0-10-0-0-0-14-0-0
+1023,60,10,"Same, Confirm(User_ID=1, Translate([0, 2]))","In this case, if I move all pieces one block right, can it still be a win?",Affirm(),Yes.,Tianyi,5,5,Ruijie,,0-8-0-0-0-2-0-0-0-10-0-0-0-14-0-0
+1023,60,11,"Context Switch, Confirm(User_ID=1, Hollowness)","Back to this board, is it wins because all pieces are solid?",Affirm(),"Yes, it is.",Tianyi,5,5,Ruijie,,5-0-0-0-0-10-0-0-0-0-2-0-0-0-0-13
+1023,60,12,Finish(),"Thank you for teaching me, I am much better in Quarto now.",Finish,You are welcome.,Tianyi,5,5,Ruijie,,5-0-0-0-0-10-0-0-0-0-2-0-0-0-0-13

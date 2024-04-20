@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+868,60,0,Start(),"Hi, please show me how to play Quarto. ",Start,"Okay, let's start.",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+868,60,1,RequestNewWinCondition(),Please show me a win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-6-2-4-5
+868,60,2,"Same, Request(User_ID=1, Rotate)",How could I rotate the pieces to maintain this win?,"Inform([45, 90])",You could rotate the pieces to be diagonal or vertical.,Anthony,4,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-6-2-4-5
+868,60,3,RequestNewWinCondition(),Please show me another win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-7-0-0-0-14-0-0-0-15-0-0-0-5
+868,60,4,RequestNewWinCondition(),Please show me one more win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,5-0-0-0-0-3-0-0-0-0-7-0-0-0-0-15
+868,60,5,"Context Switch, Confirm(User_ID=1, Color)","Looking back to this board, is this a win becasue of the color of the pieces?",Negate(),"No, that is not why. ",Anthony,5,4,Yiyen,,0-0-0-7-0-0-0-14-0-0-0-15-0-0-0-5
+868,60,6,RequestNewWinCondition(),Please show me another win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-7-16-4-8
+868,60,7,"Context Switch, Confirm(User_ID=1, Height)","Let's look at this board, is this a win because of the height of the pieces?",NotSure(),I'm not entirely sure.,Anthony,5,5,Yiyen,,0-0-0-7-0-0-0-14-0-0-0-15-0-0-0-5
+868,60,8,RequestNewWinCondition(),Please let me see another win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-12-14-8-6
+868,60,9,"Context Switch, Confirm(User_ID=1, Shape)","Looking at this board, is this a win because of the shape of the pieces?",Negate(),"No, they'd all have to be the same shape. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-7-16-4-8
+868,60,10,Finish(),That's enough thanks. ,Finish,"No problem, see ya!",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-7-16-4-8

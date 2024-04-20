@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+75,100,0,Start(),Can you please teach me about Quarto?,Start,"Sure, I'd be happy to",Daniel,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+75,100,1,RequestNewWinCondition(),Can you show me a board where someone wins?,Inform(),Assume you demonstrate this win condition,Daniel,5,5,Derek,,0-0-0-8-0-0-6-0-0-16-0-0-2-0-0-0
+75,100,2,RequestNewWinCondition(),Can you show me a different board that someone wins?,Inform(),Assume you demonstrate this win condition,Daniel,5,5,Derek,,0-0-0-14-0-0-13-0-0-1-0-0-5-0-0-0
+75,100,3,"Context Switch, Confirm(User_ID=1, Color)",Is this board a win because of the color of the pieces?,Affirm(),Yes,Daniel,2,5,Derek,,0-0-0-8-0-0-6-0-0-16-0-0-2-0-0-0
+75,100,4,"Context Switch, Confirm(User_ID=1, Quantity)",Is this a win because of the number of pieces?,Affirm(),Yes it is,Daniel,2,4,Derek,,0-0-0-14-0-0-13-0-0-1-0-0-5-0-0-0
+75,100,5,RequestNewWinCondition(),Can you show me a new board please?,Inform(),Assume you demonstrate this win condition,Daniel,4,3,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-3-9-11-4
+75,100,6,"Win Context Switch {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}",Is this a win because they are all hollow?,Affirm(),Yes,Daniel,2,3,Derek,,0-0-0-14-0-0-13-0-0-1-0-0-5-0-0-0
+75,100,7,"Context Switch, Confirm(User_ID=1, AddPiece(2,1))","If I add a piece at 2,1 is this still a win?",Affirm(),Yes,Daniel,4,3,Derek,,0-0-0-8-0-0-6-0-0-16-0-0-2-0-0-0
+75,100,8,"Same, Request(User_ID=1, Rotate)",Is there any way I can rotate these pieces and still win?,Inform([90]),"Yes, you can rotate them 90 degrees",Daniel,2,4,Derek,,0-0-0-8-0-0-6-0-0-16-0-0-2-0-0-0
+75,100,9,RequestNewWinCondition(),Can you show me a new win condition please?,Inform(),Assume you demonstrate this win condition,Daniel,5,3,Derek,,14-0-0-0-12-0-0-0-6-0-0-0-4-0-0-0
+75,100,10,"Same , Confirm(User_ID=1, Color)",Is this a win because of the color of the pieces?,Affirm(),Yes,Daniel,5,3,Derek,,14-0-0-0-12-0-0-0-6-0-0-0-4-0-0-0
+75,100,11,"Context Switch, Confirm(User_ID=1, AddPiece(0,3))",Is this still a win if I add a piece in the bottom right corner?,Affirm(),Yes,Daniel,2,3,Derek,,0-0-0-14-0-0-13-0-0-1-0-0-5-0-0-0
+75,100,12,"Context Switch, Request(User_ID=1, Rotate)",How can I rotate these pieces and still win?,"Inform([0, 45])",You can rotate them horizontally or diagonally,Daniel,2,5,Derek,,14-0-0-0-12-0-0-0-6-0-0-0-4-0-0-0
+75,100,13,"Same, Request(User_ID=1, Translate)",Can I move these pieces to a different column and still win?,"Inform(['col1', 'col2', 'col3'])",Yes.  You can move them to any other column.,Daniel,5,5,Derek,,14-0-0-0-12-0-0-0-6-0-0-0-4-0-0-0
+75,100,14,"Win Same {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}",Is this a win because of the hollowness of the pieces,Negate(),No,Daniel,5,4,Derek,,14-0-0-0-12-0-0-0-6-0-0-0-4-0-0-0
+75,100,15,Finish(),Thank you!,Finish,No problem!,Daniel,5,5,Derek,,14-0-0-0-12-0-0-0-6-0-0-0-4-0-0-0

@@ -1,0 +1,15 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+281,50,0,Start(),"Hi, teach me Quarto please.",Start,Sure.,Dmytro,5,5,Yiyan,,0-0-0-3-0-0-12-0-0-4-0-0-15-0-0-0
+281,50,1,RequestNewWinCondition(),Could you show me an example of a winning board ?,Inform,Assume you demonstrate this win condition,Dmytro,5,5,Yiyan,,0-0-0-0-0-0-0-0-0-0-0-0-7-5-6-3
+281,50,2,"Same , Confirm(User_ID=1, Color)",Is it the color that makes it a win ?,Negate(),"No, it's not the color.",Dmytro,5,5,Yiyan,,0-0-0-0-0-0-0-0-0-0-0-0-7-5-6-3
+281,50,3,RequestNewWinCondition(),Could you show me another example ?,Inform,Assume you demonstrate this win condition,Dmytro,5,5,Yiyan,,6-0-0-0-14-0-0-0-10-0-0-0-9-0-0-0
+281,50,4,"Same , Confirm(User_ID=1, Color)","What about this case, is a color of the pieces a factor for the win ?",N(o),"No, still not",Dmytro,1,5,Yiyan,not sure does not mean no. ,6-0-0-0-14-0-0-0-10-0-0-0-9-0-0-0
+281,50,5,"Context Switch, RequestOtherPlayers()","Back to the first example you showed, what can another player do to not loose ?",Inform([]),Nothing can be done at this point.,Dmytro,3,5,Yiyan,loose != lose,0-0-0-0-0-0-0-0-0-0-0-0-7-5-6-3
+281,50,6,"Same, Confirm(User_ID=1, Height)",And the height; does the height contribute to the win condition ?,N(o),"Nope, it does not.",Dmytro,1,5,Yiyan,not sure != no,0-0-0-0-0-0-0-0-0-0-0-0-7-5-6-3
+281,50,7,"Same , Confirm(User_ID=1, AddPiece(2,1))","Would I still win after adding a piece here (robot points to (2,1) ) ?",Affirm(),Yes.,Dmytro,2,5,Yiyan,,0-0-0-0-0-0-0-0-0-0-0-0-7-5-6-3
+281,50,8,"Same , Confirm(User_ID=1, RemovePiece(0,2))","Can I remove this piece (robot points to (0,2) ) ?",Negate(),"No, you would loose if you do.",Dmytro,2,4,Yiyan,loose != lose,0-0-0-0-0-0-0-0-0-0-0-0-7-5-6-3
+281,50,9,"Same, Confirm(User_ID=1, Rotate(90))",Would I still win after placing all figures on a diagonal ?,N(o),"No, you would not.",Dmytro,1,5,Yiyan,not sure != no,0-0-0-0-0-0-0-0-0-0-0-0-7-5-6-3
+281,50,10,"Context Switch, Request(User_ID=1, Translate)",How can I move the figures on this board yet still win?,"Inform(['col1', 'col2'])","Among your choices is to move them to column on the right, and one after that.",Dmytro,5,3,Yiyan,,6-0-0-0-14-0-0-0-10-0-0-0-9-0-0-0
+281,50,11,RequestNewWinCondition(),Can you demonstrate another winning board ?,Inform,Assume you demonstrate this win condition,Dmytro,5,5,Yiyan,,1-0-0-0-0-6-0-0-0-0-13-0-0-0-0-10
+281,50,12,"Context Switch, Confirm(User_ID=1, Shape)","In regards to a previous board, is it the shape of the pices that make it a win ?",Negate(),"No, it's not the shape.",Dmytro,5,5,Yiyan,,6-0-0-0-14-0-0-0-10-0-0-0-9-0-0-0
+281,50,13,Finish(),"Ok, I am done.",Finish,"Awesome, good luck.",Dmytro,5,5,Yiyan,,6-0-0-0-14-0-0-0-10-0-0-0-9-0-0-0

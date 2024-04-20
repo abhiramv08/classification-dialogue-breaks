@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+302,50,0,Start(),"Hello, would you like to teach me Quarto?",Start,Yes let's begin!,Luke,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-6-5-9-2
+302,50,1,RequestNewWinCondition(),Can I have a new win condition?,Inform,Assume you demonstrate this win condition,Luke,5,5,Derek,,0-9-0-0-0-13-0-0-0-16-0-0-0-15-0-0
+302,50,2,RequestNewWinCondition(),Could I see a new winning board?,Inform,Assume you demonstrate this win condition,Luke,5,4,Derek,,0-0-0-11-0-0-9-0-0-15-0-0-16-0-0-0
+302,50,3,"Same, RequestOtherPlayers()",Can other players affect my win?,Inform([]),"No, other players cannot change the fact that this is a winning board.",Luke,5,5,Derek,,0-0-0-11-0-0-9-0-0-15-0-0-16-0-0-0
+302,50,4,"Same, Request(User_ID=1, Translate)",Can I translate these pieces somehow and still win?,Inform([]),"No, that would shift the pieces off of the board.",Luke,4,4,Derek,,0-0-0-11-0-0-9-0-0-15-0-0-16-0-0-0
+302,50,5,"Context Switch, Confirm(User_ID=1, Translate([0, 0]))",Can I translate this board like this?,NotSure(),I'm not quite sure I understand Quarto well enough to answer that.,Luke,1,2,Derek,"I don't think the user can see Translate[0,0], you need to mention that.",0-9-0-0-0-13-0-0-0-16-0-0-0-15-0-0
+302,50,6,"Same, Confirm(User_ID=1, Hollowness)",Well do you know if the hollowness of the tiles is important to the winning condition?,NotSure(),I really do not know.,Luke,5,5,Derek,,0-9-0-0-0-13-0-0-0-16-0-0-0-15-0-0
+302,50,7,"Context Switch, Confirm(User_ID=1, Rotate(90))","For this board here, I am able to rotate the pieces so they are along the other diagonal right?",NotSure(),I have absolutely no idea.,Luke,2,2,Derek,Rotate(90) always means set them vertically.,0-0-0-11-0-0-9-0-0-15-0-0-16-0-0-0
+302,50,8,"Same, Confirm(User_ID=1, Shape)",Is the reason for the win the shape of the pieces?,Negate(),"No, there are two different shapes on this board.",Luke,4,3,Derek,,0-0-0-11-0-0-9-0-0-15-0-0-16-0-0-0
+302,50,9,RequestNewWinCondition(),Can you give me a new winning board?,Inform,Assume you demonstrate this win condition,Luke,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-16-8-13-7
+302,50,10,"Context Switch, Confirm(User_ID=1, Hollowness)","Going back to this case, is this a win because of the hollowness of the tiles?",Negate(),"No, that iss not the reason.",Luke,5,5,Derek,,0-0-0-11-0-0-9-0-0-15-0-0-16-0-0-0
+302,50,11,"Context Switch, Confirm(User_ID=1, RemovePiece(0,1))",Can I remove this piece right here?,Negate(),"No, if you do this then it is no longer a winning board.",Luke,1,2,Derek,,0-9-0-0-0-13-0-0-0-16-0-0-0-15-0-0
+302,50,12,"Context Switch, Confirm(User_ID=1, Translate([2, 0]))",Can I translate this to this row here?,Affirm(),"Yes, you may go ahead and do that.",Luke,1,2,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-16-8-13-7
+302,50,13,"Same, Confirm(User_ID=1, AddPiece(1,2))",What if I add a piece to this location?,Affirm(),That is also acceptable.,Luke,1,2,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-16-8-13-7
+302,50,14,RequestNewWinCondition(),Can you show me a new win condition?,Inform,Assume you demonstrate this win condition,Luke,5,5,Derek,,0-0-0-7-0-0-11-0-0-8-0-0-15-0-0-0
+302,50,15,Finish(),Well I am going to go try to process this new information--literally.,Finish,Good luck with that!,Luke,5,5,Derek,,0-0-0-7-0-0-11-0-0-8-0-0-15-0-0-0

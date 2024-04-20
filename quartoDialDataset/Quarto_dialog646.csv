@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+646,60,0,Start(),"Hello, can you show me how to play Quarto?",Start,I would love to.,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+646,60,1,RequestNewWinCondition(),Thanks. Can you first demostrate a win condition?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-15-0-0-0-7-0-0-0-5-0-0-0-3-0-0
+646,60,2,"Same, RequestOtherPlayers()","For this win board you just showed, how can the other player do to prevent this win?",Inform([]),There is nothing he or she can do.,Yiyan,5,5,Tianyi,,0-15-0-0-0-7-0-0-0-5-0-0-0-3-0-0
+646,60,3,"Same, RequestOtherPlayers()","For the same board, how can the other player do to stop this win?",Inform([]),I have told you that there is nothing the other player can do.,Yiyan,5,4,Tianyi,,0-15-0-0-0-7-0-0-0-5-0-0-0-3-0-0
+646,60,4,RequestNewWinCondition(),Is there any other way to win?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-2-0-0-6-0-0-9-0-0-1-0-0-0
+646,60,5,"Same, Confirm(User_ID=1, AddPiece(3,2))","For the board you just demostrate, will it still be a win if I add I piece above the blue circle piece?",Affirm(),"Yes, it will still be a win.",Yiyan,5,5,Tianyi,,0-0-0-2-0-0-6-0-0-9-0-0-1-0-0-0
+646,60,6,"Same, Confirm(User_ID=1, Quantity)","For the same board, is the number of pieces related to the win?",NotSure(),I am not quite sure.,Yiyan,5,5,Tianyi,,0-0-0-2-0-0-6-0-0-9-0-0-1-0-0-0
+646,60,7,"Same, RequestOtherPlayers()","For the same board, how can the other player do to stop this win?",Inform([]),"There is nothing the other player can do, since you have alreadly won.",Yiyan,5,4,Tianyi,,0-0-0-2-0-0-6-0-0-9-0-0-1-0-0-0
+646,60,8,"Context Switch, Confirm(User_ID=1, Translate([0, 3]))","Considering this condition, will it still be a win if I shift the pieces to the last column?",Affirm(),"Yes, as long as all the pieces remain in the same colmn.",Yiyan,5,5,Tianyi,,0-15-0-0-0-7-0-0-0-5-0-0-0-3-0-0
+646,60,9,"Same, Confirm(User_ID=1, RemovePiece(1,1))","For the same board, would it still be a win if I remove the piece on the second row?",NotSure(),"Maybe not, but I am not quite sure.",Yiyan,5,5,Tianyi,,0-15-0-0-0-7-0-0-0-5-0-0-0-3-0-0
+646,60,10,Finish(),Thank you very much. I learned a lot today.,Finish,You are welcome. Feel free to ask me if you have any questions.,Yiyan,5,5,Tianyi,,0-15-0-0-0-7-0-0-0-5-0-0-0-3-0-0

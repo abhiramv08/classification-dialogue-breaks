@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+383,50,0,Start(),"Hellow, can you tell me how to play Quarto?",Start,"Sure, what do you want to know?",Tianyi,5,4,John,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+383,50,1,RequestNewWinCondition(),Can you give me an example of win?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,John,,14-0-0-0-0-13-0-0-0-0-12-0-0-0-0-10
+383,50,2,"Same, Confirm(User_ID=1, Hollowness)","In this case, it is a win because some pieces are solid?",Negate(),"No, it is not.",Tianyi,4,4,John,,14-0-0-0-0-13-0-0-0-0-12-0-0-0-0-10
+383,50,3,"Same, Confirm(User_ID=1, AddPiece(1,1))","And, if I add a piece at the second column of the second row, can it still be a win?",NotSure(),"Sorry, I don't know whether you are right.",Tianyi,5,5,John,,14-0-0-0-0-13-0-0-0-0-12-0-0-0-0-10
+383,50,4,"Same, Confirm(User_ID=1, RemovePiece(2,1))","What if I remove the piece at the second column, is it still a win?",NotSure(),I am not sure about that. Maybe you are right.,Tianyi,5,4,John,,14-0-0-0-0-13-0-0-0-0-12-0-0-0-0-10
+383,50,5,"Same, Confirm(User_ID=1, Shape)",Is that a win because some piece have the same shape?,Negate(),"No, it is not the reason.",Tianyi,5,4,John,,14-0-0-0-0-13-0-0-0-0-12-0-0-0-0-10
+383,50,6,"Same, Confirm(User_ID=1, Quantity)","So, it wins because there are 4 pieces on the board?",NotSure(),I am not sure about this.,Tianyi,5,5,John,,14-0-0-0-0-13-0-0-0-0-12-0-0-0-0-10
+383,50,7,"Same, Confirm(User_ID=1, Height)",Is it wins because all pieces are tall?,Affirm(),"Yes, that's it.",Tianyi,5,4,John,,14-0-0-0-0-13-0-0-0-0-12-0-0-0-0-10
+383,50,8,"Same, Confirm(User_ID=1, Color)","And, is it wins because some pieces have the same color?",NotSure(),I am uncertain about this.,Tianyi,5,4,John,"not natural English to say ""is it wins"", should be singular ""a win""",14-0-0-0-0-13-0-0-0-0-12-0-0-0-0-10
+383,50,9,"Same, Confirm(User_ID=1, Shape)",Is it a win here because some pieces have the same shape?,Negate(),"No, it is not.",Tianyi,5,5,John,,14-0-0-0-0-13-0-0-0-0-12-0-0-0-0-10
+383,50,10,RequestNewWinCondition(),Can you show me another example of win?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,John,,0-0-9-0-0-0-13-0-0-0-10-0-0-0-16-0
+383,50,11,"Context Switch, RequestOtherPlayers()","In the first win, can someone take actions to prevent the win?",Inform([]),"No, there is nothing he can do.",Tianyi,5,4,John,"I'd change it to be ""he/she"" maybe instead of just he",14-0-0-0-0-13-0-0-0-0-12-0-0-0-0-10
+383,50,12,"Same, Confirm(User_ID=1, Shape)","And, it the shapes of the pieces here the reason why it is a win?",Negate(),"No, the win is not related to the shapes.",Tianyi,5,4,John,,14-0-0-0-0-13-0-0-0-0-12-0-0-0-0-10
+383,50,13,"Context Switch, Confirm(User_ID=1, RemovePiece(0,2))","In the second win, if I remove the piece at the first row, can it still be a win?",Negate(),"No, it will no longer be a win.",Tianyi,5,5,John,,0-0-9-0-0-0-13-0-0-0-10-0-0-0-16-0
+383,50,14,"Context Switch, Confirm(User_ID=1, Height)","In the first win, is it a win because all pieces are tall?",Affirm(),"Yeah, that is the reason.",Tianyi,5,5,John,,14-0-0-0-0-13-0-0-0-0-12-0-0-0-0-10
+383,50,15,Finish(),"Thanks, I think I am the master of the Quarto now.",Finish,You are welcome.,Tianyi,5,5,John,,14-0-0-0-0-13-0-0-0-0-12-0-0-0-0-10

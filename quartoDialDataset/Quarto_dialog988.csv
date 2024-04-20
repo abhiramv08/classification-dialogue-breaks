@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+988,60,0,Start(),"Hi, can you tell me how to play Quarto?",Start,"Sure, what do you want to know?",Tianyi,4,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+988,60,1,RequestNewWinCondition(),Can you show me a winning board?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,0-0-0-12-0-0-14-0-0-10-0-0-13-0-0-0
+988,60,2,RequestNewWinCondition(),Can you give me another example of win?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,2-0-0-0-5-0-0-0-10-0-0-0-1-0-0-0
+988,60,3,"Same, Request(User_ID=1, Rotate)","In this case, if I rotate some pieces, can it still be a win?","Inform([0, 45])","Yes, you can rotate all pieces 0 degrees to the rows and put them in the first row, or you can rotate all pieces 45 degrees to the rows and put them in the diagonal.",Tianyi,5,4,Ruijie,,2-0-0-0-5-0-0-0-10-0-0-0-1-0-0-0
+988,60,4,"Context Switch, Confirm(User_ID=1, Color)","For this board, it is wins because most pieces are blue?",NotSure(),"
+I cannot determine whether that is true.",Tianyi,5,5,Ruijie,,0-0-0-12-0-0-14-0-0-10-0-0-13-0-0-0
+988,60,5,"Context Switch, Confirm(User_ID=1, AddPiece(3,1))","In this win, if I put a piece at the second column of the top row, can it still be a win?",NotSure(),I have no idea about this. Maybe you are right.,Tianyi,5,4,Ruijie,,2-0-0-0-5-0-0-0-10-0-0-0-1-0-0-0
+988,60,6,"Context Switch, Confirm(User_ID=1, Shape)","At that board, is it a win because most pieces have the same shape.",Negate(),"No, the shape is not related to the win.",Tianyi,5,5,Ruijie,,0-0-0-12-0-0-14-0-0-10-0-0-13-0-0-0
+988,60,7,RequestNewWinCondition(),Can you show me another win pattern.,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,15-0-0-0-7-0-0-0-1-0-0-0-5-0-0-0
+988,60,8,RequestNewWinCondition(),Can you give me another new winning board.,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,0-4-0-0-0-2-0-0-0-5-0-0-0-3-0-0
+988,60,9,"Context Switch, Confirm(User_ID=1, Shape)","In this case, is it a win because some pieces have the same shape?",NotSure(),"
+Sorry, I am uncertain about this.",Tianyi,4,4,Ruijie,,15-0-0-0-7-0-0-0-1-0-0-0-5-0-0-0
+988,60,10,Finish(),"Thanks, I have learned a lot here.",Finish,You are welcome.,Tianyi,5,5,Ruijie,,15-0-0-0-7-0-0-0-1-0-0-0-5-0-0-0

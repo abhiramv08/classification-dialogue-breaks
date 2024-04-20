@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+7,100,0,Start(),Can you teach me to play Quarto?,Start,Sure!,Daniel,5,5,Anthony,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+7,100,1,RequestNewWinCondition(),Can you show me a board where I win?,Inform(),Assume you demonstrate this win condition,Daniel,5,5,Anthony,,0-0-0-0-0-0-0-0-0-0-0-0-5-6-7-15
+7,100,2,RequestNewWinCondition(),Can I get another one please?,Inform(),Assume you demonstrate this win condition,Daniel,5,5,Anthony,,7-0-0-0-13-0-0-0-14-0-0-0-5-0-0-0
+7,100,3,RequestNewWinCondition(),One more please?,Inform(),Assume you demonstrate this win condition,Daniel,5,5,Anthony,,0-0-0-0-0-0-0-0-0-0-0-0-13-2-6-10
+7,100,4,"Same , Confirm(User_ID=1, Consistency)",Is this a win because of a consistent element?,Affirm(),Yes,Daniel,5,4,Anthony,,0-0-0-0-0-0-0-0-0-0-0-0-13-2-6-10
+7,100,5,RequestNewWinCondition(),Can I see another win please?,Inform(),Assume you demonstrate this win condition,Daniel,5,5,Anthony,,0-0-0-7-0-0-0-3-0-0-0-16-0-0-0-8
+7,100,6,"Context Switch, Confirm(User_ID=1, Shape)",Is this a win because of the shape of the pieces?,Affirm(),Yes,Daniel,5,4,Anthony,,7-0-0-0-13-0-0-0-14-0-0-0-5-0-0-0
+7,100,7,"Same, Request(User_ID=1, Translate)",Where can I move these pieces and still have a win?,"Inform(['col1', 'col2', 'col3'])",Any other column,Daniel,5,5,Anthony,,7-0-0-0-13-0-0-0-14-0-0-0-5-0-0-0
+7,100,8,"Same , Confirm(User_ID=1, Shape)",Is this a win because of the shape of the pieces?,Affirm(),Yes,Daniel,5,4,Anthony,"Again, this is the second time for the same question",7-0-0-0-13-0-0-0-14-0-0-0-5-0-0-0
+7,100,9,"Same , Confirm(User_ID=1, Shape)",Is this a win because of the shape of the pieces?,Affirm(),"Yes, I just told you that.",Daniel,5,5,Anthony,"I like ""I just told you that""",7-0-0-0-13-0-0-0-14-0-0-0-5-0-0-0
+7,100,10,"Same , Confirm(User_ID=1, Color)",Is this a win because of the color of the pieces?,Negate(),No,Daniel,5,4,Anthony,,7-0-0-0-13-0-0-0-14-0-0-0-5-0-0-0
+7,100,11,"Context Switch, Confirm(User_ID=1, Translate('col1'))",Is this still a win if I move the pieces to the second column?,Affirm,Yes,Daniel,5,4,Anthony,,0-0-0-7-0-0-0-3-0-0-0-16-0-0-0-8
+7,100,12,RequestNewWinCondition(),Can I see another win please?,Inform(),Assume you demonstrate this win condition,Daniel,5,5,Anthony,,16-0-0-0-0-15-0-0-0-0-5-0-0-0-0-8
+7,100,13,"Context Switch, Confirm(User_ID=1, Height)",Is this a win because of the height of the pieces?,Negate(),No,Daniel,5,4,Anthony,,0-0-0-0-0-0-0-0-0-0-0-0-13-2-6-10
+7,100,14,"Context Switch, Confirm(User_ID=1, Shape)",Is this a win because of the shapes?,Affirm(),Yes,Daniel,5,4,Anthony,,16-0-0-0-0-15-0-0-0-0-5-0-0-0-0-8
+7,100,15,Finish(),Thank you!,Finish,No problem!,Daniel,5,5,Anthony,,16-0-0-0-0-15-0-0-0-0-5-0-0-0-0-8

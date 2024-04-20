@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+877,60,0,Start(),Hi can you teach me Quarto?,Start,Sure thing. ,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+877,60,1,RequestNewWinCondition(),Please show me a win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-15-0-0-0-8-0-0-0-16-0-0-0-14
+877,60,2,"Same, Confirm(User_ID=1, Hollowness)",Is this one a win because of the hollowness of the pieces?,Negate(),"No, one piece is solid so hollowness is not why this is a win. ",Anthony,5,5,Yiyen,,0-0-0-15-0-0-0-8-0-0-0-16-0-0-0-14
+877,60,3,RequestNewWinCondition(),Can I have another win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,7-0-0-0-0-9-0-0-0-0-5-0-0-0-0-1
+877,60,4,RequestNewWinCondition(),Could I see one more win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-15-0-0-0-12-0-0-0-10-0-0-0-14-0
+877,60,5,"Same, Confirm(User_ID=1, Hollowness)",Is this board a win due to the hollowness of the pieces?,Negate(),"No, for that to be the case all the pieces need to be the same consistency. ",Anthony,5,5,Yiyen,,0-0-15-0-0-0-12-0-0-0-10-0-0-0-14-0
+877,60,6,"Same, Request(User_ID=1, Translate)",How can I shift these pieces while keeping this a win?,"Inform(['col1', 'col3'])",You could move them to columns 1 or 3. ,Anthony,5,4,Yiyen,,0-0-15-0-0-0-12-0-0-0-10-0-0-0-14-0
+877,60,7,"Context Switch, Confirm(User_ID=1, Height)","Looking back to this board, is this a win because of the height of the pieces?",Negate(),"No, that is not why.",Anthony,5,5,Yiyen,,0-0-0-15-0-0-0-8-0-0-0-16-0-0-0-14
+877,60,8,"Context Switch, RequestOtherPlayers()","Switching back to this board, how could another player affect this win?",Inform([]),They cannot do anything. ,Anthony,5,4,Yiyen,,7-0-0-0-0-9-0-0-0-0-5-0-0-0-0-1
+877,60,9,"Same, Confirm(User_ID=1, Quantity)",Is this board a win because of the number of pieces?,NotSure(),I don't know for certain.,Anthony,5,5,Yiyen,,7-0-0-0-0-9-0-0-0-0-5-0-0-0-0-1
+877,60,10,Finish(),"That's enough for now, thanks.",Finish,"Of course, bye.",Anthony,5,5,Yiyen,,7-0-0-0-0-9-0-0-0-0-5-0-0-0-0-1

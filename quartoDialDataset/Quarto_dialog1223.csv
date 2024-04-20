@@ -1,0 +1,11 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+1223,60,0,Start(),"Hi, could you teach me how to play Quarto?",Start,"Sure, let's get started!",Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+1223,60,1,RequestNewWinCondition(),Could you show me a win first?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,15-0-0-0-0-3-0-0-0-0-5-0-0-0-0-7
+1223,60,2,RequestNewWinCondition(),Is there any other way to win?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,8-0-0-0-0-2-0-0-0-0-1-0-0-0-0-4
+1223,60,3,RequestNewWinCondition(),Could you show me another winning board?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-12-11-15-3
+1223,60,4,"Same, Confirm(User_ID=1, Translate([1, 0]))",And is it still a win if I shift the pieces to the second row?,Affirm(),"Yes, it is still a win.",Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-12-11-15-3
+1223,60,5,"Context Switch, Confirm(User_ID=1, RemovePiece(2,1))","Switching to this board, is it still a win if I remove the triangular piece?",NotSure(),"Sorry, I am not sure about it.",Shaobo,5,4,John,,15-0-0-0-0-3-0-0-0-0-5-0-0-0-0-7
+1223,60,6,"Context Switch, Confirm(User_ID=1, AddPiece(1,1))","Switching to this board, is it still a win if I add a piece on the second row and the second column?",Affirm(),"Yes, it is still a win.",Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-12-11-15-3
+1223,60,7,RequestNewWinCondition(),Could you show me one more winning board?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-0-0-12-0-0-10-0-0-1-0-0-3-0-0-0
+1223,60,8,"Context Switch, Confirm(User_ID=1, Rotate(90))","Switching to this board, is it still a win if I rotate the pieces to the first column?",Affirm(),"Yes, it is still a win.",Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-12-11-15-3
+1223,60,9,Finish(),Thanks for the help! I have learned a lot!,Finish,You are welcome!,Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-12-11-15-3

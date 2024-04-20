@@ -1,0 +1,18 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+1245,60,0,Start(),"Hi, could you teach me how to play Quarto?",Start,"Sure, let's get started!",Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+1245,60,1,RequestNewWinCondition(),Could you show me a win first?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,5-0-0-0-13-0-0-0-7-0-0-0-3-0-0-0
+1245,60,2,"Same, Confirm(User_ID=1, Color)",Is it a win because of the color of the pieces?,NotSure(),I think so but I am not very sure.,Shaobo,3,5,John,,5-0-0-0-13-0-0-0-7-0-0-0-3-0-0-0
+1245,60,3,"Same, Confirm(User_ID=1, Height)",Or is it a win because of the height of the pieces?,NotSure(),"Sorry, I am not sure about it.",Shaobo,5,4,John,,5-0-0-0-13-0-0-0-7-0-0-0-3-0-0-0
+1245,60,4,RequestNewWinCondition(),Is there any other way to win?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-0-0-12-0-0-3-0-0-11-0-0-8-0-0-0
+1245,60,5,"Context Switch, Confirm(User_ID=1, RemovePiece(0,0))","Switching to this board, is it still a win if I remove the bottom piece?",Negate(),"No, you need at least four pieces for a win.",Shaobo,5,5,John,,5-0-0-0-13-0-0-0-7-0-0-0-3-0-0-0
+1245,60,6,"Context Switch, Request(User_ID=1, Rotate)","Switching to this board, how could I rotate the pieces and still keep the win?",Inform([90]),You could rotate them to the leftmost column.,Shaobo,5,5,John,,0-0-0-12-0-0-3-0-0-11-0-0-8-0-0-0
+1245,60,7,RequestNewWinCondition(),Could you show me one more winning board?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,5-0-0-0-0-15-0-0-0-0-14-0-0-0-0-6
+1245,60,8,"Context Switch, Request(User_ID=1, Rotate)","Switching to this board, how could I rotate the pieces and still keep the win?","Inform([0, 45])",You could rotate them to the bottom row or the diagonal.,Shaobo,5,5,John,,5-0-0-0-13-0-0-0-7-0-0-0-3-0-0-0
+1245,60,9,RequestNewWinCondition(),Could you show me one more winning board?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-0-0-2-0-0-0-13-0-0-0-6-0-0-0-1
+1245,60,10,RequestNewWinCondition(),"Is there any other way to win?
+",Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-13-11-9-10
+1245,60,11,"Same, Confirm(User_ID=1, Rotate(90))",And is it still a win if I rotate the pieces to the first column?,Affirm(),"Yes, it is still a win.",Shaobo,5,4,John,,0-0-0-0-0-0-0-0-0-0-0-0-13-11-9-10
+1245,60,12,"Context Switch, Confirm(User_ID=1, Color)","Switching to this board, is it a win because of the color of the pieces?",Negate(),"No, it is a win because all pieces are solid.",Shaobo,5,5,John,,0-0-0-2-0-0-0-13-0-0-0-6-0-0-0-1
+1245,60,13,RequestNewWinCondition(),Could you show me one more winning board?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-0-0-16-0-0-15-0-0-12-0-0-3-0-0-0
+1245,60,14,"Context Switch, Confirm(User_ID=1, Color)","Switching to this board, is it a win because of the color of the pieces?",Affirm(),"Yes, you got it!",Shaobo,5,5,John,,5-0-0-0-13-0-0-0-7-0-0-0-3-0-0-0
+1245,60,15,Finish(),Thanks for the help! I have learned a lot!,Finish,You are welcome!,Shaobo,5,5,John,,5-0-0-0-13-0-0-0-7-0-0-0-3-0-0-0

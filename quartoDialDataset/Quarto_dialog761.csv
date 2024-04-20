@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+761,60,0,Start(),"Hey I really want to learn playing Quarto, can you teach me?",Start,"Definately.
+",Derek,4,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+761,60,1,RequestNewWinCondition(),Can you show me a win condition to start?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,7-0-0-0-0-4-0-0-0-0-12-0-0-0-0-11
+761,60,2,"Same, Confirm(User_ID=1, Color)",Is that a win because the color pattern of all pieces?,Negate(),No. The color of them are not identical. ,Derek,5,5,Shaobo,,7-0-0-0-0-4-0-0-0-0-12-0-0-0-0-11
+761,60,3,"Same, RequestOtherPlayers()",How could another player undo this win?,Inform([]),There is nothing another player could do to prevent this win.,Derek,5,5,Shaobo,,7-0-0-0-0-4-0-0-0-0-12-0-0-0-0-11
+761,60,4,RequestNewWinCondition(),Can you show me one more win condition?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-10-0-0-14-0-0-15-0-0-11-0-0-0
+761,60,5,"Context Switch, Confirm(User_ID=1, Shape)","Go back to this win condition, is that a win because the shape pattern of all pieces?",Negate(),"No, the shape of all pieces does not make it a win.",Derek,4,5,Shaobo,,7-0-0-0-0-4-0-0-0-0-12-0-0-0-0-11
+761,60,6,"Context Switch, Confirm(User_ID=1, Color)","Switching to this board, is that a win because the color pattern of all pieces?",NotSure(),Sorry I am not sure about that.,Derek,5,4,Shaobo,,0-0-0-10-0-0-14-0-0-15-0-0-11-0-0-0
+761,60,7,RequestNewWinCondition(),Please show me one more winning board.,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,7-0-0-0-0-14-0-0-0-0-15-0-0-0-0-16
+761,60,8,"Context Switch, RequestOtherPlayers()","Moving to this winning board, how could another player undo this win?",Inform([]),There is nothing another player could do to prevent this win.,Derek,5,5,Shaobo,,7-0-0-0-0-4-0-0-0-0-12-0-0-0-0-11
+761,60,9,"Context Switch, Confirm(User_ID=1, Hollowness)","Go back to this win again, is that a win because the hollowness pattern of all pieces?",NotSure(),Sorry I am not sure about that as well.,Derek,5,4,Shaobo,,0-0-0-10-0-0-14-0-0-15-0-0-11-0-0-0
+761,60,10,Finish(),Thank you! Bye!,Finish,Bye!,Derek,5,5,Shaobo,,0-0-0-10-0-0-14-0-0-15-0-0-11-0-0-0

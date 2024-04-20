@@ -1,0 +1,15 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+756,60,0,Start(),Can you teach me how to play Quarto?,Start,Sure!,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+756,60,1,RequestNewWinCondition(),Can you show me a win condition to start?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-13-0-0-0-6-0-0-0-1-0-0-0-9
+756,60,2,RequestNewWinCondition(),Please show me one more win condition.,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-10-0-0-13-0-0-16-0-0-14-0-0-0
+756,60,3,"Same, Confirm(User_ID=1, Hollowness)",Is that a win because the hollowness pattern of all pieces?,NotSure(),Sorry I am not sure about that.,Derek,5,5,Shaobo,,0-0-0-10-0-0-13-0-0-16-0-0-14-0-0-0
+756,60,4,"Context Switch, Request(User_ID=1, Translate)",How could I shift these pieces?,"Inform(['col1', 'col2'])",You can shift them to the left by one or two?,Derek,4,5,Shaobo,,0-0-0-13-0-0-0-6-0-0-0-1-0-0-0-9
+756,60,5,"Context Switch, Confirm(User_ID=1, Quantity)","Moving to this win, is that a win because there are four pieces in the board?",NotSure(),It really depends how you place these four pieces. I can't answer ths question.,Derek,5,5,Shaobo,,0-0-0-10-0-0-13-0-0-16-0-0-14-0-0-0
+756,60,6,"Same, Request(User_ID=1, Rotate)",How could I line these pieces in different angle and still win?,Inform([90]),You can place them vertically.,Derek,5,5,Shaobo,,0-0-0-10-0-0-13-0-0-16-0-0-14-0-0-0
+756,60,7,RequestNewWinCondition(),Please show me one more win condition.,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,9-0-0-0-0-2-0-0-0-0-14-0-0-0-0-5
+756,60,8,"Context Switch, Confirm(User_ID=1, Hollowness)",Is the hollowness of pieces important for this win?,Negate(),No. ,Derek,5,5,Shaobo,,0-0-0-10-0-0-13-0-0-16-0-0-14-0-0-0
+756,60,9,"Context Switch, Confirm(User_ID=1, RemovePiece(3,0))","Let's go back to this board, can I remove the top left piece and keep winning?",Negate(),No. You will break the win if you do so.,Derek,5,5,Shaobo,,9-0-0-0-0-2-0-0-0-0-14-0-0-0-0-5
+756,60,10,RequestNewWinCondition(),Please show me one more win condition.,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,16-0-0-0-7-0-0-0-14-0-0-0-15-0-0-0
+756,60,11,"Context Switch, Request(User_ID=1, Rotate)","For this winning baord, how can I line all pieces in different angle and keep winning?",Inform([90]),You can line them vertically.,Derek,5,5,Shaobo,,0-0-0-10-0-0-13-0-0-16-0-0-14-0-0-0
+756,60,12,"Same, Confirm(User_ID=1, Height)",Is the height of these pieces important for the win?,NotSure(),Sorry I am not sure about that.,Derek,5,5,Shaobo,,0-0-0-10-0-0-13-0-0-16-0-0-14-0-0-0
+756,60,13,Finish(),Thanks for teaching today! Bye!,Finish,You are welcome.,Derek,5,5,Shaobo,,0-0-0-10-0-0-13-0-0-16-0-0-14-0-0-0

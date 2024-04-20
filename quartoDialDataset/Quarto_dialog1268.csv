@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+1268,60,0,Start(),"Hi, could you please tell me how to play Quarto?",Start,Sure!,Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+1268,60,1,RequestNewWinCondition(),Could you show me a win first?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-10-4-14-8
+1268,60,2,RequestNewWinCondition(),Could you show me another winning board?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-10-9-14-1
+1268,60,3,"Same, Confirm(User_ID=1, Rotate(90))",And is it still a win if I rotate the pieces to the first column?,Affirm(),"Yes, it is still a win.",Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-10-9-14-1
+1268,60,4,RequestNewWinCondition(),Could you show me another winning board?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-0-0-4-0-0-10-0-0-3-0-0-9-0-0-0
+1268,60,5,"Same, Confirm(User_ID=1, Hollowness)",And is it a win because of the hollowness of the pieces?,Negate(),"No, it is a win because all pieces have the same shape.",Shaobo,5,5,John,,0-0-0-4-0-0-10-0-0-3-0-0-9-0-0-0
+1268,60,6,"Context Switch, Confirm(User_ID=1, Color)","Switching to this board, is it a win because of the color of the pieces?",Affirm(),"Yes, you got it!",Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-10-4-14-8
+1268,60,7,"Same, Confirm(User_ID=1, Color)",And is it a win because of the color of the pieces?,Affirm(),"Yes, you got it!",Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-10-4-14-8
+1268,60,8,"Context Switch, Confirm(User_ID=1, Height)","Switching to this board, is it a win because of the height of the pieces?",Negate(),"No, it is a win because all pieces are solid.",Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-10-9-14-1
+1268,60,9,"Context Switch, Request(User_ID=1, Rotate)","Switching to this board, how could I rotate the pieces and still keep the win?","Inform([45, 90])",You could rotate them to the first column or the diagonal.,Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-10-4-14-8
+1268,60,10,"Context Switch, Confirm(User_ID=1, Hollowness)","Switching to this board, is it a win because of the hollowness of the pieces?",Affirm(),"Yes, you got it!",Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-10-9-14-1
+1268,60,11,"Context Switch, Confirm(User_ID=1, Color)","Switching to this board, is it a win because of the color of the pieces?",NotSure(),I don't think so but I am not sure.,Shaobo,4,5,John,,0-0-0-4-0-0-10-0-0-3-0-0-9-0-0-0
+1268,60,12,"Context Switch, Confirm(User_ID=1, Color)","Switching to this board, is it a win because of the color of the pieces?",NotSure(),I don't think so but I am not sure.,Shaobo,4,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-10-9-14-1
+1268,60,13,"Same, Request(User_ID=1, Rotate)",And how could I rotate the pieces and still keep the win?,"Inform([90, 45])",You could rotate them to the first column or the diagonal.,Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-10-9-14-1
+1268,60,14,"Context Switch, Confirm(User_ID=1, RemovePiece(0,0))","Switching to this board, is it still a win if I remove the leftmost piece?",NotSure(),I don't think so but I am not sure.,Shaobo,4,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-10-4-14-8
+1268,60,15,Finish(),Thanks for the help! I have learned a lot!,Finish,You are welcome!,Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-10-4-14-8

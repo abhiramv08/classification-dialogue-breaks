@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+144,100,0,Start(),Can you show me some ways I can play Quarto and win?,Start,"Sure thing, let's get started.",Dave,5,5,Jason,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+144,100,1,RequestNewWinCondition(),Can you show me an example of a win?,Inform(),Assume you demonstrate this win condition,Dave,5,5,Jason,,0-15-0-0-0-16-0-0-0-6-0-0-0-8-0-0
+144,100,2,RequestNewWinCondition(),Can you show me a different example?,Inform(),Assume you demonstrate this win condition,Dave,5,4,Jason,,0-0-0-0-0-0-0-0-0-0-0-0-8-7-2-1
+144,100,3,"Same , Confirm(User_ID=1, AddPiece(3,3))",Would this still count if I add a piece in the top right corner?,Affirm(),"Yeah, it would!",Dave,5,5,Jason,,0-0-0-0-0-0-0-0-0-0-0-0-8-7-2-1
+144,100,4,"Same, Confirm(User_ID=1, Height)",Does this count because all the pieces share the same height?,Affirm(),That's right!,Dave,5,4,Jason,Awkwardly phrased question,0-0-0-0-0-0-0-0-0-0-0-0-8-7-2-1
+144,100,5,"Same, Confirm(User_ID=1, Height)",Are you sure about that?,Affirm(),Positive!,Dave,5,5,Jason,,0-0-0-0-0-0-0-0-0-0-0-0-8-7-2-1
+144,100,6,RequestNewWinCondition(),Can you show me a new example of a win?,Inform(),Assume you demonstrate this win condition,Dave,5,5,Jason,,0-7-0-0-0-16-0-0-0-8-0-0-0-12-0-0
+144,100,7,"Context Switch, Request(User_ID=1, Translate)","Back to the previous example for a moment, can I place the bottom row of pieces somewhere else and still have a win?","Inform(['row1', 'row2', 'row3'])",You can place those pieces along any of the three remaining empty rows and still come out with a win.,Dave,5,4,Jason,Verbose question,0-0-0-0-0-0-0-0-0-0-0-0-8-7-2-1
+144,100,8,"Context Switch, Confirm(User_ID=1, AddPiece(2,0))",Can I add a piece to the left of the tall hollow blue circle and still get a win?,Affirm(),"Yeah, that's right.",Dave,5,5,Jason,,0-15-0-0-0-16-0-0-0-6-0-0-0-8-0-0
+144,100,9,"Same , Confirm(User_ID=1, Color)",Does that count because of the color of the pieces?,Negate(),Not in that case it doesn't.,Dave,5,4,Jason,Awkward transition.,0-15-0-0-0-16-0-0-0-6-0-0-0-8-0-0
+144,100,10,"Same, RequestOtherPlayers()",Can you do anything to reverse the win there?,Inform([]),Not a thing!,Dave,5,5,Jason,,0-15-0-0-0-16-0-0-0-6-0-0-0-8-0-0
+144,100,11,RequestNewWinCondition(),Can you show me another example of a win?,Inform(),Assume you demonstrate this win condition,Dave,5,5,Jason,,0-0-0-0-0-0-0-0-0-0-0-0-6-2-16-8
+144,100,12,"Same, Request(User_ID=1, Translate)",Can I place the bottom row of pieces somewhere else and still come out with a win?,"Inform(['row1', 'row2', 'row3'])",You can place those pieces along any of the three remaining rows and still come out with a win.,Dave,5,5,Jason,,0-0-0-0-0-0-0-0-0-0-0-0-6-2-16-8
+144,100,13,"Context Switch, RequestOtherPlayers()",Can you do anything to reverse the win in the first example you showed me?,Inform([]),"There's nothing I can do, no.",Dave,5,5,Jason,,0-15-0-0-0-16-0-0-0-6-0-0-0-8-0-0
+144,100,14,RequestNewWinCondition(),Can you show me a new example?,Inform(),Assume you demonstrate this win condition,Dave,5,4,Jason,"Awkward question, example of what?",12-0-0-0-0-3-0-0-0-0-1-0-0-0-0-10
+144,100,15,Finish(),"Alright, I think I'm getting the hang of this. Thanks for your help.",Finish,Until next time!,Dave,5,5,Jason,,12-0-0-0-0-3-0-0-0-0-1-0-0-0-0-10

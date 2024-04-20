@@ -1,0 +1,15 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+1272,60,0,Start(),"Hi, do you have time to teach me how to play Quarto?",Start,Yes!,Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+1272,60,1,RequestNewWinCondition(),Could you show me a win first?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-0-2-0-0-0-5-0-0-0-8-0-0-0-7-0
+1272,60,2,"Same, Request(User_ID=1, Translate)",And how could I shift the pieces and still keep the win?,Inform(['col1']),You could shift them to the second left column.,Shaobo,5,4,John,,0-0-2-0-0-0-5-0-0-0-8-0-0-0-7-0
+1272,60,3,RequestNewWinCondition(),Is there any other way to win?,Inform,Assume you demonstrate this win condition,Shaobo,4,5,John,,0-0-0-7-0-0-3-0-0-8-0-0-12-0-0-0
+1272,60,4,"Context Switch, Confirm(User_ID=1, Height)","Switching to this board, is it a win because of the height of the pieces?",NotSure(),I think so but I am not very sure.,Shaobo,4,5,John,,0-0-2-0-0-0-5-0-0-0-8-0-0-0-7-0
+1272,60,5,RequestNewWinCondition(),Could you show me one more winning board?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-0-0-16-0-0-7-0-0-13-0-0-5-0-0-0
+1272,60,6,"Same, Confirm(User_ID=1, Height)",And is it a win because of the height of the pieces?,Negate(),"No, it is a win because all pieces have the same shape.",Shaobo,5,5,John,,0-0-0-16-0-0-7-0-0-13-0-0-5-0-0-0
+1272,60,7,"Context Switch, Confirm(User_ID=1, RemovePiece(2,2))","Switching to this board, is it still a win if I remove the green triangle?",NotSure(),I don't think so but I am not sure.,Shaobo,4,5,John,,0-0-0-7-0-0-3-0-0-8-0-0-12-0-0-0
+1272,60,8,"Context Switch, Confirm(User_ID=1, Quantity)","Switching to this board, does the number of pieces matter?",Affirm(),"Yes, you need at least four pieces for a win.",Shaobo,5,5,John,,0-0-2-0-0-0-5-0-0-0-8-0-0-0-7-0
+1272,60,9,"Context Switch, Confirm(User_ID=1, RemovePiece(3,3))","Switching to this board, is it still a win if I remove the top right piece?",Negate(),"No, you need at least four pieces for a win.",Shaobo,5,5,John,,0-0-0-7-0-0-3-0-0-8-0-0-12-0-0-0
+1272,60,10,"Context Switch, Confirm(User_ID=1, Height)","Switching to this board, is it a win because of the height of the pieces?",NotSure(),"Sorry, I am not sure about it.",Shaobo,5,4,John,,0-0-2-0-0-0-5-0-0-0-8-0-0-0-7-0
+1272,60,11,RequestNewWinCondition(),Could you show me one more winning board?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-0-3-0-0-0-9-0-0-0-13-0-0-0-1-0
+1272,60,12,RequestNewWinCondition(),I need one more winning board for a better understanding.,Inform,Assume you demonstrate this win condition,Shaobo,5,4,John,,16-0-0-0-0-5-0-0-0-0-13-0-0-0-0-15
+1272,60,13,Finish(),Thanks for the help! I have learned a lot!,Finish,You are welcome!,Shaobo,5,5,John,,16-0-0-0-0-5-0-0-0-0-13-0-0-0-0-15

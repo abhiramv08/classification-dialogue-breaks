@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+662,60,0,Start(),Hi! Can you teach me how to play Quarto?,Start,Why not! Let's do it.,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+662,60,1,RequestNewWinCondition(),Can you show me a win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-2-0-0-0-5-0-0-0-8-0-0-0-4
+662,60,2,"Same, Confirm(User_ID=1, Hollowness)",Is it a win because the hollowness of pieces?,NotSure(),I'm not sure about this.,Ruijie,5,5,Luke,,0-0-0-2-0-0-0-5-0-0-0-8-0-0-0-4
+662,60,3,"Same, Request(User_ID=1, Translate)",Can I put the pieces somewhere else?,"Inform(['col1', 'col2'])","Yes, you can put them on the first or the second column.",Ruijie,3,5,Luke,,0-0-0-2-0-0-0-5-0-0-0-8-0-0-0-4
+662,60,4,"Same, Confirm(User_ID=1, RemovePiece(3,3))","Can I remove the piece on the fourth row, the fourth column?",Negate(),"No, that will break the win.",Ruijie,5,4,Luke,,0-0-0-2-0-0-0-5-0-0-0-8-0-0-0-4
+662,60,5,RequestNewWinCondition(),Can you show me a new win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-7-0-0-8-0-0-16-0-0-4-0-0-0
+662,60,6,"Same, Request(User_ID=1, Rotate)",Can I rotate the pieces by some degrees and maintain the win?,Inform([90]),"Yes, you can rotate them by ninety degrees.",Ruijie,4,5,Luke,,0-0-0-7-0-0-8-0-0-16-0-0-4-0-0-0
+662,60,7,"Same, Confirm(User_ID=1, Rotate(90))",Can I rotate the pieces by ninety degrees and maintain the win?,NotSure(),"Well, I'm actually not sure.",Ruijie,4,5,Luke,,0-0-0-7-0-0-8-0-0-16-0-0-4-0-0-0
+662,60,8,"Same, Confirm(User_ID=1, AddPiece(0,2))","Can I add one more piece on the second row, the third column?",Affirm(),"Yes, you can do that.",Ruijie,5,5,Luke,,0-0-0-7-0-0-8-0-0-16-0-0-4-0-0-0
+662,60,9,"Same, Request(User_ID=1, Rotate)",Can I rotate the pieces by some degrees and maintain the win?,Inform([90]),"Sure, just rotate them by ninety degrees.",Ruijie,4,5,Luke,,0-0-0-7-0-0-8-0-0-16-0-0-4-0-0-0
+662,60,10,Finish(),Thank you so much! I've learned enough.,Finish,You're welcome!,Ruijie,5,5,Luke,,0-0-0-7-0-0-8-0-0-16-0-0-4-0-0-0

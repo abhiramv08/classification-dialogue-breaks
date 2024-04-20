@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+891,60,0,Start(),"Hi, will you show me how to play Quarto?",Start,"Yes, I will.",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+891,60,1,RequestNewWinCondition(),Please show me a win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,14-0-0-0-0-10-0-0-0-0-2-0-0-0-0-13
+891,60,2,"Same, Confirm(User_ID=1, RemovePiece(1,2))",Would this remain a win if I removed this piece?,NotSure(),I'm not sure.,Anthony,3,4,Yiyen,,14-0-0-0-0-10-0-0-0-0-2-0-0-0-0-13
+891,60,3,"Same, Confirm(User_ID=1, Color)",Is this a win condition because of the color of the pieces?,NotSure(),I'm not sure about that either.,Anthony,5,5,Yiyen,,14-0-0-0-0-10-0-0-0-0-2-0-0-0-0-13
+891,60,4,"Same, RequestOtherPlayers()",How can other players affect this win?,Inform([]),They cannot.,Anthony,5,5,Yiyen,,14-0-0-0-0-10-0-0-0-0-2-0-0-0-0-13
+891,60,5,"Same, Confirm(User_ID=1, Hollowness)",Is this board a win because of the hollowness of the pieces?,Affirm(),"Yes, they are all solid. ",Anthony,5,5,Yiyen,,14-0-0-0-0-10-0-0-0-0-2-0-0-0-0-13
+891,60,6,"Same, Request(User_ID=1, Rotate)",How could I rotate these pieces?,Inform([90]),One thing you could do is move them to be vertical in a column. ,Anthony,5,5,Yiyen,,14-0-0-0-0-10-0-0-0-0-2-0-0-0-0-13
+891,60,7,RequestNewWinCondition(),Please show me one more win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-11-0-0-3-0-0-13-0-0-7-0-0-0
+891,60,8,"Same, Confirm(User_ID=1, Height)",Is this a win because of the height of the pieces?,Negate(),"No, height has nothing to do with this win.",Anthony,5,5,Yiyen,,0-0-0-11-0-0-3-0-0-13-0-0-7-0-0-0
+891,60,9,"Same, Confirm(User_ID=1, Height)",Is this a win because of the pieces' height?,Negate(),"No, I just told you that.",Anthony,5,5,Yiyen,,0-0-0-11-0-0-3-0-0-13-0-0-7-0-0-0
+891,60,10,Finish(),Thanks so much!,Finish,Of course! Bye!,Anthony,5,5,Yiyen,,0-0-0-11-0-0-3-0-0-13-0-0-7-0-0-0

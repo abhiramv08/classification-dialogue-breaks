@@ -1,0 +1,15 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+932,60,0,Start(),"Hello, will you show me how to play Quarto?",Start,"Yeah, I can do that, sure. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+932,60,1,RequestNewWinCondition(),Let's start with a win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-10-4-12-14
+932,60,2,"Same, Confirm(User_ID=1, Quantity)",Is this a win because of the number of pieces?,NotSure(),I'm not sure of the answer to that. ,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-10-4-12-14
+932,60,3,"Same, Request(User_ID=1, Translate)",How could I shift the pieces around?,"Inform(['row1', 'row2', 'row3'])","You could move them up to rows 1, 2, or 3. ",Anthony,5,4,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-10-4-12-14
+932,60,4,"Same, Confirm(User_ID=1, Color)",Is this a win because of the color of the pieces?,Affirm(),"Yes, they are all blue.",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-10-4-12-14
+932,60,5,RequestNewWinCondition(),Please shoe me a new win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,10-0-0-0-0-4-0-0-0-0-9-0-0-0-0-11
+932,60,6,RequestNewWinCondition(),Please show me one more win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-14-0-0-16-0-0-12-0-0-11-0-0-0
+932,60,7,"Context Switch, Confirm(User_ID=1, Shape)","Looking back at this board, is this a win because of the shape of the pieces?",Affirm(),"Yes, they are all triangles.",Anthony,5,5,Yiyen,,10-0-0-0-0-4-0-0-0-0-9-0-0-0-0-11
+932,60,8,RequestNewWinCondition(),Please show me another win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,10-0-0-0-0-6-0-0-0-0-14-0-0-0-0-4
+932,60,9,"Context Switch, Confirm(User_ID=1, Rotate(90))","Looking back to this board, could I rotate these pieces to be vertical?",Affirm(),"Yes, this would remain a win. ",Anthony,4,5,Yiyen,,10-0-0-0-0-4-0-0-0-0-9-0-0-0-0-11
+932,60,10,RequestNewWinCondition(),Please show me a new win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-6-4-2-3
+932,60,11,"Same, Request(User_ID=1, Rotate)",How could I rotate these pieces to maintain this win?,"Inform([45, 90])",You could lay the pieces out vertically or diagonally. ,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-6-4-2-3
+932,60,12,"Context Switch, Confirm(User_ID=1, Hollowness)","Switching over to this board, is this a win due to the pieces' hollowness?",Negate(),"No, they are not all the same consistency. ",Anthony,5,4,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-10-4-12-14
+932,60,13,Finish(),Thanks for all the help.,Finish,"No problem, robot.",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-10-4-12-14

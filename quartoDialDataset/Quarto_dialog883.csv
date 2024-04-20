@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+883,60,0,Start(),"Hi, would you mind showing me how to play Quarto?",Start,"Sure, that seems like a good time. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+883,60,1,RequestNewWinCondition(),Please show me the first win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,5-0-0-0-0-9-0-0-0-0-11-0-0-0-0-1
+883,60,2,"Same, Confirm(User_ID=1, RemovePiece(3,0))",Would this still be a win if I removed the piece here?,Negate(),"No, that piece cannot be removed.",Anthony,5,5,Yiyen,,5-0-0-0-0-9-0-0-0-0-11-0-0-0-0-1
+883,60,3,RequestNewWinCondition(),Please show me another win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-1-8-3-6
+883,60,4,"Same, Confirm(User_ID=1, Translate([3, 0]))",Is it okay if I shift the pieces over like this?,Affirm(),"Yes, the row the pieces are in doesn't affect the win.",Anthony,3,4,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-1-8-3-6
+883,60,5,RequestNewWinCondition(),Please show me another win.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-12-0-0-0-4-0-0-0-10-0-0-0-16-0
+883,60,6,"Context Switch, Confirm(User_ID=1, Translate([1, 0]))","Looking back to this board, could I shift the pieces up onw row?",Affirm(),"Yes, that's fine. ",Anthony,3,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-1-8-3-6
+883,60,7,"Context Switch, Confirm(User_ID=1, Height)","Let's look at this board, is this a win because of the height of the pieces?",Negate(),"They aren't all at the same height, so no.",Anthony,5,5,Yiyen,,0-0-12-0-0-0-4-0-0-0-10-0-0-0-16-0
+883,60,8,"Context Switch, Confirm(User_ID=1, Hollowness)","Looking at this board, is the hollowness of the pieces what makes this a win?",NotSure(),"I'm not sure, please ask something else. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-1-8-3-6
+883,60,9,"Same, Confirm(User_ID=1, Color)",Is this a win because of the color of the pieces?,Negate(),"No, they are not all the same color. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-1-8-3-6
+883,60,10,Finish(),Thanks! Have a nice day. ,Finish,You're welcome! You too!,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-1-8-3-6

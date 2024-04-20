@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+1045,60,0,Start(),"Hi, can you teach me how to play Quartos?",Start,"Sure, what do you want to know?",Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+1045,60,1,RequestNewWinCondition(),Can you give me an example of win?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,11-0-0-0-8-0-0-0-16-0-0-0-7-0-0-0
+1045,60,2,"Same, Confirm(User_ID=1, Quantity)","In this case, is it a win because there are four pieces on the board?",Affirm(),Yes.,Tianyi,5,5,Ruijie,,11-0-0-0-8-0-0-0-16-0-0-0-7-0-0-0
+1045,60,3,"Same, Confirm(User_ID=1, Quantity)","So, it wins because of the quantity of the pieces on the board.",Affirm(),"Yes, you are right.",Tianyi,5,5,Ruijie,,11-0-0-0-8-0-0-0-16-0-0-0-7-0-0-0
+1045,60,4,RequestNewWinCondition(),Can you show me another win?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-14-13-7-15
+1045,60,5,RequestNewWinCondition(),Can you give me a new win pattern?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,0-0-0-3-0-0-5-0-0-6-0-0-8-0-0-0
+1045,60,6,"Context Switch, Confirm(User_ID=1, Shape)","In that board, is it a win because of the shape of pieces?",Negate(),"No, that is not the reason.",Tianyi,5,4,Ruijie,,11-0-0-0-8-0-0-0-16-0-0-0-7-0-0-0
+1045,60,7,RequestNewWinCondition(),Can you show me another win example?,Inform,Assume you demonstrate this win condition,Tianyi,5,4,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-7-3-15-13
+1045,60,8,"Same, Confirm(User_ID=1, AddPiece(1,0))","In this board, if I add a piece at the first column of the second row, can it still be a win?",Affirm(),"Yes, it is still a win.",Tianyi,5,4,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-7-3-15-13
+1045,60,9,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Tianyi,4,5,Ruijie,,0-7-0-0-0-5-0-0-0-1-0-0-0-8-0-0
+1045,60,10,RequestNewWinCondition(),What else can be an win example?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,12-0-0-0-2-0-0-0-3-0-0-0-10-0-0-0
+1045,60,11,RequestNewWinCondition(),Can you show me the win in some other form?,Inform,Assume you demonstrate this win condition,Tianyi,5,4,Ruijie,,0-0-0-9-0-0-5-0-0-1-0-0-7-0-0-0
+1045,60,12,Finish(),"Thank you so much, I have learned a lot!",Finish,You are welcome.,Tianyi,5,5,Ruijie,,0-0-0-9-0-0-5-0-0-1-0-0-7-0-0-0

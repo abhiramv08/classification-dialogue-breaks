@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+896,60,0,Start(),"Hi, would you please show me how to play Quarto?",Start,"Sure, let's begin. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+896,60,1,RequestNewWinCondition(),Please show me a win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,1-0-0-0-0-7-0-0-0-0-2-0-0-0-0-4
+896,60,2,"Same, Confirm(User_ID=1, Hollowness)",Is this win based on the hollowness of the pieces?,NotSure(),I'm not sure.,Anthony,5,5,Yiyen,,1-0-0-0-0-7-0-0-0-0-2-0-0-0-0-4
+896,60,3,"Same, Confirm(User_ID=1, Hollowness)",Is this win based on the hollowness of the pieces?,Negate(),Okay now I'm sure that it is not. ,Anthony,5,5,Yiyen,,1-0-0-0-0-7-0-0-0-0-2-0-0-0-0-4
+896,60,4,RequestNewWinCondition(),Please let me see another win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-12-0-0-0-16-0-0-0-15-0-0-0-9-0-0
+896,60,5,"Same, Confirm(User_ID=1, Color)",Is this a win because of the color of the pieces?,Negate(),"No, the color is not why in this case.",Anthony,5,4,Yiyen,,0-12-0-0-0-16-0-0-0-15-0-0-0-9-0-0
+896,60,6,"Same, Confirm(User_ID=1, Shape)",Is this a win because of the shape of the pieces?,Negate(),"No, that's not why either. ",Anthony,5,5,Yiyen,,0-12-0-0-0-16-0-0-0-15-0-0-0-9-0-0
+896,60,7,RequestNewWinCondition(),Please show me another win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,3-0-0-0-0-5-0-0-0-0-7-0-0-0-0-9
+896,60,8,"Same, Confirm(User_ID=1, Height)",Is this a win because of the height of the pieces?,NotSure(),"Yes, or no I'm not sure. ",Anthony,5,4,Yiyen,,3-0-0-0-0-5-0-0-0-0-7-0-0-0-0-9
+896,60,9,"Context Switch, Confirm(User_ID=1, RemovePiece(3,1))","Looking at this board, could I remove this piece?",NotSure(),"I'm not sure about that either, sorry. ",Anthony,3,5,Yiyen,,0-12-0-0-0-16-0-0-0-15-0-0-0-9-0-0
+896,60,10,"Same, Confirm(User_ID=1, Shape)",Is this a win because of the various shapes that the pieces are?,Negate(),"No, they all have to be the same shape?",Anthony,5,5,Yiyen,,0-12-0-0-0-16-0-0-0-15-0-0-0-9-0-0
+896,60,11,"Context Switch, RequestOtherPlayers()","Looking back to this other win condition, how could another player undo it. ",Inform([]),They can't. This win condition is safe. ,Anthony,5,5,Yiyen,,1-0-0-0-0-7-0-0-0-0-2-0-0-0-0-4
+896,60,12,RequestNewWinCondition(),Please show me another win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-12-0-0-0-11-0-0-0-15-0-0-0-7-0-0
+896,60,13,"Same, Confirm(User_ID=1, Color)",Is this a win because of the color of the pieces?,Negate(),"No, that's not why at all.",Anthony,5,5,Yiyen,,0-12-0-0-0-11-0-0-0-15-0-0-0-7-0-0
+896,60,14,"Context Switch, Confirm(User_ID=1, Height)",Let's go to this previous board. Is it a win based on the height of the pieces?,NotSure(),I'm not sure enough to answer. ,Anthony,5,5,Yiyen,,0-12-0-0-0-16-0-0-0-15-0-0-0-9-0-0
+896,60,15,Finish(),Thanks for your time.,Finish,It was my pleasure. ,Anthony,5,5,Yiyen,,0-12-0-0-0-16-0-0-0-15-0-0-0-9-0-0

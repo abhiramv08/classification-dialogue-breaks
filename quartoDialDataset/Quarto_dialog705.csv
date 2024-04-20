@@ -1,0 +1,22 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+705,60,0,Start(),Hey! Can you show me how to play Quarto?,Start,"Yes, let's begin!",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+705,60,1,RequestNewWinCondition(),Can you show me a win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-10-8-2-12
+705,60,2,"Same, Confirm(User_ID=1, Height)","For this board, is it a win because the pieces are of the same height?
+",Negate(),"No, that’s not the reason.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-10-8-2-12
+705,60,3,RequestNewWinCondition(),Can you give me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,13-0-0-0-0-7-0-0-0-0-8-0-0-0-0-16
+705,60,4,"Same, Confirm(User_ID=1, Height)","Is it a win because the pieces are of the same height?
+",NotSure(),"Well, I'm not sure.",Ruijie,5,5,Luke,,13-0-0-0-0-7-0-0-0-0-8-0-0-0-0-16
+705,60,5,"Same, Confirm(User_ID=1, Height)","Is it a win because the pieces are of the same height?
+",Negate(),"No, I don't think so.",Ruijie,5,5,Luke,,13-0-0-0-0-7-0-0-0-0-8-0-0-0-0-16
+705,60,6,RequestNewWinCondition(),Can you give me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-1-4-11-9
+705,60,7,"Context Switch, Confirm(User_ID=1, Height)","Switch to this board, is it a win because the pieces are of the same height?
+",Negate(),"No, that’s not the reason.",Ruijie,5,5,Luke,,13-0-0-0-0-7-0-0-0-0-8-0-0-0-0-16
+705,60,8,"Context Switch, Confirm(User_ID=1, Color)","Switch to this board, does the color of the pieces make it a win?
+",NotSure(),"Sorry, I don't know.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-1-4-11-9
+705,60,9,"Same, Confirm(User_ID=1, Shape)","Is it a win because the pieces are of the same shape?
+",Affirm(),That's right!,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-1-4-11-9
+705,60,10,"Context Switch, Confirm(User_ID=1, AddPiece(3,3))","Switch to this board, can I add one more piece on the fourth row, the fourth column?
+",Affirm(),"Sure, that's still a win.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-10-8-2-12
+705,60,11,"Context Switch, Request(User_ID=1, Translate)","Switch to this board,  can I put the pieces somewhere else and maintain a win?
+","Inform(['row1', 'row2', 'row3'])","Yes, you can put them on the first, the second, or the third row.",Ruijie,3,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-1-4-11-9
+705,60,12,Finish(),"Thank you so much, I've learned a lot!",Finish,You are welcome!,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-1-4-11-9

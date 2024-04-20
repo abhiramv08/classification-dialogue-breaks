@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+1278,60,0,Start(),"Hi, could you please tell me how to play Quarto?",Start,Sure!,Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+1278,60,1,RequestNewWinCondition(),Could you show me a win first?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-11-0-0-0-5-0-0-0-15-0-0-0-13-0-0
+1278,60,2,RequestNewWinCondition(),Could you show me another winning board?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-0-0-13-0-0-12-0-0-9-0-0-15-0-0-0
+1278,60,3,"Context Switch, Confirm(User_ID=1, Height)","Switching to this board, is it a win because of the height of the pieces?",Negate(),"No, it is a win because all pieces have the same color.",Shaobo,5,5,John,,0-11-0-0-0-5-0-0-0-15-0-0-0-13-0-0
+1278,60,4,RequestNewWinCondition(),Could you show me one more winning board?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-9-2-13-5
+1278,60,5,"Same, Confirm(User_ID=1, Translate([2, 0]))",And is it still a win if I shift the pieces to the second top row?,Affirm(),"Yes, it is still a win.",Shaobo,5,3,John,,0-0-0-0-0-0-0-0-0-0-0-0-9-2-13-5
+1278,60,6,"Context Switch, Confirm(User_ID=1, Translate([0, 2]))","Switching to this board, is it still a win if I shift the pieces to the third left column?",NotSure(),I think so but I am not sure.,Shaobo,5,3,John,,0-11-0-0-0-5-0-0-0-15-0-0-0-13-0-0
+1278,60,7,"Context Switch, Confirm(User_ID=1, Shape)","Switching to this board, is it a win because of the shape of the pieces?",Negate(),"No, it is a win because all pieces have the same height.",Shaobo,5,5,John,,0-0-0-13-0-0-12-0-0-9-0-0-15-0-0-0
+1278,60,8,"Same, Confirm(User_ID=1, Color)",And is it a win because of the color of the pieces?,Negate(),Nope.,Shaobo,5,5,John,,0-0-0-13-0-0-12-0-0-9-0-0-15-0-0-0
+1278,60,9,RequestNewWinCondition(),Could you show me one more winning board?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-0-0-7-0-0-11-0-0-13-0-0-9-0-0-0
+1278,60,10,Finish(),Thanks for the help! I have learned a lot!,Finish,You are welcome!,Shaobo,5,5,John,,0-0-0-7-0-0-11-0-0-13-0-0-9-0-0-0

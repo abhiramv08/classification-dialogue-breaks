@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+6,100,0,Start(),Can you teach me to play Quarto?,Start,Sure,Daniel,5,5,Anthony,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+6,100,1,RequestNewWinCondition(),I'd like you to show me a winning board please,Inform(),Assume you demonstrate this win condition,Daniel,5,5,Anthony,,2-0-0-0-10-0-0-0-3-0-0-0-4-0-0-0
+6,100,2,RequestNewWinCondition(),Can you show me a different board please?,Inform(),Assume you demonstrate this win condition,Daniel,5,5,Anthony,,0-0-11-0-0-0-10-0-0-0-16-0-0-0-14-0
+6,100,3,"Same , Confirm(User_ID=1, Color)",Do the color of the pieces matter?,Negate(),No,Daniel,5,4,Anthony,,0-0-11-0-0-0-10-0-0-0-16-0-0-0-14-0
+6,100,4,"Context Switch, Confirm(User_ID=1, Color)",Do the colors of the pieces matter?,Negate(),No,Daniel,5,4,Anthony,,2-0-0-0-10-0-0-0-3-0-0-0-4-0-0-0
+6,100,5,"Context Switch, Confirm(User_ID=1, Color)",Do the colors of the pieces matter?,Negate(),No,Daniel,5,4,Anthony,,0-0-11-0-0-0-10-0-0-0-16-0-0-0-14-0
+6,100,6,"Same, Request(User_ID=1, Translate)",Where can I move the pieces and still win?,"Inform(['col0', 'col1', 'col3'])",You can move them to any other column,Daniel,5,5,Anthony,,0-0-11-0-0-0-10-0-0-0-16-0-0-0-14-0
+6,100,7,RequestNewWinCondition(),Can you show me another win please?,Inform(),Assume you demonstrate this win condition,Daniel,5,5,Anthony,,5-0-0-0-0-4-0-0-0-0-3-0-0-0-0-2
+6,100,8,"Context Switch, Request(User_ID=1, Rotate)",Is there a way I can rotate these pieces to still win?,Inform([]),No.,Daniel,5,4,Anthony,,0-0-11-0-0-0-10-0-0-0-16-0-0-0-14-0
+6,100,9,"Same, Request(User_ID=1, Translate)",Where can I move these pieces and still win?,"Inform(['col0', 'col1', 'col3'])",You can move to any column.,Daniel,5,5,Anthony,,0-0-11-0-0-0-10-0-0-0-16-0-0-0-14-0
+6,100,10,"Context Switch, Confirm(User_ID=1, RemovePiece(1,0))",If I remove a piece is it still a win?,Negate(),No,Daniel,5,4,Anthony,,2-0-0-0-10-0-0-0-3-0-0-0-4-0-0-0
+6,100,11,Finish(),Thanks!,Finish,No problem!,Daniel,5,5,Anthony,,2-0-0-0-10-0-0-0-3-0-0-0-4-0-0-0

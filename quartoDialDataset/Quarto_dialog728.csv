@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+728,60,0,Start(),Hi! Can you show me how to play Quarto?,Start,"Sure, I'd love to.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+728,60,1,RequestNewWinCondition(),Can you show me what a win condition looks like?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-15-4-7-3
+728,60,2,RequestNewWinCondition(),"Could you give me a new win condition?
+",Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,4-0-0-0-0-6-0-0-0-0-2-0-0-0-0-1
+728,60,3,RequestNewWinCondition(),What about another win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-10-0-0-0-14-0-0-0-2-0-0-0-4-0
+728,60,4,"Context Switch, Request(User_ID=1, Translate)","Switch to this board, can I put the pieces somewhere else and maintain the win?
+","Inform(['row1', 'row2', 'row3'])","Yes, you can just put them on the first row, the second row, or the third row.",Ruijie,3,3,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-15-4-7-3
+728,60,5,"Context Switch, Confirm(User_ID=1, Translate([0, 0]))","Switch to this board, can I move the pieces to the first column?",Affirm(),"Sure, that's still a win.",Ruijie,5,5,Luke,,0-0-10-0-0-0-14-0-0-0-2-0-0-0-4-0
+728,60,6,"Context Switch, Request(User_ID=1, Rotate)","Switch to this board, can I rotate the pieces by some degrees?
+",Inform([90]),"Sure, you can rotate them by ninety degrees.
+",Ruijie,3,4,Luke,,4-0-0-0-0-6-0-0-0-0-2-0-0-0-0-1
+728,60,7,"Context Switch, Request(User_ID=1, Translate)","Switch to this board, can I put the pieces somewhere else and still have a win?
+","Inform(['col1', 'col3'])","Yup, you can put them on the first column or the third column.",Ruijie,3,3,Luke,,0-0-10-0-0-0-14-0-0-0-2-0-0-0-4-0
+728,60,8,"Context Switch, Confirm(User_ID=1, RemovePiece(0,1))","Switch to this board, can I remove the second piece to the left hand side?",Negate(),"No, that will break the win.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-15-4-7-3
+728,60,9,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-10-0-0-0-9-0-0-0-14-0-0-0-6
+728,60,10,Finish(),Thanks! I've learned a lot.,Finish,You are very welcome.,Ruijie,5,5,Luke,,0-0-0-10-0-0-0-9-0-0-0-14-0-0-0-6

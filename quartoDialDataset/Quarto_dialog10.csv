@@ -1,0 +1,11 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+10,100,0,Start(),Hello!  I'd love to learn how to play Quarto.,Start,"Sure, I'll show you.",Daniel,5,5,Anthony,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+10,100,1,RequestNewWinCondition(),Can you show me what it looks like when someone wins?,Inform(),Assume you demonstrate this win condition,Daniel,5,5,Anthony,,0-0-0-0-0-0-0-0-0-0-0-0-2-9-13-1
+10,100,2,"Same , Confirm(User_ID=1, RemovePiece(0,0))",If my opponent removes the bottom left piece is it still a win?,Negate(),"No, that piece is necessary.",Daniel,5,5,Anthony,Better than just no,0-0-0-0-0-0-0-0-0-0-0-0-2-9-13-1
+10,100,3,"Same , Confirm(User_ID=1, Color)",Is it a win because of the color of the pieces?,Negate(),"No, the color doesn't matter.",Daniel,5,5,Anthony,,0-0-0-0-0-0-0-0-0-0-0-0-2-9-13-1
+10,100,4,"Same , Confirm(User_ID=1, RemovePiece(0,3))",Is it still a win of I remove the bottom right piece?,Negate(),No,Daniel,5,4,Anthony,,0-0-0-0-0-0-0-0-0-0-0-0-2-9-13-1
+10,100,5,"Same, Confirm(User_ID=1, Quantity)",Is this a win because of the number of pieces?,Affirm(),Yes,Daniel,5,4,Anthony,,0-0-0-0-0-0-0-0-0-0-0-0-2-9-13-1
+10,100,6,"Same, Request(User_ID=1, Translate)",Where can I move the pieces and still have it be a win?,"Inform(['row1', 'row2', 'row3'])",You can move the pieces to any row.,Daniel,5,5,Anthony,,0-0-0-0-0-0-0-0-0-0-0-0-2-9-13-1
+10,100,7,"Same, Request(User_ID=1, Rotate)",Can I rotate the pieces and still have a win?,"Inform([45, 90])","Yes, you can rotate them in any way",Daniel,5,5,Anthony,,0-0-0-0-0-0-0-0-0-0-0-0-2-9-13-1
+10,100,8,"Same, Confirm(User_ID=1, Rotate(45))",If I rotate the pieces 45 degrees is this still a win?,Affirm(),"Yes, I just told you that.",Daniel,5,5,Anthony,,0-0-0-0-0-0-0-0-0-0-0-0-2-9-13-1
+10,100,9,Finish(),Thank you for teaching me!,Finish,You're welcome!,Daniel,5,5,Anthony,,0-0-0-0-0-0-0-0-0-0-0-0-2-9-13-1

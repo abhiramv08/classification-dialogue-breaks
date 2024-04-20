@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+419,50,0,Start(),Hello. Can you teach me the game of Quarto?,Start,Sure. Let's start.,Jacob,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+419,50,1,RequestNewWinCondition(),Can you show me a winning board state?,Inform,Assume you demonstrate this win condition,Jacob,5,5,Derek,,0-0-0-11-0-0-12-0-0-16-0-0-7-0-0-0
+419,50,2,"Same, Confirm(User_ID=1, Rotate(90))",Would this still be a win if the pieces were aligned vertically?,NotSure(),I don't know if that would work.,Jacob,5,5,Derek,,0-0-0-11-0-0-12-0-0-16-0-0-7-0-0-0
+419,50,3,"Same, Confirm(User_ID=1, Quantity)",Is this a win because of the number of pieces on the board?,Affirm(),Yes. Four pieces are necessary for any winning board.,Jacob,5,5,Derek,,0-0-0-11-0-0-12-0-0-16-0-0-7-0-0-0
+419,50,4,"Same, Confirm(User_ID=1, Quantity)","Sorry, I missed that. Does the number of pieces matter for this win condition?",NotSure(),I guess I'm not really sure when you put it like that.,Jacob,5,5,Derek,,0-0-0-11-0-0-12-0-0-16-0-0-7-0-0-0
+419,50,5,"Same, Confirm(User_ID=1, Color)",Is this a win because of the colors of the pieces?,Negate(),"No, the colors are not important here.",Jacob,5,4,Derek,,0-0-0-11-0-0-12-0-0-16-0-0-7-0-0-0
+419,50,6,"Same, Confirm(User_ID=1, Quantity)",Is this a win because of the number of pieces on the board?,NotSure(),Now you've got me questioning myself. I'm really not sure anymore.,Jacob,5,5,Derek,,0-0-0-11-0-0-12-0-0-16-0-0-7-0-0-0
+419,50,7,RequestNewWinCondition(),Could you show me a new win condition?,Inform,Assume you demonstrate this win condition,Jacob,5,5,Derek,,3-0-0-0-0-9-0-0-0-0-13-0-0-0-0-5
+419,50,8,RequestNewWinCondition(),Can I see another?,Inform,Assume you demonstrate this win condition,Jacob,5,5,Derek,,0-0-13-0-0-0-5-0-0-0-1-0-0-0-10-0
+419,50,9,"Same, Confirm(User_ID=1, Shape)",Are the shapes of the pieces important to this win condition?,Negate(),"No, the shapes don't matter here.",Jacob,5,5,Derek,,0-0-13-0-0-0-5-0-0-0-1-0-0-0-10-0
+419,50,10,"Context Switch, Confirm(User_ID=1, AddPiece(3,1))","On this board, if a piece were added in the second column of the top row, would that still be a win?",NotSure(),I don't really know if a piece there would change anything.,Jacob,5,5,Derek,,3-0-0-0-0-9-0-0-0-0-13-0-0-0-0-5
+419,50,11,"Context Switch, Request(User_ID=1, Rotate)",How can the pattern on this board here be rotated to yield new win conditions?,Inform([90]),These pieces might lie vertically to form a new win condition.,Jacob,5,5,Derek,,0-0-0-11-0-0-12-0-0-16-0-0-7-0-0-0
+419,50,12,"Context Switch, Confirm(User_ID=1, Quantity)","On this board, does the number of pieces contribute to the win condition?",Affirm(),"Yes, having four pieces is vital to winning Quarto.",Jacob,4,4,Derek,,3-0-0-0-0-9-0-0-0-0-13-0-0-0-0-5
+419,50,13,RequestNewWinCondition(),Can you show me a new win condition?,Inform,Assume you demonstrate this win condition,Jacob,5,5,Derek,,15-0-0-0-7-0-0-0-6-0-0-0-16-0-0-0
+419,50,14,RequestNewWinCondition(),Might I see another?,Inform,Assume you demonstrate this win condition,Jacob,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-3-4-2-7
+419,50,15,Finish(),I think I know enough about Quarto now. Thank you for teaching me.,Finish,You're welcome. Goodbye.,Jacob,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-3-4-2-7

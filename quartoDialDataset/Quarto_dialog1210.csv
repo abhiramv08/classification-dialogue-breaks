@@ -1,0 +1,18 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+1210,60,0,Start(),"Hi, could you teach me how to play Quarto?",Start,"Sure, let's get started!",Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+1210,60,1,RequestNewWinCondition(),Could you show me a win first?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-1-6-2-4
+1210,60,2,"Same, Confirm(User_ID=1, AddPiece(3,2))",And is it still a win if I add a piece on the top row and the third left column?,Affirm(),"Yes, it is still a win.",Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-1-6-2-4
+1210,60,3,"Same, Confirm(User_ID=1, RemovePiece(0,3))","And is it still a win if I remove the rightmost piece?
+",Negate(),"No, you need at least four pieces for a win.",Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-1-6-2-4
+1210,60,4,RequestNewWinCondition(),Is there any other way to win?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-9-10-6-13
+1210,60,5,"Context Switch, Confirm(User_ID=1, AddPiece(1,1))",Go back to this board. Is it still a win if I add a piece above the circular piece?,NotSure(),"Sorry, I am not sure about it.",Shaobo,5,4,John,,0-0-0-0-0-0-0-0-0-0-0-0-1-6-2-4
+1210,60,6,RequestNewWinCondition(),Could you show me one more winning board?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-5-8-7-13
+1210,60,7,"Same, Confirm(User_ID=1, Rotate(90))",And is it still a win if I rotate the pieces to the first column?,Affirm(),"Yes, it is still a win.",Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-5-8-7-13
+1210,60,8,"Context Switch, Confirm(User_ID=1, Quantity)","Switching to this board, does the number of pieces matter?",Affirm(),"Yes, you need at least four pieces for a win.",Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-9-10-6-13
+1210,60,9,"Context Switch, Confirm(User_ID=1, RemovePiece(0,1))","Switching to this board, is it still a win if I remove the blue one?",Negate(),"No, you need at least four pieces for a win.",Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-5-8-7-13
+1210,60,10,RequestNewWinCondition(),Could you show me one more winning board?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,5-0-0-0-0-3-0-0-0-0-15-0-0-0-0-11
+1210,60,11,"Context Switch, Confirm(User_ID=1, Quantity)","Switching to this board, does the number of pieces matter?",NotSure(),"Sorry, I am not sure about it.",Shaobo,5,4,John,,0-0-0-0-0-0-0-0-0-0-0-0-5-8-7-13
+1210,60,12,"Context Switch, Confirm(User_ID=1, Hollowness)","Switching to this board, is it a win because of the hollowness of the pieces?",Negate(),"No, it is a win because all pieces have the same height.",Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-1-6-2-4
+1210,60,13,"Context Switch, Confirm(User_ID=1, Shape)","Switching to this board, is it a win because of the shape of the pieces?",Negate(),"No, it is a win because all pieces have the same color.",Shaobo,5,5,John,,5-0-0-0-0-3-0-0-0-0-15-0-0-0-0-11
+1210,60,14,"Context Switch, Confirm(User_ID=1, AddPiece(3,2))","Switching to this board, is it still a win if I add a piece on the top row and the third left column?",NotSure(),"Sorry, I am not sure about it.",Shaobo,5,4,John,,0-0-0-0-0-0-0-0-0-0-0-0-1-6-2-4
+1210,60,15,Finish(),Thanks for the help! I have learned a lot!,Finish,You are welcome!,Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-1-6-2-4

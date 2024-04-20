@@ -1,0 +1,22 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+743,60,0,Start(),Hello! Can you teach me how to play Quarto?,Start,"Sure, let's get started.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+743,60,1,RequestNewWinCondition(),"Can you show me what a win condition looks like?
+",Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-9-0-0-0-3-0-0-0-4-0-0-0-11-0-0
+743,60,2,RequestNewWinCondition(),"What about another win?
+",Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-5-0-0-0-11-0-0-0-3-0-0-0-7
+743,60,3,"Same, Request(User_ID=1, Rotate)","For this board, can I rotate the pieces by some degrees and still have a win?","Inform([135, 180])","Sure, you can rotate them by one thirty five or one eighty degrees.",Ruijie,3,3,Luke,,0-0-0-5-0-0-0-11-0-0-0-3-0-0-0-7
+743,60,4,"Context Switch, Confirm(User_ID=1, Color)","Switch to this board, is it a win because the pieces are in the same color?
+",Negate(),"No, that’s not the reason.",Ruijie,5,5,Luke,,0-9-0-0-0-3-0-0-0-4-0-0-0-11-0-0
+743,60,5,"Same, Confirm(User_ID=1, Height)","Is it a win because the pieces are of the same height?
+",Negate(),"No, it’s unrelated.
+",Ruijie,5,5,Luke,,0-9-0-0-0-3-0-0-0-4-0-0-0-11-0-0
+743,60,6,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-3-0-0-7-0-0-16-0-0-8-0-0-0
+743,60,7,"Same, RequestOtherPlayers()","Can the other player undo this win?
+",Inform([]),"No, this win is absolute.
+",Ruijie,5,5,Luke,,0-0-0-3-0-0-7-0-0-16-0-0-8-0-0-0
+743,60,8,"Context Switch, Confirm(User_ID=1, Translate([0, 2]))","Switch to this board, can I move the pieces to the third column?",NotSure(),"Sorry, I'm not sure.",Ruijie,5,5,Luke,,0-0-0-5-0-0-0-11-0-0-0-3-0-0-0-7
+743,60,9,"Context Switch, Confirm(User_ID=1, Shape)","Switch to this board, is it a win because the pieces are of the same shape?",Negate(),"No, that’s not the reason.",Ruijie,5,5,Luke,,0-0-0-3-0-0-7-0-0-16-0-0-8-0-0-0
+743,60,10,"Context Switch, Confirm(User_ID=1, Translate([0, 1]))","Switch to this board, can I move the pieces to the second column?",NotSure(),"Sorry, I'm actually not quite sure.",Ruijie,5,4,Luke,,0-0-0-5-0-0-0-11-0-0-0-3-0-0-0-7
+743,60,11,"Context Switch, Confirm(User_ID=1, AddPiece(3,1))","Switch to this board, can I add one more piece on the fourth row, the second column?
+",NotSure(),"Sorry, I don't know.",Ruijie,5,4,Luke,,0-0-0-3-0-0-7-0-0-16-0-0-8-0-0-0
+743,60,12,Finish(),Thanks! I got it!,Finish,You are welcome!,Ruijie,5,5,Luke,,0-0-0-3-0-0-7-0-0-16-0-0-8-0-0-0

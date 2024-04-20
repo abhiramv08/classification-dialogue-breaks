@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+758,60,0,Start(),Can you teach me how to play Quarto?,Start,Sure!,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+758,60,1,RequestNewWinCondition(),Can you show me a win condition to start?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,15-0-0-0-0-14-0-0-0-0-13-0-0-0-0-7
+758,60,2,RequestNewWinCondition(),Please show me one more win condition.,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-7-0-0-0-9-0-0-0-1-0-0-0-11-0-0
+758,60,3,"Context Switch, Confirm(User_ID=1, Height)","For the first win condition you showed me, is that a win because of the height pattern of all pieces?",Negate(),No. It is not the reason for this board to win.,Derek,5,5,Shaobo,,15-0-0-0-0-14-0-0-0-0-13-0-0-0-0-7
+758,60,4,RequestNewWinCondition(),Can you show me another win condition.,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-8-3-1-6
+758,60,5,"Context Switch, RequestOtherPlayers()",How could another player undo the win shows in this board?,Inform([]),There is nothing another player could do to prevent this win.,Derek,5,5,Shaobo,,15-0-0-0-0-14-0-0-0-0-13-0-0-0-0-7
+758,60,6,"Context Switch, Request(User_ID=1, Rotate)","Switching to this win, how could I line there pieces in different angle and still win?","Inform([45, 90])",You can place them vertically or diagonally.,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-8-3-1-6
+758,60,7,"Context Switch, Confirm(User_ID=1, Hollowness)","Go back to this winning board, is that a win because of the hollowness pattern of all pieces?",Negate(),"No, it is not the reason this board is winning.",Derek,5,5,Shaobo,,15-0-0-0-0-14-0-0-0-0-13-0-0-0-0-7
+758,60,8,"Same, Confirm(User_ID=1, Hollowness)",Is that a win because the hollowness pattern of all pieces?,NotSure(),Are you asking the same question? I am not sure what do you mean.,Derek,5,5,Shaobo,,15-0-0-0-0-14-0-0-0-0-13-0-0-0-0-7
+758,60,9,"Context Switch, Confirm(User_ID=1, Quantity)","Moving to this board, do I have to have four pieces to win?",Affirm(),Sure. You must have at least four pieces to win.,Derek,5,5,Shaobo,,0-7-0-0-0-9-0-0-0-1-0-0-0-11-0-0
+758,60,10,Finish(),Thanks for teaching today! Bye!,Finish,Bye!,Derek,5,5,Shaobo,,0-7-0-0-0-9-0-0-0-1-0-0-0-11-0-0

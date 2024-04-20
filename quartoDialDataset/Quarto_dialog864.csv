@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+864,60,0,Start(),Hi could you teach me Quarto?,Start,"Yeah, sure.",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+864,60,1,RequestNewWinCondition(),Please show me a new win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-15-13-9-16
+864,60,2,"Same, Confirm(User_ID=1, AddPiece(3,0))",Is this still a win if I add a piece here?,Affirm(),"Yes, that addition is fine. ",Anthony,3,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-15-13-9-16
+864,60,3,"Same, Confirm(User_ID=1, Shape)",Is this a win because of the shape of the pieces?,Negate(),"No, that is not why. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-15-13-9-16
+864,60,4,"Same, Confirm(User_ID=1, RemovePiece(0,1))",Is this still a win even if I remove this piece?,Negate(),"No, then this would not be a win. ",Anthony,3,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-15-13-9-16
+864,60,5,RequestNewWinCondition(),Please show me another win. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-12-0-0-0-15-0-0-0-13-0-0-0-16
+864,60,6,"Same, Confirm(User_ID=1, Color)",Is this a win because of the color of the pieces?,Negate(),"No, they are all not the same color. ",Anthony,5,4,Yiyen,,0-0-0-12-0-0-0-15-0-0-0-13-0-0-0-16
+864,60,7,"Same, Confirm(User_ID=1, Translate([0, 0]))",Would this still be a win if I shift the pieces like this?,Affirm(),"Yes, that;s fine. ",Anthony,3,5,Yiyen,,0-0-0-12-0-0-0-15-0-0-0-13-0-0-0-16
+864,60,8,"Same, Confirm(User_ID=1, Shape)",Is this a win because of the shape of the pieces?,Negate(),"No, they are not all the same shape. ",Anthony,5,5,Yiyen,,0-0-0-12-0-0-0-15-0-0-0-13-0-0-0-16
+864,60,9,"Same, Confirm(User_ID=1, Hollowness)",Does the hollowness of the pieces make this a win?,NotSure(),I'm not sure. ,Anthony,5,5,Yiyen,,0-0-0-12-0-0-0-15-0-0-0-13-0-0-0-16
+864,60,10,Finish(),Thanks for the help.,Finish,"Of course, bye!",Anthony,5,5,Yiyen,,0-0-0-12-0-0-0-15-0-0-0-13-0-0-0-16

@@ -1,0 +1,16 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+69,100,0,Start(),"What's up, can you teach me Quarto?",Start,"Sure, dude. ",Anthony,5,5,Dave,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+69,100,1,RequestNewWinCondition(),Show me a win condition. ,Inform(),Assume you demonstrate this win condition,Anthony,5,4,Dave,,0-0-0-0-0-0-0-0-0-0-0-0-12-16-4-15
+69,100,2,"Same, Confirm(User_ID=1, Height)",Is this a win because of the pieces' height?,Negate(),"No, that is not why. ",Anthony,5,5,Dave,,0-0-0-0-0-0-0-0-0-0-0-0-12-16-4-15
+69,100,3,RequestNewWinCondition(),Show me a second win.,Inform(),Assume you demonstrate this win condition,Anthony,5,5,Dave,,9-0-0-0-0-10-0-0-0-0-16-0-0-0-0-12
+69,100,4,"Context Switch, Confirm(User_ID=1, Shape)","Looking at the first board, is this a win due to the pieces' shape. ",Negate(),"No, that has nothing to do with the fact that it is a win condition. ",Anthony,5,4,Dave,,0-0-0-0-0-0-0-0-0-0-0-0-12-16-4-15
+69,100,5,RequestNewWinCondition(),How about a third win condtion?,Inform(),Assume you demonstrate this win condition,Anthony,5,5,Dave,,0-12-0-0-0-1-0-0-0-9-0-0-0-10-0-0
+69,100,6,"Same , Confirm(User_ID=1, Shape)",Is this a win due to the piece shapes?,Affirm(),"Yes, in this case it is. ",Anthony,5,4,Dave,,0-12-0-0-0-1-0-0-0-9-0-0-0-10-0-0
+69,100,7,"Same, Request(User_ID=1, Rotate)",How can I rotate these pieces to keep it a winning board?,Inform([]),I don't think you can rotate these pieces. They are not on a diagonal. ,Anthony,5,3,Dave,,0-12-0-0-0-1-0-0-0-9-0-0-0-10-0-0
+69,100,8,"Context Switch, Confirm(User_ID=1, RemovePiece(2,1))","Can I still win if I remove the piece at (2,1)?",Negate(),No that would undo the win condition. ,Anthony,5,3,Dave,,9-0-0-0-0-10-0-0-0-0-16-0-0-0-0-12
+69,100,9,"Context Switch, Confirm(User_ID=1, Height)","Looking at this board, is it a win because of the height of the pieces?",Negate(),"No, that is not why.",Anthony,5,5,Dave,,0-12-0-0-0-1-0-0-0-9-0-0-0-10-0-0
+69,100,10,"Context Switch, Confirm(User_ID=1, Translate('row3'))","Looking at this board now, is it a win if I move these pieces to row three?",Affirm,"Yes, that is a valid idea.",Anthony,5,3,Dave,,0-0-0-0-0-0-0-0-0-0-0-0-12-16-4-15
+69,100,11,"Same, RequestOtherPlayers()",Can other players affect this win?,Inform([]),No they cannot.,Anthony,5,5,Dave,,0-0-0-0-0-0-0-0-0-0-0-0-12-16-4-15
+69,100,12,"Same, Confirm(User_ID=1, Height)",Is this a win condition because of the pieces' height?,Negate(),No the piece height is not why this is a win. ,Anthony,5,4,Dave,,0-0-0-0-0-0-0-0-0-0-0-0-12-16-4-15
+69,100,13,"Context Switch, Confirm(User_ID=1, AddPiece(2,0))","What if I add a piece on (2,0) to this board?",Affirm(),That would still make it a win condition. ,Anthony,5,3,Dave,,0-12-0-0-0-1-0-0-0-9-0-0-0-10-0-0
+69,100,14,Finish(),I think we're done here. I've learned a lot.,Finish,That's good. See you later. ,Anthony,5,5,Dave,,0-12-0-0-0-1-0-0-0-9-0-0-0-10-0-0

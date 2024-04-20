@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+793,60,0,Start(),"Hey I really want to learn playing Quarto, can you teach me?",Start,Sure.,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+793,60,1,RequestNewWinCondition(),Can you show me a win condition to start?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,6-0-0-0-0-5-0-0-0-0-13-0-0-0-0-1
+793,60,2,RequestNewWinCondition(),Please show me one more win condition.,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,15-0-0-0-8-0-0-0-13-0-0-0-14-0-0-0
+793,60,3,"Context Switch, Confirm(User_ID=1, Quantity)","Go back to this board, do I have to have four pieces to win?",Affirm(),Yes. that's the minimum requirement. ,Derek,5,5,Shaobo,,6-0-0-0-0-5-0-0-0-0-13-0-0-0-0-1
+793,60,4,RequestNewWinCondition(),Can you show me one more winning board?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-9-0-0-0-11-0-0-0-12-0-0-0-14-0-0
+793,60,5,"Same, Confirm(User_ID=1, Color)",Is that a win because the color pattern of all pieces?,Negate(),No.,Derek,5,4,Shaobo,,0-9-0-0-0-11-0-0-0-12-0-0-0-14-0-0
+793,60,6,"Same, Confirm(User_ID=1, Shape)",How about the shape.,Negate(),You are still wrong.,Derek,5,4,Shaobo,,0-9-0-0-0-11-0-0-0-12-0-0-0-14-0-0
+793,60,7,"Same, Request(User_ID=1, Translate)",How can I shift these pieces and keep winning?,"Inform(['col2', 'col3'])",Yes you can move them to right by one or two.,Derek,5,5,Shaobo,,0-9-0-0-0-11-0-0-0-12-0-0-0-14-0-0
+793,60,8,RequestNewWinCondition(),Please show me one more win condition.,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,6-0-0-0-0-13-0-0-0-0-8-0-0-0-0-14
+793,60,9,"Context Switch, Confirm(User_ID=1, Hollowness)","Switching to this board, is that a win because of the hollowness pattern of all pieces?",NotSure(),Sorry I am not sure about that.,Derek,5,5,Shaobo,,0-9-0-0-0-11-0-0-0-12-0-0-0-14-0-0
+793,60,10,"Context Switch, Confirm(User_ID=1, Translate([0, 1]))","Go back to this winnning board, can I shift all pieces to the right by one and still win?",Affirm(),Yes you can do that.,Derek,5,5,Shaobo,,15-0-0-0-8-0-0-0-13-0-0-0-14-0-0-0
+793,60,11,Finish(),Thanks! I learned a lot today!,Finish,No problem.,Derek,5,5,Shaobo,,15-0-0-0-8-0-0-0-13-0-0-0-14-0-0-0

@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+865,60,0,Start(),"Hi, could you please yeach me Quarto?",Start,"Sure, let's begin. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+865,60,1,RequestNewWinCondition(),Please show me a win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,11-0-0-0-0-4-0-0-0-0-2-0-0-0-0-3
+865,60,2,"Same, RequestOtherPlayers()",How could another player undo this win?,Inform([]),There is nothing another player could do. ,Anthony,5,5,Yiyen,,11-0-0-0-0-4-0-0-0-0-2-0-0-0-0-3
+865,60,3,"Same, Confirm(User_ID=1, Height)",Is this a win because of the height of the pieces?,Negate(),"No, the height is not relevant.",Anthony,5,4,Yiyen,,11-0-0-0-0-4-0-0-0-0-2-0-0-0-0-3
+865,60,4,RequestNewWinCondition(),Please show me another win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-2-0-0-0-7-0-0-0-3-0-0-0-1
+865,60,5,RequestNewWinCondition(),Please let me see another win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-16-5-6-15
+865,60,6,RequestNewWinCondition(),How about one more?,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,3-0-0-0-8-0-0-0-12-0-0-0-4-0-0-0
+865,60,7,"Context Switch, Request(User_ID=1, Rotate)","Going back to this board, how could I rotate the pieces to keep this a win?","Inform([45, 90])",You could rotate the pieces to be diagonal or vertical.,Anthony,4,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-16-5-6-15
+865,60,8,"Same, Confirm(User_ID=1, Translate([2, 0]))",Could I shift the pieces up to this location.,NotSure(),I'm not sure. ,Anthony,3,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-16-5-6-15
+865,60,9,"Context Switch, Confirm(User_ID=1, Height)","Looking over to this board,  is this a win because of the height of the pieces?",NotSure(),I'm not sure about that either.,Anthony,5,5,Yiyen,,11-0-0-0-0-4-0-0-0-0-2-0-0-0-0-3
+865,60,10,"Context Switch, RequestOtherPlayers()","Looking over at this board, how could another player undo this win?",Inform([]),They cannot.,Anthony,5,4,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-16-5-6-15
+865,60,11,"Context Switch, Confirm(User_ID=1, Translate([0, 1]))","Looking over at this board, could I shift the pieces like this?",Affirm(),"Yes, that's fine. ",Anthony,3,5,Yiyen,,3-0-0-0-8-0-0-0-12-0-0-0-4-0-0-0
+865,60,12,Finish(),Thank you! Bye!,Finish,"No problem, bye. ",Anthony,5,5,Yiyen,,3-0-0-0-8-0-0-0-12-0-0-0-4-0-0-0

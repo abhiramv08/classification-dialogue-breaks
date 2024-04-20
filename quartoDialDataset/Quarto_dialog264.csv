@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+264,50,0,Start(),"Hi there, please teach me Quarto.",Start,"Yeah, no problem!",Anthony,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-11-2-12-1
+264,50,1,RequestNewWinCondition(),Could you show me a win condition?,Inform,Assume you demonstrate this win condition,Anthony,4,4,Luke,,0-0-0-2-0-0-0-3-0-0-0-11-0-0-0-12
+264,50,2,RequestNewWinCondition(),Can I see another winning board?,Inform,Assume you demonstrate this win condition,Anthony,5,5,Luke,,3-0-0-0-0-16-0-0-0-0-4-0-0-0-0-7
+264,50,3,RequestNewWinCondition(),"Could you show me one more win, please?",Inform,Assume you demonstrate this win condition,Anthony,5,4,Luke,,4-0-0-0-0-1-0-0-0-0-8-0-0-0-0-3
+264,50,4,"Same, Confirm(User_ID=1, AddPiece(0,2))",Would this remain a win if I add a piece here?,NotSure(),I'm not sure about that.,Anthony,5,4,Luke,,4-0-0-0-0-1-0-0-0-0-8-0-0-0-0-3
+264,50,5,RequestNewWinCondition(),"Okay, can you show me another win?",Inform,Assume you demonstrate this win condition,Anthony,5,5,Luke,,0-0-0-7-0-0-6-0-0-16-0-0-13-0-0-0
+264,50,6,RequestNewWinCondition(),Please show me another win condition.,Inform,Assume you demonstrate this win condition,Anthony,4,5,Luke,,0-0-0-11-0-0-13-0-0-9-0-0-10-0-0-0
+264,50,7,RequestNewWinCondition(),Could show me another win condition? I need a lot of examples today.,Inform,Assume you demonstrate this win condition,Anthony,5,4,Luke,,8-0-0-0-16-0-0-0-12-0-0-0-3-0-0-0
+264,50,8,"Context Switch, Confirm(User_ID=1, Shape)","Looking at this board, is it a win because of what shape these pieces are?",NotSure(),I couldn't tell you because I don't actually know for sure. ,Anthony,5,3,Luke,,3-0-0-0-0-16-0-0-0-0-4-0-0-0-0-7
+264,50,9,"Context Switch, Confirm(User_ID=1, AddPiece(3,0))","Okay, well what if on this other board I added a piece here?",Affirm(),"That is a valid move, this would stay a win.",Anthony,5,4,Luke,,0-0-0-11-0-0-13-0-0-9-0-0-10-0-0-0
+264,50,10,"Context Switch, Confirm(User_ID=1, Translate([0, 0]))","Looking at this board now, can I shift the pieces over to this location?",NotSure(),I'm not too sure about that. ,Anthony,4,4,Luke,,0-0-0-2-0-0-0-3-0-0-0-11-0-0-0-12
+264,50,11,"Same, Confirm(User_ID=1, Color)","Okay, well can you tell me if it's a win because of the pieces' color?",NotSure(),"No, sorry, I don't know for certain.",Anthony,5,5,Luke,,0-0-0-2-0-0-0-3-0-0-0-11-0-0-0-12
+264,50,12,Finish(),"Okay, that's enough. Have a great day!",Finish,You too!,Anthony,5,5,Luke,,0-0-0-2-0-0-0-3-0-0-0-11-0-0-0-12

@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+1014,60,0,Start(),"Hello, can you teach me how to play Quarto?",Start,Ok.,Tianyi,5,4,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+1014,60,1,RequestNewWinCondition(),Can you give me an example of win?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-4-2-1-10
+1014,60,2,"Same, Confirm(User_ID=1, Height)","In this example, is it a win because most pieces are short?",Negate(),"No, that is not the reason.",Tianyi,5,4,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-4-2-1-10
+1014,60,3,"Same, Request(User_ID=1, Rotate)",Can I rotate some pieces and still maintain the win?,"Inform([45, 90])","Yes, you can rotate all pieces 45 degrees to the rows and put them in the diagonal, or you can rotate all pieces 90 degrees to the rows and put them in the first column.",Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-4-2-1-10
+1014,60,4,"Same, Confirm(User_ID=1, Hollowness)",Is it wins because most pieces are solid?,NotSure(),"That is a good question, I have no idea about this.",Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-4-2-1-10
+1014,60,5,RequestNewWinCondition(),Can you give me another example of win?,Inform,Assume you demonstrate this win condition,Tianyi,5,4,Ruijie,,2-0-0-0-0-5-0-0-0-0-6-0-0-0-0-3
+1014,60,6,"Same, Confirm(User_ID=1, Height)","In this win, is it a win because all pieces are short?",NotSure(),I have no idea about this.,Tianyi,5,4,Ruijie,,2-0-0-0-0-5-0-0-0-0-6-0-0-0-0-3
+1014,60,7,"Context Switch, Request(User_ID=1, Rotate)","Back to this board, can I rotate some pieces and still keep the win?","Inform([45, 90])","Yes, you can rotate all pieces 45 degrees to the rows and put them in the diagonal, or you can rotate all pieces 90 degrees to the rows and put them in the first column.",Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-4-2-1-10
+1014,60,8,RequestNewWinCondition(),Can you show me a new win pattern?,Inform,Assume you demonstrate this win condition,Tianyi,5,4,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-10-11-9-16
+1014,60,9,"Same, Confirm(User_ID=1, RemovePiece(0,2))","In this win, if I remove the piece at the third column, is it still a win?
+",NotSure(),"Sorry, I am not sure about this.",Tianyi,5,4,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-10-11-9-16
+1014,60,10,"Context Switch, Confirm(User_ID=1, Translate([3, 0]))","For this board, if I move all pieces three blocks up, can it still be a win?",NotSure(),I am uncertain about this.,Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-4-2-1-10
+1014,60,11,Finish(),"That learning experience is really important to me, thanks.",Finish,You are welcome.,Tianyi,5,4,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-4-2-1-10

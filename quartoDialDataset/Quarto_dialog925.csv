@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+925,60,0,Start(),Hi can you show me how to play Quarto?,Start,"Yes, I can.",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+925,60,1,RequestNewWinCondition(),Please show me a new win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-9-0-0-10-0-0-16-0-0-12-0-0-0
+925,60,2,RequestNewWinCondition(),Please show me another win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-4-10-14-12
+925,60,3,"Context Switch, Confirm(User_ID=1, Shape)","Switching to this board, is it a win because of the pieces' shapes?",Negate(),"No, they'd all have to be the same for that to be the case.",Anthony,5,5,Yiyen,,0-0-0-9-0-0-10-0-0-16-0-0-12-0-0-0
+925,60,4,"Same, RequestOtherPlayers()",How can another player affect this win?,Inform([]),They cannot.,Anthony,5,5,Yiyen,,0-0-0-9-0-0-10-0-0-16-0-0-12-0-0-0
+925,60,5,"Context Switch, Confirm(User_ID=1, Rotate(45))","Switching to this board, could I rotate these pieces to be diagonal?",Affirm(),"Yes, you could.",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-4-10-14-12
+925,60,6,"Same, RequestOtherPlayers()",How could another player affect this win?,Inform([]),This win can't be affected either.,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-4-10-14-12
+925,60,7,"Context Switch, RequestOtherPlayers()","Switching to this board,how could another player affect this win?",Inform([]),There is nothing they could do on this board. ,Anthony,5,5,Yiyen,,0-0-0-9-0-0-10-0-0-16-0-0-12-0-0-0
+925,60,8,RequestNewWinCondition(),Please show me another win.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,2-0-0-0-0-10-0-0-0-0-8-0-0-0-0-4
+925,60,9,"Same, RequestOtherPlayers()",How could another player affect this win?,Inform([]),There's nothing they could here either.,Anthony,5,5,Yiyen,,2-0-0-0-0-10-0-0-0-0-8-0-0-0-0-4
+925,60,10,Finish(),Thanks a lot!,Finish,Of course!,Anthony,5,5,Yiyen,,2-0-0-0-0-10-0-0-0-0-8-0-0-0-0-4

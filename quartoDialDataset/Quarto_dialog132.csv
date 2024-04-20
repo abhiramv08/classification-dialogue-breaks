@@ -1,0 +1,15 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+132,100,0,Start(),"Hi, please teach me Quarto.",Start,Okay. I can do that.,Anthony,5,5,Dmytro,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+132,100,1,RequestNewWinCondition(),Show me a new win condition.,Inform(),Assume you demonstrate this win condition,Anthony,4,3,Dmytro,,0-0-0-3-0-0-2-0-0-7-0-0-5-0-0-0
+132,100,2,RequestNewWinCondition(),Show me a second win condition.,Inform(),Assume you demonstrate this win condition,Anthony,4,4,Dmytro,,15-0-0-0-4-0-0-0-16-0-0-0-7-0-0-0
+132,100,3,"Same, Request(User_ID=1, Rotate)",How can I rotate this board and it is still a win?,"Inform([0, 45])",You can rotate it to the diagonal or to a horizontal row.,Anthony,4,3,Dmytro,,15-0-0-0-4-0-0-0-16-0-0-0-7-0-0-0
+132,100,4,RequestNewWinCondition(),Show me another win condition.,Inform(),Assume you demonstrate this win condition,Anthony,3,2,Dmytro,,0-0-0-15-0-0-1-0-0-11-0-0-7-0-0-0
+132,100,5,"Win Same {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}",Is this a win because the pieces are hollow?,Negate(),That is not why.,Anthony,3,4,Dmytro,"ignoring first word, 'win', in the query.",0-0-0-15-0-0-1-0-0-11-0-0-7-0-0-0
+132,100,6,"Same, Confirm(User_ID=1, Rotate(90))",Can I rotate these pieces to be straight up?,Affirm(),Yes you could.,Anthony,5,5,Dmytro,,0-0-0-15-0-0-1-0-0-11-0-0-7-0-0-0
+132,100,7,RequestNewWinCondition(),Show me a new win condition.,Inform(),Assume you demonstrate this win condition,Anthony,3,2,Dmytro,,11-0-0-0-0-7-0-0-0-0-3-0-0-0-0-12
+132,100,8,RequestNewWinCondition(),Show me another win once again. ,Inform(),Assume you demonstrate this win condition,Anthony,3,3,Dmytro,,0-0-0-0-0-0-0-0-0-0-0-0-5-1-7-8
+132,100,9,"Context Switch, Confirm(User_ID=1, Quantity)","Looking at this board, is it a win because of the amount of pieces?",Affirm(),"Yes, that is why it's a win. ",Anthony,5,5,Dmytro,,11-0-0-0-0-7-0-0-0-0-3-0-0-0-0-12
+132,100,10,"Context Switch, Confirm(User_ID=1, AddPiece(3,0))","Looking at this win now, can I add a piece to position (3,0)?",Affirm(),"Yes, that's totally fine.",Anthony,5,3,Dmytro,,0-0-0-3-0-0-2-0-0-7-0-0-5-0-0-0
+132,100,11,"Context Switch, Confirm(User_ID=1, AddPiece(3,3))","Looking at this other board, can I add a piece in (3,3)?",Affirm(),"Yes, absolutely!",Anthony,4,3,Dmytro,,0-0-0-0-0-0-0-0-0-0-0-0-5-1-7-8
+132,100,12,RequestNewWinCondition(),Show me one more win condition. ,Inform(),Assume you demonstrate this win condition,Anthony,3,2,Dmytro,,0-0-0-15-0-0-12-0-0-9-0-0-13-0-0-0
+132,100,13,Finish(),Thanks for the help!,Finish,Happy to be here for you!,Anthony,5,5,Dmytro,,0-0-0-15-0-0-12-0-0-9-0-0-13-0-0-0

@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+417,50,0,Start(),Hi. Can you teach me the game of Quarto?,Start,"Yes, I should be able to teach you that.",Jacob,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+417,50,1,RequestNewWinCondition(),Can you show me a way to win?,Inform,Assume you demonstrate this win condition,Jacob,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-16-14-7-13
+417,50,2,"Same, Confirm(User_ID=1, Shape)",Are the shapes of the pieces the reason this is a winning board?,Affirm(),"Yes, this is a win because the pieces are all the same shape.",Jacob,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-16-14-7-13
+417,50,3,"Same, Confirm(User_ID=1, RemovePiece(0,1))",Would this still be a win if the piece in the second column were removed?,Negate(),"No, you need that piece to win.",Jacob,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-16-14-7-13
+417,50,4,"Same, Confirm(User_ID=1, Rotate(90))",Would this still be a win if these pieces were aligned vertically?,Affirm(),"Yes, that would still be a win.",Jacob,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-16-14-7-13
+417,50,5,RequestNewWinCondition(),Can you show me another way to win?,Inform,Assume you demonstrate this win condition,Jacob,5,5,Derek,,13-0-0-0-0-16-0-0-0-0-14-0-0-0-0-12
+417,50,6,RequestNewWinCondition(),Thank you. Can you show me another?,Inform,Assume you demonstrate this win condition,Jacob,5,5,Derek,,12-0-0-0-2-0-0-0-1-0-0-0-3-0-0-0
+417,50,7,"Same, Confirm(User_ID=1, AddPiece(0,3))",Would this still be a win if there were a piece in the bottom right corner?,NotSure(),"I don't really know, sorry.",Jacob,5,4,Derek,,12-0-0-0-2-0-0-0-1-0-0-0-3-0-0-0
+417,50,8,RequestNewWinCondition(),Can you show me another win condition?,Inform,Assume you demonstrate this win condition,Jacob,5,5,Derek,,0-0-0-12-0-0-2-0-0-1-0-0-3-0-0-0
+417,50,9,"Same, Confirm(User_ID=1, Color)",Are the colors of the pieces important to this win condition?,NotSure(),I'm not sure if that's the case or not.,Jacob,5,5,Derek,,0-0-0-12-0-0-2-0-0-1-0-0-3-0-0-0
+417,50,10,"Context Switch, Confirm(User_ID=1, Quantity)","On this board, is the number of pieces important for the win condition?",NotSure(),I'm not sure of the number of pieces matters or not.,Jacob,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-16-14-7-13
+417,50,11,Finish(),I think I know enough now to play. Thank you.,Finish,You're welcome.,Jacob,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-16-14-7-13

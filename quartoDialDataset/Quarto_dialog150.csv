@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+150,100,0,Start(),Can you teach me how to play Quarto?,Start,No problem!,Derek,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+150,100,1,RequestNewWinCondition(),Can you give me a win condition to start with?,Inform(),Assume you demonstrate this win condition,Derek,5,5,John,,0-0-0-3-0-0-9-0-0-1-0-0-4-0-0-0
+150,100,2,"Same , Confirm(User_ID=1, RemovePiece(2,2))",Can I remove the second piece from top and still win?,Negate(),"No, it will not be a win.",Derek,5,5,John,,0-0-0-3-0-0-9-0-0-1-0-0-4-0-0-0
+150,100,3,RequestNewWinCondition(),Can you show me a new win condition?,Inform(),Assume you demonstrate this win condition,Derek,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-5-1-2-3
+150,100,4,"Context Switch, Confirm(User_ID=1, RemovePiece(0,0))","Let's go back to the first win condition, can I remove the piece at bottom left and still win?",Negate(),No.,Derek,5,4,John,maybe add more in the user response,0-0-0-3-0-0-9-0-0-1-0-0-4-0-0-0
+150,100,5,RequestNewWinCondition(),Can you show me a new win condition?,Inform(),Assume you demonstrate this win condition,Derek,5,5,John,,0-0-0-5-0-0-14-0-0-2-0-0-9-0-0-0
+150,100,6,"Context Switch, Confirm(User_ID=1, Rotate(90))","For the second win condition, if I place the pieces vertically and keep winning?",Affirm(),Yes it will still be a win.,Derek,4,5,John,Specify the column vertically they would be in,0-0-0-0-0-0-0-0-0-0-0-0-5-1-2-3
+150,100,7,"Same , Confirm(User_ID=1, Shape)",Is that a win because the shape of pieces?,Negate(),No.,Derek,5,4,John,,0-0-0-0-0-0-0-0-0-0-0-0-5-1-2-3
+150,100,8,RequestNewWinCondition(),Can you give me another win condition?,Inform(),Assume you demonstrate this win condition,Derek,5,5,John,,9-0-0-0-0-13-0-0-0-0-15-0-0-0-0-12
+150,100,9,"Context Switch, Confirm(User_ID=1, Shape)","For the second win condition, is that a win because the shape of pieces?",Negate(),No.,Derek,5,4,John,,0-0-0-0-0-0-0-0-0-0-0-0-5-1-2-3
+150,100,10,RequestNewWinCondition(),Can you show me another win condition.,Inform(),Assume you demonstrate this win condition,Derek,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-6-14-15-7
+150,100,11,"Same , Confirm(User_ID=1, RemovePiece(0,2))","If I remove the second piece from right, can I still win?",Negate(),No it will no longer be a win.,Derek,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-6-14-15-7
+150,100,12,"Context Switch, Confirm(User_ID=1, Height)","For the third win condition, is that a win because the height of pieces?",Negate(),No that's not the reason.,Derek,5,4,John,,0-0-0-5-0-0-14-0-0-2-0-0-9-0-0-0
+150,100,13,"Context Switch, Confirm(User_ID=1, Translate('row3'))","For the second win condition, can I shift every pieces up by one and keep winning?",Affirm,Yes you can do that. ,Derek,2,4,John,"Wrong row in the NL, should be shifted up three times",0-0-0-0-0-0-0-0-0-0-0-0-5-1-2-3
+150,100,14,"Context Switch, Confirm(User_ID=1, Color)","For the third win condition, is that a win because the color of pieces?",Negate(),"No, the color is not the reason to win.",Derek,5,5,John,,0-0-0-5-0-0-14-0-0-2-0-0-9-0-0-0
+150,100,15,Finish(),Thanks! I learned a lot today.,Finish,No problem.,Derek,5,5,John,,0-0-0-5-0-0-14-0-0-2-0-0-9-0-0-0

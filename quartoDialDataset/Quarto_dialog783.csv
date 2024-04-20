@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+783,60,0,Start(),Can you teach me how to play Quarto?,Start,Definately.,Derek,4,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+783,60,1,RequestNewWinCondition(),Can you show me a win condition to start?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-12-16-14-2
+783,60,2,"Same, Confirm(User_ID=1, Color)",Is that a win because the color pattern of all pieces?,Affirm(),Yes.,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-12-16-14-2
+783,60,3,RequestNewWinCondition(),Please show me one more win condition.,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-3-0-0-4-0-0-9-0-0-1-0-0-0
+783,60,4,"Same, Confirm(User_ID=1, Quantity)",Is the number of pieces important for win?,Affirm(),Yes. You have to have at least four pieces to win.,Derek,5,5,Shaobo,,0-0-0-3-0-0-4-0-0-9-0-0-1-0-0-0
+783,60,5,"Context Switch, Request(User_ID=1, Translate)",How can I shift these pieces and keep winning?,"Inform(['row1', 'row2', 'row3'])",You can shift them to any row you want.,Derek,4,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-12-16-14-2
+783,60,6,RequestNewWinCondition(),Can you show me one more winning board?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,10-0-0-0-1-0-0-0-13-0-0-0-5-0-0-0
+783,60,7,"Same, Request(User_ID=1, Rotate)",Do you know how can I aline these pieces in different angle and keep winning?,"Inform([0, 45])",You can aline them diagonally or horizontally.,Derek,4,5,Shaobo,,10-0-0-0-1-0-0-0-13-0-0-0-5-0-0-0
+783,60,8,"Context Switch, Confirm(User_ID=1, Rotate(90))","Switching to this board, can I aline all piece diagonally and keep winning?",NotSure(),I am not sure about that.,Derek,5,5,Shaobo,,0-0-0-3-0-0-4-0-0-9-0-0-1-0-0-0
+783,60,9,"Context Switch, Confirm(User_ID=1, Height)","Go back to this board, is that a win because the height pattern of all pieces?",Negate(),"No, theire heights are not identical.",Derek,4,5,Shaobo,,10-0-0-0-1-0-0-0-13-0-0-0-5-0-0-0
+783,60,10,"Same, Confirm(User_ID=1, Quantity)",Do I have to have four pieces to win?,Affirm(),"Yes, that is the minimum request.",Derek,5,5,Shaobo,,10-0-0-0-1-0-0-0-13-0-0-0-5-0-0-0
+783,60,11,Finish(),Thanks for your teaching today!,Finish,Bye!,Derek,5,5,Shaobo,,10-0-0-0-1-0-0-0-13-0-0-0-5-0-0-0

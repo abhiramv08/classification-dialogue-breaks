@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+885,60,0,Start(),"Hi, will you please teach me Quarto?",Start,"Yeah, sure.",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+885,60,1,RequestNewWinCondition(),Please show me a win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-12-0-0-14-0-0-2-0-0-8-0-0-0
+885,60,2,RequestNewWinCondition(),Can you give me another win condition?,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-9-0-0-13-0-0-2-0-0-6-0-0-0
+885,60,3,"Same, Confirm(User_ID=1, Color)",Is this a win because of the color of the pieces?,NotSure(),I'm not sure.,Anthony,5,5,Yiyen,,0-0-0-9-0-0-13-0-0-2-0-0-6-0-0-0
+885,60,4,"Context Switch, Request(User_ID=1, Rotate)","Looking at this board, how could I rotate these pieces?",Inform([90]),You could rotate them to be vertical.,Anthony,5,5,Yiyen,,0-0-0-12-0-0-14-0-0-2-0-0-8-0-0-0
+885,60,5,"Context Switch, Confirm(User_ID=1, Quantity)","Looking at this board now, is the number of pieces what makes this a win?",NotSure(),I'm not sure about that. ,Anthony,5,5,Yiyen,,0-0-0-9-0-0-13-0-0-2-0-0-6-0-0-0
+885,60,6,"Same, Confirm(User_ID=1, Rotate(90))",Is this still a win if I rotate the pieces to a vertical column?,Affirm(),"Yea, that's completely fine.",Anthony,5,5,Yiyen,,0-0-0-9-0-0-13-0-0-2-0-0-6-0-0-0
+885,60,7,"Same, Confirm(User_ID=1, RemovePiece(3,3))",Is this still a win if I remove the piece here?,Negate(),"No, that piece needs to stay.",Anthony,3,5,Yiyen,here?,0-0-0-9-0-0-13-0-0-2-0-0-6-0-0-0
+885,60,8,RequestNewWinCondition(),Please show me a new win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-5-0-0-0-9-0-0-0-1-0-0-0-7-0-0
+885,60,9,"Context Switch, Confirm(User_ID=1, Shape)","Switching over to this board, is this a win because of the shape of the pieces?",Negate(),"No, they are all not the same shape.",Anthony,5,5,Yiyen,,0-0-0-12-0-0-14-0-0-2-0-0-8-0-0-0
+885,60,10,"Context Switch, Confirm(User_ID=1, Shape)","Looking at this board now, is this a win because of the shape of the pieces?",Negate(),"No, the pieces on this board are also not all the same shape. ",Anthony,5,5,Yiyen,,0-0-0-9-0-0-13-0-0-2-0-0-6-0-0-0
+885,60,11,Finish(),Thanks! Bye!,Finish,Goodbye!,Anthony,5,5,Yiyen,,0-0-0-9-0-0-13-0-0-2-0-0-6-0-0-0

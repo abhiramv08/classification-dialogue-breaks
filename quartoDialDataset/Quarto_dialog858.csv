@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+858,60,0,Start(),"Hello, please show me how to play Quarto.",Start,"Okay, I can do that. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+858,60,1,RequestNewWinCondition(),Please show me a win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-6-0-0-0-16-0-0-0-7-0-0-0-5-0
+858,60,2,"Same, Confirm(User_ID=1, Translate([0, 0]))",Is this still a win if I shift the pieces here?,Affirm(),"Yes, you could make that move. ",Anthony,5,5,Yiyen,,0-0-6-0-0-0-16-0-0-0-7-0-0-0-5-0
+858,60,3,"Same, Confirm(User_ID=1, Hollowness)",Does the hollowness of the pieces make this a win?,Negate(),"No, they are not all hollow or all solid. ",Anthony,5,5,Yiyen,,0-0-6-0-0-0-16-0-0-0-7-0-0-0-5-0
+858,60,4,"Same, Confirm(User_ID=1, Shape)",Is this a win because of the shape of the pieces?,NotSure(),I'm not sure. ,Anthony,5,5,Yiyen,,0-0-6-0-0-0-16-0-0-0-7-0-0-0-5-0
+858,60,5,"Same, Confirm(User_ID=1, Quantity)",Is this a win because of the number of pieces?,Affirm(),"Yes, that's correct. ",Anthony,5,5,Yiyen,,0-0-6-0-0-0-16-0-0-0-7-0-0-0-5-0
+858,60,6,"Same, Confirm(User_ID=1, Shape)",Is the shape of the pieces what makes this a win?,NotSure(),I don't know. ,Anthony,5,5,Yiyen,,0-0-6-0-0-0-16-0-0-0-7-0-0-0-5-0
+858,60,7,"Same, Confirm(User_ID=1, RemovePiece(2,2))",Is this a win if I remove this piece?,NotSure(),I'm not sure. ,Anthony,3,5,Yiyen,,0-0-6-0-0-0-16-0-0-0-7-0-0-0-5-0
+858,60,8,RequestNewWinCondition(),Please show me a win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-2-4-10-1
+858,60,9,"Context Switch, Confirm(User_ID=1, Translate([0, 1]))","Looking back to this board, could I move the pieces like this?",Affirm(),"Yes, that's fine.",Anthony,3,5,Yiyen,,0-0-6-0-0-0-16-0-0-0-7-0-0-0-5-0
+858,60,10,Finish(),Thank you!,Finish,You're welcome! Good luck. ,Anthony,5,5,Yiyen,,0-0-6-0-0-0-16-0-0-0-7-0-0-0-5-0

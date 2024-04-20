@@ -1,0 +1,16 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+669,60,0,Start(),Hi! Could you please show me how to play Quarto?,Start,Yes! That would be my pleasure.,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+669,60,1,RequestNewWinCondition(),Can you show me what a win condition looks like?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-15-7-11-12
+669,60,2,"Same, Confirm(User_ID=1, Quantity)",Does the number of pieces make it a win?,Affirm(),You are right.,Ruijie,4,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-15-7-11-12
+669,60,3,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,4-0-0-0-0-12-0-0-0-0-3-0-0-0-0-15
+669,60,4,"Context Switch, Confirm(User_ID=1, Hollowness)","Switch to this board, does the hollowness of the pieces make it a win?",Affirm(),"Yes, that's the reason.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-15-7-11-12
+669,60,5,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-4-2-1-9
+669,60,6,"Context Switch, Confirm(User_ID=1, Hollowness)","Switch to this board, does the hollowness of the pieces make it a win?
+",NotSure(),I have no idea.,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-15-7-11-12
+669,60,7,"Same, Confirm(User_ID=1, Quantity)",Is it a win because of the number of pieces?,NotSure(),I don't know.,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-15-7-11-12
+669,60,8,"Context Switch, Confirm(User_ID=1, Shape)","Switch to this board, is it a win because the pieces are of the same shape?
+",Affirm(),"Yes, that's correct!
+",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-4-2-1-9
+669,60,9,"Context Switch, Confirm(User_ID=1, Shape)","Switch to this board, is it a win because the pieces are of the same shape?
+",NotSure(),"Well, I just don't know.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-15-7-11-12
+669,60,10,Finish(),Thank you so much!,Finish,My pleasure.,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-15-7-11-12

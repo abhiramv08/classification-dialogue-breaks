@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+634,60,0,Start(),"Hi, can you teach me how to play Quarto?",Start,"Sure, let's begin.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+634,60,1,RequestNewWinCondition(),Can you first demostrate a possible way to win the game?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-9-0-0-3-0-0-4-0-0-12-0-0-0
+634,60,2,"Same, Confirm(User_ID=1, Quantity)","For the win board you just showed, is it a win because of the number of the pieces?",Affirm(),"Yes, you must have four pieces in order to win.",Yiyan,5,5,Tianyi,,0-0-0-9-0-0-3-0-0-4-0-0-12-0-0-0
+634,60,3,"Same, Confirm(User_ID=1, Hollowness)","For the same board, does the win relate to the hollowness of the pieces?",NotSure(),"I don't think so, but I am not sure.",Yiyan,5,5,Tianyi,,0-0-0-9-0-0-3-0-0-4-0-0-12-0-0-0
+634,60,4,"Same, Confirm(User_ID=1, Shape)","For the same board, is it a win because of the shapes of the pieces?",Affirm(),"Yes, you can win by having four pieces with the same shape.",Yiyan,5,5,Tianyi,,0-0-0-9-0-0-3-0-0-4-0-0-12-0-0-0
+634,60,5,RequestNewWinCondition(),Is there any other way to win the game?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-8-7-15-6
+634,60,6,"Same, Confirm(User_ID=1, Translate([2, 0]))","For the same board, can I shift all the pieces to the third row to get another win?",Affirm(),"Yes, you can , since all the pieces are still in the same rorw.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-8-7-15-6
+634,60,7,"Context Switch, Confirm(User_ID=1, Rotate(90))","Let's switch to this board, will it still be a win if I rotate the pieces to the first column?",Affirm(),"Yes, it will still be a win,",Yiyan,5,5,Tianyi,,0-0-0-9-0-0-3-0-0-4-0-0-12-0-0-0
+634,60,8,"Context Switch, Confirm(User_ID=1, Translate([1, 0]))","Let's consider this board, will it still be a win if I shift the pieces to the second row?",Affirm(),"Yes, it will still be a win.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-8-7-15-6
+634,60,9,"Same, Confirm(User_ID=1, Quantity)","For the same board, is it a win because of the number of pieces?",Affirm(),"Yes, you must get at least four pieces in order to win.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-8-7-15-6
+634,60,10,"Same, Confirm(User_ID=1, Translate([1, 0]))","For the same board, can I get another win by shifting the pieces to the second row?",Affirm(),"Sure, you can do that.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-8-7-15-6
+634,60,11,Finish(),"Thank you very much for your help, now I can play Quarto.",Finish,You are welcome.,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-8-7-15-6

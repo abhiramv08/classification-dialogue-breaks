@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+906,60,0,Start(),"Hi, could you please show me how to play this game?",Start,"Yea, okay. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+906,60,1,RequestNewWinCondition(),Please show me a new win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,14-0-0-0-0-13-0-0-0-0-6-0-0-0-0-15
+906,60,2,"Same, Confirm(User_ID=1, Rotate(90))",Could I rotate these pieces to be vertical?,NotSure(),"Um, I'm not sure. ",Anthony,4,5,Yiyen,,14-0-0-0-0-13-0-0-0-0-6-0-0-0-0-15
+906,60,3,RequestNewWinCondition(),Please let me see another win.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,13-0-0-0-0-11-0-0-0-0-3-0-0-0-0-5
+906,60,4,"Same, Request(User_ID=1, Rotate)",How could I rotate these pieces?,Inform([90]),One way is to align them vertically.,Anthony,4,5,Yiyen,,13-0-0-0-0-11-0-0-0-0-3-0-0-0-0-5
+906,60,5,"Same, Confirm(User_ID=1, Shape)",Is this a win because of the shape of the pieces?,Negate(),"No, that is not why. ",Anthony,5,5,Yiyen,,13-0-0-0-0-11-0-0-0-0-3-0-0-0-0-5
+906,60,6,RequestNewWinCondition(),Please show me another win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-6-0-0-0-9-0-0-0-1-0-0-0-2-0
+906,60,7,RequestNewWinCondition(),How about another one?,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-11-0-0-9-0-0-13-0-0-14-0-0-0
+906,60,8,"Context Switch, Confirm(User_ID=1, Height)","Looking back to this board, is this a win because of the height of the pieces?",Negate(),"No, the height is not what makes this a win. ",Anthony,4,5,Yiyen,,0-0-6-0-0-0-9-0-0-0-1-0-0-0-2-0
+906,60,9,"Context Switch, Confirm(User_ID=1, Rotate(90))","On this other board, could I rotate the pieces like this?",NotSure(),"I'm not sure, my bad. ",Anthony,5,5,Yiyen,,13-0-0-0-0-11-0-0-0-0-3-0-0-0-0-5
+906,60,10,Finish(),Thanks for all the help.,Finish,Of course!,Anthony,5,5,Yiyen,,13-0-0-0-0-11-0-0-0-0-3-0-0-0-0-5

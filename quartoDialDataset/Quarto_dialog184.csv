@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+184,100,0,Start(),"Hi, can you teach me how to play Quarto?",Start,Sure!,Shaobo,5,5,Anthony,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+184,100,1,RequestNewWinCondition(),Can you show me a winning board?,Inform(),Assume you demonstrate this win condition,Shaobo,5,5,Anthony,,0-0-4-0-0-0-12-0-0-0-11-0-0-0-8-0
+184,100,2,RequestNewWinCondition(),Could you show me another win?,Inform(),Assume you demonstrate this win condition,Shaobo,5,5,Anthony,,11-0-0-0-0-3-0-0-0-0-15-0-0-0-0-4
+184,100,3,"Same, Confirm(User_ID=1, Quantity)","For the board you just showed me, does the number of pieces on the board affect the win?",Affirm(),"Yes, we need at least four pieces for a win.",Shaobo,5,5,Anthony,,11-0-0-0-0-3-0-0-0-0-15-0-0-0-0-4
+184,100,4,"Same, Confirm(User_ID=1, Height)","For this board, is it a win because of the height of pieces?",Negate(),"No, it is a win because all pieces are hollow.",Shaobo,5,5,Anthony,,11-0-0-0-0-3-0-0-0-0-15-0-0-0-0-4
+184,100,5,"Context Switch, Confirm(User_ID=1, Color)","For this board, is it a win because of the colors of pieces?",Negate(),"No, it is win because all pieces are hollow.",Shaobo,4,5,Anthony,,0-0-4-0-0-0-12-0-0-0-11-0-0-0-8-0
+184,100,6,"Context Switch, Confirm(User_ID=1, Height)","For this board, is it a win because of the height of pieces?",Negate(),"No, it is win because all pieces are hollow.",Shaobo,4,5,Anthony,extra information may not be entirely accurate,11-0-0-0-0-3-0-0-0-0-15-0-0-0-0-4
+184,100,7,"Context Switch, Request(User_ID=1, Rotate)",How can I rotate the board so that it is still a win?,Inform([]),You cannot rotate the pieces and keep the board a win.,Shaobo,5,5,Anthony,,0-0-4-0-0-0-12-0-0-0-11-0-0-0-8-0
+184,100,8,"Context Switch, Confirm(User_ID=1, RemovePiece(3,0))","For this board, will it still be a win if I remove the piece on the top row and the first column?",Negate(),"No, it will not be a win anymore.",Shaobo,5,5,Anthony,"assuming this is the correct form of (3,0)",11-0-0-0-0-3-0-0-0-0-15-0-0-0-0-4
+184,100,9,"Same , Confirm(User_ID=1, Color)","For the same board, is is win because of the colors of pieces?",Negate(),"No, it is a win because all pieces are hollow.",Shaobo,5,5,Anthony,,11-0-0-0-0-3-0-0-0-0-15-0-0-0-0-4
+184,100,10,Finish(),Thank you!,Finish,My pleasure!,Shaobo,5,5,Anthony,,11-0-0-0-0-3-0-0-0-0-15-0-0-0-0-4

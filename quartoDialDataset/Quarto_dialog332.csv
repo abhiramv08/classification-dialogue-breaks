@@ -1,0 +1,15 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+332,50,0,Start(),Can you teach me to play Quarto please?,Start,Sure!,Daniel,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+332,50,1,RequestNewWinCondition(),Can you show me a board where someone wins please?,Inform,Assume you demonstrate this win condition,Daniel,5,5,Shaobo,,0-10-0-0-0-1-0-0-0-9-0-0-0-12-0-0
+332,50,2,"Same, RequestOtherPlayers()",Is there anything the other player can do to prevent this win?,Inform([]),No,Daniel,5,4,Shaobo,,0-10-0-0-0-1-0-0-0-9-0-0-0-12-0-0
+332,50,3,"Same, Confirm(User_ID=1, Height)",Is this a win because of the height of the pieces?,NotSure(),I don't know,Daniel,5,5,Shaobo,,0-10-0-0-0-1-0-0-0-9-0-0-0-12-0-0
+332,50,4,"Same, Confirm(User_ID=1, Height)",Is this a win because of the height of the pieces?,Negate(),No,Daniel,5,4,Shaobo,,0-10-0-0-0-1-0-0-0-9-0-0-0-12-0-0
+332,50,5,RequestNewWinCondition(),Can you show me a different winning board please?,Inform,Assume you demonstrate this win condition,Daniel,5,5,Shaobo,,0-0-0-11-0-0-16-0-0-3-0-0-7-0-0-0
+332,50,6,"Same, Request(User_ID=1, Translate)",Can I slide the pieces anywhere and still win?,Inform([]),No,Daniel,5,4,Shaobo,,0-0-0-11-0-0-16-0-0-3-0-0-7-0-0-0
+332,50,7,"Context Switch, Request(User_ID=1, Translate)","For the other board, can I slide the pieces anywhere and still win?",Inform(['col2']),Yes you can move them 1 column to the right,Daniel,5,5,Shaobo,,0-10-0-0-0-1-0-0-0-9-0-0-0-12-0-0
+332,50,8,RequestNewWinCondition(),Can you show me a different winning board please?,Inform,Assume you demonstrate this win condition,Daniel,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-7-5-15-6
+332,50,9,"Context Switch, Confirm(User_ID=1, Quantity)","For this other board, is it a win because of the number of pieces?",Affirm(),Yes,Daniel,5,5,Shaobo,,0-10-0-0-0-1-0-0-0-9-0-0-0-12-0-0
+332,50,10,RequestNewWinCondition(),Can you show me a different winning board please?,Inform,Assume you demonstrate this win condition,Daniel,5,5,Shaobo,,13-0-0-0-0-12-0-0-0-0-14-0-0-0-0-16
+332,50,11,"Context Switch, Confirm(User_ID=1, Height)","For this board here, is it a win because of the height of the pieces?",NotSure(),I don't know,Daniel,5,5,Shaobo,,0-10-0-0-0-1-0-0-0-9-0-0-0-12-0-0
+332,50,12,"Context Switch, Confirm(User_ID=1, RemovePiece(0,1))","If I remove the tall solid green circle, is it still a win?",Negate(),No,Daniel,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-7-5-15-6
+332,50,13,Finish(),Thank you,Finish,Sure,Daniel,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-7-5-15-6

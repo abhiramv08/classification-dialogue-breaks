@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+159,100,0,Start(),Hello. I'd like to learn how to play Quarto. Could you teach me?,Start,I certainly can. Where shall we begin?,Jacob,,,,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+159,100,1,RequestNewWinCondition(),May I see a winning board state?,Inform(),Assume you demonstrate this win condition,Jacob,,,,,0-0-0-0-0-0-0-0-0-0-0-0-1-9-5-10
+159,100,2,RequestNewWinCondition(),Could you show me another?,Inform(),Assume you demonstrate this win condition,Jacob,,,,,0-0-0-11-0-0-16-0-0-14-0-0-15-0-0-0
+159,100,3,RequestNewWinCondition(),Okay. Can I please see another?,Inform(),Assume you demonstrate this win condition,Jacob,,,,,0-0-0-10-0-0-0-2-0-0-0-3-0-0-0-1
+159,100,4,"Context Switch, Request(User_ID=1, Translate)",In what ways could the pieces on this board be moved while still in this same orientation to produce a new win?,Inform([]),There is no way to move these pieces in their current orientation.,Jacob,,,,,0-0-0-11-0-0-16-0-0-14-0-0-15-0-0-0
+159,100,5,"Context Switch, Confirm(User_ID=1, Shape)","Regarding this board, does the shape of these pieces contribute to its winning quality?",Affirm(),Yes. The shapes of the pieces here is vital.,Jacob,,,,,0-0-0-10-0-0-0-2-0-0-0-3-0-0-0-1
+159,100,6,"Context Switch, Confirm(User_ID=1, Shape)","Moving to this board, are the shapes of the pieces important to this win?",Negate(),No. These pieces could have any shape and the win would remain.,Jacob,,,,,0-0-0-0-0-0-0-0-0-0-0-0-1-9-5-10
+159,100,7,RequestNewWinCondition(),Could you show me another winning board?,Inform(),Assume you demonstrate this win condition,Jacob,,,,,1-0-0-0-0-9-0-0-0-0-2-0-0-0-0-3
+159,100,8,RequestNewWinCondition(),May I see another win?,Inform(),Assume you demonstrate this win condition,Jacob,,,,,2-0-0-0-0-14-0-0-0-0-12-0-0-0-0-16
+159,100,9,RequestNewWinCondition(),Could you show me another?,Inform(),Assume you demonstrate this win condition,Jacob,,,,,0-0-0-7-0-0-1-0-0-6-0-0-4-0-0-0
+159,100,10,"Context Switch, Confirm(User_ID=1, Shape)","Regarding this board, are the pieces' shapes important to this win condition?",Negate(),No. The shapes of the pieces do not matter in this case.,Jacob,,,,,0-0-0-11-0-0-16-0-0-14-0-0-15-0-0-0
+159,100,11,"Context Switch, Confirm(User_ID=1, Color)",Do the colors of the pieces on this board contribute to the win?,Negate(),No.,Jacob,,,,,0-0-0-10-0-0-0-2-0-0-0-3-0-0-0-1
+159,100,12,"Context Switch, RequestOtherPlayers()","On this board, what actions could another player take to revoke this win?",Inform([]),No opponent can take any actions that would invalidate this win.,Jacob,,,,,0-0-0-0-0-0-0-0-0-0-0-0-1-9-5-10
+159,100,13,"Context Switch, Confirm(User_ID=1, RemovePiece(3,0))","If the top left piece on this board were removed, could I still win?",Negate(),"No, that piece is necessary.",Jacob,,,,,1-0-0-0-0-9-0-0-0-0-2-0-0-0-0-3
+159,100,14,"Context Switch, RequestOtherPlayers()","Going to this board, could you tell me what actions another player could take to take away this win?",Inform([]),"Luckily for you, no other players could take an action which would prevent this win.",Jacob,,,,,0-0-0-0-0-0-0-0-0-0-0-0-1-9-5-10
+159,100,15,Finish(),Thank you for taking your time to help me. Bye.,Finish,Goodbye.,Jacob,,,,,0-0-0-0-0-0-0-0-0-0-0-0-1-9-5-10

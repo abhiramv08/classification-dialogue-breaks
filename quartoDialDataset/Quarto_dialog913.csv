@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+913,60,0,Start(),"Hello, would you please teach me Quarto?",Start,"Yeah, no problem. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+913,60,1,RequestNewWinCondition(),Please show me a win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,10-0-0-0-0-5-0-0-0-0-6-0-0-0-0-13
+913,60,2,RequestNewWinCondition(),How about a second win condition?,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,4-0-0-0-0-1-0-0-0-0-12-0-0-0-0-10
+913,60,3,"Same, Confirm(User_ID=1, Height)",Is this a win because of the height of the pieces?,Negate(),"No, that is not why. ",Anthony,5,5,Yiyen,,4-0-0-0-0-1-0-0-0-0-12-0-0-0-0-10
+913,60,4,RequestNewWinCondition(),Please give me another win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-9-1-7-15
+913,60,5,RequestNewWinCondition(),Can I see another win condition?,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,10-0-0-0-0-2-0-0-0-0-1-0-0-0-0-3
+913,60,6,"Context Switch, Confirm(User_ID=1, Height)","Looking back to this board, is it a win because of the height of the pieces?",NotSure(),"I'm not sure, sorry. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-9-1-7-15
+913,60,7,"Context Switch, Confirm(User_ID=1, Hollowness)",What about this other board? Is the hollowness of the pieces why this is a win?,NotSure(),I'm not sure about this either.,Anthony,5,5,Yiyen,,4-0-0-0-0-1-0-0-0-0-12-0-0-0-0-10
+913,60,8,"Context Switch, Confirm(User_ID=1, Shape)",Well how abut on this board? Is the win due to the shape of the pieces?,Affirm(),"Yes, here they are all triangles, so this is a win. ",Anthony,4,5,Yiyen,,10-0-0-0-0-2-0-0-0-0-1-0-0-0-0-3
+913,60,9,"Same, Confirm(User_ID=1, Quantity)",Is this a win also because of the number of pieces?,Affirm(),"Yes, there are four in a row. ",Anthony,5,5,Yiyen,,10-0-0-0-0-2-0-0-0-0-1-0-0-0-0-3
+913,60,10,Finish(),Thank you for teaching me!,Finish,Of course!,Anthony,5,5,Yiyen,,10-0-0-0-0-2-0-0-0-0-1-0-0-0-0-3

@@ -1,0 +1,18 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+748,60,0,Start(),Hi! Can you show me how to play Quarto?,Start,"Yes, I'd love to.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+748,60,1,RequestNewWinCondition(),Can you show me what a win condition looks like?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-5-9-13-6
+748,60,2,RequestNewWinCondition(),Can you show me a new win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-11-0-0-0-7-0-0-0-13-0-0-0-15
+748,60,3,"Same, Confirm(User_ID=1, Height)","For this board, is it a win because the pieces are of the same height?
+",Negate(),"No, that’s not the reason.",Ruijie,5,3,Luke,,0-0-0-11-0-0-0-7-0-0-0-13-0-0-0-15
+748,60,4,"Context Switch, RequestOtherPlayers()","Switch to this board, can the other player break this win condition?
+",Inform([]),"No, this win is absolute.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-5-9-13-6
+748,60,5,"Same, Confirm(User_ID=1, Hollowness)","Does the hollowness of the pieces make it a win?
+",Affirm(),That’s right.,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-5-9-13-6
+748,60,6,"Context Switch, Confirm(User_ID=1, Height)","Switch to this board, is it a win because the pieces are of the same height?
+",Negate(),"No, that’s irrelevant.",Ruijie,5,5,Luke,,0-0-0-11-0-0-0-7-0-0-0-13-0-0-0-15
+748,60,7,"Same, RequestOtherPlayers()",Can the other player break this win condition?,Inform([]),"No, this win is absolute.",Ruijie,5,5,Luke,,0-0-0-11-0-0-0-7-0-0-0-13-0-0-0-15
+748,60,8,"Same, Confirm(User_ID=1, Height)","For this board, is it a win because the pieces are of the same height?
+",Negate(),"No, that’s irrelevant.",Ruijie,4,4,Luke,,0-0-0-11-0-0-0-7-0-0-0-13-0-0-0-15
+748,60,9,"Same, RequestOtherPlayers()","Can the other player undo this win?
+",Inform([]),"No, this win is absolute.",Ruijie,5,5,Luke,,0-0-0-11-0-0-0-7-0-0-0-13-0-0-0-15
+748,60,10,Finish(),Thanks! I think I've learned a lot stuff!,Finish,You are welcome!,Ruijie,5,5,Luke,,0-0-0-11-0-0-0-7-0-0-0-13-0-0-0-15

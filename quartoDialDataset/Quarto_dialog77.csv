@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+77,100,0,Start(),"Hey there, can you teach me to win at Quarto?",Start,"Sure thing, let's get to some examples.",Dave,5,5,Dmytro,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+77,100,1,RequestNewWinCondition(),Can you show me an example of a win?,Inform(),Assume you demonstrate this win condition,Dave,5,5,Dmytro,,0-0-0-2-0-0-5-0-0-8-0-0-3-0-0-0
+77,100,2,"Same , Confirm(User_ID=1, Shape)",Is this a win because of the shapes of the pieces?,Negate(),"No, the shapes of the pieces are not the reason for the win here.",Dave,5,5,Dmytro,,0-0-0-2-0-0-5-0-0-8-0-0-3-0-0-0
+77,100,3,RequestNewWinCondition(),Can you show me a different example?,Inform(),Assume you demonstrate this win condition,Dave,4,4,Dmytro,,0-0-0-0-0-0-0-0-0-0-0-0-11-3-1-10
+77,100,4,"Same , Confirm(User_ID=1, RemovePiece(0,2))","In this case, would it still be a win even if I removed the solid green triangle?",Negate(),"No, in that case it would no longer count.",Dave,5,5,Dmytro,,0-0-0-0-0-0-0-0-0-0-0-0-11-3-1-10
+77,100,5,"Same, Confirm(User_ID=1, Translate('row1'))",Well what if I place the pieces along the top row instead of the bottom row?,Affirm,That would count too!,Dave,2,5,Dmytro,row1 is the second from the bottom,0-0-0-0-0-0-0-0-0-0-0-0-11-3-1-10
+77,100,6,RequestNewWinCondition(),Can you show me another example of a win?,Inform(),Assume you demonstrate this win condition,Dave,5,5,Dmytro,,0-0-0-8-0-0-15-0-0-3-0-0-12-0-0-0
+77,100,7,"Same, Request(User_ID=1, Rotate)",Can I rotate the pieces about the bottom-left corner and get a win?,Inform([90]),"You can place the pieces up along the first column and get a win, yes.",Dave,4,5,Dmytro,,0-0-0-8-0-0-15-0-0-3-0-0-12-0-0-0
+77,100,8,RequestNewWinCondition(),Can you show me another example of a win?,Inform(),Assume you demonstrate this win condition,Dave,5,5,Dmytro,,15-0-0-0-0-6-0-0-0-0-13-0-0-0-0-5
+77,100,9,"Win Context Switch {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}",Is the first example a win because of the hollowness of the pieces?,Negate(),"Nope, the win is not based on the hollowness of the pieces in the first example.",Dave,4,5,Dmytro,I don't understand this query.,0-0-0-2-0-0-5-0-0-8-0-0-3-0-0-0
+77,100,10,RequestNewWinCondition(),Can you show me another win?,Inform(),Assume you demonstrate this win condition,Dave,5,5,Dmytro,,0-2-0-0-0-16-0-0-0-10-0-0-0-12-0-0
+77,100,11,Finish(),"I think I've got it, thanks for your help!",Finish,"Any time, see ya!",Dave,5,5,Dmytro,,0-2-0-0-0-16-0-0-0-10-0-0-0-12-0-0

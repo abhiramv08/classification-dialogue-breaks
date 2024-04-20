@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+72,100,0,Start(),Can you teach me how to play Quarto?,Start,Sure!,Daniel,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+72,100,1,RequestNewWinCondition(),Can you show me a board where someone wins?,Inform(),Assume you demonstrate this win condition,Daniel,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-15-16-5-14
+72,100,2,"Same, Confirm(User_ID=1, Translate('row2'))",Can I move the pieces up and still win?,Affirm,Yes,Daniel,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-15-16-5-14
+72,100,3,RequestNewWinCondition(),Can you show me a different winning board?,Inform(),Assume you demonstrate this win condition,Daniel,5,5,Derek,,0-0-0-11-0-0-1-0-0-15-0-0-9-0-0-0
+72,100,4,RequestNewWinCondition(),How about abother one?,Inform(),Assume you demonstrate this win condition,Daniel,3,4,Derek,,0-0-0-15-0-0-3-0-0-7-0-0-16-0-0-0
+72,100,5,"Context Switch, Confirm(User_ID=1, Color)","For this board, is it a win because of the color of the pieces?",Negate(),No,Daniel,3,4,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-15-16-5-14
+72,100,6,"Same, Confirm(User_ID=1, Height)",Is it a win because of the height of the pieces?,Negate(),No,Daniel,4,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-15-16-5-14
+72,100,7,"Same , Confirm(User_ID=1, Color)",Is this a win because of the color of the pieces?,Negate(),No.  You asked this before.,Daniel,5,4,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-15-16-5-14
+72,100,8,RequestNewWinCondition(),Can you show me a new board with different pieces?,Inform(),Assume you demonstrate this win condition,Daniel,5,5,Derek,,0-0-13-0-0-0-12-0-0-0-9-0-0-0-10-0
+72,100,9,"Same, RequestOtherPlayers()",What can the other player do to prevent this win?,Inform([]),They can't do anything.,Daniel,5,4,Derek,,0-0-13-0-0-0-12-0-0-0-9-0-0-0-10-0
+72,100,10,"Win Same {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}",Is this a win because of the hollowness of the pieces?,Negate(),No,Daniel,4,5,Derek,,0-0-13-0-0-0-12-0-0-0-9-0-0-0-10-0
+72,100,11,Finish(),Thank you!,Finish,No problem,Daniel,5,5,Derek,,0-0-13-0-0-0-12-0-0-0-9-0-0-0-10-0

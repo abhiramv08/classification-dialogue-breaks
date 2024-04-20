@@ -1,0 +1,20 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+700,60,0,Start(),"Hi, can you show me how to play Quarto?",Start,"Yes, let's do it!",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+700,60,1,RequestNewWinCondition(),"Can you show me what a win condition looks like?
+",Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-1-2-5-8
+700,60,2,RequestNewWinCondition(),Can you show me a win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-8-2-14-16
+700,60,3,"Same, Confirm(User_ID=1, Translate([1, 0]))",Can I put the pieces on the second row and maintain the win?,Affirm(),"Yes, you can.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-8-2-14-16
+700,60,4,"Context Switch, Request(User_ID=1, Rotate)","Switch to this board, can I rotate the pieces by some degrees?
+","Inform([45, 90])","Sure, you can rotate them by forty five or ninety degrees.
+",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-1-2-5-8
+700,60,5,"Same, RequestOtherPlayers()","Can the other player undo this win?
+",Inform([]),"No, this win is absolute.
+",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-1-2-5-8
+700,60,6,RequestNewWinCondition(),Can I get a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-3-0-0-7-0-0-4-0-0-15-0-0-0
+700,60,7,"Same, Confirm(User_ID=1, Hollowness)","Does the hollowness of the pieces make it a win?
+",Affirm(),"Yes, you’re right.",Ruijie,5,5,Luke,,0-0-0-3-0-0-7-0-0-4-0-0-15-0-0-0
+700,60,8,"Context Switch, Confirm(User_ID=1, Shape)","Switch to this board, is it a win because the pieces are of the same shape?
+",Negate(),"No, that’s irrelevant.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-1-2-5-8
+700,60,9,"Context Switch, Request(User_ID=1, Translate)","Switch to this board, can I put the pieces somewhere else?
+","Inform(['row1', 'row2', 'row3'])","Yes, you can put them on the first, the second, or the third row.",Ruijie,3,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-8-2-14-16
+700,60,10,Finish(),Thanks! I've learned a lot.,Finish,You are welcome.,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-8-2-14-16

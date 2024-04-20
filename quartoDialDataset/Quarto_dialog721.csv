@@ -1,0 +1,21 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+721,60,0,Start(),"Hey, can you teach me how to play Quarto?",Start,"Yes, we can start right now.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+721,60,1,RequestNewWinCondition(),"Can you show me what a win condition looks like?
+",Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-10-0-0-0-11-0-0-0-2-0-0-0-9
+721,60,2,"Same, Confirm(User_ID=1, Quantity)","Is it a win because of the number of pieces?
+",NotSure(),I'm actually not quite sure about this.,Ruijie,5,4,Luke,,0-0-0-10-0-0-0-11-0-0-0-2-0-0-0-9
+721,60,3,"Same, Confirm(User_ID=1, Shape)",Is it a win because the pieces are of the same shape?,Affirm(),That’s right.,Ruijie,5,5,Luke,,0-0-0-10-0-0-0-11-0-0-0-2-0-0-0-9
+721,60,4,RequestNewWinCondition(),"Can you show me a new win?
+",Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-16-0-0-15-0-0-11-0-0-14-0-0-0
+721,60,5,"Context Switch, Request(User_ID=1, Rotate)","Switch to this board, can I rotate the pieces by some degrees?
+","Inform([135, 180])","Yes, you can rotate them by one hundred and thirty five degrees or one hundred and eighty degrees.",Ruijie,5,3,Luke,,0-0-0-10-0-0-0-11-0-0-0-2-0-0-0-9
+721,60,6,"Context Switch, RequestOtherPlayers()","Switch to this board, can the other player undo this win?
+",Inform([]),"No, this win is absolute.
+",Ruijie,5,5,Luke,,0-0-0-16-0-0-15-0-0-11-0-0-14-0-0-0
+721,60,7,"Same, Confirm(User_ID=1, Color)","Is it a win because the pieces are in the same color?
+",Negate(),That’s just wrong.,Ruijie,5,5,Luke,,0-0-0-16-0-0-15-0-0-11-0-0-14-0-0-0
+721,60,8,"Same, RequestOtherPlayers()","Can the other player undo this win?
+",Inform([]),"No, this win is absolute.
+",Ruijie,5,5,Luke,,0-0-0-16-0-0-15-0-0-11-0-0-14-0-0-0
+721,60,9,"Context Switch, Confirm(User_ID=1, RemovePiece(0,3))","Switch to this board, can I add one more piece on the first row, the fourth column?",Negate(),"No, you can do this.",Ruijie,5,4,Luke,,0-0-0-10-0-0-0-11-0-0-0-2-0-0-0-9
+721,60,10,Finish(),"Thanks, I've learned a lot!",Finish,You are very welcome!,Ruijie,5,5,Luke,,0-0-0-10-0-0-0-11-0-0-0-2-0-0-0-9

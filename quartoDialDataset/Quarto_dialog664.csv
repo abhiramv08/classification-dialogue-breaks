@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+664,60,0,Start(),"Hi, can you teach me how to play Quarto?",Start,"Sure, let's get started.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+664,60,1,RequestNewWinCondition(),Can you show me what a win condition looks like?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-5-14-16-8
+664,60,2,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-8-0-0-0-10-0-0-0-12-0-0-0-2-0-0
+664,60,3,"Same, Confirm(User_ID=1, Color)",Is it a win because the pieces are in the same color?,Affirm(),"Yes, you’re right about it.",Ruijie,5,5,Luke,,0-8-0-0-0-10-0-0-0-12-0-0-0-2-0-0
+664,60,4,"Same, Confirm(User_ID=1, Color)",Is it a win because the pieces are in the same color?,Affirm(),That's correct.,Ruijie,5,4,Luke,,0-8-0-0-0-10-0-0-0-12-0-0-0-2-0-0
+664,60,5,"Context Switch, Confirm(User_ID=1, Shape)","Switch to this board, is it a win because the pieces are of the same shape?",Affirm(),"Yes, that's correct.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-5-14-16-8
+664,60,6,"Same, Confirm(User_ID=1, AddPiece(3,0))","Can I add one more piece on the fourth row, the first column?",Affirm(),Yes!,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-5-14-16-8
+664,60,7,"Context Switch, Confirm(User_ID=1, Color)","Switch to this board, is it a win because the pieces are in the same color?
+",Affirm(),"Sure, you can do that.",Ruijie,5,5,Luke,,0-8-0-0-0-10-0-0-0-12-0-0-0-2-0-0
+664,60,8,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-11-0-0-12-0-0-8-0-0-7-0-0-0
+664,60,9,"Context Switch, Confirm(User_ID=1, Translate([3, 0]))","Switch to this board, can I put the pieces on the fourth row?",NotSure(),"You know what, I’m not quite sure.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-5-14-16-8
+664,60,10,Finish(),"Thanks, I think I've learned enough.",Finish,"Ok, see you next time!",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-5-14-16-8

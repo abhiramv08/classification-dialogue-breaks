@@ -1,0 +1,15 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+427,50,0,Start(),"Hello, can you teach me how to play Quarto?",Start,"Sure, I can teach you all the rules",John,5,5,Jacob,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+427,50,1,RequestNewWinCondition(),Can I see an example of a win condition?,Inform,Assume you demonstrate this win condition,John,5,5,Jacob,,0-0-1-0-0-0-7-0-0-0-11-0-0-0-13-0
+427,50,2,RequestNewWinCondition(),Will you show me another win condition please?,Inform,Assume you demonstrate this win condition,John,5,5,Jacob,,0-0-0-16-0-0-4-0-0-3-0-0-11-0-0-0
+427,50,3,RequestNewWinCondition(),Could I see a different example of a win scenario?,Inform,Assume you demonstrate this win condition,John,5,5,Jacob,,1-0-0-0-0-2-0-0-0-0-14-0-0-0-0-5
+427,50,4,"Same, Confirm(User_ID=1, Shape)",Is the shape of the pieces the reason for this win?,Negate(),"No, the pieces are of different shapes",John,5,5,Jacob,,1-0-0-0-0-2-0-0-0-0-14-0-0-0-0-5
+427,50,5,"Context Switch, Confirm(User_ID=1, Rotate(90))","Now in this board, is it still a win if I rotate the pieces to all be in the first column?",NotSure(),I don't know if that is still a win,John,5,5,Jacob,,0-0-0-16-0-0-4-0-0-3-0-0-11-0-0-0
+427,50,6,RequestNewWinCondition(),Can I see another example of a win?,Inform,Assume you demonstrate this win condition,John,5,5,Jacob,,0-0-0-0-0-0-0-0-0-0-0-0-2-3-4-11
+427,50,7,RequestNewWinCondition(),Could you show me another win condition?,Inform,Assume you demonstrate this win condition,John,5,5,Jacob,,0-0-0-0-0-0-0-0-0-0-0-0-12-4-7-8
+427,50,8,"Context Switch, RequestOtherPlayers()","Now in this board, what actions could another player take to undo this win?",Inform([]),No actions can be taken to undo this win,John,5,5,Jacob,,0-0-1-0-0-0-7-0-0-0-11-0-0-0-13-0
+427,50,9,"Context Switch, Confirm(User_ID=1, Height)","For this board here, is the height of the pieces the reason for the win?",NotSure(),I don't know how height affects this win,John,5,5,Jacob,,0-0-0-0-0-0-0-0-0-0-0-0-12-4-7-8
+427,50,10,"Context Switch, Confirm(User_ID=1, Color)","Now in this board, is the color of the pieces the reason for this win?",Negate(),"No, the pieces are not all the same color",John,5,5,Jacob,,1-0-0-0-0-2-0-0-0-0-14-0-0-0-0-5
+427,50,11,"Context Switch, Confirm(User_ID=1, Hollowness)","In the board shown here, is the hollowness of the pieces important for this win?",NotSure(),I don't know how hollowness plays a role here,John,5,5,Jacob,,0-0-0-0-0-0-0-0-0-0-0-0-2-3-4-11
+427,50,12,"Context Switch, Request(User_ID=1, Translate)","In this board here, how could I translate the pieces and still have a win?","Inform(['row1', 'row2'])",You could translate the pieces up one or two rows and still have a win,John,4,5,Jacob,This should be more specific about the pieces remaining in the same relative positions.,0-0-0-0-0-0-0-0-0-0-0-0-12-4-7-8
+427,50,13,Finish(),"I've learned a lot, thanks for playing",Finish,"Of course, goodbye",John,5,5,Jacob,,0-0-0-0-0-0-0-0-0-0-0-0-12-4-7-8

@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+212,100,0,Start(),Can you teach me how to play Quarto?,Start,No problem!,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+212,100,1,RequestNewWinCondition(),Can you give an example of winning board?,Inform(),Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-12-0-0-0-15-0-0-0-10-0-0-0-9-0-0
+212,100,2,RequestNewWinCondition(),Can you please give me one more?,Inform(),Assume you demonstrate this win condition,Derek,5,5,Shaobo,,10-0-0-0-0-4-0-0-0-0-12-0-0-0-0-3
+212,100,3,"Context Switch, Request(User_ID=1, Rotate)",Could I rotate the first winning board and keep winning?,Inform([]),Sure you are absolutely right.,Derek,2,4,Shaobo,,0-12-0-0-0-15-0-0-0-10-0-0-0-9-0-0
+212,100,4,"Context Switch, Confirm(User_ID=1, AddPiece(3,2))",Can I add a piece right below the top right corner and keep winning?,Affirm(),Sure you can do that.,Derek,5,5,Shaobo,good,10-0-0-0-0-4-0-0-0-0-12-0-0-0-0-3
+212,100,5,"Context Switch, Confirm(User_ID=1, RemovePiece(0,1))",How about remove the second piece from bottom on the first winning board?,Negate(),"No, you can delete a piece.",Derek,5,5,Shaobo,,0-12-0-0-0-15-0-0-0-10-0-0-0-9-0-0
+212,100,6,"Context Switch, Confirm(User_ID=1, AddPiece(1,0))",How about add a piece on the right of the bottom left corner?,Affirm(),Sure you can add pieces anywhere.,Derek,5,5,Shaobo,,10-0-0-0-0-4-0-0-0-0-12-0-0-0-0-3
+212,100,7,"Same, Confirm(User_ID=1, Rotate(90))",How about put all pieces vertically. Is that still a win?,Affirm(),Sure it is still a win.,Derek,5,5,Shaobo,,10-0-0-0-0-4-0-0-0-0-12-0-0-0-0-3
+212,100,8,"Same, Confirm(User_ID=1, Height)",So I guess is the height of there pieces make the board win?,Negate(),No. Not in this case.,Derek,5,4,Shaobo,,10-0-0-0-0-4-0-0-0-0-12-0-0-0-0-3
+212,100,9,RequestNewWinCondition(),I think I need one more win condition to think about.,Inform(),Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-6-1-13-9
+212,100,10,"Context Switch, RequestOtherPlayers()","Let's go back to the second win condition, could another player prevent this win?",Inform([]),"No, this win can not be prevented.",Derek,5,5,Shaobo,,10-0-0-0-0-4-0-0-0-0-12-0-0-0-0-3
+212,100,11,"Context Switch, Confirm(User_ID=1, RemovePiece(0,1))",Let's move to the last win condition you showed. Can I remove the second piece from left?,Negate(),No you can not remove that piece.,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-6-1-13-9
+212,100,12,Finish(),"Thank you so much, I learned a lot about Quarto today!",Finish,No porblem.,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-6-1-13-9

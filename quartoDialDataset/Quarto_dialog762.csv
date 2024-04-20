@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+762,60,0,Start(),"Hey I really want to learn playing Quarto, can you teach me?",Start,Definately.,Derek,4,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+762,60,1,RequestNewWinCondition(),Can you show me a win condition to start?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-8-0-0-15-0-0-7-0-0-11-0-0-0
+762,60,2,"Same, Confirm(User_ID=1, Shape)",Is that a win because the shape pattern of all pieces?,Negate(),"No, the shape of all pieces does not make it a win.",Derek,5,5,Shaobo,,0-0-0-8-0-0-15-0-0-7-0-0-11-0-0-0
+762,60,3,RequestNewWinCondition(),Can  you show me one more win condition?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-5-1-9-10
+762,60,4,RequestNewWinCondition(),One more please.,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,13-0-0-0-0-9-0-0-0-0-11-0-0-0-0-14
+762,60,5,RequestNewWinCondition(),Please show me one more.,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-4-0-0-11-0-0-15-0-0-7-0-0-0
+762,60,6,"Same, Confirm(User_ID=1, Shape)",Is that a win because the shape pattern of all pieces?,Negate(),No. Did I tell you about that before?,Derek,5,5,Shaobo,,0-0-0-4-0-0-11-0-0-15-0-0-7-0-0-0
+762,60,7,"Context Switch, Confirm(User_ID=1, Shape)",How about the shape pattern in this board.,Negate(),No. You need to have all four pieces with the same shape to win.,Derek,4,5,Shaobo,,13-0-0-0-0-9-0-0-0-0-11-0-0-0-0-14
+762,60,8,"Same, Confirm(User_ID=1, Hollowness)",Is that a win because the hollowness pattern of all pieces?,Negate(),No. It is also not the reason to win.,Derek,5,5,Shaobo,,13-0-0-0-0-9-0-0-0-0-11-0-0-0-0-14
+762,60,9,"Same, Confirm(User_ID=1, Height)",How about the height.,NotSure(),Sorry I am not sure about the height.,Derek,5,5,Shaobo,,13-0-0-0-0-9-0-0-0-0-11-0-0-0-0-14
+762,60,10,Finish(),Thanks for teaching me today!,Finish,You are welcome!,Derek,5,5,Shaobo,,13-0-0-0-0-9-0-0-0-0-11-0-0-0-0-14

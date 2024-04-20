@@ -1,0 +1,19 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+735,60,0,Start(),"Hello, can you teach me how to play Quarto?",Start,"Sure, let's start!",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+735,60,1,RequestNewWinCondition(),"Can you show me what a win condition looks like?
+",Inform,Assume you demonstrate this win condition,Ruijie,5,4,Luke,,0-0-0-10-0-0-1-0-0-3-0-0-4-0-0-0
+735,60,2,"Same, Confirm(User_ID=1, Hollowness)","Does the hollowness of the pieces make it a win?
+",Negate(),"No, it’s irrelevant.",Ruijie,5,5,Luke,,0-0-0-10-0-0-1-0-0-3-0-0-4-0-0-0
+735,60,3,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,7-0-0-0-8-0-0-0-2-0-0-0-5-0-0-0
+735,60,4,"Context Switch, Confirm(User_ID=1, Hollowness)","Switch to this board, does the hollowness of the pieces make it a win?
+",NotSure(),"I'm actually not quite sure.
+",Ruijie,5,5,Luke,,0-0-0-10-0-0-1-0-0-3-0-0-4-0-0-0
+735,60,5,"Context Switch, Confirm(User_ID=1, Height)","Switch to this board, is it a win because the pieces are of the same height?
+",Affirm(),"Yup, you’re right",Ruijie,5,4,Luke,,7-0-0-0-8-0-0-0-2-0-0-0-5-0-0-0
+735,60,6,"Same, Confirm(User_ID=1, Translate([0, 3]))",Can I move the pieces to the fourth column without breaking the win?,Affirm(),"Yes, you can.",Ruijie,5,5,Luke,,7-0-0-0-8-0-0-0-2-0-0-0-5-0-0-0
+735,60,7,RequestNewWinCondition(),Can you give me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-11-0-0-12-0-0-14-0-0-13-0-0-0
+735,60,8,"Context Switch, Confirm(User_ID=1, Height)","Switch to this board, is it a win because the pieces are of the same height?
+",Negate(),"No, that’s irrelevant.",Ruijie,5,5,Luke,,0-0-0-10-0-0-1-0-0-3-0-0-4-0-0-0
+735,60,9,RequestNewWinCondition(),What about another win example?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-6-12-8-16
+735,60,10,"Context Switch, Confirm(User_ID=1, AddPiece(0,2))","Switch to this board, can I add one more piece on the first row, the third column?",Affirm(),"Sure, you can do that.",Ruijie,5,4,Luke,,7-0-0-0-8-0-0-0-2-0-0-0-5-0-0-0
+735,60,11,Finish(),Thank you so much! I've mastered it.,Finish,Really? You are welcome!,Ruijie,5,5,Luke,,7-0-0-0-8-0-0-0-2-0-0-0-5-0-0-0

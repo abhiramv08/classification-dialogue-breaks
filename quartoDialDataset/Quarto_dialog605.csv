@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+605,60,0,Start(),"Hello, can you show me how the Quarto works?",Start,I would love to.,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+605,60,1,RequestNewWinCondition(),"Thank you. Firstly, could you show me a win condition?",Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-6-0-0-0-2-0-0-0-10-0-0-0-8
+605,60,2,"Same, Request(User_ID=1, Rotate)","For this win you just showed, how can I rotate the pieces while keeping the win condition?","Inform([135, 180])",You can rotate them to the antidiagonal direction or to the first row,Yiyan,5,4,Tianyi,,0-0-0-6-0-0-0-2-0-0-0-10-0-0-0-8
+605,60,3,RequestNewWinCondition(),Can you show me another way to win the game?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-15-0-0-16-0-0-14-0-0-7-0-0-0
+605,60,4,RequestNewWinCondition(),Is there any other way to win the game?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-14-0-0-6-0-0-5-0-0-7-0-0-0
+605,60,5,"Same, Request(User_ID=1, Rotate)","For the same board, is there any way that I can rotate the pieces to get another win?",Inform([90]),You can rotate them to the first column,Yiyan,5,5,Tianyi,,0-0-0-14-0-0-6-0-0-5-0-0-7-0-0-0
+605,60,6,RequestNewWinCondition(),Could you please show me one more win scenario?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-10-2-3-11
+605,60,7,"Context Switch, Confirm(User_ID=1, Height)","Let's switch to this board, is this a win because of the heights of the pieces?",Negate(),"No, it is a win because all the pieces have the same shape.",Yiyan,5,5,Tianyi,,0-0-0-14-0-0-6-0-0-5-0-0-7-0-0-0
+605,60,8,"Context Switch, Confirm(User_ID=1, Rotate(180))","Let turn to this board, will it still be a win if I rotate the pieces to the first row?",Affirm(),"Sure, then you will get another win condition.",Yiyan,4,5,Tianyi,,0-0-0-6-0-0-0-2-0-0-0-10-0-0-0-8
+605,60,9,"Context Switch, Confirm(User_ID=1, Quantity)","Going back to this board, is this a win because of the number of the pieces?",Affirm(),"Yes, the number of the pieces are necessary to the win.",Yiyan,5,5,Tianyi,,0-0-0-14-0-0-6-0-0-5-0-0-7-0-0-0
+605,60,10,"Same, Confirm(User_ID=1, Shape)","For the same board, is it a win because of the shapes of the pieces?",Affirm(),"Yes, you can win by have four pieces with the same shape.",Yiyan,5,5,Tianyi,,0-0-0-14-0-0-6-0-0-5-0-0-7-0-0-0
+605,60,11,Finish(),"I think I know enough about Quarto, thank you very much.",Finish,You are welcome.,Yiyan,5,5,Tianyi,,0-0-0-14-0-0-6-0-0-5-0-0-7-0-0-0

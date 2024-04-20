@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+221,100,0,Start(),Hello. Can you teach me the game of Quarto?,Start,"Sure, I'll give it a try.",Jacob,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+221,100,1,RequestNewWinCondition(),"To begin, could you show me a winning board?",Inform(),Assume you demonstrate this win condition,Jacob,5,5,Yiyen,,16-0-0-0-11-0-0-0-9-0-0-0-13-0-0-0
+221,100,2,RequestNewWinCondition(),Can you show me another?,Inform(),Assume you demonstrate this win condition,Jacob,5,5,Yiyen,,13-0-0-0-0-16-0-0-0-0-14-0-0-0-0-10
+221,100,3,"Same, Confirm(User_ID=1, Rotate(90))","If the pieces on this board were aligned vertically, would this still be a winning board?",Affirm(),"Yes, this would still be a win condition.",Jacob,3,5,Yiyen,,13-0-0-0-0-16-0-0-0-0-14-0-0-0-0-10
+221,100,4,"Same, Request(User_ID=1, Translate)",In what ways could the pieces in this configuration be moved on the board to create a new win condition?,Inform([]),There is no way to move pieces like this.,Jacob,5,5,Yiyen,,13-0-0-0-0-16-0-0-0-0-14-0-0-0-0-10
+221,100,5,RequestNewWinCondition(),Can you show me a new winning board?,Inform(),Assume you demonstrate this win condition,Jacob,5,5,Yiyen,,0-0-0-8-0-0-7-0-0-15-0-0-6-0-0-0
+221,100,6,"Same , Confirm(User_ID=1, AddPiece(2,0))",Would I still win if there were a piece in the third row of the first column?,Affirm(),Yes. A piece there would still constitute a win.,Jacob,5,5,Yiyen,,0-0-0-8-0-0-7-0-0-15-0-0-6-0-0-0
+221,100,7,"Same , Confirm(User_ID=1, Color)",Do the colors of these pieces make this board a win?,Negate(),Color does not matter on this board.,Jacob,5,5,Yiyen,,0-0-0-8-0-0-7-0-0-15-0-0-6-0-0-0
+221,100,8,RequestNewWinCondition(),Could you please show me a new win condition?,Inform(),Assume you demonstrate this win condition,Jacob,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-15-6-16-7
+221,100,9,"Context Switch, Confirm(User_ID=1, Color)","On this board here, are the colors of the pieces relevant to the win condition?",Negate(),"The color matters as much as it did last time you asked, which is to say it does not.",Jacob,5,5,Yiyen,,0-0-0-8-0-0-7-0-0-15-0-0-6-0-0-0
+221,100,10,"Context Switch, Confirm(User_ID=1, Translate('col2'))",Let's move on to this board. Would I still win if these pieces were placed in the third column from the left?,Affirm,Yes.,Jacob,5,4,Yiyen,,16-0-0-0-11-0-0-0-9-0-0-0-13-0-0-0
+221,100,11,"Context Switch, Confirm(User_ID=1, Quantity)","On this board, is the number of pieces important to the win condition?",Affirm(),Yes. The number of pieces is vital in this case.,Jacob,5,5,Yiyen,,13-0-0-0-0-16-0-0-0-0-14-0-0-0-0-10
+221,100,12,RequestNewWinCondition(),Can you show me a new winning board?,Inform(),Assume you demonstrate this win condition,Jacob,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-5-2-1-14
+221,100,13,RequestNewWinCondition(),"I'd like to see another, please.",Inform(),Assume you demonstrate this win condition,Jacob,5,4,Yiyen,,12-0-0-0-0-3-0-0-0-0-11-0-0-0-0-8
+221,100,14,"Context Switch, Confirm(User_ID=1, Height)","Going back to this board, do the heights of these pieces matter?",Affirm(),Yes. This is a win precisely because all of the pieces have the same height.,Jacob,5,5,Yiyen,,13-0-0-0-0-16-0-0-0-0-14-0-0-0-0-10
+221,100,15,Finish(),Thanks for teaching me Quarto. Bye.,Finish,No problem. Goodbye.,Jacob,5,5,Yiyen,,13-0-0-0-0-16-0-0-0-0-14-0-0-0-0-10

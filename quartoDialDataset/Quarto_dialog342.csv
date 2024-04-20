@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+342,50,0,Start(),Can you teach me how to play Quarto?,Start,Sure!,Derek,,,,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+342,50,1,RequestNewWinCondition(),Please show me a win condition to start with.,Inform,Assume you demonstrate this win condition,Derek,,,,,0-0-0-0-0-0-0-0-0-0-0-0-2-7-5-4
+342,50,2,"Same, RequestOtherPlayers()",How could another player prevent this win?,Inform([]),I believe another player can not do anything to prevent it.,Derek,,,,,0-0-0-0-0-0-0-0-0-0-0-0-2-7-5-4
+342,50,3,RequestNewWinCondition(),Can you give me another win condition?,Inform,Assume you demonstrate this win condition,Derek,,,,,0-0-0-2-0-0-1-0-0-11-0-0-4-0-0-0
+342,50,4,"Context Switch, Request(User_ID=1, Translate)","Switching back to this win condition, how could I translate this board and keep winning?","Inform(['row1', 'row2'])",You could shift it to the first or second row.,Derek,,,,,0-0-0-0-0-0-0-0-0-0-0-0-2-7-5-4
+342,50,5,RequestNewWinCondition(),Can you show me another win condition?,Inform,Assume you demonstrate this win condition,Derek,,,,,0-0-0-0-0-0-0-0-0-0-0-0-6-9-5-14
+342,50,6,RequestNewWinCondition(),One more please.,Inform,Assume you demonstrate this win condition,Derek,,,,,0-3-0-0-0-2-0-0-0-1-0-0-0-7-0-0
+342,50,7,"Context Switch, Confirm(User_ID=1, Translate([3, 0]))","For this board, can I shift all pieces to the first row?",Affirm(),"Sure, you can definitely do that.",Derek,,,,,0-0-0-0-0-0-0-0-0-0-0-0-2-7-5-4
+342,50,8,RequestNewWinCondition(),Please give me another win condition.,Inform,Assume you demonstrate this win condition,Derek,,,,,0-0-0-15-0-0-0-1-0-0-0-9-0-0-0-13
+342,50,9,"Same, Confirm(User_ID=1, Shape)",Is that a win because the shape of each piece?,NotSure(),Sorry I am not sure about that.,Derek,,,,,0-0-0-15-0-0-0-1-0-0-0-9-0-0-0-13
+342,50,10,"Context Switch, Confirm(User_ID=1, Rotate(90))","Let's move to this win condition, can I place all pieces vertically and keep winning?",Affirm(),Yes you could do that.,Derek,,,,,0-0-0-2-0-0-1-0-0-11-0-0-4-0-0-0
+342,50,11,"Context Switch, Confirm(User_ID=1, Height)","Let's talk about this board, is that a win because the height pattern of pieces?",Negate(),No the height pattern does not make this board a win.,Derek,,,,,0-0-0-0-0-0-0-0-0-0-0-0-6-9-5-14
+342,50,12,"Context Switch, Confirm(User_ID=1, AddPiece(2,3))","Can I add another piece at (2,3) in this win condition and keep winning?",Affirm(),"Yes, you can do that.",Derek,,,,,0-0-0-0-0-0-0-0-0-0-0-0-2-7-5-4
+342,50,13,"Context Switch, Confirm(User_ID=1, Shape)",Can you tell me if the shape pattern of pieces in this board is the reason to win?,NotSure(),Sorry I am not sure about that.,Derek,,,,,0-3-0-0-0-2-0-0-0-1-0-0-0-7-0-0
+342,50,14,"Context Switch, Request(User_ID=1, Translate)","Let's switch to this board, how could I shift this board and keep winning?",Inform(['col1']),You can place them all on the second column from left.,Derek,,,,,0-0-0-15-0-0-0-1-0-0-0-9-0-0-0-13
+342,50,15,Finish(),Thanks for teaching me today! Bye!,Finish,Bye!,Derek,,,,,0-0-0-15-0-0-0-1-0-0-0-9-0-0-0-13

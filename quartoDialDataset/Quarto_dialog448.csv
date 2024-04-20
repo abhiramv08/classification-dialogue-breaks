@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+448,50,0,Start(),"Hello, can you give me some advice of playing Quarto?",Start,Sure.,Tianyi,,,,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+448,50,1,RequestNewWinCondition(),Can you give me an example of win?,Inform,Assume you demonstrate this win condition,Tianyi,,,,,0-0-0-2-0-0-10-0-0-16-0-0-8-0-0-0
+448,50,2,RequestNewWinCondition(),Can you give another win example?,Inform,Assume you demonstrate this win condition,Tianyi,,,,,0-0-0-0-0-0-0-0-0-0-0-0-8-15-7-14
+448,50,3,RequestNewWinCondition(),What else can be a win?,Inform,Assume you demonstrate this win condition,Tianyi,,,,,0-0-0-0-0-0-0-0-0-0-0-0-5-2-1-14
+448,50,4,"Context Switch, Confirm(User_ID=1, RemovePiece(0,0))","In the first win, if I remove the bottom piece, can it still be a win?",NotSure(),I am uncertain about this.,Tianyi,,,,,0-0-0-2-0-0-10-0-0-16-0-0-8-0-0-0
+448,50,5,"Context Switch, Request(User_ID=1, Translate)","In the second win, can I move some pieces and still maintain the win?","Inform(['row1', 'row2'])","Yes, you can move all pieces to the second row or to the third row.",Tianyi,,,,,0-0-0-0-0-0-0-0-0-0-0-0-8-15-7-14
+448,50,6,"Context Switch, Confirm(User_ID=1, Hollowness)","For the third win, is it a win because all pieces are solid?",Affirm(),"Yeah, that is the reason.",Tianyi,,,,,0-0-0-0-0-0-0-0-0-0-0-0-5-2-1-14
+448,50,7,RequestNewWinCondition(),Can you show me a new win pattern?,Inform,Assume you demonstrate this win condition,Tianyi,,,,,0-0-0-0-0-0-0-0-0-0-0-0-15-5-1-11
+448,50,8,"Same, Confirm(User_ID=1, Hollowness)","In this case, is it wins because some pieces are hollow?",NotSure(),"Sorry, I am not sure about this.",Tianyi,,,,,0-0-0-0-0-0-0-0-0-0-0-0-15-5-1-11
+448,50,9,RequestNewWinCondition(),Can you give another winning board?,Inform,Assume you demonstrate this win condition,Tianyi,,,,,0-0-0-3-0-0-4-0-0-6-0-0-1-0-0-0
+448,50,10,"Context Switch, Confirm(User_ID=1, RemovePiece(0,3))","In the fourth win, if I remove the rightmost piece, can it still be a win?",NotSure(),I cannot determine that. Maybe you are right.,Tianyi,,,,,0-0-0-0-0-0-0-0-0-0-0-0-15-5-1-11
+448,50,11,"Context Switch, Confirm(User_ID=1, Translate([2, 0]))","For the second win, if I move all pieces to the third row, is it still a win?",NotSure(),"Sorry, I am not sure about this question.",Tianyi,,,,,0-0-0-0-0-0-0-0-0-0-0-0-8-15-7-14
+448,50,12,Finish(),"Thanks, I have learned a lot today.",Finish,You are welcome.,Tianyi,,,,,0-0-0-0-0-0-0-0-0-0-0-0-8-15-7-14

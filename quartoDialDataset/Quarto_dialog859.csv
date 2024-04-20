@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+859,60,0,Start(),"Hi, would you teach me how to play Quarto?",Start,"Sure, that shouldn't be very hard. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+859,60,1,RequestNewWinCondition(),Please show me a win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-3-0-0-11-0-0-7-0-0-13-0-0-0
+859,60,2,RequestNewWinCondition(),Please show me a second win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-5-0-0-0-6-0-0-0-16-0-0-0-14-0
+859,60,3,"Same, Confirm(User_ID=1, Height)",Is this a win because of the height of the pieces?,Negate(),"No, that is not why because the pieces are not all the same height.",Anthony,5,5,Yiyen,,0-0-5-0-0-0-6-0-0-0-16-0-0-0-14-0
+859,60,4,"Same, Confirm(User_ID=1, Shape)",Is this a win because of the shape of the pieces?,Affirm(),"Yes, they are all circles. ",Anthony,5,5,Yiyen,,0-0-5-0-0-0-6-0-0-0-16-0-0-0-14-0
+859,60,5,"Same, Confirm(User_ID=1, AddPiece(3,3))",Could I add a piece here?,NotSure(),"I'm not sure, sorry. ",Anthony,3,5,Yiyen,,0-0-5-0-0-0-6-0-0-0-16-0-0-0-14-0
+859,60,6,"Same, Request(User_ID=1, Translate)",How could I shift these pieces?,"Inform(['col1', 'col3'])",You could move them to column 1 or 3. ,Anthony,5,4,Yiyen,,0-0-5-0-0-0-6-0-0-0-16-0-0-0-14-0
+859,60,7,"Same, Confirm(User_ID=1, Hollowness)",Is this a win because of the hollowness of the pieces?,NotSure(),I'm not sure about that either. ,Anthony,5,5,Yiyen,,0-0-5-0-0-0-6-0-0-0-16-0-0-0-14-0
+859,60,8,"Same, Confirm(User_ID=1, AddPiece(1,1))",Would this still be a win if I added a piece here?,Affirm(),"Yes, that's completely fine. ",Anthony,3,5,Yiyen,,0-0-5-0-0-0-6-0-0-0-16-0-0-0-14-0
+859,60,9,RequestNewWinCondition(),Please show me another win. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-9-6-5-1
+859,60,10,"Context Switch, Confirm(User_ID=1, Quantity)","Looking back to this board, is the number of pieces what makes this a win?",NotSure(),I dont know. ,Anthony,5,5,Yiyen,,0-0-5-0-0-0-6-0-0-0-16-0-0-0-14-0
+859,60,11,Finish(),Thanks for the help.,Finish,Of course.,Anthony,5,4,Yiyen,,0-0-5-0-0-0-6-0-0-0-16-0-0-0-14-0

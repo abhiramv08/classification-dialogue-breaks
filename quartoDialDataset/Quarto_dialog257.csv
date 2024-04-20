@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+257,100,0,Start(),"Hi, can you show me how to play Quarto?",Start,"Sure, let's begin.",Yiyan,5,5,Jason,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+257,100,1,RequestNewWinCondition(),Could you show me a winning condition?,Inform(),Assume you demonstrate this win condition,Yiyan,5,5,Jason,,10-0-0-0-0-11-0-0-0-0-12-0-0-0-0-4
+257,100,2,"Same, Request(User_ID=1, Translate)","For the winning board you just showed, how can I translate the pieces to get another win?",Inform([]),"No, there is no way to translate the pieces.",Yiyan,5,3,Jason,Unnatural response.,10-0-0-0-0-11-0-0-0-0-12-0-0-0-0-4
+257,100,3,"Same, Confirm(User_ID=1, Quantity)","For the same board, is it a win because of the number of the pieces?",Affirm(),"Yes, though it is not the only reason.",Yiyan,5,5,Jason,,10-0-0-0-0-11-0-0-0-0-12-0-0-0-0-4
+257,100,4,RequestNewWinCondition(),Can you show me another winning condition?,Inform(),Assume you demonstrate this win condition,Yiyan,5,5,Jason,,0-0-0-6-0-0-0-9-0-0-0-13-0-0-0-1
+257,100,5,"Context Switch, Request(User_ID=1, Translate)",Let's change to this board. For this board how can I translate the pieces to get another winning condition?,Inform([]),There is no way to translate the pieces.,Yiyan,5,5,Jason,,10-0-0-0-0-11-0-0-0-0-12-0-0-0-0-4
+257,100,6,"Same , Confirm(User_ID=1, AddPiece(3,1))","For the same winning board, will it be another win if I add a piece on the forth row and the second column?",Affirm(),"Yes, it will be another win.",Yiyan,3,4,Jason,"Mispelling ""fourth"", the 3rd row in this case might not be the top row to the user.",10-0-0-0-0-11-0-0-0-0-12-0-0-0-0-4
+257,100,7,"Same, Request(User_ID=1, Rotate)","For the same winning board, how can I rotate the pieces to get another win?",Inform([90]),You can put all the pieces to the last column.,Yiyan,3,5,Jason,Would be in the first column.,10-0-0-0-0-11-0-0-0-0-12-0-0-0-0-4
+257,100,8,RequestNewWinCondition(),Can you show me another way to win?,Inform(),Assume you demonstrate this win condition,Yiyan,5,5,Jason,,8-0-0-0-0-3-0-0-0-0-12-0-0-0-0-16
+257,100,9,"Same , Confirm(User_ID=1, AddPiece(3,1))","For the same board, is it still a win if I put a piece above the green piece?",Affirm(),"Yes, it is still a win.",Yiyan,5,5,Jason,,8-0-0-0-0-3-0-0-0-0-12-0-0-0-0-16
+257,100,10,Finish(),Thank you very much.,Finish,You are welcome.,Yiyan,5,4,Jason,,8-0-0-0-0-3-0-0-0-0-12-0-0-0-0-16

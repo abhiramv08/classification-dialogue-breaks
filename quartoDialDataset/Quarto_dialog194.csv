@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+194,100,0,Start(),"Hi, can you show me how to play Quarto?",Start,Sure,Yiyan,5,4,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+194,100,1,RequestNewWinCondition(),So how can I win a game?,Inform(),Assume you demonstrate this win condition,Yiyan,4,3,Derek,,9-0-0-0-0-2-0-0-0-0-4-0-0-0-0-3
+194,100,2,"Win Same {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}","For this winning you showed to me, is it a win because I get a piece with a hollow?",Negate(),"No, in this case the hollowness does not lead to a win.",Yiyan,3,3,Derek,,9-0-0-0-0-2-0-0-0-0-4-0-0-0-0-3
+194,100,3,"Same, Confirm(User_ID=1, Height)","How about the height of the pieces, does it relate to the winning condition?",Negate(),"No, the height does not promise a winning condition.",Yiyan,4,3,Derek,,9-0-0-0-0-2-0-0-0-0-4-0-0-0-0-3
+194,100,4,RequestNewWinCondition(),Is there any other ways to win?,Inform(),Assume you demonstrate this win condition,Yiyan,5,4,Derek,,9-0-0-0-0-14-0-0-0-0-16-0-0-0-0-12
+194,100,5,"Context Switch, Request(User_ID=1, Rotate)","For this winning board, how can I retate all the pieces to get another winning condition?",Inform([90]),You can put all the pieces in a column.,Yiyan,3,3,Derek,,9-0-0-0-0-2-0-0-0-0-4-0-0-0-0-3
+194,100,6,"Same , Confirm(User_ID=1, AddPiece(1,1))","For the same board, is it still a win if I add a piece on the second column of the second row?",Affirm(),"Sure, you can do that, and it will still be a winning condition.",Yiyan,5,4,Derek,,9-0-0-0-0-2-0-0-0-0-4-0-0-0-0-3
+194,100,7,"Same , Confirm(User_ID=1, Shape)","For the same board, is it a winning because I get  four pieces with the same shope?",Affirm(),"Yes, it is. But it is not the only way to win.",Yiyan,3,3,Derek,shape,9-0-0-0-0-2-0-0-0-0-4-0-0-0-0-3
+194,100,8,RequestNewWinCondition(),Can you show me another winning condition?,Inform(),Assume you demonstrate this win condition,Yiyan,5,4,Derek,,15-0-0-0-0-1-0-0-0-0-9-0-0-0-0-5
+194,100,9,"Context Switch, Confirm(User_ID=1, Height)","For this winning condition, does the height relate to my winning?",Affirm(),"Yes, in this case the height of pieces matters.",Yiyan,3,3,Derek,,9-0-0-0-0-14-0-0-0-0-16-0-0-0-0-12
+194,100,10,"Context Switch, Confirm(User_ID=1, Height)","For this winning condition, does the height matter my winning?",Negate(),"No, the height still does not promise a winning condition.",Yiyan,3,3,Derek,,9-0-0-0-0-2-0-0-0-0-4-0-0-0-0-3
+194,100,11,Finish(),Thank you for teaching me so much!,Finish,You are welcome.,Yiyan,5,4,Derek,,9-0-0-0-0-2-0-0-0-0-4-0-0-0-0-3

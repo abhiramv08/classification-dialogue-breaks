@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+1033,60,0,Start(),"Hi, can you teach me some strategies on Quarto?",Start,Sure.,Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+1033,60,1,RequestNewWinCondition(),Can you show me a winning board first?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,0-0-0-10-0-0-2-0-0-8-0-0-6-0-0-0
+1033,60,2,RequestNewWinCondition(),Can you show me another winning board?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,0-0-0-12-0-0-3-0-0-2-0-0-10-0-0-0
+1033,60,3,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-12-10-16-13
+1033,60,4,"Same, Confirm(User_ID=1, Color)","In this win, is it wins because of the color of the pieces?",Negate(),"No, that is not the reason.",Tianyi,5,4,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-12-10-16-13
+1033,60,5,"Context Switch, Confirm(User_ID=1, Height)","In this board, is it a win because some pieces are short?",Negate(),Nope.,Tianyi,5,4,Ruijie,,0-0-0-12-0-0-3-0-0-2-0-0-10-0-0-0
+1033,60,6,"Context Switch, Confirm(User_ID=1, Rotate(90))","Back to this win, if I rotate all pieces 90 degrees to the rows and put them in the first column, will it still be a win?",Affirm(),"Yes, it will be.",Tianyi,5,4,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-12-10-16-13
+1033,60,7,"Same, Confirm(User_ID=1, Height)","And, is it wins because of the height of the pieces?",NotSure(),I have no idea about this. Maybe you are right.,Tianyi,5,4,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-12-10-16-13
+1033,60,8,"Context Switch, Confirm(User_ID=1, Rotate(90))","In that board, can I rotate all pieces 90 degrees to the rows and put them in the first column and still maintain the win?",Affirm(),"Yes, you can.",Tianyi,5,4,Ruijie,,0-0-0-10-0-0-2-0-0-8-0-0-6-0-0-0
+1033,60,9,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-5-9-2-10
+1033,60,10,"Context Switch, Confirm(User_ID=1, Hollowness)","In that win, is it a win because most pieces here are solid?",NotSure(),I cannot determine whether that is true.,Tianyi,5,5,Ruijie,,0-0-0-10-0-0-2-0-0-8-0-0-6-0-0-0
+1033,60,11,"Context Switch, Confirm(User_ID=1, Height)","In that board, is it a win because some pieces are tall?",Negate(),No.,Tianyi,5,4,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-5-9-2-10
+1033,60,12,"Context Switch, Confirm(User_ID=1, Shape)","Back to this winning board, is it a win because all pieces have the same shape?",Affirm(),"Yes, you are right.",Tianyi,5,5,Ruijie,,0-0-0-12-0-0-3-0-0-2-0-0-10-0-0-0
+1033,60,13,"Context Switch, Request(User_ID=1, Rotate)","In this case, can I rotate some pieces and maintain the win condition?",Inform([90]),"Yes, you can rotate all pieces 90 degrees to the rows and put them in the first column.",Tianyi,5,4,Ruijie,,0-0-0-10-0-0-2-0-0-8-0-0-6-0-0-0
+1033,60,14,RequestNewWinCondition(),Can you show me a new winning board?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,0-0-0-7-0-0-4-0-0-16-0-0-3-0-0-0
+1033,60,15,Finish(),"Thank you so much, you are a very good teacher.",Finish,"Thanks, you are welcome.",Tianyi,5,5,Ruijie,,0-0-0-7-0-0-4-0-0-16-0-0-3-0-0-0

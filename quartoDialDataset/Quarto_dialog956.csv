@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+956,60,0,Start(),"Hi, do you have time to teach me some rules about Quarto?",Start,"Yes, what do you want to know?",Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+956,60,1,RequestNewWinCondition(),Can you show me a win pattern?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,0-0-0-4-0-0-14-0-0-8-0-0-16-0-0-0
+956,60,2,RequestNewWinCondition(),Can you show me another win pattern?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,0-8-0-0-0-4-0-0-0-12-0-0-0-2-0-0
+956,60,3,"Context Switch, Confirm(User_ID=1, Quantity)","In this case, is it a win because there are four pieces on the board?",NotSure(),"Sorry, I am not sure about this.",Tianyi,5,5,Ruijie,,0-0-0-4-0-0-14-0-0-8-0-0-16-0-0-0
+956,60,4,"Context Switch, Confirm(User_ID=1, Translate([0, 3]))","For this board, if I move all pieces two blocks right, can it still be a win?",NotSure(),I cannot determine whether that is true.,Tianyi,5,4,Ruijie,,0-8-0-0-0-4-0-0-0-12-0-0-0-2-0-0
+956,60,5,RequestNewWinCondition(),Can you show me a new winning board?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,0-0-0-5-0-0-2-0-0-10-0-0-13-0-0-0
+956,60,6,"Context Switch, Confirm(User_ID=1, Quantity)","In this win, is it a win because of the quantity of the pieces?",NotSure(),I am uncertain about this.,Tianyi,5,5,Ruijie,,0-0-0-4-0-0-14-0-0-8-0-0-16-0-0-0
+956,60,7,"Same, Confirm(User_ID=1, Shape)",Is it wins because of the shape of the pieces?,NotSure(),I have no idea about this. Maybe you are right.,Tianyi,5,5,Ruijie,,0-0-0-4-0-0-14-0-0-8-0-0-16-0-0-0
+956,60,8,"Context Switch, Request(User_ID=1, Translate)","For this board, can I move some pieces and still keep the win?",Inform(['col2']),"Yes, you can move all pieces to the third column.",Tianyi,4,5,Ruijie,,0-8-0-0-0-4-0-0-0-12-0-0-0-2-0-0
+956,60,9,"Context Switch, Confirm(User_ID=1, Rotate(90))","Back to this board, if I rotate all pieces 90 degrees to the rows and put them in the first column, can it still be a winning board?",Affirm(),Yes.,Tianyi,5,5,Ruijie,,0-0-0-5-0-0-2-0-0-10-0-0-13-0-0-0
+956,60,10,RequestNewWinCondition(),Can you show me another new winning board?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,0-0-0-2-0-0-3-0-0-8-0-0-7-0-0-0
+956,60,11,Finish(),"Thanks, very great learning experience.",Finish,You are welcome.,Tianyi,5,5,Ruijie,,0-0-0-2-0-0-3-0-0-8-0-0-7-0-0-0

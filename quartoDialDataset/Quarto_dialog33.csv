@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+33,100,0,Start(),"Hi, can you teach me how to play Quarto?",Start,"Sure, I'll teach you to play.",Jason,5,5,Jacob,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+33,100,1,RequestNewWinCondition(),Can you show me a way to win the game?,Inform(),Assume you demonstrate this win condition,Jason,5,5,Jacob,,0-0-6-0-0-0-9-0-0-0-5-0-0-0-2-0
+33,100,2,RequestNewWinCondition(),Can you show me another one?,Inform(),Assume you demonstrate this win condition,Jason,5,5,Jacob,,0-0-0-14-0-0-8-0-0-5-0-0-16-0-0-0
+33,100,3,"Same, Request(User_ID=1, Translate)",Is there a way you can translate these pieces in any direction?,Inform([]),"No, you can't translate them at all.",Jason,5,5,Jacob,,0-0-0-14-0-0-8-0-0-5-0-0-16-0-0-0
+33,100,4,RequestNewWinCondition(),Can you show me another win?,Inform(),Assume you demonstrate this win condition,Jason,5,5,Jacob,,13-0-0-0-0-15-0-0-0-0-12-0-0-0-0-10
+33,100,5,"Context Switch, Confirm(User_ID=1, RemovePiece(0,2))","Let's go back to that other win, would it still win if you removed that topmost piece?",Negate(),"No, it wouldn't win anymore.",Jason,3,5,Jacob,"The piece at (0, 2) would be the bottom piece of the column.",0-0-6-0-0-0-9-0-0-0-5-0-0-0-2-0
+33,100,6,"Context Switch, Request(User_ID=1, Translate)",Is there a way you can translate these pieces?,Inform([]),"No, you can't translate them all anywhere.",Jason,5,5,Jacob,,13-0-0-0-0-15-0-0-0-0-12-0-0-0-0-10
+33,100,7,"Context Switch, Confirm(User_ID=1, Height)",Is it a win because of the height of the pieces?,Negate(),"No, it doesn't have to do with the height.",Jason,5,5,Jacob,,0-0-6-0-0-0-9-0-0-0-5-0-0-0-2-0
+33,100,8,"Context Switch, Confirm(User_ID=1, RemovePiece(0,0))",Is it a win if you remove that bottom left piece?,Negate(),"No, it wouldn't win anymore.",Jason,5,4,Jacob,"For the user response, saying ""you wouldn't win"" or ""it wouldn't be a win"" would be more natural.",0-0-0-14-0-0-8-0-0-5-0-0-16-0-0-0
+33,100,9,"Same, Confirm(User_ID=1, Rotate(90))",Is it possible to rotate these pieces clockwise?,Affirm(),Yes,Jason,5,5,Jacob,,0-0-0-14-0-0-8-0-0-5-0-0-16-0-0-0
+33,100,10,Finish(),"Okay, thanks! I think I know enough to play now. Bye",Finish,Take care!,Jason,5,5,Jacob,,0-0-0-14-0-0-8-0-0-5-0-0-16-0-0-0

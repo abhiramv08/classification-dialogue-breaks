@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+213,100,0,Start(),Can you teach how to play quarto?,Start,Sure! Let's start!,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+213,100,1,RequestNewWinCondition(),Can you give me a winner's board?,Inform(),Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-6-0-0-4-0-0-3-0-0-5-0-0-0
+213,100,2,"Same, Confirm(User_ID=1, Quantity)",Do I have to have 4 pieces to win?,Affirm(),"Yes, you need to have at least 4 pieces.",Derek,5,5,Shaobo,,0-0-0-6-0-0-4-0-0-3-0-0-5-0-0-0
+213,100,3,"Same, Request(User_ID=1, Translate)",How about translation. Can I move these pieces somewhere and keep winning?,Inform([]),"Sure, there are many ways you can do that.",Derek,2,5,Shaobo,inform [] means you cannot translate,0-0-0-6-0-0-4-0-0-3-0-0-5-0-0-0
+213,100,4,RequestNewWinCondition(),Can you show me another win condition?,Inform(),Assume you demonstrate this win condition,Derek,5,5,Shaobo,,8-0-0-0-2-0-0-0-1-0-0-0-5-0-0-0
+213,100,5,RequestNewWinCondition(),"I'm sorry, but I think I need to see one more win condition.",Inform(),Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-4-0-0-0-12-0-0-0-15-0-0-0-3-0
+213,100,6,"Context Switch, Confirm(User_ID=1, Rotate(45))",For the second win condition. Can I put pieces diagonally and keep winning?,Affirm(),Yes. ,Derek,5,5,Shaobo,,8-0-0-0-2-0-0-0-1-0-0-0-5-0-0-0
+213,100,7,"Context Switch, Confirm(User_ID=1, Shape)",Does the shape pattern of first win condition make it a win?,Negate(),No.,Derek,5,4,Shaobo,,0-0-0-6-0-0-4-0-0-3-0-0-5-0-0-0
+213,100,8,"Context Switch, RequestOtherPlayers()","Regrading the second win condition, could another player prevent this win?",Inform([]),"No, this win can not be prevented.",Derek,5,5,Shaobo,,8-0-0-0-2-0-0-0-1-0-0-0-5-0-0-0
+213,100,9,"Win Context Switch {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}","For the last win condition you showed me, is that a win because of the hollowness of each piece?",Negate(),No.,Derek,5,5,Shaobo,,0-0-0-6-0-0-4-0-0-3-0-0-5-0-0-0
+213,100,10,"Same , Confirm(User_ID=1, Shape)",How about the shape of them?,Negate(),"No, shape is still not the reason to win.",Derek,5,4,Shaobo,,0-0-0-6-0-0-4-0-0-3-0-0-5-0-0-0
+213,100,11,"Context Switch, RequestOtherPlayers()",Could another player prevent the second win condition you showed me?,Inform([]),"No, this win can not be prevented as well.",Derek,5,5,Shaobo,,8-0-0-0-2-0-0-0-1-0-0-0-5-0-0-0
+213,100,12,"Context Switch, Confirm(User_ID=1, AddPiece(3,2))","For the second win condition, can I add a piece below the one on top right corner and keep winning?",Affirm(),Yes you can do that.,Derek,5,5,Shaobo,,0-0-0-6-0-0-4-0-0-3-0-0-5-0-0-0
+213,100,13,"Win Context Switch {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}",Is the hollowness of each piece the reason for second win condition become a win?,Affirm(),Yes! You are finally correct!,Derek,5,5,Shaobo,,0-0-4-0-0-0-12-0-0-0-15-0-0-0-3-0
+213,100,14,"Win Same {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}",Will that hollowness pattern make another to win as well?,Affirm(),Yes!,Derek,4,5,Shaobo,"Unclear about what is ""another""",0-0-4-0-0-0-12-0-0-0-15-0-0-0-3-0
+213,100,15,Finish(),Thanks! Bye!,Finish,Bye.,Derek,5,5,Shaobo,,0-0-4-0-0-0-12-0-0-0-15-0-0-0-3-0

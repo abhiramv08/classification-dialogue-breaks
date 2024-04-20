@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+612,60,0,Start(),"Hi, can you help me learn Quarto?",Start,I'd love to.,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+612,60,1,RequestNewWinCondition(),"Thank you. Firstly, could you demostrate a win condition?",Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-4-0-0-0-1-0-0-0-12-0-0-0-3-0
+612,60,2,"Same, Confirm(User_ID=1, Color)","For this win condition, is it a win because of the color of the pieces?",NotSure(),I am not quite sure.,Yiyan,5,5,Tianyi,,0-0-4-0-0-0-1-0-0-0-12-0-0-0-3-0
+612,60,3,"Same, Confirm(User_ID=1, Translate([0, 0]))","For the same board, can I get another win by shifting the pieces to the first column?",NotSure(),"I am still not sure, sorry.",Yiyan,5,5,Tianyi,,0-0-4-0-0-0-1-0-0-0-12-0-0-0-3-0
+612,60,4,RequestNewWinCondition(),"Well, is there any other way to win the game?",Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-6-0-0-15-0-0-5-0-0-13-0-0-0
+612,60,5,RequestNewWinCondition(),Could you show me one more example?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-14-0-0-15-0-0-11-0-0-9-0-0-0
+612,60,6,"Context Switch, Confirm(User_ID=1, Color)","let's go back to this one, in this case, does the color matter?",Negate(),"No, the only thing that matters here is the shpae of the pieces.",Yiyan,5,5,Tianyi,,0-0-0-6-0-0-15-0-0-5-0-0-13-0-0-0
+612,60,7,"Context Switch, Confirm(User_ID=1, Shape)","Let's consider this case, does the shape matter here?",NotSure(),I dare say.,Yiyan,5,5,Tianyi,,0-0-4-0-0-0-1-0-0-0-12-0-0-0-3-0
+612,60,8,"Same, RequestOtherPlayers()","Fot the same condition, how can the other player do to prevent the win?",Inform([]),"Once you win the game, there is nothing the other player can do.",Yiyan,5,5,Tianyi,,0-0-4-0-0-0-1-0-0-0-12-0-0-0-3-0
+612,60,9,"Context Switch, Confirm(User_ID=1, Height)","Let's turn to this win case, is it a win because of the heights of the pieces?",NotSure(),I don't know.,Yiyan,5,5,Tianyi,,0-0-0-6-0-0-15-0-0-5-0-0-13-0-0-0
+612,60,10,"Context Switch, Confirm(User_ID=1, Quantity)","Let's consider this win condition, is it a win because of the number of the pieces?",Affirm(),"Yes, you need to have at least four pieces in order to win.",Yiyan,5,5,Tianyi,,0-0-4-0-0-0-1-0-0-0-12-0-0-0-3-0
+612,60,11,RequestNewWinCondition(),Could you please show me one more example?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-13-12-11-16
+612,60,12,"Context Switch, Confirm(User_ID=1, Height)",Let's talk a look at this win condition. Is it a win because there are two differnet heights?,NotSure(),"I am not sure, maybe not?",Yiyan,5,5,Tianyi,,0-0-0-6-0-0-15-0-0-5-0-0-13-0-0-0
+612,60,13,RequestNewWinCondition(),"Well, could you give me one more win case?",Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,11-0-0-0-0-7-0-0-0-0-9-0-0-0-0-3
+612,60,14,"Context Switch, Request(User_ID=1, Rotate)","Ok, let's consider this board. How can I rotate the pieces to get another win condition?",Inform([90]),You can put all the pieces to the first column without overlapping.,Yiyan,5,4,Tianyi,,0-0-0-14-0-0-15-0-0-11-0-0-9-0-0-0
+612,60,15,Finish(),"Thank you very much, I learned a lot today.",Finish,You are welcome.,Yiyan,5,5,Tianyi,,0-0-0-14-0-0-15-0-0-11-0-0-9-0-0-0

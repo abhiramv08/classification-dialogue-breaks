@@ -1,0 +1,15 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+441,50,0,Start(),"Hi, could you teach me how to play Quarto?",Start,Sure!,Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+441,50,1,RequestNewWinCondition(),Could you show me a win first?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,4-0-0-0-3-0-0-0-6-0-0-0-7-0-0-0
+441,50,2,"Same, RequestOtherPlayers()",How could another player revoke this win?,Inform([]),"Actually, there is nothing another player could do to prevent the win.",Shaobo,5,5,John,,4-0-0-0-3-0-0-0-6-0-0-0-7-0-0-0
+441,50,3,"Same, Request(User_ID=1, Translate)",And how could I shift the pieces and still keep the win?,"Inform(['col1', 'col2'])",You could shift the pieces to the second or the third column from left.,Shaobo,5,5,John,,4-0-0-0-3-0-0-0-6-0-0-0-7-0-0-0
+441,50,4,"Same, RequestOtherPlayers()",And how could another player revoke this win?,Inform([]),I have told you that there is nothing another player could do to prevent the win.,Shaobo,5,3,John,Seems a bit hostile/rude,4-0-0-0-3-0-0-0-6-0-0-0-7-0-0-0
+441,50,5,RequestNewWinCondition(),Could you show me one more winning board?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-0-0-15-0-0-11-0-0-5-0-0-7-0-0-0
+441,50,6,"Context Switch, Confirm(User_ID=1, Shape)","And for this board, is it a win because of the shape of the pieces?",NotSure(),I don't think so but I am not sure.,Shaobo,5,5,John,,4-0-0-0-3-0-0-0-6-0-0-0-7-0-0-0
+441,50,7,RequestNewWinCondition(),Could you show me one more winning board?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-9-10-14-2
+441,50,8,"Context Switch, Confirm(User_ID=1, Color)","For this board, is it a win because of the color of the pieces?",Affirm(),You got it.,Shaobo,5,5,John,,0-0-0-15-0-0-11-0-0-5-0-0-7-0-0-0
+441,50,9,RequestNewWinCondition(),Could you show me one more winning board?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-0-0-2-0-0-4-0-0-8-0-0-16-0-0-0
+441,50,10,"Context Switch, Request(User_ID=1, Translate)","And for this board, how could I shift the pieces and still keep the win?","Inform(['row1', 'row2'])",You could shift the pieces to the second and the third row from bottom.,Shaobo,5,5,John,Nice clarity on specifying which rows,0-0-0-0-0-0-0-0-0-0-0-0-9-10-14-2
+441,50,11,"Context Switch, Confirm(User_ID=1, Height)","Switching to this board, is it a win because of the height of the pieces?",Negate(),"No, it is a win because all pieces are green.",Shaobo,5,5,John,,0-0-0-15-0-0-11-0-0-5-0-0-7-0-0-0
+441,50,12,"Context Switch, Confirm(User_ID=1, Rotate(90))","For this board, is it still a win if I rotate the pieces to the first column?",NotSure(),I think so but I am not sure.,Shaobo,4,5,John,I don't think the NotSure should have a slight degree of affirmation like yours does,0-0-0-2-0-0-4-0-0-8-0-0-16-0-0-0
+441,50,13,Finish(),Thanks for the help! I have learned a lot!,Finish,My pleasure!,Shaobo,5,5,John,,0-0-0-2-0-0-4-0-0-8-0-0-16-0-0-0

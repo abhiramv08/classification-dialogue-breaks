@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+760,60,0,Start(),"Hey I really want to learn playing Quarto, can you teach me?",Start,No problem!,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+760,60,1,RequestNewWinCondition(),Can you show me a win condition to start?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,14-0-0-0-0-10-0-0-0-0-4-0-0-0-0-6
+760,60,2,RequestNewWinCondition(),Can you show me one more win condition?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,10-0-0-0-0-6-0-0-0-0-9-0-0-0-0-13
+760,60,3,"Same, Confirm(User_ID=1, Quantity)","For the win condition you just showed me, do I have to have four pieces to win?",Affirm(),"Definately.
+ You need at least four pieces to win.",Derek,4,5,Shaobo,,10-0-0-0-0-6-0-0-0-0-9-0-0-0-0-13
+760,60,4,"Same, Confirm(User_ID=1, Height)",How about the height. Is the height pattern of all piece important for the win?,Negate(),No.,Derek,5,4,Shaobo,,10-0-0-0-0-6-0-0-0-0-9-0-0-0-0-13
+760,60,5,"Same, Confirm(User_ID=1, Color)",How about the color.,Negate(),"Still, it is not the reason this board is a win.",Derek,5,5,Shaobo,,10-0-0-0-0-6-0-0-0-0-9-0-0-0-0-13
+760,60,6,"Context Switch, Request(User_ID=1, Rotate)",OKey. Let's go back to this board. How can I rotate this board and keep winning?,Inform([90]),You could line all pieces vertically and keep winning.,Derek,5,5,Shaobo,,14-0-0-0-0-10-0-0-0-0-4-0-0-0-0-6
+760,60,7,"Context Switch, Confirm(User_ID=1, Shape)","Switching to this win condition, is that a win because the shape pattern of all pieces?",Negate(),No. The shape pattern of all pieces is not the reason to win. ,Derek,5,5,Shaobo,,10-0-0-0-0-6-0-0-0-0-9-0-0-0-0-13
+760,60,8,"Context Switch, RequestOtherPlayers()","Moving to this board, how could another player undo this win?",Inform([]),There is nothing another player could do to prevent this win.,Derek,5,5,Shaobo,,14-0-0-0-0-10-0-0-0-0-4-0-0-0-0-6
+760,60,9,"Context Switch, Confirm(User_ID=1, Shape)","Switching to this board, is that a win because the shape pattern of all pieces?",Negate(),No. The shape of all pieces does not make this board a win.,Derek,5,5,Shaobo,,10-0-0-0-0-6-0-0-0-0-9-0-0-0-0-13
+760,60,10,Finish(),Thanks for teaching me! ,Finish,No problem!,Derek,5,5,Shaobo,,10-0-0-0-0-6-0-0-0-0-9-0-0-0-0-13

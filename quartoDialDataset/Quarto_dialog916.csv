@@ -1,0 +1,15 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+916,60,0,Start(),"Hi, will you show me how to play Quarto?",Start,"Yes, I will. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+916,60,1,RequestNewWinCondition(),Please show me a new win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,4-0-0-0-0-7-0-0-0-0-3-0-0-0-0-5
+916,60,2,"Same, Confirm(User_ID=1, Quantity)",Is this a win because of the number of pieces on the board?,Affirm(),"Yes, that's exactly why. ",Anthony,5,5,Yiyen,,4-0-0-0-0-7-0-0-0-0-3-0-0-0-0-5
+916,60,3,RequestNewWinCondition(),Please show me a new win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,8-0-0-0-0-16-0-0-0-0-7-0-0-0-0-6
+916,60,4,RequestNewWinCondition(),Please show me another win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,16-0-0-0-0-6-0-0-0-0-4-0-0-0-0-10
+916,60,5,"Same, Confirm(User_ID=1, AddPiece(0,1))",Could I add a piece here?,Affirm(),"Yes, that's fine.",Anthony,3,5,Yiyen,,16-0-0-0-0-6-0-0-0-0-4-0-0-0-0-10
+916,60,6,"Context Switch, Confirm(User_ID=1, Rotate(90))","Looking back to this board, could I rotate all these pieces to be aligned vertically?",Affirm(),"Yes, that would still be fine.",Anthony,5,5,Yiyen,,4-0-0-0-0-7-0-0-0-0-3-0-0-0-0-5
+916,60,7,RequestNewWinCondition(),Please show me one more win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-8-16-11-12
+916,60,8,"Context Switch, Confirm(User_ID=1, Shape)",Let's actually go back to this board first. Is this a win because of the shape of the pieces?,Negate(),"No, that's not why.",Anthony,5,5,Yiyen,,4-0-0-0-0-7-0-0-0-0-3-0-0-0-0-5
+916,60,9,"Context Switch, Confirm(User_ID=1, Shape)","Okay, back to this board. It is a win condition due to the shape of the pieces?",Negate(),Nope. All the pieces have to be the same shape for that to be the case.,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-8-16-11-12
+916,60,10,RequestNewWinCondition(),Please show me another win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-8-0-0-5-0-0-6-0-0-14-0-0-0
+916,60,11,RequestNewWinCondition(),Please give me another win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,2-0-0-0-0-12-0-0-0-0-4-0-0-0-0-8
+916,60,12,"Same, RequestOtherPlayers()",How could another player undo this win?,Inform([]),There are no moves another player could do for that to happen. ,Anthony,5,5,Yiyen,,2-0-0-0-0-12-0-0-0-0-4-0-0-0-0-8
+916,60,13,Finish(),Thanks for all your help!,Finish,"Of course, have a nice day.",Anthony,5,5,Yiyen,,2-0-0-0-0-12-0-0-0-0-4-0-0-0-0-8

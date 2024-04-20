@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+409,50,0,Start(),Can you teach me how to play Quarto?,Start,No problem!,Derek,5,5,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+409,50,1,RequestNewWinCondition(),Please give a win condition to start. ,Inform,Assume you demonstrate this win condition,Derek,5,4,Daniel,,0-16-0-0-0-7-0-0-0-5-0-0-0-13-0-0
+409,50,2,"Same, Confirm(User_ID=1, Color)",Does the color importent for win?,NotSure(),Sorry I am not sure about that. ,Derek,5,4,Daniel,,0-16-0-0-0-7-0-0-0-5-0-0-0-13-0-0
+409,50,3,RequestNewWinCondition(),Can you show me another win condition?,Inform,Assume you demonstrate this win condition,Derek,5,4,Daniel,,0-0-0-6-0-0-3-0-0-2-0-0-5-0-0-0
+409,50,4,"Same, Confirm(User_ID=1, Height)",Do you know if the height of pieces important for win?,Affirm(),Yes you are correct. ,Derek,5,4,Daniel,,0-0-0-6-0-0-3-0-0-2-0-0-5-0-0-0
+409,50,5,"Context Switch, Confirm(User_ID=1, Shape)","Moving to this board, does the shape of pieces make it a win?",NotSure(),Sorry I am not sure about this question ,Derek,5,4,Daniel,,0-16-0-0-0-7-0-0-0-5-0-0-0-13-0-0
+409,50,6,RequestNewWinCondition(),Please show me another winning board. ,Inform,Assume you demonstrate this win condition,Derek,5,4,Daniel,,16-0-0-0-0-5-0-0-0-0-7-0-0-0-0-13
+409,50,7,"Context Switch, Confirm(User_ID=1, Quantity)",Actually let's go back to this board. Does the quantity important for win?,NotSure(),I don't know. ,Derek,5,3,Daniel,,0-16-0-0-0-7-0-0-0-5-0-0-0-13-0-0
+409,50,8,"Same, Confirm(User_ID=1, AddPiece(2,3))",Can I add a piece at rightmost column on second row from top?,Affirm(),Sure you can add pieces anywhere you want.,Derek,5,5,Daniel,,0-16-0-0-0-7-0-0-0-5-0-0-0-13-0-0
+409,50,9,"Same, Confirm(User_ID=1, RemovePiece(1,1))",How about remove the second piece from bottom? Am I still winning if I do so?,NotSure(),I don't get what are you asking for.,Derek,5,5,Daniel,,0-16-0-0-0-7-0-0-0-5-0-0-0-13-0-0
+409,50,10,"Context Switch, Request(User_ID=1, Rotate)","Let's move to this board, how could I rotate the board and keep winning?",Inform([90]),You can put them vertically on first column.,Derek,5,5,Daniel,,16-0-0-0-0-5-0-0-0-0-7-0-0-0-0-13
+409,50,11,Finish(),I really want to learn more. But that's all the questions I have for today. Bye!,Finish,Bye!,Derek,5,5,Daniel,,16-0-0-0-0-5-0-0-0-0-7-0-0-0-0-13

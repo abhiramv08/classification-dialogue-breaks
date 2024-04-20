@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+778,60,0,Start(),Can you teach me how to play Quarto?,Start,"Sure, let's start.",Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+778,60,1,RequestNewWinCondition(),Can you show me a win condition to start?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-16-4-10-8
+778,60,2,RequestNewWinCondition(),Please show me one more win condition.,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,13-0-0-0-0-1-0-0-0-0-10-0-0-0-0-5
+778,60,3,RequestNewWinCondition(),Can you show me one more winning board?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,15-0-0-0-0-5-0-0-0-0-8-0-0-0-0-13
+778,60,4,"Same, Confirm(User_ID=1, Shape)",Is that a win because the shape pattern of all pieces?,Affirm(),Yes you are correct.,Derek,5,5,Shaobo,,15-0-0-0-0-5-0-0-0-0-8-0-0-0-0-13
+778,60,5,"Same, Confirm(User_ID=1, Height)",How abou the height?,NotSure(),I am not sure about that.,Derek,5,5,Shaobo,,15-0-0-0-0-5-0-0-0-0-8-0-0-0-0-13
+778,60,6,"Context Switch, RequestOtherPlayers()",How could another player undo this win?,Inform([]),There is nothing another player could do to prevent this win.,Derek,4,5,Shaobo,,13-0-0-0-0-1-0-0-0-0-10-0-0-0-0-5
+778,60,7,"Context Switch, Confirm(User_ID=1, Hollowness)","Switching to this board, is the shape of pieces important for this win?",NotSure(),I am not sure about that.,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-16-4-10-8
+778,60,8,"Context Switch, Confirm(User_ID=1, Height)","Go back to this baord, is the height of pieces important for this win?",Negate(),No. ,Derek,4,5,Shaobo,,13-0-0-0-0-1-0-0-0-0-10-0-0-0-0-5
+778,60,9,"Context Switch, Confirm(User_ID=1, RemovePiece(2,1))","For this board, can I remove the second piece from bottom?",Negate(),No.,Derek,3,5,Shaobo,,15-0-0-0-0-5-0-0-0-0-8-0-0-0-0-13
+778,60,10,"Same, Confirm(User_ID=1, Height)",How about the height in this board?,NotSure(),I don't know.,Derek,5,5,Shaobo,,15-0-0-0-0-5-0-0-0-0-8-0-0-0-0-13
+778,60,11,Finish(),Thank you for teaching me today! ,Finish,Bye!,Derek,5,5,Shaobo,,15-0-0-0-0-5-0-0-0-0-8-0-0-0-0-13

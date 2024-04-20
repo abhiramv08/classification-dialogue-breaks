@@ -1,0 +1,18 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+718,60,0,Start(),Hello! Can you show me how to play Quarto?,Start,"Sure, let's get to it!",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+718,60,1,RequestNewWinCondition(),Can you show me a win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-5-0-0-1-0-0-3-0-0-6-0-0-0
+718,60,2,"Same, Confirm(User_ID=1, Hollowness)","Does the hollowness of the pieces make it a win?
+",Negate(),"No, that’s not the reason.",Ruijie,5,5,Luke,,0-0-0-5-0-0-1-0-0-3-0-0-6-0-0-0
+718,60,3,"Same, Confirm(User_ID=1, Quantity)",Is it a win because of the number of pieces?,Affirm(),"That’s right.
+",Ruijie,5,5,Luke,,0-0-0-5-0-0-1-0-0-3-0-0-6-0-0-0
+718,60,4,"Same, Confirm(User_ID=1, RemovePiece(3,3))",Can I remove the piece at the upper right corner?,Negate(),"No, that will break the win condition.",Ruijie,5,5,Luke,,0-0-0-5-0-0-1-0-0-3-0-0-6-0-0-0
+718,60,5,"Same, Confirm(User_ID=1, Quantity)","Is it a win because of the number of pieces?
+",Affirm(),That's actually correct.,Ruijie,5,5,Luke,,0-0-0-5-0-0-1-0-0-3-0-0-6-0-0-0
+718,60,6,"Same, RequestOtherPlayers()","Can the other player undo this win?
+",Inform([]),"No, this win is absolute.",Ruijie,5,5,Luke,,0-0-0-5-0-0-1-0-0-3-0-0-6-0-0-0
+718,60,7,"Same, Confirm(User_ID=1, Quantity)","Is it a win because of the number of pieces?
+",Affirm(),"Yes, you’re right about that!",Ruijie,5,3,Luke,,0-0-0-5-0-0-1-0-0-3-0-0-6-0-0-0
+718,60,8,"Same, Confirm(User_ID=1, RemovePiece(3,3))",Can I remove the piece at the upper right corner without breaking the condition?,Negate(),"No, that will break it.",Ruijie,5,5,Luke,,0-0-0-5-0-0-1-0-0-3-0-0-6-0-0-0
+718,60,9,"Same, Confirm(User_ID=1, Hollowness)","Does the hollowness of the pieces make it a win?
+",NotSure(),"Well, I'm not sure.",Ruijie,5,5,Luke,,0-0-0-5-0-0-1-0-0-3-0-0-6-0-0-0
+718,60,10,Finish(),Thanks! I've learned a lot.,Finish,You are welcome!,Ruijie,5,5,Luke,,0-0-0-5-0-0-1-0-0-3-0-0-6-0-0-0

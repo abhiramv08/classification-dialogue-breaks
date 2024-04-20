@@ -1,0 +1,16 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+411,50,0,Start(),"Teach me how to play Quarto
+, please",Start,Of course,Dmytro,,,,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+411,50,1,RequestNewWinCondition(),What would be an example of a winning board ?,Inform,Assume you demonstrate this win condition,Dmytro,,,,,0-0-0-0-0-0-0-0-0-0-0-0-14-15-16-8
+411,50,2,"Same, Confirm(User_ID=1, Translate([1, 0]))",Can I move all figures to the second row instead ?,Affirm(),"Sure, that works too.",Dmytro,,,,,0-0-0-0-0-0-0-0-0-0-0-0-14-15-16-8
+411,50,3,RequestNewWinCondition(),Could you show me another winning board ?,Inform,Assume you demonstrate this win condition,Dmytro,,,,,0-0-0-16-0-0-3-0-0-11-0-0-4-0-0-0
+411,50,4,"Same, Confirm(User_ID=1, Rotate(90))","Can I place all of these figures on a first column, such as if rotating them counter-clockwise ?",NotSure(),"Hmm, I think that would work, but don't quote me on that.",Dmytro,,,,,0-0-0-16-0-0-3-0-0-11-0-0-4-0-0-0
+411,50,5,"Same, Confirm(User_ID=1, RemovePiece(1,1))",Would I still win after removing a piece here (robot points) ?,Negate(),"No, you would lose.",Dmytro,,,,,0-0-0-16-0-0-3-0-0-11-0-0-4-0-0-0
+411,50,6,"Context Switch, Confirm(User_ID=1, Hollowness)",Talking about this other board; is it a win due to some pieces being hollow ?,Negate(),"No, that doesn't make it a win.",Dmytro,,,,,0-0-0-0-0-0-0-0-0-0-0-0-14-15-16-8
+411,50,7,"Context Switch, Confirm(User_ID=1, Quantity)","Going back to the second board, is it the number of figures that makes it a win ?",Affirm(),"Yes, it is.",Dmytro,,,,,0-0-0-16-0-0-3-0-0-11-0-0-4-0-0-0
+411,50,8,RequestNewWinCondition(),Could you demonstrate another winning board ?,Inform,Assume you demonstrate this win condition,Dmytro,,,,,0-0-1-0-0-0-7-0-0-0-3-0-0-0-11-0
+411,50,9,"Context Switch, Confirm(User_ID=1, Rotate(90))","Back to this other board you showed, can I put all the figures on a first column ?",Affirm(),"Yeah, that works too",Dmytro,,,,,0-0-0-0-0-0-0-0-0-0-0-0-14-15-16-8
+411,50,10,RequestNewWinCondition(),Please show another board example.,Inform,Assume you demonstrate this win condition,Dmytro,,,,,0-0-0-9-0-0-13-0-0-7-0-0-3-0-0-0
+411,50,11,"Same, Confirm(User_ID=1, Rotate(90))",Can I put figures on a first column in this case ?,Affirm(),"Yes, just like before.",Dmytro,,,,,0-0-0-9-0-0-13-0-0-7-0-0-3-0-0-0
+411,50,12,"Context Switch, RequestOtherPlayers()",Back to the other board; what can another player do once I am this point ?,Inform([]),Nothing can de done by another player; you get here - you win.,Dmytro,,,,,0-0-0-16-0-0-3-0-0-11-0-0-4-0-0-0
+411,50,13,Finish(),"alrighty, I am ready.",Finish,It was great teaching you,Dmytro,,,,,0-0-0-16-0-0-3-0-0-11-0-0-4-0-0-0

@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+197,100,0,Start(),"Hi, can you teach me Quarto?",Start,"Okay, sure.",Anthony,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+197,100,1,RequestNewWinCondition(),Pleas show me a win condition.,Inform(),Assume you demonstrate this win condition,Anthony,4,4,John,typo,1-0-0-0-4-0-0-0-3-0-0-0-12-0-0-0
+197,100,2,"Same , Confirm(User_ID=1, Shape)",Is this a win because of the shape of the pieces?,Affirm(),"Yes, that is why. They are the same.",Anthony,5,5,John,,1-0-0-0-4-0-0-0-3-0-0-0-12-0-0-0
+197,100,3,"Same , Confirm(User_ID=1, AddPiece(0,3))",What would happen to the win if I add a piece here?,Affirm(),It would stay a win. That is a valid move. ,Anthony,2,4,John,Add a piece where? Specify the rows/columns,1-0-0-0-4-0-0-0-3-0-0-0-12-0-0-0
+197,100,4,RequestNewWinCondition(),Okay. Show me a new win condtion please. ,Inform(),Assume you demonstrate this win condition,Anthony,5,5,John,,1-0-0-0-0-3-0-0-0-0-9-0-0-0-0-10
+197,100,5,"Same , Confirm(User_ID=1, Shape)",Is this a win because of the shape of the pieces?,Affirm(),"Yes, it is because they are all the same.",Anthony,5,5,John,,1-0-0-0-0-3-0-0-0-0-9-0-0-0-0-10
+197,100,6,"Same , Confirm(User_ID=1, RemovePiece(0,3))","Would it stay a win if I remove the piece at (2,3)?",Negate(),"No, then it would no longer be a win condition.",Anthony,5,3,John,"The coordinates (2,3) don't seem very ""natural"" to me, that isn't how I would specify if I were playing this game",1-0-0-0-0-3-0-0-0-0-9-0-0-0-0-10
+197,100,7,RequestNewWinCondition(),Please give an example of another winning board. ,Inform(),Assume you demonstrate this win condition,Anthony,5,5,John,,0-0-0-2-0-0-6-0-0-3-0-0-1-0-0-0
+197,100,8,"Context Switch, Confirm(User_ID=1, AddPiece(1,1))","Looking at this previous board, would it be a win if I add a piece at position (1,1)?",Affirm(),"Yes, that addition would be okay. ",Anthony,5,3,John,"Once again, the tuple of coordinates doesn't feel very natural",1-0-0-0-4-0-0-0-3-0-0-0-12-0-0-0
+197,100,9,"Context Switch, Confirm(User_ID=1, Height)","Switching to this other board, is the pieces' height why it is a win?",Affirm(),"Yes, that would be correct. ",Anthony,5,5,John,,0-0-0-2-0-0-6-0-0-3-0-0-1-0-0-0
+197,100,10,RequestNewWinCondition(),Show me another win condition please. ,Inform(),Assume you demonstrate this win condition,Anthony,5,5,John,,0-0-0-13-0-0-11-0-0-15-0-0-1-0-0-0
+197,100,11,"Context Switch, Request(User_ID=1, Rotate)","On this board, how can I rotate these pieces. ",Inform([90]),You can spin them to be a straight vertical line. ,Anthony,4,4,John,,0-0-0-2-0-0-6-0-0-3-0-0-1-0-0-0
+197,100,12,Finish(),Thanks for the help. Bye!,Finish,Goodbye!,Anthony,5,5,John,,0-0-0-2-0-0-6-0-0-3-0-0-1-0-0-0

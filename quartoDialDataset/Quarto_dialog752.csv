@@ -1,0 +1,20 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+752,60,0,Start(),Hello! Can you show me how to play Quarto?,Start,"Yes, let's get started.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+752,60,1,RequestNewWinCondition(),Can you show me what a win condition looks like?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-15-0-0-0-6-0-0-0-16-0-0-0-8
+752,60,2,RequestNewWinCondition(),Can you give me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-14-0-0-11-0-0-12-0-0-10-0-0-0
+752,60,3,"Same, Confirm(User_ID=1, Rotate(90))","For this board, can I rotate the pieces by ninety degrees?
+",NotSure(),"Sorry, I don't know.",Ruijie,4,3,Luke,,0-0-0-14-0-0-11-0-0-12-0-0-10-0-0-0
+752,60,4,"Same, Confirm(User_ID=1, Height)","Is it a win because the pieces are of the same height?
+",NotSure(),"Well, I'm not sure.",Ruijie,5,5,Luke,,0-0-0-14-0-0-11-0-0-12-0-0-10-0-0-0
+752,60,5,"Same, Confirm(User_ID=1, Height)","Is it a win because the pieces are of the same height?
+",NotSure(),"Sorry, I'm not sure.",Ruijie,5,5,Luke,,0-0-0-14-0-0-11-0-0-12-0-0-10-0-0-0
+752,60,6,"Same, Confirm(User_ID=1, Color)","Does the color of the pieces make it a win?
+",Negate(),"Well, it's not. You can see that the colors aren't the same.",Ruijie,5,5,Luke,,0-0-0-14-0-0-11-0-0-12-0-0-10-0-0-0
+752,60,7,"Same, RequestOtherPlayers()","Can the other player undo this win?
+",Inform([]),"No, this win is absolute.",Ruijie,5,5,Luke,,0-0-0-14-0-0-11-0-0-12-0-0-10-0-0-0
+752,60,8,RequestNewWinCondition(),Can you show me a new win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-11-4-9-3
+752,60,9,"Same, Confirm(User_ID=1, RemovePiece(0,1))","Can I remove the piece on the first row, the second column?",NotSure(),"Sorry, I'm not sure.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-11-4-9-3
+752,60,10,"Same, Confirm(User_ID=1, RemovePiece(0,1))","Can I remove the piece on the first row, the second column?",Negate(),"No, that will break the win condition.",Ruijie,4,4,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-11-4-9-3
+752,60,11,"Same, Confirm(User_ID=1, Color)","Does the color of the pieces make it a win?
+",Negate(),Obviously not.,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-11-4-9-3
+752,60,12,Finish(),Thanks! I think I got it!,Finish,"Ok, have a good one!",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-11-4-9-3

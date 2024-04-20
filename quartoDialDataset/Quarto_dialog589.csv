@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+589,60,0,Start(),"Hi, can you help me learn Quarto?",Start,"Sure, let's begin.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+589,60,1,RequestNewWinCondition(),Could you first show me one way to win the game?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,14-0-0-0-16-0-0-0-9-0-0-0-10-0-0-0
+589,60,2,RequestNewWinCondition(),Could you please show me one more win scenario?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,10-0-0-0-0-2-0-0-0-0-9-0-0-0-0-6
+589,60,3,"Context Switch, Confirm(User_ID=1, Shape)","Let's switch to the previous board, do the shapes of the pieces matter?",Negate(),"No,  the shape does not matter here.",Yiyan,5,5,Tianyi,,14-0-0-0-16-0-0-0-9-0-0-0-10-0-0-0
+589,60,4,"Same, Confirm(User_ID=1, Shape)","For the same board, do the shapes of the pieces relate to this win?",NotSure(),"I guess not, but I am not sure.",Yiyan,5,5,Tianyi,,14-0-0-0-16-0-0-0-9-0-0-0-10-0-0-0
+589,60,5,RequestNewWinCondition(),Can you show me another way to win the game?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-11-0-0-5-0-0-9-0-0-1-0-0-0
+589,60,6,"Same, RequestOtherPlayers()","For the win you just showed, is there any method that the other player can use to stop this win?",Inform([]),There is nothing the other player can do.,Yiyan,5,5,Tianyi,,0-0-0-11-0-0-5-0-0-9-0-0-1-0-0-0
+589,60,7,"Context Switch, Request(User_ID=1, Rotate)","Let's switch to this board,  is there any way that I can rotate the pieces to get another win?","Inform([0, 45])",You can rotate the pieces to the first row or to the diagonal direction.,Yiyan,5,5,Tianyi,,14-0-0-0-16-0-0-0-9-0-0-0-10-0-0-0
+589,60,8,"Context Switch, Request(User_ID=1, Rotate)","Let's switch to this board, how should I rotate the pieces to get another win?",Inform([90]),You can rotate them to the first column.,Yiyan,5,5,Tianyi,,0-0-0-11-0-0-5-0-0-9-0-0-1-0-0-0
+589,60,9,"Context Switch, Confirm(User_ID=1, Rotate(90))","Let's turn to this board, can I rotate the pieces to the last column to get another win?",Affirm(),"Yes,  you can.",Yiyan,5,5,Tianyi,,10-0-0-0-0-2-0-0-0-0-9-0-0-0-0-6
+589,60,10,Finish(),"That's all the information I want to know, thank you.",Finish,You are welcome.,Yiyan,5,5,Tianyi,,10-0-0-0-0-2-0-0-0-0-9-0-0-0-0-6

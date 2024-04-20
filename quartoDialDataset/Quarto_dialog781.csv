@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+781,60,0,Start(),"Hey I really want to learn playing Quarto, can you teach me?",Start,"Sure, let's start.",Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+781,60,1,RequestNewWinCondition(),Can you show me a win condition to start?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-7-0-0-0-12-0-0-0-8-0-0-0-16-0-0
+781,60,2,"Same, Confirm(User_ID=1, Quantity)",Do I have to have four pieces to win?,Affirm(),Yes.,Derek,4,5,Shaobo,at least,0-7-0-0-0-12-0-0-0-8-0-0-0-16-0-0
+781,60,3,"Same, Confirm(User_ID=1, Color)",Is that a win because the color pattern of all pieces?,NotSure(),I am not sure about that.,Derek,5,5,Shaobo,,0-7-0-0-0-12-0-0-0-8-0-0-0-16-0-0
+781,60,4,"Same, Confirm(User_ID=1, Color)",Is the color of pieces important for this win?,Negate(),"I already said, no.",Derek,5,5,Shaobo,,0-7-0-0-0-12-0-0-0-8-0-0-0-16-0-0
+781,60,5,RequestNewWinCondition(),Can you show me one more winning board?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-13-0-0-0-9-0-0-0-1-0-0-0-15-0
+781,60,6,"Same, Request(User_ID=1, Translate)",How can I shift all pieces to anywhere?,"Inform(['col1', 'col3'])",You can shift them to the rightmost or leftmost column/,Derek,3,4,Shaobo,,0-0-13-0-0-0-9-0-0-0-1-0-0-0-15-0
+781,60,7,"Same, RequestOtherPlayers()",How could another player undo this win?,Inform([]),"
+There is nothing another player could do to prevent this win.",Derek,5,5,Shaobo,,0-0-13-0-0-0-9-0-0-0-1-0-0-0-15-0
+781,60,8,RequestNewWinCondition(),Please show me one more win condition.,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-12-0-0-0-10-0-0-0-1-0-0-0-4
+781,60,9,"Context Switch, Confirm(User_ID=1, Color)","Switching to this board, is that a win because the color pattern of all pieces?",NotSure(),I am not sure about that.,Derek,5,5,Shaobo,,0-7-0-0-0-12-0-0-0-8-0-0-0-16-0-0
+781,60,10,Finish(),Thank you for teaching me today! ,Finish,No problem!,Derek,5,5,Shaobo,,0-7-0-0-0-12-0-0-0-8-0-0-0-16-0-0

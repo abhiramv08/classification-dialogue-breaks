@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+410,50,0,Start(),"Hi, can you teach me how to play Quarto?",Start,"Sure, let's strat.",Derek,4,5,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+410,50,1,RequestNewWinCondition(),Can you give a win condition to start with?,Inform,Assume you demonstrate this win condition,Derek,5,4,Daniel,,0-0-0-3-0-0-12-0-0-16-0-0-8-0-0-0
+410,50,2,RequestNewWinCondition(),Please give me another one.,Inform,Assume you demonstrate this win condition,Derek,5,5,Daniel,,0-0-0-8-0-0-7-0-0-4-0-0-5-0-0-0
+410,50,3,"Same, RequestOtherPlayers()",How could another player prevent this win?,Inform([]),Another player can not do anything to undo this win.,Derek,5,5,Daniel,,0-0-0-8-0-0-7-0-0-4-0-0-5-0-0-0
+410,50,4,RequestNewWinCondition(),Can you show me another win codition?,Inform,Assume you demonstrate this win condition,Derek,5,4,Daniel,,0-0-12-0-0-0-15-0-0-0-7-0-0-0-8-0
+410,50,5,"Context Switch, Confirm(User_ID=1, Quantity)",Is the number of pieces important in the board shown?,NotSure(),Sorry I am not sure about it.,Derek,5,5,Daniel,,0-0-0-3-0-0-12-0-0-16-0-0-8-0-0-0
+410,50,6,"Context Switch, Confirm(User_ID=1, Hollowness)","For this winning board, is the hollowness pattern of pieces the reason to win?",Negate(),"No, the hollowness pattern does not make it a win.",Derek,5,5,Daniel,,0-0-0-8-0-0-7-0-0-4-0-0-5-0-0-0
+410,50,7,"Context Switch, Confirm(User_ID=1, Shape)","Let's swith to this board, does the shape pattern of all piece make it a win?",Negate(),"No, the shape of them are not the same so it is not the reason to win,",Derek,5,5,Daniel,,0-0-12-0-0-0-15-0-0-0-7-0-0-0-8-0
+410,50,8,"Context Switch, Confirm(User_ID=1, Shape)",How abou the shape pattern in thin winning board?,NotSure(),"For this winning board, I am not sure about if the shape pattern will make it a win.",Derek,5,5,Daniel,,0-0-0-3-0-0-12-0-0-16-0-0-8-0-0-0
+410,50,9,RequestNewWinCondition(),Can you please show me another win condition.,Inform,Assume you demonstrate this win condition,Derek,5,4,Daniel,,15-0-0-0-0-13-0-0-0-0-14-0-0-0-0-11
+410,50,10,"Context Switch, Confirm(User_ID=1, Hollowness)","For this board shown, is it a win because of the hollowness of each piece?",Negate(),"No, it is not the reason this board win.",Derek,5,5,Daniel,,0-0-0-8-0-0-7-0-0-4-0-0-5-0-0-0
+410,50,11,RequestNewWinCondition(),Please show me another win condition.,Inform,Assume you demonstrate this win condition,Derek,5,4,Daniel,,8-0-0-0-0-2-0-0-0-0-6-0-0-0-0-16
+410,50,12,"Context Switch, Confirm(User_ID=1, Hollowness)","For this board, is that a win because the hollowness pattern of all pieces?",NotSure(),"Sorry, I am not sure about that.",Derek,5,5,Daniel,,15-0-0-0-0-13-0-0-0-0-14-0-0-0-0-11
+410,50,13,"Same, Request(User_ID=1, Rotate)","It's fine, do you know how could I rotate this board and keep winning?",Inform([90]),"Ha, I know that. You can rotate and put them all on the first column vertically.",Derek,5,4,Daniel,,15-0-0-0-0-13-0-0-0-0-14-0-0-0-0-11
+410,50,14,"Context Switch, Request(User_ID=1, Rotate)",How about this board. How could I rotate it?,Inform([90]),The same. You can put the vertically on the first column.,Derek,5,3,Daniel,,0-0-0-3-0-0-12-0-0-16-0-0-8-0-0-0
+410,50,15,Finish(),Thanks for teaching me! Bye!,Finish,Bye!,Derek,5,5,Daniel,,0-0-0-3-0-0-12-0-0-16-0-0-8-0-0-0

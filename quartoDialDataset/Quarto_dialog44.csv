@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+44,100,0,Start(),Hey! Let's play some Quarto!,Start,Yeah let's do it!,Luke,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+44,100,1,RequestNewWinCondition(),"To start off, can I see a win condition?",Inform(),Assume you demonstrate this win condition,Luke,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-14-8-4-2
+44,100,2,RequestNewWinCondition(),"Wait, I think I want to see another way that I'm able to win.",Inform(),Assume you demonstrate this win condition,Luke,3,5,John,Not clear,0-0-0-15-0-0-7-0-0-8-0-0-11-0-0-0
+44,100,3,"Same, RequestOtherPlayers()",How would another player affect my win?,Inform([]),Another player is not able to violate your winning condition.,Luke,5,3,John,formal language,0-0-0-15-0-0-7-0-0-8-0-0-11-0-0-0
+44,100,4,RequestNewWinCondition(),Could you demonstrate a third win condition?,Inform(),Assume you demonstrate this win condition,Luke,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-7-1-5-6
+44,100,5,"Context Switch, RequestOtherPlayers()",Go back to that original win you showed me when we started playing. Can another player undo this win condition?,Inform([]),"Actually, they cannot.",Luke,5,3,John,wordy,0-0-0-0-0-0-0-0-0-0-0-0-14-8-4-2
+44,100,6,"Context Switch, Confirm(User_ID=1, AddPiece(3,1))","Going back to this board here, what if I add a piece to that empty spot? Would I still win?",Affirm(),"Yes, you would still win.",Luke,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-7-1-5-6
+44,100,7,"Context Switch, Confirm(User_ID=1, Color)","For the second win condition that you showed to me, is the reason for this win the color of the tiles?",Negate(),No. The tiles can be any color and you would still have a win condition.,Luke,3,5,John,any color may not be correct,0-0-0-15-0-0-7-0-0-8-0-0-11-0-0-0
+44,100,8,"Context Switch, Request(User_ID=1, Rotate)",How can I rotate the pieces and still win?,"Inform([45, 90])",You can align them along the diagonal or you can put them vertically.,Luke,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-14-8-4-2
+44,100,9,"Same, Request(User_ID=1, Translate)",How can I translate this board?,"Inform(['row1', 'row2', 'row3'])","You can shift all of the pieces to the first, second, or third row.",Luke,5,4,John,translate might be unnatural,0-0-0-0-0-0-0-0-0-0-0-0-14-8-4-2
+44,100,10,RequestNewWinCondition(),Show me another win condition if you don't mind.,Inform(),Assume you demonstrate this win condition,Luke,5,5,John,,15-0-0-0-8-0-0-0-12-0-0-0-11-0-0-0
+44,100,11,Finish(),"I definitely have learned everything you can teach me, so I think I'm done.",Finish,See you later alligator!,Luke,5,5,John,,15-0-0-0-8-0-0-0-12-0-0-0-11-0-0-0

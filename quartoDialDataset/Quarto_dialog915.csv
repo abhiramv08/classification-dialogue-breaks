@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+915,60,0,Start(),"Hi, will you teach me how to play Quarto?",Start,"Yes, of course.",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+915,60,1,RequestNewWinCondition(),Please show me a new win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-14-12-8-10
+915,60,2,"Same, Confirm(User_ID=1, Height)",Is this board a win because of the height of the pieces?,NotSure(),I'm not so sure.,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-14-12-8-10
+915,60,3,"Same, Confirm(User_ID=1, Shape)",Is the shape of the pieces why this is a win?,Negate(),"No, that is not why.",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-14-12-8-10
+915,60,4,"Same, Confirm(User_ID=1, Height)",Is this a win because of the height of the pieces?,Negate(),"No, that's not why either. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-14-12-8-10
+915,60,5,"Same, Confirm(User_ID=1, Color)",Is this board a win because of the color of the pieces?,NotSure(),"I'm not sure, sorry.",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-14-12-8-10
+915,60,6,"Same, Confirm(User_ID=1, Hollowness)",Is this a win then because of the how hollow the pieces are?,Negate(),"No, it is not. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-14-12-8-10
+915,60,7,"Same, Confirm(User_ID=1, Height)",Is this a win because of the height of the pieces?,Negate(),"No, the height is not relevant here.",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-14-12-8-10
+915,60,8,"Same, Confirm(User_ID=1, RemovePiece(0,0))","Well, could I remove the piece here?",Negate(),"No, that piece needs to stay where it is. ",Anthony,3,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-14-12-8-10
+915,60,9,"Same, Confirm(User_ID=1, Color)",Is this a win because of the color of the pieces?,Affirm(),"They are all the same color, so yes. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-14-12-8-10
+915,60,10,RequestNewWinCondition(),Please show me a new winning board.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,10-0-0-0-0-14-0-0-0-0-15-0-0-0-0-16
+915,60,11,Finish(),"Okay, thanks for the help.",Finish,No problem. ,Anthony,5,5,Yiyen,,10-0-0-0-0-14-0-0-0-0-15-0-0-0-0-16

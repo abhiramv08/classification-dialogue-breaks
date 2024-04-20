@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+947,60,0,Start(),"Hi, would you teach me Quarto?",Start,Sure thing. ,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+947,60,1,RequestNewWinCondition(),Please show me a new win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-3-11-12-8
+947,60,2,"Same, Confirm(User_ID=1, Height)",Is this a win because of the pieces' height?,Negate(),"No, that's not why.",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-3-11-12-8
+947,60,3,"Same, Confirm(User_ID=1, Shape)",Is this a win because of the pieces' shapes?,NotSure(),"I'm not sure, sorry.",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-3-11-12-8
+947,60,4,"Same, Confirm(User_ID=1, Height)",Is the pieces' height why this is a win. ,Negate(),"I already said this, but no. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-3-11-12-8
+947,60,5,"Same, Confirm(User_ID=1, Height)",Is thhis a win because of the pieces height. ,NotSure(),Now I'm not sure. ,Anthony,4,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-3-11-12-8
+947,60,6,RequestNewWinCondition(),Please show me a new win. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,5-0-0-0-0-8-0-0-0-0-15-0-0-0-0-7
+947,60,7,"Context Switch, Confirm(User_ID=1, AddPiece(3,2))","Looking back to this board, could I add a piece here?",NotSure(),"No, you couldn't.",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-3-11-12-8
+947,60,8,"Same, Confirm(User_ID=1, Color)",Is this a win because of the color of the pieces?,Negate(),"Nope, it must be something else.",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-3-11-12-8
+947,60,9,"Same, Request(User_ID=1, Rotate)",How can I rotate these pieces?,"Inform([45, 90])",You could align them vertically or on the diagonal. ,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-3-11-12-8
+947,60,10,Finish(),That's enough Quarto for me.,Finish,"Me too, bye!",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-3-11-12-8

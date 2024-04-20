@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+284,50,0,Start(),Should we begin the Quarto tutorial ?,Start,"Ok, let's go.",Dmytro,5,4,Yiyan,,0-0-0-0-0-0-0-0-0-0-0-0-13-7-14-6
+284,50,1,RequestNewWinCondition(),What would be an example of a winning board ?,Inform,Assume you demonstrate this win condition,Dmytro,5,5,Yiyan,,2-0-0-0-8-0-0-0-6-0-0-0-12-0-0-0
+284,50,2,RequestNewWinCondition(),"One more, please.",Inform,Assume you demonstrate this win condition,Dmytro,5,5,Yiyan,,0-0-0-0-0-0-0-0-0-0-0-0-11-15-3-1
+284,50,3,"Context Switch, Request(User_ID=1, Translate)",Where else can I move these figures without loosing ?,"Inform(['col1', 'col2'])","Feel free to put them to the right from their current position, and to the right after that.",Dmytro,3,3,Yiyan,,2-0-0-0-8-0-0-0-6-0-0-0-12-0-0-0
+284,50,4,"Context Switch, Confirm(User_ID=1, Shape)","About that other board you showed, does the shape determine whether it's a win or not ?",Negate(),"No, shape bears no role in this case.",Dmytro,5,4,Yiyan,,0-0-0-0-0-0-0-0-0-0-0-0-11-15-3-1
+284,50,5,RequestNewWinCondition(),Show me another winning board.,Inform,Assume you demonstrate this win condition,Dmytro,5,5,Yiyan,,0-0-0-0-0-0-0-0-0-0-0-0-11-14-16-15
+284,50,6,"Same, Confirm(User_ID=1, RemovePiece(0,0))",Can I remove a piece on the bottom left corner ?,Negate(),"No, you will loose if you remove that piece.",Dmytro,3,5,Yiyan,,0-0-0-0-0-0-0-0-0-0-0-0-11-14-16-15
+284,50,7,"Context Switch, Confirm(User_ID=1, Color)","Switching to another board, does color determine win ?",NotSure(),"No, color is arbitrary and has to special meaning.",Dmytro,1,4,Yiyan,,0-0-0-0-0-0-0-0-0-0-0-0-11-15-3-1
+284,50,8,"Context Switch, Confirm(User_ID=1, AddPiece(3,3))","Let's go back to this board you demonstrated, can I add a piece here(robot points) ?",NotSure(),"Hmm, I am not sure how it will play out.",Dmytro,1,4,Yiyan,I am assuming (robot points) is not a real part of language. ,2-0-0-0-8-0-0-0-6-0-0-0-12-0-0-0
+284,50,9,"Context Switch, Confirm(User_ID=1, Color)","Moving to this other board, how important color is here ?",Affirm(),Here the color matters for the win.,Dmytro,3,1,Yiyan,,0-0-0-0-0-0-0-0-0-0-0-0-11-15-3-1
+284,50,10,RequestNewWinCondition(),Can you do another winning board demo ?,Inform,Assume you demonstrate this win condition,Dmytro,5,4,Yiyan,,13-0-0-0-0-5-0-0-0-0-15-0-0-0-0-8
+284,50,11,Finish(),"alright, I am done.",Finish,great,Dmytro,5,5,Yiyan,,13-0-0-0-0-5-0-0-0-0-15-0-0-0-0-8

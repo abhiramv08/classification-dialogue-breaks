@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+648,60,0,Start(),"Hello, can you teach me how to play Quarto?",Start,"Sure, let's begin.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+648,60,1,RequestNewWinCondition(),Thanks. Can you first show me a win?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-9-1-5-14
+648,60,2,RequestNewWinCondition(),Is there any other way to win?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,12-0-0-0-0-16-0-0-0-0-10-0-0-0-0-11
+648,60,3,"Context Switch, Confirm(User_ID=1, Hollowness)","For this board that you previously showed, is it a win because of all the pieces are solid?",NotSure(),"Maybe, but I am not quite sure.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-9-1-5-14
+648,60,4,RequestNewWinCondition(),Can you show me another way to win?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-1-4-2-7
+648,60,5,RequestNewWinCondition(),Maybe one more win condition?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-5-0-0-8-0-0-4-0-0-1-0-0-0
+648,60,6,"Same, Request(User_ID=1, Rotate)","For the won board you just showed, how can I rotate the pieces while maintaining the win?",Inform([90]),You can rotate the pieces to the first column.,Yiyan,5,4,Tianyi,,0-0-0-5-0-0-8-0-0-4-0-0-1-0-0-0
+648,60,7,"Context Switch, RequestOtherPlayers()","For this board you showed previously, is there any way that the other player can use to stop this win?",Inform([]),"No, there is no such way.",Yiyan,5,5,Tianyi,,12-0-0-0-0-16-0-0-0-0-10-0-0-0-0-11
+648,60,8,"Context Switch, Confirm(User_ID=1, Hollowness)","Let's consider this condition, is it a win because all the pieces are solid?",Affirm(),You are right.,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-9-1-5-14
+648,60,9,RequestNewWinCondition(),Can you show me one more win please?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,16-0-0-0-9-0-0-0-12-0-0-0-11-0-0-0
+648,60,10,RequestNewWinCondition(),Is there any other way to win?,Inform,Assume you demonstrate this win condition,Yiyan,5,4,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-8-12-14-2
+648,60,11,"Same, RequestOtherPlayers()","For the win condition you just showed, how can the other player do to stop this win?",Inform([]),There is nothing the other player can do.,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-8-12-14-2
+648,60,12,RequestNewWinCondition(),Can you show me another winning scenario?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,4-0-0-0-0-1-0-0-0-0-12-0-0-0-0-10
+648,60,13,"Context Switch, Request(User_ID=1, Translate)","For this win board, where can I shift the pieces to in order to get a new win?","Inform(['row1', 'row2', 'row3'])",You can shift the pieces to any other rows.,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-1-4-2-7
+648,60,14,"Same, Confirm(User_ID=1, AddPiece(2,3))","For the same board, will it still be a win if I add a piece on the last position of the third row?",Affirm(),"Yes, you can still win.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-1-4-2-7
+648,60,15,Finish(),Thank you a lot. Now I can play Quarto with you!,Finish,Let's try!,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-1-4-2-7

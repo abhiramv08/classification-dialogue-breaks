@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+155,100,0,Start(),"Hello, I am ready to learn Quarto.",Start,"Let's get straight to it, then",Dmytro,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+155,100,1,RequestNewWinCondition(),Show me what board I need to win.,Inform(),Assume you demonstrate this win condition,Dmytro,5,5,Luke,,0-0-0-4-0-0-0-5-0-0-0-8-0-0-0-3
+155,100,2,"Same, Confirm(User_ID=1, Quantity)",Is it the quantity of the figures that matter ?,Affirm(),"Yes, indeed it is.",Dmytro,5,5,Luke,,0-0-0-4-0-0-0-5-0-0-0-8-0-0-0-3
+155,100,3,RequestNewWinCondition(),Could you give one more example ?,Inform(),Assume you demonstrate this win condition,Dmytro,5,4,Luke,,1-0-0-0-0-5-0-0-0-0-8-0-0-0-0-6
+155,100,4,RequestNewWinCondition(),"Ok, I need one more.",Inform(),Assume you demonstrate this win condition,Dmytro,5,4,Luke,,0-6-0-0-0-16-0-0-0-15-0-0-0-5-0-0
+155,100,5,RequestNewWinCondition(),"Hmm, I'd like another example.",Inform(),Assume you demonstrate this win condition,Dmytro,5,5,Luke,,0-0-0-10-0-0-0-13-0-0-0-9-0-0-0-2
+155,100,6,RequestNewWinCondition(),I was hoping you can show me an additional example.,Inform(),Assume you demonstrate this win condition,Dmytro,5,5,Luke,,7-0-0-0-0-6-0-0-0-0-14-0-0-0-0-5
+155,100,7,"Context Switch, Confirm(User_ID=1, Rotate(135))","Back to the first board, can I place the pieces on a diagonal ?",Affirm(),"Sure, that works as well.",Dmytro,5,4,Luke,,0-0-0-4-0-0-0-5-0-0-0-8-0-0-0-3
+155,100,8,"Context Switch, Confirm(User_ID=1, Color)","In reference to a previous board, is it the color here that's the reason for a win ?",Negate(),"No, color has no weight in win/loose decision here.",Dmytro,5,3,Luke,,0-6-0-0-0-16-0-0-0-15-0-0-0-5-0-0
+155,100,9,"Context Switch, Request(User_ID=1, Translate)","Going back to the 2nd board, how can I move the pieces ?",Inform([]),Moving them isn't possible as they wouldn't fit on the board in their current configuration.,Dmytro,5,5,Luke,,1-0-0-0-0-5-0-0-0-0-8-0-0-0-0-6
+155,100,10,"Context Switch, Confirm(User_ID=1, Color)","A question on another board you showed, does color of the figures constitute a win ?",Negate(),"No, color is not a determining factor here.",Dmytro,5,4,Luke,,0-6-0-0-0-16-0-0-0-15-0-0-0-5-0-0
+155,100,11,"Context Switch, Confirm(User_ID=1, Height)","Speaking of the 4th board example, is it the height that make it a win ?",Negate(),"No, height of the figures makes no impact.",Dmytro,5,4,Luke,,0-0-0-10-0-0-0-13-0-0-0-9-0-0-0-2
+155,100,12,"Context Switch, Confirm(User_ID=1, Height)",Does the height of the figures matter for the third board example ?,Negate(),"Likewise, it doesn't matter for the third board either.",Dmytro,5,5,Luke,,0-6-0-0-0-16-0-0-0-15-0-0-0-5-0-0
+155,100,13,"Context Switch, RequestOtherPlayers()",Can another player do anything to not loose in the second board example.,Inform([]),"No, nothing can be done.",Dmytro,5,5,Luke,,1-0-0-0-0-5-0-0-0-0-8-0-0-0-0-6
+155,100,14,RequestNewWinCondition(),Can I see one more example of a winning board ?,Inform(),Assume you demonstrate this win condition,Dmytro,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-6-14-12-10
+155,100,15,Finish(),"Ok, I think I am ready.",Finish,"Great, have fun playing",Dmytro,4,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-6-14-12-10

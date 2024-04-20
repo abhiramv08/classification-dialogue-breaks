@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+881,60,0,Start(),"Hi, will you please teach me how to play Quarto?",Start,"I can, sure.",Anthony,5,4,Yiyen, I can = sure,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+881,60,1,RequestNewWinCondition(),Please show me a win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-15-0-0-0-12-0-0-0-9-0-0-0-13-0-0
+881,60,2,"Same, Confirm(User_ID=1, Height)",Is this a win because of the height of the pieces?,NotSure(),I'm not sure. ,Anthony,5,5,Yiyen,,0-15-0-0-0-12-0-0-0-9-0-0-0-13-0-0
+881,60,3,"Same, Confirm(User_ID=1, Color)",Is this a win because of the color of the pieces?,Negate(),"No, it is not. ",Anthony,5,5,Yiyen,,0-15-0-0-0-12-0-0-0-9-0-0-0-13-0-0
+881,60,4,"Same, Confirm(User_ID=1, Color)",Is the color of the pieces why this is a win?,Negate(),"You asked this already, no. ",Anthony,5,5,Yiyen,,0-15-0-0-0-12-0-0-0-9-0-0-0-13-0-0
+881,60,5,"Same, Request(User_ID=1, Translate)",How could I shift the pieces to still keep this as a win?,"Inform(['col2', 'col3'])",You could move them to columns 1 or 2. ,Anthony,5,4,Yiyen,,0-15-0-0-0-12-0-0-0-9-0-0-0-13-0-0
+881,60,6,"Same, Confirm(User_ID=1, RemovePiece(1,1))",Could I remove the piece here?,Negate(),"No, that piece needs to stay where it is. ",Anthony,3,5,Yiyen,,0-15-0-0-0-12-0-0-0-9-0-0-0-13-0-0
+881,60,7,"Same, Confirm(User_ID=1, Quantity)",Is this a win because of the number of pieces on the board?,Affirm(),"Yes, there must be 4 pieces.",Anthony,4,5,Yiyen,,0-15-0-0-0-12-0-0-0-9-0-0-0-13-0-0
+881,60,8,"Same, Confirm(User_ID=1, RemovePiece(2,1))",Is this still a win if I removed this piece?,NotSure(),I'm not sure so I can't give you a straight answer. ,Anthony,5,5,Yiyen,,0-15-0-0-0-12-0-0-0-9-0-0-0-13-0-0
+881,60,9,"Same, RequestOtherPlayers()",How can another player affect this win. ,Inform([]),There is nothing that player could do to undo this win. ,Anthony,5,5,Yiyen,,0-15-0-0-0-12-0-0-0-9-0-0-0-13-0-0
+881,60,10,"Same, Confirm(User_ID=1, Quantity)",Is this a win because of the number of pieces on the board?,NotSure(),I'm not so sure.,Anthony,5,5,Yiyen,,0-15-0-0-0-12-0-0-0-9-0-0-0-13-0-0
+881,60,11,"Same, RequestOtherPlayers()",How could another player undo this win?,Inform([]),They can't.,Anthony,5,5,Yiyen,,0-15-0-0-0-12-0-0-0-9-0-0-0-13-0-0
+881,60,12,Finish(),"That's fine for now, thanks.",Finish,"Okay, see you later!",Anthony,5,5,Yiyen,,0-15-0-0-0-12-0-0-0-9-0-0-0-13-0-0

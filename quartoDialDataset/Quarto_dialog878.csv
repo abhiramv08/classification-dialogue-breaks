@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+878,60,0,Start(),"Hey, could you please teach me how to play Quarto?",Start,"Yes, sounds good. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+878,60,1,RequestNewWinCondition(),Please show me a win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-15-0-0-0-13-0-0-0-8-0-0-0-6-0
+878,60,2,"Same, Request(User_ID=1, Translate)",How could I shift the pieces and keep this a win?,"Inform(['col1', 'col3'])",They could be moved to column 1 or column 3.,Anthony,5,4,Yiyen,,0-0-15-0-0-0-13-0-0-0-8-0-0-0-6-0
+878,60,3,"Same, Confirm(User_ID=1, Height)",Is this a win because of the height of the pieces?,NotSure(),I'm not entirely sure.,Anthony,5,5,Yiyen,,0-0-15-0-0-0-13-0-0-0-8-0-0-0-6-0
+878,60,4,"Same, Confirm(User_ID=1, Translate([0, 1]))",Is it okay if I shift the pieces here?,Affirm(),"Yes, as long as every piece is in the same column.",Anthony,3,5,Yiyen,,0-0-15-0-0-0-13-0-0-0-8-0-0-0-6-0
+878,60,5,RequestNewWinCondition(),Please show me another win. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,14-0-0-0-0-11-0-0-0-0-13-0-0-0-0-12
+878,60,6,"Same, Confirm(User_ID=1, Color)",Is this a win because of the color of the pieces?,Negate(),"No, they are not the same color. ",Anthony,5,5,Yiyen,,14-0-0-0-0-11-0-0-0-0-13-0-0-0-0-12
+878,60,7,RequestNewWinCondition(),Can I have another win condition?,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-6-0-0-8-0-0-15-0-0-16-0-0-0
+878,60,8,RequestNewWinCondition(),Can I see one more win?,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-13-0-0-0-7-0-0-0-11-0-0-0-1
+878,60,9,"Context Switch, Confirm(User_ID=1, Color)","Go back to this board, is this a win because of the color of the pieces?",NotSure(),I'm not sure. ,Anthony,5,5,Yiyen,,0-0-15-0-0-0-13-0-0-0-8-0-0-0-6-0
+878,60,10,Finish(),Thanks for the help. Bye!,Finish,Goodbye!,Anthony,5,5,Yiyen,,0-0-15-0-0-0-13-0-0-0-8-0-0-0-6-0

@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+779,60,0,Start(),Hi there! Can you teach me how to play Quarto?,Start,Sure. Where should we start?,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+779,60,1,RequestNewWinCondition(),Can you show me a win condition to start?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-16-0-0-0-15-0-0-0-14-0-0-0-10-0-0
+779,60,2,"Same, Confirm(User_ID=1, Hollowness)","For this winning board, does the hollowness pattern of all pieces make it a win?",Negate(),"No, it is not the reason to win.",Derek,5,5,Shaobo,,0-16-0-0-0-15-0-0-0-14-0-0-0-10-0-0
+779,60,3,RequestNewWinCondition(),Please show me another win condition.,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-11-0-0-8-0-0-3-0-0-4-0-0-0
+779,60,4,"Same, Confirm(User_ID=1, Hollowness)","Again, does the hollowness pattern of all pieces make this board a win?",Affirm(),"Yes, you are correct this time.",Derek,5,5,Shaobo,,0-0-0-11-0-0-8-0-0-3-0-0-4-0-0-0
+779,60,5,RequestNewWinCondition(),Great! Please give me another win condition.,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,9-0-0-0-10-0-0-0-4-0-0-0-1-0-0-0
+779,60,6,"Same, Confirm(User_ID=1, Hollowness)","Again, is the hollowness pattern of all pieces make this board a win?",Negate(),You are incorrect this time.,Derek,5,4,Shaobo,,9-0-0-0-10-0-0-0-4-0-0-0-1-0-0-0
+779,60,7,"Same, Confirm(User_ID=1, Height)",How about the height of these pieces?,NotSure(),Sorry I am not sure about the that.,Derek,5,5,Shaobo,,9-0-0-0-10-0-0-0-4-0-0-0-1-0-0-0
+779,60,8,"Same, Confirm(User_ID=1, Hollowness)",How about the hollowness pattern of all pieces?,Negate(),"I just told you, the hollowness pattern does not make this board a win.",Derek,5,5,Shaobo,,9-0-0-0-10-0-0-0-4-0-0-0-1-0-0-0
+779,60,9,RequestNewWinCondition(),Oh I'm sorry. Can you show me another winning board?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-13-7-5-16
+779,60,10,Finish(),Thanks for teaching me today! Bye!,Finish,Bye! Be smarter next time.,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-13-7-5-16

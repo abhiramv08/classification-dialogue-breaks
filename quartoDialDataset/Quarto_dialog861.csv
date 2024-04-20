@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+861,60,0,Start(),"Hi, would you show me how to play Quarto?",Start,"Sure, let's begin.",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+861,60,1,RequestNewWinCondition(),Please show me a new win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-11-0-0-0-14-0-0-0-15-0-0-0-12-0-0
+861,60,2,RequestNewWinCondition(),Please show me a second win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-9-0-0-14-0-0-5-0-0-1-0-0-0
+861,60,3,"Context Switch, Confirm(User_ID=1, RemovePiece(3,1))","Looking at this board, would this still be a win if I remove this piece?",Negate(),"No, that would undo this win. ",Anthony,3,5,Yiyen,,0-11-0-0-0-14-0-0-0-15-0-0-0-12-0-0
+861,60,4,"Context Switch, Confirm(User_ID=1, Color)","Looking back to this board, is this a win because of the color of the pieces?",Negate(),"No, that is not why. ",Anthony,5,5,Yiyen,,0-0-0-9-0-0-14-0-0-5-0-0-1-0-0-0
+861,60,5,"Same, Confirm(User_ID=1, RemovePiece(1,1))",Would this still be a win if I remove this piece?,Negate(),"No, that piece is important to this win. ",Anthony,3,5,Yiyen,,0-0-0-9-0-0-14-0-0-5-0-0-1-0-0-0
+861,60,6,"Context Switch, Confirm(User_ID=1, Hollowness)","Looking at this board, does the pieces' hollowness make this a win?",NotSure(),"I'm not sure, sorry. ",Anthony,5,5,Yiyen,,0-11-0-0-0-14-0-0-0-15-0-0-0-12-0-0
+861,60,7,"Context Switch, Confirm(User_ID=1, Shape)","Switching to this board, is this a win because of the shape of the pieces?",Negate(),"No, that is not why. ",Anthony,5,5,Yiyen,,0-0-0-9-0-0-14-0-0-5-0-0-1-0-0-0
+861,60,8,"Context Switch, Confirm(User_ID=1, Color)","Let's look at this board, is this a win because of the color of the pieces?",Negate(),"No, they'd need to all be the same color for that to be the case.",Anthony,5,5,Yiyen,,0-11-0-0-0-14-0-0-0-15-0-0-0-12-0-0
+861,60,9,"Context Switch, Confirm(User_ID=1, Color)","Looking back at this board, is this a win because of the color of the pieces?",Negate(),"No, that is not why. ",Anthony,5,4,Yiyen,,0-0-0-9-0-0-14-0-0-5-0-0-1-0-0-0
+861,60,10,Finish(),Thanks for the help. I think I'm done. ,Finish,"Great, have a nice day. ",Anthony,5,5,Yiyen,,0-0-0-9-0-0-14-0-0-5-0-0-1-0-0-0

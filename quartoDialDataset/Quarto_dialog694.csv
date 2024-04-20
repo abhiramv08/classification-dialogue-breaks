@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+694,60,0,Start(),Hello! Can you show me how to play Quarto?,Start,"Yes, let's start!",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+694,60,1,RequestNewWinCondition(),Can you show me what a win condition looks like?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,12-0-0-0-0-10-0-0-0-0-11-0-0-0-0-15
+694,60,2,RequestNewWinCondition(),Could you give me a new win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-6-2-8-12
+694,60,3,"Context Switch, Confirm(User_ID=1, RemovePiece(2,1))","Switch to this board, can I remove the piece on the third row, the second column and still have a win?
+",NotSure(),"Well, I'm not quite sure.",Ruijie,5,5,Luke,,12-0-0-0-0-10-0-0-0-0-11-0-0-0-0-15
+694,60,4,RequestNewWinCondition(),Can you give me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,8-0-0-0-0-6-0-0-0-0-4-0-0-0-0-12
+694,60,5,"Same, Confirm(User_ID=1, Quantity)","Switch to this board, is it a win because of the number of pieces?
+",NotSure(),"Sorry, I'm not sure.",Ruijie,5,5,Luke,,8-0-0-0-0-6-0-0-0-0-4-0-0-0-0-12
+694,60,6,"Context Switch, Confirm(User_ID=1, Shape)","Switch to this board, is it a win because the pieces are of the same shape?",Negate(),"No, you can see that they are not even in the same shape.",Ruijie,5,5,Luke,,12-0-0-0-0-10-0-0-0-0-11-0-0-0-0-15
+694,60,7,"Context Switch, Confirm(User_ID=1, Height)","Switch to this board, is it a win because the pieces are of the same height?
+",Negate(),"No, that’s irrelevant.",Ruijie,5,5,Luke,,8-0-0-0-0-6-0-0-0-0-4-0-0-0-0-12
+694,60,8,"Same, Confirm(User_ID=1, Hollowness)","Does the hollowness of the pieces make it a win?
+",Negate(),"Well, it's not the reason.",Ruijie,5,5,Luke,,8-0-0-0-0-6-0-0-0-0-4-0-0-0-0-12
+694,60,9,"Context Switch, Confirm(User_ID=1, RemovePiece(2,1))","Switch to this board, can I remove the piece on the third row, the second column and still have a win?
+",Negate(),"No, I think that will break the win condition.",Ruijie,5,5,Luke,,12-0-0-0-0-10-0-0-0-0-11-0-0-0-0-15
+694,60,10,Finish(),Thanks! I've learned a lot.,Finish,You are very welcome!,Ruijie,5,5,Luke,,12-0-0-0-0-10-0-0-0-0-11-0-0-0-0-15

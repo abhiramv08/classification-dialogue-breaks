@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+773,60,0,Start(),Can you teach me how to play Quarto?,Start,No problem.,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+773,60,1,RequestNewWinCondition(),Please show me a win condition to start.,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-12-0-0-4-0-0-9-0-0-10-0-0-0
+773,60,2,RequestNewWinCondition(),Can you show me another win condition?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,9-0-0-0-0-14-0-0-0-0-16-0-0-0-0-15
+773,60,3,"Same, Confirm(User_ID=1, Color)",Is that a win because the color pattern of all pieces?,Negate(),"No, the color pattern does not make this board win.",Derek,5,5,Shaobo,,9-0-0-0-0-14-0-0-0-0-16-0-0-0-0-15
+773,60,4,RequestNewWinCondition(),Please show me another win condition.,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-8-0-0-15-0-0-13-0-0-5-0-0-0
+773,60,5,"Same, Confirm(User_ID=1, Hollowness)",Does the hollowness pattern of all pieces important for this win?,Negate(),No.,Derek,5,5,Shaobo,,0-0-0-8-0-0-15-0-0-13-0-0-5-0-0-0
+773,60,6,"Same, Confirm(User_ID=1, Hollowness)",Is that a win because of the hollowness pattern of all pieces?,Negate(),I already told you it is incorrect. ,Derek,5,5,Shaobo,,0-0-0-8-0-0-15-0-0-13-0-0-5-0-0-0
+773,60,7,RequestNewWinCondition(),Please give me another win condition.,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,10-0-0-0-2-0-0-0-14-0-0-0-9-0-0-0
+773,60,8,"Same, Confirm(User_ID=1, Shape)",Is that a win because the shape pattern of all pieces?,Negate(),No.,Derek,5,5,Shaobo,,10-0-0-0-2-0-0-0-14-0-0-0-9-0-0-0
+773,60,9,"Same, Confirm(User_ID=1, Color)",How about the color. Is the color pattern important for this win?,Negate(),"No, the color pattern of pieces is not the reason for this board to win.",Derek,5,5,Shaobo,,10-0-0-0-2-0-0-0-14-0-0-0-9-0-0-0
+773,60,10,"Context Switch, Confirm(User_ID=1, Height)","Switching to this winning board, is that a win because the height pattern of all pieces?",Negate(),"No, you are incorrect.",Derek,5,5,Shaobo,,0-0-0-12-0-0-4-0-0-9-0-0-10-0-0-0
+773,60,11,Finish(),Thanks for teaching me today!,Finish,You are welcome.,Derek,5,5,Shaobo,,0-0-0-12-0-0-4-0-0-9-0-0-10-0-0-0

@@ -1,0 +1,11 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+1262,60,0,Start(),"Hi, could you please tell me how to play Quarto?",Start,Sure!,Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+1262,60,1,RequestNewWinCondition(),Could you show me a win first?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-0-0-6-0-0-8-0-0-13-0-0-16-0-0-0
+1262,60,2,RequestNewWinCondition(),Could you show me another winning board?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-16-6-8-7
+1262,60,3,RequestNewWinCondition(),Could you show me one more winning board?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-3-11-15-12
+1262,60,4,"Same, RequestOtherPlayers()",And how could another player revoke this win?,Inform([]),There is nothing that another player could do to prevent this win.,Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-3-11-15-12
+1262,60,5,"Context Switch, Confirm(User_ID=1, Rotate(45))","Switching to this board, is it still a win if I rotate the pieces to the diagonal?",NotSure(),I think so but I am not sure.,Shaobo,4,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-16-6-8-7
+1262,60,6,"Same, Confirm(User_ID=1, Hollowness)",And is it a win because of the hollowness of the pieces?,NotSure(),"Sorry, I am not sure about it.",Shaobo,5,4,John,,0-0-0-0-0-0-0-0-0-0-0-0-16-6-8-7
+1262,60,7,"Same, Confirm(User_ID=1, Shape)",And is it a win because of the shape of the pieces?,Affirm(),"Yes, you got it!",Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-16-6-8-7
+1262,60,8,"Same, Confirm(User_ID=1, Quantity)",Does the number of pieces matter?,Affirm(),"Yes, you need at least four pieces for a win.",Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-16-6-8-7
+1262,60,9,Finish(),Thanks for the help! I have learned a lot!,Finish,You are welcome!,Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-16-6-8-7

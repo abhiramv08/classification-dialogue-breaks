@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+179,100,0,Start(),"What's up, can you show me how to play Quarto?",Start,"Sure, let's get started.",Ruijie,5,5,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+179,100,1,RequestNewWinCondition(),Can you show me a win condition?,Inform(),Assume you demonstrate this win condition,Ruijie,5,4,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-12-14-6-16
+179,100,2,RequestNewWinCondition(),What about a new one?,Inform(),Assume you demonstrate this win condition,Ruijie,5,5,Daniel,,0-0-0-2-0-0-5-0-0-9-0-0-6-0-0-0
+179,100,3,"Context Switch, Confirm(User_ID=1, Shape)","For the first win you showed me, is it the shape of the pieces that makes it a win?",Negate(),"No, it's not.",Ruijie,5,5,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-12-14-6-16
+179,100,4,RequestNewWinCondition(),What about another win condtion?,Inform(),Assume you demonstrate this win condition,Ruijie,5,5,Daniel,,0-0-0-7-0-0-1-0-0-5-0-0-11-0-0-0
+179,100,5,RequestNewWinCondition(),"One more, please?",Inform(),Assume you demonstrate this win condition,Ruijie,5,5,Daniel,,7-0-0-0-0-15-0-0-0-0-8-0-0-0-0-3
+179,100,6,RequestNewWinCondition(),What about a new one?,Inform(),Assume you demonstrate this win condition,Ruijie,5,5,Daniel,,0-0-0-1-0-0-0-2-0-0-0-12-0-0-0-10
+179,100,7,"Context Switch, Confirm(User_ID=1, AddPiece(1,3))","Back to the previous win you showed me, can I add a piece on the third one and maintain the win?",Affirm(),"Sure, you can.",Ruijie,4,5,Daniel,"""Third one"" is ambiguous",0-0-0-0-0-0-0-0-0-0-0-0-12-14-6-16
+179,100,8,RequestNewWinCondition(),Can I get a new win condition?,Inform(),Assume you demonstrate this win condition,Ruijie,5,4,Daniel,,0-0-0-13-0-0-11-0-0-15-0-0-14-0-0-0
+179,100,9,RequestNewWinCondition(),"I understand you might be tired, but I just want to see as many win conditions as I can, so can you give me one more?",Inform(),Assume you demonstrate this win condition,Ruijie,5,4,Daniel,,16-0-0-0-0-13-0-0-0-0-5-0-0-0-0-15
+179,100,10,"Context Switch, Request(User_ID=1, Rotate)","Back to the previous win condition you showed me, can I rotate the pieces by a certain degree and maintain the win?",Inform([90]),"Sure, just put the pieces on the other diagonal.",Ruijie,5,3,Daniel,,0-0-0-2-0-0-5-0-0-9-0-0-6-0-0-0
+179,100,11,RequestNewWinCondition(),Can I get one more win condition?,Inform(),Assume you demonstrate this win condition,Ruijie,5,4,Daniel,,0-0-0-6-0-0-0-4-0-0-0-10-0-0-0-14
+179,100,12,"Same, Confirm(User_ID=1, Rotate(180))","For this new win condition, is it still a win if I put the pieces horizontally?",Affirm(),"Sure, you can do that.",Ruijie,5,4,Daniel,,0-0-0-6-0-0-0-4-0-0-0-10-0-0-0-14
+179,100,13,RequestNewWinCondition(),Can I get a new win condtion?,Inform(),Assume you demonstrate this win condition,Ruijie,5,4,Daniel,,0-0-16-0-0-0-15-0-0-0-14-0-0-0-12-0
+179,100,14,"Context Switch, Confirm(User_ID=1, Quantity)","Back to the previous win you showed me, is it a win because of the quantity of pieces?",Affirm(),"Yes, you are right about that.",Ruijie,5,5,Daniel,,0-0-0-2-0-0-5-0-0-9-0-0-6-0-0-0
+179,100,15,Finish(),"Thank you so much, I think I've learned enough.",Finish,You're welcome.,Ruijie,5,5,Daniel,,0-0-0-2-0-0-5-0-0-9-0-0-6-0-0-0

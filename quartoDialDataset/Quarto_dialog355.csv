@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Board
+355,50,0,Start(),Hello. Could you teach me the game of Quarto?,Start,Yes. Let's begin.,Jacob,0-0-0-10-0-0-13-0-0-2-0-0-9-0-0-0
+355,50,1,RequestNewWinCondition(),Could you show me a way to win this game?,Inform,Assume you demonstrate this win condition,Jacob,0-0-0-0-0-0-0-0-0-0-0-0-16-8-2-10
+355,50,2,RequestNewWinCondition(),Can you show me another?,Inform,Assume you demonstrate this win condition,Jacob,0-0-0-16-0-0-15-0-0-6-0-0-5-0-0-0
+355,50,3,RequestNewWinCondition(),"I'd like to see another, please.",Inform,Assume you demonstrate this win condition,Jacob,0-0-0-8-0-0-16-0-0-4-0-0-6-0-0-0
+355,50,4,"Context Switch, Confirm(User_ID=1, Color)","On this board, do the colors of the pieces contribute to the win condition?",NotSure(),I don't know.,Jacob,0-0-0-0-0-0-0-0-0-0-0-0-16-8-2-10
+355,50,5,RequestNewWinCondition(),Can you show me another win condition?,Inform,Assume you demonstrate this win condition,Jacob,1-0-0-0-0-13-0-0-0-0-5-0-0-0-0-2
+355,50,6,RequestNewWinCondition(),Could I see another?,Inform,Assume you demonstrate this win condition,Jacob,0-0-0-6-0-0-0-5-0-0-0-8-0-0-0-3
+355,50,7,"Context Switch, RequestOtherPlayers()",What actions could another player take on this board to get rid of this win?,Inform([]),There is no such action another player could take.,Jacob,0-0-0-8-0-0-16-0-0-4-0-0-6-0-0-0
+355,50,8,"Context Switch, Confirm(User_ID=1, Height)",Are the heights of the pieces on this board important to the win condition?,NotSure(),"Sorry, I don't know.",Jacob,1-0-0-0-0-13-0-0-0-0-5-0-0-0-0-2
+355,50,9,"Context Switch, Confirm(User_ID=1, Height)","On this board, do the heights of the pieces matter?",Affirm(),"Yes, the heights are important here.",Jacob,0-0-0-6-0-0-0-5-0-0-0-8-0-0-0-3
+355,50,10,"Context Switch, Confirm(User_ID=1, AddPiece(2,2))","On this board, would this still be a win if a piece were added in the third row of the third column?",Affirm(),"Yes, a piece there would be fine.",Jacob,0-0-0-0-0-0-0-0-0-0-0-0-16-8-2-10
+355,50,11,"Same, Request(User_ID=1, Translate)",In what other rows could these pieces constitute a win condition?,"Inform(['row1', 'row2'])",You would have a win if these pieces were in the second or third rows.,Jacob,0-0-0-0-0-0-0-0-0-0-0-0-16-8-2-10
+355,50,12,"Context Switch, Confirm(User_ID=1, Height)","Regarding this board, do the heights of the pieces matter for the win?",NotSure(),"Sorry, I'm not sure.",Jacob,0-0-0-8-0-0-16-0-0-4-0-0-6-0-0-0
+355,50,13,RequestNewWinCondition(),Can you show me another way to win?,Inform,Assume you demonstrate this win condition,Jacob,10-0-0-0-0-6-0-0-0-0-13-0-0-0-0-2
+355,50,14,"Context Switch, Request(User_ID=1, Translate)",In what ways could the pattern of pieces on this board be moved to create a new win condition?,Inform([]),There is no way to shift this pattern around.,Jacob,0-0-0-8-0-0-16-0-0-4-0-0-6-0-0-0
+355,50,15,Finish(),Thank you for teaching me Quarto.,Finish,You're welcome.,Jacob,0-0-0-8-0-0-16-0-0-4-0-0-6-0-0-0

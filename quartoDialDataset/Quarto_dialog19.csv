@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+19,100,0,Start(),Are you ready to teach me about the Quarto?,Start,Sure! ,Derek,5,5,Dave,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+19,100,1,RequestNewWinCondition(),Can you show me a win condition to start with?,Inform(),Assume you demonstrate this win condition,Derek,5,4,Dave,,0-0-0-9-0-0-0-15-0-0-0-5-0-0-0-3
+19,100,2,"Same, Request(User_ID=1, Translate)",Where can I translate the pieces and still in the win condition?,"Inform(['col0', 'col1', 'col2'])",You can place the vertical pieces in any column.,Derek,5,4,Dave,,0-0-0-9-0-0-0-15-0-0-0-5-0-0-0-3
+19,100,3,"Same , Confirm(User_ID=1, Shape)",It that a win because the shape of the pieces?,Negate(),No.,Derek,5,5,Dave,,0-0-0-9-0-0-0-15-0-0-0-5-0-0-0-3
+19,100,4,RequestNewWinCondition(),Can you show me a new win condition?,Inform(),Assume you demonstrate this win condition,Derek,5,4,Dave,,0-0-0-1-0-0-6-0-0-13-0-0-5-0-0-0
+19,100,5,"Context Switch, Request(User_ID=1, Rotate)","For the first win condition, how can I rotate the pieces and still has a win condition?","Inform([135, 180])",You can rotate them in diagonal or horizontal.,Derek,5,3,Dave,,0-0-0-9-0-0-0-15-0-0-0-5-0-0-0-3
+19,100,6,"Same, RequestOtherPlayers()",It that a win condition for another player?,Inform([]),Yes.,Derek,2,4,Dave,,0-0-0-9-0-0-0-15-0-0-0-5-0-0-0-3
+19,100,7,"Same , Confirm(User_ID=1, AddPiece(2,1))","Is that still a win condition if I add a piece on (2,1)?",Affirm(),Yes you can do that.,Derek,5,4,Dave,,0-0-0-9-0-0-0-15-0-0-0-5-0-0-0-3
+19,100,8,RequestNewWinCondition(),Can you show me another win condition?,Inform(),Assume you demonstrate this win condition,Derek,5,4,Dave,,3-0-0-0-0-12-0-0-0-0-11-0-0-0-0-1
+19,100,9,"Context Switch, Confirm(User_ID=1, AddPiece(2,3))","For the second win condition, is that still a win condition if I add a piece in (2,3)?",Affirm(),Yes! It's always a win.,Derek,5,5,Dave,,0-0-0-1-0-0-6-0-0-13-0-0-5-0-0-0
+19,100,10,"Context Switch, Confirm(User_ID=1, Rotate(180))","For the first win consition, is that still a win condition if the pieces are placed horizontally?",Affirm(),Yes you can do that.,Derek,5,5,Dave,,0-0-0-9-0-0-0-15-0-0-0-5-0-0-0-3
+19,100,11,"Context Switch, Confirm(User_ID=1, RemovePiece(0,0))","Step back to the fist win condition, is that still a win if I remove the piece at (0,0)?",Negate(),No it will no longer be a win condition.,Derek,5,4,Dave,,0-0-0-1-0-0-6-0-0-13-0-0-5-0-0-0
+19,100,12,"Same , Confirm(User_ID=1, RemovePiece(3,3))","Is that still a win if I remove the piece at (3,3)?",Negate(),No it will break the win condition.,Derek,5,3,Dave,,0-0-0-1-0-0-6-0-0-13-0-0-5-0-0-0
+19,100,13,"Context Switch, RequestOtherPlayers()",For the first win condiiton is that also a win condition for another player?,Inform([]),Yes.,Derek,2,4,Dave,,0-0-0-9-0-0-0-15-0-0-0-5-0-0-0-3
+19,100,14,"Context Switch, Request(User_ID=1, Translate)","For the last win condition, is there any translation I can do to keep winning?",Inform([]),Yes there are some ways you can do.,Derek,3,3,Dave,,3-0-0-0-0-12-0-0-0-0-11-0-0-0-0-1
+19,100,15,Finish(),"Okey I have learned a lot about Quarto, thank you!",Finish,No problem!,Derek,5,5,Dave,,3-0-0-0-0-12-0-0-0-0-11-0-0-0-0-1

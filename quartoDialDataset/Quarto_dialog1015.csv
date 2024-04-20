@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+1015,60,0,Start(),"Hello, can you be my teacher for Quarto?",Start,Ok.,Tianyi,5,4,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+1015,60,1,RequestNewWinCondition(),Can you give me an example of win?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,0-3-0-0-0-12-0-0-0-2-0-0-0-9-0-0
+1015,60,2,"Same, Confirm(User_ID=1, Shape)","In this board, is it wins because of the shape of the pieces?",Affirm(),Yes.,Tianyi,5,4,Ruijie,,0-3-0-0-0-12-0-0-0-2-0-0-0-9-0-0
+1015,60,3,RequestNewWinCondition(),Can you give me another example of win?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,16-0-0-0-13-0-0-0-11-0-0-0-14-0-0-0
+1015,60,4,RequestNewWinCondition(),What else can be a winning board?,Inform,Assume you demonstrate this win condition,Tianyi,5,4,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-13-16-7-14
+1015,60,5,"Same, Confirm(User_ID=1, Rotate(45))","In this case, If I rotate all pieces 45 degrees to the rows and put them in the diagonal, can it still be a winning board?",NotSure(),I cannot determine whether that is true.,Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-13-16-7-14
+1015,60,6,RequestNewWinCondition(),Can you show me a new winning board?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-14-12-8-6
+1015,60,7,"Context Switch, Confirm(User_ID=1, RemovePiece(0,2))","Back to this win, if I remove the piece at the third column, is it still a win?",Negate(),"No, it will no longer be a win if you do that.",Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-13-16-7-14
+1015,60,8,"Context Switch, Confirm(User_ID=1, RemovePiece(1,0))","In this board, if I remove the piece at the second row, is it still a win?",Negate(),Nope.,Tianyi,5,4,Ruijie,,16-0-0-0-13-0-0-0-11-0-0-0-14-0-0-0
+1015,60,9,"Context Switch, Confirm(User_ID=1, Translate([1, 0]))","For this board, if I move all pieces one block up, can it still be a win?",Affirm(),Yes.,Tianyi,5,4,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-13-16-7-14
+1015,60,10,"Same, Confirm(User_ID=1, Shape)","And, is it wins because of the shape of the pieces?",Affirm(),"Yes, you are right.",Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-13-16-7-14
+1015,60,11,"Context Switch, Confirm(User_ID=1, Height)","In this case, is it a win because all pieces are tall?",Affirm(),Yes.,Tianyi,5,5,Ruijie,,16-0-0-0-13-0-0-0-11-0-0-0-14-0-0-0
+1015,60,12,"Context Switch, Confirm(User_ID=1, Color)","For this board, is it wins because some pieces have the same color?",Negate(),"No, that is not the reason.",Tianyi,5,5,Ruijie,,0-3-0-0-0-12-0-0-0-2-0-0-0-9-0-0
+1015,60,13,"Context Switch, Confirm(User_ID=1, Color)","What about this board, is it wins because all pieces are blue?",Affirm(),"Yes, it is.",Tianyi,5,4,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-14-12-8-6
+1015,60,14,"Same, Request(User_ID=1, Translate)","For this board, can I move some pieces and still keep the win?","Inform(['row1', 'row2'])","Yes, you can either move all pieces to the second row or the third row.",Tianyi,5,4,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-14-12-8-6
+1015,60,15,Finish(),"Thank you for teaching me, I am much better in Quarto now.",Finish,You are welcome.,Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-14-12-8-6

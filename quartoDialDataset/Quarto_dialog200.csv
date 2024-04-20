@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+200,100,0,Start(),"Hi, please teach me Quarto.",Start,"Okay, sure.",Anthony,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+200,100,1,RequestNewWinCondition(),Can you show me a win condition?,Inform(),Assume you demonstrate this win condition,Anthony,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-12-13-15-11
+200,100,2,RequestNewWinCondition(),Can you show me a second win condition?,Inform(),Assume you demonstrate this win condition,Anthony,5,5,John,,0-6-0-0-0-8-0-0-0-1-0-0-0-2-0-0
+200,100,3,"Context Switch, Request(User_ID=1, Rotate)","Looking at this board, how can I rotate the pieces?","Inform([45, 90])",You could move them to the diagonal or antidiagonal.,Anthony,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-12-13-15-11
+200,100,4,"Win Context Switch {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}",Is this is a win because some pieces are hollow?,Negate(),"No, that is not why this is a win.",Anthony,5,5,John,,0-6-0-0-0-8-0-0-0-1-0-0-0-2-0-0
+200,100,5,"Same, Request(User_ID=1, Translate)",How can I shift the pieces and maintain the win condition?,"Inform(['col0', 'col2', 'col3'])","You could move them to column 0, 2, or 3.",Anthony,5,3,John,"Based on ""naturalness"" I don't think most people outside of computer science would refer to column 0",0-6-0-0-0-8-0-0-0-1-0-0-0-2-0-0
+200,100,6,"Context Switch, Confirm(User_ID=1, Shape)","Looking at this new board, is it a win because of the shape of the pieces?",Negate(),"No, that is not why.",Anthony,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-12-13-15-11
+200,100,7,"Context Switch, Confirm(User_ID=1, Quantity)",What about this board? Is it a win because of how many pieces there are?,Affirm(),"Yes, the amount of pieces is why this is a win. ",Anthony,5,5,John,,0-6-0-0-0-8-0-0-0-1-0-0-0-2-0-0
+200,100,8,"Win Context Switch {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}",On this other board is it a win because some of the pieces are hollow?,Negate(),"No, hollowness is unrelated to this win condition.",Anthony,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-12-13-15-11
+200,100,9,RequestNewWinCondition(),"Show me another win condition, please.",Inform(),Assume you demonstrate this win condition,Anthony,5,5,John,,0-0-16-0-0-0-15-0-0-0-12-0-0-0-3-0
+200,100,10,Finish(),Thanks for teaching me!,Finish,You're absolutely welcome.,Anthony,5,5,John,,0-0-16-0-0-0-15-0-0-0-12-0-0-0-3-0

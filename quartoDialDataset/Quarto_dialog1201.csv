@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+1201,60,0,Start(),"Hi, could you teach me how to play Quarto?",Start,"Sure, let's get started!",Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+1201,60,1,RequestNewWinCondition(),Could you show me a win first?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-6-1-14-9
+1201,60,2,"Same, RequestOtherPlayers()",How could another player revoke this win?,Inform([]),There is nothing that another player could do to prevent this win.,Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-6-1-14-9
+1201,60,3,RequestNewWinCondition(),Is there any other way to win?,Inform,Assume you demonstrate this win condition,Shaobo,4,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-1-11-4-12
+1201,60,4,"Context Switch, Confirm(User_ID=1, Height)","Switching to this board, is it a win because of the height of the pieces?",Negate(),"No, it is a win because all pieces are solid.",Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-6-1-14-9
+1201,60,5,RequestNewWinCondition(),Is there any other way to win?,Inform,Assume you demonstrate this win condition,Shaobo,4,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-5-7-3-13
+1201,60,6,RequestNewWinCondition(),Could you show me another winning board?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-0-0-11-0-0-10-0-0-9-0-0-2-0-0-0
+1201,60,7,"Context Switch, RequestOtherPlayers()","Switching to this board, how could another player revoke this win?",Inform([]),There is nothing that another player could do to prevent this win.,Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-1-11-4-12
+1201,60,8,"Context Switch, Confirm(User_ID=1, Height)","Switching to this board, is it a win because of the height of the pieces?",NotSure(),"Sorry, I am not sure about it.",Shaobo,5,4,John,,0-0-0-11-0-0-10-0-0-9-0-0-2-0-0-0
+1201,60,9,RequestNewWinCondition(),Could you show me another winning board?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-4-3-7-1
+1201,60,10,"Context Switch, Confirm(User_ID=1, Rotate(90))","Switching to this board, is it still a win if I rotate the pieces to the first column?",Affirm(),"Yes, it is still a win.",Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-5-7-3-13
+1201,60,11,"Context Switch, RequestOtherPlayers()","Switching to this board, how could another player revoke this win?",Inform([]),There is nothing that another player could do to prevent this win.,Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-4-3-7-1
+1201,60,12,"Same, Confirm(User_ID=1, AddPiece(1,2))",And is it still a win if I add a piece on the second bottom row and the third left column?,Affirm(),"Yes, it is still a win.",Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-4-3-7-1
+1201,60,13,"Context Switch, Confirm(User_ID=1, Height)","Switching to this board, is it a win because of the height of the pieces?",NotSure(),"Sorry, I am not sure about it.",Shaobo,5,4,John,,0-0-0-0-0-0-0-0-0-0-0-0-5-7-3-13
+1201,60,14,"Context Switch, Request(User_ID=1, Rotate)","Switching to this board, is it still a win if I rotate the pieces to the first column?",Inform([90]),You could rotate them to the leftmost column.,Shaobo,5,5,John,,0-0-0-11-0-0-10-0-0-9-0-0-2-0-0-0
+1201,60,15,Finish(),Thanks for the help! I have learned a lot!,Finish,You are welcome!,Shaobo,5,5,John,,0-0-0-11-0-0-10-0-0-9-0-0-2-0-0-0

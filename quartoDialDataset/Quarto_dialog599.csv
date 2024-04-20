@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+599,60,0,Start(),"Hello, can you teach me how to play Quarti?",Start,"Sure, let's begin.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+599,60,1,RequestNewWinCondition(),"Thank you. Firstly, could you show me a win condition?",Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-6-8-4-3
+599,60,2,RequestNewWinCondition(),Is there any other way to win the game?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-11-12-4-2
+599,60,3,"Same, Confirm(User_ID=1, Quantity)","For the win you just showed, does the number of the pieces relate to the win?",Affirm(),"Yes, you need to have at least four pieces in order to win.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-11-12-4-2
+599,60,4,RequestNewWinCondition(),Could you please show me one more win scenario?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-3-11-13-15
+599,60,5,"Context Switch, Confirm(User_ID=1, Quantity)","Let's switch to this board, does the number of the pieces matter here?",Affirm(),"Yes, as I said, you must have at least four pieces in order to win the game.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-11-12-4-2
+599,60,6,"Same, Confirm(User_ID=1, Height)","For the same board, is it a win because of the heights of the pieces?",Negate(),"No, it is a win because all the pieces are triangles.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-11-12-4-2
+599,60,7,"Same, Request(User_ID=1, Rotate)","Still for this board, how can I rotate the pieces while keeping the win condition?","Inform([45, 90])",You can rotate them to the diagonal direction or to the first column,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-11-12-4-2
+599,60,8,RequestNewWinCondition(),Could you please show me one more win case?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-5-0-0-0-10-0-0-0-1-0-0-0-13-0
+599,60,9,"Context Switch, Confirm(User_ID=1, Height)","Let's consider this board, do the heights of the pieces relate to the win condition?",NotSure(),I am not sure.,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-11-12-4-2
+599,60,10,Finish(),"That's all the information I want to know, thank you.",Finish,You are welcome.,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-11-12-4-2

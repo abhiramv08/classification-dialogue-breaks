@@ -1,0 +1,20 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+695,60,0,Start(),Hey! Can you show me how to play Quarto?,Start,"Yes, I love Quarto!",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+695,60,1,RequestNewWinCondition(),Can you show me what a win condition looks like?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,8-0-0-0-0-13-0-0-0-0-15-0-0-0-0-16
+695,60,2,"Same, Confirm(User_ID=1, Color)","For this board, does the color of the pieces make it a win?
+",Negate(),"No, it's kind of obvious they are not in the same color.",Ruijie,5,5,Luke,,8-0-0-0-0-13-0-0-0-0-15-0-0-0-0-16
+695,60,3,RequestNewWinCondition(),Can you show me a new win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-10-0-0-0-12-0-0-0-4-0-0-0-6
+695,60,4,"Context Switch, RequestOtherPlayers()","Switch to this board, can the other player break this win?
+",Inform([]),"No, this win is absolute.",Ruijie,5,5,Luke,,8-0-0-0-0-13-0-0-0-0-15-0-0-0-0-16
+695,60,5,"Context Switch, Confirm(User_ID=1, Quantity)","Switch to this board, does the number of the pieces make it a win?
+",NotSure(),"Sorry, I don't actually know.",Ruijie,5,5,Luke,,0-0-0-10-0-0-0-12-0-0-0-4-0-0-0-6
+695,60,6,"Same, Confirm(User_ID=1, RemovePiece(0,3))",Can I remove the piece at the bottom location and still have a win?,NotSure(),"No, that would definitely break the win condition.",Ruijie,5,5,Luke,,0-0-0-10-0-0-0-12-0-0-0-4-0-0-0-6
+695,60,7,"Same, Request(User_ID=1, Rotate)","Can I rotate the pieces by some degrees and still have a win?
+","Inform([135, 180])","Sure, you can rotate them by one thirty five or one eighty degrees.
+",Ruijie,4,4,Luke,,0-0-0-10-0-0-0-12-0-0-0-4-0-0-0-6
+695,60,8,"Context Switch, Request(User_ID=1, Rotate)","Switch to this board, can I rotate the pieces by some degrees?",Inform([90]),"Yeah, you can rotate them by ninety degrees.",Ruijie,4,4,Luke,,8-0-0-0-0-13-0-0-0-0-15-0-0-0-0-16
+695,60,9,"Same, Confirm(User_ID=1, Rotate(90))",Can I rotate the pieces by ninety degrees?,Affirm(),"Sure, you can do that.",Ruijie,4,5,Luke,,8-0-0-0-0-13-0-0-0-0-15-0-0-0-0-16
+695,60,10,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-16-0-0-0-7-0-0-0-8-0-0-0-5-0-0
+695,60,11,"Context Switch, Confirm(User_ID=1, Hollowness)","Switch to this board, does the hollowness of the pieces make it a win?
+",NotSure(),"You know what, I’m not sure.",Ruijie,5,5,Luke,,8-0-0-0-0-13-0-0-0-0-15-0-0-0-0-16
+695,60,12,Finish(),Thanks bud! I think I got it!,Finish,It's my pleasure.,Ruijie,5,5,Luke,,8-0-0-0-0-13-0-0-0-0-15-0-0-0-0-16

@@ -1,0 +1,15 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+736,60,0,Start(),"Hi, can you teach me how to play Quarto?",Start,"Yes, shall we begin?",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+736,60,1,RequestNewWinCondition(),Can you show me a win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,16-0-0-0-0-9-0-0-0-0-10-0-0-0-0-15
+736,60,2,"Same, Confirm(User_ID=1, Rotate(90))",Can I rotate the pieces by ninety degrees?,NotSure(),I actually have no idea.,Ruijie,3,4,Luke,,16-0-0-0-0-9-0-0-0-0-10-0-0-0-0-15
+736,60,3,"Same, RequestOtherPlayers()",Can the other player undo this win?,Inform([]),"No, this win is absolute.",Ruijie,5,5,Luke,,16-0-0-0-0-9-0-0-0-0-10-0-0-0-0-15
+736,60,4,"Same, RequestOtherPlayers()","Can the other player undo this win?
+",Inform([]),"No, this win is absolute.",Ruijie,5,4,Luke,,16-0-0-0-0-9-0-0-0-0-10-0-0-0-0-15
+736,60,5,"Same, Confirm(User_ID=1, Height)",Is it a win because the pieces are of the same height?,Affirm(),"Yes, that's right!",Ruijie,5,5,Luke,,16-0-0-0-0-9-0-0-0-0-10-0-0-0-0-15
+736,60,6,"Same, Confirm(User_ID=1, Height)",Is it a win because the pieces are of the same height?,Affirm(),Yup.,Ruijie,5,3,Luke,,16-0-0-0-0-9-0-0-0-0-10-0-0-0-0-15
+736,60,7,"Same, Confirm(User_ID=1, Hollowness)","Does the hollowness of the pieces make it a win?
+",NotSure(),"Well, I don't know.",Ruijie,5,5,Luke,,16-0-0-0-0-9-0-0-0-0-10-0-0-0-0-15
+736,60,8,"Same, RequestOtherPlayers()",Can the other player break this win?,Inform([]),"No, this one is absolute.",Ruijie,5,5,Luke,,16-0-0-0-0-9-0-0-0-0-10-0-0-0-0-15
+736,60,9,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-12-10-14-2
+736,60,10,"Context Switch, Confirm(User_ID=1, Shape)","Switch to this board, is it a win because the pieces are of the same shape?",Negate(),"No, that’s not the reason.",Ruijie,5,5,Luke,,16-0-0-0-0-9-0-0-0-0-10-0-0-0-0-15
+736,60,11,Finish(),Thanks! I think I've learned enough.,Finish,"Ok, have a good one.",Ruijie,5,5,Luke,,16-0-0-0-0-9-0-0-0-0-10-0-0-0-0-15

@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+57,100,0,Start(),Could you teach me how to play Quarto?,Start,"Ok, what do you want to know?",Tianyi,,,,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+57,100,1,RequestNewWinCondition(),"One basic question, how can I win?",Inform(),Assume you demonstrate this win condition,Tianyi,,,,,0-0-0-0-0-0-0-0-0-0-0-0-8-12-16-14
+57,100,2,"Same , Confirm(User_ID=1, Consistency)",Is that win because of the consistency?,Negate(),"Nope, they are not consistent.",Tianyi,,,,,0-0-0-0-0-0-0-0-0-0-0-0-8-12-16-14
+57,100,3,RequestNewWinCondition(),Any other ways to win?,Inform(),Assume you demonstrate this win condition,Tianyi,,,,,9-0-0-0-0-1-0-0-0-0-11-0-0-0-0-15
+57,100,4,"Same , Confirm(User_ID=1, Consistency)","So, that should because of the consistency right?",Negate(),"No, still not.",Tianyi,,,,,9-0-0-0-0-1-0-0-0-0-11-0-0-0-0-15
+57,100,5,"Context Switch, Request(User_ID=1, Translate)","For win1, is there any other forms to win?","Inform(['row1', 'row2', 'row3'])",You can put pieces In either row1 row2 or row3.,Tianyi,,,,,0-0-0-0-0-0-0-0-0-0-0-0-8-12-16-14
+57,100,6,RequestNewWinCondition(),"Ok, could you give me any other cases. I mean, a new win condtion.",Inform(),Assume you demonstrate this win condition,Tianyi,,,,,10-0-0-0-0-6-0-0-0-0-8-0-0-0-0-12
+57,100,7,"Context Switch, Request(User_ID=1, Translate)","For win2, can I move the pieces and still win the game?",Inform([]),"Yeah, as long as they are in a line.",Tianyi,,,,,9-0-0-0-0-1-0-0-0-0-11-0-0-0-0-15
+57,100,8,"Context Switch, Confirm(User_ID=1, Shape)","And, for win2, is it wins beacsue of the shape?",Negate(),"No, in that case, it wins because of the color.",Tianyi,,,,,0-0-0-0-0-0-0-0-0-0-0-0-8-12-16-14
+57,100,9,"Context Switch, Confirm(User_ID=1, RemovePiece(1,2))","For win3, what if there is no piece in the second column? Is it still a win condition?",Negate(),"No, it can't win.",Tianyi,,,,,10-0-0-0-0-6-0-0-0-0-8-0-0-0-0-12
+57,100,10,"Same , Confirm(User_ID=1, Consistency)",Is it wins because of the consistency?,Negate(),"No, they are not consistent in this case.",Tianyi,,,,,10-0-0-0-0-6-0-0-0-0-8-0-0-0-0-12
+57,100,11,"Context Switch, Confirm(User_ID=1, RemovePiece(0,3))","So, it also won't win if there is no piece in the first column for win2?",Negate(),"No, you won't win.",Tianyi,,,,,9-0-0-0-0-1-0-0-0-0-11-0-0-0-0-15
+57,100,12,RequestNewWinCondition(),Any other win condtion?,Inform(),Assume you demonstrate this win condition,Tianyi,,,,,11-0-0-0-0-16-0-0-0-0-10-0-0-0-0-13
+57,100,13,"Same, RequestOtherPlayers()",Will other players behavior affect the win above?,Inform([]),"If you haven't reached the win condtion, they definitely will hold you back. But, once you got it, they lose, and you are the winner.",Tianyi,,,,,11-0-0-0-0-16-0-0-0-0-10-0-0-0-0-13
+57,100,14,"Same, Request(User_ID=1, Rotate)",Got it! Is there any other forms to win there?,Inform([90]),Put them in the other diagonal. It is still a win.,Tianyi,,,,,11-0-0-0-0-16-0-0-0-0-10-0-0-0-0-13
+57,100,15,Finish(),"Thanks, my friend. I have learned a lot.",Finish,"Glad to teach you, you are welcome.",Tianyi,,,,,11-0-0-0-0-16-0-0-0-0-10-0-0-0-0-13

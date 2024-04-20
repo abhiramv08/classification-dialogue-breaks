@@ -1,0 +1,19 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+579,60,0,Start(),Excuse me. Do you know how to play Quarto?,Start,"Yes, and I can show you how.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+579,60,1,RequestNewWinCondition(),"Thank you. Firstly, could you demostrate a win condition?",Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-14-7-6-15
+579,60,2,RequestNewWinCondition(),Is there any other way to win the game?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,8-0-0-0-0-1-0-0-0-0-6-0-0-0-0-7
+579,60,3,"Context Switch, Confirm(User_ID=1, Quantity)","Let's switch to the previous board, is it a win because of the number of the pieces?",NotSure(),"I guess so, but I am not sure.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-14-7-6-15
+579,60,4,"Same, RequestOtherPlayers()","For the same board, is there any method that the other player can use to stop this win?",Inform([]),"There is nothing he or she can do, since one player has won the game.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-14-7-6-15
+579,60,5,"Same, RequestOtherPlayers()","For the same board, how can the other player do to stop this win?",Inform([]),"I just told you that there is nothing the other player can do.
+",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-14-7-6-15
+579,60,6,"Context Switch, Confirm(User_ID=1, Height)","Let's switch to this board,  is this a win because of the heights of the pieces?",Affirm(),"Yes, as you can all the pieces are equally high.",Yiyan,5,5,Tianyi,,8-0-0-0-0-1-0-0-0-0-6-0-0-0-0-7
+579,60,7,"Same, Confirm(User_ID=1, RemovePiece(0,3))","For the same board, would it still be a win if I remove the piece on the last column?",Negate(),"No, you must have at least four pieces to win the game.",Yiyan,5,5,Tianyi,,8-0-0-0-0-1-0-0-0-0-6-0-0-0-0-7
+579,60,8,RequestNewWinCondition(),Could you please show me one more win scenario?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-14-15-9-12
+579,60,9,"Context Switch, Request(User_ID=1, Translate)","Let's turn to this board, how can I shift the pieces so that I can get another win case?
+","Inform(['row1', 'row2', 'row3'])",You can shift the pieces to any other rows.,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-14-7-6-15
+579,60,10,"Context Switch, Confirm(User_ID=1, Rotate(90))","Let's consider this win condition, would it still be a win if I rotate the pieces to the last column?",Affirm(),"Yes, it will still be a win.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-14-15-9-12
+579,60,11,RequestNewWinCondition(),Could you please show me one more win scenario?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-10-0-0-5-0-0-6-0-0-2-0-0-0
+579,60,12,"Context Switch, Confirm(User_ID=1, Height)","Let's turn to this win case, is this a win because of the heights of the pieces?",Affirm(),"Yes, you can win by having four pieces with the same height.",Yiyan,5,5,Tianyi,,8-0-0-0-0-1-0-0-0-0-6-0-0-0-0-7
+579,60,13,RequestNewWinCondition(),Could you please show me one more win scenario?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-14-12-4-16
+579,60,14,"Context Switch, Request(User_ID=1, Rotate)","Going back to this board, how should I rotate the pieces to get another win?",Inform([90]),You can rotate them to the  last column.,Yiyan,5,5,Tianyi,,8-0-0-0-0-1-0-0-0-0-6-0-0-0-0-7
+579,60,15,Finish(),"Thank you very much, I learned a lot today.",Finish,You are welcome.,Yiyan,5,5,Tianyi,,8-0-0-0-0-1-0-0-0-0-6-0-0-0-0-7

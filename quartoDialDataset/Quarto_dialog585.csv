@@ -1,0 +1,20 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+585,60,0,Start(),Excuse me. Do you know how to play Quarto?,Start,"Yes, and I can show you how.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+585,60,1,RequestNewWinCondition(),Could you first show me one way to win the game?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,11-0-0-0-0-3-0-0-0-0-12-0-0-0-0-16
+585,60,2,RequestNewWinCondition(),Could you please show me one more win scenario?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,9-0-0-0-0-7-0-0-0-0-13-0-0-0-0-11
+585,60,3,"Same, Confirm(User_ID=1, Color)","For the win you just showed,
+ do the color of the pieces affect the win condition?",Affirm(),"Yes, you can win by having four pieces with the same color.",Yiyan,5,5,Tianyi,,9-0-0-0-0-7-0-0-0-0-13-0-0-0-0-11
+585,60,4,"Context Switch, Confirm(User_ID=1, Color)","Let's switch to this board, 
+is it a win because of the color of the pieces?
+",NotSure(),"I guess not, but I am not sure.",Yiyan,5,4,Tianyi,,11-0-0-0-0-3-0-0-0-0-12-0-0-0-0-16
+585,60,5,RequestNewWinCondition(),Could you please show me one more win case?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-10-0-0-1-0-0-6-0-0-14-0-0-0
+585,60,6,"Same, Confirm(User_ID=1, Color)","For the win you just showed, do the color of the pieces affect the win condition?",Negate(),"No, this is a win because all the pieces are solid.",Yiyan,5,5,Tianyi,,0-0-0-10-0-0-1-0-0-6-0-0-14-0-0-0
+585,60,7,"Context Switch, Confirm(User_ID=1, Rotate(90))","Let's consider this board,  can I rotate the pieces to the last column and keep the win?",NotSure(),I dare say.,Yiyan,5,5,Tianyi,,11-0-0-0-0-3-0-0-0-0-12-0-0-0-0-16
+585,60,8,"Same, Confirm(User_ID=1, RemovePiece(1,2))","For the same board, would it still be a win if I remove the piece on the second row?",NotSure(),I do not know.,Yiyan,5,5,Tianyi,,11-0-0-0-0-3-0-0-0-0-12-0-0-0-0-16
+585,60,9,"Context Switch, Confirm(User_ID=1, Color)","Let's consider this win condition, is it a win because of the color of the pieces?",Negate(),"No, it is a win because all the pieces are solid.",Yiyan,5,5,Tianyi,,0-0-0-10-0-0-1-0-0-6-0-0-14-0-0-0
+585,60,10,"Same, Request(User_ID=1, Rotate)","For the same board,  how can I rotate the pieces while keeping the win condition?",Inform([90]),You can rotate the pieces to the first column.,Yiyan,5,5,Tianyi,,0-0-0-10-0-0-1-0-0-6-0-0-14-0-0-0
+585,60,11,RequestNewWinCondition(),Can you show me another way to win the game?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,14-0-0-0-0-13-0-0-0-0-12-0-0-0-0-11
+585,60,12,"Same, Confirm(User_ID=1, AddPiece(1,0))","For the win you just showed, would it still be a win if I add a piece on the first position of the second row.",Affirm(),"Yes, as long as the original pieces remain the same.",Yiyan,5,5,Tianyi,,14-0-0-0-0-13-0-0-0-0-12-0-0-0-0-11
+585,60,13,"Same, Request(User_ID=1, Rotate)","For the same board,  is there any way that I can rotate the pieces to get another win?",Inform([90]),You can rotate the pieces to the last column.,Yiyan,5,4,Tianyi,,14-0-0-0-0-13-0-0-0-0-12-0-0-0-0-11
+585,60,14,"Context Switch, RequestOtherPlayers()","Let's switch to this board,  how can the other player do to stop this win?",Inform([]),There is nothing the other player can do.,Yiyan,5,5,Tianyi,,0-0-0-10-0-0-1-0-0-6-0-0-14-0-0-0
+585,60,15,Finish(),"Thank you very much, I learned a lot today.",Finish,I am glad to help.,Yiyan,5,5,Tianyi,,0-0-0-10-0-0-1-0-0-6-0-0-14-0-0-0

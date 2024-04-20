@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+280,50,0,Start(),Can you teach me how to play Quarto?,Start,No problem!,Derek,5,5,Tianyi,,5-0-0-0-0-14-0-0-0-0-1-0-0-0-0-2
+280,50,1,RequestNewWinCondition(),Can I get a winning borad to start?,Inform,Assume you demonstrate this win condition,Derek,5,5,Tianyi,,0-8-0-0-0-12-0-0-0-16-0-0-0-11-0-0
+280,50,2,"Same, Confirm(User_ID=1, RemovePiece(2,1))",Can I remove the second piece from top and keep winning?,Negate(),No it will no longer be a winning board.,Derek,5,5,Tianyi,,0-8-0-0-0-12-0-0-0-16-0-0-0-11-0-0
+280,50,3,"Same, Confirm(User_ID=1, Quantity)",How about the quantity. Do I have to have four pieces to win?,NotSure(),I am no sure about that.,Derek,5,5,Tianyi,,0-8-0-0-0-12-0-0-0-16-0-0-0-11-0-0
+280,50,4,"Same, Confirm(User_ID=1, Translate([0, 2]))",Can I shift all pieces right by one and keep winning?,NotSure(),"Sorry, I am not quit sure about that as well.",Derek,4,5,Tianyi,,0-8-0-0-0-12-0-0-0-16-0-0-0-11-0-0
+280,50,5,"Same, Confirm(User_ID=1, Color)","It's fine, do you know if the color of pieces make this board a winning board?",Negate(),No it's not the reason it wins.,Derek,5,5,Tianyi,,0-8-0-0-0-12-0-0-0-16-0-0-0-11-0-0
+280,50,6,"Same, Confirm(User_ID=1, RemovePiece(1,1))","How about remove the second piece from bottom, can I do that and keep winning?",NotSure(),Sorry I am not sure about that as well.,Derek,5,5,Tianyi,,0-8-0-0-0-12-0-0-0-16-0-0-0-11-0-0
+280,50,7,"Same, Confirm(User_ID=1, AddPiece(3,3))",How about add a piece at top right?,Affirm(),"Yes, I am sure you can definitely do that.",Derek,5,5,Tianyi,,0-8-0-0-0-12-0-0-0-16-0-0-0-11-0-0
+280,50,8,RequestNewWinCondition(),I have learned a lot! Can you please give me another win condition to compare?,Inform,Assume you demonstrate this win condition,Derek,5,5,Tianyi,,5-0-0-0-0-9-0-0-0-0-11-0-0-0-0-15
+280,50,9,RequestNewWinCondition(),One more please.,Inform,Assume you demonstrate this win condition,Derek,5,4,Tianyi,,0-0-0-3-0-0-12-0-0-4-0-0-15-0-0-0
+280,50,10,"Same, Confirm(User_ID=1, Rotate(90))",For the win condition you just showed me. Can I place these four pieces all on the first colunm and keep winning?,Affirm(),"Yes, you can do that and keep winning.",Derek,3,5,Tianyi,Not accurate.,0-0-0-3-0-0-12-0-0-4-0-0-15-0-0-0
+280,50,11,Finish(),Gread! I have learned a lot today! Bye!,Finish,Bye!,Derek,5,5,Tianyi,,0-0-0-3-0-0-12-0-0-4-0-0-15-0-0-0

@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+412,50,0,Start(),"Can you teach me how to play Quarto
+",Start,"Yes, let's start",Dmytro,,,,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+412,50,1,RequestNewWinCondition(),Can you show me a winning board example ?,Inform,Assume you demonstrate this win condition,Dmytro,,,,,0-0-5-0-0-0-2-0-0-0-4-0-0-0-1-0
+412,50,2,"Same, Confirm(User_ID=1, Color)",Is the figures' color contribute to a win ?,NotSure(),"I don't think so, but I can't say for sure.",Dmytro,,,,,0-0-5-0-0-0-2-0-0-0-4-0-0-0-1-0
+412,50,3,RequestNewWinCondition(),Could you provide another winning board example ?,Inform,Assume you demonstrate this win condition,Dmytro,,,,,0-0-0-0-0-0-0-0-0-0-0-0-12-10-8-4
+412,50,4,"Context Switch, Confirm(User_ID=1, AddPiece(3,0))",Back to the first board; would I still win after adding a piece here (robot highlights location) ?,NotSure(),"I think it shouldn't affect your win, but don't take my word for it.",Dmytro,,,,,0-0-5-0-0-0-2-0-0-0-4-0-0-0-1-0
+412,50,5,"Same, Confirm(User_ID=1, Hollowness)",Is it that all figures are hollow that this is a winning board ?,NotSure(),Most likely; but I am not sure.,Dmytro,,,,,0-0-5-0-0-0-2-0-0-0-4-0-0-0-1-0
+412,50,6,RequestNewWinCondition(),Can you show another board example ?,Inform,Assume you demonstrate this win condition,Dmytro,,,,,13-0-0-0-0-15-0-0-0-0-7-0-0-0-0-14
+412,50,7,"Same, Confirm(User_ID=1, RemovePiece(2,1))","If I remove a piece here (robot highlights), would I still win ?",NotSure(),"I don't think so, but I could be wrong.",Dmytro,,,,,13-0-0-0-0-15-0-0-0-0-7-0-0-0-0-14
+412,50,8,RequestNewWinCondition(),Can you give me another winning board example ?,Inform,Assume you demonstrate this win condition,Dmytro,,,,,9-0-0-0-0-13-0-0-0-0-15-0-0-0-0-10
+412,50,9,"Same, Confirm(User_ID=1, Quantity)",Does the number of figures factor in the boards' win ?,Affirm(),"Yes, it absolutely does.",Dmytro,,,,,9-0-0-0-0-13-0-0-0-0-15-0-0-0-0-10
+412,50,10,"Context Switch, Confirm(User_ID=1, Shape)","Speaking of this other board, is it that all figures are circles that it's a winning board ?",Affirm(),"Yes, it is.",Dmytro,,,,,13-0-0-0-0-15-0-0-0-0-7-0-0-0-0-14
+412,50,11,"Context Switch, Confirm(User_ID=1, Translate([0, 3]))","Back to another example, Can I move all figures to the last column and still win ?",Affirm(),"Sure, that works as well.",Dmytro,,,,,0-0-5-0-0-0-2-0-0-0-4-0-0-0-1-0
+412,50,12,"Context Switch, Confirm(User_ID=1, Hollowness)","About this example, is it that some figures are hollow that this board results in a win ?",Negate(),"No, that's not right.",Dmytro,,,,,0-0-0-0-0-0-0-0-0-0-0-0-12-10-8-4
+412,50,13,RequestNewWinCondition(),"Alright, I need one more example of a winning board",Inform,Assume you demonstrate this win condition,Dmytro,,,,,0-0-0-13-0-0-15-0-0-10-0-0-12-0-0-0
+412,50,14,Finish(),"I am ready to play now, my thanks",Finish,It was a pleasure,Dmytro,,,,,0-0-0-13-0-0-15-0-0-10-0-0-12-0-0-0

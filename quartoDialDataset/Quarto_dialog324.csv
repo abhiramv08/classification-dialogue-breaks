@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+324,50,0,Start(),"Hi, can you show me how to play Quarto?",Start,"Sure, let's start. There will be a lot of fun.",Yiyan,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-16-12-8-11
+324,50,1,RequestNewWinCondition(),Can you show me a winning condition?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,John,,0-0-0-16-0-0-10-0-0-2-0-0-12-0-0-0
+324,50,2,"Same, Request(User_ID=1, Rotate)","For the winning board you just showed, is there a way to rotate the pieces to get another winning condition?",Inform([90]),You can put them on the first column.,Yiyan,5,5,John,,0-0-0-16-0-0-10-0-0-2-0-0-12-0-0-0
+324,50,3,RequestNewWinCondition(),Is there any other way to win?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,John,,13-0-0-0-0-5-0-0-0-0-7-0-0-0-0-6
+324,50,4,"Same, Confirm(User_ID=1, AddPiece(3,3))","For this board, what will happen if I add a piece on the top right corner?",NotSure(),I am not quite sure. I will check that later.,Yiyan,5,5,John,,13-0-0-0-0-5-0-0-0-0-7-0-0-0-0-6
+324,50,5,"Context Switch, Confirm(User_ID=1, Rotate(90))","Regarding this board, can I put all the pieces on the first column to get another win?",Affirm(),"Yes, that's what I just told you.",Yiyan,5,4,John,,0-0-0-16-0-0-10-0-0-2-0-0-12-0-0-0
+324,50,6,"Same, Confirm(User_ID=1, Rotate(90))",It may sound stupid but I need to ask the question again: can I put all the pieces to the first column to get a win?,NotSure(),"Well, I am not so sure about it.",Yiyan,5,3,John,,0-0-0-16-0-0-10-0-0-2-0-0-12-0-0-0
+324,50,7,"Context Switch, Confirm(User_ID=1, Color)","Let's consider this board, is this a win because of the color of the pieces?",NotSure(),"Sorry, I don't know.",Yiyan,5,5,John,,13-0-0-0-0-5-0-0-0-0-7-0-0-0-0-6
+324,50,8,"Context Switch, Confirm(User_ID=1, RemovePiece(2,2))","Ok, then let's change the board again. For this board, can I still win if I reomve the piece on the third row?",Negate(),"No, you have to get four of the pieces to win.",Yiyan,5,4,John,,0-0-0-16-0-0-10-0-0-2-0-0-12-0-0-0
+324,50,9,RequestNewWinCondition(),Can you show me another winning condition?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-4-6-5-8
+324,50,10,"Same, RequestOtherPlayers()","In the winning condition, how can the other player do to prevent me from winning?",Inform([]),There is nothing he or she can do.,Yiyan,5,4,John,,0-0-0-0-0-0-0-0-0-0-0-0-4-6-5-8
+324,50,11,Finish(),"Ok, I think I learnt enough today, thanks.",Finish,You are welcome. See you later.,Yiyan,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-4-6-5-8

@@ -1,0 +1,15 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+1002,60,0,Start(),"Hello, can you be my teacher for Quarto?",Start,Sure.,Tianyi,5,4,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+1002,60,1,RequestNewWinCondition(),Can you show me a win pattern?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,0-0-0-11-0-0-7-0-0-5-0-0-1-0-0-0
+1002,60,2,"Same, RequestOtherPlayers()","In this win, can someone do something to prevent the win?",Inform([]),"No, there is nothing he/she can do.",Tianyi,5,4,Ruijie,,0-0-0-11-0-0-7-0-0-5-0-0-1-0-0-0
+1002,60,3,RequestNewWinCondition(),Can you show me another win pattern?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,0-0-0-15-0-0-0-5-0-0-0-7-0-0-0-11
+1002,60,4,"Context Switch, Confirm(User_ID=1, RemovePiece(3,3))","Back to this board, if I remove the piece at the rightmost column, is it still a win?",NotSure(),I have no idea about this. Maybe you are right.,Tianyi,5,4,Ruijie,,0-0-0-11-0-0-7-0-0-5-0-0-1-0-0-0
+1002,60,5,RequestNewWinCondition(),Can you give me a new win?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,0-0-11-0-0-0-2-0-0-0-10-0-0-0-12-0
+1002,60,6,RequestNewWinCondition(),Can you give me another new win?,Inform,Assume you demonstrate this win condition,Tianyi,5,4,Ruijie,,0-0-0-7-0-0-1-0-0-5-0-0-8-0-0-0
+1002,60,7,"Context Switch, RequestOtherPlayers()","In this case, can someone take actions to prevent the win?",Inform([]),No.,Tianyi,5,4,Ruijie,,0-0-0-15-0-0-0-5-0-0-0-7-0-0-0-11
+1002,60,8,"Same, Confirm(User_ID=1, Hollowness)","And, is it wins because most pieces are hollow?",Negate(),"No, that is not the reason.",Tianyi,5,5,Ruijie,,0-0-0-15-0-0-0-5-0-0-0-7-0-0-0-11
+1002,60,9,RequestNewWinCondition(),What else can be a winning board?,Inform,Assume you demonstrate this win condition,Tianyi,5,4,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-7-3-6-2
+1002,60,10,"Context Switch, Confirm(User_ID=1, RemovePiece(0,3))","Back to this board, if I remove the piece at the upmost row, is it still a win?",Negate(),"No, it will no longer be a win if you do that.",Tianyi,5,5,Ruijie,,0-0-0-15-0-0-0-5-0-0-0-7-0-0-0-11
+1002,60,11,"Context Switch, Confirm(User_ID=1, AddPiece(3,3))","In this win, if I put a new piece at the rightmost column of the upmost row, can it still be a win?",NotSure(),"Yes, you can put the new piece anywhere.",Tianyi,5,4,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-7-3-6-2
+1002,60,12,RequestNewWinCondition(),Can you show me a new winning board?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,13-0-0-0-0-5-0-0-0-0-10-0-0-0-0-9
+1002,60,13,Finish(),"Thanks, you are a very good teacher.",Finish,"Thanks, you are welcome.",Tianyi,5,5,Ruijie,,13-0-0-0-0-5-0-0-0-0-10-0-0-0-0-9

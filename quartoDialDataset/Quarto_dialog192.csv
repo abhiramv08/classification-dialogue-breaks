@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+192,100,0,Start(),"Hello, can you show me how to play Quarto?",Start,"Sure, let's begin.",Yiyan,5,4,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+192,100,1,RequestNewWinCondition(),So how can I win a game?,Inform(),Assume you demonstrate this win condition,Yiyan,4,3,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-3-5-13-1
+192,100,2,RequestNewWinCondition(),Is there any other ways to win?,Inform(),Assume you demonstrate this win condition,Yiyan,4,4,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-11-9-16-14
+192,100,3,"Same, Confirm(User_ID=1, Quantity)",Is this a winning condition because I get four pieces?,Affirm(),"Yes, you must have four pieces in order to win.",Yiyan,5,4,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-11-9-16-14
+192,100,4,"Same , Confirm(User_ID=1, Color)","For the same game board, is it a winning because of the color of pieces?",Negate(),"No, the color is not the reason of this winning.",Yiyan,5,4,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-11-9-16-14
+192,100,5,"Same , Confirm(User_ID=1, AddPiece(1,2))","If I add a piece on the third column of the second row, will it still be a winning?",Affirm(),"Yes, it will still be a winning condition.",Yiyan,3,3,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-11-9-16-14
+192,100,6,RequestNewWinCondition(),Can you show me another way to win?,Inform(),Assume you demonstrate this win condition,Yiyan,5,4,Derek,,0-0-0-7-0-0-0-11-0-0-0-15-0-0-0-13
+192,100,7,"Same, Request(User_ID=1, Translate)",How can I translate the pieces in  order to get another winning condition?,"Inform(['col0', 'col1', 'col2'])",Actually you can move the pieces to any other columns.,Yiyan,4,4,Derek,,0-0-0-7-0-0-0-11-0-0-0-15-0-0-0-13
+192,100,8,"Context Switch, RequestOtherPlayers()","For this winning board, how can the other player do to prevent the winning?",Inform([]),There is nothing the other player can do.,Yiyan,3,4,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-3-5-13-1
+192,100,9,"Context Switch, Confirm(User_ID=1, AddPiece(2,0))","In this situation, what if I add a piece on the third column of the first row?",Affirm(),Then it will still be a winning condition.,Yiyan,3,4,Derek,,0-0-0-7-0-0-0-11-0-0-0-15-0-0-0-13
+192,100,10,RequestNewWinCondition(),Is there any other wyas to win?,Inform(),Assume you demonstrate this win condition,Yiyan,2,2,Derek,,11-0-0-0-0-3-0-0-0-0-8-0-0-0-0-7
+192,100,11,"Same, Confirm(User_ID=1, Quantity)","For the winning condition you just showed, is it a winning condition because of the number of pieces?",Affirm(),"Yes, you must have four pieces in order to win.",Yiyan,5,4,Derek,,11-0-0-0-0-3-0-0-0-0-8-0-0-0-0-7
+192,100,12,"Win Context Switch {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}",Is the winning related to the hollows of the pieces?,Negate(),"No, it isn't.",Yiyan,3,4,Derek,,0-0-0-7-0-0-0-11-0-0-0-15-0-0-0-13
+192,100,13,RequestNewWinCondition(),Can you show me another winning conditon?,Inform(),Assume you demonstrate this win condition,Yiyan,5,4,Derek,,0-0-0-12-0-0-9-0-0-2-0-0-1-0-0-0
+192,100,14,"Same , Confirm(User_ID=1, Shape)","In this winnig board, does the shape of the pieces matter?",Affirm(),"Yes, in this case you win because you have four triangle pieces.",Yiyan,4,3,Derek,,0-0-0-12-0-0-9-0-0-2-0-0-1-0-0-0
+192,100,15,Finish(),"Thanks, I really appriciate it.",Finish,You are welcome.,Yiyan,5,4,Derek,,0-0-0-12-0-0-9-0-0-2-0-0-1-0-0-0

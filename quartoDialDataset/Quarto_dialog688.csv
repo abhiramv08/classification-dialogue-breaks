@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+688,60,0,Start(),Hey! Can you teach me how to play Quarto?,Start,"Yes, let's get started!",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+688,60,1,RequestNewWinCondition(),Can you show me a win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-4-16-6-10
+688,60,2,"Same, Confirm(User_ID=1, Color)","Is it a win because the pieces are in the same color?
+",Affirm(),"Yes, that's correct.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-4-16-6-10
+688,60,3,RequestNewWinCondition(),Can you show me a new win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-7-0-0-16-0-0-8-0-0-4-0-0-0
+688,60,4,"Same, Confirm(User_ID=1, Color)","Is this a win because the pieces are in the same color?
+",Negate(),"No, that’s irrelevant.",Ruijie,5,5,Luke,,0-0-0-7-0-0-16-0-0-8-0-0-4-0-0-0
+688,60,5,"Context Switch, Confirm(User_ID=1, Quantity)","Switch to this board, is it a win because of the number of pieces?",Affirm(),You are actually right!,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-4-16-6-10
+688,60,6,"Same, Confirm(User_ID=1, Translate([2, 0]))",Can I move the pieces to the third row and still have a win?,NotSure(),"Sorry, I'm not sure.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-4-16-6-10
+688,60,7,"Context Switch, Request(User_ID=1, Rotate)","Switch to this board, can I rotate the pieces by some degrees and still have a win?",Inform([90]),"Sure, you can rotate them by ninety degrees.",Ruijie,4,5,Luke,,0-0-0-7-0-0-16-0-0-8-0-0-4-0-0-0
+688,60,8,"Same, Confirm(User_ID=1, Height)",Is it a win because the pieces are of the same height?,Negate(),"No, that’s not the reason.",Ruijie,5,5,Luke,,0-0-0-7-0-0-16-0-0-8-0-0-4-0-0-0
+688,60,9,"Context Switch, Confirm(User_ID=1, Color)","Switch to this board, is it a win because the pieces are in the same color?",Affirm(),That’s right.,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-4-16-6-10
+688,60,10,Finish(),Thank you so much! I've learned a lot!,Finish,You are very welcome!,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-4-16-6-10

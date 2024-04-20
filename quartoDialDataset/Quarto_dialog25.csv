@@ -1,0 +1,11 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+25,100,0,Start(),"Hi, would like to teach me how to play Quarto",Start,"I think I would, let's try",Dmytro,4,4,Derek,"would ""you"" like to...",0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+25,100,1,RequestNewWinCondition(),"For me to win, what does my board need to look like ?",Inform(),Assume you demonstrate this win condition,Dmytro,5,5,Derek,,11-0-0-0-0-15-0-0-0-0-10-0-0-0-0-14
+25,100,2,RequestNewWinCondition(),Is there another configuration that grants me victory ?,Inform(),Assume you demonstrate this win condition,Dmytro,5,5,Derek,,0-0-0-2-0-0-0-14-0-0-0-13-0-0-0-6
+25,100,3,RequestNewWinCondition(),Could you show me once more how I should place pieces to win ?,Inform(),Assume you demonstrate this win condition,Dmytro,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-4-6-14-2
+25,100,4,RequestNewWinCondition(),What could be another way for one to win ?,Inform(),Assume you demonstrate this win condition,Dmytro,5,5,Derek,,0-0-0-9-0-0-11-0-0-15-0-0-14-0-0-0
+25,100,5,"Context Switch, Confirm(User_ID=1, Quantity)","Going back to a board you showed before, is it a win because of the number of pieces ?",Affirm(),Their number is indeed very important here.,Dmytro,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-4-6-14-2
+25,100,6,RequestNewWinCondition(),Can you show me a winning configuration once more ?,Inform(),Assume you demonstrate this win condition,Dmytro,5,5,Derek,,14-0-0-0-0-2-0-0-0-0-5-0-0-0-0-1
+25,100,7,"Context Switch, Confirm(User_ID=1, AddPiece(3,2))","In that board you mentioned before, if a player puts a piece at (3,2), does it remain a victory ?",Affirm(),Putting another piece doen't change the verdict there.,Dmytro,4,5,Derek,"not sure if ""verdict"" is natural here.. and there is a typo",0-0-0-9-0-0-11-0-0-15-0-0-14-0-0-0
+25,100,8,"Context Switch, Request(User_ID=1, Rotate)","Switching to a board before, how can I rotate this and still win ?",Inform([90]),You could put the pieces on the anti-diagonal.,Dmytro,4,5,Derek,better to point out which board is refered to,11-0-0-0-0-15-0-0-0-0-10-0-0-0-0-14
+25,100,9,Finish(),Thank you! I learned how to play this game.,Finish,My pleasure.,Dmytro,5,5,Derek,,11-0-0-0-0-15-0-0-0-0-10-0-0-0-0-14

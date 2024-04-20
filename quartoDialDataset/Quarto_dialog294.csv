@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+294,50,0,Start(),"Hi, do you think you can help me learn Quarto?",Start,"Why not, let's get started.",Jason,,,,,0-0-0-0-0-0-0-0-0-0-0-0-10-6-1-5
+294,50,1,RequestNewWinCondition(),Can you show me an example of what a win looks like?,Inform,Assume you demonstrate this win condition,Jason,,,,,0-0-0-9-0-0-15-0-0-7-0-0-11-0-0-0
+294,50,2,RequestNewWinCondition(),Can you show me another example of a win?,Inform,Assume you demonstrate this win condition,Jason,,,,,0-0-0-6-0-0-7-0-0-8-0-0-16-0-0-0
+294,50,3,"Same, RequestOtherPlayers()",Okay let's stick with this board for right now. What moves can other players make that can prevent this win from happening?,Inform([]),There are no possible moves that can undo this win.,Jason,,,,,0-0-0-6-0-0-7-0-0-8-0-0-16-0-0-0
+294,50,4,RequestNewWinCondition(),Can you show me another way to win the game?,Inform,Assume you demonstrate this win condition,Jason,,,,,4-0-0-0-10-0-0-0-9-0-0-0-3-0-0-0
+294,50,5,"Same, Confirm(User_ID=1, Height)","So given what you just showed me, can you tell me if it's a win because of the height of the pieces?",NotSure(),"I actually don't know the answer to that, sorry.",Jason,,,,,4-0-0-0-10-0-0-0-9-0-0-0-3-0-0-0
+294,50,6,"Context Switch, Confirm(User_ID=1, Color)","That's fine, let's switch to this other board right here. Is this a win because of the color of the pieces?",NotSure(),I don't know either.,Jason,,,,,0-0-0-6-0-0-7-0-0-8-0-0-16-0-0-0
+294,50,7,RequestNewWinCondition(),Okay. Can you show me an example of another winning board?,Inform,Assume you demonstrate this win condition,Jason,,,,,0-9-0-0-0-16-0-0-0-13-0-0-0-15-0-0
+294,50,8,"Same, RequestOtherPlayers()","Alright so given what you just showed me, what moves can someone else make that could undo this win entirely?",Inform([]),There are no moves that can undo this win.,Jason,,,,,0-9-0-0-0-16-0-0-0-13-0-0-0-15-0-0
+294,50,9,"Context Switch, RequestOtherPlayers()","Switching over to this other board, could any player make a move on this board that could undo this win?",Inform([]),"No, there are still no possible moves for this board as well.",Jason,,,,,0-0-0-6-0-0-7-0-0-8-0-0-16-0-0-0
+294,50,10,Finish(),"Okay, I think I know enough to play now. Thanks for the help!",Finish,"No problem, I hope we can play sometime soon.",Jason,,,,,0-0-0-6-0-0-7-0-0-8-0-0-16-0-0-0

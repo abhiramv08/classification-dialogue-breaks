@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+306,50,0,Start(),Can you show me how to play Quarto?,Start,"Sure, let's get started!",Ruijie,5,5,Jacob,,0-0-0-3-0-0-7-0-0-16-0-0-12-0-0-0
+306,50,1,RequestNewWinCondition(),Can you show me what a win condition looks like?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Jacob,,0-0-0-0-0-0-0-0-0-0-0-0-7-15-16-11
+306,50,2,RequestNewWinCondition(),What about a new one?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Jacob,,12-0-0-0-0-1-0-0-0-0-3-0-0-0-0-9
+306,50,3,RequestNewWinCondition(),Can you show me one more?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Jacob,,7-0-0-0-0-8-0-0-0-0-1-0-0-0-0-3
+306,50,4,RequestNewWinCondition(),One more? Please.,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Jacob,,0-0-0-0-0-0-0-0-0-0-0-0-10-15-12-9
+306,50,5,"Same, RequestOtherPlayers()",Can the other player prevent this win?,Inform([]),"No, this win is absolute.",Ruijie,5,5,Jacob,,0-0-0-0-0-0-0-0-0-0-0-0-10-15-12-9
+306,50,6,"Same, Request(User_ID=1, Rotate)",Can I rotate the pieces and maintain the win?,Inform([45]),"Sure, just rotate the pieces by 45 degrees.",Ruijie,5,5,Jacob,,0-0-0-0-0-0-0-0-0-0-0-0-10-15-12-9
+306,50,7,"Context Switch, Confirm(User_ID=1, RemovePiece(0,0))","Back to the previous win you showed me, can I remove the piece at the corner and maintain the win?",NotSure(),"You know what, I'm actually not sure.",Ruijie,4,5,Jacob,"Specifically, this is the bottom left corner.",0-0-0-0-0-0-0-0-0-0-0-0-7-15-16-11
+306,50,8,"Context Switch, Confirm(User_ID=1, Shape)","Back to the first win you showed me, is it the shape of the pieces that make it a win?",NotSure(),"Still, I'm not sure.",Ruijie,5,5,Jacob,,12-0-0-0-0-1-0-0-0-0-3-0-0-0-0-9
+306,50,9,"Same, Confirm(User_ID=1, AddPiece(2,2))","If I add one more piece on the second piece of the diagonal, will it still be a win?",NotSure(),"Sorry, I'm not sure.",Ruijie,5,4,Jacob,"""Second piece of the diagonal"" is a little stilted.",12-0-0-0-0-1-0-0-0-0-3-0-0-0-0-9
+306,50,10,Finish(),"I don't feel like I've learned much, thanks anyway!",Finish,"Sorry, maybe next time we could do better!",Ruijie,5,5,Jacob,,12-0-0-0-0-1-0-0-0-0-3-0-0-0-0-9

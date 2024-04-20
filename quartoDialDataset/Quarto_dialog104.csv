@@ -1,0 +1,15 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+104,100,0,Start(),"Hello, can you teach me how to play Quarto?",Start,"Yes I can, let's play!",John,,,,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+104,100,1,RequestNewWinCondition(),Will you please show me an example of a winning layout?,Inform(),Assume you demonstrate this win condition,John,,,,,0-0-0-0-0-0-0-0-0-0-0-0-13-14-16-6
+104,100,2,RequestNewWinCondition(),Can you show me an example of a winning board?,Inform(),Assume you demonstrate this win condition,John,,,,,0-0-0-6-0-0-4-0-0-14-0-0-10-0-0-0
+104,100,3,"Same, RequestOtherPlayers()","For the same board, can another player make a move that will reverse the win condition?",Inform([]),"No, there are no moves that can be made to undo the win.",John,,,,,0-0-0-6-0-0-4-0-0-14-0-0-10-0-0-0
+104,100,4,"Win Same {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}",Is this a win because of the hollowness of the pieces?,Negate(),"No, the hollowness was not the reason for the win?",John,,,,,0-0-0-6-0-0-4-0-0-14-0-0-10-0-0-0
+104,100,5,RequestNewWinCondition(),Can you please show me another win condition?,Inform(),Assume you demonstrate this win condition,John,,,,,0-0-10-0-0-0-6-0-0-0-13-0-0-0-14-0
+104,100,6,"Context Switch, RequestOtherPlayers()",Let's look at this board now. Is there a move that another player can make such that this won't be a win anymore?,Inform([]),"No, there are no such moves.",John,,,,,0-0-0-0-0-0-0-0-0-0-0-0-13-14-16-6
+104,100,7,RequestNewWinCondition(),Can you please show me another winning scenario?,Inform(),Assume you demonstrate this win condition,John,,,,,0-9-0-0-0-11-0-0-0-2-0-0-0-4-0-0
+104,100,8,"Same, Confirm(User_ID=1, Height)","For that same board, is it a win because of the height of the pieces?",Negate(),"No, the pieces are not all the same height, so that cannot be the reason for the win.",John,,,,,0-9-0-0-0-11-0-0-0-2-0-0-0-4-0-0
+104,100,9,"Context Switch, Request(User_ID=1, Rotate)","Going back to this board here, is there any way I can rotate the pieces such that it is still a win?",Inform([]),"No, there are no valid rotations.",John,,,,,0-0-10-0-0-0-6-0-0-0-13-0-0-0-14-0
+104,100,10,"Same , Confirm(User_ID=1, Shape)","For that same board, is the shape of the pieces the reason for the win?",Negate(),"No, the pieces are not all the same shape, so that's not why this is a win.",John,,,,,0-0-10-0-0-0-6-0-0-0-13-0-0-0-14-0
+104,100,11,"Context Switch, Confirm(User_ID=1, Color)","Now talking about this board, is it a win because of the color of the pieces?",Negate(),"No, the color of the pieces is not the reason for the win.",John,,,,,0-0-0-0-0-0-0-0-0-0-0-0-13-14-16-6
+104,100,12,"Context Switch, Confirm(User_ID=1, Translate('col0'))","For the board shown here, is it still a win if the pieces are moved into the leftmost column.",Affirm,"Yes, that would still be a win.",John,,,,,0-9-0-0-0-11-0-0-0-2-0-0-0-4-0-0
+104,100,13,Finish(),I'm done playing for now. Thanks!,Finish,Goodbye!,John,,,,,0-9-0-0-0-11-0-0-0-2-0-0-0-4-0-0

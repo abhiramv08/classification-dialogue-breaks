@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+250,100,0,Start(),"Hi, could you teach me how to play Quarto?",Start,Sure thing.,Shaobo,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+250,100,1,RequestNewWinCondition(),Could you show me a win first?,Inform(),Assume you demonstrate this win condition,Shaobo,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-3-13-11-5
+250,100,2,"Same, Confirm(User_ID=1, Quantity)","So for this board, does the number of pieces matter?",Affirm(),"Yes, you need at least 4 four pieces for a win.",Shaobo,5,4,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-3-13-11-5
+250,100,3,RequestNewWinCondition(),Can you show me another win?,Inform(),Assume you demonstrate this win condition,Shaobo,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-4-2-6-1
+250,100,4,"Same, Confirm(User_ID=1, Height)","For the same board, is it a win because of the height of the pieces?",Affirm(),"Yes, it is a win because all pieces have the same height.",Shaobo,4,4,Derek,"Your User Response feels like ""inform"" instead of ""affirm""",0-0-0-0-0-0-0-0-0-0-0-0-4-2-6-1
+250,100,5,"Context Switch, RequestOtherPlayers()","For this board, is there any way for another player to prevent the win?",Inform([]),"No, another player cannot do anything.",Shaobo,3,4,Derek,"It might be better to say ""how"" instead of ""is"", since the response is inform",0-0-0-0-0-0-0-0-0-0-0-0-3-13-11-5
+250,100,6,RequestNewWinCondition(),"Okay, can you show me one more winning board?",Inform(),Assume you demonstrate this win condition,Shaobo,5,5,Derek,,5-0-0-0-0-15-0-0-0-0-3-0-0-0-0-1
+250,100,7,RequestNewWinCondition(),I am hoping to see one more winning board.,Inform(),Assume you demonstrate this win condition,Shaobo,4,4,Derek,,1-0-0-0-10-0-0-0-12-0-0-0-3-0-0-0
+250,100,8,"Context Switch, Request(User_ID=1, Translate)","For this board, how could I shift the pieces at once so that the board is still a win?",Inform([]),There is no way to do so.,Shaobo,5,3,Derek,,5-0-0-0-0-15-0-0-0-0-3-0-0-0-0-1
+250,100,9,"Context Switch, Confirm(User_ID=1, AddPiece(2,2))","For this board you showed me, is it still a win if I add a piece on the third row and the third column?",Affirm(),"Yes, it is still a win.",Shaobo,3,3,Derek,Sounds like you want to place pieces on the entire row and column,1-0-0-0-10-0-0-0-12-0-0-0-3-0-0-0
+250,100,10,"Context Switch, RequestOtherPlayers()","And for this board, how could another player to revoke the win?",Inform([]),There is nothing another player can do to prevent the win.,Shaobo,5,5,Derek,,5-0-0-0-0-15-0-0-0-0-3-0-0-0-0-1
+250,100,11,RequestNewWinCondition(),Could you show me one more win condition?,Inform(),Assume you demonstrate this win condition,Shaobo,5,5,Derek,,0-0-13-0-0-0-11-0-0-0-15-0-0-0-7-0
+250,100,12,Finish(),"Okay, I have learned a lot. Thanks!",Finish,You are welcome!,Shaobo,5,5,Derek,,0-0-13-0-0-0-11-0-0-0-15-0-0-0-7-0

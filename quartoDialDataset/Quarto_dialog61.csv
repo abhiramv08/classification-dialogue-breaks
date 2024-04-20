@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+61,100,0,Start(),"I want to learn Quarto, can you help me?",Start,Sure.,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+61,100,1,RequestNewWinCondition(),I need a new winning condition.,Inform(),Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,16-0-0-0-0-13-0-0-0-0-5-0-0-0-0-14
+61,100,2,"Same, RequestOtherPlayers()",How can my opponent do to prevent this winning? ,Inform([]),No the winning is absolute.,Yiyan,5,5,Tianyi,,16-0-0-0-0-13-0-0-0-0-5-0-0-0-0-14
+61,100,3,"Same , Confirm(User_ID=1, RemovePiece(2,1))","For this board, can I remove the piece on position (2,1)?",Negate(),"No, you can't.",Yiyan,5,5,Tianyi,,16-0-0-0-0-13-0-0-0-0-5-0-0-0-0-14
+61,100,4,RequestNewWinCondition(),I need a new winning condition.,Inform(),Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-11-0-0-0-14-0-0-0-16-0-0-0-12
+61,100,5,"Same, Confirm(User_ID=1, Translate('col2'))",Can I move all the pieces one step left?,Affirm,Yes you can.,Yiyan,5,5,Tianyi,,0-0-0-11-0-0-0-14-0-0-0-16-0-0-0-12
+61,100,6,"Context Switch, Request(User_ID=1, Translate)",How can I translate these pieces to get another winning condition.,Inform([]),"No, you can not do any move in this case.",Yiyan,4,5,Tianyi,Didn't refer to the win.,16-0-0-0-0-13-0-0-0-0-5-0-0-0-0-14
+61,100,7,"Context Switch, Request(User_ID=1, Translate)",Where can I move the pieces on this board?,"Inform(['col0', 'col1', 'col2'])","You can move the pieces one, two, or three steps.",Yiyan,3,5,Tianyi,Didn't refer to the win. Need to specify the direction.,0-0-0-11-0-0-0-14-0-0-0-16-0-0-0-12
+61,100,8,"Context Switch, Confirm(User_ID=1, RemovePiece(1,2))","What if I remove the piece on position (1,2)?",Negate(),"No, in that case you can not win.",Yiyan,4,5,Tianyi,Didn't refer to the win.,16-0-0-0-0-13-0-0-0-0-5-0-0-0-0-14
+61,100,9,RequestNewWinCondition(),Can you show me a new winning condition?,Inform(),Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-7-0-0-6-0-0-8-0-0-13-0-0-0
+61,100,10,"Context Switch, Confirm(User_ID=1, Quantity)",Do the number of the pieces on the board matter?,Affirm(),"Yes, you must have four pieces in a column.",Yiyan,4,5,Tianyi,Didn't refer to the win.,0-0-0-11-0-0-0-14-0-0-0-16-0-0-0-12
+61,100,11,"Context Switch, Confirm(User_ID=1, RemovePiece(0,0))","If I remove the piece on the bottom left, will it still be a winning condition?",Negate(),"No, in that case you can not win.",Yiyan,4,5,Tianyi,Didn't refer to the win.,0-0-0-7-0-0-6-0-0-8-0-0-13-0-0-0
+61,100,12,"Context Switch, Confirm(User_ID=1, Shape)",Do the shapes of the pieces matter?,Negate(),"No, the shape do not matter.",Yiyan,4,5,Tianyi,Didn't refer to the win.,0-0-0-11-0-0-0-14-0-0-0-16-0-0-0-12
+61,100,13,RequestNewWinCondition(),Can you show me another win condition.,Inform(),Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,4-0-0-0-15-0-0-0-11-0-0-0-3-0-0-0
+61,100,14,"Same , Confirm(User_ID=1, Color)",Does the color of the pieces matter?,Negate(),No the color does not matter.,Yiyan,5,5,Tianyi,,4-0-0-0-15-0-0-0-11-0-0-0-3-0-0-0
+61,100,15,Finish(),Ok I understand the game now. Thank you.,Finish,You are welcome.,Yiyan,5,5,Tianyi,,4-0-0-0-15-0-0-0-11-0-0-0-3-0-0-0

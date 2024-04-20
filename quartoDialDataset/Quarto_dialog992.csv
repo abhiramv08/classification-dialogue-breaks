@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+992,60,0,Start(),"Hi, can you tell me how to play Quarto?",Start,Sure.,Tianyi,5,4,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+992,60,1,RequestNewWinCondition(),Can you show me a win pattern for this game?,Inform,Assume you demonstrate this win condition,Tianyi,4,4,Ruijie,,3-0-0-0-0-15-0-0-0-0-4-0-0-0-0-16
+992,60,2,"Same, Confirm(User_ID=1, Color)","In this win, is it a win because some pieces are green?",NotSure(),I have no idea about this.,Tianyi,5,4,Ruijie,,3-0-0-0-0-15-0-0-0-0-4-0-0-0-0-16
+992,60,3,"Same, Confirm(User_ID=1, Color)",Is this a win because some pieces have the same color?,Negate(),Nope.,Tianyi,5,4,Ruijie,,3-0-0-0-0-15-0-0-0-0-4-0-0-0-0-16
+992,60,4,"Same, Confirm(User_ID=1, Rotate(90))","If I rotate all pieces 90 degrees to the rows and put them in the first column, is it still a win?",NotSure(),I cannot determine whether that is true.,Tianyi,4,5,Ruijie,,3-0-0-0-0-15-0-0-0-0-4-0-0-0-0-16
+992,60,5,RequestNewWinCondition(),Can you show me a new winning board?,Inform,Assume you demonstrate this win condition,Tianyi,5,4,Ruijie,,0-0-0-11-0-0-4-0-0-16-0-0-8-0-0-0
+992,60,6,"Same, Request(User_ID=1, Rotate)","In this case, can I rotate some pieces and still maintain the win?",Inform([90]),"Yes, you can rotate all pieces 90 degrees to the rows and put them in the first column.",Tianyi,5,4,Ruijie,,0-0-0-11-0-0-4-0-0-16-0-0-8-0-0-0
+992,60,7,"Same, Confirm(User_ID=1, Height)","And, is it wins because some pieces are tall?",Negate(),"No, that is not the reason.",Tianyi,5,5,Ruijie,,0-0-0-11-0-0-4-0-0-16-0-0-8-0-0-0
+992,60,8,RequestNewWinCondition(),Can you give me another example of win?,Inform,Assume you demonstrate this win condition,Tianyi,5,4,Ruijie,,0-10-0-0-0-2-0-0-0-14-0-0-0-9-0-0
+992,60,9,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Tianyi,5,4,Ruijie,,0-0-0-13-0-0-5-0-0-1-0-0-3-0-0-0
+992,60,10,Finish(),Thank you for your teaching.,Finish,You are welcome.,Tianyi,5,5,Ruijie,,0-0-0-13-0-0-5-0-0-1-0-0-3-0-0-0

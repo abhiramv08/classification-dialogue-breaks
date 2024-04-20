@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+863,60,0,Start(),"Hello there, could you show me how to play Quarto?",Start,"Yea, let's do it. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+863,60,1,RequestNewWinCondition(),Please show me a win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-11-0-0-0-15-0-0-0-7-0-0-0-8-0-0
+863,60,2,"Same, Confirm(User_ID=1, Color)",Is this a win because of the color of the pieces?,NotSure(),I'm not so sure.,Anthony,5,5,Yiyen,,0-11-0-0-0-15-0-0-0-7-0-0-0-8-0-0
+863,60,3,"Same, Confirm(User_ID=1, Hollowness)",Is this board a win because of the hollowness of the pieces?,Affirm(),"Yeah, that's why. ",Anthony,5,5,Yiyen,,0-11-0-0-0-15-0-0-0-7-0-0-0-8-0-0
+863,60,4,RequestNewWinCondition(),Please show me another win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-13-5-1-15
+863,60,5,"Context Switch, Confirm(User_ID=1, Color)","Looking back to this board, is this a win because of the pieces' color?",NotSure(),I'm not sure about that. ,Anthony,5,5,Yiyen,,0-11-0-0-0-15-0-0-0-7-0-0-0-8-0-0
+863,60,6,RequestNewWinCondition(),Please show me another win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-11-3-7-12
+863,60,7,"Context Switch, Request(User_ID=1, Translate)",How could I shift this board?,"Inform(['col2', 'col3'])",You could move the pieces to column 2 or 3. ,Anthony,5,4,Yiyen,,0-11-0-0-0-15-0-0-0-7-0-0-0-8-0-0
+863,60,8,"Context Switch, Confirm(User_ID=1, Quantity)","Looking at this board, is the number of pieces why this is a win?",Affirm(),"Yes, that's the case because there are four in a row. ",Anthony,5,4,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-13-5-1-15
+863,60,9,"Context Switch, Confirm(User_ID=1, Rotate(45))","Looking back to this board, is it okay if I rotate the pieces like this?",Affirm(),"Yes, that's okay. ",Anthony,5,4,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-11-3-7-12
+863,60,10,Finish(),Thanks fot the help. Bye!,Finish,See ya later!,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-11-3-7-12

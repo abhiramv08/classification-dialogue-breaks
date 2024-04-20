@@ -1,0 +1,18 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+741,60,0,Start(),"Hi, can you show me how to play Quarto?",Start,Why not? Let's begin!,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+741,60,1,RequestNewWinCondition(),"Can you show me what a win condition looks like?
+",Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-1-0-0-6-0-0-5-0-0-7-0-0-0
+741,60,2,RequestNewWinCondition(),"Can you show me a new win?
+",Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,8-0-0-0-0-11-0-0-0-0-3-0-0-0-0-4
+741,60,3,RequestNewWinCondition(),"Can you show me a new win?
+",Inform,Assume you demonstrate this win condition,Ruijie,5,4,Luke,,16-0-0-0-10-0-0-0-11-0-0-0-14-0-0-0
+741,60,4,"Same, Confirm(User_ID=1, Translate([0, 1]))",Can I put the pieces on the second column and still have a win?,Affirm(),"Sure, you can do that.",Ruijie,5,4,Luke,,16-0-0-0-10-0-0-0-11-0-0-0-14-0-0-0
+741,60,5,"Context Switch, Confirm(User_ID=1, RemovePiece(0,0))","Switch to this board, can I remove the piece on the first row, the first column and maintain the win?",Negate(),"No, that will break it.",Ruijie,5,4,Luke,,0-0-0-1-0-0-6-0-0-5-0-0-7-0-0-0
+741,60,6,RequestNewWinCondition(),"Can you show me a new win?
+",Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,6-0-0-0-0-14-0-0-0-0-7-0-0-0-0-13
+741,60,7,"Context Switch, Confirm(User_ID=1, Rotate(0))","Switch to this board, can I rotate the piece by zero degree and still have a win?",NotSure(),I don't know about this.,Ruijie,3,3,Luke,,16-0-0-0-10-0-0-0-11-0-0-0-14-0-0-0
+741,60,8,"Same, Request(User_ID=1, Rotate)","Can I rotate the pieces by some degrees?
+","Inform([0, 45])","Sure, you can rotate them by zero or by forty five degrees.",Ruijie,5,5,Luke,,16-0-0-0-10-0-0-0-11-0-0-0-14-0-0-0
+741,60,9,RequestNewWinCondition(),"Can you show me a new win?
+",Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-2-0-0-11-0-0-12-0-0-3-0-0-0
+741,60,10,Finish(),Thanks! I got it!,Finish,"Ok, have a good one.",Ruijie,5,5,Luke,,0-0-0-2-0-0-11-0-0-12-0-0-3-0-0-0

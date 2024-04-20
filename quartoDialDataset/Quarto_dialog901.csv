@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+901,60,0,Start(),"Hi, will you show me how to play Quarto?",Start,"Sure, let's do it. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+901,60,1,RequestNewWinCondition(),Please show me the first win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-12-0-0-4-0-0-8-0-0-14-0-0-0
+901,60,2,"Same, Confirm(User_ID=1, Color)",Is this a win because of the color of the pieces?,Affirm(),"Yes, they are all blue. ",Anthony,5,5,Yiyen,,0-0-0-12-0-0-4-0-0-8-0-0-14-0-0-0
+901,60,3,RequestNewWinCondition(),Please let me see another win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-7-4-6-3
+901,60,4,"Same, Confirm(User_ID=1, Shape)",Is this a win condition because of the shape of the pieces?,NotSure(),"I'm not sure, my bad. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-7-4-6-3
+901,60,5,"Same, Confirm(User_ID=1, Translate([3, 0]))",Could I shift the pieces here and still  maintain the win?,Affirm(),"Yes, that would be fine. ",Anthony,3,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-7-4-6-3
+901,60,6,"Same, Confirm(User_ID=1, AddPiece(3,1))","Well, what if I added a piece here?",Affirm(),"Yeah, that's fine too. ",Anthony,3,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-7-4-6-3
+901,60,7,"Same, Confirm(User_ID=1, Height)",Is this a win because of the height of the pieces?,Affirm(),Yes they are all at the same height. ,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-7-4-6-3
+901,60,8,"Same, Confirm(User_ID=1, Translate([1, 0]))",Is this still a win if I shift the pieces like this?,Affirm(),"Yes, that's allowed. ",Anthony,3,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-7-4-6-3
+901,60,9,RequestNewWinCondition(),Please show me another win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-2-10-14-13
+901,60,10,Finish(),Thanks for helping me learn!,Finish,"You're welcome, bye!",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-2-10-14-13

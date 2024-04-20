@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+894,60,0,Start(),"Hi, would you please show me how to play this game?",Start,"Okay, let's learn some Quarto.",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+894,60,1,RequestNewWinCondition(),Please show me a win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-14-0-0-0-7-0-0-0-16-0-0-0-8-0
+894,60,2,"Same, Request(User_ID=1, Translate)",How could I slide these pieces around?,"Inform(['col1', 'col3'])",You could move them one column to left or right. ,Anthony,5,5,Yiyen,,0-0-14-0-0-0-7-0-0-0-16-0-0-0-8-0
+894,60,3,"Same, Confirm(User_ID=1, Hollowness)",Is this a win because of the hollowness of the pieces?,Negate(),"No, some pieces are hollow and some are not. ",Anthony,5,5,Yiyen,,0-0-14-0-0-0-7-0-0-0-16-0-0-0-8-0
+894,60,4,RequestNewWinCondition(),Please show me another win. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-2-0-0-1-0-0-10-0-0-14-0-0-0
+894,60,5,"Context Switch, Confirm(User_ID=1, Shape)","Looking at this other board, is it a win because of the shape of the pieces?",Affirm(),"Yes, that's exactly correct. They are all circles.",Anthony,5,5,Yiyen,,0-0-14-0-0-0-7-0-0-0-16-0-0-0-8-0
+894,60,6,"Context Switch, Confirm(User_ID=1, Hollowness)",Let's look at this board now. Is this a win because of the hollowness of the pieces?,NotSure(),I'm not sure so I can't answer. ,Anthony,5,5,Yiyen,,0-0-0-2-0-0-1-0-0-10-0-0-14-0-0-0
+894,60,7,"Same, Confirm(User_ID=1, Quantity)",Is this a win because of the number of pieces?,Affirm(),"Yes, that is correct.",Anthony,5,5,Yiyen,,0-0-0-2-0-0-1-0-0-10-0-0-14-0-0-0
+894,60,8,RequestNewWinCondition(),Please show me another win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-2-0-0-5-0-0-4-0-0-7-0-0-0
+894,60,9,RequestNewWinCondition(),How about another?,Inform,Assume you demonstrate this win condition,Anthony,4,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-2-8-16-4
+894,60,10,Finish(),That's enough. Goodbye!,Finish,Bye bye!,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-2-8-16-4

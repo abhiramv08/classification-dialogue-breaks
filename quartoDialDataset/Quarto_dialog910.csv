@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+910,60,0,Start(),"Hi, can you teach me Quarto?",Start,"Sure, sounds good.",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+910,60,1,RequestNewWinCondition(),Please show me a new win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,8-0-0-0-0-15-0-0-0-0-4-0-0-0-0-16
+910,60,2,"Same, Request(User_ID=1, Rotate)",How can I rotate these pieces to maintain the win?,Inform([90]),One option is to align the pieces vertically. ,Anthony,4,5,Yiyen,,8-0-0-0-0-15-0-0-0-0-4-0-0-0-0-16
+910,60,3,RequestNewWinCondition(),Please show me a new win.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-2-0-0-0-4-0-0-0-10-0-0-0-14
+910,60,4,"Context Switch, Confirm(User_ID=1, Color)","Looking back to this other board, is the color of the pieces why this is a win?",Negate(),"No, the color is not what makes this a win. ",Anthony,5,5,Yiyen,,8-0-0-0-0-15-0-0-0-0-4-0-0-0-0-16
+910,60,5,"Context Switch, Confirm(User_ID=1, Hollowness)",What about this other board? Is the hollowness of the pieces why this is a win?,Negate(),"No, they are not all the same consistency. ",Anthony,5,4,Yiyen,,0-0-0-2-0-0-0-4-0-0-0-10-0-0-0-14
+910,60,6,RequestNewWinCondition(),Please show me a new win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,14-0-0-0-0-5-0-0-0-0-8-0-0-0-0-16
+910,60,7,"Context Switch, Confirm(User_ID=1, Color)","On this previous board, is the color of the pieces what makes this a win?",Negate(),"No, they do not all have the same color. ",Anthony,5,5,Yiyen,,8-0-0-0-0-15-0-0-0-0-4-0-0-0-0-16
+910,60,8,"Context Switch, Confirm(User_ID=1, Hollowness)","On this other board, is the hollowness of the pieces why this is a win?",Negate(),"No, that is not why. ",Anthony,5,5,Yiyen,,14-0-0-0-0-5-0-0-0-0-8-0-0-0-0-16
+910,60,9,"Context Switch, Confirm(User_ID=1, Height)","Let's switch over to this board now, is the height of the pieces why this is a win?",Negate(),"No, they are not all the same height.",Anthony,5,5,Yiyen,,0-0-0-2-0-0-0-4-0-0-0-10-0-0-0-14
+910,60,10,RequestNewWinCondition(),Please show me a new win.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-7-0-0-0-1-0-0-0-4-0-0-0-6-0-0
+910,60,11,Finish(),Thanks! Bye!,Finish,See ya later!,Anthony,5,5,Yiyen,,0-7-0-0-0-1-0-0-0-4-0-0-0-6-0-0

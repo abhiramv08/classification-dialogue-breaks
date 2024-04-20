@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+64,100,0,Start(),Good morning! Can you help we learn the Quarto?,Start,"Sure, let's start!",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+64,100,1,RequestNewWinCondition(),Can you show me a winnig condition?,Inform(),Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-1-0-0-0-13-0-0-0-7-0-0-0-9
+64,100,2,RequestNewWinCondition(),Maybe another winning conditon?,Inform(),Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-3-0-0-13-0-0-5-0-0-9-0-0-0
+64,100,3,"Same , Confirm(User_ID=1, Shape)","I see different shapes of the pieces, does that matter?",Negate(),No the shape doesn't matter.,Yiyan,5,5,Tianyi,,0-0-0-3-0-0-13-0-0-5-0-0-9-0-0-0
+64,100,4,"Same , Confirm(User_ID=1, AddPiece(1,0))","What if I add a piece on pisition (1,0) ?",Affirm(),It will sitll be a winning conditron.,Yiyan,5,5,Tianyi,,0-0-0-3-0-0-13-0-0-5-0-0-9-0-0-0
+64,100,5,RequestNewWinCondition(),Can you show me another winnig conditonn?,Inform(),Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-7-1-9-13
+64,100,6,"Same, Confirm(User_ID=1, Rotate(45))",What if I make all the pieces into a diagonal?,Affirm(),It will still be a winnin.,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-7-1-9-13
+64,100,7,"Context Switch, RequestOtherPlayers()",So what can the other player do to prevent this winning condition?,Inform([]),No this winning is absolute.,Yiyan,4,5,Tianyi,Didn’t specify the win.,0-0-0-3-0-0-13-0-0-5-0-0-9-0-0-0
+64,100,8,RequestNewWinCondition(),Are these all winning cases avaiable?,Inform(),Assume you demonstrate this win condition,Yiyan,5,4,Tianyi,"""So, these are all the winning cases avalable?"" would be easier to understand.",0-9-0-0-0-4-0-0-0-11-0-0-0-3-0-0
+64,100,9,"Same, Request(User_ID=1, Translate)",How can I shift the pieces?,"Inform(['col0', 'col2', 'col3'])","You can shift all the pieces one step left, or you can shift the pieces one or two steps right.",Yiyan,5,5,Tianyi,,0-9-0-0-0-4-0-0-0-11-0-0-0-3-0-0
+64,100,10,"Same , Confirm(User_ID=1, AddPiece(2,2))",What if I add a piece on the  upper right corner?,Affirm(),It will still be a winning.,Yiyan,5,5,Tianyi,,0-9-0-0-0-4-0-0-0-11-0-0-0-3-0-0
+64,100,11,RequestNewWinCondition(),Maybe next winning condition?,Inform(),Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-13-6-5-10
+64,100,12,Finish(),Now I fully understand the game. Thank you!,Finish,You are welcome!,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-13-6-5-10

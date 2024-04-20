@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+870,60,0,Start(),"Hi, could you teach me Quarto?",Start,Sure.,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+870,60,1,RequestNewWinCondition(),Please show me a win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-7-0-0-0-12-0-0-0-8-0-0-0-16-0-0
+870,60,2,"Same, Confirm(User_ID=1, Height)",Is this a win because of the height of the pieces?,Negate(),"No, that's not the case. ",Anthony,5,4,Yiyen,,0-7-0-0-0-12-0-0-0-8-0-0-0-16-0-0
+870,60,3,"Same, Confirm(User_ID=1, Translate([0, 0]))",Could I slide the pieces to the left like this?,Affirm(),"Yes, that's fine. ",Anthony,5,5,Yiyen,,0-7-0-0-0-12-0-0-0-8-0-0-0-16-0-0
+870,60,4,"Same, Confirm(User_ID=1, Shape)",Is this a win because of the shape of the pieces?,NotSure(),"I'm not sure, sorry. ",Anthony,5,5,Yiyen,,0-7-0-0-0-12-0-0-0-8-0-0-0-16-0-0
+870,60,5,"Same, Confirm(User_ID=1, Height)",Is this a win because of the height of the pieces?,NotSure(),I'm not sure about that either. ,Anthony,5,5,Yiyen,,0-7-0-0-0-12-0-0-0-8-0-0-0-16-0-0
+870,60,6,"Same, Confirm(User_ID=1, Quantity)",Is this a win because of the number of pieces?,Affirm(),"Yes, since there are four. ",Anthony,5,5,Yiyen,,0-7-0-0-0-12-0-0-0-8-0-0-0-16-0-0
+870,60,7,"Same, Confirm(User_ID=1, Quantity)",Is this a win because of the number of pieces?,Affirm(),"I just said, yes. ",Anthony,5,5,Yiyen,,0-7-0-0-0-12-0-0-0-8-0-0-0-16-0-0
+870,60,8,"Same, RequestOtherPlayers()",How could another player affect this win?,Inform([]),There is no way they could. ,Anthony,5,4,Yiyen,,0-7-0-0-0-12-0-0-0-8-0-0-0-16-0-0
+870,60,9,"Same, Confirm(User_ID=1, Height)",Is this a win because of the height of the pieces?,NotSure(),"I'm not sure, actually. ",Anthony,5,5,Yiyen,,0-7-0-0-0-12-0-0-0-8-0-0-0-16-0-0
+870,60,10,Finish(),"Thanks, I appreciate the help.",Finish,"My pleasure, bye!",Anthony,5,5,Yiyen,,0-7-0-0-0-12-0-0-0-8-0-0-0-16-0-0

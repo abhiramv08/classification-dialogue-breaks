@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+1028,60,0,Start(),"Hello, can you teach me how to play Quarto?",Start,Sure.,Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+1028,60,1,RequestNewWinCondition(),Can you give me an example of win?,Inform,Assume you demonstrate this win condition,Tianyi,5,4,Ruijie,,0-0-14-0-0-0-9-0-0-0-13-0-0-0-12-0
+1028,60,2,RequestNewWinCondition(),Can you show me another win?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,3-0-0-0-0-13-0-0-0-0-5-0-0-0-0-7
+1028,60,3,"Context Switch, Confirm(User_ID=1, Color)","In this case, is it a win because some pieces have the same color?",Negate(),No.,Tianyi,5,5,Ruijie,,0-0-14-0-0-0-9-0-0-0-13-0-0-0-12-0
+1028,60,4,RequestNewWinCondition(),Can you show me a new win pattern?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,0-0-0-1-0-0-3-0-0-11-0-0-15-0-0-0
+1028,60,5,RequestNewWinCondition(),Can you show me another new winning board?,Inform,Assume you demonstrate this win condition,Tianyi,5,4,Ruijie,,0-0-0-10-0-0-4-0-0-9-0-0-12-0-0-0
+1028,60,6,"Context Switch, Confirm(User_ID=1, Rotate(90))","In this win, if I rotate all pieces 90 degrees to the rows and put them in the first column, is it still a win?",NotSure(),"Sorry, I am uncertain about this.",Tianyi,5,5,Ruijie,,0-0-0-1-0-0-3-0-0-11-0-0-15-0-0-0
+1028,60,7,RequestNewWinCondition(),Can you show me a new winning board?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-9-13-1-14
+1028,60,8,"Context Switch, Confirm(User_ID=1, Height)","In this board, is it a win because all pieces are tall?",Affirm(),"Yes, that is.",Tianyi,5,4,Ruijie,,0-0-14-0-0-0-9-0-0-0-13-0-0-0-12-0
+1028,60,9,"Context Switch, Confirm(User_ID=1, Hollowness)","For this win, is it a win because all pieces are solid?",NotSure(),I have no idea about this. Maybe you are right.,Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-9-13-1-14
+1028,60,10,Finish(),"Thank you so much, I have learned something here.",Finish,You are welcome.,Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-9-13-1-14

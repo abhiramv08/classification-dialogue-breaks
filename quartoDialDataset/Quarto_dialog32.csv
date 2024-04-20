@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+32,100,0,Start(),Can you show me how to play Quarto?,Start,Sure,Jason,5,5,Jacob,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+32,100,1,RequestNewWinCondition(),Show me a way to win the game.,Inform(),Assume you demonstrate this win condition,Jason,5,4,Jacob,The system query seems too demanding.,14-0-0-0-0-15-0-0-0-0-16-0-0-0-0-12
+32,100,2,"Same, Request(User_ID=1, Rotate)",Can you rotate these pieces somehow?,Inform([90]),You can rotate them clockwise once.,Jason,5,5,Jacob,,14-0-0-0-0-15-0-0-0-0-16-0-0-0-0-12
+32,100,3,RequestNewWinCondition(),Can you show me another way to win?,Inform(),Assume you demonstrate this win condition,Jason,5,5,Jacob,,0-0-0-9-0-0-14-0-0-10-0-0-12-0-0-0
+32,100,4,"Same, Request(User_ID=1, Translate)","Okay, is it possible to translate these pieces across the board?",Inform([]),"No, it's not.",Jason,5,5,Jacob,,0-0-0-9-0-0-14-0-0-10-0-0-12-0-0-0
+32,100,5,"Same , Confirm(User_ID=1, Consistency)",Is it a win because all the pieces are consistent with each other?,Negate(),"No, it's not a win because of that.",Jason,3,5,Jacob,Consistency refers to whether the pieces are solid or hollow.,0-0-0-9-0-0-14-0-0-10-0-0-12-0-0-0
+32,100,6,"Context Switch, Confirm(User_ID=1, Shape)",Is it a win because of the shape of the pieces?,Negate(),"No, this win has nothing to do with the shape.",Jason,5,5,Jacob,,14-0-0-0-0-15-0-0-0-0-16-0-0-0-0-12
+32,100,7,RequestNewWinCondition(),"Okay, can you show me another win?",Inform(),Assume you demonstrate this win condition,Jason,5,5,Jacob,,0-0-0-0-0-0-0-0-0-0-0-0-10-9-12-16
+32,100,8,"Context Switch, Confirm(User_ID=1, Consistency)","Going back to that other win, is it a win because the pieces are consistent with each other?",Negate(),No,Jason,3,5,Jacob,Consistency refers to solid or hollow.,0-0-0-9-0-0-14-0-0-10-0-0-12-0-0-0
+32,100,9,RequestNewWinCondition(),Can you show me another win?,Inform(),Assume you demonstrate this win condition,Jason,5,5,Jacob,,0-0-0-4-0-0-0-6-0-0-0-5-0-0-0-2
+32,100,10,Finish(),"Okay, I think that's about it. Goodbye.",Finish,Take care,Jason,5,5,Jacob,,0-0-0-4-0-0-0-6-0-0-0-5-0-0-0-2

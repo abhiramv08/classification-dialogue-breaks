@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+116,100,0,Start(),"Hi, may I know if you have time to teach me how to play Quarto?",Start,"Yes, sure!",Shaobo,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+116,100,1,RequestNewWinCondition(),Can you show me a win firstly?,Inform(),Assume you demonstrate this win condition,Shaobo,5,5,Yiyen,,0-0-0-1-0-0-0-9-0-0-0-4-0-0-0-12
+116,100,2,RequestNewWinCondition(),Could you show me another win?,Inform(),Assume you demonstrate this win condition,Shaobo,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-15-5-9-11
+116,100,3,RequestNewWinCondition(),Could you show me one more winning board?,Inform(),Assume you demonstrate this win condition,Shaobo,5,5,Yiyen,,16-0-0-0-0-7-0-0-0-0-8-0-0-0-0-14
+116,100,4,"Context Switch, Confirm(User_ID=1, RemovePiece(2,3))","For this board, is it still a win if the piece on the third row and the last column is removed?",Negate(),"No, it will not be a win anymore.",Shaobo,5,5,Yiyen,,0-0-0-1-0-0-0-9-0-0-0-4-0-0-0-12
+116,100,5,"Context Switch, Confirm(User_ID=1, Quantity)","For this board, is the number of pieces the reason why it is a win?",Affirm(),"Yes, the number of pieces is a necessary condition for a win. ",Shaobo,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-15-5-9-11
+116,100,6,"Context Switch, Confirm(User_ID=1, Shape)","For this board, is it a win because of the shapes of the pieces?",Affirm(),"Yes, it is a win because all pieces are triangular.",Shaobo,5,5,Yiyen,,0-0-0-1-0-0-0-9-0-0-0-4-0-0-0-12
+116,100,7,"Same, Confirm(User_ID=1, Height)","For the same board you showed me, is the height of the pieces the reason why it is win?",Negate(),"No, it is a win because all pieces are triangular.",Shaobo,5,4,Yiyen,,0-0-0-1-0-0-0-9-0-0-0-4-0-0-0-12
+116,100,8,RequestNewWinCondition(),Can you show me another winning condition?,Inform(),Assume you demonstrate this win condition,Shaobo,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-8-5-13-16
+116,100,9,"Win Same {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}","For the board you just showed me, is it a win because of the hollowness of pieces?",Negate(),"No, it is a win because all pieces are circular.",Shaobo,5,4,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-8-5-13-16
+116,100,10,"Same, Confirm(User_ID=1, Translate('row2'))","For the board you just showed, is it still a win if I translate the pieces to the third row?",Affirm,"Yes, it is still a win.",Shaobo,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-8-5-13-16
+116,100,11,"Same , Confirm(User_ID=1, Color)","For the board you just showed, is it a win because of the color of pieces?",Negate(),"No, it is win because all pieces are circular.",Shaobo,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-8-5-13-16
+116,100,12,Finish(),Thanks for the help!,Finish,You are welcome!,Shaobo,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-8-5-13-16

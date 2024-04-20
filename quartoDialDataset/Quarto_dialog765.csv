@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+765,60,0,Start(),"Hey I really want to learn Quarto, can you teach me?",Start,Sure!,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+765,60,1,RequestNewWinCondition(),Please give me a win condition to start.,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-1-0-0-0-6-0-0-0-2-0-0-0-8-0
+765,60,2,"Same, Confirm(User_ID=1, Color)",Is that a win becasue of thr color pattern of all pieces?,Negate(),No. ,Derek,4,5,Shaobo,,0-0-1-0-0-0-6-0-0-0-2-0-0-0-8-0
+765,60,3,"Same, Confirm(User_ID=1, Shape)",How about the shape?,NotSure(),I am not sure how color influence the win.,Derek,5,5,Shaobo,,0-0-1-0-0-0-6-0-0-0-2-0-0-0-8-0
+765,60,4,RequestNewWinCondition(),Can you show me another win condition?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-4-0-0-3-0-0-9-0-0-1-0-0-0
+765,60,5,"Same, Confirm(User_ID=1, Color)",Does the color of each piece important for win?,Negate(),Not in this board. ,Derek,5,5,Shaobo,,0-0-0-4-0-0-3-0-0-9-0-0-1-0-0-0
+765,60,6,"Same, Confirm(User_ID=1, Rotate(90))",Can I aline all pieces vertically in the first column and keep winning?,NotSure(),Sorry I am not sure about that. ,Derek,4,5,Shaobo,,0-0-0-4-0-0-3-0-0-9-0-0-1-0-0-0
+765,60,7,"Same, Confirm(User_ID=1, Hollowness)",May I know if the hollowness of these pieces important for win?,NotSure(),Sorry I don't know that as well. ,Derek,5,5,Shaobo,,0-0-0-4-0-0-3-0-0-9-0-0-1-0-0-0
+765,60,8,"Context Switch, Confirm(User_ID=1, AddPiece(0,1))","Go back to this win condition, can I add a piece at second block from bottom in first column and keep winning?",Affirm(),"Sure, you can add a piece anywhere and does not break the win.",Derek,5,4,Shaobo,,0-0-1-0-0-0-6-0-0-0-2-0-0-0-8-0
+765,60,9,"Context Switch, Confirm(User_ID=1, Quantity)","Switching to this winning board, is that a win because there are four pieces.",Affirm(),"Yes, that's one reason why this board is a win.",Derek,5,5,Shaobo,,0-0-0-4-0-0-3-0-0-9-0-0-1-0-0-0
+765,60,10,RequestNewWinCondition(),Can you show me another win condition?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-16-7-6-15
+765,60,11,Finish(),Thanks! You taught me a lot today.,Finish,Good to hear that!,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-16-7-6-15

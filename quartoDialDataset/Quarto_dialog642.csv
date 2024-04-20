@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+642,60,0,Start(),"Hello, are you willing to teach me how to play Quarto?",Start,I would love to.,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+642,60,1,RequestNewWinCondition(),"Thanks, can you fitst show me a win condition.",Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,13-0-0-0-0-5-0-0-0-0-2-0-0-0-0-10
+642,60,2,RequestNewWinCondition(),Can you show me another win condition?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,2-0-0-0-11-0-0-0-10-0-0-0-1-0-0-0
+642,60,3,"Context Switch, Confirm(User_ID=1, Shape)","For the first win condition, is it a win because of the shapes of the pieces?",NotSure(),"Maybe, but I am not quite sure.",Yiyan,5,5,Tianyi,,13-0-0-0-0-5-0-0-0-0-2-0-0-0-0-10
+642,60,4,"Context Switch, Confirm(User_ID=1, RemovePiece(0,0))",Let's switch to the second win condition you showed. Will it still be a win if I remove the piece on the first row?,Negate(),"No, you must get at least four pieces in order to win.",Yiyan,5,5,Tianyi,,2-0-0-0-11-0-0-0-10-0-0-0-1-0-0-0
+642,60,5,"Context Switch, Confirm(User_ID=1, Rotate(90))","Considering this board, will it be another win if I put all the pieces to the last column?",NotSure(),"I am not quite sure, maybe you are right.",Yiyan,5,5,Tianyi,,13-0-0-0-0-5-0-0-0-0-2-0-0-0-0-10
+642,60,6,"Context Switch, Confirm(User_ID=1, AddPiece(0,1))","Let'c turn to this board, will it still be a win if I add a piece right to the green solid piece?",Affirm(),"Yes, it will still be a win.",Yiyan,5,5,Tianyi,,2-0-0-0-11-0-0-0-10-0-0-0-1-0-0-0
+642,60,7,"Context Switch, Request(User_ID=1, Rotate)","For this board, how should I rotate the pieces to get another win?",Inform([90]),You can put all the pieces to the last column.,Yiyan,5,5,Tianyi,,13-0-0-0-0-5-0-0-0-0-2-0-0-0-0-10
+642,60,8,RequestNewWinCondition(),Could you show me one more winning condition?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-12-0-0-11-0-0-10-0-0-1-0-0-0
+642,60,9,"Same, Confirm(User_ID=1, Hollowness)","For the condition you just showed, is it a win because of the hollowness of the pieces?",Negate(),"No, it is a win because all the pieces have the same shape.",Yiyan,5,5,Tianyi,,0-0-0-12-0-0-11-0-0-10-0-0-1-0-0-0
+642,60,10,RequestNewWinCondition(),Can you show me another winning condition?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,16-0-0-0-0-13-0-0-0-0-6-0-0-0-0-5
+642,60,11,"Same, RequestOtherPlayers()","For the win you just showed, how can the other player do to prevent the win?",Inform([]),There is no way for the other player to do so.,Yiyan,5,5,Tianyi,,16-0-0-0-0-13-0-0-0-0-6-0-0-0-0-5
+642,60,12,RequestNewWinCondition(),Is there any other way  to win?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-15-0-0-0-10-0-0-0-12-0-0-0-11-0-0
+642,60,13,"Context Switch, Confirm(User_ID=1, Height)","For this board, is it a win because of the heights of the pieces?",NotSure(),I am not quite sure.,Yiyan,5,5,Tianyi,,13-0-0-0-0-5-0-0-0-0-2-0-0-0-0-10
+642,60,14,RequestNewWinCondition(),Could you show me one more win condition?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,11-0-0-0-16-0-0-0-8-0-0-0-4-0-0-0
+642,60,15,Finish(),Thank you a lot. Now I can play Quarto!,Finish,You are welcome.,Yiyan,5,5,Tianyi,,11-0-0-0-16-0-0-0-8-0-0-0-4-0-0-0

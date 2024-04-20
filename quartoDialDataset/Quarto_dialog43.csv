@@ -1,0 +1,11 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+43,100,0,Start(),Could you show me how to play Quarto again?,Start,Definitely. Let's start.,Luke,4,5,John,again?,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+43,100,1,RequestNewWinCondition(),Can you show me a new win condition?,Inform(),Assume you demonstrate this win condition,Luke,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-10-12-15-14
+43,100,2,"Same , Confirm(User_ID=1, Consistency)",Is this a win because some of the tiles are hollow?,Negate(),No that's not the reason why this is a win.,Luke,4,5,John,"Perhaps too specific using ""hollow""",0-0-0-0-0-0-0-0-0-0-0-0-10-12-15-14
+43,100,3,RequestNewWinCondition(),"I don't understand, can you show me a new condition for a winning Quarto board?",Inform(),Assume you demonstrate this win condition,Luke,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-12-15-3-11
+43,100,4,"Context Switch, Confirm(User_ID=1, Shape)","Going back to the first win condition, what if I changed one of the pieces to a different shape?",Negate(),Nothing. This would still be a win if you were to do that.,Luke,3,4,John,This question doesn't ask about changing anything.,0-0-0-0-0-0-0-0-0-0-0-0-10-12-15-14
+43,100,5,RequestNewWinCondition(),Let me see another win condition. I think I'm starting to get the hang of this game.,Inform(),Assume you demonstrate this win condition,Luke,5,5,John,,0-0-0-11-0-0-15-0-0-8-0-0-12-0-0-0
+43,100,6,"Same, Request(User_ID=1, Rotate)",How could I rotate the tiles?,Inform([90]),You can rotate the tiles by 90 degrees so that the pieces are aligned across the opposite diagonal.,Luke,3,4,John,,0-0-0-11-0-0-15-0-0-8-0-0-12-0-0-0
+43,100,7,RequestNewWinCondition(),Show me a new win condition please.,Inform(),Assume you demonstrate this win condition,Luke,5,5,John,,11-0-0-0-0-1-0-0-0-0-4-0-0-0-0-2
+43,100,8,"Same, RequestOtherPlayers()",How can other players undo my win?,Inform([]),Other players cannot do anything that could change your win to a loss.,Luke,5,5,John,,11-0-0-0-0-1-0-0-0-0-4-0-0-0-0-2
+43,100,9,Finish(),"I am a Quarto genius... I think. Anyway, farewell.",Finish,Maybe next time you will be teaching me how to play. See ya.,Luke,4,5,John,,11-0-0-0-0-1-0-0-0-0-4-0-0-0-0-2

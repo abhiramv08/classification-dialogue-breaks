@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+224,100,0,Start(),Hello. Would you be so kind as to teach me the game of Quarto?,Start,Sure.,Jacob,5,4,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+224,100,1,RequestNewWinCondition(),Could you please show me a winning board state?,Inform(),Assume you demonstrate this win condition,Jacob,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-3-15-11-5
+224,100,2,"Same , Confirm(User_ID=1, Shape)",Do the shapes of these pieces make this a win condition?,Negate(),"No, the shapes don't matter here.",Jacob,5,4,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-3-15-11-5
+224,100,3,RequestNewWinCondition(),May I see another win condition?,Inform(),Assume you demonstrate this win condition,Jacob,5,4,Yiyen,,0-0-0-1-0-0-11-0-0-9-0-0-4-0-0-0
+224,100,4,"Context Switch, Confirm(User_ID=1, Quantity)","Regarding this board, does the number of pieces on the board contribute to the win condition?",Affirm(),"Yes, you always need four pieces.",Jacob,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-3-15-11-5
+224,100,5,"Same, Confirm(User_ID=1, Rotate(45))",What would happen if these pieces were placed on the diagonal instead? Would this still constitute a victory?,Affirm(),"Yes, these pieces could lie on the diagonal.",Jacob,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-3-15-11-5
+224,100,6,RequestNewWinCondition(),Could you please show me another winning board?,Inform(),Assume you demonstrate this win condition,Jacob,5,5,Yiyen,,0-0-0-3-0-0-13-0-0-15-0-0-5-0-0-0
+224,100,7,"Same, Request(User_ID=1, Translate)",In what ways could these pieces be moved while still in this configuration to create a new win condition?,Inform([]),No translation of this pattern will work.,Jacob,4,4,Yiyen,,0-0-0-3-0-0-13-0-0-15-0-0-5-0-0-0
+224,100,8,"Same, RequestOtherPlayers()",What moves could another player make to take away this victory?,Inform([]),Nobody can take away this win condition.,Jacob,5,4,Yiyen,,0-0-0-3-0-0-13-0-0-15-0-0-5-0-0-0
+224,100,9,"Context Switch, RequestOtherPlayers()",How about on this board? What moves could another player make here?,Inform([]),"Just as before, no actions cane take away this win.",Jacob,5,5,Yiyen,,0-0-0-1-0-0-11-0-0-9-0-0-4-0-0-0
+224,100,10,Finish(),I've learned enough now. Thank you for teaching me.,Finish,You're welcome.,Jacob,5,5,Yiyen,,0-0-0-1-0-0-11-0-0-9-0-0-4-0-0-0

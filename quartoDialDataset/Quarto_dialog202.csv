@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+202,100,0,Start(),I'd like to learn Quarto.  Could you teach me please?,Start,"Sure, I'd be happy to.",Daniel,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+202,100,1,RequestNewWinCondition(),Can you please show me a board where someone wins?,Inform(),Assume you demonstrate this win condition,Daniel,4,4,Luke,,9-0-0-0-0-14-0-0-0-0-12-0-0-0-0-15
+202,100,2,"Same, Request(User_ID=1, Rotate)",Can I rotate these pieces and still win?,Inform([90]),"Yes, you can rotate them to the other diagonal.",Daniel,5,5,Luke,,9-0-0-0-0-14-0-0-0-0-12-0-0-0-0-15
+202,100,3,RequestNewWinCondition(),Can you show me a different winning board please?,Inform(),Assume you demonstrate this win condition,Daniel,5,5,Luke,,8-0-0-0-0-15-0-0-0-0-12-0-0-0-0-16
+202,100,4,"Same , Confirm(User_ID=1, AddPiece(3,1))",If I add a piece above the green circle is it still a win?,Affirm(),Yes,Daniel,5,3,Luke,,8-0-0-0-0-15-0-0-0-0-12-0-0-0-0-16
+202,100,5,RequestNewWinCondition(),Can you show me a different winning board?,Inform(),Assume you demonstrate this win condition,Daniel,5,5,Luke,,2-0-0-0-0-6-0-0-0-0-14-0-0-0-0-16
+202,100,6,RequestNewWinCondition(),Can you show me a different way to win please?,Inform(),Assume you demonstrate this win condition,Daniel,5,5,Luke,,15-0-0-0-0-5-0-0-0-0-11-0-0-0-0-13
+202,100,7,"Same , Confirm(User_ID=1, RemovePiece(3,0))",If I remove the top left piece is it still a win?,Negate(),"No, you need all the pieces.",Daniel,5,5,Luke,,15-0-0-0-0-5-0-0-0-0-11-0-0-0-0-13
+202,100,8,"Context Switch, Request(User_ID=1, Rotate)",Can I rotate the pieces and still win?,Inform([90]),"Yes, you can rotate them to the other diagonal.",Daniel,5,5,Luke,,9-0-0-0-0-14-0-0-0-0-12-0-0-0-0-15
+202,100,9,"Context Switch, Confirm(User_ID=1, Color)",Is this a win because of the colors of the pieces?,Negate(),No,Daniel,5,3,Luke,,8-0-0-0-0-15-0-0-0-0-12-0-0-0-0-16
+202,100,10,RequestNewWinCondition(),Can you show me another win please?,Inform(),Assume you demonstrate this win condition,Daniel,5,4,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-10-15-11-9
+202,100,11,"Context Switch, Confirm(User_ID=1, Height)",Is this a win because of the height of the pieces?,Negate(),No,Daniel,5,3,Luke,,15-0-0-0-0-5-0-0-0-0-11-0-0-0-0-13
+202,100,12,Finish(),Thank you!,Finish,No problem.,Daniel,3,3,Luke,,15-0-0-0-0-5-0-0-0-0-11-0-0-0-0-13

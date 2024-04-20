@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+348,50,0,Start(),Can you teach me Quarto ?,Start,"Sure, let's begin.",Dmytro,,,,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+348,50,1,RequestNewWinCondition(),Please show me an example of a winning board.,Inform,Assume you demonstrate this win condition,Dmytro,,,,,13-0-0-0-0-7-0-0-0-0-3-0-0-0-0-9
+348,50,2,RequestNewWinCondition(),Can I see another one ?,Inform,Assume you demonstrate this win condition,Dmytro,,,,,4-0-0-0-0-9-0-0-0-0-2-0-0-0-0-1
+348,50,3,RequestNewWinCondition(),"One more, please.",Inform,Assume you demonstrate this win condition,Dmytro,,,,,0-0-0-9-0-0-1-0-0-13-0-0-3-0-0-0
+348,50,4,"Context Switch, Confirm(User_ID=1, Quantity)","Back to the previous one, is the number of figures important for it to be a win ?",NotSure(),That might be the case.,Dmytro,,,,,4-0-0-0-0-9-0-0-0-0-2-0-0-0-0-1
+348,50,5,RequestNewWinCondition(),How about one more winning board example ?,Inform,Assume you demonstrate this win condition,Dmytro,,,,,0-0-0-7-0-0-2-0-0-3-0-0-8-0-0-0
+348,50,6,RequestNewWinCondition(),I'd like to see another one,Inform,Assume you demonstrate this win condition,Dmytro,,,,,0-0-0-0-0-0-0-0-0-0-0-0-13-14-11-12
+348,50,7,"Context Switch, Confirm(User_ID=1, Color)","Back to a prior example, is the color of the figures an important factor ?",Affirm(),"yes, the color matters for it to be a win.",Dmytro,,,,,0-0-0-9-0-0-1-0-0-13-0-0-3-0-0-0
+348,50,8,"Same, Confirm(User_ID=1, AddPiece(1,2))","Also, can I add a piece to the right of a solid circle ?",NotSure(),"You probably can, I am not positive though.",Dmytro,,,,,0-0-0-9-0-0-1-0-0-13-0-0-3-0-0-0
+348,50,9,RequestNewWinCondition(),"Show me another board example, please.",Inform,Assume you demonstrate this win condition,Dmytro,,,,,0-0-0-0-0-0-0-0-0-0-0-0-8-16-11-4
+348,50,10,RequestNewWinCondition(),One more,Inform,Assume you demonstrate this win condition,Dmytro,,,,,0-0-0-3-0-0-5-0-0-8-0-0-6-0-0-0
+348,50,11,"Same, Confirm(User_ID=1, Color)",Is the figues' color important here ?,NotSure(),It might be.,Dmytro,,,,,0-0-0-3-0-0-5-0-0-8-0-0-6-0-0-0
+348,50,12,Finish(),"Ok, I see how this game works; thanks.",Finish,No problems.,Dmytro,,,,,0-0-0-3-0-0-5-0-0-8-0-0-6-0-0-0

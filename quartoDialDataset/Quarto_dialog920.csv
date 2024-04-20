@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+920,60,0,Start(),"Hi, will you teach me Quarto?",Start,Sure.,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+920,60,1,RequestNewWinCondition(),Please show me a new win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-16-0-0-6-0-0-12-0-0-14-0-0-0
+920,60,2,RequestNewWinCondition(),Please show me another new win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-10-5-13-1
+920,60,3,"Context Switch, Confirm(User_ID=1, Rotate(90))","Looking back to this board you showed me, could I rotate the pieces like this?",Affirm(),"Yes, that would not undo this win. ",Anthony,3,5,Yiyen,,0-0-0-16-0-0-6-0-0-12-0-0-14-0-0-0
+920,60,4,"Same, Confirm(User_ID=1, Rotate(90))",Could I rotate the pieces like this?,Affirm(),"I just told you, yes.",Anthony,3,5,Yiyen,,0-0-0-16-0-0-6-0-0-12-0-0-14-0-0-0
+920,60,5,"Context Switch, Confirm(User_ID=1, Shape)","Looking back to this board, is this a win because of the shape of the pieces?",NotSure(),I'm not sure. ,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-10-5-13-1
+920,60,6,RequestNewWinCondition(),Please show me a new win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,9-0-0-0-0-14-0-0-0-0-5-0-0-0-0-10
+920,60,7,"Context Switch, Confirm(User_ID=1, Hollowness)","Looking back to this earlier board, is this win due to the hollowness of the pieces?",NotSure(),I'm not sure. ,Anthony,5,5,Yiyen,,0-0-0-16-0-0-6-0-0-12-0-0-14-0-0-0
+920,60,8,"Context Switch, Confirm(User_ID=1, Color)","Let's switch to this board now, is it a win because of the color of the pieces?",NotSure(),I'm not sure about that either. ,Anthony,5,5,Yiyen,,9-0-0-0-0-14-0-0-0-0-5-0-0-0-0-10
+920,60,9,"Same, Confirm(User_ID=1, Height)",Is this win due to the height of the pieces?,Negate(),"No, that is not why. ",Anthony,5,5,Yiyen,,9-0-0-0-0-14-0-0-0-0-5-0-0-0-0-10
+920,60,10,"Same, Confirm(User_ID=1, Hollowness)",Is this win due to the hollowness of the pieces then?,Affirm(),"Yes, it is actually. ",Anthony,5,5,Yiyen,,9-0-0-0-0-14-0-0-0-0-5-0-0-0-0-10
+920,60,11,Finish(),"Okay, thanks bye.",Finish,Bye!,Anthony,5,5,Yiyen,,9-0-0-0-0-14-0-0-0-0-5-0-0-0-0-10

@@ -1,0 +1,16 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+771,60,0,Start(),Can you teach me how to play Quarto?,Start,No problem.,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+771,60,1,RequestNewWinCondition(),Can you show me a win condition to start?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-12-0-0-0-13-0-0-0-15-0-0-0-14
+771,60,2,"Same, Confirm(User_ID=1, Height)","For this win condition you just showed me, is that a win because the height pattern of all pieces?",Affirm(),"Yes, since all pieces have the same height. ",Derek,5,5,Shaobo,,0-0-0-12-0-0-0-13-0-0-0-15-0-0-0-14
+771,60,3,RequestNewWinCondition(),Can you show me another win condition?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-12-0-0-10-0-0-11-0-0-1-0-0-0
+771,60,4,RequestNewWinCondition(),One more please.,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-1-0-0-0-3-0-0-0-2-0-0-0-12-0
+771,60,5,"Same, RequestOtherPlayers()",Do you know how could another player prevent this win?,Inform([]),There is nothing another player could do to undo this win.,Derek,5,5,Shaobo,,0-0-1-0-0-0-3-0-0-0-2-0-0-0-12-0
+771,60,6,"Context Switch, Request(User_ID=1, Rotate)","Switching to this win condition, how could I rotate this board and keep winning?","Inform([135, 180])",You can place these pieces antidiagonally or horizontally. ,Derek,5,5,Shaobo,,0-0-0-12-0-0-0-13-0-0-0-15-0-0-0-14
+771,60,7,"Context Switch, RequestOtherPlayers()","Switching to this board, how could another player prevent this win?",Inform([]),"Nothing. This win is absolute, there is nothing anther player can do to undo it.",Derek,5,5,Shaobo,,0-0-0-12-0-0-10-0-0-11-0-0-1-0-0-0
+771,60,8,"Same, Confirm(User_ID=1, Height)",Is that a win because the height pattern of all pieces?,NotSure(),Sorry I am not sure about that.,Derek,5,5,Shaobo,,0-0-0-12-0-0-10-0-0-11-0-0-1-0-0-0
+771,60,9,"Context Switch, Confirm(User_ID=1, Translate([0, 0]))","Switching to this winning board, can I shift all pieces to the first column and keep winning?",NotSure(),Sorry I don't konw the answer of that as well.,Derek,5,5,Shaobo,,0-0-0-12-0-0-0-13-0-0-0-15-0-0-0-14
+771,60,10,"Context Switch, Confirm(User_ID=1, Shape)","How about this win condition, is that a win because all pieces have the same shape?",Affirm(),Yes you are correct.,Derek,5,5,Shaobo,,0-0-1-0-0-0-3-0-0-0-2-0-0-0-12-0
+771,60,11,"Context Switch, Request(User_ID=1, Rotate)","Moving to this win condition, how can I rotate this board and keep winning?",Inform([90]),You can line all pieces vertically and keep winning.,Derek,5,5,Shaobo,,0-0-0-12-0-0-10-0-0-11-0-0-1-0-0-0
+771,60,12,"Context Switch, Confirm(User_ID=1, AddPiece(3,0))","Switching to this board, can I add a piece at bottom right and keep winning?",NotSure(),Sorry I am not sure if it will influence the win.,Derek,3,5,Shaobo,,0-0-1-0-0-0-3-0-0-0-2-0-0-0-12-0
+771,60,13,RequestNewWinCondition(),Please how me another win condition.,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,10-0-0-0-0-14-0-0-0-0-13-0-0-0-0-2
+771,60,14,Finish(),Thanks for teaching! I learned a lot today!,Finish,You are welcome. ,Derek,5,5,Shaobo,,10-0-0-0-0-14-0-0-0-0-13-0-0-0-0-2

@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+784,60,0,Start(),"
+Hey I really want to learn playing Quarto, can you teach me?",Start,"
+Definately.",Derek,4,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+784,60,1,RequestNewWinCondition(),Can you show me a win condition to start?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-4-0-0-0-12-0-0-0-10-0-0-0-16-0-0
+784,60,2,"Same, Confirm(User_ID=1, RemovePiece(3,1))",Can I romve the second piece from top?,Negate(),"No, you will break the win if you do so.",Derek,3,5,Shaobo,,0-4-0-0-0-12-0-0-0-10-0-0-0-16-0-0
+784,60,3,RequestNewWinCondition(),Can you show me one more winning board?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-1-7-9-11
+784,60,4,"Same, Request(User_ID=1, Translate)",How can I shift these pieces and keep winning?,"Inform(['row1', 'row2', 'row3'])",You can place them in any row.,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-1-7-9-11
+784,60,5,"Same, Confirm(User_ID=1, Hollowness)",Is the hollowness pattern the reason for this board to win?,NotSure(),I am not sure about that.,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-1-7-9-11
+784,60,6,"Same, Confirm(User_ID=1, Hollowness)",Is the shape of pieces important for this win?,NotSure(),I already said I don't know.,Derek,2,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-1-7-9-11
+784,60,7,"Context Switch, Request(User_ID=1, Translate)","Let's go back to this win, how can I shift these pieces and keep winning?","Inform(['col2', 'col3'])",You can shift them to right by one or two block.,Derek,5,5,Shaobo,,0-4-0-0-0-12-0-0-0-10-0-0-0-16-0-0
+784,60,8,RequestNewWinCondition(),Please show me one more winning board.,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-3-0-0-9-0-0-13-0-0-15-0-0-0
+784,60,9,"Context Switch, Confirm(User_ID=1, Hollowness)",Is that a win because the hollowness pattern of all pieces?,Negate(),No.,Derek,4,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-1-7-9-11
+784,60,10,"Context Switch, Confirm(User_ID=1, Color)",How about the color pattern in this winning board?,Affirm(),Yes. Since they have the same color.,Derek,4,5,Shaobo,,0-0-0-3-0-0-9-0-0-13-0-0-15-0-0-0
+784,60,11,"Context Switch, Request(User_ID=1, Translate)",How can I shift these pieces and keep winning?,"Inform(['col2', 'col3'])",You can shift them to the right by one or two.,Derek,5,5,Shaobo,,0-4-0-0-0-12-0-0-0-10-0-0-0-16-0-0
+784,60,12,"Context Switch, Confirm(User_ID=1, Translate([1, 0]))","Moving to this board, can I shift all pieces up by one?",Affirm(),Yes.,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-1-7-9-11
+784,60,13,Finish(),Thank you for teaching me today! ,Finish,Bye!,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-1-7-9-11

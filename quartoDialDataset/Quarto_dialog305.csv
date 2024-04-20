@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+305,50,0,Start(),"Hello, can we have another Quarto lesson?",Start,Yeah definitely!,Luke,5,4,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-11-4-12-10
+305,50,1,RequestNewWinCondition(),Can you start off by giving me a win condition?,Inform,Assume you demonstrate this win condition,Luke,5,5,Derek,,0-0-0-14-0-0-0-2-0-0-0-1-0-0-0-5
+305,50,2,"Same, Request(User_ID=1, Rotate)",In what ways am I allowed to rotate the tiles?,Inform([135]),You may make a 135 degree rotation.,Luke,3,3,Derek,,0-0-0-14-0-0-0-2-0-0-0-1-0-0-0-5
+305,50,3,"Same, Request(User_ID=1, Rotate)",So how can I rotate these tiles then?,Inform([135]),"Like I said, you can rotate them by 135 degrees.",Luke,3,3,Derek,Should be rotate to anti-diagonal as I remember ,0-0-0-14-0-0-0-2-0-0-0-1-0-0-0-5
+305,50,4,RequestNewWinCondition(),Can you show me another example of a winning board?,Inform,Assume you demonstrate this win condition,Luke,5,5,Derek,,0-0-0-13-0-0-7-0-0-9-0-0-1-0-0-0
+305,50,5,"Same, Confirm(User_ID=1, Hollowness)",Is the reason for the win the hollowness of the tiles?,NotSure(),You could answer your question better than I could... I'm clueless on this one.,Luke,4,5,Derek,,0-0-0-13-0-0-7-0-0-9-0-0-1-0-0-0
+305,50,6,"Context Switch, Confirm(User_ID=1, RemovePiece(2,3))","For this board here, what if I remove this piece here?",NotSure(),"I don't know, sorry.",Luke,3,3,Derek,,0-0-0-14-0-0-0-2-0-0-0-1-0-0-0-5
+305,50,7,"Context Switch, Request(User_ID=1, Rotate)",Can I rotate this board somehow?,Inform([90]),"Yes, you can rotate the pieces such that they are on the other diagonal.",Luke,1,3,Derek,,0-0-0-13-0-0-7-0-0-9-0-0-1-0-0-0
+305,50,8,"Context Switch, Confirm(User_ID=1, Quantity)","For this board which you were previously clueless about, is the number of the tiles the reason for the win?",Affirm(),"Yes, the number of tiles is very important.",Luke,5,4,Derek,,0-0-0-14-0-0-0-2-0-0-0-1-0-0-0-5
+305,50,9,RequestNewWinCondition(),Can you show me a new win condition?,Inform,Assume you demonstrate this win condition,Luke,5,5,Derek,,0-0-0-3-0-0-7-0-0-16-0-0-12-0-0-0
+305,50,10,Finish(),"Well I guess I know Quarto better than you now, so I think I am done for today.",Finish,Maybe you should be teaching me then. Goodbye.,Luke,5,5,Derek,,0-0-0-3-0-0-7-0-0-16-0-0-12-0-0-0

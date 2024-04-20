@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+782,60,0,Start(),"Hey I really want to learn playing Quarto, can you teach me?",Start,Definately.,Derek,4,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+782,60,1,RequestNewWinCondition(),Can you show me a win condition to start?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-9-1-2-3
+782,60,2,RequestNewWinCondition(),Please show me one more win condition.,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-7-9-15-3
+782,60,3,RequestNewWinCondition(),Can you show me one more winning board?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-1-0-0-11-0-0-15-0-0-13-0-0-0
+782,60,4,"Context Switch, Confirm(User_ID=1, Shape)","Go back to the first winning board you showed me, is the shape of pieces important for this win?",Negate(),No.,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-7-9-15-3
+782,60,5,"Context Switch, Confirm(User_ID=1, Shape)",How about this board?,Negate(),Still wrong.,Derek,4,5,Shaobo,,0-0-0-1-0-0-11-0-0-15-0-0-13-0-0-0
+782,60,6,RequestNewWinCondition(),Can you show me one more winning board?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-14-0-0-0-11-0-0-0-13-0-0-0-16
+782,60,7,"Context Switch, Request(User_ID=1, Rotate)","Switching to this board, how can I aline these pieces in different angle and keep winning?",Inform([90]),You can aline them vertically.,Derek,4,5,Shaobo,,0-0-0-1-0-0-11-0-0-15-0-0-13-0-0-0
+782,60,8,"Context Switch, Request(User_ID=1, Translate)","Switching to this board, where can I shift all these pieces?","Inform(['row1', 'row2', 'row3'])",You can shift them to any row.,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-7-9-15-3
+782,60,9,"Same, Request(User_ID=1, Rotate)",How can I totate this board and keep winning?,"Inform([45, 90])",You can aline these pieces diagonally or vertically.,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-7-9-15-3
+782,60,10,Finish(),Thank you for teaching me today! ,Finish,You are welcome.,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-7-9-15-3

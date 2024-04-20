@@ -1,0 +1,15 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+114,100,0,Start(),"Hi, I wish to learn how to play Quarto, can you show me?",Start,"Sure, that would my pleasure.",Ruijie,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+114,100,1,RequestNewWinCondition(),Can you show me what a win condition looks like?,Inform(),Assume you demonstrate this win condition,Ruijie,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-11-1-7-13
+114,100,2,"Same, Request(User_ID=1, Translate)",Where else can I put the pieces and maintain the win?,"Inform(['row1', 'row2', 'row3'])","You can put them on row 1, 2 and 3.",Ruijie,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-11-1-7-13
+114,100,3,RequestNewWinCondition(),Can you show me a new win condition?,Inform(),Assume you demonstrate this win condition,Ruijie,5,5,Tianyi,,0-0-0-1-0-0-6-0-0-4-0-0-3-0-0-0
+114,100,4,"Context Switch, Confirm(User_ID=1, Rotate(90))","Back to the first win you showed me, is it still a win if I put the pieces vertically?",Affirm(),"Yes, you can do that.",Ruijie,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-11-1-7-13
+114,100,5,"Same, Confirm(User_ID=1, Translate('row2'))",Is it still a win if I put the pieces on the second row?,Affirm,"Yes, it still is.",Ruijie,2,5,Tianyi,row2 is the third row. (I will change the rating if I am wrong),0-0-0-0-0-0-0-0-0-0-0-0-11-1-7-13
+114,100,6,RequestNewWinCondition(),Can you show me a new win condition?,Inform(),Assume you demonstrate this win condition,Ruijie,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-7-5-14-8
+114,100,7,RequestNewWinCondition(),What about another one?,Inform(),Assume you demonstrate this win condition,Ruijie,4,4,Tianyi,,0-5-0-0-0-6-0-0-0-10-0-0-0-2-0-0
+114,100,8,RequestNewWinCondition(),Can you show me one more?,Inform(),Assume you demonstrate this win condition,Ruijie,4,4,Tianyi,,0-0-13-0-0-0-16-0-0-0-11-0-0-0-14-0
+114,100,9,"Win Context Switch {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}","For the first win you showed me, is it a win because there're two hollow pieces?",Negate(),"No, it's not because of that.",Ruijie,5,4,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-11-1-7-13
+114,100,10,"Same , Confirm(User_ID=1, AddPiece(3,1))",Is it still a win if I add one more piece on the third piece?,Affirm(),"Yes, you can do that.",Ruijie,2,5,Tianyi,"(3,1) is at the third column of the second row. (If I am wrong, I will change the rating)",0-0-0-0-0-0-0-0-0-0-0-0-11-1-7-13
+114,100,11,RequestNewWinCondition(),Can you show me a new win condition?,Inform(),Assume you demonstrate this win condition,Ruijie,5,5,Tianyi,,0-0-0-16-0-0-12-0-0-11-0-0-4-0-0-0
+114,100,12,"Same , Confirm(User_ID=1, RemovePiece(1,1))","If I remove the second piece on the diagonal, is it still a win?",Negate(),"No, that won't make a win.",Ruijie,5,5,Tianyi,,0-0-0-16-0-0-12-0-0-11-0-0-4-0-0-0
+114,100,13,Finish(),"Thanks, I think I've learned enough.",Finish,My pleasure.,Ruijie,5,5,Tianyi,,0-0-0-16-0-0-12-0-0-11-0-0-4-0-0-0

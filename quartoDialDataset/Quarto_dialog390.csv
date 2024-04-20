@@ -1,0 +1,15 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+390,50,0,Start(),"Hi, can you teach me how to play Quarto?",Start,"Sure, let's begin!",Yiyan,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+390,50,1,RequestNewWinCondition(),Could you firstly show me a win?,Inform,Assume you demonstrate this win condition,Yiyan,5,3,Luke,,6-0-0-0-0-10-0-0-0-0-4-0-0-0-0-16
+390,50,2,RequestNewWinCondition(),Could you show me another one?,Inform,Assume you demonstrate this win condition,Yiyan,4,3,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-10-4-14-8
+390,50,3,"Same, RequestOtherPlayers()","For the win you just showed, how can the other player do to prevent this win?",Inform([]),There is nothing he or she could do.,Yiyan,5,2,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-10-4-14-8
+390,50,4,"Context Switch, Confirm(User_ID=1, Color)","For this board, is it a win because of the color of the pieces? ",Affirm(),You are right.,Yiyan,3,5,Luke,,6-0-0-0-0-10-0-0-0-0-4-0-0-0-0-16
+390,50,5,RequestNewWinCondition(),Could you show me another win?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Luke,,0-0-0-7-0-0-15-0-0-6-0-0-16-0-0-0
+390,50,6,"Context Switch, Confirm(User_ID=1, AddPiece(2,1))","For this board, is it still a win if I add a piece on the third row and the second column?",NotSure(),"I am not sure, sorry.",Yiyan,4,4,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-10-4-14-8
+390,50,7,"Same, Confirm(User_ID=1, Quantity)","For the same board, is it a win because of the number of the pieces?",NotSure(),I am not quite sure.,Yiyan,5,4,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-10-4-14-8
+390,50,8,"Context Switch, Confirm(User_ID=1, Height)","For this board, is it a win because of the heights of the pieces?",Negate(),"No, it is a win because they have the same shape.",Yiyan,5,5,Luke,,0-0-0-7-0-0-15-0-0-6-0-0-16-0-0-0
+390,50,9,"Same, Confirm(User_ID=1, RemovePiece(3,3))","For the same board, would I still get a win if I remove the piece on the forth column?",NotSure(),I am not quite sure about that.,Yiyan,5,3,Luke,,0-0-0-7-0-0-15-0-0-6-0-0-16-0-0-0
+390,50,10,"Same, Confirm(User_ID=1, RemovePiece(0,0))","For the same board, can I still get a win if I remove the piece on the first row?",Negate(),"No, you must have four pieces to get a win.",Yiyan,5,4,Luke,,0-0-0-7-0-0-15-0-0-6-0-0-16-0-0-0
+390,50,11,"Same, Confirm(User_ID=1, Shape)","For the same board, is it a win because of the shapes of the pieces?",Affirm(),"Yes, as you can see, they all have the same shape.",Yiyan,5,5,Luke,,0-0-0-7-0-0-15-0-0-6-0-0-16-0-0-0
+390,50,12,"Same, Confirm(User_ID=1, Height)","For the same board, is it a win because of the heights of the pieces?",NotSure(),"I don't know, sorry.",Yiyan,4,4,Luke,,0-0-0-7-0-0-15-0-0-6-0-0-16-0-0-0
+390,50,13,Finish(),"Ok, thank you for your help!",Finish,You are welcome!,Yiyan,5,4,Luke,,0-0-0-7-0-0-15-0-0-6-0-0-16-0-0-0

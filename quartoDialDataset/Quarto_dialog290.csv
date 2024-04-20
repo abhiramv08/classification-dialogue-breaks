@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+290,50,0,Start(),Hi. Can you teach me how to play Quarto?,Start,It would be my pleasure.,Jacob,5,5,Anthony,,0-0-5-0-0-0-13-0-0-0-15-0-0-0-8-0
+290,50,1,RequestNewWinCondition(),Can you show me a way to win the game?,Inform,Assume you demonstrate this win condition,Jacob,5,5,Anthony,,0-0-0-0-0-0-0-0-0-0-0-0-11-9-4-2
+290,50,2,"Same, Confirm(User_ID=1, Color)",Is this a win because of the color of the pieces?,NotSure(),I don't know if the color matters here. Sorry.,Jacob,5,5,Anthony,,0-0-0-0-0-0-0-0-0-0-0-0-11-9-4-2
+290,50,3,RequestNewWinCondition(),Could you show me another way to win?,Inform,Assume you demonstrate this win condition,Jacob,5,5,Anthony,,0-0-0-11-0-0-3-0-0-13-0-0-5-0-0-0
+290,50,4,"Same, Confirm(User_ID=1, AddPiece(2,3))",Would this still be a win if a piece were added in the far right column second from the top?,NotSure(),"Sorry, I don't really know.",Jacob,5,5,Anthony,,0-0-0-11-0-0-3-0-0-13-0-0-5-0-0-0
+290,50,5,RequestNewWinCondition(),Can you show me another way to win the game?,Inform,Assume you demonstrate this win condition,Jacob,5,5,Anthony,,0-0-0-1-0-0-11-0-0-10-0-0-12-0-0-0
+290,50,6,RequestNewWinCondition(),"Could I see another, please?",Inform,Assume you demonstrate this win condition,Jacob,5,5,Anthony,,0-0-0-12-0-0-10-0-0-11-0-0-14-0-0-0
+290,50,7,"Same, Confirm(User_ID=1, Color)",Is this board a win condition because of the color of the pieces?,Negate(),"No, the color does not matter here.",Jacob,5,4,Anthony,,0-0-0-12-0-0-10-0-0-11-0-0-14-0-0-0
+290,50,8,"Context Switch, RequestOtherPlayers()","On this board, is there any action another player could take to take away this win?",Inform([]),No. No player could get rid of this win condition.,Jacob,5,5,Anthony,,0-0-0-0-0-0-0-0-0-0-0-0-11-9-4-2
+290,50,9,"Context Switch, Confirm(User_ID=1, AddPiece(3,2))","Regarding this board, could a piece be added in the top row second from the right to form a new win condition?",NotSure(),I don't know if that would still work.,Jacob,5,5,Anthony,,0-0-0-1-0-0-11-0-0-10-0-0-12-0-0-0
+290,50,10,"Same, Confirm(User_ID=1, RemovePiece(3,3))",What about if the piece in the top right were removed? Would this still be a win?,Negate(),"No, that piece is necessary for the win condition.",Jacob,5,5,Anthony,,0-0-0-1-0-0-11-0-0-10-0-0-12-0-0-0
+290,50,11,"Context Switch, Confirm(User_ID=1, RemovePiece(3,3))",What about on this board? Could you remove the top right piece here?,Negate(),"No, that piece is vital on this board as well.",Jacob,5,5,Anthony,,0-0-0-11-0-0-3-0-0-13-0-0-5-0-0-0
+290,50,12,Finish(),Thank you for teaching me how to play Quarto.,Finish,You're welcome. Goodbye.,Jacob,5,5,Anthony,,0-0-0-11-0-0-3-0-0-13-0-0-5-0-0-0

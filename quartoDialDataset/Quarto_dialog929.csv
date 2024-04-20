@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+929,60,0,Start(),"Hi, would you please show me how to play?",Start,Sure thing. ,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+929,60,1,RequestNewWinCondition(),Please show me a new win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-3-15-16-12
+929,60,2,RequestNewWinCondition(),Please show me another win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-9-0-0-0-15-0-0-0-16-0-0-0-10
+929,60,3,"Same, Confirm(User_ID=1, Quantity)",Is this a win because of the number of the pieces?,Affirm(),"Yes, there are four in a row.",Anthony,5,5,Yiyen,,0-0-0-9-0-0-0-15-0-0-0-16-0-0-0-10
+929,60,4,"Same, Confirm(User_ID=1, Height)",Is this a win because of the height of the pieces as well.,Affirm(),"Yep, that's right. ",Anthony,5,5,Yiyen,,0-0-0-9-0-0-0-15-0-0-0-16-0-0-0-10
+929,60,5,"Context Switch, Confirm(User_ID=1, Quantity)","Looking over at this board, is this a win because of the number of pieces on the board?",NotSure(),I'm not sure. ,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-3-15-16-12
+929,60,6,"Context Switch, Confirm(User_ID=1, RemovePiece(3,3))","Looking back to this board now, could I remove the piece here?",Negate(),"No, you cannot do that and still have this be a win. ",Anthony,3,5,Yiyen,,0-0-0-9-0-0-0-15-0-0-0-16-0-0-0-10
+929,60,7,"Same, Confirm(User_ID=1, Color)",Is this a win because of the color of the pieces?,Negate(),"No, that's not relevant here.",Anthony,5,5,Yiyen,,0-0-0-9-0-0-0-15-0-0-0-16-0-0-0-10
+929,60,8,"Context Switch, Confirm(User_ID=1, Shape)","Let's switch to this board, is it a win because of the shape of the pieces?",Negate(),"No, it is not. It must be something else. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-3-15-16-12
+929,60,9,"Context Switch, Confirm(User_ID=1, Quantity)","Looking at this board here, is it a win because of the number of pieces?",NotSure(),I'm not sure about that one. ,Anthony,5,5,Yiyen,,0-0-0-9-0-0-0-15-0-0-0-16-0-0-0-10
+929,60,10,Finish(),"Okay, that's enough, bye!",Finish,See ya later!,Anthony,5,5,Yiyen,,0-0-0-9-0-0-0-15-0-0-0-16-0-0-0-10

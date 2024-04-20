@@ -1,0 +1,15 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+450,50,0,Start(),"Hi, can you tell me how to play Quarto?",Start,"Of course, what do you want to know?",Tianyi,,,,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+450,50,1,RequestNewWinCondition(),Can you show me a example of win?,Inform,Assume you demonstrate this win condition,Tianyi,,,,,1-0-0-0-0-2-0-0-0-0-5-0-0-0-0-4
+450,50,2,RequestNewWinCondition(),Can you show me another example?,Inform,Assume you demonstrate this win condition,Tianyi,,,,,0-0-11-0-0-0-3-0-0-0-5-0-0-0-7-0
+450,50,3,"Same, Confirm(User_ID=1, Hollowness)","In this case, is it a win because there are some hollow pieces?",NotSure(),I am not sure about this.,Tianyi,,,,,0-0-11-0-0-0-3-0-0-0-5-0-0-0-7-0
+450,50,4,"Context Switch, Confirm(User_ID=1, AddPiece(2,0))","In the first win, if I add a piece at the first column of the third row, can it still be a win?",Affirm(),"Yes, it will still be a win.",Tianyi,,,,,1-0-0-0-0-2-0-0-0-0-5-0-0-0-0-4
+450,50,5,"Context Switch, RequestOtherPlayers()","In the second win, can someone take actions to prevent the win?",Inform([]),"No, there is nothing he/she can do.",Tianyi,,,,,0-0-11-0-0-0-3-0-0-0-5-0-0-0-7-0
+450,50,6,RequestNewWinCondition(),Can you give a new winning board?,Inform,Assume you demonstrate this win condition,Tianyi,,,,,0-10-0-0-0-4-0-0-0-12-0-0-0-11-0-0
+450,50,7,"Same, RequestOtherPlayers()","In this case, can another player do something to prevent the win?",Inform([]),"No, there is nothing can change the win.",Tianyi,,,,,0-10-0-0-0-4-0-0-0-12-0-0-0-11-0-0
+450,50,8,"Context Switch, Confirm(User_ID=1, Hollowness)","For the first win, is it a win because some pieces are hollow?",NotSure(),"Sorry, I cannot determine that.",Tianyi,,,,,1-0-0-0-0-2-0-0-0-0-5-0-0-0-0-4
+450,50,9,"Context Switch, Confirm(User_ID=1, Quantity)","For the second win, it is a win because there are four pieces on the board right?",NotSure(),I am not sure about this.,Tianyi,,,,,0-0-11-0-0-0-3-0-0-0-5-0-0-0-7-0
+450,50,10,"Same, Confirm(User_ID=1, Translate([0, 3]))","And, is it still a win if I move all pieces one column right?",Affirm(),"Yeah, it will still be a win.",Tianyi,,,,,0-0-11-0-0-0-3-0-0-0-5-0-0-0-7-0
+450,50,11,"Context Switch, RequestOtherPlayers()","In this third win, can someone take actions to prevent his/her failure ",Inform([]),"No, he/she can't.",Tianyi,,,,,0-10-0-0-0-4-0-0-0-12-0-0-0-11-0-0
+450,50,12,"Same, Request(User_ID=1, Translate)","And, can I move some pieces and still maintain the win?",Inform(['col2']),"Yes, you can move all pieces to the third column.",Tianyi,,,,,0-10-0-0-0-4-0-0-0-12-0-0-0-11-0-0
+450,50,13,Finish(),Thank you so much. Playing Quarto is fun!,Finish,You are welcome.,Tianyi,,,,,0-10-0-0-0-4-0-0-0-12-0-0-0-11-0-0

@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+62,100,0,Start(),"Hi, can you show me how to play Quarto?",Start,"Sure, what do you want to know?",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+62,100,1,RequestNewWinCondition(),I am totally new to the game. Can you show me a winning conditon?,Inform(),Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-15-3-11-12
+62,100,2,RequestNewWinCondition(),Is this the only way to win?,Inform(),Assume you demonstrate this win condition,Yiyan,5,4,Tianyi,"The answer of the query should be yes or no plus the demonstration. However, user directly demonstrate the board.",0-0-0-0-0-0-0-0-0-0-0-0-1-7-11-13
+62,100,3,"Same , Confirm(User_ID=1, Shape)",Does the shape of the piece matter?,Negate(),No it doesn't,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-1-7-11-13
+62,100,4,"Same, Request(User_ID=1, Rotate)",How can I rotate the pieces to get another winning conditon?,"Inform([45, 90])",You can rotate them diagonally or vertically.,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-1-7-11-13
+62,100,5,RequestNewWinCondition(),Can you give me another winning condition?,Inform(),Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-11-0-0-7-0-0-5-0-0-9-0-0-0
+62,100,6,"Context Switch, Confirm(User_ID=1, Height)",Is this a winning condition because they are in row one!,Negate(),"No, the height doesn't matter.",Yiyan,3,5,Tianyi,Didn't refer to the win. Didn't refer to the height(property).,0-0-0-0-0-0-0-0-0-0-0-0-1-7-11-13
+62,100,7,"Context Switch, Confirm(User_ID=1, Translate('row1'))",Can I move all the pieces one step up?,Affirm,"Yes, you can.",Yiyan,4,5,Tianyi,Didn't refer to the win.,0-0-0-0-0-0-0-0-0-0-0-0-15-3-11-12
+62,100,8,"Same , Confirm(User_ID=1, AddPiece(1,0))","Is it OK to put a piece on position (1,0)?",Affirm(),"Yes, it will still be a winning.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-15-3-11-12
+62,100,9,"Context Switch, Confirm(User_ID=1, AddPiece(3,3))","How about adding a piece on (3,3).",Affirm(),It will be another winning condition.,Yiyan,4,5,Tianyi,Didn't refer to the win.,0-0-0-0-0-0-0-0-0-0-0-0-1-7-11-13
+62,100,10,"Same, Request(User_ID=1, Rotate)",How can I rotate all the pieces of the game?,"Inform([45, 90])",You can put the pieces diagonally or vertically.,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-1-7-11-13
+62,100,11,Finish(),Now I understand the game. Thank you.,Finish,You are welcome.,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-1-7-11-13

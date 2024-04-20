@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+233,100,0,Start(),"Hi, can you teach me how to play Quarto?",Start,"Sure, let's play!",John,5,5,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+233,100,1,RequestNewWinCondition(),Could you show me an example of a winning board?,Inform(),Assume you demonstrate this win condition,John,5,5,Daniel,,12-0-0-0-8-0-0-0-7-0-0-0-3-0-0-0
+233,100,2,"Same, Confirm(User_ID=1, Height)","For this win, is the height of the pieces the reason that it is a win?",Negate(),"No, the pieces are not all the same height.",John,5,5,Daniel,,12-0-0-0-8-0-0-0-7-0-0-0-3-0-0-0
+233,100,3,RequestNewWinCondition(),Will you please show me another win condition?,Inform(),Assume you demonstrate this win condition,John,5,4,Daniel,,0-9-0-0-0-3-0-0-0-7-0-0-0-1-0-0
+233,100,4,"Same , Confirm(User_ID=1, Color)","For this board, is it a win because of the color of the pieces?",Affirm(),"Yes, the pieces are all green, which is why this is a win.",John,5,5,Daniel,,0-9-0-0-0-3-0-0-0-7-0-0-0-1-0-0
+233,100,5,RequestNewWinCondition(),Can you show me another winning scenario?,Inform(),Assume you demonstrate this win condition,John,5,5,Daniel,,7-0-0-0-3-0-0-0-5-0-0-0-4-0-0-0
+233,100,6,RequestNewWinCondition(),Can I see another example of a win?,Inform(),Assume you demonstrate this win condition,John,5,5,Daniel,,0-0-0-4-0-0-2-0-0-5-0-0-3-0-0-0
+233,100,7,"Same , Confirm(User_ID=1, RemovePiece(1,1))","For this board, is it still a win if I remove the piece in the second column from the left and second row from the bottom?",Negate(),"No, that piece is crucial to this win",John,5,4,Daniel,Wordy,0-0-0-4-0-0-2-0-0-5-0-0-3-0-0-0
+233,100,8,"Context Switch, Confirm(User_ID=1, AddPiece(0,2))","Going back to this board here, is it still a win if I add a piece in the bottom row, and third column?",Affirm(),"Yes, that piece would have no effect on this win.",John,5,4,Daniel,"I think it would be better to describe it as ""to the right of the hollow triangle""",0-9-0-0-0-3-0-0-0-7-0-0-0-1-0-0
+233,100,9,"Same , Confirm(User_ID=1, Shape)",Is this a win because of the shape of the pieces?,Negate(),"No, the pieces are not all the same shape.",John,5,5,Daniel,,0-9-0-0-0-3-0-0-0-7-0-0-0-1-0-0
+233,100,10,"Context Switch, Confirm(User_ID=1, Shape)",Let's switch to this board here. Is this a win because of the shape of the pieces?,Negate(),"No, the pieces are not all the same shape.",John,5,5,Daniel,,0-0-0-4-0-0-2-0-0-5-0-0-3-0-0-0
+233,100,11,Finish(),I think I am done playing for now. Thanks!,Finish,"No problem, see you later!",John,5,5,Daniel,,0-0-0-4-0-0-2-0-0-5-0-0-3-0-0-0

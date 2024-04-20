@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+769,60,0,Start(),Can you teach me how to play Quarto?,Start,Sure.,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+769,60,1,RequestNewWinCondition(),Please give me a win condition to start.,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,11-0-0-0-13-0-0-0-5-0-0-0-15-0-0-0
+769,60,2,"Same, Request(User_ID=1, Translate)",How could I shift all piece and keep winning?,"Inform(['col1', 'col2', 'col3'])",You can shift all piece to any colunm in the board. ,Derek,5,5,Shaobo,,11-0-0-0-13-0-0-0-5-0-0-0-15-0-0-0
+769,60,3,"Same, Confirm(User_ID=1, Shape)",Is that a win because the shape pattern of all pieces?,Negate(),"No, the shape patter of all pieces does not make it a win. ",Derek,5,5,Shaobo,,11-0-0-0-13-0-0-0-5-0-0-0-15-0-0-0
+769,60,4,"Same, Confirm(User_ID=1, Quantity)","How about the quantity, is the number of pieces important for the win?",Affirm(),Yes you have to have at least four pieces to win. ,Derek,5,5,Shaobo,,11-0-0-0-13-0-0-0-5-0-0-0-15-0-0-0
+769,60,5,RequestNewWinCondition(),Can you show me another win condition?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-15-12-7-8
+769,60,6,RequestNewWinCondition(),Please you show me another win condition?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,8-0-0-0-0-15-0-0-0-0-16-0-0-0-0-4
+769,60,7,"Same, Confirm(User_ID=1, Shape)",Is that a win because of the shape pattern of all pieces?,Negate(),No.,Derek,5,5,Shaobo,,8-0-0-0-0-15-0-0-0-0-16-0-0-0-0-4
+769,60,8,"Context Switch, Confirm(User_ID=1, Hollowness)","Switching to this board, is that a win because of the hollowness pattern of all pieces?",Negate(),"No, it is not the reason this board is winning.",Derek,5,5,Shaobo,,11-0-0-0-13-0-0-0-5-0-0-0-15-0-0-0
+769,60,9,"Context Switch, Confirm(User_ID=1, Color)","For this board, is that a win because of the color pattern of all pieces?",Negate(),"No, they don't have the same color. ",Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-15-12-7-8
+769,60,10,Finish(),Thanks! You taught me a lot today.,Finish,No problem.,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-15-12-7-8

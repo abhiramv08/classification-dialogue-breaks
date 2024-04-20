@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+21,100,0,Start(),"Hi, I was hoping you can teach me Quarto.",Start,"Sure, let's start",Dmytro,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+21,100,1,RequestNewWinCondition(),Can you show me how does one achieve a victory ?,Inform(),Assume you demonstrate this win condition,Dmytro,5,5,Derek,,10-0-0-0-0-15-0-0-0-0-11-0-0-0-0-9
+21,100,2,RequestNewWinCondition(),"Ok, could you do that once more please ?",Inform(),Assume you demonstrate this win condition,Dmytro,5,5,Derek,,12-0-0-0-2-0-0-0-6-0-0-0-8-0-0-0
+21,100,3,RequestNewWinCondition(),I'd like to see a winning board one more time.,Inform(),Assume you demonstrate this win condition,Dmytro,5,5,Derek,,0-0-0-1-0-0-5-0-0-10-0-0-2-0-0-0
+21,100,4,RequestNewWinCondition(),Could you provide an example of a winning board ?,Inform(),Assume you demonstrate this win condition,Dmytro,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-8-5-3-7
+21,100,5,RequestNewWinCondition(),Could you give me another example of a winning board configuration ?,Inform(),Assume you demonstrate this win condition,Dmytro,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-13-7-15-16
+21,100,6,"Same, Confirm(User_ID=1, Rotate(90))","Would I still win if I transpose the board, making the bottom row into a column ?",Affirm(),"Yes, you would still achieve victory.",Dmytro,5,4,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-13-7-15-16
+21,100,7,"Context Switch, Request(User_ID=1, Translate)","How can I move these 4 bottom pieces together, while still winning ?","Inform(['row1', 'row2', 'row3'])","As long as you keep them together, you can move them onto any row.",Dmytro,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-8-5-3-7
+21,100,8,"Context Switch, Confirm(User_ID=1, Color)","Going back to one of the earlier configurations, does the color of the pieces here contribute to a win?",Negate(),Color makes no difference.,Dmytro,5,5,Derek,,0-0-0-1-0-0-5-0-0-10-0-0-2-0-0-0
+21,100,9,"Context Switch, Confirm(User_ID=1, Shape)","Switching to another board, does the pieces' shape makes it a victory ?",Affirm(),"Yes, their shape indeed contributes to a winning outcome.",Dmytro,4,5,Derek,better to point out which specific board is refered to,0-0-0-0-0-0-0-0-0-0-0-0-13-7-15-16
+21,100,10,Finish(),"Thank you, I know how to play now.",Finish,"Sure, any time.",Dmytro,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-13-7-15-16

@@ -1,0 +1,11 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+1214,60,0,Start(),"Hi, do you have time to teach me how to play Quarto?",Start,Sure!,Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+1214,60,1,RequestNewWinCondition(),Could you show me a win first?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-6-5-2-3
+1214,60,2,RequestNewWinCondition(),Is there any other way to win?,Inform,Assume you demonstrate this win condition,Shaobo,4,5,John,,7-0-0-0-0-9-0-0-0-0-13-0-0-0-0-11
+1214,60,3,"Context Switch, Confirm(User_ID=1, Translate([1, 0]))","Switching to this board, is it still a win if I shift the pieces to the second row?",Affirm(),"Yes, it is still a win.",Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-6-5-2-3
+1214,60,4,"Context Switch, Confirm(User_ID=1, Hollowness)","Switching to this board, is it a win because of the hollowness of the pieces?",NotSure(),"Sorry, I am not sure about it.",Shaobo,5,4,John,,7-0-0-0-0-9-0-0-0-0-13-0-0-0-0-11
+1214,60,5,"Context Switch, Confirm(User_ID=1, Height)","Switching to this board, is it a win because of the height of the pieces?",NotSure(),"Sorry, I am not sure about it.",Shaobo,5,4,John,,0-0-0-0-0-0-0-0-0-0-0-0-6-5-2-3
+1214,60,6,"Same, Confirm(User_ID=1, Hollowness)",And is it a win because of the hollowness of the pieces?,NotSure(),"Sorry, I am not sure about it.",Shaobo,5,4,John,,0-0-0-0-0-0-0-0-0-0-0-0-6-5-2-3
+1214,60,7,"Same, Confirm(User_ID=1, Shape)",And is it a win because of the shape of the pieces?,Negate(),"No, it is a win because all pieces have the same height.",Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-6-5-2-3
+1214,60,8,"Same, Confirm(User_ID=1, Quantity)",And does the number of pieces matter?,NotSure(),"Sorry, I am not sure about it.",Shaobo,5,4,John,,0-0-0-0-0-0-0-0-0-0-0-0-6-5-2-3
+1214,60,9,Finish(),Thanks for the help! I have learned a lot!,Finish,You are welcome!,Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-6-5-2-3

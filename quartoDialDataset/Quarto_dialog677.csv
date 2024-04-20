@@ -1,0 +1,18 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+677,60,0,Start(),Hello! Can you show me how to play Quarto?,Start,"Sure, let's get started!",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+677,60,1,RequestNewWinCondition(),Can you show me what a win condition looks like?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-3-11-10-1
+677,60,2,RequestNewWinCondition(),Could you give me a win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-11-0-0-0-9-0-0-0-13-0-0-0-12
+677,60,3,"Same, Confirm(User_ID=1, Height)","For this board, is it a win because the pieces are of the same height?
+",Affirm(),"That’s right.
+Yes, you’re right about that.",Ruijie,5,5,Luke,,0-0-0-11-0-0-0-9-0-0-0-13-0-0-0-12
+677,60,4,"Context Switch, Confirm(User_ID=1, Height)","Switch to this board, is it a win because the pieces are of the same height?
+",Negate(),"No, that’s not the reason.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-3-11-10-1
+677,60,5,"Context Switch, Request(User_ID=1, Rotate)","Switch to this board, can I rotate the pieces by some degrees and still have a win?","Inform([135, 180])","Sure, you can rotate them by one thirty five or one eighty degrees.",Ruijie,3,5,Luke,,0-0-0-11-0-0-0-9-0-0-0-13-0-0-0-12
+677,60,6,"Same, RequestOtherPlayers()",Can the other player undo this win?,Inform([]),"No, this win is absolute.",Ruijie,5,5,Luke,,0-0-0-11-0-0-0-9-0-0-0-13-0-0-0-12
+677,60,7,RequestNewWinCondition(),Can you show me one more win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-4-7-12-16
+677,60,8,RequestNewWinCondition(),Can you give me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-12-0-0-0-16-0-0-0-2-0-0-0-14-0-0
+677,60,9,"Context Switch, Confirm(User_ID=1, Quantity)","Switch to this board, is it a win because of the number of pieces?
+",NotSure(),"Well, I don't know.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-3-11-10-1
+677,60,10,"Context Switch, Confirm(User_ID=1, Hollowness)","Switch to this board, does the hollowness of the pieces make it a win?
+",Affirm(),"Yes, you are right.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-4-7-12-16
+677,60,11,Finish(),Thanks! I've learned a lot!,Finish,You are welcome!,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-4-7-12-16

@@ -1,0 +1,15 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+789,60,0,Start(),"
+Hey I really want to learn playing Quarto, can you teach me?",Start,"Sure, let's start.",Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+789,60,1,RequestNewWinCondition(),Can you show me a win condition to start?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-5-0-0-0-14-0-0-0-9-0-0-0-2
+789,60,2,"Same, Confirm(User_ID=1, Rotate(180))",Can I aline all piece horizontally?,NotSure(),I am not sure about that.,Derek,4,5,Shaobo,,0-0-0-5-0-0-0-14-0-0-0-9-0-0-0-2
+789,60,3,RequestNewWinCondition(),Please show me one more win condition.,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-16-6-8-7
+789,60,4,"Context Switch, Confirm(User_ID=1, Color)","Go back to this board, 
+is that a win because the color pattern of all pieces?",NotSure(),I don't know.,Derek,5,5,Shaobo,,0-0-0-5-0-0-0-14-0-0-0-9-0-0-0-2
+789,60,5,RequestNewWinCondition(),Can you show me one more winning board?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-9-0-0-2-0-0-14-0-0-10-0-0-0
+789,60,6,"Context Switch, Request(User_ID=1, Rotate)",Do you know how can I aline these pieces in different angle and keep winning,"Inform([45, 90])",You can aline them vertically or diagonally.,Derek,4,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-16-6-8-7
+789,60,7,"Context Switch, Confirm(User_ID=1, Hollowness)","Switching to this board, 
+is the hollowness of pieces important for this win?",Affirm(),Yes.,Derek,5,4,Shaobo,,0-0-0-9-0-0-2-0-0-14-0-0-10-0-0-0
+789,60,8,"Same, Confirm(User_ID=1, Quantity)",Do I have to have four pieces to win?,NotSure(),It really depends.,Derek,3,5,Shaobo,,0-0-0-9-0-0-2-0-0-14-0-0-10-0-0-0
+789,60,9,"Same, Confirm(User_ID=1, Quantity)",Do I need at least that many of pieces to win?,Affirm(),"If you ask in that way, I believe the answer is yes.",Derek,5,5,Shaobo,,0-0-0-9-0-0-2-0-0-14-0-0-10-0-0-0
+789,60,10,Finish(),Nice to talk with you today! Bye!,Finish,Bye!,Derek,5,5,Shaobo,,0-0-0-9-0-0-2-0-0-14-0-0-10-0-0-0

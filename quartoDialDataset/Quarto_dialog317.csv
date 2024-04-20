@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+317,50,0,Start(),"Hi, can you teach me how to play Quarto?",Start,"Sure, let's start!",Tianyi,5,5,Jason,,0-0-0-10-0-0-2-0-0-6-0-0-13-0-0-0
+317,50,1,RequestNewWinCondition(),Can you show me an example of win?,Inform,Assume you demonstrate this win condition,Tianyi,5,4,Jason,,0-0-0-16-0-0-0-5-0-0-0-15-0-0-0-7
+317,50,2,RequestNewWinCondition(),Can you show me another example?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Jason,,0-0-0-7-0-0-3-0-0-6-0-0-5-0-0-0
+317,50,3,"Same, Confirm(User_ID=1, Rotate(90))","In that case, if I rotate all pieces to 90 degrees with respect to the rows and put all of them at the first column, can it still be a win?",NotSure(),"Sorry, I am not sure about that.",Tianyi,5,5,Jason,,0-0-0-7-0-0-3-0-0-6-0-0-5-0-0-0
+317,50,4,"Same, Confirm(User_ID=1, RemovePiece(3,3))","So, if I remove the piece at the fourth column, is it still a win?",Negate(),"No, it will not be a win anymore.",Tianyi,5,5,Jason,,0-0-0-7-0-0-3-0-0-6-0-0-5-0-0-0
+317,50,5,RequestNewWinCondition(),Can you show me a new win pattern?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Jason,,0-0-0-0-0-0-0-0-0-0-0-0-10-12-13-16
+317,50,6,"Same, Confirm(User_ID=1, Height)","In this board, is it a win because all pieces are tall?",Affirm(),"Yes, you are right.",Tianyi,5,5,Jason,,0-0-0-0-0-0-0-0-0-0-0-0-10-12-13-16
+317,50,7,"Context Switch, Confirm(User_ID=1, Shape)","For the second win, is it a win because of the shapes of the pieces?",Negate(),"Nope, the shapes are not the reason of the win.",Tianyi,5,4,Jason,,0-0-0-7-0-0-3-0-0-6-0-0-5-0-0-0
+317,50,8,"Same, Confirm(User_ID=1, AddPiece(3,1))","And, what if I add a piece at the second column of the fourth row, is that still a win?",Affirm(),"Yes, that will still be a win.",Tianyi,5,4,Jason,,0-0-0-7-0-0-3-0-0-6-0-0-5-0-0-0
+317,50,9,RequestNewWinCondition(),Can you show me another way to win?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Jason,,0-0-0-0-0-0-0-0-0-0-0-0-13-10-9-5
+317,50,10,"Context Switch, Confirm(User_ID=1, Translate([0, 1]))","In the first win, if I move all pieces to the second column, can it still be a win?",Affirm(),"Yeah, that should be a win.",Tianyi,5,5,Jason,,0-0-0-16-0-0-0-5-0-0-0-15-0-0-0-7
+317,50,11,RequestNewWinCondition(),What else can be a win pattern on the board?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Jason,,0-0-0-0-0-0-0-0-0-0-0-0-9-5-13-3
+317,50,12,Finish(),Thank you so much!,Finish,You are welcome.,Tianyi,5,5,Jason,,0-0-0-0-0-0-0-0-0-0-0-0-9-5-13-3

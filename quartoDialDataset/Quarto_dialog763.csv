@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+763,60,0,Start(),Can you teach me how to play Quarto?,Start,Sure!,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+763,60,1,RequestNewWinCondition(),Please give me a win condition to start.,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-14-0-0-9-0-0-11-0-0-16-0-0-0
+763,60,2,"Same, Confirm(User_ID=1, Height)",Does the height of each piece important for the win?,Affirm(),"Yes, that's the reason why this board is a win.",Derek,5,5,Shaobo,,0-0-0-14-0-0-9-0-0-11-0-0-16-0-0-0
+763,60,3,"Same, Confirm(User_ID=1, Quantity)",Does the number pieces important for the win?,Affirm(),"Yes, you have to have at least four pieces to win.",Derek,5,5,Shaobo,,0-0-0-14-0-0-9-0-0-11-0-0-16-0-0-0
+763,60,4,RequestNewWinCondition(),Please give me another win condition.,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-9-0-0-10-0-0-11-0-0-1-0-0-0
+763,60,5,"Same, Confirm(User_ID=1, Shape)",Is that a win because of the shape pattern of all pieces?,NotSure(),Sorry I an not sure about that.,Derek,4,5,Shaobo,,0-0-0-9-0-0-10-0-0-11-0-0-1-0-0-0
+763,60,6,"Same, Confirm(User_ID=1, Color)",Does the color of each piece important for the win?,Negate(),"No, the color is not the reason for this board to win. ",Derek,5,5,Shaobo,,0-0-0-9-0-0-10-0-0-11-0-0-1-0-0-0
+763,60,7,"Same, Confirm(User_ID=1, Shape)",How about the shape?,NotSure(),Sorry I am not sure about that. ,Derek,5,5,Shaobo,,0-0-0-9-0-0-10-0-0-11-0-0-1-0-0-0
+763,60,8,"Same, Confirm(User_ID=1, Color)",How about the color?,Negate(),Are you asking the same question? I already said it is not the reason to win.,Derek,5,5,Shaobo,,0-0-0-9-0-0-10-0-0-11-0-0-1-0-0-0
+763,60,9,"Context Switch, Confirm(User_ID=1, Shape)","Switching to this board, is that a win because the shape pattern of all pieces?",NotSure(),Sorry I am not really familar with this kind of peoblem.,Derek,5,5,Shaobo,,0-0-0-14-0-0-9-0-0-11-0-0-16-0-0-0
+763,60,10,Finish(),Thanks for teaching! I learned a lot today!,Finish,You are welcome!,Derek,5,5,Shaobo,,0-0-0-14-0-0-9-0-0-11-0-0-16-0-0-0

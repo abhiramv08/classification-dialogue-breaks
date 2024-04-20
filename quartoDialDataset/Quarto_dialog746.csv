@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+746,60,0,Start(),Hey! Can you show me how to play Quarto?,Start,"Sure, let's get started!",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+746,60,1,RequestNewWinCondition(),Can you show me a win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-6-0-0-0-14-0-0-0-12-0-0-0-2-0-0
+746,60,2,RequestNewWinCondition(),Can you show me a win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,16-0-0-0-0-2-0-0-0-0-12-0-0-0-0-10
+746,60,3,"Same, Confirm(User_ID=1, Shape)",Is it a win because the pieces are of the same shape?,Negate(),"No, it’s unrelated.",Ruijie,5,5,Luke,,16-0-0-0-0-2-0-0-0-0-12-0-0-0-0-10
+746,60,4,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,4,Luke,,0-0-0-10-0-0-14-0-0-13-0-0-1-0-0-0
+746,60,5,"Same, Confirm(User_ID=1, Color)",Does the color of pieces make it a win?,Negate(),"No, that’s not the reason.",Ruijie,5,5,Luke,,0-0-0-10-0-0-14-0-0-13-0-0-1-0-0-0
+746,60,6,"Same, Request(User_ID=1, Rotate)",Can I rotate the pieces and maintain the win?,Inform([90]),You can rotate them by ninety degrees.,Ruijie,4,4,Luke,,0-0-0-10-0-0-14-0-0-13-0-0-1-0-0-0
+746,60,7,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-11-15-10-13
+746,60,8,RequestNewWinCondition(),What about another win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-5-0-0-7-0-0-8-0-0-2-0-0-0
+746,60,9,RequestNewWinCondition(),Can you show me a win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,4,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-4-2-6-14
+746,60,10,Finish(),Thanks man! I love this game!,Finish,I'm glad you enjoy it!,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-4-2-6-14

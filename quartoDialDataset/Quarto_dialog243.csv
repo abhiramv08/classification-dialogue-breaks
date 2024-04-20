@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+243,100,0,Start(),"Hi! I'm kind of interested in Quarto, can you show me how to play it?",Start,I love Quarto! Let's get started.,Ruijie,5,5,Dmytro,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+243,100,1,RequestNewWinCondition(),Can you show me what a win condition looks like?,Inform(),Assume you demonstrate this win condition,Ruijie,4,3,Dmytro,,12-0-0-0-2-0-0-0-10-0-0-0-8-0-0-0
+243,100,2,RequestNewWinCondition(),What about another one?,Inform(),Assume you demonstrate this win condition,Ruijie,5,5,Dmytro,,0-0-0-8-0-0-14-0-0-10-0-0-12-0-0-0
+243,100,3,"Same, Confirm(User_ID=1, Quantity)",Is this a win because there're four pieces?,Affirm(),"Yeah, that's correct.",Ruijie,5,5,Dmytro,,0-0-0-8-0-0-14-0-0-10-0-0-12-0-0-0
+243,100,4,RequestNewWinCondition(),Can you show me a new win condition?,Inform(),Assume you demonstrate this win condition,Ruijie,4,2,Dmytro,,0-0-0-6-0-0-3-0-0-1-0-0-7-0-0-0
+243,100,5,RequestNewWinCondition(),What about another one?,Inform(),Assume you demonstrate this win condition,Ruijie,5,3,Dmytro,,0-0-0-15-0-0-13-0-0-8-0-0-16-0-0-0
+243,100,6,RequestNewWinCondition(),One more?,Inform(),Assume you demonstrate this win condition,Ruijie,5,4,Dmytro,,15-0-0-0-0-9-0-0-0-0-16-0-0-0-0-11
+243,100,7,"Context Switch, Confirm(User_ID=1, Rotate(90))","Switch to the fourth win you showed me, can I put the pieces on the other diagonal and maintain the win?",Affirm(),"Sure, you can do that.",Ruijie,1,4,Dmytro,"query is about the column, not the other diagonal.",0-0-0-6-0-0-3-0-0-1-0-0-7-0-0-0
+243,100,8,"Context Switch, Request(User_ID=1, Rotate)","Switch to the second win you showed me, can I rotate the pieces by a certain degree and maintain the win?",Inform([90]),"Sure, rotate the pieces by 90 degrees.",Ruijie,4,3,Dmytro,90 is always a column,0-0-0-8-0-0-14-0-0-10-0-0-12-0-0-0
+243,100,9,"Context Switch, Confirm(User_ID=1, AddPiece(0,2))","Back to the first win you showed me, is it still a win if I add one more piece on the second row?",Affirm(),"Yes, you can do that.",Ruijie,1,3,Dmytro,"the format is (row, column). ",12-0-0-0-2-0-0-0-10-0-0-0-8-0-0-0
+243,100,10,Finish(),"Thank you so much, I've learned enough.",Finish,You're welcome.,Ruijie,5,5,Dmytro,,12-0-0-0-2-0-0-0-10-0-0-0-8-0-0-0

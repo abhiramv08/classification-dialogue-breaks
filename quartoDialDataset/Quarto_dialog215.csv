@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+215,100,0,Start(),Can you teach me how to play Quarto?,Start,Sure!,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+215,100,1,RequestNewWinCondition(),Can you show me a win condition to start with?,Inform(),Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-13-0-0-0-5-0-0-0-16-0-0-0-6-0
+215,100,2,"Win Same {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}","Considering about the hollowness of pieces, is that the reason to win?",Negate(),"No, hollowness of pieces is not the reason to win.",Derek,5,5,Shaobo,,0-0-13-0-0-0-5-0-0-0-16-0-0-0-6-0
+215,100,3,RequestNewWinCondition(),Can you show me another win condition?,Inform(),Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-10-12-16-13
+215,100,4,"Context Switch, Confirm(User_ID=1, RemovePiece(0,2))","Let's go back to the first win condition, can I remove the piece at bottom and keep winning?",Negate(),"No, you can not do that.",Derek,5,5,Shaobo,,0-0-13-0-0-0-5-0-0-0-16-0-0-0-6-0
+215,100,5,"Context Switch, Confirm(User_ID=1, Color)","How about the second win condition, does the color of pieces make it win?",Negate(),No.,Derek,5,4,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-10-12-16-13
+215,100,6,"Win Context Switch {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}","Let's talk about the first win condition again, does the hollowness of all pieces make this board a win?",Negate(),No.,Derek,5,5,Shaobo,,0-0-13-0-0-0-5-0-0-0-16-0-0-0-6-0
+215,100,7,"Same , Confirm(User_ID=1, RemovePiece(1,2))",Will it still be a win condition if I remove the second piece from bottom?,Negate(),"No, it will no longer be a win.",Derek,5,5,Shaobo,,0-0-13-0-0-0-5-0-0-0-16-0-0-0-6-0
+215,100,8,"Same, Confirm(User_ID=1, Height)","How about the height of every piece, does it make this board a win?",Negate(),"No, the height pattern of all piece is not the reason to win.",Derek,5,4,Shaobo,,0-0-13-0-0-0-5-0-0-0-16-0-0-0-6-0
+215,100,9,RequestNewWinCondition(),Can you show me one more win condition?,Inform(),Assume you demonstrate this win condition,Derek,5,5,Shaobo,,9-0-0-0-0-16-0-0-0-0-13-0-0-0-0-11
+215,100,10,Finish(),Thanks! I learned a lot today! Bye!,Finish,Bye!,Derek,5,5,Shaobo,,9-0-0-0-0-16-0-0-0-0-13-0-0-0-0-11

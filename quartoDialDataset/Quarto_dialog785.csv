@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+785,60,0,Start(),"
+Hey I really want to learn playing Quarto, can you teach me?",Start,"Sure, let's start.",Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+785,60,1,RequestNewWinCondition(),Can you show me a win condition to start?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-1-0-0-11-0-0-9-0-0-12-0-0-0
+785,60,2,"Same, Confirm(User_ID=1, Color)",Is that a win because the color pattern of all pieces?,Negate(),"No, the shape of all pieces does not make it a win.",Derek,5,5,Shaobo,,0-0-0-1-0-0-11-0-0-9-0-0-12-0-0-0
+785,60,3,"Same, Confirm(User_ID=1, Color)",Is the color of pieces important for this win?,Negate(),I already said no.,Derek,5,5,Shaobo,,0-0-0-1-0-0-11-0-0-9-0-0-12-0-0-0
+785,60,4,"Same, Confirm(User_ID=1, Rotate(90))",Can I aline all pieces vertically and keep winning?,NotSure(),I am not sure.,Derek,4,5,Shaobo,,0-0-0-1-0-0-11-0-0-9-0-0-12-0-0-0
+785,60,5,"Same, Confirm(User_ID=1, Color)",Is the color of pieces important for this win?,NotSure(),"Sorry, I don't know.",Derek,5,5,Shaobo,,0-0-0-1-0-0-11-0-0-9-0-0-12-0-0-0
+785,60,6,"Same, Confirm(User_ID=1, Color)",Is that a win because the color pattern of all pieces?,Negate(),"If you really want to know, I guess it should be no.",Derek,5,5,Shaobo,,0-0-0-1-0-0-11-0-0-9-0-0-12-0-0-0
+785,60,7,"Same, Request(User_ID=1, Rotate)",Do you know how can I aline these pieces in different angle and keep winning?,Inform([90]),You can do it vertically.,Derek,4,5,Shaobo,,0-0-0-1-0-0-11-0-0-9-0-0-12-0-0-0
+785,60,8,"Same, Confirm(User_ID=1, Rotate(90))",Can I alline them vertically and still win.,Affirm(),Yes.,Derek,4,5,Shaobo,,0-0-0-1-0-0-11-0-0-9-0-0-12-0-0-0
+785,60,9,"Same, Confirm(User_ID=1, Color)",Is the color pattern the reason for this board to win?,Negate(),No. Their color are not identical.,Derek,5,5,Shaobo,,0-0-0-1-0-0-11-0-0-9-0-0-12-0-0-0
+785,60,10,RequestNewWinCondition(),Can you show me one more winning board?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-12-0-0-0-14-0-0-0-13-0-0-0-9
+785,60,11,Finish(),Thanks for your teaching today!,Finish,No problem.,Derek,5,5,Shaobo,,0-0-0-12-0-0-0-14-0-0-0-13-0-0-0-9

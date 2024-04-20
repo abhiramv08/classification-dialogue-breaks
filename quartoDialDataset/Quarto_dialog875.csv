@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+875,60,0,Start(),"Hi, will you please teach me Quarto?",Start,"Sure, let's start.",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+875,60,1,RequestNewWinCondition(),Please show me a win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-6-0-0-4-0-0-7-0-0-5-0-0-0
+875,60,2,"Same, Confirm(User_ID=1, Shape)",Is this a win because of the shape of the pieces?,Negate(),"No, that is not why. ",Anthony,5,5,Yiyen,,0-0-0-6-0-0-4-0-0-7-0-0-5-0-0-0
+875,60,3,"Same, Confirm(User_ID=1, Color)",Is this a win because of the color of the pieces?,Negate(),"No, that is not why either.",Anthony,5,5,Yiyen,,0-0-0-6-0-0-4-0-0-7-0-0-5-0-0-0
+875,60,4,"Same, Confirm(User_ID=1, Hollowness)","Well, is this a win because of the hollowness of the pieces?",Negate(),"Nope, try again. ",Anthony,5,5,Yiyen,,0-0-0-6-0-0-4-0-0-7-0-0-5-0-0-0
+875,60,5,RequestNewWinCondition(),Please show me a new win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-6-0-0-0-15-0-0-0-13-0-0-0-16-0-0
+875,60,6,"Same, Request(User_ID=1, Translate)",Now how could I shift these pieces?,"Inform(['col2', 'col3'])",You could move them to columns 2 or 3. ,Anthony,5,4,Yiyen,,0-6-0-0-0-15-0-0-0-13-0-0-0-16-0-0
+875,60,7,"Context Switch, Confirm(User_ID=1, Quantity)","Looking back to this board, is this a win because of the number of pieces?",Affirm(),"Yes, there must be four in a row. ",Anthony,4,5,Yiyen,,0-0-0-6-0-0-4-0-0-7-0-0-5-0-0-0
+875,60,8,RequestNewWinCondition(),Please show me a third win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-13-1-15-9
+875,60,9,"Context Switch, Confirm(User_ID=1, Rotate(90))","Looking back to this board, is it still a win if I rotate the pieces like this?",Affirm(),"Yes, that's fine. ",Anthony,5,5,Yiyen,,0-0-0-6-0-0-4-0-0-7-0-0-5-0-0-0
+875,60,10,Finish(),Thanks for the help! Bye!,Finish,See ya!,Anthony,5,5,Yiyen,,0-0-0-6-0-0-4-0-0-7-0-0-5-0-0-0

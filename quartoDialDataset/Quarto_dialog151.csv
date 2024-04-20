@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+151,100,0,Start(),I would like to learn how to play Quarto.,Start,"Sure, I can teach you.",Dmytro,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+151,100,1,RequestNewWinCondition(),Show me an example of how I can win.,Inform(),Assume you demonstrate this win condition,Dmytro,4,4,Luke,,0-8-0-0-0-7-0-0-0-5-0-0-0-16-0-0
+151,100,2,RequestNewWinCondition(),"Another one, please",Inform(),Assume you demonstrate this win condition,Dmytro,4,4,Luke,,0-0-0-16-0-0-3-0-0-15-0-0-11-0-0-0
+151,100,3,"Context Switch, RequestOtherPlayers()","Refering to the first board, what can another player do ?",Inform([]),Nothing; you win as soon as you get to that board.,Dmytro,4,5,Luke,,0-8-0-0-0-7-0-0-0-5-0-0-0-16-0-0
+151,100,4,"Context Switch, Request(User_ID=1, Rotate)","About the second board, how can I rotate the pieces ?",Inform([90]),You can place them in an anti-diagonal.,Dmytro,5,5,Luke,,0-0-0-16-0-0-3-0-0-15-0-0-11-0-0-0
+151,100,5,RequestNewWinCondition(),Show me another winning board.,Inform(),Assume you demonstrate this win condition,Dmytro,5,4,Luke,,0-0-0-12-0-0-9-0-0-2-0-0-4-0-0-0
+151,100,6,"Win Context Switch {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}",Is the hollowness of the pieces matter for this board to be a win ?,Affirm(),"Yes, it does.",Dmytro,5,4,Luke,,0-0-0-16-0-0-3-0-0-15-0-0-11-0-0-0
+151,100,7,"Context Switch, Confirm(User_ID=1, RemovePiece(3,3))","Going back to a board before, can I remove this piece (robot points to (3,3)) ?",Negate(),"No, you would not be able to win.",Dmytro,5,2,Luke,,0-0-0-12-0-0-9-0-0-2-0-0-4-0-0-0
+151,100,8,"Context Switch, RequestOtherPlayers()",Can another player make any moves in the first board example ?,Inform([]),"No, the game is over at that point.",Dmytro,5,4,Luke,,0-8-0-0-0-7-0-0-0-5-0-0-0-16-0-0
+151,100,9,"Context Switch, Confirm(User_ID=1, Shape)",Is the shape of the pieces a factor in this board here ?,Affirm(),"Yes, shape does contribute for it to be a win.",Dmytro,5,5,Luke,,0-0-0-12-0-0-9-0-0-2-0-0-4-0-0-0
+151,100,10,"Context Switch, Confirm(User_ID=1, RemovePiece(2,1))",Can I remove a piece (robot points) in the first board ?,Negate(),"No, removing that piece stops you from winning.",Dmytro,5,2,Luke,,0-8-0-0-0-7-0-0-0-5-0-0-0-16-0-0
+151,100,11,Finish(),"Alright, I learned Quarto.",Finish,"Sure, have fun.",Dmytro,4,3,Luke,,0-8-0-0-0-7-0-0-0-5-0-0-0-16-0-0

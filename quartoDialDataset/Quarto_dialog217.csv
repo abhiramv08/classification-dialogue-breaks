@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+217,100,0,Start(),"Hi, can you teach me how to play Quarto
+?",Start,"Sure, let's start.",Dmytro,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+217,100,1,RequestNewWinCondition(),Show me an example of a winning board please.,Inform(),Assume you demonstrate this win condition,Dmytro,5,5,Tianyi,,0-0-0-15-0-0-0-8-0-0-0-14-0-0-0-7
+217,100,2,RequestNewWinCondition(),Could you demonstrate another example ?,Inform(),Assume you demonstrate this win condition,Dmytro,5,5,Tianyi,,0-0-12-0-0-0-11-0-0-0-15-0-0-0-14-0
+217,100,3,"Context Switch, Confirm(User_ID=1, Quantity)","Going back to the first board, is the number of pieces what makes it a win here?",Affirm(),"Yep, that is correct.",Dmytro,5,5,Tianyi,,0-0-0-15-0-0-0-8-0-0-0-14-0-0-0-7
+217,100,4,"Same, Confirm(User_ID=1, Quantity)",So the number is what makes it a win ?,Affirm(),"Right, it is.",Dmytro,5,5,Tianyi,,0-0-0-15-0-0-0-8-0-0-0-14-0-0-0-7
+217,100,5,"Same, Confirm(User_ID=1, Rotate(135))",Can I win by placing the pieces on an anti-diagonal ?,Affirm(),"Yes, that works as well.",Dmytro,4,5,Tianyi,,0-0-0-15-0-0-0-8-0-0-0-14-0-0-0-7
+217,100,6,"Context Switch, Confirm(User_ID=1, AddPiece(2,0))","Going back to the last board example you showed, can I put a piece on the first column, left of the hollow green triangle ?",Affirm(),"Sure, your win still persists.",Dmytro,5,5,Tianyi,,0-0-12-0-0-0-11-0-0-0-15-0-0-0-14-0
+217,100,7,RequestNewWinCondition(),"Show me another example of a winning board, please",Inform(),Assume you demonstrate this win condition,Dmytro,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-4-10-8-14
+217,100,8,"Context Switch, Confirm(User_ID=1, Quantity)",Back to the first board; is the number of the pieces matter for it to be a win ?,Affirm(),"Yes, that is crucial here.",Dmytro,5,5,Tianyi,,0-0-0-15-0-0-0-8-0-0-0-14-0-0-0-7
+217,100,9,"Win Same {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}",Is it a win cause all pieces are hollow?,Negate(),"No, that's not a determining factor here.",Dmytro,5,4,Tianyi,,0-0-0-15-0-0-0-8-0-0-0-14-0-0-0-7
+217,100,10,Finish(),"Alright, thanks.",Finish,No problem.,Dmytro,5,4,Tianyi,,0-0-0-15-0-0-0-8-0-0-0-14-0-0-0-7

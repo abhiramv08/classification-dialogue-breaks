@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+278,50,0,Start(),Can you teach me how to play Quarto?,Start,Sure!,Derek,5,5,Tianyi,,4-0-0-0-0-5-0-0-0-0-3-0-0-0-0-2
+278,50,1,RequestNewWinCondition(),Please give me a win condition to start.,Inform,Assume you demonstrate this win condition,Derek,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-4-5-7-2
+278,50,2,"Same, Confirm(User_ID=1, Quantity)",Do I have to have four pieces to win?,NotSure(),It really depends. I am not sure about that.,Derek,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-4-5-7-2
+278,50,3,"Same, Confirm(User_ID=1, AddPiece(3,3))",Can I add a piece on the top right corner and keep winning?,NotSure(),"Again, it really depends.",Derek,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-4-5-7-2
+278,50,4,"Same, Confirm(User_ID=1, Quantity)",Do I have to have at least four pieces to win?,Affirm(),"If you say ""at least"", then you are correct.",Derek,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-4-5-7-2
+278,50,5,RequestNewWinCondition(),Can you give me another win condition?,Inform,Assume you demonstrate this win condition,Derek,5,5,Tianyi,,1-0-0-0-0-14-0-0-0-0-10-0-0-0-0-9
+278,50,6,RequestNewWinCondition(),Please show me one more win condition.,Inform,Assume you demonstrate this win condition,Derek,5,5,Tianyi,,11-0-0-0-0-9-0-0-0-0-10-0-0-0-0-2
+278,50,7,"Same, Request(User_ID=1, Rotate)","For the win condition you just showed me, how could I rotate it to some angel and keep winning?",Inform([90]),Yes you can rotate then at 90 digree and place them vertically.,Derek,4,5,Tianyi,,11-0-0-0-0-9-0-0-0-0-10-0-0-0-0-2
+278,50,8,"Context Switch, Confirm(User_ID=1, Quantity)",Switching to this win condition. Do I also need to have at least four pieces to win?,Affirm(),Correct.,Derek,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-4-5-7-2
+278,50,9,"Same, Confirm(User_ID=1, RemovePiece(0,3))","How about remove the piece at bottom right, is that still a win?",NotSure(),It really depends on how the board looks like.,Derek,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-4-5-7-2
+278,50,10,RequestNewWinCondition(),Please give me one more win condition.,Inform,Assume you demonstrate this win condition,Derek,5,5,Tianyi,,11-0-0-0-0-15-0-0-0-0-9-0-0-0-0-7
+278,50,11,"Same, Confirm(User_ID=1, AddPiece(0,2))",Can I add a piece on the left of the bottom right piece and still win?,Affirm(),Sure you can add any kind of piece there.,Derek,4,5,Tianyi,One block left can be more accurate.,11-0-0-0-0-15-0-0-0-0-9-0-0-0-0-7
+278,50,12,"Context Switch, Confirm(User_ID=1, AddPiece(3,2))",How about in this win condtition. Can I add a piece at the righe most spot in third row from bottom and keep winning.,Affirm(),Sure you can do that and keep winning.,Derek,2,5,Tianyi,It is at the third column and the top row.,0-0-0-0-0-0-0-0-0-0-0-0-4-5-7-2
+278,50,13,RequestNewWinCondition(),Please give me one more win condition.,Inform,Assume you demonstrate this win condition,Derek,5,5,Tianyi,,0-0-0-6-0-0-7-0-0-3-0-0-4-0-0-0
+278,50,14,"Context Switch, Confirm(User_ID=1, Color)","Switching to this board, is that a win because the color pattern of all pieces?",Negate(),Not it is not the reason this board is winning.,Derek,5,4,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-4-5-7-2
+278,50,15,Finish(),Thank you for teaching me Quarto! Bye!,Finish,Bye!,Derek,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-4-5-7-2

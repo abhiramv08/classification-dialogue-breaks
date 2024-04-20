@@ -1,0 +1,15 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+679,60,0,Start(),Hey! Can you teach me how to play Quarto?,Start,"Sure, let's do it!",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+679,60,1,RequestNewWinCondition(),Can you show me a win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-5-0-0-0-6-0-0-0-9-0-0-0-2-0
+679,60,2,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-14-8-2-10
+679,60,3,RequestNewWinCondition(),What about another win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,8-0-0-0-0-7-0-0-0-0-3-0-0-0-0-2
+679,60,4,"Same, Confirm(User_ID=1, Height)","Is it a win because the pieces are of the same height?
+",Affirm(),"Yes, that's correct!",Ruijie,5,5,Luke,,8-0-0-0-0-7-0-0-0-0-3-0-0-0-0-2
+679,60,5,"Context Switch, Confirm(User_ID=1, Shape)","Switch to this board, is it a win because the pieces are of the same shape?",Negate(),That’s just wrong.,Ruijie,5,5,Luke,,0-0-5-0-0-0-6-0-0-0-9-0-0-0-2-0
+679,60,6,"Context Switch, RequestOtherPlayers()","Switch to this board, can the other player undo this win?
+",Inform([]),"No, this win is absolute.",Ruijie,5,5,Luke,,8-0-0-0-0-7-0-0-0-0-3-0-0-0-0-2
+679,60,7,"Context Switch, Confirm(User_ID=1, Shape)","Switch to this board, is it a win because the pieces are of the same shape?
+",Negate(),"No, that’s not the reason.",Ruijie,5,5,Luke,,0-0-5-0-0-0-6-0-0-0-9-0-0-0-2-0
+679,60,8,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-3-0-0-9-0-0-10-0-0-11-0-0-0
+679,60,9,"Same, Confirm(User_ID=1, Quantity)",Is it a win because of the number of pieces?,Affirm(),"Yes, you’re right about that!",Ruijie,4,5,Luke,,0-0-0-3-0-0-9-0-0-10-0-0-11-0-0-0
+679,60,10,Finish(),Thanks! ,Finish,Pleasure is mine!,Ruijie,5,5,Luke,,0-0-0-3-0-0-9-0-0-10-0-0-11-0-0-0

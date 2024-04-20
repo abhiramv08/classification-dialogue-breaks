@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+157,100,0,Start(),Good day. Could you teach me how to play Quarto?,Start,Good day to you as well. I should be able to help you learn.,Jacob,,,,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+157,100,1,RequestNewWinCondition(),Could you please show me a winning board state?,Inform(),Assume you demonstrate this win condition,Jacob,,,,,1-0-0-0-0-2-0-0-0-0-5-0-0-0-0-9
+157,100,2,RequestNewWinCondition(),Thank you. May I see another?,Inform(),Assume you demonstrate this win condition,Jacob,,,,,0-0-0-0-0-0-0-0-0-0-0-0-4-12-10-8
+157,100,3,RequestNewWinCondition(),Might I see one more?,Inform(),Assume you demonstrate this win condition,Jacob,,,,,0-0-0-5-0-0-1-0-0-6-0-0-3-0-0-0
+157,100,4,"Win Same {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}",Does the hollowness of these pieces make this a win condition?,Negate(),"No, the hollowness of these pieces is irrelevant.",Jacob,,,,,0-0-0-5-0-0-1-0-0-6-0-0-3-0-0-0
+157,100,5,"Same, Request(User_ID=1, Translate)",In what ways could this pattern of pieces be moved to form a new win condition?,Inform([]),"While in this pattern, these pieces cannot be moved anywhere.",Jacob,,,,,0-0-0-5-0-0-1-0-0-6-0-0-3-0-0-0
+157,100,6,"Context Switch, Confirm(User_ID=1, AddPiece(3,1))","Regarding this board, would I still be victorious if a piece were placed at the top of the second column?",Affirm(),"Yes, a piece there would not affect how this board is a win.",Jacob,,,,,0-0-0-0-0-0-0-0-0-0-0-0-4-12-10-8
+157,100,7,"Context Switch, Request(User_ID=1, Rotate)",In what ways could the pattern on this board be rotated to yield a new win condition?,Inform([90]),"If these pieces were aligned vertically, you would have another win condition.",Jacob,,,,,1-0-0-0-0-2-0-0-0-0-5-0-0-0-0-9
+157,100,8,"Context Switch, Confirm(User_ID=1, Color)","On this board, do the colors of the peices matter?",Negate(),"No, these pieces could have any color.",Jacob,,,,,0-0-0-5-0-0-1-0-0-6-0-0-3-0-0-0
+157,100,9,"Same, Confirm(User_ID=1, Height)",What about the height? Is that an important part of this victory?,Affirm(),"Yes, the height of these pieces is paramount to this win condition.",Jacob,,,,,0-0-0-5-0-0-1-0-0-6-0-0-3-0-0-0
+157,100,10,"Same, Confirm(User_ID=1, Quantity)",Is the number of pieces important?,Affirm(),Yes.,Jacob,,,,,0-0-0-5-0-0-1-0-0-6-0-0-3-0-0-0
+157,100,11,Finish(),Thank you. I think I've learned enough now.,Finish,You're quite welcome. Goodbye.,Jacob,,,,,0-0-0-5-0-0-1-0-0-6-0-0-3-0-0-0

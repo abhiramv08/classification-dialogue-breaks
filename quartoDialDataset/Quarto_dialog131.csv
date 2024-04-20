@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+131,100,0,Start(),Can you please teach me the game of Quarto?,Start,"Yes, let's begin.",Anthony,5,5,Dmytro,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+131,100,1,RequestNewWinCondition(),Give me a win condition to consider.,Inform(),Assume you demonstrate this win condition,Anthony,3,3,Dmytro,Strange way to phrase this,16-0-0-0-0-15-0-0-0-0-8-0-0-0-0-14
+131,100,2,RequestNewWinCondition(),How about one more win condition?,Inform(),Assume you demonstrate this win condition,Anthony,4,3,Dmytro,,0-0-0-0-0-0-0-0-0-0-0-0-2-3-8-1
+131,100,3,"Context Switch, Confirm(User_ID=1, Quantity)","Okay, looking at the first win, is it because of how many pieces are on the board?",Affirm(),"Yes, the quantity is important here.",Anthony,5,5,Dmytro,,16-0-0-0-0-15-0-0-0-0-8-0-0-0-0-14
+131,100,4,RequestNewWinCondition(),"Okay, can you give me another win condition?",Inform(),Assume you demonstrate this win condition,Anthony,4,3,Dmytro,,13-0-0-0-0-9-0-0-0-0-15-0-0-0-0-1
+131,100,5,RequestNewWinCondition(),"Actually, can you please give another win condition?",Inform(),Assume you demonstrate this win condition,Anthony,4,2,Dmytro,,0-0-0-0-0-0-0-0-0-0-0-0-13-10-5-14
+131,100,6,"Context Switch, Confirm(User_ID=1, Color)","Looking at this win, is it because of the color of the pieces?",Negate(),No! That is not why.,Anthony,5,5,Dmytro,,16-0-0-0-0-15-0-0-0-0-8-0-0-0-0-14
+131,100,7,"Same, RequestOtherPlayers()",How can another player affect this win condition?,Inform([]),Another player cannot do anything to this win. ,Anthony,4,3,Dmytro,'affect this win condition' is hardly natural,16-0-0-0-0-15-0-0-0-0-8-0-0-0-0-14
+131,100,8,"Win Context Switch {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}",Is this a win because some pieces are hollow and others aren't?,Negate(),"No, that is not relevant.",Anthony,4,5,Dmytro,,13-0-0-0-0-9-0-0-0-0-15-0-0-0-0-1
+131,100,9,RequestNewWinCondition(),Please give me another win condition.,Inform(),Assume you demonstrate this win condition,Anthony,4,2,Dmytro,,0-0-0-4-0-0-8-0-0-3-0-0-16-0-0-0
+131,100,10,"Context Switch, Request(User_ID=1, Rotate)","Looking at this board, how can I rotate the pieces?",Inform([90]),You could move them straight up.,Anthony,2,4,Dmytro,'Moving them' is ambiguous.,16-0-0-0-0-15-0-0-0-0-8-0-0-0-0-14
+131,100,11,Finish(),"Wow, thanks for being so helpful.",Finish,No problem. Happy to help.,Anthony,5,5,Dmytro,,16-0-0-0-0-15-0-0-0-0-8-0-0-0-0-14

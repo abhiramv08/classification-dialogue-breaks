@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+205,100,0,Start(),Can you teach me how to play Quarto?,Start,Of course,Daniel,5,4,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+205,100,1,RequestNewWinCondition(),Can you show me a board where someone wins?,Inform(),Assume you demonstrate this win condition,Daniel,5,4,Luke,,8-0-0-0-0-13-0-0-0-0-15-0-0-0-0-7
+205,100,2,"Same, Request(User_ID=1, Translate)",Can I move these pieces and still win?,Inform([]),No you can't,Daniel,3,4,Luke,,8-0-0-0-0-13-0-0-0-0-15-0-0-0-0-7
+205,100,3,"Same, Confirm(User_ID=1, Height)",Is this a win because of the height of the pieces?,Negate(),No,Daniel,5,3,Luke,,8-0-0-0-0-13-0-0-0-0-15-0-0-0-0-7
+205,100,4,RequestNewWinCondition(),Can you show me a different way to win?,Inform(),Assume you demonstrate this win condition,Daniel,5,5,Luke,,0-6-0-0-0-12-0-0-0-16-0-0-0-10-0-0
+205,100,5,RequestNewWinCondition(),Can you show me another winning board please?,Inform(),Assume you demonstrate this win condition,Daniel,5,5,Luke,,15-0-0-0-0-10-0-0-0-0-13-0-0-0-0-16
+205,100,6,RequestNewWinCondition(),And another please?,Inform(),Assume you demonstrate this win condition,Daniel,3,3,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-5-8-7-13
+205,100,7,"Context Switch, Request(User_ID=1, Translate)",Can I move these pieces anywhere else and still win?,Inform([]),No,Daniel,2,4,Luke,,8-0-0-0-0-13-0-0-0-0-15-0-0-0-0-7
+205,100,8,"Context Switch, Confirm(User_ID=1, Height)",Is this a win because of the heights of the pieces?,Negate(),"No, there are different heights.",Daniel,5,3,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-5-8-7-13
+205,100,9,"Context Switch, Confirm(User_ID=1, Rotate(90))",Can I rotate the pieces to the other diagonal and still win?,Affirm(),Yes,Daniel,5,3,Luke,,8-0-0-0-0-13-0-0-0-0-15-0-0-0-0-7
+205,100,10,"Context Switch, Request(User_ID=1, Rotate)",How can I rotate these pieces and still win?,"Inform([45, 90])",You can rotate them diagonally or vertically.,Daniel,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-5-8-7-13
+205,100,11,"Same , Confirm(User_ID=1, RemovePiece(0,3))",If I remove the bottom right piece is this still a win?,Negate(),"No, you need all pieces",Daniel,3,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-5-8-7-13
+205,100,12,"Context Switch, Confirm(User_ID=1, Color)",Is this a win because of the color of the pieces?,Negate(),No,Daniel,5,3,Luke,,8-0-0-0-0-13-0-0-0-0-15-0-0-0-0-7
+205,100,13,"Same , Confirm(User_ID=1, Shape)",Is this a win because of the shape of the pieces?,Affirm(),"Yes, they're all circles.",Daniel,5,5,Luke,,8-0-0-0-0-13-0-0-0-0-15-0-0-0-0-7
+205,100,14,"Win Context Switch {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}",Is this a win because of the hollowness of the pieces?,Negate(),No,Daniel,5,3,Luke,,15-0-0-0-0-10-0-0-0-0-13-0-0-0-0-16
+205,100,15,Finish(),Thank you!,Finish,No problem!,Daniel,5,4,Luke,,15-0-0-0-0-10-0-0-0-0-13-0-0-0-0-16

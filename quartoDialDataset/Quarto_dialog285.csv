@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+285,50,0,Start(),Let's do some Quarto training.,Start,"Sure, let's begin.",Dmytro,5,5,Yiyan,,13-0-0-0-0-5-0-0-0-0-15-0-0-0-0-8
+285,50,1,RequestNewWinCondition(),Please show me one winning board example,Inform,Assume you demonstrate this win condition,Dmytro,5,5,Yiyan,,0-0-0-2-0-0-10-0-0-3-0-0-1-0-0-0
+285,50,2,"Same, RequestOtherPlayers()",Anything another player can do to not loose ?,Inform([]),No; you have won once you get a board like this.,Dmytro,3,2,Yiyan,lose is spelled wrong. Unatural. ,0-0-0-2-0-0-10-0-0-3-0-0-1-0-0-0
+285,50,3,"Same, Confirm(User_ID=1, Rotate(90))",Can I put the figures on this board on a first column ?,Affirm(),"Sure , that works as well.",Dmytro,5,5,Yiyan,,0-0-0-2-0-0-10-0-0-3-0-0-1-0-0-0
+285,50,4,RequestNewWinCondition(),Please provide me with another winning example.,Inform,Assume you demonstrate this win condition,Dmytro,5,5,Yiyan,,0-0-0-13-0-0-15-0-0-11-0-0-14-0-0-0
+285,50,5,"Same, Confirm(User_ID=1, Rotate(90))",What if I rotate the pieces to a column on this board ?,NotSure(),I can't tell for sure whether you will still win,Dmytro,5,4,Yiyan,,0-0-0-13-0-0-15-0-0-11-0-0-14-0-0-0
+285,50,6,RequestNewWinCondition(),Please show me another winning board,Inform,Assume you demonstrate this win condition,Dmytro,5,5,Yiyan,,0-0-0-0-0-0-0-0-0-0-0-0-13-7-8-15
+285,50,7,"Context Switch, Confirm(User_ID=1, Height)","Going back to the board you showed earlier, are figures' height important ?",Negate(),"No, height is irrelevant here.",Dmytro,5,5,Yiyan,,0-0-0-2-0-0-10-0-0-3-0-0-1-0-0-0
+285,50,8,"Context Switch, Confirm(User_ID=1, Hollowness)","Let's go back to this interesting example you showed me, is the hollowness of the 2 figures in the center mean it's a win ?",NotSure(),I am not certain about that.,Dmytro,5,3,Yiyan,,0-0-0-13-0-0-15-0-0-11-0-0-14-0-0-0
+285,50,9,"Context Switch, Confirm(User_ID=1, Rotate(45))","Regarding another board, can I put figures here on a diagonal ?",NotSure(),"You might, I don't quite know",Dmytro,5,5,Yiyan,,0-0-0-0-0-0-0-0-0-0-0-0-13-7-8-15
+285,50,10,RequestNewWinCondition(),"Ok, can you show another winning board example?",Inform,Assume you demonstrate this win condition,Dmytro,5,5,Yiyan,,0-7-0-0-0-14-0-0-0-8-0-0-0-16-0-0
+285,50,11,"Same, Confirm(User_ID=1, Color)",Is it the color of the figures that make it a win ?,NotSure(),I am uncertain of the role of color in this board setup.,Dmytro,5,4,Yiyan,,0-7-0-0-0-14-0-0-0-8-0-0-0-16-0-0
+285,50,12,RequestNewWinCondition(),Could you do one more example of a board ?,Inform,Assume you demonstrate this win condition,Dmytro,4,4,Yiyan,,0-0-0-8-0-0-0-15-0-0-0-4-0-0-0-11
+285,50,13,"Context Switch, Confirm(User_ID=1, Hollowness)","Speaking of this other board, is it a win because of the symmetry in the figures' hollowness ?",NotSure(),"Having hard time answering that, I don't know.",Dmytro,4,5,Yiyan,,0-0-0-13-0-0-15-0-0-11-0-0-14-0-0-0
+285,50,14,RequestNewWinCondition(),Can you provide me with another win example ?,Inform,Assume you demonstrate this win condition,Dmytro,5,5,Yiyan,,0-0-0-1-0-0-10-0-0-5-0-0-6-0-0-0
+285,50,15,Finish(),"Ok, I am ready",Finish,awesome,Dmytro,5,5,Yiyan,,0-0-0-1-0-0-10-0-0-5-0-0-6-0-0-0

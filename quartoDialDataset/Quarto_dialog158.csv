@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+158,100,0,Start(),I'd like to know how to play Quarto. Could you teach me?,Start,Sure. Where would you like to start?,Jacob,,,,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+158,100,1,RequestNewWinCondition(),Can you show me one way to win the game?,Inform(),Assume you demonstrate this win condition,Jacob,,,,,0-0-0-0-0-0-0-0-0-0-0-0-16-5-8-15
+158,100,2,"Same, Confirm(User_ID=1, Rotate(90))","If these pieces lay vertically, would this still be a win?",Affirm(),Yes.,Jacob,,,,,0-0-0-0-0-0-0-0-0-0-0-0-16-5-8-15
+158,100,3,"Same, Confirm(User_ID=1, Rotate(90))","So, to clarify, these pieces could be aligned vertically for a win?",Affirm(),"Yes, precisely.",Jacob,,,,,0-0-0-0-0-0-0-0-0-0-0-0-16-5-8-15
+158,100,4,"Same, Request(User_ID=1, Translate)",In which rows could these pieces be placed to form a new winning board?,"Inform(['row1', 'row2', 'row3'])",These pieces could be placed in any row.,Jacob,,,,,0-0-0-0-0-0-0-0-0-0-0-0-16-5-8-15
+158,100,5,"Same, Request(User_ID=1, Translate)","I'm sorry, I didn't catch that. In what rows could these pieces lie?","Inform(['row1', 'row2', 'row3'])","As I said, any row would do.",Jacob,,,,,0-0-0-0-0-0-0-0-0-0-0-0-16-5-8-15
+158,100,6,RequestNewWinCondition(),"Okay, thank you. Could you show me another winning board?",Inform(),Assume you demonstrate this win condition,Jacob,,,,,0-0-0-15-0-0-14-0-0-16-0-0-6-0-0-0
+158,100,7,"Context Switch, Confirm(User_ID=1, Color)","Going back to this board, are the colors of the pieces important here?",Negate(),No. These pieces could be any color.,Jacob,,,,,0-0-0-0-0-0-0-0-0-0-0-0-16-5-8-15
+158,100,8,RequestNewWinCondition(),Can you show me another win condition?,Inform(),Assume you demonstrate this win condition,Jacob,,,,,0-0-0-11-0-0-3-0-0-2-0-0-12-0-0-0
+158,100,9,"Context Switch, Confirm(User_ID=1, Shape)",Are the shapes of the pieces on this board important to its winning?,Affirm(),"Yes, it is vital that these pieces all have the shape they do.",Jacob,,,,,0-0-0-15-0-0-14-0-0-16-0-0-6-0-0-0
+158,100,10,"Context Switch, Confirm(User_ID=1, AddPiece(1,0))","If a piece were placed second from the bottom in the first column on this board here, would this still constitute a win?",Affirm(),"Yes, a piece there will not affect the win condition.",Jacob,,,,,0-0-0-11-0-0-3-0-0-2-0-0-12-0-0-0
+158,100,11,"Same, Request(User_ID=1, Rotate)",In what ways could this pattern be rotated to yield a new win condition?,Inform([90]),"Aligned vertically, these pieces would still constitute a victory.",Jacob,,,,,0-0-0-11-0-0-3-0-0-2-0-0-12-0-0-0
+158,100,12,RequestNewWinCondition(),Could you show me another win condition?,Inform(),Assume you demonstrate this win condition,Jacob,,,,,0-0-16-0-0-0-3-0-0-0-8-0-0-0-4-0
+158,100,13,"Context Switch, Confirm(User_ID=1, Shape)","In regards to this board, do the shapes of the pieces contribute to victory?",Affirm(),Yes. It is imperative that all of these pieces share the same shape.,Jacob,,,,,0-0-0-0-0-0-0-0-0-0-0-0-16-5-8-15
+158,100,14,"Context Switch, RequestOtherPlayers()",What actions could another player take on this board to prevent my victory?,Inform([]),No actions here could prevent your victory.,Jacob,,,,,0-0-0-11-0-0-3-0-0-2-0-0-12-0-0-0
+158,100,15,Finish(),I think I've learned enough now. Thank you for your time.,Finish,You're welcome. Goodbye.,Jacob,,,,,0-0-0-11-0-0-3-0-0-2-0-0-12-0-0-0

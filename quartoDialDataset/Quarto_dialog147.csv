@@ -1,0 +1,16 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+147,100,0,Start(),Can you teach me how to play Quarto?,Start,Sure!,Derek,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+147,100,1,RequestNewWinCondition(),Can you show me a win condition to start?,Inform(),Assume you demonstrate this win condition,Derek,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-3-9-13-15
+147,100,2,RequestNewWinCondition(),Please show me another win codition.,Inform(),Assume you demonstrate this win condition,Derek,4,5,John,Spelling mistake,0-0-0-0-0-0-0-0-0-0-0-0-10-14-9-15
+147,100,3,"Context Switch, Confirm(User_ID=1, Rotate(90))",For the first win condition. Can I place pieces vertically and keep winning?,Affirm(),Yes!,Derek,3,4,John,I would specify which column they are vertical in since the 90 degree rotation means the first column,0-0-0-0-0-0-0-0-0-0-0-0-3-9-13-15
+147,100,4,"Context Switch, Confirm(User_ID=1, Color)","For the second win condition, is that a win because of the color?",Negate(),No.,Derek,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-10-14-9-15
+147,100,5,"Win Context Switch {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}","For the first win condition, is that a win because the hollowness of pieces?",Negate(),No.,Derek,5,4,John,maybe add a little more to the user responses,0-0-0-0-0-0-0-0-0-0-0-0-3-9-13-15
+147,100,6,"Same, Confirm(User_ID=1, Rotate(90))","If I set pieces vertically, is that still a win condition?",Affirm(),"Yes, it will still be a win.",Derek,3,5,John,"Specify which column specifically, since a 90 degree rotation is only the first column",0-0-0-0-0-0-0-0-0-0-0-0-3-9-13-15
+147,100,7,RequestNewWinCondition(),Can you show me a new win condition.,Inform(),Assume you demonstrate this win condition,Derek,5,5,John,,0-0-0-11-0-0-3-0-0-5-0-0-9-0-0-0
+147,100,8,RequestNewWinCondition(),Please show me one more win condition.,Inform(),Assume you demonstrate this win condition,Derek,5,5,John,,0-0-0-9-0-0-10-0-0-16-0-0-15-0-0-0
+147,100,9,"Context Switch, RequestOtherPlayers()","Let's go back to the first win condition, can another player prevent this win?",Inform([]),No.,Derek,5,4,John,,0-0-0-0-0-0-0-0-0-0-0-0-3-9-13-15
+147,100,10,"Same , Confirm(User_ID=1, Shape)",Is that a win because the shape of pieces?,Negate(),No.,Derek,5,4,John,,0-0-0-0-0-0-0-0-0-0-0-0-3-9-13-15
+147,100,11,RequestNewWinCondition(),Can you show me another win condition?,Inform(),Assume you demonstrate this win condition,Derek,5,5,John,,2-0-0-0-10-0-0-0-12-0-0-0-16-0-0-0
+147,100,12,"Context Switch, Confirm(User_ID=1, AddPiece(1,3))","For the fourth win condition, can I add a piece at (1,3) and keep winning?",Affirm(),Yes you can do that.,Derek,5,3,John,Expressing a position as a tuple doesn't seem natural to me,0-0-0-9-0-0-10-0-0-16-0-0-15-0-0-0
+147,100,13,"Context Switch, Confirm(User_ID=1, AddPiece(2,2))","Can I add a piece at (2,2) in first win condition and keep winning?",Affirm(),Yes.,Derek,5,3,John,"Once again, I don't think a tuple of coordinates is necessarily natural, especially on an unlabeled board",0-0-0-0-0-0-0-0-0-0-0-0-3-9-13-15
+147,100,14,Finish(),Thanks for teaching me today! Bye!,Finish,No probelm!,Derek,4,5,John,Spelling error in user response,0-0-0-0-0-0-0-0-0-0-0-0-3-9-13-15

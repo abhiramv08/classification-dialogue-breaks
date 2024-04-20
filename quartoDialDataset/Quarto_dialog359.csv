@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+359,50,0,Start(),"Hi, do you think you can show me how to play Quarto?",Start,"Sure thing, let's get started.",Jason,5,5,Dave,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+359,50,1,RequestNewWinCondition(),Can you show me an example of what a win looks like?,Inform,Assume you demonstrate this win condition,Jason,5,5,Dave,,6-0-0-0-0-15-0-0-0-0-7-0-0-0-0-13
+359,50,2,RequestNewWinCondition(),Can you show me another example of a win?,Inform,Assume you demonstrate this win condition,Jason,5,5,Dave,,0-0-0-0-0-0-0-0-0-0-0-0-13-15-14-11
+359,50,3,"Same, Confirm(User_ID=1, Quantity)","Sticking with the win you just showed me, is it a win because of the number of pieces?",Affirm(),"Yes, the number of pieces has to do with why it's a win.",Jason,5,5,Dave,,0-0-0-0-0-0-0-0-0-0-0-0-13-15-14-11
+359,50,4,RequestNewWinCondition(),Can you show me another example of a win in Quarto?,Inform,Assume you demonstrate this win condition,Jason,5,4,Dave,,0-0-0-16-0-0-11-0-0-3-0-0-8-0-0-0
+359,50,5,"Context Switch, Request(User_ID=1, Rotate)","Switching to this board here, how could you rotate these pieces and still have a win?",Inform([90]),"You could rotate them so that they fit in the first column, vertically.",Jason,5,4,Dave,,6-0-0-0-0-15-0-0-0-0-7-0-0-0-0-13
+359,50,6,"Context Switch, Confirm(User_ID=1, Shape)",Let's switch to this board now. Is the shape of the pieces the reason why it's a win?,NotSure(),"Hmm, I'm not sure.",Jason,5,5,Dave,,0-0-0-16-0-0-11-0-0-3-0-0-8-0-0-0
+359,50,7,RequestNewWinCondition(),Can you show me another example of a win in Quarto?,Inform,Assume you demonstrate this win condition,Jason,5,4,Dave,,0-0-0-0-0-0-0-0-0-0-0-0-1-6-5-9
+359,50,8,"Same, Confirm(User_ID=1, Hollowness)","With the win you just showed me, is it a valid win because of the hollowness of the pieces?",NotSure(),I'm not sure.,Jason,5,4,Dave,,0-0-0-0-0-0-0-0-0-0-0-0-1-6-5-9
+359,50,9,"Context Switch, Confirm(User_ID=1, Height)","Switching to this board here, is it a win because of the height of the pieces?",NotSure(),I'm not too sure about that either.,Jason,5,4,Dave,,6-0-0-0-0-15-0-0-0-0-7-0-0-0-0-13
+359,50,10,"Same, Confirm(User_ID=1, Color)","Looking at the same win you just showed me, is it considered a valid win because of the color of the pieces?",NotSure(),"Honestly, I'm not sure.",Jason,5,4,Dave,,6-0-0-0-0-15-0-0-0-0-7-0-0-0-0-13
+359,50,11,"Same, Confirm(User_ID=1, AddPiece(1,1))","With the same win, could you add a piece to the left of the dashed green circle and still have a win?",Affirm(),"Yes, you'd still have a win.",Jason,5,5,Dave,,6-0-0-0-0-15-0-0-0-0-7-0-0-0-0-13
+359,50,12,"Context Switch, RequestOtherPlayers()","Switching to this board, are there any possible moves that someone could make and still have a win?",Inform([]),"No, there are no possible moves that can be made.",Jason,4,4,Dave,,0-0-0-0-0-0-0-0-0-0-0-0-13-15-14-11
+359,50,13,RequestNewWinCondition(),Can you show me another example of a win in Quarto?,Inform,Assume you demonstrate this win condition,Jason,5,4,Dave,,9-0-0-0-0-15-0-0-0-0-16-0-0-0-0-14
+359,50,14,RequestNewWinCondition(),Can you show me another example?,Inform,Assume you demonstrate this win condition,Jason,5,3,Dave,,0-0-0-16-0-0-2-0-0-10-0-0-6-0-0-0
+359,50,15,Finish(),Alright I think I know enough to play now. Thank you!,Finish,"Of course, have a good one!",Jason,5,5,Dave,,0-0-0-16-0-0-2-0-0-10-0-0-6-0-0-0

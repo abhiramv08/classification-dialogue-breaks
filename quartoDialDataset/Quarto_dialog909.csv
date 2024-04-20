@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+909,60,0,Start(),Hi will you please teach me how to play Quarto?,Start,Yea sure.,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+909,60,1,RequestNewWinCondition(),Please show me a new win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,11-0-0-0-0-12-0-0-0-0-16-0-0-0-0-3
+909,60,2,RequestNewWinCondition(),Please show me another win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,9-0-0-0-0-2-0-0-0-0-12-0-0-0-0-4
+909,60,3,"Same, Confirm(User_ID=1, Height)",Is this a win because of the height of the pieces?,Negate(),"No, there must be another reason. ",Anthony,5,5,Yiyen,,9-0-0-0-0-2-0-0-0-0-12-0-0-0-0-4
+909,60,4,"Same, Confirm(User_ID=1, Hollowness)","Well, is it because of the hollowness of the pieces?",NotSure(),"I'm not sure, sorry. ",Anthony,5,5,Yiyen,,9-0-0-0-0-2-0-0-0-0-12-0-0-0-0-4
+909,60,5,"Same, Confirm(User_ID=1, RemovePiece(2,1))",Could I remove the piece here and still maintain this win?,Negate(),"No, that piece is important.",Anthony,3,5,Yiyen,,9-0-0-0-0-2-0-0-0-0-12-0-0-0-0-4
+909,60,6,"Same, Confirm(User_ID=1, Shape)",Is this a win condition because of the shape of the pieces?,Affirm(),"Yes, they are all triangles. ",Anthony,5,5,Yiyen,,9-0-0-0-0-2-0-0-0-0-12-0-0-0-0-4
+909,60,7,"Context Switch, Confirm(User_ID=1, Quantity)","Looking at this board, is this a win because of the number of pieces on the board?",Affirm(),"Yes, exactly.",Anthony,5,5,Yiyen,,11-0-0-0-0-12-0-0-0-0-16-0-0-0-0-3
+909,60,8,"Context Switch, Confirm(User_ID=1, Color)","Looking at this board now, is this a win because of the color of the pieces?",Negate(),"No, the color has to be the same for that to be the case. ",Anthony,5,5,Yiyen,,9-0-0-0-0-2-0-0-0-0-12-0-0-0-0-4
+909,60,9,"Context Switch, Confirm(User_ID=1, RemovePiece(2,1))","Let's look at this board now, could I remove the piece here?",Negate(),"No, that would undo this win. ",Anthony,3,5,Yiyen,,11-0-0-0-0-12-0-0-0-0-16-0-0-0-0-3
+909,60,10,Finish(),"Okay, I'm done for now. Bye.",Finish,See you later.,Anthony,5,5,Yiyen,,11-0-0-0-0-12-0-0-0-0-16-0-0-0-0-3

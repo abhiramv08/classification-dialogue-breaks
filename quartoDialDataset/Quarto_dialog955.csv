@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+955,60,0,Start(),"Hi, will you teach me Quarto?",Start,Sure.,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+955,60,1,RequestNewWinCondition(),Please show me a new win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,8-0-0-0-0-14-0-0-0-0-4-0-0-0-0-12
+955,60,2,"Same, Confirm(User_ID=1, Color)",Is this a win because of the color of the pieces?,Affirm(),"Yes, that's why. They're all blue.",Anthony,5,5,Yiyen,,8-0-0-0-0-14-0-0-0-0-4-0-0-0-0-12
+955,60,3,RequestNewWinCondition(),Please give me another win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-7-0-0-0-11-0-0-0-4-0-0-0-16
+955,60,4,"Same, RequestOtherPlayers()",How can another player affect this win?,Inform([]),They cannot.,Anthony,5,5,Yiyen,,0-0-0-7-0-0-0-11-0-0-0-4-0-0-0-16
+955,60,5,"Context Switch, Confirm(User_ID=1, AddPiece(3,2))","Looking at this board, can I add a piece here?",NotSure(),"I'm not sure, sorry.",Anthony,2,5,Yiyen,Not specify the location of the piece. Or do you mean you are pointing to that location?,8-0-0-0-0-14-0-0-0-0-4-0-0-0-0-12
+955,60,6,RequestNewWinCondition(),Please show me another win.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-7-15-11-4
+955,60,7,"Context Switch, Confirm(User_ID=1, AddPiece(2,3))","Looking at this board, can I add a piece in this spot?",Affirm(),"Yes, absolutely. ",Anthony,3,5,Yiyen,Still the same issue,8-0-0-0-0-14-0-0-0-0-4-0-0-0-0-12
+955,60,8,RequestNewWinCondition(),Please show me one more win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,5-0-0-0-0-13-0-0-0-0-9-0-0-0-0-6
+955,60,9,"Same, Confirm(User_ID=1, Hollowness)",Is this a win because of the hollowness of the pieces?,Affirm(),Exactly. That's correct. ,Anthony,5,5,Yiyen,,5-0-0-0-0-13-0-0-0-0-9-0-0-0-0-6
+955,60,10,"Context Switch, Confirm(User_ID=1, Height)","Switching to this board, is it a win because of the height of the pieces?",Negate(),"No, height is not why. ",Anthony,5,4,Yiyen,Not why sounds little strange,0-0-0-7-0-0-0-11-0-0-0-4-0-0-0-16
+955,60,11,Finish(),"Okay, thanks!",Finish,No problem!,Anthony,5,5,Yiyen,,0-0-0-7-0-0-0-11-0-0-0-4-0-0-0-16

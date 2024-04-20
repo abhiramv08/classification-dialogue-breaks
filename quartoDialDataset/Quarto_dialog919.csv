@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+919,60,0,Start(),Would you mind showing me how to play Quarto?,Start,It would be my pleasure.,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+919,60,1,RequestNewWinCondition(),Please show me a new win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-5-0-0-16-0-0-15-0-0-14-0-0-0
+919,60,2,RequestNewWinCondition(),Please show me another new win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-11-0-0-0-16-0-0-0-15-0-0-0-4
+919,60,3,"Context Switch, Confirm(User_ID=1, Shape)","Switching over to this board, is the shape of the pieces why this is a win?",NotSure(),I'm not sure about that.,Anthony,5,5,Yiyen,,0-0-0-5-0-0-16-0-0-15-0-0-14-0-0-0
+919,60,4,"Context Switch, Confirm(User_ID=1, Hollowness)","Looking at this board, is the hollowness of all the pieces why this is a win?",Affirm(),"Yes, they are all the same consistency.",Anthony,5,4,Yiyen,,0-0-0-11-0-0-0-16-0-0-0-15-0-0-0-4
+919,60,5,"Same, Confirm(User_ID=1, Height)",Is this a win because of the pieces' height then too?,NotSure(),"That, I'm not sure about. ",Anthony,5,5,Yiyen,,0-0-0-11-0-0-0-16-0-0-0-15-0-0-0-4
+919,60,6,"Same, RequestOtherPlayers()",How could another player affect this win?,Inform([]),There's nothing they could do. ,Anthony,5,5,Yiyen,,0-0-0-11-0-0-0-16-0-0-0-15-0-0-0-4
+919,60,7,"Same, Confirm(User_ID=1, Rotate(135))",Could I rotate the pieces like this?,Affirm(),"Yes, that's absolutely fine.",Anthony,3,5,Yiyen,,0-0-0-11-0-0-0-16-0-0-0-15-0-0-0-4
+919,60,8,"Same, Confirm(User_ID=1, Translate([0, 0]))",Could I shift the pieces over like this?,NotSure(),"I don't know, ask a different question.",Anthony,3,5,Yiyen,,0-0-0-11-0-0-0-16-0-0-0-15-0-0-0-4
+919,60,9,"Same, Confirm(User_ID=1, Color)","Well, is this a win because of the pieces' color?",Negate(),"No, that's not why. ",Anthony,5,5,Yiyen,,0-0-0-11-0-0-0-16-0-0-0-15-0-0-0-4
+919,60,10,"Same, Confirm(User_ID=1, Quantity)",Is this win due to the number of pieces on the board?,Affirm(),"Yes, there are four here.",Anthony,5,5,Yiyen,,0-0-0-11-0-0-0-16-0-0-0-15-0-0-0-4
+919,60,11,Finish(),Thanks for the help!,Finish,You're welcome!,Anthony,5,5,Yiyen,,0-0-0-11-0-0-0-16-0-0-0-15-0-0-0-4

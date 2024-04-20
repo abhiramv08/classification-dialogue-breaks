@@ -1,0 +1,16 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+673,60,0,Start(),Hello! Can you show me how to play Quarto?,Start,"Yes, shall we begin?",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+673,60,1,RequestNewWinCondition(),Can you show me what a win condition looks like?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-5-6-16-7
+673,60,2,"Same, Confirm(User_ID=1, Quantity)",Is it a win because of the number of pieces?,Affirm(),"Yes, you’re right about that.",Ruijie,4,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-5-6-16-7
+673,60,3,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-15-5-13-11
+673,60,4,"Context Switch, Request(User_ID=1, Translate)","Switch to this board, can I put the pieces somewhere else?","Inform(['row1', 'row2', 'row3'])","Yup, you can put them on the first, the second or the third row.",Ruijie,3,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-5-6-16-7
+673,60,5,"Context Switch, Confirm(User_ID=1, Rotate(90))","Switch to this board, can I rotate the pieces by ninety degrees?
+",Affirm(),"Sure, you can do that.",Ruijie,5,4,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-15-5-13-11
+673,60,6,"Context Switch, Confirm(User_ID=1, Hollowness)","Switch to this board, does the hollowness of the pieces make it a win?
+",Negate(),"No, that’s not the reason.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-5-6-16-7
+673,60,7,"Same, Confirm(User_ID=1, Hollowness)","Does the hollowness of the pieces make it a win?
+",Negate(),"No, it’s unrelated.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-5-6-16-7
+673,60,8,"Same, Confirm(User_ID=1, Hollowness)","Does the hollowness of the pieces make it a win?
+",Negate(),"No, that's not the reason.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-5-6-16-7
+673,60,9,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-10-0-0-14-0-0-4-0-0-6-0-0-0
+673,60,10,Finish(),"Thanks, I've learned a lot.",Finish,You are very welcome!,Ruijie,5,5,Luke,,0-0-0-10-0-0-14-0-0-4-0-0-6-0-0-0

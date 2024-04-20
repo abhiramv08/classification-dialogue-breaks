@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+876,60,0,Start(),"Hi, can you teach me how to play this game, Quarto>",Start,"Sure, we should start now.",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+876,60,1,RequestNewWinCondition(),Please show me a win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-10-12-14-9
+876,60,2,RequestNewWinCondition(),Can I have another win as well. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-11-8-4-15
+876,60,3,RequestNewWinCondition(),"Maybe one more win condition, please?",Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,9-0-0-0-0-4-0-0-0-0-1-0-0-0-0-2
+876,60,4,"Same, Confirm(User_ID=1, Shape)",Is this board a win because of the shape of the pieces?,Affirm(),"Yes, since they are all triangles. ",Anthony,5,5,Yiyen,,9-0-0-0-0-4-0-0-0-0-1-0-0-0-0-2
+876,60,5,RequestNewWinCondition(),Please show me another win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-8-0-0-0-15-0-0-0-3-0-0-0-4-0
+876,60,6,"Context Switch, Confirm(User_ID=1, RemovePiece(1,2))","Looking back to this board, is it okay if I were to remove this piece?",NotSure(),"I'm not sure, certain.",Anthony,3,3,Yiyen,,9-0-0-0-0-4-0-0-0-0-1-0-0-0-0-2
+876,60,7,"Context Switch, Confirm(User_ID=1, Hollowness)","Switching over to this board, is this a win because of the hollowness of the pieces?",Affirm(),"Yes, they are all hollow.",Anthony,5,5,Yiyen,,0-0-8-0-0-0-15-0-0-0-3-0-0-0-4-0
+876,60,8,"Context Switch, RequestOtherPlayers()","Looking at this board, how could another player undo this win?",Inform([]),Nothing. There is nothing they could do. ,Anthony,5,4,Yiyen,,9-0-0-0-0-4-0-0-0-0-1-0-0-0-0-2
+876,60,9,"Context Switch, Request(User_ID=1, Translate)","Switching over to this board, how could I shift these pieces?","Inform(['row1', 'row2', 'row3'])",You could move them up to any row. ,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-11-8-4-15
+876,60,10,Finish(),Thanks for the help!,Finish,"My pleasure, bye!",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-11-8-4-15

@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+564,60,0,Start(),"Hello, can you teach me how to play Quarto?",Start,"Sure, let's begin.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+564,60,1,RequestNewWinCondition(),Great. Could you firstly show me a win condition?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-6-1-5-9
+564,60,2,RequestNewWinCondition(),Is there any other way to win the game?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-15-0-0-4-0-0-11-0-0-3-0-0-0
+564,60,3,RequestNewWinCondition(),Could you please show me one more win scenario?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-7-0-0-0-6-0-0-0-14-0-0-0-15
+564,60,4,"Context Switch, Confirm(User_ID=1, Quantity)","Let's switch to the previous board, is it a win because of the number of the pieces?",Affirm(),"Yes, you must have at least four pieces in order to win.",Yiyan,5,5,Tianyi,,0-0-0-15-0-0-4-0-0-11-0-0-3-0-0-0
+564,60,5,"Context Switch, Confirm(User_ID=1, Rotate(90))","Let's take a look at this win case, will it become another win condition if I rotate the pieces to the first column?",Affirm(),"Yes, it will.",Yiyan,5,4,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-6-1-5-9
+564,60,6,"Same, Confirm(User_ID=1, AddPiece(2,3))","Still for this example, can I get another win by adding a piece on the last position of the third row?",NotSure(),"I guess so, but I am not sure.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-6-1-5-9
+564,60,7,RequestNewWinCondition(),Can you show me another way to win the game?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,6-0-0-0-0-4-0-0-0-0-16-0-0-0-0-2
+564,60,8,"Context Switch, Request(User_ID=1, Translate)","Let's turn to this board, how can I shift the pieces while maintaining this win?","Inform(['col1', 'col2'])",You can shift the pieces to the second or the third column.,Yiyan,5,5,Tianyi,,0-0-0-7-0-0-0-6-0-0-0-14-0-0-0-15
+564,60,9,"Context Switch, Confirm(User_ID=1, Color)","Let's consider this example,  does the color of the pieces affect the win condition?",Affirm(),"Yes, you can win by having four pieces with the same color",Yiyan,5,5,Tianyi,,6-0-0-0-0-4-0-0-0-0-16-0-0-0-0-2
+564,60,10,Finish(),"That's all the information I want to know, thank you.",Finish,"You are welcome.
+",Yiyan,5,5,Tianyi,,6-0-0-0-0-4-0-0-0-0-16-0-0-0-0-2

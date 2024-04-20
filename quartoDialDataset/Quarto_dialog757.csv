@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+757,60,0,Start(),"Hey I really want to learn playing Quarto, can you teach me?",Start,Definately.,Derek,4,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+757,60,1,RequestNewWinCondition(),Can you show me a win condition to start?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,2-0-0-0-1-0-0-0-3-0-0-0-6-0-0-0
+757,60,2,RequestNewWinCondition(),Please show me one more win condition.,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-10-0-0-13-0-0-15-0-0-11-0-0-0
+757,60,3,"Same, Request(User_ID=1, Rotate)",How could I line these pieces in different angle and keep winning?,Inform([90]),You can line them vertically.,Derek,5,5,Shaobo,,0-0-0-10-0-0-13-0-0-15-0-0-11-0-0-0
+757,60,4,"Same, Confirm(User_ID=1, RemovePiece(1,1))",Can I remove the second piece from bottom and keep winning?,Negate(),"No, you will break the win if you do so.",Derek,5,5,Shaobo,,0-0-0-10-0-0-13-0-0-15-0-0-11-0-0-0
+757,60,5,"Same, Confirm(User_ID=1, Quantity)",Is that means I need to have four pieces to win?,Affirm(),Correct!,Derek,4,5,Shaobo,,0-0-0-10-0-0-13-0-0-15-0-0-11-0-0-0
+757,60,6,RequestNewWinCondition(),Please show me one more win condition.,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,1-0-0-0-0-13-0-0-0-0-3-0-0-0-0-9
+757,60,7,"Same, RequestOtherPlayers()",How could another player undo this win?,Inform([]),There is nothing another player could do to prevent this win.,Derek,5,5,Shaobo,,1-0-0-0-0-13-0-0-0-0-3-0-0-0-0-9
+757,60,8,RequestNewWinCondition(),Please show me one more win condition.,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-2-4-10-9
+757,60,9,"Same, Confirm(User_ID=1, Color)",Is that a win because the color pattern of all pieces?,Negate(),"No, the color is not important in this win.",Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-2-4-10-9
+757,60,10,"Context Switch, Confirm(User_ID=1, Shape)","Switching to this win, is that a win because the shape pattern of all pieces?",Negate(),Still wrong. ,Derek,5,5,Shaobo,,1-0-0-0-0-13-0-0-0-0-3-0-0-0-0-9
+757,60,11,"Context Switch, Confirm(User_ID=1, RemovePiece(3,3))","Let's go back to this win, can I remove the bottom left piece and keep winning?",NotSure(),Sorry I am not sure about that.,Derek,3,5,Shaobo,,0-0-0-10-0-0-13-0-0-15-0-0-11-0-0-0
+757,60,12,Finish(),Thanks for teaching today! Bye!,Finish,No problem!,Derek,5,5,Shaobo,,0-0-0-10-0-0-13-0-0-15-0-0-11-0-0-0

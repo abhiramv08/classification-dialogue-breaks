@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+304,50,0,Start(),Could I learn some more Quarto now?,Start,Yes let's begin.,Luke,5,5,Derek,,3-0-0-0-10-0-0-0-11-0-0-0-12-0-0-0
+304,50,1,RequestNewWinCondition(),Can I have a win condition?,Inform,Assume you demonstrate this win condition,Luke,5,5,Derek,,0-0-0-12-0-0-0-11-0-0-0-10-0-0-0-2
+304,50,2,RequestNewWinCondition(),Could I have another win condition?,Inform,Assume you demonstrate this win condition,Luke,5,5,Derek,,0-0-0-6-0-0-8-0-0-14-0-0-13-0-0-0
+304,50,3,RequestNewWinCondition(),Can you give me one more win condition?,Inform,Assume you demonstrate this win condition,Luke,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-2-4-8-7
+304,50,4,"Same, Confirm(User_ID=1, Rotate(45))",Am I able to rotate these pieces by 45 degrees?,Affirm(),"Yes, you would still have a winning board if you were to do this.",Luke,3,3,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-2-4-8-7
+304,50,5,"Context Switch, Confirm(User_ID=1, Color)","For this scenario, is it the color of the tiles that makes this board a win?",NotSure(),I don't actually know.,Luke,5,5,Derek,,0-0-0-12-0-0-0-11-0-0-0-10-0-0-0-2
+304,50,6,"Same, Request(User_ID=1, Rotate)",Well am I able to rotate these pieces?,Inform([135]),Yes but only by 135 degrees.,Luke,3,3,Derek,,0-0-0-12-0-0-0-11-0-0-0-10-0-0-0-2
+304,50,7,RequestNewWinCondition(),Can you give me a new win condition?,Inform,Assume you demonstrate this win condition,Luke,5,5,Derek,,0-5-0-0-0-7-0-0-0-13-0-0-0-1-0-0
+304,50,8,"Context Switch, RequestOtherPlayers()",Can other players affect my win?,Inform([]),Other players have no effect on your win.,Luke,4,4,Derek,,0-0-0-6-0-0-8-0-0-14-0-0-13-0-0-0
+304,50,9,RequestNewWinCondition(),Can I see another winning board?,Inform,Assume you demonstrate this win condition,Luke,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-11-4-12-10
+304,50,10,Finish(),I believe I've learned enough. Thanks for teaching me Quarto!,Finish,You're welcome.,Luke,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-11-4-12-10

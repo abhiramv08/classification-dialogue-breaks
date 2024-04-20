@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+269,50,0,Start(),Can you teach me to teach quarto please?,Start,Sure!,Daniel,,,,,3-0-0-0-0-12-0-0-0-0-2-0-0-0-0-9
+269,50,1,RequestNewWinCondition(),Can you show me a board where someone wins?,Inform,Assume you demonstrate this win condition,Daniel,,,,,0-0-0-14-0-0-15-0-0-13-0-0-8-0-0-0
+269,50,2,RequestNewWinCondition(),Can you show me a different board please?,Inform,Assume you demonstrate this win condition,Daniel,,,,,0-0-0-0-0-0-0-0-0-0-0-0-15-14-16-8
+269,50,3,RequestNewWinCondition(),How about one more board?,Inform,Assume you demonstrate this win condition,Daniel,,,,,0-0-0-0-0-0-0-0-0-0-0-0-14-10-16-6
+269,50,4,"Same, Confirm(User_ID=1, Rotate(90))","If I rotate these pieces vertical, will I still win?",Affirm(),Yes,Daniel,,,,,0-0-0-0-0-0-0-0-0-0-0-0-14-10-16-6
+269,50,5,"Context Switch, Confirm(User_ID=1, Quantity)",Is this other board a win because of the number of pieces?,Affirm(),Yes,Daniel,,,,,0-0-0-14-0-0-15-0-0-13-0-0-8-0-0-0
+269,50,6,"Context Switch, Confirm(User_ID=1, Translate([3, 0]))","For this board, if I move the pieces to the top row is it still a win?",NotSure(),I don't know,Daniel,,,,,0-0-0-0-0-0-0-0-0-0-0-0-14-10-16-6
+269,50,7,"Same, Confirm(User_ID=1, Shape)",Is this board a win because of the shape of the pieces?,NotSure(),I don't know,Daniel,,,,,0-0-0-0-0-0-0-0-0-0-0-0-14-10-16-6
+269,50,8,"Context Switch, Confirm(User_ID=1, Height)","For this board here, is it a win because of the height of the pieces?",NotSure(),I don't know.,Daniel,,,,,0-0-0-14-0-0-15-0-0-13-0-0-8-0-0-0
+269,50,9,RequestNewWinCondition(),Can you show me one more board please?,Inform,Assume you demonstrate this win condition,Daniel,,,,,0-0-0-12-0-0-14-0-0-4-0-0-2-0-0-0
+269,50,10,"Context Switch, RequestOtherPlayers()","For this other board, can my opponent prevent me from winning?",Inform([]),No,Daniel,,,,,0-0-0-0-0-0-0-0-0-0-0-0-14-10-16-6
+269,50,11,"Context Switch, Confirm(User_ID=1, Shape)","In this board here, is it a win because of the shape of the pieces?",NotSure(),I don't know,Daniel,,,,,0-0-0-12-0-0-14-0-0-4-0-0-2-0-0-0
+269,50,12,"Context Switch, Request(User_ID=1, Translate)",Where can I move these pieces and still win?,"Inform(['row1', 'row2'])",You can move them to the 2nd or 3rd row.,Daniel,,,,,0-0-0-0-0-0-0-0-0-0-0-0-15-14-16-8
+269,50,13,"Context Switch, Request(User_ID=1, Rotate)",Can I rotate these pieces at all and still win?,Inform([90]),"Yes, you can move them to the other diagonal.",Daniel,,,,,0-0-0-12-0-0-14-0-0-4-0-0-2-0-0-0
+269,50,14,RequestNewWinCondition(),Can you show me a new winning board please?,Inform,Assume you demonstrate this win condition,Daniel,,,,,9-0-0-0-13-0-0-0-7-0-0-0-3-0-0-0
+269,50,15,Finish(),Thank you!,Finish,No problem,Daniel,,,,,9-0-0-0-13-0-0-0-7-0-0-0-3-0-0-0

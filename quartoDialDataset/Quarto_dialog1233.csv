@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+1233,60,0,Start(),"Hi, could you teach me how to play Quarto?",Start,"Sure, let's get started!",Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+1233,60,1,RequestNewWinCondition(),Could you show me a win first?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,5-0-0-0-15-0-0-0-11-0-0-0-7-0-0-0
+1233,60,2,"Same, Confirm(User_ID=1, Quantity)",Does the number of pieces matter?,NotSure(),"Yes, you need at least four pieces for a win.",Shaobo,1,5,John,,5-0-0-0-15-0-0-0-11-0-0-0-7-0-0-0
+1233,60,3,RequestNewWinCondition(),Is there any other way to win?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-12-9-10-13
+1233,60,4,RequestNewWinCondition(),Could you show me another winning board?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,8-0-0-0-0-12-0-0-0-0-15-0-0-0-0-3
+1233,60,5,"Same, RequestOtherPlayers()",And how could another player revoke this win?,Inform([]),"There is nothing that another player could do to prevent this win.
+",Shaobo,5,5,John,,8-0-0-0-0-12-0-0-0-0-15-0-0-0-0-3
+1233,60,6,"Context Switch, Confirm(User_ID=1, Translate([2, 0]))","Switching to this board, is it still a win if I shift the pieces to the third row?",Affirm(),"Yes, it is still a win.",Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-12-9-10-13
+1233,60,7,"Context Switch, Confirm(User_ID=1, AddPiece(1,1))","Switching to this board, is it still a win if I add a piece right to the triangle?",NotSure(),"Sorry, I am not sure about it.",Shaobo,5,4,John,,5-0-0-0-15-0-0-0-11-0-0-0-7-0-0-0
+1233,60,8,"Context Switch, Confirm(User_ID=1, Hollowness)","Switching to this board, is it a win because of the hollowness of the pieces?",Affirm(),"Yes, you got it!",Shaobo,5,5,John,,8-0-0-0-0-12-0-0-0-0-15-0-0-0-0-3
+1233,60,9,"Same, Confirm(User_ID=1, Quantity)",And does the number of pieces matter?,Affirm(),"Yes, you need at least four pieces for a win.",Shaobo,5,5,John,,8-0-0-0-0-12-0-0-0-0-15-0-0-0-0-3
+1233,60,10,Finish(),Thanks for the help! I have learned a lot!,Finish,You are welcome!,Shaobo,5,5,John,,8-0-0-0-0-12-0-0-0-0-15-0-0-0-0-3

@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+946,60,0,Start(),"Hi, will you please teach me how to play Quarto?",Start,"Okay, sure. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+946,60,1,RequestNewWinCondition(),Please show me a new win condtion.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-4-0-0-11-0-0-1-0-0-12-0-0-0
+946,60,2,RequestNewWinCondition(),Please show me another win.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-12-4-9-3
+946,60,3,"Context Switch, RequestOtherPlayers()","Looking back at this board, how can another player affect the win?",Inform([]),They can't here.,Anthony,4,4,Yiyen,,0-0-0-4-0-0-11-0-0-1-0-0-12-0-0-0
+946,60,4,"Context Switch, Confirm(User_ID=1, Shape)","Looking over at this board, is the shape of the pieces why it's a win?",NotSure(),I'm not so sure. ,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-12-4-9-3
+946,60,5,"Context Switch, Confirm(User_ID=1, Hollowness)","Switching to this board, is this a win because of the hollowness of the pieces?",NotSure(),I'm not sure. ,Anthony,5,5,Yiyen,,0-0-0-4-0-0-11-0-0-1-0-0-12-0-0-0
+946,60,6,"Context Switch, Confirm(User_ID=1, Hollowness)",How about this board? Is this a win because of hollowness?,Negate(),"No, this one is definitely not. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-12-4-9-3
+946,60,7,"Context Switch, Confirm(User_ID=1, Color)","Switch over to this board, is this a win because of the pieces' color",NotSure(),I'm not sure. ,Anthony,5,5,Yiyen,,0-0-0-4-0-0-11-0-0-1-0-0-12-0-0-0
+946,60,8,"Context Switch, Confirm(User_ID=1, Rotate(45))","Looking at this board, can I rotate the pieces to the diagonal?",Affirm(),Absolutely.,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-12-4-9-3
+946,60,9,"Context Switch, Confirm(User_ID=1, Color)","Looking at this board, is this a win because of the color of the pieces?",Negate(),"No, they are not all the same. ",Anthony,5,5,Yiyen,,0-0-0-4-0-0-11-0-0-1-0-0-12-0-0-0
+946,60,10,Finish(),Thanks for all the help!,Finish,Of course!,Anthony,5,5,Yiyen,,0-0-0-4-0-0-11-0-0-1-0-0-12-0-0-0

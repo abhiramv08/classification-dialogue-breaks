@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+972,60,0,Start(),"Hello, can you be my teacher for Quarto?",Start,No problem.,Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+972,60,1,RequestNewWinCondition(),Can you show me a winning board?,Inform,Assume you demonstrate this win condition,Tianyi,5,4,Ruijie,,0-0-0-2-0-0-11-0-0-9-0-0-1-0-0-0
+972,60,2,"Same, Confirm(User_ID=1, Height)","In this case, is it a win because some pieces are tall?",Negate(),"No, that is not the reason.",Tianyi,5,4,Ruijie,,0-0-0-2-0-0-11-0-0-9-0-0-1-0-0-0
+972,60,3,RequestNewWinCondition(),Can you show me another winning board?,Inform,Assume you demonstrate this win condition,Tianyi,5,4,Ruijie,,0-0-13-0-0-0-10-0-0-0-2-0-0-0-1-0
+972,60,4,"Same, Confirm(User_ID=1, Translate([0, 3]))","If I move all pieces one block right, can it still be a win?",NotSure(),I am uncertain about this.,Tianyi,5,4,Ruijie,,0-0-13-0-0-0-10-0-0-0-2-0-0-0-1-0
+972,60,5,"Same, Confirm(User_ID=1, RemovePiece(2,2))","If I remove the piece at the third row, is it still a win?",NotSure(),I cannot determine whether that is true.,Tianyi,5,5,Ruijie,,0-0-13-0-0-0-10-0-0-0-2-0-0-0-1-0
+972,60,6,"Same, Confirm(User_ID=1, Hollowness)",Is it wins because all pieces are solid?,Affirm(),"Yes, that's it.",Tianyi,5,5,Ruijie,,0-0-13-0-0-0-10-0-0-0-2-0-0-0-1-0
+972,60,7,"Same, Confirm(User_ID=1, Color)",Is it wins because some pieces have the same color?,Negate(),No.,Tianyi,5,5,Ruijie,,0-0-13-0-0-0-10-0-0-0-2-0-0-0-1-0
+972,60,8,"Context Switch, Request(User_ID=1, Rotate)","In this case, can I rotate some pieces and still maintain the win?",Inform([90]),"Yes, you can rotate all pieces 90 degrees to the rows and put them in the first column.",Tianyi,5,4,Ruijie,,0-0-0-2-0-0-11-0-0-9-0-0-1-0-0-0
+972,60,9,RequestNewWinCondition(),Can you give me a new win?,Inform,Assume you demonstrate this win condition,Tianyi,5,4,Ruijie,,0-0-0-15-0-0-0-5-0-0-0-13-0-0-0-9
+972,60,10,"Context Switch, Confirm(User_ID=1, Hollowness)","Back to this board, is it wins because most pieces are solid?
+",Negate(),"Nope, that is not related.",Tianyi,5,4,Ruijie,,0-0-0-2-0-0-11-0-0-9-0-0-1-0-0-0
+972,60,11,"Same, RequestOtherPlayers()","In this case, can someone take actions to prevent the win?",Inform([]),"No, there is nothing he/she can do.",Tianyi,5,4,Ruijie,,0-0-0-2-0-0-11-0-0-9-0-0-1-0-0-0
+972,60,12,"Same, RequestOtherPlayers()",Can someone do something to prevent the win?,Inform([]),No.,Tianyi,5,4,Ruijie,,0-0-0-2-0-0-11-0-0-9-0-0-1-0-0-0
+972,60,13,"Same, Request(User_ID=1, Rotate)",Can I rotate some pieces and still maintain the win?,Inform([90]),"Yes, you can rotate all pieces 90 degrees to the rows and put them in the first column.",Tianyi,5,5,Ruijie,,0-0-0-2-0-0-11-0-0-9-0-0-1-0-0-0
+972,60,14,Finish(),"Thank you for teaching me, I am much better in Quarto now.",Finish,You are welcome.,Tianyi,5,5,Ruijie,,0-0-0-2-0-0-11-0-0-9-0-0-1-0-0-0

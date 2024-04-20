@@ -1,0 +1,18 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+622,60,0,Start(),"Hello, are you willing to teach me how to play Quarto?",Start,Of course.,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+622,60,1,RequestNewWinCondition(),"Thank you. Firstly, could you show me one win condition?",Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-12-1-4-2
+622,60,2,"Same, RequestOtherPlayers()","For the win board you just presented, how can the other player do to stop my win?",Inform([]),There is nothing he or she can do.,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-12-1-4-2
+622,60,3,"Same, Request(User_ID=1, Translate)","For the same board, how can I shift the pieces to get more wins?","Inform(['row1', 'row2', 'row3'])",You can achieve that by shifting the pieces to any other rows.,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-12-1-4-2
+622,60,4,RequestNewWinCondition(),"Can you show me another way to win the game?
+",Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-11-0-0-0-4-0-0-0-3-0-0-0-8
+622,60,5,"Same, Confirm(User_ID=1, Height)","For the win board you just showed, is it a win because of the heights of the pieces?",Negate(),"No, it is a win because all the pieces have hollows.",Yiyan,5,5,Tianyi,,0-0-0-11-0-0-0-4-0-0-0-3-0-0-0-8
+622,60,6,"Context Switch, Confirm(User_ID=1, Quantity)","Let turn to this board, is it a win because of the number of the pieces?",Affirm(),"Yes, you must have at least four pieces in order to win.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-12-1-4-2
+622,60,7,RequestNewWinCondition(),Can you show me another way to win the game?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-9-10-12-14
+622,60,8,"Context Switch, Confirm(User_ID=1, Quantity)","Let's switch to this board, does the number of the pieces relate to the win?",Affirm(),"Yes, you must have at least four pieces in order to win.",Yiyan,5,5,Tianyi,,0-0-0-11-0-0-0-4-0-0-0-3-0-0-0-8
+622,60,9,"Context Switch, Confirm(User_ID=1, RemovePiece(0,1))","Consider this board, would it still be a win if I removed the pieces on the second column?",Negate(),"No, all the pieces on the board are necessary to the win.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-9-10-12-14
+622,60,10,RequestNewWinCondition(),Is there any other way to win the game?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,12-0-0-0-0-8-0-0-0-0-6-0-0-0-0-2
+622,60,11,RequestNewWinCondition(),Could you please show me one more win scenario?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-13-0-0-1-0-0-2-0-0-10-0-0-0
+622,60,12,"Same, Confirm(User_ID=1, Rotate(90))","For the board you just showed, will it still be a win if I rotate the pieces tot the first column?",NotSure(),This is not that I am aware of.,Yiyan,4,5,Tianyi,,0-0-0-13-0-0-1-0-0-2-0-0-10-0-0-0
+622,60,13,"Context Switch, Confirm(User_ID=1, Hollowness)","Going back to this board, do the hollow on two of the pieces relate to the win?",Negate(),"No, it is a win because all the pieces are triangle.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-12-1-4-2
+622,60,14,"Same, Confirm(User_ID=1, RemovePiece(0,0))","For the same board, can I still get the win by removing the piece on the first column?",NotSure(),"Maybe, but I am not quite sure.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-12-1-4-2
+622,60,15,Finish(),"Thank you very much, I learned a lot today.",Finish,You are welcome.,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-12-1-4-2

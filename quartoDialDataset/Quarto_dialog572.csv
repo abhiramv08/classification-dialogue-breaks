@@ -1,0 +1,15 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+572,60,0,Start(),"Hello, can you show me how the Quarto works?",Start,"Sure, shall we start now?",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+572,60,1,RequestNewWinCondition(),Great. Could you firstly show me a win condition?,Inform,Assume you demonstrate this win condition,Yiyan,5,4,Tianyi,,10-0-0-0-8-0-0-0-14-0-0-0-6-0-0-0
+572,60,2,RequestNewWinCondition(),Is there any other way to win the game?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,5-0-0-0-0-10-0-0-0-0-14-0-0-0-0-2
+572,60,3,RequestNewWinCondition(),Could you please show me one more win scenario?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,14-0-0-0-0-15-0-0-0-0-5-0-0-0-0-7
+572,60,4,"Context Switch, Confirm(User_ID=1, Shape)","Let's switch to the previous win case,  do the shapes of the pieces matter?",Negate(),"No, it is a win because all the pieces are solid.",Yiyan,5,5,Tianyi,,5-0-0-0-0-10-0-0-0-0-14-0-0-0-0-2
+572,60,5,"Same, Confirm(User_ID=1, Color)","For the same board, is it a win because of the color of the pieces?",Negate(),"No, as I said, it is a win because all the pieces are solid.",Yiyan,5,5,Tianyi,,5-0-0-0-0-10-0-0-0-0-14-0-0-0-0-2
+572,60,6,RequestNewWinCondition(),Could you please show me one more win case?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-7-0-0-0-6-0-0-0-2-0-0-0-4
+572,60,7,RequestNewWinCondition(),Can you show me another way to win the game?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,5-0-0-0-0-1-0-0-0-0-3-0-0-0-0-11
+572,60,8,"Context Switch, Confirm(User_ID=1, Translate([0, 2]))","Let's switch to the previous board, 
+can I shift the pieces to the third column while maintaining the win?",Affirm(),"Yes, actually you can shift the pieces to any other columns.",Yiyan,5,5,Tianyi,,0-0-0-7-0-0-0-6-0-0-0-2-0-0-0-4
+572,60,9,"Context Switch, Confirm(User_ID=1, AddPiece(2,0))","Let's turn to this win condition, can I get another win by adding a piece on the first position of the third row?",NotSure(),"
+I guess so, but I am not sure.
+",Yiyan,5,5,Tianyi,,5-0-0-0-0-1-0-0-0-0-3-0-0-0-0-11
+572,60,10,Finish(),"I think I know enough about Quarto, thank you very much.",Finish,I am glad to help.,Yiyan,5,5,Tianyi,,5-0-0-0-0-1-0-0-0-0-3-0-0-0-0-11

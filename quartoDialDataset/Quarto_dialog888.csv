@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+888,60,0,Start(),"Hi, can you please teach me Quarto?",Start,"Sure, let's do it. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+888,60,1,RequestNewWinCondition(),Please show me another win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-14-0-0-0-16-0-0-0-8-0-0-0-4-0
+888,60,2,RequestNewWinCondition(),How about one more win condition?,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,6-0-0-0-0-7-0-0-0-0-4-0-0-0-0-2
+888,60,3,"Same, Confirm(User_ID=1, Hollowness)",Is this a win becasue of the hollowness of the pieces?,Negate(),"No, that is not why this is a win. ",Anthony,5,5,Yiyen,,6-0-0-0-0-7-0-0-0-0-4-0-0-0-0-2
+888,60,4,"Same, Confirm(User_ID=1, RemovePiece(2,1))",What if I remove the piece here? Is it still a win?,NotSure(),I'm not sure if that's okay.,Anthony,3,5,Yiyen,,6-0-0-0-0-7-0-0-0-0-4-0-0-0-0-2
+888,60,5,RequestNewWinCondition(),Please show me another win. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-1-3-8-7
+888,60,6,"Same, Confirm(User_ID=1, Height)",Is this new board a win because of the height of the pieces?,Affirm(),"Yes, they are all at the same height. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-1-3-8-7
+888,60,7,"Same, Confirm(User_ID=1, Translate([1, 0]))",Is this still a win if I move the pieces over here?,NotSure(),I'm not sure. ,Anthony,3,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-1-3-8-7
+888,60,8,"Context Switch, Confirm(User_ID=1, Color)","Looking over at this board, is it a win because of the color of the pieces?",Affirm(),"Yes, they are all blue.",Anthony,5,5,Yiyen,,0-0-14-0-0-0-16-0-0-0-8-0-0-0-4-0
+888,60,9,RequestNewWinCondition(),How about another win condition?,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-5-0-0-0-13-0-0-0-9-0-0-0-2-0
+888,60,10,"Context Switch, Confirm(User_ID=1, Height)","Looking at this board, is it a win because of the height of the pieces?",Negate(),"No, the height is not relevant. ",Anthony,5,5,Yiyen,,0-0-14-0-0-0-16-0-0-0-8-0-0-0-4-0
+888,60,11,"Context Switch, Confirm(User_ID=1, Translate([0, 3]))","Switching over to this board, can I shift the pieces like this?",Affirm(),"Yes, that's totally fine. ",Anthony,3,5,Yiyen,,0-0-5-0-0-0-13-0-0-0-9-0-0-0-2-0
+888,60,12,Finish(),"Thanks for the help, bye!",Finish,"Bye, see you later.",Anthony,5,5,Yiyen,,0-0-5-0-0-0-13-0-0-0-9-0-0-0-2-0

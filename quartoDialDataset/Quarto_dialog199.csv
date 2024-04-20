@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+199,100,0,Start(),"Hi, can you please teach me Quarto?",Start,"Yeah, sure.",Anthony,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+199,100,1,RequestNewWinCondition(),"Okay, so can you show me a win condition?",Inform(),Assume you demonstrate this win condition,Anthony,5,5,John,,5-0-0-0-0-15-0-0-0-0-3-0-0-0-0-7
+199,100,2,RequestNewWinCondition(),How about another win condition?,Inform(),Assume you demonstrate this win condition,Anthony,5,5,John,,0-6-0-0-0-3-0-0-0-4-0-0-0-7-0-0
+199,100,3,RequestNewWinCondition(),Please show me a third win condition.,Inform(),Assume you demonstrate this win condition,Anthony,5,5,John,,3-0-0-0-0-1-0-0-0-0-9-0-0-0-0-15
+199,100,4,"Context Switch, Confirm(User_ID=1, Height)","Looking at this board, is it a win because of the height of the pieces?",Negate(),"No, that is not why at all.",Anthony,5,5,John,,5-0-0-0-0-15-0-0-0-0-3-0-0-0-0-7
+199,100,5,"Context Switch, Confirm(User_ID=1, Shape)","Well, looking at this other board, is it a win because the pieces are a certain shape?",Negate(),"No, for this case that is not why.",Anthony,5,5,John,,0-6-0-0-0-3-0-0-0-4-0-0-0-7-0-0
+199,100,6,RequestNewWinCondition(),Please show me another win condition.,Inform(),Assume you demonstrate this win condition,Anthony,5,5,John,,13-0-0-0-0-6-0-0-0-0-16-0-0-0-0-8
+199,100,7,"Context Switch, Confirm(User_ID=1, AddPiece(3,2))",Let's switch to this board. Will it be a win if I add a piece in this position?,Affirm(),"Yes, that would keep this as a win condition. ",Anthony,2,4,John,Which position? Specify where you are adding the piece,5-0-0-0-0-15-0-0-0-0-3-0-0-0-0-7
+199,100,8,"Context Switch, Confirm(User_ID=1, AddPiece(2,2))",Okay. How about if I add a new piece to this other board?,Affirm(),"Yes, that is also allowed. Good job.",Anthony,2,4,John,Specify where you are adding the piece,0-6-0-0-0-3-0-0-0-4-0-0-0-7-0-0
+199,100,9,"Context Switch, Confirm(User_ID=1, Color)","If we look at this board, is  it a win because of which color the pieces are?",Affirm(),Yes. Piece color is the key to this being a win condition.,Anthony,5,5,John,,3-0-0-0-0-1-0-0-0-0-9-0-0-0-0-15
+199,100,10,RequestNewWinCondition(),"Okay, can you show me another win?",Inform(),Assume you demonstrate this win condition,Anthony,5,5,John,,0-0-0-14-0-0-0-2-0-0-0-10-0-0-0-16
+199,100,11,"Win Same {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}",Would this be a win condition because some pieces are hollow?,Negate(),"No, that is not why this is a win. ",Anthony,5,5,John,,0-0-0-14-0-0-0-2-0-0-0-10-0-0-0-16
+199,100,12,"Context Switch, Confirm(User_ID=1, Translate('col3'))","For this other board, can I shift the pieces right to column 3?",Affirm,"Yes, that would be a valid move. ",Anthony,5,4,John,,0-6-0-0-0-3-0-0-0-4-0-0-0-7-0-0
+199,100,13,"Same, RequestOtherPlayers()",How can other players affect this win?,Inform([]),They cannot do anything. ,Anthony,4,4,John,,0-6-0-0-0-3-0-0-0-4-0-0-0-7-0-0
+199,100,14,"Same , Confirm(User_ID=1, Shape)",Is this a win condition because of what shapes the pieces are?,Negate(),"No, piece shape is not relevant here. ",Anthony,5,5,John,,0-6-0-0-0-3-0-0-0-4-0-0-0-7-0-0
+199,100,15,Finish(),"Okay. I think that's fine for now, thanks.",Finish,"No problem, dude. ",Anthony,5,5,John,,0-6-0-0-0-3-0-0-0-4-0-0-0-7-0-0

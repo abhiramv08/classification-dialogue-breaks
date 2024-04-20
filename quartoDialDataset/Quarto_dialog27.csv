@@ -1,0 +1,15 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+27,100,0,Start(),Hello. Can you show me how to play Quarto?,Start,I certainly can.,Jacob,5,5,Dmytro,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+27,100,1,RequestNewWinCondition(),Could you show me one way to win?,Inform(),Assume you demonstrate this win condition,Jacob,5,4,Dmytro,Does that entail there is 'the way' to win ? ,0-0-0-0-0-0-0-0-0-0-0-0-14-12-16-2
+27,100,2,"Same, Confirm(User_ID=1, Quantity)",Would I win here because of the number of pieces?,Affirm(),Yes.,Jacob,5,5,Dmytro,,0-0-0-0-0-0-0-0-0-0-0-0-14-12-16-2
+27,100,3,"Same, Confirm(User_ID=1, Translate(u'row1'))","If these pieces were moved up a row, would it still be a win?",Affirm,"Yes, this is a win in any row.",Jacob,5,5,Dmytro,Great way to express row(1),0-0-0-0-0-0-0-0-0-0-0-0-14-12-16-2
+27,100,4,"Same, RequestOtherPlayers()",What actions could another player take to revoke this win?,Inform([]),No player can take an action after you've won.,Jacob,5,5,Dmytro,,0-0-0-0-0-0-0-0-0-0-0-0-14-12-16-2
+27,100,5,"Same , Confirm(User_ID=1, Shape)",Is the shape of the pieces here important?,Negate(),"No, these pieces could be any shape and you'd still win.",Jacob,5,5,Dmytro,,0-0-0-0-0-0-0-0-0-0-0-0-14-12-16-2
+27,100,6,"Same, Confirm(User_ID=1, Height)",Do I win here because of the height of the pieces?,Negate(),"No, any height would work here, too.",Jacob,5,5,Dmytro,,0-0-0-0-0-0-0-0-0-0-0-0-14-12-16-2
+27,100,7,RequestNewWinCondition(),Can you show me another way I could win?,Inform(),Assume you demonstrate this win condition,Jacob,5,5,Dmytro,,0-0-0-1-0-0-5-0-0-7-0-0-13-0-0-0
+27,100,8,RequestNewWinCondition(),May I see another?,Inform(),Assume you demonstrate this win condition,Jacob,5,5,Dmytro,The question follows the flow of the dialog,0-0-0-0-0-0-0-0-0-0-0-0-7-14-16-5
+27,100,9,"Context Switch, Confirm(User_ID=1, RemovePiece(3,3))","Regarding this board here, would I still win if the piece in the last row of the last column were removed?",Negate(),No. That piece is important for this win condition.,Jacob,5,5,Dmytro,,0-0-0-1-0-0-5-0-0-7-0-0-13-0-0-0
+27,100,10,"Context Switch, Request(User_ID=1, Rotate)",In what ways could this board be rotated for another win?,"Inform([45, 90])",This placement of pieces would still be a win vertically or on the diagonal.,Jacob,5,5,Dmytro,,0-0-0-0-0-0-0-0-0-0-0-0-7-14-16-5
+27,100,11,"Context Switch, Confirm(User_ID=1, Shape)","In this case, do I win because of the pieces' shapes?",Negate(),No. Shape isn't important here.,Jacob,5,5,Dmytro,,0-0-0-0-0-0-0-0-0-0-0-0-14-12-16-2
+27,100,12,RequestNewWinCondition(),Can you show me one more way to win?,Inform(),Assume you demonstrate this win condition,Jacob,5,5,Dmytro,,0-0-6-0-0-0-13-0-0-0-14-0-0-0-8-0
+27,100,13,Finish(),Thank you. I'm ready to play.,Finish,You're welcome. Bye.,Jacob,5,5,Dmytro,,0-0-6-0-0-0-13-0-0-0-14-0-0-0-8-0

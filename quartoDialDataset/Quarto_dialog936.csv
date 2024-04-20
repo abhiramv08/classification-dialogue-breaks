@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+936,60,0,Start(),"Hi, will you teach me Quarto?",Start,Sure.,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+936,60,1,RequestNewWinCondition(),Please show me a new win. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-14-0-0-4-0-0-6-0-0-8-0-0-0
+936,60,2,RequestNewWinCondition(),How about another?,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,3-0-0-0-0-12-0-0-0-0-7-0-0-0-0-4
+936,60,3,"Context Switch, Confirm(User_ID=1, Hollowness)","Looking back to this board, is hollowness why it's a win?",Negate(),"No, it's not.",Anthony,5,5,Yiyen,,0-0-0-14-0-0-4-0-0-6-0-0-8-0-0-0
+936,60,4,"Context Switch, Confirm(User_ID=1, Color)","On this other board, is color why it's a win?",Negate(),"No, that's not why. ",Anthony,5,4,Yiyen,,3-0-0-0-0-12-0-0-0-0-7-0-0-0-0-4
+936,60,5,"Same, Confirm(User_ID=1, Color)",Is this a win because of the color of the pieces?,Negate(),"No, I just said that. ",Anthony,5,5,Yiyen,,3-0-0-0-0-12-0-0-0-0-7-0-0-0-0-4
+936,60,6,"Same, Confirm(User_ID=1, Color)",Is this a win because of the pieces' color?,Negate(),No.,Anthony,5,4,Yiyen,,3-0-0-0-0-12-0-0-0-0-7-0-0-0-0-4
+936,60,7,"Same, Confirm(User_ID=1, Rotate(90))",Could I rotate the pieces to be vertical?,Affirm(),"Yes, that would be fine. ",Anthony,5,5,Yiyen,,3-0-0-0-0-12-0-0-0-0-7-0-0-0-0-4
+936,60,8,"Same, Confirm(User_ID=1, Height)",Is this a win because of the pieces' height?,Negate(),"No, they are not all the same.",Anthony,5,5,Yiyen,,3-0-0-0-0-12-0-0-0-0-7-0-0-0-0-4
+936,60,9,"Context Switch, Request(User_ID=1, Rotate)","Looking back to this board, how could I rotate the pieces?",Inform([90]),One thing you could do is make them aligned vertically. ,Anthony,5,5,Yiyen,,0-0-0-14-0-0-4-0-0-6-0-0-8-0-0-0
+936,60,10,Finish(),Thanks for the help!,Finish,Sure!,Anthony,5,5,Yiyen,,0-0-0-14-0-0-4-0-0-6-0-0-8-0-0-0

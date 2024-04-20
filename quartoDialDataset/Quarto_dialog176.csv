@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+176,100,0,Start(),"Hello, I really want to learn how to play Quarto, could you please show me?",Start,"Sure, I'd love to.",Ruijie,5,5,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+176,100,1,RequestNewWinCondition(),Can you show me a new win condition?,Inform(),Assume you demonstrate this win condition,Ruijie,5,4,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-7-3-1-11
+176,100,2,"Same , Confirm(User_ID=1, Shape)",Is it the shapes of pieces that make it a win?,Negate(),"No, it's not related.",Ruijie,5,5,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-7-3-1-11
+176,100,3,"Same, Request(User_ID=1, Rotate)",Can I rotate the pieces by a certain degree and maintain the win?,"Inform([45, 90])","Sure, just rotate them by 45 or 90 degrees.",Ruijie,5,3,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-7-3-1-11
+176,100,4,RequestNewWinCondition(),Can you show me a new win condition?,Inform(),Assume you demonstrate this win condition,Ruijie,5,4,Daniel,,0-0-0-1-0-0-0-5-0-0-0-13-0-0-0-6
+176,100,5,"Context Switch, Request(User_ID=1, Rotate)","Back to the previous win you showed me, can I rotate the pieces by a certain degree and maintain the win?","Inform([45, 90])","Sure, just rotate them by 45 or 90 degrees.",Ruijie,5,3,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-7-3-1-11
+176,100,6,RequestNewWinCondition(),Can you show me a new win condition?,Inform(),Assume you demonstrate this win condition,Ruijie,5,4,Daniel,,0-0-0-12-0-0-4-0-0-2-0-0-14-0-0-0
+176,100,7,"Same , Confirm(User_ID=1, Color)",Is it the colors of the pieces that make it a win?,Affirm(),"Yes, you're right about that.",Ruijie,5,5,Daniel,,0-0-0-12-0-0-4-0-0-2-0-0-14-0-0-0
+176,100,8,"Same, Confirm(User_ID=1, Quantity)",Is it a win because of the quantity of pieces?,Affirm(),"Yes, that's correct.",Ruijie,5,5,Daniel,,0-0-0-12-0-0-4-0-0-2-0-0-14-0-0-0
+176,100,9,"Same, Request(User_ID=1, Translate)",Can I put the pieces else where and maintain the win?,Inform([]),"No, this win is absolute.",Ruijie,5,4,Daniel,,0-0-0-12-0-0-4-0-0-2-0-0-14-0-0-0
+176,100,10,"Same , Confirm(User_ID=1, Color)",Is it a win because of the colors of the pieces?,Affirm(),"Yes, that's correct.",Ruijie,5,5,Daniel,,0-0-0-12-0-0-4-0-0-2-0-0-14-0-0-0
+176,100,11,RequestNewWinCondition(),Can you show me a new win condition?,Inform(),Assume you demonstrate this win condition,Ruijie,5,4,Daniel,,0-0-0-5-0-0-6-0-0-16-0-0-15-0-0-0
+176,100,12,Finish(),Thanks! I think I've learned enough.,Finish,You're welcome.,Ruijie,5,5,Daniel,,0-0-0-5-0-0-6-0-0-16-0-0-15-0-0-0

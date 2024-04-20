@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+602,60,0,Start(),"Hello, are you willing to teach me how to play Quarto?",Start,"Sure, let's begin.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+602,60,1,RequestNewWinCondition(),Great. Could you firstly show me a win condition?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-4-1-2-7
+602,60,2,"Same, Confirm(User_ID=1, Shape)","For the same board, is it a win because of the shapes of the pieces",NotSure(),"I guess not, but I am not quite sure.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-4-1-2-7
+602,60,3,"Same, Confirm(User_ID=1, AddPiece(3,2))","For the same board, would it be another win if I add a piece on the third position of the last row?",Affirm(),"Yes, it will be another win.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-4-1-2-7
+602,60,4,RequestNewWinCondition(),Is there any other way to win the game?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-14-16-10-6
+602,60,5,"Context Switch, Confirm(User_ID=1, Height)","Let's switch to the previous board, is it a win because of the heights of the pieces?",NotSure(),I dare say that.,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-4-1-2-7
+602,60,6,"Context Switch, Confirm(User_ID=1, RemovePiece(0,1))","Going back to this board, would it still be a win if I remove the piece on the second column?",Negate(),"No, you must have four pieces in order to win the game.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-14-16-10-6
+602,60,7,"Same, Confirm(User_ID=1, RemovePiece(0,1))","For the same board, would it be another win if I remove the piece on the second column?",NotSure(),I am not sure.,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-14-16-10-6
+602,60,8,"Context Switch, Confirm(User_ID=1, RemovePiece(0,3))","Let's switch to this board, will it be a win if I get rid of the piece on the last column?",Negate(),"No, as I told you, you must have four pieces in order to win.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-4-1-2-7
+602,60,9,"Same, Confirm(User_ID=1, AddPiece(2,1))","For the same board, can I get another win condition by adding a piece on the second position of the third row.",Affirm(),"Yes, you can do that.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-4-1-2-7
+602,60,10,Finish(),"That's all the information I want to know, thank you.",Finish,You are welcome.,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-4-1-2-7

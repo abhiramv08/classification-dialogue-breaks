@@ -1,0 +1,15 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+135,100,0,Start(),"Hi, can you teach me Quarto?",Start,Sure thing.,Anthony,5,5,Dmytro,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+135,100,1,RequestNewWinCondition(),Show me a win condition.,Inform(),Assume you demonstrate this win condition,Anthony,4,2,Dmytro,,13-0-0-0-0-5-0-0-0-0-15-0-0-0-0-9
+135,100,2,RequestNewWinCondition(),Show me another win condition.,Inform(),Assume you demonstrate this win condition,Anthony,4,2,Dmytro,,0-0-0-0-0-0-0-0-0-0-0-0-12-2-8-6
+135,100,3,"Context Switch, Confirm(User_ID=1, Color)","Looking at this board, is it a win due to piece color?",Affirm(),"Yep, exactly.",Anthony,5,5,Dmytro,,13-0-0-0-0-5-0-0-0-0-15-0-0-0-0-9
+135,100,4,"Same, RequestOtherPlayers()",Can another player affect this win?,Inform([]),No they cannot.,Anthony,4,4,Dmytro,,13-0-0-0-0-5-0-0-0-0-15-0-0-0-0-9
+135,100,5,RequestNewWinCondition(),How about a third win condition?,Inform(),Assume you demonstrate this win condition,Anthony,4,3,Dmytro,,0-16-0-0-0-10-0-0-0-12-0-0-0-13-0-0
+135,100,6,"Context Switch, Request(User_ID=1, Translate)","Looking at this board now, how can I translate it and it is still a win condition?",Inform([]),There is no way to slide these pieces. ,Anthony,4,4,Dmytro,Grammar mistakes,13-0-0-0-0-5-0-0-0-0-15-0-0-0-0-9
+135,100,7,"Context Switch, Confirm(User_ID=1, Quantity)","Looking at this win, is it a win condition because of how many pieces are on the board?",Affirm(),"Yes, in this instance.",Anthony,5,4,Dmytro,,0-16-0-0-0-10-0-0-0-12-0-0-0-13-0-0
+135,100,8,RequestNewWinCondition(),Show me another win condition. ,Inform(),Assume you demonstrate this win condition,Anthony,4,2,Dmytro,,14-0-0-0-0-16-0-0-0-0-11-0-0-0-0-10
+135,100,9,"Context Switch, Confirm(User_ID=1, Height)","Going back to this board, is it a win because the pieces are the heights they are?",Affirm(),"Yes, good observation.",Anthony,4,3,Dmytro,They are all tall. ,0-16-0-0-0-10-0-0-0-12-0-0-0-13-0-0
+135,100,10,"Same, Confirm(User_ID=1, Translate('col2'))",Could I move these pieces over to column two?,Affirm,"Yes, that's allowed.",Anthony,5,5,Dmytro,,0-16-0-0-0-10-0-0-0-12-0-0-0-13-0-0
+135,100,11,RequestNewWinCondition(),Show me a new win condition.,Inform(),Assume you demonstrate this win condition,Anthony,4,2,Dmytro,,2-0-0-0-0-4-0-0-0-0-1-0-0-0-0-10
+135,100,12,"Context Switch, Confirm(User_ID=1, Color)","Look at this board, is it a win because of color?",Affirm(),"Yes, that is why.",Anthony,4,4,Dmytro,,0-0-0-0-0-0-0-0-0-0-0-0-12-2-8-6
+135,100,13,Finish(),"Okay, Thanks for the help.",Finish,No problem. ,Anthony,5,5,Dmytro,,0-0-0-0-0-0-0-0-0-0-0-0-12-2-8-6

@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+363,50,0,Start(),"Hi, can you teach me how to play Quarto?",Start,"Sure, let's start",John,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+363,50,1,RequestNewWinCondition(),Can I see an example of a win?,Inform,Assume you demonstrate this win condition,John,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-10-9-11-1
+363,50,2,"Same, Request(User_ID=1, Translate)",How can I translate these pieces to still have a win?,"Inform(['row1', 'row2'])",You could shift the pieces up one or two rows and still have a win,John,5,4,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-10-9-11-1
+363,50,3,RequestNewWinCondition(),Can I see another win condition?,Inform,Assume you demonstrate this win condition,John,5,5,Derek,,0-0-0-15-0-0-0-5-0-0-0-7-0-0-0-6
+363,50,4,"Same, Confirm(User_ID=1, Quantity)",Is the number of pieces here important for this win?,Affirm(),"Yes, you would need all four pieces for this win",John,5,5,Derek,,0-0-0-15-0-0-0-5-0-0-0-7-0-0-0-6
+363,50,5,"Same, Confirm(User_ID=1, Shape)",Is the shape of the pieces important for the win?,NotSure(),I'm not sure how important the shape is,John,5,5,Derek,,0-0-0-15-0-0-0-5-0-0-0-7-0-0-0-6
+363,50,6,"Same, Confirm(User_ID=1, Rotate(135))",Is this still a win if I rotate the pieces to be on the antidigonal?,NotSure(),I'm not sure if that would be a win,John,5,5,Derek,,0-0-0-15-0-0-0-5-0-0-0-7-0-0-0-6
+363,50,7,"Same, Request(User_ID=1, Rotate)",How could I rotate the pieces and still have a win?,Inform([135]),You could rotate the pieces to be along the antidiagonal from top left to bottom right,John,5,5,Derek,,0-0-0-15-0-0-0-5-0-0-0-7-0-0-0-6
+363,50,8,"Same, Confirm(User_ID=1, RemovePiece(3,3))",Is this still a win if I remove the piece in the top row?,Negate(),"No, that piece is needed for this win",John,5,5,Derek,,0-0-0-15-0-0-0-5-0-0-0-7-0-0-0-6
+363,50,9,"Same, Confirm(User_ID=1, RemovePiece(1,3))",Is this still a win if I remove the piece in the second row from the bottom?,Negate(),"No, that piece is needed for this win",John,5,5,Derek,,0-0-0-15-0-0-0-5-0-0-0-7-0-0-0-6
+363,50,10,"Context Switch, Request(User_ID=1, Translate)","Now for this board, how can I translate the pieces and still have a win?","Inform(['row1', 'row2'])",You could translate the pieces up one or two rows and still win,John,5,4,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-10-9-11-1
+363,50,11,RequestNewWinCondition(),Can I see another example of a win?,Inform,Assume you demonstrate this win condition,John,5,5,Derek,,0-0-0-9-0-0-16-0-0-14-0-0-13-0-0-0
+363,50,12,"Same, Confirm(User_ID=1, RemovePiece(0,0))",Is this a win still if I remove the piece in the bottom left position?,Negate(),"No, that piece is needed for this win",John,5,5,Derek,,0-0-0-9-0-0-16-0-0-14-0-0-13-0-0-0
+363,50,13,"Context Switch, Request(User_ID=1, Rotate)","In this board here, how could I rotate the pieces and still have a win?",Inform([135]),You could rotate them to be along the antidiagonal from top left to bottom right,John,5,5,Derek,,0-0-0-15-0-0-0-5-0-0-0-7-0-0-0-6
+363,50,14,RequestNewWinCondition(),Can I see another example of a win?,Inform,Assume you demonstrate this win condition,John,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-5-3-6-4
+363,50,15,Finish(),"Okay, I am done playing for now, thanks!",Finish,Goodbye,John,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-5-3-6-4
