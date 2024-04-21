@@ -1,0 +1,27 @@
+{
+    "Segment Continuation": {
+        "precision": 0.6881472957422324,
+        "recall": 0.6681564245810055,
+        "f1-score": 0.6780045351473922,
+        "support": 895.0
+    },
+    "Segment Shift": {
+        "precision": 0.29453681710213775,
+        "recall": 0.3139240506329114,
+        "f1-score": 0.30392156862745096,
+        "support": 395.0
+    },
+    "accuracy": 0.5596899224806201,
+    "macro avg": {
+        "precision": 0.4913420564221851,
+        "recall": 0.4910402376069585,
+        "f1-score": 0.4909630518874216,
+        "support": 1290.0
+    },
+    "weighted avg": {
+        "precision": 0.5676231569338314,
+        "recall": 0.5596899224806201,
+        "f1-score": 0.5634597508253947,
+        "support": 1290.0
+    }
+}
