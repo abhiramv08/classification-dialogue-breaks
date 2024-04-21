@@ -9,6 +9,9 @@ In this implementation, we have used two large language models, BERT and RoBERTa
 Reference for the transformers library used: - [huggingface transformers library](https://huggingface.co/transformers/v2.2.0/index.html)
 
 # Run and Evaluation
+The `augmented_dataset` folder contains the augmented datasets, along with the code used.
+We have used two techniques: paraphrasing and LLMs to augment the data and make it balanced in terms of output labels.
+
 The models are present in the `models` folder
 Below is an example run command:
 
