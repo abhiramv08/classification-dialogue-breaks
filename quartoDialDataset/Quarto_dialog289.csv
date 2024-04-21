@@ -1,0 +1,15 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+289,50,0,Start(),Hello. Could you teach me how to play Quarto?,Start,"Yes, let's begin.",Jacob,5,5,Anthony,,0-0-0-6-0-0-0-7-0-0-0-8-0-0-0-2
+289,50,1,RequestNewWinCondition(),Can you show me a way to win the game?,Inform,Assume you demonstrate this win condition,Jacob,5,5,Anthony,,0-0-5-0-0-0-13-0-0-0-15-0-0-0-8-0
+289,50,2,"Same, RequestOtherPlayers()",What actions could another player take to get rid of this win condition?,Inform([]),There is no action a player could take to take away this win.,Jacob,5,4,Anthony,,0-0-5-0-0-0-13-0-0-0-15-0-0-0-8-0
+289,50,3,RequestNewWinCondition(),Can you show me another way to win?,Inform,Assume you demonstrate this win condition,Jacob,5,5,Anthony,,0-0-6-0-0-0-10-0-0-0-13-0-0-0-14-0
+289,50,4,"Context Switch, Confirm(User_ID=1, Height)",Is this board a win because of the height of the pieces?,NotSure(),"I don't know, sorry.",Jacob,5,5,Anthony,,0-0-5-0-0-0-13-0-0-0-15-0-0-0-8-0
+289,50,5,RequestNewWinCondition(),Can you show me another win condition?,Inform,Assume you demonstrate this win condition,Jacob,5,4,Anthony,,3-0-0-0-0-7-0-0-0-0-15-0-0-0-0-16
+289,50,6,RequestNewWinCondition(),Could you show me another?,Inform,Assume you demonstrate this win condition,Jacob,5,5,Anthony,,0-0-0-0-0-0-0-0-0-0-0-0-5-8-1-2
+289,50,7,"Context Switch, Confirm(User_ID=1, Hollowness)","On this board, is the hollowness of the pieces important to the win condition?",Negate(),"No, the hollowness doesn't matter here.",Jacob,5,5,Anthony,,0-0-5-0-0-0-13-0-0-0-15-0-0-0-8-0
+289,50,8,"Context Switch, Confirm(User_ID=1, Translate([1, 0]))","On this board, could these pieces be moved up one column to create a new win condition?",Affirm(),"Yes, it would still be a win if the pieces were there.",Jacob,5,4,Anthony,,0-0-0-0-0-0-0-0-0-0-0-0-5-8-1-2
+289,50,9,"Same, Confirm(User_ID=1, AddPiece(3,2))",How about if a piece were added second from the right in the top row? Would this still be a win?,Affirm(),"Yes, that would still work.",Jacob,5,5,Anthony,,0-0-0-0-0-0-0-0-0-0-0-0-5-8-1-2
+289,50,10,"Same, Confirm(User_ID=1, Height)",Is this board a win because of the heights of the pieces?,Affirm(),"Yes, it is.",Jacob,5,5,Anthony,,0-0-0-0-0-0-0-0-0-0-0-0-5-8-1-2
+289,50,11,RequestNewWinCondition(),Can you show me another way to win?,Inform,Assume you demonstrate this win condition,Jacob,5,5,Anthony,,8-0-0-0-0-6-0-0-0-0-3-0-0-0-0-5
+289,50,12,"Context Switch, Confirm(User_ID=1, Height)",Are the heights of the pieces on this board important to the win condition?,NotSure(),I'm not sure if that's why.,Jacob,5,4,Anthony,,0-0-5-0-0-0-13-0-0-0-15-0-0-0-8-0
+289,50,13,Finish(),Thank you for helping me learn Quarto. Bye.,Finish,Goodbye.,Jacob,5,5,Anthony,,0-0-5-0-0-0-13-0-0-0-15-0-0-0-8-0

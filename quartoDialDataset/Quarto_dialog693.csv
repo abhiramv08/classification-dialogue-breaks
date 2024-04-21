@@ -1,0 +1,16 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+693,60,0,Start(),Hey! Can you teach me how to play Quarto?,Start,"Sure, let's get started.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+693,60,1,RequestNewWinCondition(),Can you show me a win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-16-6-4-12
+693,60,2,RequestNewWinCondition(),"What about another win?,",Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-11-0-0-0-13-0-0-0-12-0-0-0-15
+693,60,3,"Same, Confirm(User_ID=1, Translate([0, 0]))",Can I put the pieces on the first column and maintain the win?,Affirm(),"Sure, you can do that.",Ruijie,5,5,Luke,,0-0-0-11-0-0-0-13-0-0-0-12-0-0-0-15
+693,60,4,"Same, Request(User_ID=1, Translate)","Can I put the pieces somewhere else without breaking the win condition?
+","Inform(['col1', 'col2'])","Yes, you can put the pieces on the first column or the second column.",Ruijie,3,5,Luke,,0-0-0-11-0-0-0-13-0-0-0-12-0-0-0-15
+693,60,5,RequestNewWinCondition(),Can you show me a new win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-13-0-0-0-6-0-0-0-16-0-0-0-8
+693,60,6,"Context Switch, Confirm(User_ID=1, Color)","Switch to this board, is it a win because the pieces are in the same color?
+",Affirm(),"Yes, you’re right about that.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-16-6-4-12
+693,60,7,"Context Switch, Confirm(User_ID=1, AddPiece(0,0))","Switch to this board, can I add one more piece on the first row, the first column?",NotSure(),"Well, I don't know.",Ruijie,5,5,Luke,,0-0-0-11-0-0-0-13-0-0-0-12-0-0-0-15
+693,60,8,"Same, RequestOtherPlayers()",Can the other player break this win condition?,Inform([]),"No, this win is absolute.",Ruijie,5,5,Luke,,0-0-0-11-0-0-0-13-0-0-0-12-0-0-0-15
+693,60,9,"Same, Confirm(User_ID=1, Rotate(180))",Can I rotate the pieces by one hundred and eighty degrees and still have a win?,Affirm(),"Sure, you can do that.",Ruijie,4,5,Luke,,0-0-0-11-0-0-0-13-0-0-0-12-0-0-0-15
+693,60,10,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-14-12-15-11
+693,60,11,"Context Switch, Confirm(User_ID=1, Height)","Switch to this board, is it a win because the pieces are of the same height?",Affirm(),"Yes, that's correct!",Ruijie,5,5,Luke,,0-0-0-11-0-0-0-13-0-0-0-12-0-0-0-15
+693,60,12,Finish(),"Thanks, I've learned a lot!",Finish,You are welcome~,Ruijie,5,5,Luke,,0-0-0-11-0-0-0-13-0-0-0-12-0-0-0-15

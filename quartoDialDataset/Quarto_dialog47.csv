@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+47,100,0,Start(),"Hello, can you teach me how to play Quarto?",Start,Why not? Let's get started.,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+47,100,1,RequestNewWinCondition(),Can you show me what a win condition looks like?,Inform(),Assume you demonstrate this win condition,Ruijie,4,4,Luke,,0-11-0-0-0-5-0-0-0-1-0-0-0-13-0-0
+47,100,2,"Same, Request(User_ID=1, Translate)",Can I translate the given board and maintain a win?,"Inform(['col0', 'col2', 'col3'])","Sure, you can put the pieces in the rest of columns.",Ruijie,5,5,Luke,,0-11-0-0-0-5-0-0-0-1-0-0-0-13-0-0
+47,100,3,"Same , Confirm(User_ID=1, RemovePiece(2,1))","Is it still a win if I remove the piece at (2,1)",Negate(),"No, are you dumb?",Ruijie,5,5,Luke,,0-11-0-0-0-5-0-0-0-1-0-0-0-13-0-0
+47,100,4,"Same , Confirm(User_ID=1, Consistency)",Is it a win because the pieces have something in common ?,Negate(),No.,Ruijie,5,5,Luke,,0-11-0-0-0-5-0-0-0-1-0-0-0-13-0-0
+47,100,5,RequestNewWinCondition(),Can you show me a new win condition?,Inform(),Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-5-1-14-6
+47,100,6,"Context Switch, RequestOtherPlayers()",Can the other player do something to prevent this win?,Inform([]),No.,Ruijie,5,5,Luke,,0-11-0-0-0-5-0-0-0-1-0-0-0-13-0-0
+47,100,7,"Same , Confirm(User_ID=1, Color)",Is this a win conditino because of the colors?,Affirm(),Yes.,Ruijie,5,5,Luke,,0-11-0-0-0-5-0-0-0-1-0-0-0-13-0-0
+47,100,8,"Context Switch, Request(User_ID=1, Rotate)","Back to the previous condition, can I rotate the pieces and maintain a win?","Inform([45, 90])","sure, just rotate the pieces by 45 degrees.",Ruijie,3,4,Luke,You forget the 90 degrees,0-0-0-0-0-0-0-0-0-0-0-0-5-1-14-6
+47,100,9,RequestNewWinCondition(),Can you show me another win condition?,Inform(),Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-16-0-0-14-0-0-5-0-0-15-0-0-0
+47,100,10,"Same , Confirm(User_ID=1, Consistency)","For this new board, is it a win because there's something common about the pieces?",Negate(),No.,Ruijie,5,5,Luke,,0-0-0-16-0-0-14-0-0-5-0-0-15-0-0-0
+47,100,11,"Same, Request(User_ID=1, Translate)",Can I translate the pieces and maintain a win?,Inform([]),"No, you just can't.",Ruijie,5,5,Luke,,0-0-0-16-0-0-14-0-0-5-0-0-15-0-0-0
+47,100,12,RequestNewWinCondition(),Can you show me a new win condition?,Inform(),Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-12-0-0-16-0-0-11-0-0-4-0-0-0
+47,100,13,"Context Switch, Confirm(User_ID=1, Consistency)","Back to the previous one, is it a win because there's something common about the pieces?",Affirm(),"Yes, you have sharp eyes!",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-5-1-14-6
+47,100,14,"Context Switch, Confirm(User_ID=1, Rotate(90))","Back to the previous win condition, can I rotate the piece by 90 degrees and maintain the win?",Affirm(),Sure you can.,Ruijie,5,4,Luke,,0-0-0-16-0-0-14-0-0-5-0-0-15-0-0-0
+47,100,15,Finish(),"Well, I guess I've learned enough!",Finish,Ha! Beat me next time.,Ruijie,5,5,Luke,,0-0-0-16-0-0-14-0-0-5-0-0-15-0-0-0

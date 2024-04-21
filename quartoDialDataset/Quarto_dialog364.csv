@@ -1,0 +1,15 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+364,50,0,Start(),"Hi, will you teach me how to play Quarto?",Start,"Sure, let's go",John,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+364,50,1,RequestNewWinCondition(),What is an example of a win condition?,Inform,Assume you demonstrate this win condition,John,5,5,Derek,,0-0-0-4-0-0-15-0-0-7-0-0-12-0-0-0
+364,50,2,"Same, Confirm(User_ID=1, Height)",Is the height of the pieces here vital to this win?,Negate(),"No, the pieces are different heights, so that isn't why it is a win",John,4,4,Derek,,0-0-0-4-0-0-15-0-0-7-0-0-12-0-0-0
+364,50,3,RequestNewWinCondition(),Can I see another example of a win?,Inform,Assume you demonstrate this win condition,John,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-16-6-4-14
+364,50,4,"Context Switch, Request(User_ID=1, Rotate)","Going back to this board, how can I rotate the pieces and still have a win?",Inform([90]),You could rotate the pieces to be vertical in the left column,John,5,5,Derek,,0-0-0-4-0-0-15-0-0-7-0-0-12-0-0-0
+364,50,5,"Context Switch, Request(User_ID=1, Rotate)","For this board here now, how can I rotate the pieces and still have a win?",Inform([45]),You can rotate the pieces up 45 degrees to be along the diagonal,John,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-16-6-4-14
+364,50,6,"Context Switch, Confirm(User_ID=1, RemovePiece(3,3))","Now in this board, is it still a win if I remove the piece in the top right?",NotSure(),I'm not sure if that is still a win,John,5,5,Derek,,0-0-0-4-0-0-15-0-0-7-0-0-12-0-0-0
+364,50,7,"Same, Request(User_ID=1, Translate)",How can I translate all of the pieces and still have a win?,Inform([]),There are no valid translations to still have a win,John,4,4,Derek,"May be better to say ""shift""? ",0-0-0-4-0-0-15-0-0-7-0-0-12-0-0-0
+364,50,8,RequestNewWinCondition(),Can you show me another winning board?,Inform,Assume you demonstrate this win condition,John,5,5,Derek,,0-0-0-2-0-0-5-0-0-10-0-0-6-0-0-0
+364,50,9,"Context Switch, RequestOtherPlayers()",Let's go to this board now. What actions can another player take to prevent this win?,Inform([]),There are no actions another player could take to undo this win,John,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-16-6-4-14
+364,50,10,"Same, Confirm(User_ID=1, Shape)",Is the shape of the pieces here essential for this win?,Negate(),"No, the pieces are of different shapes, not contributing to the win condition",John,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-16-6-4-14
+364,50,11,"Same, RequestOtherPlayers()",What actions could another player take here to undo this win?,Inform([]),There are no actions that could do that,John,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-16-6-4-14
+364,50,12,"Context Switch, Confirm(User_ID=1, Shape)","Now in this board here, is the shape of the pieces important for this win?",NotSure(),I'm not sure how important the shape of the pieces is,John,5,5,Derek,,0-0-0-2-0-0-5-0-0-10-0-0-6-0-0-0
+364,50,13,Finish(),"Okay, I am done playing for now, thank you!",Finish,"You're welcome, bye!",John,5,5,Derek,,0-0-0-2-0-0-5-0-0-10-0-0-6-0-0-0

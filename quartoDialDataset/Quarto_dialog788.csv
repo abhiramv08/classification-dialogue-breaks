@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+788,60,0,Start(),"
+Can you teach me how to play Quarto?",Start,"
+Sure, let's start.",Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+788,60,1,RequestNewWinCondition(),Can you show me a win condition to start?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-5-14-13-2
+788,60,2,RequestNewWinCondition(),Please show me one more win condition.,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-1-0-0-0-2-0-0-0-14-0-0-0-5
+788,60,3,"Same, Confirm(User_ID=1, Quantity)",Do I have to have four pieces to win?,NotSure(),It really depends.,Derek,4,5,Shaobo,really depends = not sure?,0-0-0-1-0-0-0-2-0-0-0-14-0-0-0-5
+788,60,4,"Context Switch, Confirm(User_ID=1, Shape)","For this win condition, is that a win because the shape pattern of all pieces?",Negate(),No.,Derek,5,4,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-5-14-13-2
+788,60,5,"Context Switch, Confirm(User_ID=1, Height)",How about the height is this winning board showed.,Negate(),Still wrong.,Derek,4,4,Shaobo,,0-0-0-1-0-0-0-2-0-0-0-14-0-0-0-5
+788,60,6,"Context Switch, Confirm(User_ID=1, Translate([1, 0]))","Move back to this board, can I shift all piece up by one?",NotSure(),I don't know.,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-5-14-13-2
+788,60,7,"Same, Confirm(User_ID=1, Quantity)",Do I have to have four pieces to win?,Affirm(),Yes.,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-5-14-13-2
+788,60,8,RequestNewWinCondition(),Can you show me one more winning board?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,7-0-0-0-0-16-0-0-0-0-5-0-0-0-0-8
+788,60,9,"Same, Confirm(User_ID=1, RemovePiece(0,3))",Can I remove the bottom right piece without breaking the win?,Negate(),No. You will break the win if you do so.,Derek,5,5,Shaobo,,7-0-0-0-0-16-0-0-0-0-5-0-0-0-0-8
+788,60,10,Finish(),Thank you for teaching me today! ,Finish,Bye!,Derek,5,5,Shaobo,,7-0-0-0-0-16-0-0-0-0-5-0-0-0-0-8

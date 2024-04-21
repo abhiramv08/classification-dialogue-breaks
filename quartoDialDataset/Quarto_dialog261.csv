@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+261,50,0,Start(),"Hello, would you show me how to play Quarto?",Start,"Sure, I'd love to. ",Anthony,5,4,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+261,50,1,RequestNewWinCondition(),Can you show me a new win condition?,Inform,Assume you demonstrate this win condition,Anthony,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-12-4-10-14
+261,50,2,"Same, Confirm(User_ID=1, Shape)",Is this a win because of the shape of the pieces?,NotSure(),I'm not completely sure. ,Anthony,4,4,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-12-4-10-14
+261,50,3,"Same, Confirm(User_ID=1, Color)",Is it a win because the pieces are blue?,NotSure(),I'm not sure about that either.,Anthony,5,4,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-12-4-10-14
+261,50,4,"Same, Confirm(User_ID=1, Hollowness)",Is it a win because some pieces are hollow?,Negate(),"No, that is not why this is a win. ",Anthony,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-12-4-10-14
+261,50,5,RequestNewWinCondition(),Could you show me another win condition? ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Luke,,0-0-0-3-0-0-11-0-0-9-0-0-12-0-0-0
+261,50,6,"Context Switch, Request(User_ID=1, Translate)","Going back to this board, where could I shift the pieces.","Inform(['row1', 'row2'])","You could move the up to row 1, or row 2. ",Anthony,4,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-12-4-10-14
+261,50,7,RequestNewWinCondition(),Please show me another winning board. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Luke,,11-0-0-0-0-7-0-0-0-0-16-0-0-0-0-12
+261,50,8,"Context Switch, RequestOtherPlayers()","Looking back to this board, how can other players affect the win. ",Inform([]),There is nothing other players can do. ,Anthony,5,5,Luke,,0-0-0-3-0-0-11-0-0-9-0-0-12-0-0-0
+261,50,9,"Same, Confirm(User_ID=1, AddPiece(3,0))",Is it still a win if I add a piece here?,Affirm(),Yep. That would keep this a win. ,Anthony,4,5,Luke,,0-0-0-3-0-0-11-0-0-9-0-0-12-0-0-0
+261,50,10,"Context Switch, Confirm(User_ID=1, Hollowness)","Going to this board now, is it a win because some pieces are hollow?",Negate(),"No, hollowness has nothing to do with this win. ",Anthony,5,4,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-12-4-10-14
+261,50,11,Finish(),Okay. Thanks for showing me!,Finish,No problem!,Anthony,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-12-4-10-14

@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+346,50,0,Start(),Let's practice Quarto.,Start,Sure,Dmytro,,,,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+346,50,1,RequestNewWinCondition(),Show me an example of how does one win.,Inform,Assume you demonstrate this win condition,Dmytro,,,,,14-0-0-0-9-0-0-0-12-0-0-0-10-0-0-0
+346,50,2,RequestNewWinCondition(),How about another board example ?,Inform,Assume you demonstrate this win condition,Dmytro,,,,,12-0-0-0-3-0-0-0-11-0-0-0-15-0-0-0
+346,50,3,RequestNewWinCondition(),I'd like to see one more example.,Inform,Assume you demonstrate this win condition,Dmytro,,,,,7-0-0-0-0-5-0-0-0-0-6-0-0-0-0-1
+346,50,4,"Context Switch, Confirm(User_ID=1, Quantity)","Regarding the first example, is it the number of the figures that make it a win ?",NotSure(),"Maybe, don't know for sure.",Dmytro,,,,,14-0-0-0-9-0-0-0-12-0-0-0-10-0-0-0
+346,50,5,"Context Switch, Confirm(User_ID=1, Translate([0, 2]))","Regarding another board, can I move the figures here (robots shows location on the board) ?",NotSure(),"Probably, but I can't definitively answer that.",Dmytro,,,,,12-0-0-0-3-0-0-0-11-0-0-0-15-0-0-0
+346,50,6,RequestNewWinCondition(),Can you show another winning board example ?,Inform,Assume you demonstrate this win condition,Dmytro,,,,,15-0-0-0-0-12-0-0-0-0-7-0-0-0-0-8
+346,50,7,RequestNewWinCondition(),"One more, please.",Inform,Assume you demonstrate this win condition,Dmytro,,,,,0-0-0-0-0-0-0-0-0-0-0-0-4-3-12-2
+346,50,8,RequestNewWinCondition(),"Alright, I would like to see additional win example.",Inform,Assume you demonstrate this win condition,Dmytro,,,,,0-0-0-0-0-0-0-0-0-0-0-0-1-2-7-8
+346,50,9,"Context Switch, Confirm(User_ID=1, Rotate(90))",Back to this prior example; Can I put the pieces on a vertical in a column?,NotSure(),"That might be possible, but I would need to double - check.",Dmytro,,,,,7-0-0-0-0-5-0-0-0-0-6-0-0-0-0-1
+346,50,10,RequestNewWinCondition(),Can you do another win demonstration.,Inform,Assume you demonstrate this win condition,Dmytro,,,,,11-0-0-0-1-0-0-0-3-0-0-0-7-0-0-0
+346,50,11,"Context Switch, Confirm(User_ID=1, Height)",Let's go back to this board; Does the figures' height make it a win ?,Negate(),"No, the height doesn't affect winning condition.",Dmytro,,,,,0-0-0-0-0-0-0-0-0-0-0-0-4-3-12-2
+346,50,12,Finish(),"Ok, I think I learned what I needed.",Finish,Great !,Dmytro,,,,,0-0-0-0-0-0-0-0-0-0-0-0-4-3-12-2

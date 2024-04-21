@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+723,60,0,Start(),Hey! Can you show me how to play Quarto?,Start,"Yes, let's do this.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+723,60,1,RequestNewWinCondition(),Can you show me what a win condition looks like?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-7-0-0-16-0-0-8-0-0-13-0-0-0
+723,60,2,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,11-0-0-0-13-0-0-0-7-0-0-0-9-0-0-0
+723,60,3,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,3,Luke,,0-0-5-0-0-0-13-0-0-0-16-0-0-0-14-0
+723,60,4,"Same, Confirm(User_ID=1, AddPiece(1,1))","Can I add one more piece on the second row, the second column and still have a win?",NotSure(),"Sorry, I'm not sure.",Ruijie,5,4,Luke,,0-0-5-0-0-0-13-0-0-0-16-0-0-0-14-0
+723,60,5,"Same, Confirm(User_ID=1, Shape)","Is it a win because the pieces are of the same shape?
+",Affirm(),"Yes, that's the right reason.",Ruijie,5,5,Luke,,0-0-5-0-0-0-13-0-0-0-16-0-0-0-14-0
+723,60,6,"Context Switch, Request(User_ID=1, Rotate)","Switch to this board, can I rotate the pieces by some degrees?
+",Inform([90]),"Sure, you can rotate them by ninety degrees.
+",Ruijie,5,3,Luke,,0-0-0-7-0-0-16-0-0-8-0-0-13-0-0-0
+723,60,7,"Context Switch, Confirm(User_ID=1, Shape)","Switch to this board, is it a win because the pieces are of the same shape?
+",Affirm(),"Yup, you are right.",Ruijie,5,5,Luke,,0-0-5-0-0-0-13-0-0-0-16-0-0-0-14-0
+723,60,8,"Same, Confirm(User_ID=1, AddPiece(0,0))",Can I add one more piece at the bottom location and still have a win?,Affirm(),"Sure, you can do that.",Ruijie,3,3,Luke,,0-0-5-0-0-0-13-0-0-0-16-0-0-0-14-0
+723,60,9,"Same, Confirm(User_ID=1, Height)","Is it a win because the pieces are of the same height?
+",Negate(),"No, that’s not the reason.",Ruijie,5,5,Luke,,0-0-5-0-0-0-13-0-0-0-16-0-0-0-14-0
+723,60,10,Finish(),"Thanks, I got it!",Finish,My pleasure!,Ruijie,5,5,Luke,,0-0-5-0-0-0-13-0-0-0-16-0-0-0-14-0

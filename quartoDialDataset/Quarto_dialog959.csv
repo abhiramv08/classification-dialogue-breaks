@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+959,60,0,Start(),"Hi, can you give me some advice on playing Quarto?",Start,"Sure, what do you want to know?",Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+959,60,1,RequestNewWinCondition(),Can you give me an example of win?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-10-14-6-4
+959,60,2,RequestNewWinCondition(),Can you give me another example of win?,Inform,Assume you demonstrate this win condition,Tianyi,5,4,Ruijie,,11-0-0-0-0-16-0-0-0-0-9-0-0-0-0-13
+959,60,3,"Same, Confirm(User_ID=1, Height)","In this case, is it a win because all pieces are tall?",Affirm(),Yes.,Tianyi,5,5,Ruijie,,11-0-0-0-0-16-0-0-0-0-9-0-0-0-0-13
+959,60,4,RequestNewWinCondition(),Can you show me a new winning board?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,0-0-0-4-0-0-6-0-0-16-0-0-14-0-0-0
+959,60,5,"Context Switch, Confirm(User_ID=1, Height)","Back to this case, is it a win because no piece is short?",NotSure(),I cannot determine whether that is true.,Tianyi,5,4,Ruijie,,11-0-0-0-0-16-0-0-0-0-9-0-0-0-0-13
+959,60,6,"Same, RequestOtherPlayers()",Can someone take actions to prevent the win?,Inform([]),"No, there is nothing he/she can do.",Tianyi,5,5,Ruijie,,11-0-0-0-0-16-0-0-0-0-9-0-0-0-0-13
+959,60,7,"Same, Confirm(User_ID=1, Rotate(90))","If I rotate all pieces 90 degrees to the rows and put them in the first column, can it still be a winning board?",Affirm(),"Yes, it will still be a win.",Tianyi,5,4,Ruijie,,11-0-0-0-0-16-0-0-0-0-9-0-0-0-0-13
+959,60,8,"Same, Confirm(User_ID=1, Hollowness)",Is it wins because some pieces are solid?,Negate(),"No, that is not the reason.",Tianyi,5,5,Ruijie,,11-0-0-0-0-16-0-0-0-0-9-0-0-0-0-13
+959,60,9,"Context Switch, Request(User_ID=1, Rotate)","In this case, can I rotate some pieces and still maintain the win?",Inform([90]),"Yes, you can rotate all pieces 90 degrees to the rows and put them in the first column.",Tianyi,5,4,Ruijie,,0-0-0-4-0-0-6-0-0-16-0-0-14-0-0-0
+959,60,10,"Context Switch, Confirm(User_ID=1, AddPiece(0,1))","In this winning board, if I put a new piece at the second column of the first row, can it still be a win?",Affirm(),"Yes, it will still be a win.",Tianyi,5,5,Ruijie,,11-0-0-0-0-16-0-0-0-0-9-0-0-0-0-13
+959,60,11,Finish(),Thank you.,Finish,You are welcome.,Tianyi,5,5,Ruijie,,11-0-0-0-0-16-0-0-0-0-9-0-0-0-0-13

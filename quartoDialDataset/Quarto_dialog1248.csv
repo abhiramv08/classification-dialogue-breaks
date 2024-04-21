@@ -1,0 +1,19 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+1248,60,0,Start(),"Hi, could you teach me how to play Quarto?",Start,"Sure, let's get started!",Shaobo,5.0,5.0,John,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+1248,60,1,RequestNewWinCondition(),Could you show me a win first?,Inform,Assume you demonstrate this win condition,Shaobo,5.0,5.0,John,,0-0-0-0-0-0-0-0-0-0-0-0-2-11-4-1
+1248,60,2,RequestNewWinCondition(),Is there any other way to win?,Inform,Assume you demonstrate this win condition,Shaobo,5.0,5.0,John,,0-0-0-1-0-0-9-0-0-6-0-0-13-0-0-0
+1248,60,3,RequestNewWinCondition(),Could you show me another winning board?,Inform,Assume you demonstrate this win condition,Shaobo,5.0,5.0,John,,0-0-0-15-0-0-5-0-0-6-0-0-7-0-0-0
+1248,60,4,"Same, Confirm(User_ID=1, AddPiece(1,0))",And is it still a win if I add a piece on the second bottom row and the leftmost column?,NotSure(),"Sorry, I am not sure about it.",Shaobo,5.0,3.0,John,,0-0-0-15-0-0-5-0-0-6-0-0-7-0-0-0
+1248,60,5,"Context Switch, Request(User_ID=1, Rotate)","Switching to this board, how could I rotate the pieces and still keep the win?","Inform([90, 45])",You could rotate them to the leftmost column or the diagonal.,Shaobo,5.0,5.0,John,,0-0-0-0-0-0-0-0-0-0-0-0-2-11-4-1
+1248,60,6,"Context Switch, Confirm(User_ID=1, Color)","Switching to this board, is it a win because of the color of the pieces?",Negate(),"No, it is a win because all pieces have the same shape.",Shaobo,5.0,5.0,John,,0-0-0-15-0-0-5-0-0-6-0-0-7-0-0-0
+1248,60,7,"Context Switch, Confirm(User_ID=1, Hollowness)","Switching to this board, is it a win because of the hollowness of the pieces?",Negate(),"No, it is a win because all pieces have the same shape.",Shaobo,5.0,5.0,John,,0-0-0-0-0-0-0-0-0-0-0-0-2-11-4-1
+1248,60,8,"Context Switch, Confirm(User_ID=1, Rotate(90))","Switching to this board, is it still a win if I rotate the pieces to the first column?",Affirm(),"Yes, it is still a win.",Shaobo,5.0,5.0,John,,0-0-0-15-0-0-5-0-0-6-0-0-7-0-0-0
+1248,60,9,RequestNewWinCondition(),Could you show me one more winning board?,Inform,Assume you demonstrate this win condition,Shaobo,5.0,5.0,John,,9-0-0-0-5-0-0-0-15-0-0-0-13-0-0-0
+1248,60,10,"Context Switch, RequestOtherPlayers()","Switching to this board, how could another player revoke this win?",Inform([]),There is nothing that another player could do to prevent this win.,Shaobo,5.0,5.0,John,,0-0-0-15-0-0-5-0-0-6-0-0-7-0-0-0
+1248,60,11,"Same, Confirm(User_ID=1, RemovePiece(2,2))",And is it still a win if I remove the second top piece?,NotSure(),"Sorry, I am not sure about it.",Shaobo,,,John,,0-0-0-15-0-0-5-0-0-6-0-0-7-0-0-0
+1248,60,12,RequestNewWinCondition(),"I need one more winning board for a better understanding.
+",Inform,Assume you demonstrate this win condition,Shaobo,5.0,5.0,John,,0-0-0-0-0-0-0-0-0-0-0-0-1-3-15-7
+1248,60,13,"Same, RequestOtherPlayers()",And how could another player revoke this win?,Inform([]),"There is nothing that another player could do to prevent this win.
+",Shaobo,5.0,5.0,John,,0-0-0-0-0-0-0-0-0-0-0-0-1-3-15-7
+1248,60,14,RequestNewWinCondition(),Could you show me one more winning board?,Inform,Assume you demonstrate this win condition,Shaobo,5.0,5.0,John,,6-0-0-0-0-1-0-0-0-0-3-0-0-0-0-8
+1248,60,15,Finish(),Thanks for the help! I have learned a lot!,Finish,You are welcome!,Shaobo,5.0,5.0,John,,6-0-0-0-0-1-0-0-0-0-3-0-0-0-0-8

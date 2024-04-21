@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+111,100,0,Start(),"Hi, can you show me how to play Quarto?",Start,"Sure, let's get started!",Ruijie,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+111,100,1,RequestNewWinCondition(),Can you show me what a win condition looks like?,Inform(),Assume you demonstrate this win condition,Ruijie,5,5,Tianyi,,0-0-0-1-0-0-0-10-0-0-0-4-0-0-0-12
+111,100,2,"Same, Confirm(User_ID=1, Rotate(135))",Is it still a win if I put the pieces horizontally?,Affirm(),"Sure, you can do that.",Ruijie,2,5,Tianyi,"Rotate(135)should be at diagonal. (If I am wrong, I will change the rating)",0-0-0-1-0-0-0-10-0-0-0-4-0-0-0-12
+111,100,3,RequestNewWinCondition(),Can you show me a new win condition?,Inform(),Assume you demonstrate this win condition,Ruijie,5,5,Tianyi,,13-0-0-0-0-14-0-0-0-0-8-0-0-0-0-15
+111,100,4,"Same, Confirm(User_ID=1, Quantity)",Is it a win because of the number of the pieces?,Affirm(),"Yes, it is.",Ruijie,5,4,Tianyi,,13-0-0-0-0-14-0-0-0-0-8-0-0-0-0-15
+111,100,5,"Same , Confirm(User_ID=1, Color)",Is it a win because of the colors of pieces?,Negate(),"No, it's not.",Ruijie,5,4,Tianyi,,13-0-0-0-0-14-0-0-0-0-8-0-0-0-0-15
+111,100,6,"Same , Confirm(User_ID=1, Shape)",Is it a win because of the shapes of the pieces?,Affirm(),"Yes, you're right.",Ruijie,5,4,Tianyi,,13-0-0-0-0-14-0-0-0-0-8-0-0-0-0-15
+111,100,7,"Context Switch, Confirm(User_ID=1, Translate('col1'))",Is it still a win if I put the pieces on the first column?,Affirm,Yes.,Ruijie,2,5,Tianyi,col1 is the second column.,0-0-0-1-0-0-0-10-0-0-0-4-0-0-0-12
+111,100,8,"Same , Confirm(User_ID=1, AddPiece(1,2))",Is it still a win if I add one more piece on the second one?,Affirm(),Sure.,Ruijie,2,5,Tianyi,"The meaning is vague. Need to point out what is ""second one"".",0-0-0-1-0-0-0-10-0-0-0-4-0-0-0-12
+111,100,9,RequestNewWinCondition(),Can you give a new win condition?,Inform(),Assume you demonstrate this win condition,Ruijie,5,5,Tianyi,,0-0-0-5-0-0-0-7-0-0-0-2-0-0-0-6
+111,100,10,"Context Switch, Confirm(User_ID=1, Rotate(90))","Back to the previous win, is it still a win if I put the pieces on the other diagonal?",Affirm(),"Yes, it still is.",Ruijie,2,5,Tianyi,"Rotate(90) (If I am wrong, I will change the rating)",13-0-0-0-0-14-0-0-0-0-8-0-0-0-0-15
+111,100,11,RequestNewWinCondition(),Can you show me a new win condition?,Inform(),Assume you demonstrate this win condition,Ruijie,5,5,Tianyi,,0-0-0-1-0-0-12-0-0-4-0-0-10-0-0-0
+111,100,12,RequestNewWinCondition(),What about another one?,Inform(),Assume you demonstrate this win condition,Ruijie,4,4,Tianyi,,0-0-0-6-0-0-10-0-0-9-0-0-13-0-0-0
+111,100,13,"Context Switch, Confirm(User_ID=1, AddPiece(0,3))","Back to the previous win, is it still a win if I add a piecee on (0,3)?",Affirm(),"Yes, it still is.",Ruijie,5,4,Tianyi,,0-0-0-1-0-0-12-0-0-4-0-0-10-0-0-0
+111,100,14,"Same , Confirm(User_ID=1, Color)",Is it a win because a win because of the colors?,Negate(),"No, it's not.",Ruijie,5,5,Tianyi,,0-0-0-1-0-0-12-0-0-4-0-0-10-0-0-0
+111,100,15,Finish(),"Thanks, I think I've learned enough.",Finish,No problem!,Ruijie,5,5,Tianyi,,0-0-0-1-0-0-12-0-0-4-0-0-10-0-0-0

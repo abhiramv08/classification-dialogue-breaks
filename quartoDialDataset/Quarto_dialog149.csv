@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+149,100,0,Start(),Can you teach me how to play Quarto?,Start,No problem!,Derek,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+149,100,1,RequestNewWinCondition(),Can you give me a win condition to start with?,Inform(),Assume you demonstrate this win condition,Derek,5,5,John,,15-0-0-0-13-0-0-0-10-0-0-0-9-0-0-0
+149,100,2,RequestNewWinCondition(),Please show me a new win condition.,Inform(),Assume you demonstrate this win condition,Derek,5,5,John,,0-0-0-7-0-0-5-0-0-14-0-0-13-0-0-0
+149,100,3,"Same , Confirm(User_ID=1, Shape)",Is that a win because the shape of pieces?,Affirm(),Yes.,Derek,5,4,John,,0-0-0-7-0-0-5-0-0-14-0-0-13-0-0-0
+149,100,4,"Context Switch, Request(User_ID=1, Rotate)",For the first win condition you showed. Can I rotate the board at some angle and keep winning?,"Inform([0, 45])","Yes, you can place the pieces horizontally and diagoanlly. ",Derek,4,5,John,maybe specify that horizontally would be in the first row,15-0-0-0-13-0-0-0-10-0-0-0-9-0-0-0
+149,100,5,"Win Context Switch {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}","For the second win condition, is that a win because the hollowness of pieces?",Negate(),No.,Derek,5,4,John,,0-0-0-7-0-0-5-0-0-14-0-0-13-0-0-0
+149,100,6,"Same, Confirm(User_ID=1, Height)",Is that a win because the height of pieces?,Negate(),No.,Derek,5,3,John,,0-0-0-7-0-0-5-0-0-14-0-0-13-0-0-0
+149,100,7,RequestNewWinCondition(),Can you show me another win condition?,Inform(),Assume you demonstrate this win condition,Derek,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-9-2-10-5
+149,100,8,RequestNewWinCondition(),Please give me one more win condition.,Inform(),Assume you demonstrate this win condition,Derek,5,5,John,,15-0-0-0-3-0-0-0-5-0-0-0-13-0-0-0
+149,100,9,"Context Switch, Confirm(User_ID=1, Rotate(0))","Let's actually go back to the first win condition, can I set the pieces horizontally and keep winning?",Affirm(),"Yes, you can do that.",Derek,4,5,John,Specify which row horizontally,15-0-0-0-13-0-0-0-10-0-0-0-9-0-0-0
+149,100,10,RequestNewWinCondition(),Please show me a new win condition.,Inform(),Assume you demonstrate this win condition,Derek,5,5,John,,0-9-0-0-0-3-0-0-0-11-0-0-0-12-0-0
+149,100,11,"Context Switch, Confirm(User_ID=1, AddPiece(2,1))","Go back to the first win condition again. Can I add a piece at (2,1) and keep winning?",Affirm(),Yes.,Derek,5,3,John,Try to avoid coordinates,15-0-0-0-13-0-0-0-10-0-0-0-9-0-0-0
+149,100,12,"Context Switch, Confirm(User_ID=1, Color)","For the last win condition you just showed me, is that a win because the color of pieces?",Negate(),No.,Derek,5,4,John,,0-9-0-0-0-3-0-0-0-11-0-0-0-12-0-0
+149,100,13,"Context Switch, Confirm(User_ID=1, Shape)","For the third win condition, is that a win because the shape of pieces?",Negate(),No.,Derek,5,4,John,,0-0-0-0-0-0-0-0-0-0-0-0-9-2-10-5
+149,100,14,"Context Switch, Confirm(User_ID=1, Shape)","For the first win condition, is that a win because the shape of pieces?",Negate(),No.,Derek,5,4,John,,15-0-0-0-13-0-0-0-10-0-0-0-9-0-0-0
+149,100,15,Finish(),Thanks!,Finish,You are welcome.,Derek,5,5,John,,15-0-0-0-13-0-0-0-10-0-0-0-9-0-0-0

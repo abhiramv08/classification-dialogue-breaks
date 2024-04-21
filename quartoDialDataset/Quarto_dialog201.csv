@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+201,100,0,Start(),Can you teach me to play Quarto please?,Start,Sure!,Daniel,5,4,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+201,100,1,RequestNewWinCondition(),Can you show me a board where someone wins?,Inform(),Assume you demonstrate this win condition,Daniel,5,4,Luke,,0-0-0-6-0-0-0-8-0-0-0-13-0-0-0-15
+201,100,2,RequestNewWinCondition(),Can you show me a different winning board?,Inform(),Assume you demonstrate this win condition,Daniel,5,5,Luke,,14-0-0-0-0-12-0-0-0-0-6-0-0-0-0-4
+201,100,3,"Win Context Switch {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}",Is this a win because of the hollowness of the pieces?,Negate(),No,Daniel,5,3,Luke,,0-0-0-6-0-0-0-8-0-0-0-13-0-0-0-15
+201,100,4,"Same, Confirm(User_ID=1, Quantity)",Is this a win because of the number of pieces?,Affirm(),Yes,Daniel,5,3,Luke,,0-0-0-6-0-0-0-8-0-0-0-13-0-0-0-15
+201,100,5,RequestNewWinCondition(),Can you show me a different winning board?,Inform(),Assume you demonstrate this win condition,Daniel,5,5,Luke,,3-0-0-0-0-8-0-0-0-0-15-0-0-0-0-16
+201,100,6,"Context Switch, Request(User_ID=1, Rotate)",How can I rotate the pieces and still win?,"Inform([135, 180])",You can rotate them horizontally or diagonally,Daniel,5,5,Luke,,0-0-0-6-0-0-0-8-0-0-0-13-0-0-0-15
+201,100,7,"Win Context Switch {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}",Is this a win because of the hollowness of the pieces,Negate(),No.,Daniel,5,3,Luke,,14-0-0-0-0-12-0-0-0-0-6-0-0-0-0-4
+201,100,8,RequestNewWinCondition(),Can you show me a different way to win?,Inform(),Assume you demonstrate this win condition,Daniel,5,5,Luke,,9-0-0-0-0-3-0-0-0-0-11-0-0-0-0-5
+201,100,9,"Win Context Switch {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}",Is this a win because of the hollowness of the pieces?,Negate(),no,Daniel,5,3,Luke,,14-0-0-0-0-12-0-0-0-0-6-0-0-0-0-4
+201,100,10,Finish(),Thanks!,Finish,No problem,Daniel,3,3,Luke,,14-0-0-0-0-12-0-0-0-0-6-0-0-0-0-4

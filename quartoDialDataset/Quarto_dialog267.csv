@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+267,50,0,Start(),I'd like to learn how to play Quarto.,Start,"Sure, I can teach you",Daniel,,,,,0-0-0-0-0-0-0-0-0-0-0-0-16-15-7-13
+267,50,1,RequestNewWinCondition(),Can you show me a board where someone wins please?,Inform,Assume you demonstrate this win condition,Daniel,,,,,0-0-0-0-0-0-0-0-0-0-0-0-11-12-4-10
+267,50,2,RequestNewWinCondition(),Can you show me a different board please?,Inform,Assume you demonstrate this win condition,Daniel,,,,,0-0-0-15-0-0-0-10-0-0-0-13-0-0-0-16
+267,50,3,"Same, Request(User_ID=1, Translate)",Can I slide these pieces anywhere and still win?,Inform(['col1']),"Yes, you can move them to the second column",Daniel,,,,,0-0-0-15-0-0-0-10-0-0-0-13-0-0-0-16
+267,50,4,RequestNewWinCondition(),Can you show me a different board please?,Inform,Assume you demonstrate this win condition,Daniel,,,,,0-10-0-0-0-6-0-0-0-2-0-0-0-12-0-0
+267,50,5,RequestNewWinCondition(),And another one please?,Inform,Assume you demonstrate this win condition,Daniel,,,,,12-0-0-0-0-11-0-0-0-0-4-0-0-0-0-9
+267,50,6,"Same, Confirm(User_ID=1, Shape)",Is this board a win because of the shape of the pieces?,NotSure(),I don't know,Daniel,,,,,12-0-0-0-0-11-0-0-0-0-4-0-0-0-0-9
+267,50,7,"Context Switch, Request(User_ID=1, Translate)","IFor this other board, is there anywhere I can move these pieces and still win?",Inform(['col1']),"Yes, you can move them to the second column",Daniel,,,,,0-0-0-15-0-0-0-10-0-0-0-13-0-0-0-16
+267,50,8,"Context Switch, RequestOtherPlayers()","For this board now, is there anything the other player can do to stop this win?",Inform([]),"No, they can't do anything",Daniel,,,,,0-10-0-0-0-6-0-0-0-2-0-0-0-12-0-0
+267,50,9,"Context Switch, Confirm(User_ID=1, Hollowness)",Is this board here a win because of the hollowness of the pieces?,Negate(),No,Daniel,,,,,0-0-0-15-0-0-0-10-0-0-0-13-0-0-0-16
+267,50,10,"Context Switch, Confirm(User_ID=1, Shape)",Is this other board a win because of the shape of the pieces?,NotSure(),I don't know,Daniel,,,,,0-0-0-0-0-0-0-0-0-0-0-0-11-12-4-10
+267,50,11,Finish(),Thank you!,Finish,No problem,Daniel,,,,,0-0-0-0-0-0-0-0-0-0-0-0-11-12-4-10

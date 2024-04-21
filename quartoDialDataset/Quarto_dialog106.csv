@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+106,100,0,Start(),Let's play Quarto?,Start,"Actually, let me teach you Quarto... You still have a lot to learn.",Luke,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+106,100,1,RequestNewWinCondition(),You're right. Can you give me a win condition?,Inform(),Assume you demonstrate this win condition,Luke,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-11-3-5-7
+106,100,2,"Same, Confirm(User_ID=1, Height)",Is this a win because of the height of the tiles?,Negate(),"Nope, try again.",Luke,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-11-3-5-7
+106,100,3,RequestNewWinCondition(),"Well, I guess show me a new win condition.",Inform(),Assume you demonstrate this win condition,Luke,5,5,Shaobo,,13-0-0-0-0-15-0-0-0-0-3-0-0-0-0-1
+106,100,4,"Same , Confirm(User_ID=1, RemovePiece(0,3))",Can I remove this piece right here?,Negate(),No you cannot. This would cause you to lose the game.,Luke,5,5,Shaobo,,13-0-0-0-0-15-0-0-0-0-3-0-0-0-0-1
+106,100,5,"Context Switch, RequestOtherPlayers()","Going back to the first condition, can other players affect my game?",Inform([]),Other players have no affect on your win.,Luke,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-11-3-5-7
+106,100,6,"Win Context Switch {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}",Why is this a win? Because of the hollowness of the pieces?,Negate(),"No, the win is because of the color, not the hollowness.",Luke,5,5,Shaobo,,13-0-0-0-0-15-0-0-0-0-3-0-0-0-0-1
+106,100,7,RequestNewWinCondition(),Show me another win condition.,Inform(),Assume you demonstrate this win condition,Luke,5,5,Shaobo,,6-0-0-0-0-3-0-0-0-0-8-0-0-0-0-4
+106,100,8,RequestNewWinCondition(),Let me see one more.,Inform(),Assume you demonstrate this win condition,Luke,5,5,Shaobo,,0-4-0-0-0-10-0-0-0-16-0-0-0-8-0-0
+106,100,9,"Context Switch, Confirm(User_ID=1, Rotate(90))","Going back to the previous board, can I rotate the tiles by 90 degrees and still win?",Affirm(),"Yes, if you do this you will still win.",Luke,5,5,Shaobo,,6-0-0-0-0-3-0-0-0-0-8-0-0-0-0-4
+106,100,10,"Win Context Switch {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}","For this board, is the win due to the hollowness of the tiles?",Negate(),Obviously this is not the reason as one of the tiles is not hollow.,Luke,5,5,Shaobo,,0-4-0-0-0-10-0-0-0-16-0-0-0-8-0-0
+106,100,11,"Context Switch, Confirm(User_ID=1, Color)","With this board, is the win because of the color of the pieces?",Affirm(),"Yes, the color is in fact the reason for the win.",Luke,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-11-3-5-7
+106,100,12,Finish(),"OK, well I'm done for the day. Thank you!",Finish,You're welcome!,Luke,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-11-3-5-7

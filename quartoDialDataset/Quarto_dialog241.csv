@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+241,100,0,Start(),"Hi, can you show me how to play Quarto?",Start,"Sure, let's get started!",Ruijie,5,5,Dmytro,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+241,100,1,RequestNewWinCondition(),Can you show me a win condition?,Inform(),Assume you demonstrate this win condition,Ruijie,4,3,Dmytro,,0-0-5-0-0-0-8-0-0-0-14-0-0-0-13-0
+241,100,2,"Same , Confirm(User_ID=1, Shape)",Is it because of the shapes of pieces that make it a win?,Affirm(),"Yes, you are right about that.",Ruijie,5,5,Dmytro,,0-0-5-0-0-0-8-0-0-0-14-0-0-0-13-0
+241,100,3,RequestNewWinCondition(),Can you show me a new win condition?,Inform(),Assume you demonstrate this win condition,Ruijie,4,3,Dmytro,,0-0-0-0-0-0-0-0-0-0-0-0-11-7-3-9
+241,100,4,"Context Switch, RequestOtherPlayers()","Back to the previous win, can the other player prevent this win condition?",Inform([]),"No, this win is absolute.",Ruijie,5,5,Dmytro,,0-0-5-0-0-0-8-0-0-0-14-0-0-0-13-0
+241,100,5,RequestNewWinCondition(),Can you show me a new win condition?,Inform(),Assume you demonstrate this win condition,Ruijie,4,2,Dmytro,,6-0-0-0-0-4-0-0-0-0-5-0-0-0-0-8
+241,100,6,"Same, Request(User_ID=1, Rotate)",Can I rotate the piece by a certain degree and maintain the win?,Inform([90]),"Sure, just rotate them by 90 degrees.",Ruijie,5,3,Dmytro,,6-0-0-0-0-4-0-0-0-0-5-0-0-0-0-8
+241,100,7,"Context Switch, Confirm(User_ID=1, AddPiece(3,3))","Back to the previous win, can I add a piece on the third piece and maintain the win?",Affirm(),"Sure, you can do that.",Ruijie,1,3,Dmytro,,0-0-0-0-0-0-0-0-0-0-0-0-11-7-3-9
+241,100,8,"Same, Confirm(User_ID=1, Quantity)",Is it the quantity of pieces that makes it a win?,Affirm(),Yeah.,Ruijie,5,4,Dmytro,,0-0-0-0-0-0-0-0-0-0-0-0-11-7-3-9
+241,100,9,RequestNewWinCondition(),What about a new win condition?,Inform(),Assume you demonstrate this win condition,Ruijie,4,3,Dmytro,,0-0-7-0-0-0-1-0-0-0-5-0-0-0-9-0
+241,100,10,"Win Context Switch {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}","Back to the previous win you showed me, is it a win because the first and the second piece are not hollow?",Negate(),"No, that's not the reason.",Ruijie,2,4,Dmytro,,0-0-5-0-0-0-8-0-0-0-14-0-0-0-13-0
+241,100,11,"Context Switch, Confirm(User_ID=1, Height)","Back to the previous win you showed me, is it the height of the pieces that makes it a win?",Negate(),"No, that's incorrect.",Ruijie,5,4,Dmytro,,0-0-0-0-0-0-0-0-0-0-0-0-11-7-3-9
+241,100,12,"Context Switch, RequestOtherPlayers()","Back to the previous win you showed me, can the other player do something to prevent the win?",Inform([]),"No, this win is absolute.",Ruijie,4,4,Dmytro,"""Back to the previous win"" used too many times; can't follow the context anymore",6-0-0-0-0-4-0-0-0-0-5-0-0-0-0-8
+241,100,13,"Context Switch, Confirm(User_ID=1, Shape)","Back to the previous win, is it because the shapes of pieces that make it a win?",Negate(),"No, it's unrelated.",Ruijie,4,4,Dmytro,,0-0-7-0-0-0-1-0-0-0-5-0-0-0-9-0
+241,100,14,RequestNewWinCondition(),Can you show me a new win condition?,Inform(),Assume you demonstrate this win condition,Ruijie,4,3,Dmytro,,0-0-0-0-0-0-0-0-0-0-0-0-6-13-9-5
+241,100,15,Finish(),Thanks! I think I've learned enough.,Finish,You're welcome.,Ruijie,5,5,Dmytro,,0-0-0-0-0-0-0-0-0-0-0-0-6-13-9-5

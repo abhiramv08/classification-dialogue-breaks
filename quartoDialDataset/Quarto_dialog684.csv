@@ -1,0 +1,18 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+684,60,0,Start(),Hello! Can you show me how to play Quarto?,Start,Sure thing! Let's start!,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+684,60,1,RequestNewWinCondition(),Can you show me what a win condition looks like?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,1-0-0-0-13-0-0-0-7-0-0-0-15-0-0-0
+684,60,2,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,14-0-0-0-0-7-0-0-0-0-5-0-0-0-0-6
+684,60,3,"Same, Confirm(User_ID=1, RemovePiece(3,0))","Can I add one more piece on the fourth row, the first column?",NotSure(),"Well, I'm not sure.",Ruijie,2,5,Luke,,14-0-0-0-0-7-0-0-0-0-5-0-0-0-0-6
+684,60,4,"Same, Confirm(User_ID=1, Rotate(90))",Can I rotate the pieces by ninety degrees?,Affirm(),"Sure, you can do that!",Ruijie,4,4,Luke,,14-0-0-0-0-7-0-0-0-0-5-0-0-0-0-6
+684,60,5,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,3-0-0-0-0-1-0-0-0-0-2-0-0-0-0-6
+684,60,6,"Same, Request(User_ID=1, Rotate)","Can I rotate the pieces by some degrees and still have a win?
+",Inform([90]),"Sure, you can rotate them by ninety degrees.
+",Ruijie,4,5,Luke,,3-0-0-0-0-1-0-0-0-0-2-0-0-0-0-6
+684,60,7,"Context Switch, Confirm(User_ID=1, AddPiece(3,1))","Switch to this board, can I add one more piece on the fourth row, the second column?
+",Affirm(),"Sure, you can do that.",Ruijie,5,5,Luke,,14-0-0-0-0-7-0-0-0-0-5-0-0-0-0-6
+684,60,8,"Same, Confirm(User_ID=1, Hollowness)","Does the hollowness of the pieces make it a win?
+",Negate(),"No, that’s not the reason.
+",Ruijie,5,5,Luke,,14-0-0-0-0-7-0-0-0-0-5-0-0-0-0-6
+684,60,9,"Context Switch, Confirm(User_ID=1, Hollowness)","Switch to this board, does the hollowness of the pieces make it a win?
+",Negate(),"No, that’s irrelevant.",Ruijie,5,5,Luke,,3-0-0-0-0-1-0-0-0-0-2-0-0-0-0-6
+684,60,10,Finish(),Thank you so much! I think I got it!,Finish,"Ok, see you next time!",Ruijie,5,5,Luke,,3-0-0-0-0-1-0-0-0-0-2-0-0-0-0-6

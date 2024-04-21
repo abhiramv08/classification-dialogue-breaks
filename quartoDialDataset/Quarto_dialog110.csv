@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+110,100,0,Start(),Could we play some more Quarto?,Start,Yes let's begin.,Luke,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+110,100,1,RequestNewWinCondition(),Can I see a win condition?,Inform(),Assume you demonstrate this win condition,Luke,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-7-2-3-1
+110,100,2,RequestNewWinCondition(),Show me another.,Inform(),Assume you demonstrate this win condition,Luke,5,5,Shaobo,,0-0-0-6-0-0-0-4-0-0-0-7-0-0-0-2
+110,100,3,RequestNewWinCondition(),Perhaps you could give me one more to work with?,Inform(),Assume you demonstrate this win condition,Luke,5,4,Shaobo,Better to point out what stuff you ask for one more.,0-0-0-7-0-0-8-0-0-3-0-0-12-0-0-0
+110,100,4,RequestNewWinCondition(),Let's see one more just to be safe.,Inform(),Assume you demonstrate this win condition,Luke,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-11-15-5-7
+110,100,5,"Context Switch, Confirm(User_ID=1, AddPiece(1,2))","For the first board, could I add a piece right here?",Affirm(),Yes you can add a piece there. It does not disrupt the win.,Luke,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-7-2-3-1
+110,100,6,"Win Context Switch {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}","For the board where the tiles are aligned along the vertical of the last column, is this a win because of the hollowness?",Negate(),"No, this is not the reason.",Luke,5,5,Shaobo,,0-0-0-6-0-0-0-4-0-0-0-7-0-0-0-2
+110,100,7,"Context Switch, Confirm(User_ID=1, Shape)","For the board I was asking about previously, is the win due to the shape of the tiles?",Negate(),"No, the shape is not the reason for the win.",Luke,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-7-2-3-1
+110,100,8,"Same , Confirm(User_ID=1, Color)","Well, is it because of the color?",Negate(),"Nope, not that either.",Luke,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-7-2-3-1
+110,100,9,"Context Switch, Request(User_ID=1, Rotate)","So for this board, how can I rotate the tiles and still win?",Inform([90]),You could rotate it by 90 degrees.,Luke,5,5,Shaobo,,0-0-0-7-0-0-8-0-0-3-0-0-12-0-0-0
+110,100,10,Finish(),Thanks for teaching me Quarto!,Finish,No problem. Any time!,Luke,5,5,Shaobo,,0-0-0-7-0-0-8-0-0-3-0-0-12-0-0-0

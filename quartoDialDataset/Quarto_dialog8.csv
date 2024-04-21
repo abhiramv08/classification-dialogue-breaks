@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+8,100,0,Start(),Can you please teach me how to play Quarto?,Start,Sure! Let's start.,Daniel,5,5,Anthony,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+8,100,1,RequestNewWinCondition(),How can I win the game?,Inform(),Assume you demonstrate this win condition,Daniel,5,5,Anthony,,0-0-0-8-0-0-7-0-0-5-0-0-13-0-0-0
+8,100,2,"Same , Confirm(User_ID=1, Color)",Do the colors of the pieces make this a win?,Negate(),"No, the colors don't matter in this win",Daniel,5,5,Anthony,,0-0-0-8-0-0-7-0-0-5-0-0-13-0-0-0
+8,100,3,"Same, RequestOtherPlayers()",What can the other player do to undo this win?,Inform([]),Nothing,Daniel,5,4,Anthony,"I am not sure whether undo is correct here, but I think it sounds little wired.",0-0-0-8-0-0-7-0-0-5-0-0-13-0-0-0
+8,100,4,"Same , Confirm(User_ID=1, Color)",Do the colors of the pieces make this configuration a win?,Negate(),No,Daniel,5,4,Anthony,"Maybe should say something other than just no,",0-0-0-8-0-0-7-0-0-5-0-0-13-0-0-0
+8,100,5,RequestNewWinCondition(),Can you show me another winning configuration?,Inform(),Assume you demonstrate this win condition,Daniel,5,5,Anthony,,0-0-0-0-0-0-0-0-0-0-0-0-2-9-3-12
+8,100,6,RequestNewWinCondition(),And another?,Inform(),Assume you demonstrate this win condition,Daniel,5,5,Anthony,,0-0-0-2-0-0-6-0-0-12-0-0-4-0-0-0
+8,100,7,"Context Switch, Confirm(User_ID=1, RemovePiece(0,1))","If I remove the second piece on the bottom row, is it still a win?",Negate(),"No, all four pieces are needed for a win.",Daniel,5,5,Anthony,,0-0-0-0-0-0-0-0-0-0-0-0-2-9-3-12
+8,100,8,"Context Switch, Confirm(User_ID=1, AddPiece(1,3))","If I add a piece in 1,3 is it still a win?",Affirm(),"Yes it is, adding pieces won't change anything.",Daniel,5,5,Anthony,,0-0-0-8-0-0-7-0-0-5-0-0-13-0-0-0
+8,100,9,"Same, Request(User_ID=1, Rotate)",What other ways can I rotate these pieces and still get a win?,Inform([90]),You can rotate it 90 degrees.,Daniel,5,5,Anthony,,0-0-0-8-0-0-7-0-0-5-0-0-13-0-0-0
+8,100,10,"Context Switch, Confirm(User_ID=1, Color)",Do the colors of the pieces make this a win?,Negate(),"No, the colors don't matter for this win.",Daniel,5,5,Anthony,,0-0-0-0-0-0-0-0-0-0-0-0-2-9-3-12
+8,100,11,RequestNewWinCondition(),Can you show me another win?,Inform(),Assume you demonstrate this win condition,Daniel,5,5,Anthony,,0-0-0-12-0-0-4-0-0-11-0-0-1-0-0-0
+8,100,12,RequestNewWinCondition(),And one more?,Inform(),Assume you demonstrate this win condition,Daniel,5,5,Anthony,,0-0-0-13-0-0-16-0-0-15-0-0-11-0-0-0
+8,100,13,"Same , Confirm(User_ID=1, Color)",Is this a winning move because of the color of the pieces?,Negate(),No,Daniel,5,4,Anthony,,0-0-0-13-0-0-16-0-0-15-0-0-11-0-0-0
+8,100,14,"Context Switch, Request(User_ID=1, Rotate)",What other ways can I rotate these pieces for a win?,Inform([90]),You can rotate the pieces 90 degrees.,Daniel,5,4,Anthony,"Since this is the second time the agent asked this question, maybe we should say something to reflect this.",0-0-0-8-0-0-7-0-0-5-0-0-13-0-0-0
+8,100,15,Finish(),Thank you!,Finish,No problem,Daniel,5,5,Anthony,,0-0-0-8-0-0-7-0-0-5-0-0-13-0-0-0

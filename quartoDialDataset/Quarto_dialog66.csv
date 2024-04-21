@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+66,100,0,Start(),"Hello, teach me Quarto please.",Start,Sure.,Anthony,5,5,Dave,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+66,100,1,RequestNewWinCondition(),Show me a win condition. ,Inform(),Assume you demonstrate this win condition,Anthony,5,4,Dave,,0-5-0-0-0-14-0-0-0-15-0-0-0-13-0-0
+66,100,2,"Same , Confirm(User_ID=1, Color)",Is this a win due to piece color?,Negate(),No the color is not why.,Anthony,5,5,Dave,,0-5-0-0-0-14-0-0-0-15-0-0-0-13-0-0
+66,100,3,"Same , Confirm(User_ID=1, AddPiece(3,0))","What if I add a piece at (3,0), is it still a win?",Affirm(),"Yes, that is allowed.",Anthony,5,4,Dave,,0-5-0-0-0-14-0-0-0-15-0-0-0-13-0-0
+66,100,4,RequestNewWinCondition(),Show me a new win condition.,Inform(),Assume you demonstrate this win condition,Anthony,5,4,Dave,,15-0-0-0-0-12-0-0-0-0-16-0-0-0-0-8
+66,100,5,"Context Switch, Confirm(User_ID=1, Quantity)",Go back to the other board. Is it a win because of the quantity of certain pieces?,Affirm(),"Yes, that is why this is a win.",Anthony,4,3,Dave,,0-5-0-0-0-14-0-0-0-15-0-0-0-13-0-0
+66,100,6,RequestNewWinCondition(),Show me a new win condition.,Inform(),Assume you demonstrate this win condition,Anthony,5,4,Dave,,0-0-7-0-0-0-1-0-0-0-9-0-0-0-3-0
+66,100,7,"Context Switch, Confirm(User_ID=1, Shape)","Go back to the first board, is this a win because of piece shape?",Affirm(),"Yes, that is why.",Anthony,5,5,Dave,,0-5-0-0-0-14-0-0-0-15-0-0-0-13-0-0
+66,100,8,RequestNewWinCondition(),"Show a new win condition again, if you will.",Inform(),Assume you demonstrate this win condition,Anthony,5,4,Dave,,0-6-0-0-0-14-0-0-0-9-0-0-0-1-0-0
+66,100,9,"Context Switch, Confirm(User_ID=1, RemovePiece(0,1))","Look at the first board again, can I remove the piece at (0,1)?",Negate(),No! You can't.,Anthony,5,4,Dave,,0-5-0-0-0-14-0-0-0-15-0-0-0-13-0-0
+66,100,10,RequestNewWinCondition(),Give me a new win condition to ponder.,Inform(),Assume you demonstrate this win condition,Anthony,5,4,Dave,,8-0-0-0-0-14-0-0-0-0-10-0-0-0-0-6
+66,100,11,"Context Switch, Confirm(User_ID=1, RemovePiece(2,2))","Looking at this other board, can I remove the piece on (2,3)?",Negate(),"Nope, that is not okay.",Anthony,5,4,Dave,,0-0-7-0-0-0-1-0-0-0-9-0-0-0-3-0
+66,100,12,"Context Switch, Request(User_ID=1, Translate)",Look at this board. Can I translate the pieces here?,Inform([]),"No, there is no where to translate a diagonal board.",Anthony,4,4,Dave,,8-0-0-0-0-14-0-0-0-0-10-0-0-0-0-6
+66,100,13,"Context Switch, Request(User_ID=1, Rotate)","Look at this board, how can I rotate it?",Inform([]),You cannot.,Anthony,5,4,Dave,,0-0-7-0-0-0-1-0-0-0-9-0-0-0-3-0
+66,100,14,"Context Switch, Confirm(User_ID=1, Height)","Looking at this board here, is it a win because the pieces are a certain height?",Negate(),"No, height doesn't play a role here. ",Anthony,5,5,Dave,,15-0-0-0-0-12-0-0-0-0-16-0-0-0-0-8
+66,100,15,Finish(),That's enough Quarto for me. Bye!,Finish,Goodbye!,Anthony,5,5,Dave,,15-0-0-0-0-12-0-0-0-0-16-0-0-0-0-8

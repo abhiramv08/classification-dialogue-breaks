@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+208,100,0,Start(),Can you show me how to win Quarto?,Start,I can do that!,Dave,,,,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+208,100,1,RequestNewWinCondition(),Can you show me an example of a win?,Inform(),Assume you demonstrate this win condition,Dave,,,,,0-0-0-0-0-0-0-0-0-0-0-0-6-16-14-7
+208,100,2,RequestNewWinCondition(),And another?,Inform(),Assume you demonstrate this win condition,Dave,,,,,0-0-0-12-0-0-15-0-0-16-0-0-14-0-0-0
+208,100,3,RequestNewWinCondition(),How about a different example?,Inform(),Assume you demonstrate this win condition,Dave,,,,,10-0-0-0-0-12-0-0-0-0-4-0-0-0-0-9
+208,100,4,RequestNewWinCondition(),Let's look at a fourth case.,Inform(),Assume you demonstrate this win condition,Dave,,,,,4-0-0-0-1-0-0-0-5-0-0-0-2-0-0-0
+208,100,5,"Context Switch, Confirm(User_ID=1, Height)",Does the second example you showed me count because all the pieces are of the same height?,Affirm(),That's exactly right.,Dave,,,,,0-0-0-12-0-0-15-0-0-16-0-0-14-0-0-0
+208,100,6,"Context Switch, Confirm(User_ID=1, RemovePiece(1,2))","If in the third example you showed me the short hollow piece were removed, would it still count as a win?",Negate(),"No, it wouldn't.",Dave,,,,,10-0-0-0-0-12-0-0-0-0-4-0-0-0-0-9
+208,100,7,"Context Switch, Confirm(User_ID=1, AddPiece(3,2))","And if in the first example you showed me a new piece were placed three places above the tall solid piece, would it still count as a win?",Affirm(),"Yeah, it would.",Dave,,,,,0-0-0-0-0-0-0-0-0-0-0-0-6-16-14-7
+208,100,8,"Context Switch, RequestOtherPlayers()",Let's take a look at the fourth example you showed me. Can anything be done to reverse this win?,Inform([]),Not a thing!,Dave,,,,,4-0-0-0-1-0-0-0-5-0-0-0-2-0-0-0
+208,100,9,"Same, Request(User_ID=1, Translate)",How else can these pieces be placed down the board for a win?,"Inform(['col1', 'col2', 'col3'])",They can be placed down any of the three remaining empty columns for a win.,Dave,,,,,4-0-0-0-1-0-0-0-5-0-0-0-2-0-0-0
+208,100,10,"Same, Confirm(User_ID=1, Height)",Does this example count because all the pieces are of the same height?,Affirm(),Correct!,Dave,,,,,4-0-0-0-1-0-0-0-5-0-0-0-2-0-0-0
+208,100,11,Finish(),I feel better about winning at Quarto thanks to your help!,Finish,Keep up the good work!,Dave,,,,,4-0-0-0-1-0-0-0-5-0-0-0-2-0-0-0

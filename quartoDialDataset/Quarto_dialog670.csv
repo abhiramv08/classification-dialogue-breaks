@@ -1,0 +1,18 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+670,60,0,Start(),"Hi, can you show me how to play Quarto?",Start,"Sure, let's start right away!",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+670,60,1,RequestNewWinCondition(),Can you show me a win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,2-0-0-0-0-4-0-0-0-0-16-0-0-0-0-6
+670,60,2,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-12-15-3-11
+670,60,3,"Same, Confirm(User_ID=1, Translate([2, 0]))",Can I move the pieces to the third row?,Affirm(),"Yes, you can do that.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-12-15-3-11
+670,60,4,"Same, Confirm(User_ID=1, Height)","Is it a win because the pieces are of the same height?
+",NotSure(),"Well, I don't know actually.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-12-15-3-11
+670,60,5,RequestNewWinCondition(),Can you show me another win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-15-0-0-9-0-0-14-0-0-13-0-0-0
+670,60,6,RequestNewWinCondition(),What about one more?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,16-0-0-0-0-12-0-0-0-0-7-0-0-0-0-15
+670,60,7,"Same, Confirm(User_ID=1, RemovePiece(3,0))","Can I remove the piece on the fourth row, the first column?",Negate(),"No, you can’t do that.",Ruijie,5,5,Luke,,16-0-0-0-0-12-0-0-0-0-7-0-0-0-0-15
+670,60,8,"Same, Confirm(User_ID=1, Shape)","Is it a win because the pieces are of the same shape?
+",NotSure(),"I don't know, sorry.",Ruijie,5,5,Luke,,16-0-0-0-0-12-0-0-0-0-7-0-0-0-0-15
+670,60,9,"Context Switch, Confirm(User_ID=1, Color)","Switch to this board, is it a win because the pieces are in the same color?",Negate(),"No, that’s not the reason.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-12-15-3-11
+670,60,10,"Same, RequestOtherPlayers()","Can the other player break this win?
+",Inform([]),"No, this win is absolute.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-12-15-3-11
+670,60,11,"Context Switch, Confirm(User_ID=1, Height)","Switch to this board, is it a win because the pieces are of the same height?
+",Negate(),"No, that’s irrelevant.",Ruijie,5,5,Luke,,16-0-0-0-0-12-0-0-0-0-7-0-0-0-0-15
+670,60,12,Finish(),Thanks! I've learned a lot!,Finish,You are welcome!,Ruijie,5,5,Luke,,16-0-0-0-0-12-0-0-0-0-7-0-0-0-0-15

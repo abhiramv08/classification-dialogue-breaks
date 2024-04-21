@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+314,50,0,Start(),"Hi, could you teach me how to play Quarto?",Start,Sure. Let's get started!,Shaobo,5,5,Dmytro,,0-0-0-0-0-0-0-0-0-0-0-0-8-5-7-13
+314,50,1,RequestNewWinCondition(),Could you show me a win first?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,Dmytro,,0-0-0-11-0-0-0-7-0-0-0-1-0-0-0-13
+314,50,2,"Same, Confirm(User_ID=1, RemovePiece(0,3))",And is it still a win if I remove the piece on the bottom row? ,Negate(),"No, it would not be a win anymore.",Shaobo,5,5,Dmytro,,0-0-0-11-0-0-0-7-0-0-0-1-0-0-0-13
+314,50,3,RequestNewWinCondition(),Could you show me another winning board?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,Dmytro,,0-0-0-0-0-0-0-0-0-0-0-0-2-13-5-14
+314,50,4,RequestNewWinCondition(),Could you show me one more winning board?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,Dmytro,,0-7-0-0-0-15-0-0-0-8-0-0-0-11-0-0
+314,50,5,"Context Switch, Confirm(User_ID=1, Hollowness)","Switching to this board, is it a win becasue of the hollowness of the pieces?",Negate(),"No, it is a win because all pieces are green.",Shaobo,5,5,Dmytro,Great user responce !,0-0-0-11-0-0-0-7-0-0-0-1-0-0-0-13
+314,50,6,"Context Switch, Confirm(User_ID=1, Color)","Switching to this board, is it a win because of the color of the pieces?",NotSure(),I don't think so but I am not sure.,Shaobo,5,5,Dmytro,,0-7-0-0-0-15-0-0-0-8-0-0-0-11-0-0
+314,50,7,"Context Switch, Confirm(User_ID=1, AddPiece(0,0))","Switching to this board, is it still a win if I add a piece on the bottom left slot?",NotSure(),I think so but I am not sure.,Shaobo,5,4,Dmytro,,0-0-0-11-0-0-0-7-0-0-0-1-0-0-0-13
+314,50,8,RequestNewWinCondition(),Could you show me one more board?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,Dmytro,,0-0-0-2-0-0-13-0-0-1-0-0-5-0-0-0
+314,50,9,RequestNewWinCondition(),I think I need one more board to check if I understand the rules correctly.,Inform,Assume you demonstrate this win condition,Shaobo,5,5,Dmytro,,0-0-0-13-0-0-15-0-0-9-0-0-14-0-0-0
+314,50,10,Finish(),I am done! Thanks for the help!,Finish,You are welcome!,Shaobo,5,5,Dmytro,,0-0-0-13-0-0-15-0-0-9-0-0-14-0-0-0

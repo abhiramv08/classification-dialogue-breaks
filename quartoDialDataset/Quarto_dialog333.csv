@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+333,50,0,Start(),Can you teach me to play Quarto please?,Start,"Sure, I'd be happy to!",Daniel,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+333,50,1,RequestNewWinCondition(),Can you show me a board where someone wins please?,Inform,Assume you demonstrate this win condition,Daniel,5,5,Shaobo,,0-0-0-11-0-0-0-14-0-0-0-15-0-0-0-12
+333,50,2,RequestNewWinCondition(),Can you show me a different winning board please?,Inform,Assume you demonstrate this win condition,Daniel,5,5,Shaobo,,0-0-0-14-0-0-15-0-0-12-0-0-13-0-0-0
+333,50,3,RequestNewWinCondition(),How about another board please?,Inform,Assume you demonstrate this win condition,Daniel,5,5,Shaobo,,0-0-0-6-0-0-12-0-0-8-0-0-14-0-0-0
+333,50,4,"Context Switch, Confirm(User_ID=1, Height)","For this board here, is this a win because of the height of the pieces?",NotSure(),"I don't know, sorry.",Daniel,5,5,Shaobo,,0-0-0-11-0-0-0-14-0-0-0-15-0-0-0-12
+333,50,5,"Same, Confirm(User_ID=1, Shape)",Is this a win because of the shape of the pieces?,Negate(),No,Daniel,5,4,Shaobo,,0-0-0-11-0-0-0-14-0-0-0-15-0-0-0-12
+333,50,6,"Same, Confirm(User_ID=1, Hollowness)",Is the board a win because of the hollowness of the piecs?,Negate(),No,Daniel,4,4,Shaobo,typo,0-0-0-11-0-0-0-14-0-0-0-15-0-0-0-12
+333,50,7,RequestNewWinCondition(),Can you show me another new board please?,Inform,Assume you demonstrate this win condition,Daniel,5,5,Shaobo,,16-0-0-0-10-0-0-0-2-0-0-0-4-0-0-0
+333,50,8,"Context Switch, Request(User_ID=1, Translate)","For this board here, where can I slide these pieces?",Inform([]),You can't slide them anywhere and still win,Daniel,5,5,Shaobo,,0-0-0-14-0-0-15-0-0-12-0-0-13-0-0-0
+333,50,9,"Context Switch, Request(User_ID=1, Translate)","For this other board, where can I slide the pieces and still win?","Inform(['col1', 'col2'])",You can move them over 1 or 2 columns and still win.,Daniel,5,5,Shaobo,,16-0-0-0-10-0-0-0-2-0-0-0-4-0-0-0
+333,50,10,"Context Switch, RequestOtherPlayers()","For this board here, is there anything the other player can do to win?",Inform([]),No,Daniel,5,4,Shaobo,,0-0-0-14-0-0-15-0-0-12-0-0-13-0-0-0
+333,50,11,"Context Switch, Confirm(User_ID=1, Color)","For this board here, is it a win because of the color of the pieces?",NotSure(),I'm not sure,Daniel,5,5,Shaobo,,0-0-0-11-0-0-0-14-0-0-0-15-0-0-0-12
+333,50,12,Finish(),Thank you!,Finish,No problem,Daniel,5,5,Shaobo,,0-0-0-11-0-0-0-14-0-0-0-15-0-0-0-12

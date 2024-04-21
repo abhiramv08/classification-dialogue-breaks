@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+362,50,0,Start(),"Hi, can you teach me how to play Quarto?",Start,"Sure, let's play",John,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+362,50,1,RequestNewWinCondition(),Can I see an example of a win?,Inform,Assume you demonstrate this win condition,John,5,5,Derek,,0-10-0-0-0-1-0-0-0-6-0-0-0-2-0-0
+362,50,2,"Same, Confirm(User_ID=1, AddPiece(2,3))","Is this still a win if I add a piece in the second row from the top, rightmost column?",Affirm(),"Yes, that piece would not affect this win",John,5,3,Derek,,0-10-0-0-0-1-0-0-0-6-0-0-0-2-0-0
+362,50,3,RequestNewWinCondition(),Can I see another example win condition?,Inform,Assume you demonstrate this win condition,John,5,5,Derek,,15-0-0-0-0-7-0-0-0-0-8-0-0-0-0-14
+362,50,4,RequestNewWinCondition(),Will you show me another win scenario please?,Inform,Assume you demonstrate this win condition,John,5,5,Derek,,0-0-0-7-0-0-8-0-0-16-0-0-3-0-0-0
+362,50,5,RequestNewWinCondition(),Can I see another example of a win please?,Inform,Assume you demonstrate this win condition,John,5,5,Derek,,0-0-0-15-0-0-7-0-0-1-0-0-5-0-0-0
+362,50,6,"Context Switch, Confirm(User_ID=1, Quantity)","Now for this board, is the number of pieces important for the win?",Affirm(),"Yes, all four pieces are needed for a win",John,5,5,Derek,,0-0-0-7-0-0-8-0-0-16-0-0-3-0-0-0
+362,50,7,"Context Switch, Confirm(User_ID=1, RemovePiece(2,2))","Switching to this board, is it still a win if I remove the piece in the second row from the top?",Negate(),"No, that piece is essential to this win",John,5,5,Derek,,0-0-0-15-0-0-7-0-0-1-0-0-5-0-0-0
+362,50,8,RequestNewWinCondition(),Can I see another example of a win please?,Inform,Assume you demonstrate this win condition,John,5,5,Derek,,0-2-0-0-0-16-0-0-0-10-0-0-0-4-0-0
+362,50,9,"Context Switch, Confirm(User_ID=1, Hollowness)","In this board here, is the hollowness of the pieces important for the win?",Affirm(),"Yes, all the pieces are solid, leading to a win condition",John,5,4,Derek,,0-10-0-0-0-1-0-0-0-6-0-0-0-2-0-0
+362,50,10,Finish(),Thanks for playing,Finish,No problem,John,5,5,Derek,,0-10-0-0-0-1-0-0-0-6-0-0-0-2-0-0

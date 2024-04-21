@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+326,50,0,Start(),"Hi, would you mind teaching me how to play Quarto?",Start,I wouldn't mind at all. Let's start. ,Anthony,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+326,50,1,RequestNewWinCondition(),Please show me a win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-8-5-6-15
+326,50,2,RequestNewWinCondition(),Could I see another win condition?,Inform,Assume you demonstrate this win condition,Anthony,5,5,Ruijie,,10-0-0-0-1-0-0-0-12-0-0-0-3-0-0-0
+326,50,3,"Context Switch, Request(User_ID=1, Translate)","Go back to the first board, how can I shift the pieces?","Inform(['row1', 'row2'])",You could move them up to row 1 or row 2.,Anthony,5,3,Ruijie,row1 row2 are not natural.,0-0-0-0-0-0-0-0-0-0-0-0-8-5-6-15
+326,50,4,"Context Switch, RequestOtherPlayers()","Switching over to this board, how can other players affect this win?",Inform([]),There is no way another player could affect this win. ,Anthony,5,5,Ruijie,,10-0-0-0-1-0-0-0-12-0-0-0-3-0-0-0
+326,50,5,RequestNewWinCondition(),Please show me another win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Ruijie,,0-0-0-9-0-0-4-0-0-1-0-0-11-0-0-0
+326,50,6,"Context Switch, Confirm(User_ID=1, Hollowness)","Looking back at this board, is it a win because some pieces are hollow?",NotSure(),I don't know if that's why or not. ,Anthony,4,4,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-8-5-6-15
+326,50,7,"Same, Confirm(User_ID=1, Translate([2, 0]))",Can I shift the pieces over to this location on the board?,Affirm(),"Yes, that's not going to undo this win. ",Anthony,4,4,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-8-5-6-15
+326,50,8,RequestNewWinCondition(),Please show me a new win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Ruijie,,10-0-0-0-0-14-0-0-0-0-4-0-0-0-0-2
+326,50,9,"Context Switch, Confirm(User_ID=1, Quantity)","Looking back at this board now, is it a win because of how many pieces there are?",NotSure(),"I'm not so sure, ask a different question. ",Anthony,4,5,Ruijie,,0-0-0-9-0-0-4-0-0-1-0-0-11-0-0-0
+326,50,10,"Context Switch, Confirm(User_ID=1, Rotate(90))","Okay, looking at this board, could I rotate the pieces to the other diagonal?",NotSure(),"I'm not sure about that either, sorry. ",Anthony,1,4,Ruijie,,10-0-0-0-0-14-0-0-0-0-4-0-0-0-0-2
+326,50,11,"Context Switch, Confirm(User_ID=1, Hollowness)","Let's go back to this board, is it a win because of the hollowness of the pieces?",NotSure(),"I don't know, I'm sorry. ",Anthony,4,4,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-8-5-6-15
+326,50,12,RequestNewWinCondition(),Please show me another new win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Ruijie,,7-0-0-0-0-6-0-0-0-0-13-0-0-0-0-5
+326,50,13,"Context Switch, Confirm(User_ID=1, Height)","Look back at this board, is it a win because of the pieces' different heights?",Negate(),"No, that is not why this is a win?",Anthony,5,4,Ruijie,,10-0-0-0-1-0-0-0-12-0-0-0-3-0-0-0
+326,50,14,"Context Switch, Confirm(User_ID=1, AddPiece(0,2))","Switch to this board now, could I add a piece here?",NotSure(),I'm not sure if that's okay. ,Anthony,4,4,Ruijie,,7-0-0-0-0-6-0-0-0-0-13-0-0-0-0-5
+326,50,15,Finish(),Thanks a lot for the help!,Finish,"No problem, see you later!",Anthony,5,5,Ruijie,,7-0-0-0-0-6-0-0-0-0-13-0-0-0-0-5

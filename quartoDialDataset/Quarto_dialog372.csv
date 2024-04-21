@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+372,50,0,Start(),Hey! I wish someone can teach me how to play Quarto.,Start,Why not? Let's get started.,Ruijie,5,4,Jason,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+372,50,1,RequestNewWinCondition(),Can you show me a win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Jason,,0-0-0-3-0-0-8-0-0-16-0-0-7-0-0-0
+372,50,2,"Same, Request(User_ID=1, Rotate)",Can I rotate the pieces by some degrees and maintain the win?,Inform([90]),"Sure, you can rotate them by 90 degrees.",Ruijie,3,4,Jason,,0-0-0-3-0-0-8-0-0-16-0-0-7-0-0-0
+372,50,3,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Jason,,0-0-0-14-0-0-6-0-0-16-0-0-2-0-0-0
+372,50,4,"Same, Confirm(User_ID=1, Hollowness)",Is it a win because of the hollowness of pieces?,Negate(),"No, it's not because of that.",Ruijie,5,5,Jason,,0-0-0-14-0-0-6-0-0-16-0-0-2-0-0-0
+372,50,5,"Context Switch, Confirm(User_ID=1, AddPiece(3,0))","Switch to this board, can I add one more piece on the fourth row, the first column?",NotSure(),I'm actually not quite sure.,Ruijie,3,4,Jason,,0-0-0-3-0-0-8-0-0-16-0-0-7-0-0-0
+372,50,6,"Context Switch, RequestOtherPlayers()","Switch to this board, can the other player undo this win?",Inform([]),"No, this win is absolute!",Ruijie,5,4,Jason,,0-0-0-14-0-0-6-0-0-16-0-0-2-0-0-0
+372,50,7,"Same, Confirm(User_ID=1, Quantity)",Is it a win because there are four pieces?,NotSure(),I'm not sure.,Ruijie,5,4,Jason,,0-0-0-14-0-0-6-0-0-16-0-0-2-0-0-0
+372,50,8,"Same, Confirm(User_ID=1, Shape)",Is it a win because the shapes of pieces?,NotSure(),I'm not sure about that.,Ruijie,5,5,Jason,,0-0-0-14-0-0-6-0-0-16-0-0-2-0-0-0
+372,50,9,"Same, Confirm(User_ID=1, Height)",Is it a win because the pieces are of the same height?,Negate(),"No, that's wrong.",Ruijie,5,5,Jason,,0-0-0-14-0-0-6-0-0-16-0-0-2-0-0-0
+372,50,10,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Jason,,15-0-0-0-0-4-0-0-0-0-12-0-0-0-0-3
+372,50,11,Finish(),Thank you so much! I think I've learned a lot!,Finish,"You are welcome, see you next time!",Ruijie,5,5,Jason,,15-0-0-0-0-4-0-0-0-0-12-0-0-0-0-3

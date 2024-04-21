@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+373,50,0,Start(),What's up! Can you show me how to play Quarto?,Start,"Of course, let's get started!",Ruijie,5,5,Jason,"Really nice, casual, and friendly",0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+373,50,1,RequestNewWinCondition(),Can you show me a win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Jason,,0-0-0-0-0-0-0-0-0-0-0-0-9-10-14-12
+373,50,2,RequestNewWinCondition(),What about another one?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Jason,,0-10-0-0-0-3-0-0-0-11-0-0-0-12-0-0
+373,50,3,"Context Switch, Confirm(User_ID=1, Quantity)","Switch to this board, is it a win because there are four pieces?",NotSure(),I'm actually not quite sure.,Ruijie,5,4,Jason,,0-0-0-0-0-0-0-0-0-0-0-0-9-10-14-12
+373,50,4,"Context Switch, Request(User_ID=1, Rotate)","Switch to this board, can I rotate the pieces and maintain the win?",Inform([]),You just can't.,Ruijie,5,4,Jason,,0-10-0-0-0-3-0-0-0-11-0-0-0-12-0-0
+373,50,5,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Jason,,0-0-0-0-0-0-0-0-0-0-0-0-3-16-12-7
+373,50,6,"Same, Confirm(User_ID=1, RemovePiece(0,0))",Can I romove the piece on the left corner?,NotSure(),I'm not sure.,Ruijie,3,4,Jason,Should specify if you can remove a piece and still have a win,0-0-0-0-0-0-0-0-0-0-0-0-3-16-12-7
+373,50,7,RequestNewWinCondition(),What about a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,3,Jason,,4-0-0-0-0-2-0-0-0-0-12-0-0-0-0-16
+373,50,8,"Context Switch, Confirm(User_ID=1, RemovePiece(0,1))","Switch to this board, can I remove the piece on row 0, column 1 without breaking the win?",Negate(),"No, that will definitely break it.",Ruijie,4,4,Jason,Should specify which specific piece by description (blue circle) instead of coordinates.,0-0-0-0-0-0-0-0-0-0-0-0-3-16-12-7
+373,50,9,"Same, Confirm(User_ID=1, Shape)",Is it a win because of the shapes of pieces?,NotSure(),"Sorry, not sure about this one.",Ruijie,5,5,Jason,,0-0-0-0-0-0-0-0-0-0-0-0-3-16-12-7
+373,50,10,"Context Switch, RequestOtherPlayers()","Switch to this board, can the other player undo this win?",Inform([]),"No, this win is absolute.",Ruijie,5,4,Jason,,0-10-0-0-0-3-0-0-0-11-0-0-0-12-0-0
+373,50,11,"Context Switch, Confirm(User_ID=1, Color)","Switch to this board, is it a win because the pieces are of the same color?",Affirm(),"Yes, that's right.",Ruijie,5,4,Jason,"""Switch to this board"" feels repetitive and unnatural.",4-0-0-0-0-2-0-0-0-0-12-0-0-0-0-16
+373,50,12,"Context Switch, Confirm(User_ID=1, Quantity)","Switch to this board, is it a win because there are four pieces?",NotSure(),I'm not sure about this.,Ruijie,5,4,Jason,,0-10-0-0-0-3-0-0-0-11-0-0-0-12-0-0
+373,50,13,"Context Switch, Confirm(User_ID=1, RemovePiece(2,1))","Switch to this board, can I remove the piece on the third row, the first column?",NotSure(),I'm also not sure.,Ruijie,3,4,Jason,,4-0-0-0-0-2-0-0-0-0-12-0-0-0-0-16
+373,50,14,RequestNewWinCondition(),Can you show me a new win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Jason,,0-0-0-1-0-0-14-0-0-9-0-0-13-0-0-0
+373,50,15,Finish(),Thank you so much! I think I've learned a lot.,Finish,You are welcome.,Ruijie,5,5,Jason,,0-0-0-1-0-0-14-0-0-9-0-0-13-0-0-0

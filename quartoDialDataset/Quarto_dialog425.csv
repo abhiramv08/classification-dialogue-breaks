@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+425,50,0,Start(),"Hi there, can you teach me how to play Quarto?",Start,"Sure, let's get started.",Jason,,,,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+425,50,1,RequestNewWinCondition(),Can you show me an example of a win?,Inform,Assume you demonstrate this win condition,Jason,,,,,0-0-0-1-0-0-5-0-0-6-0-0-3-0-0-0
+425,50,2,RequestNewWinCondition(),Can you show me another example of a win?,Inform,Assume you demonstrate this win condition,Jason,,,,,8-0-0-0-0-6-0-0-0-0-12-0-0-0-0-16
+425,50,3,RequestNewWinCondition(),Can you show me a different example of a win?,Inform,Assume you demonstrate this win condition,Jason,,,,,0-0-0-9-0-0-13-0-0-10-0-0-11-0-0-0
+425,50,4,"Same, Confirm(User_ID=1, Color)","Okay now with the win you just showed me, is the color of the pieces a reason why it's a win?",Negate(),"No, the color of the pieces have nothing to do with it.",Jason,,,,,0-0-0-9-0-0-13-0-0-10-0-0-11-0-0-0
+425,50,5,"Context Switch, RequestOtherPlayers()","Switching to this board, are there any moves another player could make that could undo this win from happening?",Inform([]),"No, there are no possible moves.",Jason,,,,,0-0-0-1-0-0-5-0-0-6-0-0-3-0-0-0
+425,50,6,"Same, RequestOtherPlayers()",Are you sure there aren't any possible ways to undo this win?,Inform([]),"Yeah, I'm pretty sure there's absolutely no way to undo this win.",Jason,,,,,0-0-0-1-0-0-5-0-0-6-0-0-3-0-0-0
+425,50,7,"Context Switch, Confirm(User_ID=1, Color)","Flipping to this board, is the color of the pieces a reason why this is considered a win?",NotSure(),"Honestly, I wouldn't know.",Jason,,,,,0-0-0-9-0-0-13-0-0-10-0-0-11-0-0-0
+425,50,8,"Same, Confirm(User_ID=1, AddPiece(2,0))","With the same board, could you add a piece to the 2nd row from the top in the leftmost column and still win?",NotSure(),"I wouldn't know the answer to that question either, sorry.",Jason,,,,,0-0-0-9-0-0-13-0-0-10-0-0-11-0-0-0
+425,50,9,"Context Switch, Confirm(User_ID=1, Hollowness)","Switching to this board, is the hollowness of the pieces a reason why it's a win?",NotSure(),I don't know. Sorry I'm not being helpful.,Jason,,,,,0-0-0-1-0-0-5-0-0-6-0-0-3-0-0-0
+425,50,10,"Context Switch, Confirm(User_ID=1, Shape)","That's okay. With this win here, is the shape of the pieces a reason why it's a win?",Negate(),"No, the shape of the pieces have nothing to do with it.",Jason,,,,,0-0-0-9-0-0-13-0-0-10-0-0-11-0-0-0
+425,50,11,Finish(),Alright that's all the questions I have. Thanks for the help!,Finish,"No problem, have a good one!",Jason,,,,,0-0-0-9-0-0-13-0-0-10-0-0-11-0-0-0

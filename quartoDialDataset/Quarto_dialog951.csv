@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+951,60,0,Start(),"Hi, will you please teach me Quarto?",Start,"Yeah, sure.",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+951,60,1,RequestNewWinCondition(),Please show me a new win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-10-0-0-8-0-0-16-0-0-6-0-0-0
+951,60,2,"Same, RequestOtherPlayers()",How could another player affect this win?,Inform([]),They can't do anything.,Anthony,5,5,Yiyen,,0-0-0-10-0-0-8-0-0-16-0-0-6-0-0-0
+951,60,3,"Same, Confirm(User_ID=1, Quantity)",Is this a win because of the number of pieces?,Affirm(),"Yes, exactly.",Anthony,5,5,Yiyen,,0-0-0-10-0-0-8-0-0-16-0-0-6-0-0-0
+951,60,4,"Same, Confirm(User_ID=1, Height)",Is this a win because of the height of the pieces?,Negate(),"No, the heights are not the same. ",Anthony,5,5,Yiyen,,0-0-0-10-0-0-8-0-0-16-0-0-6-0-0-0
+951,60,5,"Same, Confirm(User_ID=1, Color)",Is this a win because of the color of the pieces?,Affirm(),Yes. ,Anthony,5,4,Yiyen,,0-0-0-10-0-0-8-0-0-16-0-0-6-0-0-0
+951,60,6,"Same, Request(User_ID=1, Rotate)",How could I rotate these pieces?,Inform([90]),One way is to lay them vertically.,Anthony,4,5,Yiyen,which column?,0-0-0-10-0-0-8-0-0-16-0-0-6-0-0-0
+951,60,7,RequestNewWinCondition(),Please show me a new win.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-14-0-0-0-13-0-0-0-15-0-0-0-12-0
+951,60,8,"Context Switch, Confirm(User_ID=1, Hollowness)","Looking back at this board, is it a win due to the pieces' hollowness?",NotSure(),I'm not so sure. ,Anthony,5,5,Yiyen,,0-0-0-10-0-0-8-0-0-16-0-0-6-0-0-0
+951,60,9,RequestNewWinCondition(),Please show me another win. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,1-0-0-0-0-12-0-0-0-0-9-0-0-0-0-2
+951,60,10,Finish(),Thanks for all the help!,Finish,No problem. ,Anthony,5,5,Yiyen,,1-0-0-0-0-12-0-0-0-0-9-0-0-0-0-2

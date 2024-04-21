@@ -1,0 +1,16 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+376,50,0,Start(),"Hi, could you teach me how to play Quarto?",Start,Sure!,Shaobo,5,5,Jacob,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+376,50,1,RequestNewWinCondition(),Could you show me a win firstly?,Inform,Assume you demonstrate this win condition,Shaobo,5,4,Jacob,,0-0-0-0-0-0-0-0-0-0-0-0-6-5-4-7
+376,50,2,RequestNewWinCondition(),Could you show me another win?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,Jacob,,6-0-0-0-13-0-0-0-8-0-0-0-14-0-0-0
+376,50,3,"Same, Confirm(User_ID=1, AddPiece(3,2))",And is it still a win if I add a piece on the top row and the third column?,Affirm(),"Yes, it is still a win.",Shaobo,5,5,Jacob,,6-0-0-0-13-0-0-0-8-0-0-0-14-0-0-0
+376,50,4,"Same, RequestOtherPlayers()",And how could another player revoke this win?,Inform([]),There is nothing another player could do to revoke the win.,Shaobo,5,5,Jacob,,6-0-0-0-13-0-0-0-8-0-0-0-14-0-0-0
+376,50,5,"Same, Confirm(User_ID=1, Color)",And is it a win because of the color of the pieces?,NotSure(),I don't think so but I am not sure.,Shaobo,5,5,Jacob,,6-0-0-0-13-0-0-0-8-0-0-0-14-0-0-0
+376,50,6,"Context Switch, Confirm(User_ID=1, Color)",How about this board? Does the color matter?,Negate(),"No, the color of the pieces does not contribute to the win.",Shaobo,5,5,Jacob,,0-0-0-0-0-0-0-0-0-0-0-0-6-5-4-7
+376,50,7,"Same, RequestOtherPlayers()",And how could another player revoke the win?,Inform([]),There is nothing another player could do.,Shaobo,5,5,Jacob,,0-0-0-0-0-0-0-0-0-0-0-0-6-5-4-7
+376,50,8,"Context Switch, Confirm(User_ID=1, Rotate(0))","For this board, is it still a win if I rotate the pieces to the bottom row?",NotSure(),I think so but I am not sure.,Shaobo,5,5,Jacob,,6-0-0-0-13-0-0-0-8-0-0-0-14-0-0-0
+376,50,9,RequestNewWinCondition(),Could you show me one more win?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,Jacob,,11-0-0-0-0-1-0-0-0-0-5-0-0-0-0-9
+376,50,10,"Context Switch, Confirm(User_ID=1, Translate([0, 3]))","For this board, is it still a win if I shift the pieces to the rightmost column?",Affirm(),"Yes, it is still a win.",Shaobo,5,5,Jacob,,6-0-0-0-13-0-0-0-8-0-0-0-14-0-0-0
+376,50,11,"Context Switch, Confirm(User_ID=1, AddPiece(0,0))","And for this board, is it still a win if I add piece a piece on the bottom left slot?",Affirm(),"Yes, it is still a win.",Shaobo,5,5,Jacob,,11-0-0-0-0-1-0-0-0-0-5-0-0-0-0-9
+376,50,12,"Context Switch, Confirm(User_ID=1, AddPiece(2,1))","For this board, is it still a win if I add a piece on the third row and the second column?",NotSure(),I think so but I am not sure.,Shaobo,5,5,Jacob,,6-0-0-0-13-0-0-0-8-0-0-0-14-0-0-0
+376,50,13,"Context Switch, Request(User_ID=1, Rotate)","For this board, how could I rotate the pieces and still keep the win?",Inform([45]),You could rotate the pieces to the diagonal.,Shaobo,4,5,Jacob,This should reference that the pieces aren't individually rotated.,0-0-0-0-0-0-0-0-0-0-0-0-6-5-4-7
+376,50,14,Finish(),Thanks for the help! I have learned a lot!,Finish,You are welcome!,Shaobo,5,5,Jacob,,0-0-0-0-0-0-0-0-0-0-0-0-6-5-4-7

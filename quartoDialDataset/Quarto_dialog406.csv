@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+406,50,0,Start(),Can you show me how to play Quarto?,Start,Sure!,Derek,5,5,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+406,50,1,RequestNewWinCondition(),Please show me a win condition.,Inform,Assume you demonstrate this win condition,Derek,5,4,Daniel,,0-0-0-2-0-0-0-8-0-0-0-10-0-0-0-12
+406,50,2,RequestNewWinCondition(),One more please.,Inform,Assume you demonstrate this win condition,Derek,5,5,Daniel,,0-0-0-13-0-0-0-15-0-0-0-8-0-0-0-7
+406,50,3,RequestNewWinCondition(),Can you give me another winning board?,Inform,Assume you demonstrate this win condition,Derek,5,5,Daniel,,11-0-0-0-12-0-0-0-4-0-0-0-8-0-0-0
+406,50,4,"Same, Confirm(User_ID=1, Quantity)",Is that a win because the quantity of al pieces?,NotSure(),I don't know that.,Derek,4,5,Daniel,,11-0-0-0-12-0-0-0-4-0-0-0-8-0-0-0
+406,50,5,"Same, Request(User_ID=1, Translate)",Do you know how could I shift it and keep winning?,"Inform(['col1', 'col2'])",You can shift all pieces to the right by one or two.,Derek,5,5,Daniel,,11-0-0-0-12-0-0-0-4-0-0-0-8-0-0-0
+406,50,6,"Context Switch, Confirm(User_ID=1, RemovePiece(0,3))","For this winning board, can I remove the top right piece and keep winning?",NotSure(),Sorry I don't know if you are correct.,Derek,5,4,Daniel,,0-0-0-13-0-0-0-15-0-0-0-8-0-0-0-7
+406,50,7,RequestNewWinCondition(),Please give me another winning board.,Inform,Assume you demonstrate this win condition,Derek,5,5,Daniel,,0-0-0-10-0-0-0-13-0-0-0-16-0-0-0-12
+406,50,8,RequestNewWinCondition(),One more please.,Inform,Assume you demonstrate this win condition,Derek,5,5,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-6-13-8-7
+406,50,9,"Context Switch, Confirm(User_ID=1, RemovePiece(3,0))","Switching to this winning board, can I remove the top piece and keep winning?",Negate(),"If you remove that piece, it will no longer be a winning board.",Derek,5,5,Daniel,,11-0-0-0-12-0-0-0-4-0-0-0-8-0-0-0
+406,50,10,Finish(),Thanks! I learned a lot today! Bye!,Finish,Good to hear that! Bye!,Derek,5,5,Daniel,,11-0-0-0-12-0-0-0-4-0-0-0-8-0-0-0

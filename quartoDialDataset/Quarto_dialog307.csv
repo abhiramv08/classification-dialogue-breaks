@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+307,50,0,Start(),Hi! Can you show me how to play Quarto?,Start,Why not? Let's get started!,Ruijie,5,5,Jacob,,12-0-0-0-0-1-0-0-0-0-3-0-0-0-0-9
+307,50,1,RequestNewWinCondition(),Can you show me what a win condition looks like?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Jacob,,0-0-0-13-0-0-0-15-0-0-0-8-0-0-0-6
+307,50,2,"Same, Confirm(User_ID=1, Height)",Is it a win because the pieces are of the same height?,Negate(),"No, the height is unrelated.",Ruijie,5,5,Jacob,,0-0-0-13-0-0-0-15-0-0-0-8-0-0-0-6
+307,50,3,"Same, Confirm(User_ID=1, Color)",Is it a win because of the pieces are of the same color?,Negate(),"No, it's unrelated.",Ruijie,5,5,Jacob,,0-0-0-13-0-0-0-15-0-0-0-8-0-0-0-6
+307,50,4,"Same, Request(User_ID=1, Rotate)",Can I rotate the pieces by a certain degree and maintain the win?,Inform([135]),"Sure, you can rotate the pieces by 135 degree.",Ruijie,2,5,Jacob,This rotation means having the pieces aligned antidiagonally.,0-0-0-13-0-0-0-15-0-0-0-8-0-0-0-6
+307,50,5,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Jacob,,0-9-0-0-0-13-0-0-0-16-0-0-0-10-0-0
+307,50,6,"Same, RequestOtherPlayers()",Can the other player prevent this win?,Inform([]),"No, this win is absolute.",Ruijie,5,5,Jacob,,0-9-0-0-0-13-0-0-0-16-0-0-0-10-0-0
+307,50,7,"Context Switch, Confirm(User_ID=1, Translate([0, 1]))","Switch to the second win you showed me, can I translate the first piece and maintain the win?",NotSure(),"You know what, I'm not sure.",Ruijie,3,5,Jacob,This translate means moving the pieces to the second column.,0-0-0-13-0-0-0-15-0-0-0-8-0-0-0-6
+307,50,8,RequestNewWinCondition(),Can you show me a new win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Jacob,,11-0-0-0-0-1-0-0-0-0-12-0-0-0-0-9
+307,50,9,"Same, Confirm(User_ID=1, Color)",Is it a win because the pieces are of the same color?,NotSure(),"Sorry, I'm not sure.",Ruijie,5,5,Jacob,,11-0-0-0-0-1-0-0-0-0-12-0-0-0-0-9
+307,50,10,RequestNewWinCondition(),Can you show me a new win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Jacob,,0-2-0-0-0-9-0-0-0-5-0-0-0-6-0-0
+307,50,11,"Context Switch, Confirm(User_ID=1, RemovePiece(3,3))","Back to the previous win you showed me, can I remove the third piece and maintain the win?",Negate(),"No, it will break it.",Ruijie,2,5,Jacob,This means removing the piece in the top right.,0-0-0-13-0-0-0-15-0-0-0-8-0-0-0-6
+307,50,12,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Jacob,,0-0-0-4-0-0-7-0-0-2-0-0-1-0-0-0
+307,50,13,"Context Switch, Confirm(User_ID=1, Color)","Back to the previous win you showed me, is it a win because the pieces are of the same color? ",NotSure(),"Actually, I'm not sure.",Ruijie,5,5,Jacob,,11-0-0-0-0-1-0-0-0-0-12-0-0-0-0-9
+307,50,14,"Context Switch, Confirm(User_ID=1, Shape)","Switch the previous win you showed me, is it a win because the pieces are of the same shape?",NotSure(),"Sorry, I'm not sure.",Ruijie,5,5,Jacob,,0-0-0-4-0-0-7-0-0-2-0-0-1-0-0-0
+307,50,15,Finish(),Thank you so much! I think I've learned enough.,Finish,You're welcome!,Ruijie,5,5,Jacob,,0-0-0-4-0-0-7-0-0-2-0-0-1-0-0-0

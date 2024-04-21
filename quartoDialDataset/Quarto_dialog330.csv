@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+330,50,0,Start(),"Hi, can you teach me Quarto?",Start,"Yea, sure.",Anthony,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+330,50,1,RequestNewWinCondition(),Please show me a new win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Ruijie,,0-0-12-0-0-0-15-0-0-0-13-0-0-0-9-0
+330,50,2,"Same, Confirm(User_ID=1, Height)",Is this a win because of the height of the pieces?,NotSure(),"I'm not sure, ask a different question. ",Anthony,5,4,Ruijie,,0-0-12-0-0-0-15-0-0-0-13-0-0-0-9-0
+330,50,3,"Same, Confirm(User_ID=1, AddPiece(0,3))",What if I added a piece here?,NotSure(),I'm not sure how that would affect the board. ,Anthony,4,4,Ruijie,,0-0-12-0-0-0-15-0-0-0-13-0-0-0-9-0
+330,50,4,"Same, Confirm(User_ID=1, Height)",Is this a win because of the height of the pieces?,Affirm(),"Yes, I know now, it is. ",Anthony,4,4,Ruijie,,0-0-12-0-0-0-15-0-0-0-13-0-0-0-9-0
+330,50,5,"Same, Confirm(User_ID=1, RemovePiece(3,2))",Could I remove the piece here?,NotSure(),I'm not sure if you could. ,Anthony,4,5,Ruijie,,0-0-12-0-0-0-15-0-0-0-13-0-0-0-9-0
+330,50,6,"Same, Confirm(User_ID=1, Height)",Is this a win because of the height of the pieces?,NotSure(),You've asked this twice before. Now I'm not sure again. ,Anthony,4,4,Ruijie,,0-0-12-0-0-0-15-0-0-0-13-0-0-0-9-0
+330,50,7,RequestNewWinCondition(),Please show me another win conditon. ,Inform,Assume you demonstrate this win condition,Anthony,5,4,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-1-13-14-10
+330,50,8,RequestNewWinCondition(),Please show me one more win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Ruijie,,10-0-0-0-0-6-0-0-0-0-14-0-0-0-0-16
+330,50,9,"Context Switch, Confirm(User_ID=1, Quantity)","Looking at this board, is it a win because of the height of the pieces?",Affirm(),"Yes, that is why. ",Anthony,1,4,Ruijie,It is asking the quantity.,0-0-12-0-0-0-15-0-0-0-13-0-0-0-9-0
+330,50,10,"Context Switch, Confirm(User_ID=1, Height)","Looking at this other board, is it a win because of the height of the pieces>",Negate(),"No, here the heights are different so it is not why.",Anthony,4,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-1-13-14-10
+330,50,11,RequestNewWinCondition(),Please show me another winning board.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Ruijie,,0-0-0-10-0-0-16-0-0-4-0-0-2-0-0-0
+330,50,12,RequestNewWinCondition(),Could you give me another winning board?,Inform,Assume you demonstrate this win condition,Anthony,5,4,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-15-9-11-1
+330,50,13,"Context Switch, Confirm(User_ID=1, AddPiece(3,1))","Switching to this board, could I add a piece here?",NotSure(),I don't actually know. ,Anthony,4,4,Ruijie,,0-0-12-0-0-0-15-0-0-0-13-0-0-0-9-0
+330,50,14,"Context Switch, Confirm(User_ID=1, AddPiece(2,3))","Now going to this board, could I add a piece in this spot?",Affirm(),"Yes, that's totally fine. ",Anthony,4,4,Ruijie,,10-0-0-0-0-6-0-0-0-0-14-0-0-0-0-16
+330,50,15,Finish(),"Okay, thanks for the help!",Finish,Of course!,Anthony,5,5,Ruijie,,10-0-0-0-0-6-0-0-0-0-14-0-0-0-0-16

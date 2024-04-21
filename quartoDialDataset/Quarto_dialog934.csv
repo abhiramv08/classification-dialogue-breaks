@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+934,60,0,Start(),"Hi, would you please teach me Quarto?`",Start,"Yes, let's begin. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+934,60,1,RequestNewWinCondition(),Please show me a new win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-5-4-3-2
+934,60,2,"Same, Confirm(User_ID=1, RemovePiece(0,1))",What if I were to remove the piece here?,NotSure(),I'm not so sure. ,Anthony,3,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-5-4-3-2
+934,60,3,RequestNewWinCondition(),Please show me a new win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,4-0-0-0-0-10-0-0-0-0-2-0-0-0-0-3
+934,60,4,"Same, Confirm(User_ID=1, AddPiece(3,1))",What if I were to add a piece here?,Affirm(),That would still be a win condition. ,Anthony,3,5,Yiyen,,4-0-0-0-0-10-0-0-0-0-2-0-0-0-0-3
+934,60,5,"Same, Confirm(User_ID=1, Hollowness)",Is this win due to the hollowness of the pieces?,Negate(),"No, that's not why. ",Anthony,5,5,Yiyen,,4-0-0-0-0-10-0-0-0-0-2-0-0-0-0-3
+934,60,6,"Context Switch, Confirm(User_ID=1, Hollowness)","Looking at this board, is this one a win because of the pieces' hollowness?",NotSure(),"I don't know, sorry. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-5-4-3-2
+934,60,7,"Same, Confirm(User_ID=1, Rotate(45))",Could I rotate these pieces to be on the diagonal?,NotSure(),I'm not sure. ,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-5-4-3-2
+934,60,8,"Context Switch, Confirm(User_ID=1, Hollowness)","Looking back to this board, is this win due to the hollowness of the pieces?",Negate(),"No, they are not all the same consistency. ",Anthony,5,5,Yiyen,,4-0-0-0-0-10-0-0-0-0-2-0-0-0-0-3
+934,60,9,RequestNewWinCondition(),Please show me a new win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-16-0-0-11-0-0-8-0-0-12-0-0-0
+934,60,10,Finish(),Thanks for all the help. ,Finish,"No problem, have a nice day.",Anthony,5,5,Yiyen,,0-0-0-16-0-0-11-0-0-8-0-0-12-0-0-0

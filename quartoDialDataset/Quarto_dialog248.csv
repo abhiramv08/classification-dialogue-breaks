@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+248,100,0,Start(),"Hi, can you teach me how to play Quarto?",Start,Sure!,Shaobo,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+248,100,1,RequestNewWinCondition(),Could you show me a win first?,Inform(),Assume you demonstrate this win condition,Shaobo,5,4,Derek,,6-0-0-0-0-14-0-0-0-0-13-0-0-0-0-9
+248,100,2,"Same , Confirm(User_ID=1, RemovePiece(2,1))",And is it still a win if I remove the piece on the third row and the second column?,Negate(),"No, it will not be a win anymore.",Shaobo,5,3,Derek,,6-0-0-0-0-14-0-0-0-0-13-0-0-0-0-9
+248,100,3,"Same , Confirm(User_ID=1, RemovePiece(2,1))",What if I remove the piece on the third row and the second column?,Negate(),No! You have asked an identical question!,Shaobo,5,4,Derek,,6-0-0-0-0-14-0-0-0-0-13-0-0-0-0-9
+248,100,4,"Win Same {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}",Is it a win because of the hollowness of the pieces?,Affirm(),"Yes, it is a win because all pieces are hollow.",Shaobo,5,5,Derek,,6-0-0-0-0-14-0-0-0-0-13-0-0-0-0-9
+248,100,5,"Win Same {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}",And is it a win because of the hollowness of the pieces?,Affirm(),Yes. But why do you ask the same question again?,Shaobo,5,5,Derek,,6-0-0-0-0-14-0-0-0-0-13-0-0-0-0-9
+248,100,6,RequestNewWinCondition(),Can you show me another winning board?,Inform(),Assume you demonstrate this win condition,Shaobo,5,5,Derek,,0-3-0-0-0-11-0-0-0-15-0-0-0-16-0-0
+248,100,7,"Same, Confirm(User_ID=1, Translate('col3'))","For the board you just showed me, is it still a win if I move all pieces to the rightmost column?",Affirm,"Yes, it is still a win.",Shaobo,5,5,Derek,,0-3-0-0-0-11-0-0-0-15-0-0-0-16-0-0
+248,100,8,RequestNewWinCondition(),"Okay, can you show me one more winning board?",Inform(),Assume you demonstrate this win condition,Shaobo,5,5,Derek,,9-0-0-0-0-10-0-0-0-0-2-0-0-0-0-4
+248,100,9,RequestNewWinCondition(),I need one more wining board to learn how to play the game.,Inform(),Assume you demonstrate this win condition,Shaobo,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-7-15-11-9
+248,100,10,"Context Switch, RequestOtherPlayers()","For this board, how could another player revoke this win?",Inform([]),There is nothing another player could do to revoke the win.,Shaobo,5,5,Derek,,6-0-0-0-0-14-0-0-0-0-13-0-0-0-0-9
+248,100,11,Finish(),"Okay, thanks for the help!",Finish,Don't ask me identical questions next time!,Shaobo,5,5,Derek,,6-0-0-0-0-14-0-0-0-0-13-0-0-0-0-9

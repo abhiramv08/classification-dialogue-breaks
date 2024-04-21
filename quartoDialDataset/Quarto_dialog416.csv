@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+416,50,0,Start(),Could you teach me how to play Quarto?,Start,"Yes, I certainly can.",Jacob,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+416,50,1,RequestNewWinCondition(),Can you start by showing me a winning board?,Inform,Assume you demonstrate this win condition,Jacob,5,5,Derek,,7-0-0-0-13-0-0-0-3-0-0-0-9-0-0-0
+416,50,2,"Same, Confirm(User_ID=1, Quantity)",Is this a winning board board because of the number of pieces?,NotSure(),I don't really know if the number of pieces matters or not.,Jacob,5,5,Derek,,7-0-0-0-13-0-0-0-3-0-0-0-9-0-0-0
+416,50,3,"Same, RequestOtherPlayers()",What moves could another player take to get rid of this win condition?,Inform([]),There are no such actions that any player can take.,Jacob,5,5,Derek,,7-0-0-0-13-0-0-0-3-0-0-0-9-0-0-0
+416,50,4,RequestNewWinCondition(),Can you show me another win condition?,Inform,Assume you demonstrate this win condition,Jacob,5,5,Derek,,0-0-0-13-0-0-5-0-0-8-0-0-16-0-0-0
+416,50,5,"Same, Confirm(User_ID=1, Color)",Are the colors of the pieces important to this win?,Negate(),"No, the color does not matter here.",Jacob,5,5,Derek,,0-0-0-13-0-0-5-0-0-8-0-0-16-0-0-0
+416,50,6,RequestNewWinCondition(),Can you show me another winning board?,Inform,Assume you demonstrate this win condition,Jacob,5,5,Derek,,0-0-0-12-0-0-0-10-0-0-0-11-0-0-0-13
+416,50,7,"Same, Confirm(User_ID=1, Hollowness)",Is the hollowness of the pieces important to this win?,NotSure(),I don't really know if that is pertinent here.,Jacob,3,4,Derek,,0-0-0-12-0-0-0-10-0-0-0-11-0-0-0-13
+416,50,8,"Context Switch, Request(User_ID=1, Translate)","On this board, in which other columns could the pieces lie?","Inform(['col1', 'col2'])",These pieces could lie in the second or third column.,Jacob,5,5,Derek,,7-0-0-0-13-0-0-0-3-0-0-0-9-0-0-0
+416,50,9,"Context Switch, Confirm(User_ID=1, Rotate(90))",Would this board still be a win if the pieces were aligned vertically?,NotSure(),I'm not sure if that would work.,Jacob,5,5,Derek,,0-0-0-13-0-0-5-0-0-8-0-0-16-0-0-0
+416,50,10,RequestNewWinCondition(),Can you show me another winning board?,Inform,Assume you demonstrate this win condition,Jacob,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-6-5-2-14
+416,50,11,RequestNewWinCondition(),Could you show me another?,Inform,Assume you demonstrate this win condition,Jacob,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-15-16-13-12
+416,50,12,"Same, Confirm(User_ID=1, Rotate(90))",Would this still be a win if the pieces were aligned vertically?,NotSure(),I'm not sure if that would still be a win.,Jacob,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-15-16-13-12
+416,50,13,"Context Switch, Confirm(User_ID=1, Color)","On this board, do the colors of the pieces matter?",NotSure(),I don't know if the color matters here or not.,Jacob,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-6-5-2-14
+416,50,14,"Context Switch, Confirm(User_ID=1, RemovePiece(2,0))",Would this board still be a win if the piece second from the top were removed?,Negate(),"No, you need that piece to win.",Jacob,4,3,Derek,,7-0-0-0-13-0-0-0-3-0-0-0-9-0-0-0
+416,50,15,Finish(),I think I know enough now to play. Thank you for teaching me.,Finish,You're welcome. Goodbye.,Jacob,5,5,Derek,,7-0-0-0-13-0-0-0-3-0-0-0-9-0-0-0

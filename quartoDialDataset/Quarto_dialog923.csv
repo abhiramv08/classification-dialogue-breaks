@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+923,60,0,Start(),"Hi, would you show me how to play this game?",Start,"Yeah, totally. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+923,60,1,RequestNewWinCondition(),Please show me another win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,14-0-0-0-0-2-0-0-0-0-4-0-0-0-0-12
+923,60,2,RequestNewWinCondition(),Please show me a new win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,1-0-0-0-0-6-0-0-0-0-2-0-0-0-0-7
+923,60,3,"Context Switch, Confirm(User_ID=1, Color)","Looking back to this board, is this win due to the color of the pieces?",Affirm(),"Yes, they're all blue. ",Anthony,5,5,Yiyen,,14-0-0-0-0-2-0-0-0-0-4-0-0-0-0-12
+923,60,4,"Same, Confirm(User_ID=1, Height)",Is this win due to the height of the pieces as well?,Negate(),"No, the height doesn't matter here.",Anthony,5,5,Yiyen,,14-0-0-0-0-2-0-0-0-0-4-0-0-0-0-12
+923,60,5,"Context Switch, Confirm(User_ID=1, Color)","Switching over to this board, is this a win because of the colors of the pieces?",NotSure(),"I'm not sure, my bad. ",Anthony,5,5,Yiyen,,1-0-0-0-0-6-0-0-0-0-2-0-0-0-0-7
+923,60,6,"Same, Confirm(User_ID=1, Color)",Is this a win because of the color of the pieces?,Negate(),"No, now I'm sure it's not.",Anthony,5,5,Yiyen,,1-0-0-0-0-6-0-0-0-0-2-0-0-0-0-7
+923,60,7,"Same, Confirm(User_ID=1, AddPiece(2,2))",Is this still a win if I add a piece here?,Affirm(),"Yes, that addition doesn't undo this win.",Anthony,2,4,Yiyen,,1-0-0-0-0-6-0-0-0-0-2-0-0-0-0-7
+923,60,8,"Same, Request(User_ID=1, Rotate)",How could I rotate these pieces?,Inform([90]),One option is to rotate them to be vertical.,Anthony,5,4,Yiyen,,1-0-0-0-0-6-0-0-0-0-2-0-0-0-0-7
+923,60,9,"Context Switch, Confirm(User_ID=1, Color)","Looking back to this board, is this a win because all the pieces are blue?",Affirm(),"Yes, it is. ",Anthony,5,5,Yiyen,,14-0-0-0-0-2-0-0-0-0-4-0-0-0-0-12
+923,60,10,Finish(),"Thank you so much, bye.",Finish,Goodbye.,Anthony,5,5,Yiyen,,14-0-0-0-0-2-0-0-0-0-4-0-0-0-0-12

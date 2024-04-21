@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+68,100,0,Start(),Please teach me Quarto.,Start,Okay. I can do that. ,Anthony,5,5,Dave,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+68,100,1,RequestNewWinCondition(),Please show me a win condition. ,Inform(),Assume you demonstrate this win condition,Anthony,5,4,Dave,,4-0-0-0-0-16-0-0-0-0-12-0-0-0-0-10
+68,100,2,RequestNewWinCondition(),Show me another win condition. ,Inform(),Assume you demonstrate this win condition,Anthony,5,4,Dave,,0-0-0-0-0-0-0-0-0-0-0-0-14-4-10-8
+68,100,3,"Context Switch, Confirm(User_ID=1, Quantity)","Looking at the first board, is this a win because of the amount of pieces involved?",Affirm(),"Yes, that is why.",Anthony,5,5,Dave,,4-0-0-0-0-16-0-0-0-0-12-0-0-0-0-10
+68,100,4,RequestNewWinCondition(),Show a third win condition if you don't mind. ,Inform(),Assume you demonstrate this win condition,Anthony,5,4,Dave,,2-0-0-0-0-3-0-0-0-0-7-0-0-0-0-8
+68,100,5,"Context Switch, Confirm(User_ID=1, Height)","Looking at this board here, is it a win because of the height of the pieces?",Negate(),"No, that has nothing to do with it. ",Anthony,5,5,Dave,,4-0-0-0-0-16-0-0-0-0-12-0-0-0-0-10
+68,100,6,"Same, Confirm(User_ID=1, Rotate(90))",What if I rotated these pieces 90 degrees to the other diagonal?,Affirm(),That would be a valid move to keep this win condition. ,Anthony,5,3,Dave,,4-0-0-0-0-16-0-0-0-0-12-0-0-0-0-10
+68,100,7,"Context Switch, Request(User_ID=1, Translate)","On this board, how can I slide the pieces?","Inform(['row1', 'row2', 'row3'])","You can move them to row one, row two, or row three. ",Anthony,5,3,Dave,,0-0-0-0-0-0-0-0-0-0-0-0-14-4-10-8
+68,100,8,RequestNewWinCondition(),Show another win condition. ,Inform(),Assume you demonstrate this win condition,Anthony,5,4,Dave,,0-0-8-0-0-0-15-0-0-0-4-0-0-0-12-0
+68,100,9,"Context Switch, Confirm(User_ID=1, RemovePiece(2,1))","Looking at this board, is it a win if I remove the piece at (2,1)?",Negate(),No that would make this a losing board. ,Anthony,5,3,Dave,,4-0-0-0-0-16-0-0-0-0-12-0-0-0-0-10
+68,100,10,"Context Switch, Confirm(User_ID=1, Translate('row3'))",Can I move the pieces on this other board to row 3?,Affirm,"Yes, you can do that?",Anthony,5,4,Dave,,0-0-0-0-0-0-0-0-0-0-0-0-14-4-10-8
+68,100,11,"Same , Confirm(User_ID=1, Shape)",Is it is a win because of the pieces' shape?,Negate(),No that is not why. ,Anthony,5,5,Dave,,0-0-0-0-0-0-0-0-0-0-0-0-14-4-10-8
+68,100,12,"Context Switch, Confirm(User_ID=1, AddPiece(1,1))","Looking at this board, is it still a win condition if I add a piece at (1,1)?",Affirm(),"Yes, that would be an okay place to add a new piece.",Anthony,5,3,Dave,,2-0-0-0-0-3-0-0-0-0-7-0-0-0-0-8
+68,100,13,"Context Switch, Confirm(User_ID=1, Shape)","Looking at this other board, is it a win because of the shape of all the pieces?",Negate(),"No, you should notice a pattern when you ask this question by now, quite frankly. ",Anthony,5,4,Dave,,0-0-8-0-0-0-15-0-0-0-4-0-0-0-12-0
+68,100,14,RequestNewWinCondition(),How about a new win condtion?,Inform(),Assume you demonstrate this win condition,Anthony,5,4,Dave,,0-0-0-0-0-0-0-0-0-0-0-0-16-8-7-12
+68,100,15,Finish(),"Okay, I think we can be done for now.",Finish,"Sounds good, goodbye.",Anthony,5,4,Dave,,0-0-0-0-0-0-0-0-0-0-0-0-16-8-7-12

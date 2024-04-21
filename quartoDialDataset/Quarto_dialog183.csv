@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+183,100,0,Start(),Do you have time to teach me how to play Quarto?,Start,Sure!,Shaobo,5,5,Anthony,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+183,100,1,RequestNewWinCondition(),Could you show me a win condition?,Inform(),Assume you demonstrate this win condition,Shaobo,5,5,Anthony,,0-0-0-16-0-0-2-0-0-14-0-0-6-0-0-0
+183,100,2,"Same, Confirm(User_ID=1, Quantity)",So does the number of pieces on the board affect the win?,Affirm(),"Yes, you need at least four pieces for a win.",Shaobo,5,5,Anthony,,0-0-0-16-0-0-2-0-0-14-0-0-6-0-0-0
+183,100,3,"Same , Confirm(User_ID=1, RemovePiece(1,1))","For the same board, is it still a win if I remove the piece on the second row and the second column?",Negate(),"No, it will not be a win anymore.",Shaobo,5,5,Anthony,,0-0-0-16-0-0-2-0-0-14-0-0-6-0-0-0
+183,100,4,"Win Same {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}",And is it a win because of the hollowness of the pieces?,Negate(),"No, it is a win because all pieces are blue.",Shaobo,5,5,Anthony,,0-0-0-16-0-0-2-0-0-14-0-0-6-0-0-0
+183,100,5,RequestNewWinCondition(),Could you show me one more win?,Inform(),Assume you demonstrate this win condition,Shaobo,5,5,Anthony,,1-0-0-0-15-0-0-0-5-0-0-0-13-0-0-0
+183,100,6,"Same , Confirm(User_ID=1, Color)",Is it a win because of the colors of pieces?,Affirm(),"Yes, it is a win because all pieces are green.",Shaobo,5,5,Anthony,,1-0-0-0-15-0-0-0-5-0-0-0-13-0-0-0
+183,100,7,"Context Switch, Confirm(User_ID=1, Rotate(90))","For this board, is it still a win if all pieces are rotated to the first column?",Affirm(),"Yes, it is still a win.",Shaobo,5,5,Anthony,,0-0-0-16-0-0-2-0-0-14-0-0-6-0-0-0
+183,100,8,"Same , Confirm(User_ID=1, Color)",And is it a win because of the colors of pieces?,Affirm(),"Yes, all pieces are blue.",Shaobo,4,5,Anthony,"perhaps could use the word ""the same"" instead of ""blue""",0-0-0-16-0-0-2-0-0-14-0-0-6-0-0-0
+183,100,9,"Context Switch, RequestOtherPlayers()","For this board, what actions could another player take to revoke this win?",Inform([]),There is nothing that he or she could do to revoke the win.,Shaobo,5,5,Anthony,,1-0-0-0-15-0-0-0-5-0-0-0-13-0-0-0
+183,100,10,"Same , Confirm(User_ID=1, AddPiece(2,2))",And is it still a win if I add a piece on the third row and the third column?,Affirm(),"Yes, it is still a win.",Shaobo,5,5,Anthony,,1-0-0-0-15-0-0-0-5-0-0-0-13-0-0-0
+183,100,11,RequestNewWinCondition(),Is there any other way to win?,Inform(),Assume you demonstrate this win condition,Shaobo,3,5,Anthony,,0-0-0-6-0-0-16-0-0-15-0-0-14-0-0-0
+183,100,12,Finish(),Thank you! I have learned a lot!,Finish,Sure!,Shaobo,5,4,Anthony,,0-0-0-6-0-0-16-0-0-15-0-0-14-0-0-0

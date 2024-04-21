@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+918,60,0,Start(),"Hi, would you show me how to play Quarto?",Start,"Yes,  I'd love to. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+918,60,1,RequestNewWinCondition(),Please show me a new win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-6-0-0-0-5-0-0-0-13-0-0-0-10-0
+918,60,2,RequestNewWinCondition(),Please show me another new win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-15-0-0-0-1-0-0-0-5-0-0-0-11
+918,60,3,RequestNewWinCondition(),Please show me one more win. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-6-2-7-5
+918,60,4,"Same, Confirm(User_ID=1, Hollowness)",Is this board a win because of the hollowness of the pieces?,Negate(),"No, that's not why.",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-6-2-7-5
+918,60,5,"Context Switch, Confirm(User_ID=1, Hollowness)","Looking back to this board, is this a win because of the hollowness of the pieces?",Affirm(),"Yes, they are all solid.",Anthony,5,5,Yiyen,,0-0-6-0-0-0-5-0-0-0-13-0-0-0-10-0
+918,60,6,"Context Switch, Confirm(User_ID=1, Shape)","Looking at this board now, is it a win because of the pieces' shape?",Negate(),"No, they are not the same.",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-6-2-7-5
+918,60,7,"Context Switch, Request(User_ID=1, Translate)","Looking at this board, how could I shift the pieces?","Inform(['col1', 'col3'])",You could move them to columns 1 or 3.,Anthony,5,4,Yiyen,,0-0-6-0-0-0-5-0-0-0-13-0-0-0-10-0
+918,60,8,"Same, RequestOtherPlayers()",What could another player do to affect this win?,Inform([]),Nothing.,Anthony,5,4,Yiyen,,0-0-6-0-0-0-5-0-0-0-13-0-0-0-10-0
+918,60,9,"Context Switch, Confirm(User_ID=1, Hollowness)","Looking at this board, is hollowness why it's a win?",Negate(),"No, they are not all the same consistency.",Anthony,5,4,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-6-2-7-5
+918,60,10,Finish(),Thanks fot all your help!,Finish,No problem!,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-6-2-7-5

@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+393,50,0,Start(),"Hi, could you please teach me how to play Quarto?",Start,"Yea, totally. ",Anthony,,,,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+393,50,1,RequestNewWinCondition(),Please show me the first win condition. ,Inform,Assume you demonstrate this win condition,Anthony,,,,,0-13-0-0-0-14-0-0-0-5-0-0-0-7-0-0
+393,50,2,RequestNewWinCondition(),Could I see another win condition?,Inform,Assume you demonstrate this win condition,Anthony,,,,,0-0-0-0-0-0-0-0-0-0-0-0-10-5-13-2
+393,50,3,RequestNewWinCondition(),Could I see one more win condition?,Inform,Assume you demonstrate this win condition,Anthony,,,,,0-0-0-0-0-0-0-0-0-0-0-0-2-14-16-12
+393,50,4,"Context Switch, Confirm(User_ID=1, AddPiece(2,2))","Looking back at this board, could I add a piece in this spot?",Affirm(),"Yes, that's fine. It would still be a win. ",Anthony,,,,,0-13-0-0-0-14-0-0-0-5-0-0-0-7-0-0
+393,50,5,"Context Switch, Confirm(User_ID=1, Height)","Looking over at this board, is this a win because of the height of the pieces?",NotSure(),"I'm not sure, sorry. ",Anthony,,,,,0-0-0-0-0-0-0-0-0-0-0-0-10-5-13-2
+393,50,6,"Context Switch, Confirm(User_ID=1, Quantity)","Going over to this board, is this a win because of the number of pieces?",Affirm(),"Yes, more specifically because there are four circles?",Anthony,,,,,0-13-0-0-0-14-0-0-0-5-0-0-0-7-0-0
+393,50,7,"Context Switch, Confirm(User_ID=1, Height)","Let's switch to this board, is it a win because of the height of the pieces?",NotSure(),I don't know for sure. ,Anthony,,,,,0-0-0-0-0-0-0-0-0-0-0-0-10-5-13-2
+393,50,8,"Context Switch, Request(User_ID=1, Translate)",Let's look at this board now. Where could I shift these pieces?,"Inform(['row1', 'row2'])",You could move them up one or two rows. ,Anthony,,,,,0-0-0-0-0-0-0-0-0-0-0-0-2-14-16-12
+393,50,9,"Same, Confirm(User_ID=1, Color)",Is this a win condition because of the color of the pieces?,Affirm(),"Yes, they are all blue. ",Anthony,,,,,0-0-0-0-0-0-0-0-0-0-0-0-2-14-16-12
+393,50,10,Finish(),"Okay, thanks for all the help!",Finish,You're welcome.,Anthony,,,,,0-0-0-0-0-0-0-0-0-0-0-0-2-14-16-12

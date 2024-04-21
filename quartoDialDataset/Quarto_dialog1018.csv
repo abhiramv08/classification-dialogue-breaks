@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+1018,60,0,Start(),"Hi, can you tell me how to play Quarto?",Start,Ok.,Tianyi,5,4,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+1018,60,1,RequestNewWinCondition(),Can you show me a win?,Inform,Assume you demonstrate this win condition,Tianyi,4,5,Ruijie,,0-2-0-0-0-14-0-0-0-13-0-0-0-6-0-0
+1018,60,2,"Same, Confirm(User_ID=1, AddPiece(2,3))","In this case, if I add a piece at the fourth column of the third row, can it still be a win?",NotSure(),I have no idea about this. Maybe you are right.,Tianyi,5,5,Ruijie,,0-2-0-0-0-14-0-0-0-13-0-0-0-6-0-0
+1018,60,3,RequestNewWinCondition(),Can you show me another win?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,7-0-0-0-0-16-0-0-0-0-11-0-0-0-0-8
+1018,60,4,"Context Switch, RequestOtherPlayers()","Back to this board, can someone take actions to prevent the win?",Inform([]),"No, there is nothing he/she can do.",Tianyi,4,5,Ruijie,,0-2-0-0-0-14-0-0-0-13-0-0-0-6-0-0
+1018,60,5,"Context Switch, Confirm(User_ID=1, Height)","In this winning board, is it wins because some pieces are short?",Negate(),"No, that is not the reason.",Tianyi,5,4,Ruijie,,7-0-0-0-0-16-0-0-0-0-11-0-0-0-0-8
+1018,60,6,"Same, Confirm(User_ID=1, Hollowness)","And, is it wins because all pieces are hollow?",Affirm(),"Yes, you are right.",Tianyi,5,5,Ruijie,,7-0-0-0-0-16-0-0-0-0-11-0-0-0-0-8
+1018,60,7,RequestNewWinCondition(),Can you show me a new win pattern?,Inform,Assume you demonstrate this win condition,Tianyi,4,4,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-13-14-5-16
+1018,60,8,"Same, Confirm(User_ID=1, Quantity)","In this win, is it a win because of the quantity of the pieces?",NotSure(),I cannot determine whether that is true.,Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-13-14-5-16
+1018,60,9,"Same, Confirm(User_ID=1, Color)",Is the color of pieces here the reason why it is a win?,Negate(),"No, that is not the reason.",Tianyi,5,4,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-13-14-5-16
+1018,60,10,"Same, Confirm(User_ID=1, Shape)",Is it wins because all pieces have the same shape?,NotSure(),"That is a good question, I have no idea about this.",Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-13-14-5-16
+1018,60,11,Finish(),"Thank you, I have learned a lot.",Finish,You are welcome.,Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-13-14-5-16

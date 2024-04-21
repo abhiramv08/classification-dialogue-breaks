@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+796,60,0,Start(),"Hey I really want to learn playing Quarto, can you teach me?",Start,Definately.,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+796,60,1,RequestNewWinCondition(),Can you show me a win condition to start?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-13-0-0-14-0-0-8-0-0-16-0-0-0
+796,60,2,RequestNewWinCondition(),Please show me one more win condition.,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-14-8-2-10
+796,60,3,"Same, Confirm(User_ID=1, Shape)",Is that a win because the shape pattern of all pieces?,Negate(),No. It is not the reason to win.,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-14-8-2-10
+796,60,4,"Same, Confirm(User_ID=1, Color)",Is the color important for the win?,Affirm(),Yes. This board is a win because all pieces have identical color.,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-14-8-2-10
+796,60,5,"Same, Confirm(User_ID=1, AddPiece(3,0))",Can I add a piece on the top left corner?,NotSure(),I don't konw.,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-14-8-2-10
+796,60,6,"Same, Confirm(User_ID=1, Rotate(45))",Can I line all pieces diagonally and keep winning?,Affirm(),"Sure, you can definately do that.",Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-14-8-2-10
+796,60,7,"Context Switch, Confirm(User_ID=1, Height)","Let's go back to this board, is the height of all pieces important for this win?",NotSure(),Sorry I am not sure about that.,Derek,5,5,Shaobo,,0-0-0-13-0-0-14-0-0-8-0-0-16-0-0-0
+796,60,8,"Same, Request(User_ID=1, Rotate)",How could I line these pieces in different angle and keep winning?,Inform([90]),You can line them vertically.,Derek,4,5,Shaobo,,0-0-0-13-0-0-14-0-0-8-0-0-16-0-0-0
+796,60,9,"Context Switch, Confirm(User_ID=1, AddPiece(3,0))","Switching to this win, can I add a piece on the top left corner?",Affirm(),Sure. You can add pieces anywhere.,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-14-8-2-10
+796,60,10,Finish(),Thanks! I learned a lot today!,Finish,You are welcome!,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-14-8-2-10

@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+167,100,0,Start(),"Hi, can you teach me how to play Quarto?",Start,"Sure, let's get started",John,5,4,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+167,100,1,RequestNewWinCondition(),Can I see a new win condition?,Inform(),Assume you demonstrate this win condition,John,5,4,Tianyi,,16-0-0-0-0-9-0-0-0-0-15-0-0-0-0-13
+167,100,2,RequestNewWinCondition(),Can I see another example of a win?,Inform(),Assume you demonstrate this win condition,John,5,4,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-13-15-11-3
+167,100,3,"Same, Request(User_ID=1, Translate)",How can I shift these pieces to still have a win?,"Inform([u'row1', u'row2', u'row3'])",You can move the pieces to any other row and still have a win,John,5,3,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-13-15-11-3
+167,100,4,"Context Switch, Confirm(User_ID=1, Color)",Is the color of the pieces the reason for the win?,Negate(),"No, the pieces are not all the same color",John,5,4,Tianyi,,16-0-0-0-0-9-0-0-0-0-15-0-0-0-0-13
+167,100,5,RequestNewWinCondition(),Can I see another win?,Inform(),Assume you demonstrate this win condition,John,5,4,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-13-11-10-9
+167,100,6,RequestNewWinCondition(),What is another example of a winning layout?,Inform(),Assume you demonstrate this win condition,John,5,5,Tianyi,,0-0-0-4-0-0-5-0-0-8-0-0-2-0-0-0
+167,100,7,"Context Switch, Confirm(User_ID=1, Height)",Is the height of these pieces the reason for this win?,Negate(),"No, the pieces are not all the same height",John,5,3,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-13-15-11-3
+167,100,8,"Context Switch, Request(User_ID=1, Translate)",How could I translate these pieces and still have a win?,Inform([]),There is no valid translation of these pieces that is still a win,John,5,3,Tianyi,"Translate is too formal, move or shift can be more natural.",16-0-0-0-0-9-0-0-0-0-15-0-0-0-0-13
+167,100,9,"Same , Confirm(User_ID=1, AddPiece(0,1))","Is this still a win if I add a piece in the bottom row, second column/",Affirm(),"Yes, that piece would not affect this win",John,5,4,Tianyi,,16-0-0-0-0-9-0-0-0-0-15-0-0-0-0-13
+167,100,10,Finish(),"Okay, I think I have enough information to play, thanks!",Finish,"No problem, goodbye",John,5,4,Tianyi,,16-0-0-0-0-9-0-0-0-0-15-0-0-0-0-13

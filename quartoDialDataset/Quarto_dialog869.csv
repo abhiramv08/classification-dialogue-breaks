@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+869,60,0,Start(),"Hi, could you teach me how to play Quarto?",Start,"Sure, let's begin. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+869,60,1,RequestNewWinCondition(),Please show me a win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-12-6-10-2
+869,60,2,RequestNewWinCondition(),How about one more?,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-4-0-0-14-0-0-16-0-0-8-0-0-0
+869,60,3,"Same, Confirm(User_ID=1, Color)",Is this a win because of the color of the pieces?,Affirm(),"Yes, that's correct. ",Anthony,5,5,Yiyen,,0-0-0-4-0-0-14-0-0-16-0-0-8-0-0-0
+869,60,4,"Same, Confirm(User_ID=1, Height)",Is this a win because of the height of all the pieces?,NotSure(),I'm not sure. ,Anthony,5,5,Yiyen,,0-0-0-4-0-0-14-0-0-16-0-0-8-0-0-0
+869,60,5,RequestNewWinCondition(),Please show me a new win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,11-0-0-0-0-15-0-0-0-0-4-0-0-0-0-16
+869,60,6,"Same, Confirm(User_ID=1, Quantity)",Is this one a win condition because of the number of pieces?,NotSure(),I'm not sure about that. ,Anthony,5,5,Yiyen,,11-0-0-0-0-15-0-0-0-0-4-0-0-0-0-16
+869,60,7,RequestNewWinCondition(),Please show me another win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,5-0-0-0-0-16-0-0-0-0-14-0-0-0-0-6
+869,60,8,"Same, Confirm(User_ID=1, Height)",Is this one a win because of the height of the pieces?,Negate(),"No, that is not why. ",Anthony,5,4,Yiyen,,5-0-0-0-0-16-0-0-0-0-14-0-0-0-0-6
+869,60,9,RequestNewWinCondition(),Please show me another win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-15-0-0-6-0-0-7-0-0-5-0-0-0
+869,60,10,Finish(),"Thanks for the help, bye!",Finish,Bye bye!,Anthony,5,5,Yiyen,,0-0-0-15-0-0-6-0-0-7-0-0-5-0-0-0

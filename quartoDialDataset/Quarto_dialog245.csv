@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+245,100,0,Start(),"Hi, can you show me how to play Quarto?",Start,"Sure, let's get started.",Ruijie,5,5,Dmytro,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+245,100,1,RequestNewWinCondition(),Can you show me what a win condition looks like?,Inform(),Assume you demonstrate this win condition,Ruijie,4,3,Dmytro,,11-0-0-0-0-9-0-0-0-0-13-0-0-0-0-7
+245,100,2,"Same, Confirm(User_ID=1, Quantity)",Is it a win because there're four pieces?,Affirm(),"Yes, that's correct.",Ruijie,5,5,Dmytro,,11-0-0-0-0-9-0-0-0-0-13-0-0-0-0-7
+245,100,3,RequestNewWinCondition(),Can you show me a new win condition?,Inform(),Assume you demonstrate this win condition,Ruijie,4,3,Dmytro,,0-0-0-0-0-0-0-0-0-0-0-0-11-9-16-14
+245,100,4,"Context Switch, Confirm(User_ID=1, AddPiece(2,0))","Back to the previous win, will it still be a win if I add one more piece on the second one on the diagonal?",Affirm(),"Sure, you can do that.",Ruijie,1,4,Dmytro,,11-0-0-0-0-9-0-0-0-0-13-0-0-0-0-7
+245,100,5,RequestNewWinCondition(),Can you give me a new win?,Inform(),Assume you demonstrate this win condition,Ruijie,3,3,Dmytro,,0-0-0-10-0-0-0-14-0-0-0-15-0-0-0-13
+245,100,6,"Same, Confirm(User_ID=1, Quantity)",Is it a win because there're four pieces?,Affirm(),Yeah.,Ruijie,5,5,Dmytro,,0-0-0-10-0-0-0-14-0-0-0-15-0-0-0-13
+245,100,7,"Context Switch, Confirm(User_ID=1, Rotate(90))","Back to the previous win you showed me, can I put the pieces on the other diagonal and maintain the win?",Affirm(),Sure.,Ruijie,1,4,Dmytro,,11-0-0-0-0-9-0-0-0-0-13-0-0-0-0-7
+245,100,8,RequestNewWinCondition(),Can you show me a new win condition?,Inform(),Assume you demonstrate this win condition,Ruijie,4,3,Dmytro,,1-0-0-0-0-9-0-0-0-0-13-0-0-0-0-10
+245,100,9,"Context Switch, Confirm(User_ID=1, AddPiece(3,1))","Back to the previous win, is it still a win if I add one more piece on the first piece?",Affirm(),"Yup, you can certainly do that.",Ruijie,1,4,Dmytro,,0-0-0-0-0-0-0-0-0-0-0-0-11-9-16-14
+245,100,10,"Context Switch, Request(User_ID=1, Rotate)","Back to the previous win you showed me, can I rotate the piece by a certain degree and maintain the win?","Inform([135, 180])","Sure, you can rotate the pieces by 135 or 180 degrees.",Ruijie,4,4,Dmytro,,0-0-0-10-0-0-0-14-0-0-0-15-0-0-0-13
+245,100,11,Finish(),"Thank you so much, I think I've learned enough!",Finish,"Alright, if you say so.",Ruijie,5,5,Dmytro,,0-0-0-10-0-0-0-14-0-0-0-15-0-0-0-13

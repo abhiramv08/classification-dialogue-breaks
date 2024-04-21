@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+453,50,0,Start(),"Hello, can you show me how to play Quarto?",Start,I would love to.,Yiyan,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+453,50,1,RequestNewWinCondition(),Can you first show me a win condition?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Shaobo,,0-0-0-12-0-0-3-0-0-11-0-0-2-0-0-0
+453,50,2,"Same, Confirm(User_ID=1, AddPiece(0,3))","For the winning board you just showed, can I get another win if I add a piece on the  right bottom corner?",NotSure(),"I am not sure about that, sorry.",Yiyan,5,5,Shaobo,,0-0-0-12-0-0-3-0-0-11-0-0-2-0-0-0
+453,50,3,"Same, Request(User_ID=1, Rotate)","For the same board, how can I rotate the pieces to get another winning board?",Inform([90]),You can arrange the pieces vertically on the first column.,Yiyan,5,5,Shaobo,,0-0-0-12-0-0-3-0-0-11-0-0-2-0-0-0
+453,50,4,"Same, Confirm(User_ID=1, AddPiece(1,2))","Still for this board, can I get another win condition if I add a piece right to the tall green piece?",Affirm(),"Sure, it will be another winning board.",Yiyan,5,5,Shaobo,,0-0-0-12-0-0-3-0-0-11-0-0-2-0-0-0
+453,50,5,"Same, Confirm(User_ID=1, Rotate(90))","For the same board, if I put all the pieces on the first column, would it still be a win?",NotSure(),I am not quite sure about it.,Yiyan,5,5,Shaobo,,0-0-0-12-0-0-3-0-0-11-0-0-2-0-0-0
+453,50,6,"Same, Confirm(User_ID=1, Hollowness)","For the same board, is this a win because three of the pieces have holes?",Negate(),"No, the hollowness does not matter.",Yiyan,5,5,Shaobo,,0-0-0-12-0-0-3-0-0-11-0-0-2-0-0-0
+453,50,7,"Same, Confirm(User_ID=1, Height)","For the same board, is this a win because of the heights of the pieces?",NotSure(),I am not quite sure.,Yiyan,5,5,Shaobo,,0-0-0-12-0-0-3-0-0-11-0-0-2-0-0-0
+453,50,8,RequestNewWinCondition(),Could you show me another win condition?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Shaobo,,16-0-0-0-0-8-0-0-0-0-6-0-0-0-0-5
+453,50,9,"Same, Confirm(User_ID=1, Height)","For this win condition you just showed, is it a win because of the heights of the pieces?",Negate(),"No, as you can see, they have different heights.",Yiyan,5,5,Shaobo,,16-0-0-0-0-8-0-0-0-0-6-0-0-0-0-5
+453,50,10,"Same, Confirm(User_ID=1, Hollowness)","For the same board, is it a win because two of the pieces have hollows?",NotSure(),"I don't know, sorry.",Yiyan,5,5,Shaobo,,16-0-0-0-0-8-0-0-0-0-6-0-0-0-0-5
+453,50,11,RequestNewWinCondition(),Could you show me another way to win?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Shaobo,,8-0-0-0-6-0-0-0-16-0-0-0-2-0-0-0
+453,50,12,RequestNewWinCondition(),Could you show me another win condition?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Shaobo,,0-0-0-13-0-0-14-0-0-11-0-0-12-0-0-0
+453,50,13,"Same, Confirm(User_ID=1, AddPiece(0,3))","For the win condition you just showed, can I get another win if I add a piece on the right bottom corner?",Affirm(),"Yes, by doing so you will have another win condition.",Yiyan,5,5,Shaobo,,0-0-0-13-0-0-14-0-0-11-0-0-12-0-0-0
+453,50,14,RequestNewWinCondition(),Is there any other way to win?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Shaobo,,0-0-0-15-0-0-0-14-0-0-0-9-0-0-0-13
+453,50,15,Finish(),"I learnt a lot today, thanks!",Finish,You are welcome.,Yiyan,5,5,Shaobo,,0-0-0-15-0-0-0-14-0-0-0-9-0-0-0-13

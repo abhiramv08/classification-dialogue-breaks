@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+156,100,0,Start(),Hi. Can you teach me Quarto?,Start,Sure.,Jacob,,,,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+156,100,1,RequestNewWinCondition(),Can you show me a win condition?,Inform(),Assume you demonstrate this win condition,Jacob,,,,,0-0-0-0-0-0-0-0-0-0-0-0-7-9-15-3
+156,100,2,"Same, Request(User_ID=1, Rotate)",How could these pieces be rotated to form a new win condition?,"Inform([45, 90])",These pieces could be vertical or diagonal.,Jacob,,,,,0-0-0-0-0-0-0-0-0-0-0-0-7-9-15-3
+156,100,3,"Same, Request(User_ID=1, Translate)",Which rows can these pieces be placed in for a win?,"Inform(['row1', 'row2', 'row3'])",Any row would work.,Jacob,,,,,0-0-0-0-0-0-0-0-0-0-0-0-7-9-15-3
+156,100,4,RequestNewWinCondition(),Can you show me another win condition?,Inform(),Assume you demonstrate this win condition,Jacob,,,,,9-0-0-0-0-1-0-0-0-0-6-0-0-0-0-10
+156,100,5,RequestNewWinCondition(),Could you show me another?,Inform(),Assume you demonstrate this win condition,Jacob,,,,,0-8-0-0-0-5-0-0-0-15-0-0-0-7-0-0
+156,100,6,"Same , Confirm(User_ID=1, Color)",Is the color of the pieces important here?,Negate(),No.,Jacob,,,,,0-8-0-0-0-5-0-0-0-15-0-0-0-7-0-0
+156,100,7,"Context Switch, Confirm(User_ID=1, Color)",How about on this board? Is color important here?,Negate(),"No, it doesn't matter here either.",Jacob,,,,,9-0-0-0-0-1-0-0-0-0-6-0-0-0-0-10
+156,100,8,"Win Context Switch {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}",Is the hollowness of the pieces on this board important?,Negate(),"No, that doesn't matter here.",Jacob,,,,,0-8-0-0-0-5-0-0-0-15-0-0-0-7-0-0
+156,100,9,"Win Same {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}","Just to clarify, the hollowness doesn't matter here?",Negate(),"No, it does not.",Jacob,,,,,0-8-0-0-0-5-0-0-0-15-0-0-0-7-0-0
+156,100,10,Finish(),Okay. Thank you for teaching me.,Finish,No problem.,Jacob,,,,,0-8-0-0-0-5-0-0-0-15-0-0-0-7-0-0

@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+872,60,0,Start(),Please show me how to play Quarto. ,Start,"Sure, let's start. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+872,60,1,RequestNewWinCondition(),Please show me a win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-8-0-0-0-15-0-0-0-16-0-0-0-13
+872,60,2,RequestNewWinCondition(),How about another?,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-11-0-0-8-0-0-4-0-0-12-0-0-0
+872,60,3,"Same, RequestOtherPlayers()",How could another player undo this win?,Inform([]),There is nothing they could do. ,Anthony,5,5,Yiyen,,0-0-0-11-0-0-8-0-0-4-0-0-12-0-0-0
+872,60,4,RequestNewWinCondition(),Please give me another win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-14-16-4-12
+872,60,5,"Same, Confirm(User_ID=1, Translate([1, 0]))",Is this still a win if I were to shift the pieces like this?,Affirm(),"Yes, that's fine. ",Anthony,3,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-14-16-4-12
+872,60,6,"Same, Confirm(User_ID=1, Height)",Is this a win condition because of the height of the pieces?,NotSure(),"I'm not sure, sorry. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-14-16-4-12
+872,60,7,"Context Switch, Request(User_ID=1, Rotate)","Looking over at this board, how could I rotate these pieces?",Inform([90]),You could align them all vertically. ,Anthony,4,5,Yiyen,,0-0-0-11-0-0-8-0-0-4-0-0-12-0-0-0
+872,60,8,"Same, Confirm(User_ID=1, Rotate(90))",Is this still a win if I align these pieces vertically. ,Affirm(),"Yes, that's actually what I just told you. ",Anthony,4,5,Yiyen,,0-0-0-11-0-0-8-0-0-4-0-0-12-0-0-0
+872,60,9,"Context Switch, Confirm(User_ID=1, Quantity)","Switching over to this board, is this a win because of the number of pieces?",Affirm(),"Yes, there are four of them. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-14-16-4-12
+872,60,10,Finish(),Thanks for the help. ,Finish,You're welcome.,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-14-16-4-12

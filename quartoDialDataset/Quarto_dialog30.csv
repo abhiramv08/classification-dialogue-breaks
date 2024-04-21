@@ -1,0 +1,11 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+30,100,0,Start(),Hello. Could you teach me how to play Quarto?,Start,Hi. Sure.,Jacob,5,5,Dmytro,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+30,100,1,RequestNewWinCondition(),Could you show me a winning board state?,Inform(),Assume you demonstrate this win condition,Jacob,5,5,Dmytro,,0-0-7-0-0-0-2-0-0-0-1-0-0-0-8-0
+30,100,2,"Same , Confirm(User_ID=1, Color)",Is this a win condition because of the color of the pieces?,Negate(),"No, the color does not matter here.",Jacob,5,5,Dmytro,,0-0-7-0-0-0-2-0-0-0-1-0-0-0-8-0
+30,100,3,RequestNewWinCondition(),Could you show me another win condition?,Inform(),Assume you demonstrate this win condition,Jacob,5,4,Dmytro,Is becoming a bit too repetitive,0-0-0-0-0-0-0-0-0-0-0-0-2-13-5-6
+30,100,4,RequestNewWinCondition(),Can I see another winning board?,Inform(),Assume you demonstrate this win condition,Jacob,5,5,Dmytro,,15-0-0-0-0-11-0-0-0-0-13-0-0-0-0-16
+30,100,5,"Same , Confirm(User_ID=1, RemovePiece(2,1))",Would this still be a win if the piece in the third row and the second column were removed?,Negate(),"No, this would no longer be a win without that piece.",Jacob,5,5,Dmytro,,15-0-0-0-0-11-0-0-0-0-13-0-0-0-0-16
+30,100,6,"Context Switch, Confirm(User_ID=1, Translate(u'col0'))","Going back to the first win condition, would this still be a win if moved to the first column?",Affirm,"Yes, this would still be a win in any column.",Jacob,5,5,Dmytro,,0-0-7-0-0-0-2-0-0-0-1-0-0-0-8-0
+30,100,7,"Context Switch, Confirm(User_ID=1, Rotate(90))","Regarding this win condition, would it still be a win if it were vertical?",Affirm(),"Yes, this would be a win if lying in a column.",Jacob,5,5,Dmytro,,0-0-0-0-0-0-0-0-0-0-0-0-2-13-5-6
+30,100,8,"Context Switch, Confirm(User_ID=1, Consistency)","Going back to this win condition, is this a win because of the consistency of the pieces?",Negate(),"No, the consistency does not matter here.",Jacob,5,5,Dmytro,,15-0-0-0-0-11-0-0-0-0-13-0-0-0-0-16
+30,100,9,Finish(),I think I know enough now. Thank you for helping me learn Quarto.,Finish,You're welcome. Goodbye.,Jacob,5,5,Dmytro,,15-0-0-0-0-11-0-0-0-0-13-0-0-0-0-16

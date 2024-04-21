@@ -1,0 +1,15 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+319,50,0,Start(),"Hi, can you teach me how to play Quarto?",Start,"Yes, I will tell you everything I know.",Tianyi,5,4,Jason,Formal user response.,0-0-0-14-0-0-13-0-0-8-0-0-15-0-0-0
+319,50,1,RequestNewWinCondition(),Can you show me a example of win?,Inform,Assume you demonstrate this win condition,Tianyi,5,4,Jason,Ungrammatically correct question,0-0-0-9-0-0-0-7-0-0-0-5-0-0-0-15
+319,50,2,"Same, Confirm(User_ID=1, Height)","In this case, is it a win because some pieces are short?",Negate(),"Nope, that is not the reason.",Tianyi,5,4,Jason,,0-0-0-9-0-0-0-7-0-0-0-5-0-0-0-15
+319,50,3,RequestNewWinCondition(),Can you show me another example of win?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Jason,,10-0-0-0-0-14-0-0-0-0-6-0-0-0-0-16
+319,50,4,"Context Switch, Request(User_ID=1, Rotate)","In the first win, can I rotate some pieces and still maintain the win?",Inform([135]),You can rotate all pieces by 45 degrees counter clockwise and put them into the diagonal from upper left to bottom right.,Tianyi,5,5,Jason,,0-0-0-9-0-0-0-7-0-0-0-5-0-0-0-15
+319,50,5,"Context Switch, RequestOtherPlayers()","In the second win, can someone take actions to prevent the win?",Inform([]),"No, there is nothing he can do.",Tianyi,5,4,Jason,,10-0-0-0-0-14-0-0-0-0-6-0-0-0-0-16
+319,50,6,RequestNewWinCondition(),Can you show me another way to win?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Jason,,0-15-0-0-0-16-0-0-0-8-0-0-0-4-0-0
+319,50,7,"Context Switch, Confirm(User_ID=1, Hollowness)","Still for the first win, is it a win because some pieces are solid?",NotSure(),"I am not very sure for this, so I cannot answer your question.",Tianyi,5,3,Jason,,0-0-0-9-0-0-0-7-0-0-0-5-0-0-0-15
+319,50,8,RequestNewWinCondition(),Can you show me a new win pattern on the board?,Inform,Assume you demonstrate this win condition,Tianyi,5,4,Jason,,15-0-0-0-12-0-0-0-9-0-0-0-14-0-0-0
+319,50,9,"Context Switch, Confirm(User_ID=1, AddPiece(1,3))","In the second win, if I add a piece at the fourth column of the second row, can it still be a win?",NotSure(),"Sorry, I am uncertain about this.",Tianyi,5,4,Jason,,10-0-0-0-0-14-0-0-0-0-6-0-0-0-0-16
+319,50,10,RequestNewWinCondition(),Can you give me another winning board?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Jason,,14-0-0-0-0-15-0-0-0-0-16-0-0-0-0-9
+319,50,11,RequestNewWinCondition(),What else can be a win?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Jason,,0-0-0-0-0-0-0-0-0-0-0-0-10-5-14-1
+319,50,12,"Context Switch, RequestOtherPlayers()","In the fifth win, can someone do something to undo the win?",Inform([]),"No, he can do nothing here.",Tianyi,5,4,Jason,Other player should be gender neutral.,14-0-0-0-0-15-0-0-0-0-16-0-0-0-0-9
+319,50,13,Finish(),"Thank you so much, I have learned a lot of things.",Finish,"That is great, you are welcome.",Tianyi,5,4,Jason,,14-0-0-0-0-15-0-0-0-0-16-0-0-0-0-9

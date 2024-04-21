@@ -1,0 +1,16 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+943,60,0,Start(),"HI, will you please teach me Quarto?",Start,"Sure, okay.",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+943,60,1,RequestNewWinCondition(),Please show me a new win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-14-0-0-0-15-0-0-0-16-0-0-0-6-0
+943,60,2,RequestNewWinCondition(),How about one more?,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-4-3-11-10
+943,60,3,"Same, Confirm(User_ID=1, Height)",Is this a win because of the pieces' height?,Negate(),"No, they have different heights. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-4-3-11-10
+943,60,4,"Context Switch, Confirm(User_ID=1, Color)","Looking at this board, is it a win because of the color of the pieces?",Negate(),"No, that's not why. ",Anthony,5,5,Yiyen,,0-0-14-0-0-0-15-0-0-0-16-0-0-0-6-0
+943,60,5,RequestNewWinCondition(),Please show me another win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-7-16-15-4
+943,60,6,"Same, Request(User_ID=1, Translate)",How can I shift these pieces?,"Inform(['row1', 'row2', 'row3'])",You could move them up to any row.,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-7-16-15-4
+943,60,7,"Same, Confirm(User_ID=1, Hollowness)",Is this a win because of the hollowness of the pieces?,Affirm(),"Yes, that's why. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-7-16-15-4
+943,60,8,"Same, Confirm(User_ID=1, Height)",Is this also a win because of the height of the pieces?,Negate(),"No, that's irrelevant. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-7-16-15-4
+943,60,9,"Same, Confirm(User_ID=1, Shape)",Is it also a win because of the shape of the pieces?,Negate(),"No, that too, is irrelevant. ",Anthony,5,4,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-7-16-15-4
+943,60,10,RequestNewWinCondition(),Please show me another win.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,3-0-0-0-0-15-0-0-0-0-11-0-0-0-0-12
+943,60,11,"Context Switch, Confirm(User_ID=1, Translate([1, 0]))","Looking back here, could I make this move?",Affirm(),"Yes, you could move the pieces there. ",Anthony,3,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-7-16-15-4
+943,60,12,"Context Switch, Confirm(User_ID=1, Translate([2, 0]))",How about on this other board? Could I shift the pieces like this?,Affirm(),"Yes, that's fine too. ",Anthony,3,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-4-3-11-10
+943,60,13,RequestNewWinCondition(),Please show me another win. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-4-0-0-3-0-0-7-0-0-5-0-0-0
+943,60,14,Finish(),That's all for today. ,Finish,"Okay, bye!",Anthony,5,5,Yiyen,,0-0-0-4-0-0-3-0-0-7-0-0-5-0-0-0

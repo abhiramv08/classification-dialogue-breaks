@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+882,60,0,Start(),"Hi, will you please teach me how to play Quarto?",Start,"Sure, no problem. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+882,60,1,RequestNewWinCondition(),Please show me a win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-8-4-2-1
+882,60,2,RequestNewWinCondition(),Please show me another win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-7-0-0-9-0-0-15-0-0-11-0-0-0
+882,60,3,RequestNewWinCondition(),How about one more?,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,3-0-0-0-0-2-0-0-0-0-1-0-0-0-0-12
+882,60,4,"Same, Confirm(User_ID=1, Color)",Is this a win because of the color of the color of the pieces?,NotSure(),I don't know. ,Anthony,5,5,Yiyen,,3-0-0-0-0-2-0-0-0-0-1-0-0-0-0-12
+882,60,5,"Context Switch, Confirm(User_ID=1, Color)","Looking at this board, is this one a win because of the color of the pieces?",Negate(),"No, that's not why. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-8-4-2-1
+882,60,6,RequestNewWinCondition(),Please show me another win. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,6-0-0-0-0-14-0-0-0-0-12-0-0-0-0-4
+882,60,7,"Context Switch, Confirm(User_ID=1, Quantity)","Looking at this board, is this a win because of the number of pieces?",NotSure(),I'm not sure; I don't know. ,Anthony,5,5,Yiyen,,0-0-0-7-0-0-9-0-0-15-0-0-11-0-0-0
+882,60,8,RequestNewWinCondition(),Please show me another winning board. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,2-0-0-0-0-8-0-0-0-0-7-0-0-0-0-3
+882,60,9,"Context Switch, RequestOtherPlayers()","Let's focus on this board, how could another player undo this win?",Inform([]),There is nothing they could do.,Anthony,5,4,Yiyen,,0-0-0-7-0-0-9-0-0-15-0-0-11-0-0-0
+882,60,10,"Context Switch, Confirm(User_ID=1, Shape)","Looking at this board now, is the shape of the pieces what makes this a win?",Affirm(),"Yes, they are all triangles.",Anthony,5,5,Yiyen,,3-0-0-0-0-2-0-0-0-0-1-0-0-0-0-12
+882,60,11,"Context Switch, Confirm(User_ID=1, Color)","Looking at this board, is this a win because of the color of the pieces?",Affirm(),"Yes, they are all green. ",Anthony,5,5,Yiyen,,0-0-0-7-0-0-9-0-0-15-0-0-11-0-0-0
+882,60,12,Finish(),Thanks. Have a nice day!,Finish,"Bye, you too!",Anthony,5,5,Yiyen,,0-0-0-7-0-0-9-0-0-15-0-0-11-0-0-0

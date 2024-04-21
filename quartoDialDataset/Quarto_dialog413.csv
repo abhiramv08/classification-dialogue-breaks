@@ -1,0 +1,16 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+413,50,0,Start(),"Hi, can you teach me Quarto
+?",Start,"Yeah, lets start",Dmytro,,,,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+413,50,1,RequestNewWinCondition(),What would an example of winning board be ?,Inform,Assume you demonstrate this win condition,Dmytro,,,,,0-0-0-3-0-0-5-0-0-7-0-0-8-0-0-0
+413,50,2,RequestNewWinCondition(),Could you show another one?,Inform,Assume you demonstrate this win condition,Dmytro,,,,,0-0-0-7-0-0-14-0-0-6-0-0-5-0-0-0
+413,50,3,"Same, Confirm(User_ID=1, Hollowness)","About that, is it a win due to some figures being hollow ?",NotSure(),"I don't think so, but not sure.",Dmytro,,,,,0-0-0-7-0-0-14-0-0-6-0-0-5-0-0-0
+413,50,4,"Context Switch, Confirm(User_ID=1, AddPiece(1,0))","Back to your first example, what if I add a piece on the second row, first column ?",Affirm(),"You would still win, as before.",Dmytro,,,,,0-0-0-3-0-0-5-0-0-7-0-0-8-0-0-0
+413,50,5,RequestNewWinCondition(),Could you show me another winning board ?,Inform,Assume you demonstrate this win condition,Dmytro,,,,,15-0-0-0-0-5-0-0-0-0-14-0-0-0-0-8
+413,50,6,RequestNewWinCondition(),"Alright, I need one more example of a desirable board",Inform,Assume you demonstrate this win condition,Dmytro,,,,,2-0-0-0-14-0-0-0-12-0-0-0-4-0-0-0
+413,50,7,"Context Switch, Confirm(User_ID=1, AddPiece(3,1))","Going back to the first board, can I add a figure here (robot highlights the location) ?",NotSure(),"I think it would be ok, but don't rely on that.",Dmytro,,,,,0-0-0-3-0-0-5-0-0-7-0-0-8-0-0-0
+413,50,8,"Context Switch, Confirm(User_ID=1, Color)","Switching to this board, is it the color of the pieces that make it win ?",NotSure(),"I am inclined to say no, but I am not too confident.",Dmytro,,,,,0-0-0-7-0-0-14-0-0-6-0-0-5-0-0-0
+413,50,9,"Context Switch, Confirm(User_ID=1, Color)",Back to this board example you showed earlier; is the color of figures a characteristic that leads to a win here ?,Negate(),"No, the color has no input to its being a winning board.",Dmytro,,,,,15-0-0-0-0-5-0-0-0-0-14-0-0-0-0-8
+413,50,10,RequestNewWinCondition(),Could you show one more winning board example ?,Inform,Assume you demonstrate this win condition,Dmytro,,,,,0-0-0-0-0-0-0-0-0-0-0-0-16-4-6-10
+413,50,11,"Context Switch, Confirm(User_ID=1, Shape)","Back to a board we talked previously, is it a win due the circle being a shape of all the figures ?",Affirm(),"yup, that is correct.",Dmytro,,,,,15-0-0-0-0-5-0-0-0-0-14-0-0-0-0-8
+413,50,12,RequestNewWinCondition(),Could you provide me with another winning board example ?,Inform,Assume you demonstrate this win condition,Dmytro,,,,,0-0-0-0-0-0-0-0-0-0-0-0-1-4-3-8
+413,50,13,Finish(),"Ok, I've learned. Thank you.",Finish,Anytime!,Dmytro,,,,,0-0-0-0-0-0-0-0-0-0-0-0-1-4-3-8

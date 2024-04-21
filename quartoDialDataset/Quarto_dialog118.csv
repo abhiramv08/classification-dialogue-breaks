@@ -1,0 +1,15 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+118,100,0,Start(),"Hi, do you have time to teach me how to play Quarto?",Start,Sure!,Shaobo,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+118,100,1,RequestNewWinCondition(),Could you show me a winning board first?,Inform(),Assume you demonstrate this win condition,Shaobo,5,5,Yiyen,,0-0-0-2-0-0-8-0-0-5-0-0-7-0-0-0
+118,100,2,RequestNewWinCondition(),Could you show me another winning board?,Inform(),Assume you demonstrate this win condition,Shaobo,5,5,Yiyen,,0-0-0-3-0-0-0-11-0-0-0-12-0-0-0-2
+118,100,3,"Same, RequestOtherPlayers()","For the board you just showed, what could another player do to prevent this win?",Inform([]),There is nothing he or she could do.,Shaobo,5,5,Yiyen,,0-0-0-3-0-0-0-11-0-0-0-12-0-0-0-2
+118,100,4,RequestNewWinCondition(),Can you show me one more winning board?,Inform(),Assume you demonstrate this win condition,Shaobo,5,5,Yiyen,,0-6-0-0-0-13-0-0-0-10-0-0-0-2-0-0
+118,100,5,"Same, Confirm(User_ID=1, Translate('col0'))","For the board you just showed me, is it still a win if the pieces are moved to the first column?",Affirm,"Yes, it is still a win.",Shaobo,5,5,Yiyen,,0-6-0-0-0-13-0-0-0-10-0-0-0-2-0-0
+118,100,6,RequestNewWinCondition(),Can you show me another win senario?,Inform(),Assume you demonstrate this win condition,Shaobo,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-7-16-14-6
+118,100,7,"Context Switch, Request(User_ID=1, Translate)","For this board, how could I translate the pieces so that it is still a win?","Inform(['col0', 'col2', 'col3'])",You could move all the pieces to any other column.,Shaobo,5,5,Yiyen,,0-6-0-0-0-13-0-0-0-10-0-0-0-2-0-0
+118,100,8,"Context Switch, Confirm(User_ID=1, Quantity)","For this board, is the number of pieces the reason why it is a win?",Affirm(),"Yes, although the number of pieces in not the only reason.",Shaobo,5,4,Yiyen,,0-0-0-2-0-0-8-0-0-5-0-0-7-0-0-0
+118,100,9,"Context Switch, RequestOtherPlayers()","So for this board, how could another player do to prevent the win?",Inform([]),There is nothing that he or she could do.,Shaobo,5,5,Yiyen,,0-0-0-3-0-0-0-11-0-0-0-12-0-0-0-2
+118,100,10,"Same , Confirm(User_ID=1, Shape)","For the board you just showed me, is it a win because of the shapes of pieces?",Affirm(),"Yes, it is a win because all pieces are triangular.",Shaobo,5,5,Yiyen,,0-0-0-3-0-0-0-11-0-0-0-12-0-0-0-2
+118,100,11,"Same , Confirm(User_ID=1, AddPiece(0,0))","For the same board we are discussing, is it still a win if I add a pirce on the first row and the first column?",Affirm(),"Yes, it is still a win.",Shaobo,5,5,Yiyen,,0-0-0-3-0-0-0-11-0-0-0-12-0-0-0-2
+118,100,12,"Context Switch, Confirm(User_ID=1, Shape)","For this board, is it a win because of the shapes of the pieces?",Negate(),"No, the shapes of pieces do not contribute to a win here.",Shaobo,5,5,Yiyen,,0-0-0-2-0-0-8-0-0-5-0-0-7-0-0-0
+118,100,13,Finish(),"Okay, I got a lot useful information. Thanks!",Finish,You are welcome!,Shaobo,5,5,Yiyen,,0-0-0-2-0-0-8-0-0-5-0-0-7-0-0-0

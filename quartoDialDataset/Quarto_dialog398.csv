@@ -1,0 +1,15 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+398,50,0,Start(),Can you teach me how to play Quarto?,Start,Sure!,Daniel,,,,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+398,50,1,RequestNewWinCondition(),Can you show me a board where someone wins please?,Inform,Assume you demonstrate this win condition,Daniel,,,,,0-0-0-5-0-0-3-0-0-1-0-0-15-0-0-0
+398,50,2,RequestNewWinCondition(),Can you show me a different winning board please?,Inform,Assume you demonstrate this win condition,Daniel,,,,,10-0-0-0-0-14-0-0-0-0-11-0-0-0-0-9
+398,50,3,"Context Switch, Confirm(User_ID=1, Shape)",For this board here is it a win because of the shape of the pieces?,Negate(),No.,Daniel,,,,,0-0-0-5-0-0-3-0-0-1-0-0-15-0-0-0
+398,50,4,RequestNewWinCondition(),Can you show me a different winning board please?,Inform,Assume you demonstrate this win condition,Daniel,,,,,0-0-0-0-0-0-0-0-0-0-0-0-16-8-15-5
+398,50,5,"Same, Confirm(User_ID=1, Color)",Is this board a win because of the color of the pieces?,NotSure(),"I don't know, sorry.",Daniel,,,,,0-0-0-0-0-0-0-0-0-0-0-0-16-8-15-5
+398,50,6,"Context Switch, Confirm(User_ID=1, Color)","For this board here, is it a win because of the color of the pieces?",Negate(),No,Daniel,,,,,10-0-0-0-0-14-0-0-0-0-11-0-0-0-0-9
+398,50,7,"Context Switch, Confirm(User_ID=1, RemovePiece(0,3))","For this other board, if I remove the bottom right piece is it still a win?",NotSure(),I don't really know,Daniel,,,,,0-0-0-0-0-0-0-0-0-0-0-0-16-8-15-5
+398,50,8,"Same, Confirm(User_ID=1, Shape)","Here, is it a win because of the shape of the pieces?",NotSure(),I don't know,Daniel,,,,,0-0-0-0-0-0-0-0-0-0-0-0-16-8-15-5
+398,50,9,"Context Switch, Confirm(User_ID=1, Quantity)","For this board here, is it a win because of the number of pieces?",NotSure(),I don't know.,Daniel,,,,,0-0-0-5-0-0-3-0-0-1-0-0-15-0-0-0
+398,50,10,"Context Switch, Confirm(User_ID=1, Height)",For this other board is it a win because of the height of the pieces?,NotSure(),I don't know.,Daniel,,,,,10-0-0-0-0-14-0-0-0-0-11-0-0-0-0-9
+398,50,11,"Context Switch, Confirm(User_ID=1, Color)","For this board, is it a win because of the color of the pieces?",Negate(),No,Daniel,,,,,0-0-0-0-0-0-0-0-0-0-0-0-16-8-15-5
+398,50,12,"Context Switch, Confirm(User_ID=1, RemovePiece(2,1))","For this board, if I remove the blue circle is it still a win?",Negate(),No,Daniel,,,,,10-0-0-0-0-14-0-0-0-0-11-0-0-0-0-9
+398,50,13,Finish(),Thank you!,Finish,No problem,Daniel,,,,,10-0-0-0-0-14-0-0-0-0-11-0-0-0-0-9

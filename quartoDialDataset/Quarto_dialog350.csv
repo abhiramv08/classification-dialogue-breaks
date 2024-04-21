@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+350,50,0,Start(),Can you teach me Quarto?,Start,With pleasure !,Dmytro,,,,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+350,50,1,RequestNewWinCondition(),Show me a winning example.,Inform,Assume you demonstrate this win condition,Dmytro,,,,,0-0-13-0-0-0-5-0-0-0-8-0-0-0-16-0
+350,50,2,"Same, Confirm(User_ID=1, Hollowness)",Is it the two hollow pieces that make it a win ?,NotSure(),"Hmm, I don't know.",Dmytro,,,,,0-0-13-0-0-0-5-0-0-0-8-0-0-0-16-0
+350,50,3,RequestNewWinCondition(),"Ok, how about another winning board example ?",Inform,Assume you demonstrate this win condition,Dmytro,,,,,0-7-0-0-0-5-0-0-0-15-0-0-0-1-0-0
+350,50,4,RequestNewWinCondition(),"And another one, please.",Inform,Assume you demonstrate this win condition,Dmytro,,,,,0-0-0-1-0-0-0-4-0-0-0-7-0-0-0-6
+350,50,5,"Same, Confirm(User_ID=1, RemovePiece(3,3))","Here, can I remove top right piece ?",Negate(),"No, you would then loose.",Dmytro,,,,,0-0-0-1-0-0-0-4-0-0-0-7-0-0-0-6
+350,50,6,"Context Switch, RequestOtherPlayers()","Refering to this prior board, what can another player do to reclaim my win ?",Inform([]),nothing; at this point the game is over.,Dmytro,,,,,0-0-13-0-0-0-5-0-0-0-8-0-0-0-16-0
+350,50,7,"Same, Confirm(User_ID=1, Color)",And the color; is it a factor for the win condition ?,Negate(),"No, it's irrelevant.",Dmytro,,,,,0-0-13-0-0-0-5-0-0-0-8-0-0-0-16-0
+350,50,8,"Same, Confirm(User_ID=1, Shape)",How about the shape of the figures; does it matter they are all circles ?,Affirm(),"Yeah, that contributes to the win",Dmytro,,,,,0-0-13-0-0-0-5-0-0-0-8-0-0-0-16-0
+350,50,9,"Same, Request(User_ID=1, Rotate)","How can I rotate the pieces from this position, without moving them ?",Inform([]),"from this place, no such rotation is possible.",Dmytro,,,,,0-0-13-0-0-0-5-0-0-0-8-0-0-0-16-0
+350,50,10,"Context Switch, Confirm(User_ID=1, Hollowness)",let's switch to one of the previous boards; Is figures' hollowness a factor in the win ?,NotSure(),"Hmm, it might be.",Dmytro,,,,,0-7-0-0-0-5-0-0-0-15-0-0-0-1-0-0
+350,50,11,Finish(),"Ok, I am ready now; thanks",Finish,"Sure, no problem.",Dmytro,,,,,0-7-0-0-0-5-0-0-0-15-0-0-0-1-0-0

@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+297,50,0,Start(),"Hello, can you teach me how to play Quarto?",Start,"Sure, let's get started",John,,,,,0-0-0-6-0-0-2-0-0-4-0-0-3-0-0-0
+297,50,1,RequestNewWinCondition(),Can I see another example of a win?,Inform,Assume you demonstrate this win condition,John,,,,,0-0-0-3-0-0-0-9-0-0-0-1-0-0-0-10
+297,50,2,RequestNewWinCondition(),Can I see another win condition?,Inform,Assume you demonstrate this win condition,John,,,,,13-0-0-0-10-0-0-0-9-0-0-0-15-0-0-0
+297,50,3,"Context Switch, Confirm(User_ID=1, Hollowness)","Switching to this board, is the hollowness of the pieces important for the win?",NotSure(),I'm not sure how hollowness affects this scenario.,John,,,,,0-0-0-3-0-0-0-9-0-0-0-1-0-0-0-10
+297,50,4,"Same, Confirm(User_ID=1, Quantity)",Is the number of pieces important for the win?,NotSure(),I'm not sure if the number of pieces is vital for this win,John,,,,,0-0-0-3-0-0-0-9-0-0-0-1-0-0-0-10
+297,50,5,RequestNewWinCondition(),Can I see another winning board?,Inform,Assume you demonstrate this win condition,John,,,,,0-0-0-12-0-0-4-0-0-1-0-0-9-0-0-0
+297,50,6,"Same, Confirm(User_ID=1, Hollowness)",Is the hollowness of the pieces the reason for this win?,Negate(),"No, the hollowness of the pieces does not affect this win",John,,,,,0-0-0-12-0-0-4-0-0-1-0-0-9-0-0-0
+297,50,7,"Same, Confirm(User_ID=1, AddPiece(3,0))",Is this still a win if I add a piece in the top left corner?,NotSure(),I'm not sure if this would still be a win,John,,,,,0-0-0-12-0-0-4-0-0-1-0-0-9-0-0-0
+297,50,8,"Context Switch, Confirm(User_ID=1, Quantity)","Switching to this board, is it a win because of the number of pieces?",NotSure(),I'm not sure if the quantity of pieces led to this win,John,,,,,0-0-0-3-0-0-0-9-0-0-0-1-0-0-0-10
+297,50,9,"Same, Confirm(User_ID=1, RemovePiece(0,3))",Is this still a win if I remove the piece in the bottom row?,Negate(),"No, that piece is crucial for this win",John,,,,,0-0-0-3-0-0-0-9-0-0-0-1-0-0-0-10
+297,50,10,"Context Switch, Confirm(User_ID=1, Shape)","Switching to this board, is the shape of the pieces important to this win?",NotSure(),I'm not sure if the shape of the pieces led to this win,John,,,,,13-0-0-0-10-0-0-0-9-0-0-0-15-0-0-0
+297,50,11,"Context Switch, Request(User_ID=1, Rotate)","Now for this board, how could I rotate the pieces and still have a win?",Inform([135]),You could rotate the pieces to be along the antidiagonal from top left to bottom right,John,,,,,0-0-0-3-0-0-0-9-0-0-0-1-0-0-0-10
+297,50,12,"Context Switch, Confirm(User_ID=1, Quantity)",Let's talk about this board. Is the number of pieces here important for this win?,NotSure(),I'm not sure how the number of pieces affects this win,John,,,,,13-0-0-0-10-0-0-0-9-0-0-0-15-0-0-0
+297,50,13,"Context Switch, Confirm(User_ID=1, Quantity)","Now for this board here, is the quantity of pieces the reason for the win?",NotSure(),I'm not sure how the quantity of pieces affects this win,John,,,,,0-0-0-12-0-0-4-0-0-1-0-0-9-0-0-0
+297,50,14,"Same, Confirm(User_ID=1, Color)",Is the color of the pieces the reason this is a win?,NotSure(),I'm not sure if the color of the pieces caused this win,John,,,,,0-0-0-12-0-0-4-0-0-1-0-0-9-0-0-0
+297,50,15,Finish(),"Thanks for playing, I think I have enough information.",Finish,"You're welcome, bye",John,,,,,0-0-0-12-0-0-4-0-0-1-0-0-9-0-0-0

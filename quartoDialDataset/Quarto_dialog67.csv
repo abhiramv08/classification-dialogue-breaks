@@ -1,0 +1,16 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+67,100,0,Start(),"Hello, please teach me Quarto, Good Sir.",Start,"Okay, sure. ",Anthony,5,5,Dave,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+67,100,1,RequestNewWinCondition(),Please show me a win condition. ,Inform(),Assume you demonstrate this win condition,Anthony,5,4,Dave,,0-0-0-0-0-0-0-0-0-0-0-0-10-12-3-11
+67,100,2,RequestNewWinCondition(),Please show me another win condition.,Inform(),Assume you demonstrate this win condition,Anthony,5,4,Dave,,13-0-0-0-6-0-0-0-15-0-0-0-8-0-0-0
+67,100,3,RequestNewWinCondition(),Please show me yet another win condition.,Inform(),Assume you demonstrate this win condition,Anthony,5,4,Dave,,0-0-0-12-0-0-6-0-0-4-0-0-2-0-0-0
+67,100,4,"Same, Request(User_ID=1, Rotate)",How can I rotate this board and it is still a win condition?,Inform([90]),You can rotate it 90 degrees to the other diagonal.,Anthony,5,3,Dave,,0-0-0-12-0-0-6-0-0-4-0-0-2-0-0-0
+67,100,5,"Context Switch, Confirm(User_ID=1, Color)","Go back to this board, is it a win because of the color of the pieces?",Negate(),No that is not why it is a win.,Anthony,5,5,Dave,,0-0-0-0-0-0-0-0-0-0-0-0-10-12-3-11
+67,100,6,"Same, Request(User_ID=1, Translate)",How can I translate the pieces on the board?,"Inform(['row1', 'row2', 'row3'])","You can slide them to row one, two, or three. ",Anthony,5,3,Dave,,0-0-0-0-0-0-0-0-0-0-0-0-10-12-3-11
+67,100,7,"Same , Confirm(User_ID=1, Shape)",Is this a win condition because the pieces have a certain shape?,Affirm(),"Yes, in this case, the piece shape indicates the win. ",Anthony,5,4,Dave,,0-0-0-0-0-0-0-0-0-0-0-0-10-12-3-11
+67,100,8,"Context Switch, Confirm(User_ID=1, Color)","Looking at this board, is the color of the pieces why this is a win condtion?",Affirm(),"Yes, that is why.",Anthony,5,4,Dave,,0-0-0-12-0-0-6-0-0-4-0-0-2-0-0-0
+67,100,9,RequestNewWinCondition(),Show me a new win condition.,Inform(),Assume you demonstrate this win condition,Anthony,5,4,Dave,,15-0-0-0-0-16-0-0-0-0-4-0-0-0-0-7
+67,100,10,"Context Switch, Confirm(User_ID=1, Quantity)","Looking at this previous board, is it a win because of the amount of pieces?",Affirm(),"Yes, that is why this is a win condition.",Anthony,5,4,Dave,,0-0-0-0-0-0-0-0-0-0-0-0-10-12-3-11
+67,100,11,RequestNewWinCondition(),"Show me another win condition, I need a lot of examples. ",Inform(),Assume you demonstrate this win condition,Anthony,5,4,Dave,,9-0-0-0-0-14-0-0-0-0-2-0-0-0-0-1
+67,100,12,RequestNewWinCondition(),Show me another win conditon. I just can't get enough of these things. ,Inform(),Assume you demonstrate this win condition,Anthony,5,4,Dave,,0-0-0-9-0-0-4-0-0-2-0-0-1-0-0-0
+67,100,13,"Same, Confirm(User_ID=1, Quantity)",Is this most recent board a win because of the quantity of each piece?,Affirm(),"Yes, the amount of pieces in a row on the board determines if it is a win. ",Anthony,4,4,Dave,,0-0-0-9-0-0-4-0-0-2-0-0-1-0-0-0
+67,100,14,Finish(),Okay. That's fine for today. Thanks!,Finish,You're welcome!,Anthony,5,4,Dave,,0-0-0-9-0-0-4-0-0-2-0-0-1-0-0-0

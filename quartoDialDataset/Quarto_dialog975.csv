@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+975,60,0,Start(),"Hi, can you give me some advice on playing Quarto?",Start,"Sure, what do you want to know?",Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+975,60,1,RequestNewWinCondition(),Can you give me an example of win?,Inform,Assume you demonstrate this win condition,Tianyi,5,4,Ruijie,,0-0-6-0-0-0-13-0-0-0-2-0-0-0-9-0
+975,60,2,"Same, RequestOtherPlayers()","In this board, can someone do something to prevent the win?",Inform([]),"No, there is nothing he/she can do.",Tianyi,5,4,Ruijie,,0-0-6-0-0-0-13-0-0-0-2-0-0-0-9-0
+975,60,3,"Same, Confirm(User_ID=1, RemovePiece(0,2))","I I remove the piece at the bottom, is it still a win?",NotSure(),"Sorry, I am uncertain about this.",Tianyi,5,5,Ruijie,,0-0-6-0-0-0-13-0-0-0-2-0-0-0-9-0
+975,60,4,"Same, Confirm(User_ID=1, Height)",Is it a win because some pieces are tall?,Negate(),"No, that is not the reason.",Tianyi,5,4,Ruijie,,0-0-6-0-0-0-13-0-0-0-2-0-0-0-9-0
+975,60,5,"Same, Request(User_ID=1, Translate)",Can I move some pieces and still keep the win?,Inform(['col1']),"Yes, you can move all pieces to the second column.",Tianyi,5,4,Ruijie,,0-0-6-0-0-0-13-0-0-0-2-0-0-0-9-0
+975,60,6,RequestNewWinCondition(),Can you show me a new winning board?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-14-9-1-13
+975,60,7,"Same, Confirm(User_ID=1, Quantity)","In this win, is it a win because of the quantity of the pieces?",NotSure(),I have no idea about this. Maybe you are right.,Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-14-9-1-13
+975,60,8,"Context Switch, Confirm(User_ID=1, Color)","In this win, is it wins because some pieces have the same color?",Negate(),"Nope, that is not related.",Tianyi,5,4,Ruijie,,0-0-6-0-0-0-13-0-0-0-2-0-0-0-9-0
+975,60,9,RequestNewWinCondition(),Can you show me another new winning board?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,0-0-0-8-0-0-4-0-0-6-0-0-5-0-0-0
+975,60,10,Finish(),Thank you for your advice.,Finish,You are welcome.,Tianyi,5,5,Ruijie,,0-0-0-8-0-0-4-0-0-6-0-0-5-0-0-0

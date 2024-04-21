@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+641,60,0,Start(),"Hello, can you teach me how to play Quarto?",Start,"Sure, let's begin.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+641,60,1,RequestNewWinCondition(),"Thank you. Firstly, could you demostrate a win condition?",Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-4-12-7-3
+641,60,2,RequestNewWinCondition(),Is there any other way to win the game?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,1-0-0-0-0-2-0-0-0-0-4-0-0-0-0-8
+641,60,3,"Same, Confirm(User_ID=1, Hollowness)","For the same board, does the hollowness relate to the win condition?",NotSure(),I am not quite sure.,Yiyan,5,5,Tianyi,,1-0-0-0-0-2-0-0-0-0-4-0-0-0-0-8
+641,60,4,"Same, RequestOtherPlayers()","For the same win condition, how can the other player do to stop my win?",Inform([]),There is nothing he or she can do.,Yiyan,5,5,Tianyi,,1-0-0-0-0-2-0-0-0-0-4-0-0-0-0-8
+641,60,5,RequestNewWinCondition(),Could you please show me one more win scenario?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-5-0-0-7-0-0-15-0-0-8-0-0-0
+641,60,6,"Same, Confirm(User_ID=1, AddPiece(2,3))","For the same win condition, can I still get a win by adding a piece on the last position of the third row?",Affirm(),"Yes, as long as you do not remove any other pieces.",Yiyan,5,5,Tianyi,,0-0-0-5-0-0-7-0-0-15-0-0-8-0-0-0
+641,60,7,RequestNewWinCondition(),Can you show me another way to win the game?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-1-0-0-6-0-0-5-0-0-3-0-0-0
+641,60,8,"Context Switch, Confirm(User_ID=1, RemovePiece(0,2))","Regarding this win condition, will I still get a win if I remove the piece on the third column?",Negate(),"No, you must have at least four pieces to win.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-4-12-7-3
+641,60,9,"Context Switch, Request(User_ID=1, Rotate)",Let's switch to this board. How should I rotate the pieces to get another win?,Inform([90]),You are rotate all the pieces to the first column.,Yiyan,5,5,Tianyi,,0-0-0-5-0-0-7-0-0-15-0-0-8-0-0-0
+641,60,10,Finish(),"Well, I think I know enough about Quarto, thank you very much.",Finish,You are welcome.,Yiyan,5,5,Tianyi,,0-0-0-5-0-0-7-0-0-15-0-0-8-0-0-0

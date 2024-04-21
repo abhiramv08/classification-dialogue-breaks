@@ -1,0 +1,15 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+244,100,0,Start(),"What's up, can you show me how to play Quarto?",Start,"Sure, let's get started.",Ruijie,5,5,Dmytro,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+244,100,1,RequestNewWinCondition(),"To start with, can you show me what a win condition looks like?",Inform(),Assume you demonstrate this win condition,Ruijie,5,5,Dmytro,,10-0-0-0-0-9-0-0-0-0-3-0-0-0-0-4
+244,100,2,"Same, Confirm(User_ID=1, Quantity)",Is it the quantity of the pieces that makes it a win?,Affirm(),"Yes, that's correct.",Ruijie,5,5,Dmytro,,10-0-0-0-0-9-0-0-0-0-3-0-0-0-0-4
+244,100,3,"Same , Confirm(User_ID=1, RemovePiece(2,1))",Would it still be a win if I remove the second piece on the diagonal?,Negate(),"No, that will break the win.",Ruijie,5,5,Dmytro,"Note, the count of pieces is ambiguous.",10-0-0-0-0-9-0-0-0-0-3-0-0-0-0-4
+244,100,4,RequestNewWinCondition(),Can you show me a new win condition?,Inform(),Assume you demonstrate this win condition,Ruijie,4,3,Dmytro,,0-0-0-3-0-0-0-12-0-0-0-4-0-0-0-7
+244,100,5,"Context Switch, Confirm(User_ID=1, Color)","Back to the previous win you showed me, is it a win because of the colors of the pieces?",Negate(),"No, it's unrelated.",Ruijie,5,5,Dmytro,,10-0-0-0-0-9-0-0-0-0-3-0-0-0-0-4
+244,100,6,"Same , Confirm(User_ID=1, Shape)",Is it a win because the pieces share the same shape?,Affirm(),Yeah.,Ruijie,5,4,Dmytro,,10-0-0-0-0-9-0-0-0-0-3-0-0-0-0-4
+244,100,7,RequestNewWinCondition(),Can you show me a new win condition?,Inform(),Assume you demonstrate this win condition,Ruijie,4,3,Dmytro,,0-0-0-0-0-0-0-0-0-0-0-0-11-12-15-3
+244,100,8,RequestNewWinCondition(),What about another one?,Inform(),Assume you demonstrate this win condition,Ruijie,5,5,Dmytro,,0-7-0-0-0-8-0-0-0-6-0-0-0-4-0-0
+244,100,9,"Context Switch, Confirm(User_ID=1, AddPiece(3,0))","Back to the previous win you showed me, if I add one more piece on the third one, will it still be a win?",Affirm(),"Yes, you can do that.",Ruijie,1,3,Dmytro,,0-0-0-0-0-0-0-0-0-0-0-0-11-12-15-3
+244,100,10,"Same , Confirm(User_ID=1, RemovePiece(0,3))","If I remove the third piece, would it still be a win?",Negate(),"No, that won't be a win.",Ruijie,1,4,Dmytro,"it's the last piece, not 3rd",0-0-0-0-0-0-0-0-0-0-0-0-11-12-15-3
+244,100,11,"Same, Confirm(User_ID=1, Rotate(90))","If I rotate the pieces by 90 degrees, will it still be a win?",Affirm(),Sure.,Ruijie,4,1,Dmytro,,0-0-0-0-0-0-0-0-0-0-0-0-11-12-15-3
+244,100,12,"Context Switch, Confirm(User_ID=1, Height)","Back to the previous win you showed mee, is it a win because the pieces are of the same height?",Negate(),"No, that's not the reason.",Ruijie,2,4,Dmytro,Pieces here are of different heights.,10-0-0-0-0-9-0-0-0-0-3-0-0-0-0-4
+244,100,13,Finish(),Thank you so much! I think I've learned enough.,Finish,You're welcome.,Ruijie,5,5,Dmytro,,10-0-0-0-0-9-0-0-0-0-3-0-0-0-0-4

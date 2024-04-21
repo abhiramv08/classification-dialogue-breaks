@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+321,50,0,Start(),"Hi, can you show me how to play Quarto?",Start,"Sure, let's begin.",Yiyan,5,5,John,,0-0-0-4-0-0-16-0-0-6-0-0-12-0-0-0
+321,50,1,RequestNewWinCondition(),Can you show me a winning condition?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,John,,0-0-8-0-0-0-12-0-0-0-2-0-0-0-16-0
+321,50,2,"Same, Request(User_ID=1, Translate)","For the winning board you just showed, how can I shift it to get another winning board?",Inform(['col1']),You can shift all the pieces to the second column.,Yiyan,5,4,John,,0-0-8-0-0-0-12-0-0-0-2-0-0-0-16-0
+321,50,3,RequestNewWinCondition(),Can you show me another way to win?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,John,,0-0-0-5-0-0-1-0-0-7-0-0-9-0-0-0
+321,50,4,RequestNewWinCondition(),Is there any other ways to win?,Inform,Assume you demonstrate this win condition,Yiyan,4,4,John,"Try not to ask this question as a yes/no question, theoretically user could just say ""yes""",0-0-0-0-0-0-0-0-0-0-0-0-11-12-3-10
+321,50,5,RequestNewWinCondition(),Could you show me another winning board?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,John,,0-0-0-7-0-0-0-8-0-0-0-12-0-0-0-4
+321,50,6,RequestNewWinCondition(),Can you show me another way to win?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-4-15-12-11
+321,50,7,RequestNewWinCondition(),I still need more winning condition!,Inform,Assume you demonstrate this win condition,Yiyan,5,3,John,Seems a little hostile,0-0-0-14-0-0-12-0-0-15-0-0-10-0-0-0
+321,50,8,"Context Switch, Confirm(User_ID=1, Shape)","For this winning condition, is it a win because of the shapes of the pieces?",Negate(),"No, since they do not have the same shape.",Yiyan,5,5,John,,0-0-8-0-0-0-12-0-0-0-2-0-0-0-16-0
+321,50,9,"Context Switch, Confirm(User_ID=1, RemovePiece(0,0))","For this winning condition, would it still be a win if I remove the piece on the first column?",Negate(),"No, in that case it won't be a winning condition.",Yiyan,5,4,John,,0-0-0-0-0-0-0-0-0-0-0-0-11-12-3-10
+321,50,10,"Context Switch, RequestOtherPlayers()","For this winning board, how can the other player do to stop the win?",Inform([]),"As far as I concerned, there is no way he or she can do.",Yiyan,5,3,John,Response seems a little off grammatically and naturally,0-0-0-14-0-0-12-0-0-15-0-0-10-0-0-0
+321,50,11,"Context Switch, Confirm(User_ID=1, Shape)","For this win condition, is it a win because of the shapes of the pieces?",NotSure(),I am not quite sure. sorry.,Yiyan,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-4-15-12-11
+321,50,12,"Context Switch, Request(User_ID=1, Translate)","For this board, is there any way to shift the pieces to ger another winning condition?",Inform([]),"No, there is no way to shift the pieces.",Yiyan,5,5,John,,0-0-0-5-0-0-1-0-0-7-0-0-9-0-0-0
+321,50,13,"Context Switch, Confirm(User_ID=1, Height)","For this new board, is it a win because of the heights of the pieces?",NotSure(),I am not quite sure about that.,Yiyan,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-11-12-3-10
+321,50,14,"Context Switch, RequestOtherPlayers()","For this winning board, how can the other player do to prevent my win?",Inform([]),There is no way he or she can do.,Yiyan,5,4,John,,0-0-0-0-0-0-0-0-0-0-0-0-4-15-12-11
+321,50,15,Finish(),"Ok, these are all that I want to ask, thanks!",Finish,You are welcome.,Yiyan,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-4-15-12-11

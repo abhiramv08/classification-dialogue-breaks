@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+73,100,0,Start(),Can you please teach me how to play quarto?,Start,Sure,Daniel,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+73,100,1,RequestNewWinCondition(),Can you please show me a board where someone wins?,Inform(),Assume you demonstrate this win condition,Daniel,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-4-12-15-16
+73,100,2,"Same, Confirm(User_ID=1, Height)",Is this a win because of the height of the pieces?,Negate(),No,Daniel,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-4-12-15-16
+73,100,3,"Same , Confirm(User_ID=1, Shape)",Is this a win because of the shape of the pieces?,Negate(),No,Daniel,5,4,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-4-12-15-16
+73,100,4,"Same, Confirm(User_ID=1, Translate('row2'))",If I move the pieces up is this still a win?,Affirm,Yes,Daniel,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-4-12-15-16
+73,100,5,"Same , Confirm(User_ID=1, Shape)",Is this a win because of the shape of the pieces?,Negate(),No,Daniel,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-4-12-15-16
+73,100,6,RequestNewWinCondition(),Can you show me a different winning board please?,Inform(),Assume you demonstrate this win condition,Daniel,5,5,Derek,,5-0-0-0-2-0-0-0-1-0-0-0-9-0-0-0
+73,100,7,"Context Switch, Confirm(User_ID=1, Rotate(90))",If I rotate the pieces is this still a win?,Affirm(),Yes,Daniel,0,3,Derek,Rotate to what? Which win condition is that?,0-0-0-0-0-0-0-0-0-0-0-0-4-12-15-16
+73,100,8,"Same , Confirm(User_ID=1, RemovePiece(0,3))",If I remove the last piece on the bottom row is this still a win?,Negate(),No,Daniel,5,4,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-4-12-15-16
+73,100,9,RequestNewWinCondition(),Can you show me a different winning board please?,Inform(),Assume you demonstrate this win condition,Daniel,5,5,Derek,,0-0-0-3-0-0-11-0-0-4-0-0-9-0-0-0
+73,100,10,"Context Switch, Confirm(User_ID=1, Translate('col2'))",Would it still be a win if I move the pieces over a column?,Affirm,Yes,Daniel,3,4,Derek,,5-0-0-0-2-0-0-0-1-0-0-0-9-0-0-0
+73,100,11,"Context Switch, Confirm(User_ID=1, Color)",Is this a win because of the color of the pieces?,Negate(),No,Daniel,3,4,Derek,,0-0-0-3-0-0-11-0-0-4-0-0-9-0-0-0
+73,100,12,"Same, Request(User_ID=1, Translate)",Where can I move these pieces and still win?,Inform([]),You can't move them anywhere.,Daniel,3,4,Derek,,0-0-0-3-0-0-11-0-0-4-0-0-9-0-0-0
+73,100,13,RequestNewWinCondition(),Can you show me a new winning board please?,Inform(),Assume you demonstrate this win condition,Daniel,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-16-8-4-6
+73,100,14,"Context Switch, Request(User_ID=1, Rotate)",Can I rotate this board at all and still win?,Inform([90]),Yes you can rotate it 90 degrees to the diagonal,Daniel,4,2,Derek,,0-0-0-3-0-0-11-0-0-4-0-0-9-0-0-0
+73,100,15,Finish(),Thanks!,Finish,You're welcome,Daniel,5,5,Derek,,0-0-0-3-0-0-11-0-0-4-0-0-9-0-0-0

@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+930,60,0,Start(),"Hi, will you show me how to play?",Start,"Yes, I will. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+930,60,1,RequestNewWinCondition(),Please show me a win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-2-0-0-10-0-0-8-0-0-6-0-0-0
+930,60,2,RequestNewWinCondition(),Please show me a new win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-10-0-0-0-8-0-0-0-14-0-0-0-16-0-0
+930,60,3,"Same, Confirm(User_ID=1, Color)",Is this a win because of the pieces' color.,Affirm(),"Yes, they are all blue. ",Anthony,5,5,Yiyen,,0-10-0-0-0-8-0-0-0-14-0-0-0-16-0-0
+930,60,4,"Context Switch, Confirm(User_ID=1, Color)","Looking back to this board, is this a win because of the pieces' color?",Affirm(),"They are all blue, so yes. ",Anthony,5,5,Yiyen,,0-0-0-2-0-0-10-0-0-8-0-0-6-0-0-0
+930,60,5,RequestNewWinCondition(),Please give me another winning board. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,14-0-0-0-0-13-0-0-0-0-8-0-0-0-0-5
+930,60,6,RequestNewWinCondition(),Please show me another winning board. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-12-0-0-8-0-0-4-0-0-7-0-0-0
+930,60,7,"Same, Confirm(User_ID=1, Height)",Is this a win because of the heights of the pieces?,NotSure(),I don't know. I'm not sure. ,Anthony,5,5,Yiyen,,0-0-0-12-0-0-8-0-0-4-0-0-7-0-0-0
+930,60,8,"Context Switch, Confirm(User_ID=1, RemovePiece(3,1))","Looking over at this board, could I remove this piece?`",NotSure(),"I'm not sure, sorry. ",Anthony,2,5,Yiyen,,0-10-0-0-0-8-0-0-0-14-0-0-0-16-0-0
+930,60,9,"Context Switch, RequestOtherPlayers()","Switching over to this board, how could another player affect this win. ",Inform([]),There is nothing they could do. ,Anthony,5,4,Yiyen,,0-0-0-12-0-0-8-0-0-4-0-0-7-0-0-0
+930,60,10,"Same, Confirm(User_ID=1, Color)",Is this a win because of the color of the pieces?,Negate(),"This is not, no. ",Anthony,5,4,Yiyen,,0-0-0-12-0-0-8-0-0-4-0-0-7-0-0-0
+930,60,11,RequestNewWinCondition(),Please show me another win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,6-0-0-0-1-0-0-0-2-0-0-0-8-0-0-0
+930,60,12,Finish(),"Okay, I think that's enough. ",Finish,"Sounds good, have a nice day.",Anthony,5,5,Yiyen,,6-0-0-0-1-0-0-0-2-0-0-0-8-0-0-0

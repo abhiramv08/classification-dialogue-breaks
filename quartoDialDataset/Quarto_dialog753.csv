@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+753,60,0,Start(),Hey! Can you show me how to play Quarto?,Start,"Sure, let's start!",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+753,60,1,RequestNewWinCondition(),Can you show me what a win condition looks like?,Inform,Assume you demonstrate this win condition,Ruijie,5,4,Luke,,0-0-12-0-0-0-2-0-0-0-8-0-0-0-10-0
+753,60,2,"Same, Confirm(User_ID=1, Height)","Is it a win because the pieces are of the same height?
+",Negate(),"No, that’s not the reason.",Ruijie,5,5,Luke,,0-0-12-0-0-0-2-0-0-0-8-0-0-0-10-0
+753,60,3,RequestNewWinCondition(),"Can you give me a new win?
+",Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-13-14-7-6
+753,60,4,RequestNewWinCondition(),What about another win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,8-0-0-0-0-12-0-0-0-0-14-0-0-0-0-16
+753,60,5,"Context Switch, Confirm(User_ID=1, Color)","Switch to this board, does the color of the pieces make it a win?
+",Affirm(),"Yup, they are in the same color.",Ruijie,5,5,Luke,,0-0-12-0-0-0-2-0-0-0-8-0-0-0-10-0
+753,60,6,"Context Switch, RequestOtherPlayers()","Switch to this board, can the other player undo this win?",Inform([]),"No, this win is absolute.",Ruijie,5,5,Luke,,8-0-0-0-0-12-0-0-0-0-14-0-0-0-0-16
+753,60,7,"Same, Confirm(User_ID=1, Height)","Is it a win because the pieces are of the same height?
+",Negate(),"No, that's not the reason.",Ruijie,5,5,Luke,,8-0-0-0-0-12-0-0-0-0-14-0-0-0-0-16
+753,60,8,"Context Switch, Request(User_ID=1, Translate)","Switch to this board, can I put the pieces somewhere else and still have a win?","Inform(['row1', 'row2', 'row3'])","Sure, you can put them on the first, the second, or the third row.",Ruijie,5,4,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-13-14-7-6
+753,60,9,"Context Switch, Confirm(User_ID=1, AddPiece(3,3))","Switch to this board, can I add one more piece on the fourth row, the fourth column?
+",NotSure(),"Well, I'm not sure.",Ruijie,5,5,Luke,,8-0-0-0-0-12-0-0-0-0-14-0-0-0-0-16
+753,60,10,Finish(),Thanks! I think I got it!,Finish,You are welcome!,Ruijie,5,5,Luke,,8-0-0-0-0-12-0-0-0-0-14-0-0-0-0-16

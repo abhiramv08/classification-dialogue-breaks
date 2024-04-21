@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+1235,60,0,Start(),"Hi, do you have time to teach me how to play Quarto?",Start,"Sure, let's get started!",Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+1235,60,1,RequestNewWinCondition(),Could you show me a win first?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-0-0-9-0-0-13-0-0-1-0-0-7-0-0-0
+1235,60,2,"Same, Confirm(User_ID=1, Hollowness)",And is it a win because of the hollowness of the pieces?,NotSure(),"Sorry, I am not sure about it.",Shaobo,5,4,John,,0-0-0-9-0-0-13-0-0-1-0-0-7-0-0-0
+1235,60,3,"Same, Confirm(User_ID=1, Hollowness)",And is it a win because of the hollowness of the pieces?,NotSure(),I told you that I am not sure!,Shaobo,5,5,John,,0-0-0-9-0-0-13-0-0-1-0-0-7-0-0-0
+1235,60,4,RequestNewWinCondition(),Could you show me another winning board?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-0-5-0-0-0-1-0-0-0-15-0-0-0-3-0
+1235,60,5,"Same, Confirm(User_ID=1, RemovePiece(1,2))",And is it still a win if I remove the piece on the second row?,Negate(),"No, you need at least four pieces for a win.",Shaobo,5,5,John,,0-0-5-0-0-0-1-0-0-0-15-0-0-0-3-0
+1235,60,6,RequestNewWinCondition(),Could you show me one more winning board?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-6-14-16-5
+1235,60,7,"Context Switch, Confirm(User_ID=1, Quantity)","Switching to this board, does the number of pieces matter?",NotSure(),"Sorry, I am not sure about it.",Shaobo,5,4,John,,0-0-5-0-0-0-1-0-0-0-15-0-0-0-3-0
+1235,60,8,"Context Switch, Confirm(User_ID=1, Height)","Switching to this board, is it a win because of the height of the pieces?",NotSure(),I don't think so but I am not sure.,Shaobo,3,5,John,,0-0-0-9-0-0-13-0-0-1-0-0-7-0-0-0
+1235,60,9,"Same, Confirm(User_ID=1, RemovePiece(0,0))",And is it still a win if I remove the bottom left piece?,Negate(),"No, you need at least four pieces for a win.",Shaobo,5,5,John,,0-0-0-9-0-0-13-0-0-1-0-0-7-0-0-0
+1235,60,10,"Context Switch, Confirm(User_ID=1, Hollowness)","Switching to this board, is it a win because of the hollowness of the pieces?",Negate(),"No, it is a win because all pieces have the same shape.",Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-6-14-16-5
+1235,60,11,RequestNewWinCondition(),Could you show me one more winning board?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,3-0-0-0-0-7-0-0-0-0-12-0-0-0-0-8
+1235,60,12,Finish(),Thanks for the help! I have learned a lot!,Finish,You are welcome!,Shaobo,5,5,John,,3-0-0-0-0-7-0-0-0-0-12-0-0-0-0-8

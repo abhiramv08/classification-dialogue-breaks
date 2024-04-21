@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+587,60,0,Start(),"Hi, can you help me learn Quarto?",Start,"Sure, let's begin.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+587,60,1,RequestNewWinCondition(),"Thank you. Firstly, could you show me a win condition?",Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-7-8-16-13
+587,60,2,"Same, Confirm(User_ID=1, Color)","For the win you just showed, do the color of the pieces affect the win condition?",Negate(),"No, it is a win because all the pieces are circles.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-7-8-16-13
+587,60,3,RequestNewWinCondition(),Could you please show me one more win case?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-4-0-0-1-0-0-2-0-0-6-0-0-0
+587,60,4,RequestNewWinCondition(),Is there any other way to win the game?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-14-0-0-0-13-0-0-0-1-0-0-0-5
+587,60,5,RequestNewWinCondition(),Could you please show me one more win scenario?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-14-0-0-15-0-0-13-0-0-5-0-0-0
+587,60,6,"Same, Confirm(User_ID=1, Hollowness)","For the win you just showed,
+does the hollowness relate to the win condition?",Negate(),"No, it's win because all the pieces are circles.",Yiyan,5,5,Tianyi,,0-0-0-14-0-0-15-0-0-13-0-0-5-0-0-0
+587,60,7,"Context Switch, Confirm(User_ID=1, RemovePiece(0,1))","Let's turn to this board, would it be another win if I get rid of the piece on the first column?",Negate(),"No, it would be a win since there will be only three pieces left.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-7-8-16-13
+587,60,8,"Same, Confirm(User_ID=1, RemovePiece(0,3))","For the win you just showed,
+ can I remove the piece on the last column and keep the win?",Negate(),"No, you must have all the pieces in order to win.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-7-8-16-13
+587,60,9,"Context Switch, Confirm(User_ID=1, Color)","Going back to this board, is it a win because of the color of the pieces?",Negate(),"No, it is a win because all the peices have the same height.",Yiyan,5,5,Tianyi,,0-0-0-4-0-0-1-0-0-2-0-0-6-0-0-0
+587,60,10,Finish(),"Wow, Quarto is really interesting, thanks for teaching me!",Finish,You are welcome.,Yiyan,5,5,Tianyi,,0-0-0-4-0-0-1-0-0-2-0-0-6-0-0-0

@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+214,100,0,Start(),Can you teach me how to play Quarto?,Start,No problem!,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+214,100,1,RequestNewWinCondition(),Please give me a win condition to start with.,Inform(),Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-1-0-0-7-0-0-3-0-0-9-0-0-0
+214,100,2,RequestNewWinCondition(),Please show me one more condition.,Inform(),Assume you demonstrate this win condition,Derek,5,5,Shaobo,,12-0-0-0-0-1-0-0-0-0-2-0-0-0-0-10
+214,100,3,RequestNewWinCondition(),Can you give me one more win condition please?,Inform(),Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-16-11-7-4
+214,100,4,"Context Switch, Request(User_ID=1, Rotate)",For the seoncd win condition. Can I rotate pieces in different angle and still winning? ,Inform([90]),"Sure, you can place pieces vertically.",Derek,5,4,Shaobo,,12-0-0-0-0-1-0-0-0-0-2-0-0-0-0-10
+214,100,5,RequestNewWinCondition(),Please give me one more win condition.,Inform(),Assume you demonstrate this win condition,Derek,5,5,Shaobo,,6-0-0-0-8-0-0-0-5-0-0-0-1-0-0-0
+214,100,6,"Context Switch, Request(User_ID=1, Rotate)","Go back to the third win condition, how could I place these pieces in some different angle and keep winning. ","Inform([45, 90])",You can put them on diagonal and vertical.,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-16-11-7-4
+214,100,7,"Context Switch, Request(User_ID=1, Translate)","For the second win condition, how can I rotate the pieces and keep winning?",Inform([]),Sure you can do that. ,Derek,2,5,Shaobo,,12-0-0-0-0-1-0-0-0-0-2-0-0-0-0-10
+214,100,8,"Context Switch, Confirm(User_ID=1, AddPiece(1,0))","For the third win condition, can I add a piece above the bottom left one and keep winning?",Affirm(),"Sure, it is still a win.",Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-16-11-7-4
+214,100,9,"Win Context Switch {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}",Is the hollowness all pieces the reason for first win condition to win?,Negate(),No.,Derek,5,4,Shaobo,,0-0-0-1-0-0-7-0-0-3-0-0-9-0-0-0
+214,100,10,Finish(),Great. We are done.,Finish,No problem!,Derek,5,4,Shaobo,,0-0-0-1-0-0-7-0-0-3-0-0-9-0-0-0

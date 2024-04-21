@@ -1,0 +1,16 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+661,60,0,Start(),Hi! Can you show me how to play Quarto?,Start,"Yes, let's begin!",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+661,60,1,RequestNewWinCondition(),Can you show me what a win condition looks like?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-12-0-0-0-9-0-0-0-15-0-0-0-13
+661,60,2,"Same, Request(User_ID=1, Rotate)","For this board, can I rotate the pieces by some degrees and still have a win?","Inform([135, 180])","Yes, you can do that by rotating them one thirty five or one eighty degrees.",Ruijie,4,4,Luke,,0-0-0-12-0-0-0-9-0-0-0-15-0-0-0-13
+661,60,3,"Same, RequestOtherPlayers()","For this board, can the other player break the win condition?",Inform([]),"No, this win is absolute.",Ruijie,5,5,Luke,,0-0-0-12-0-0-0-9-0-0-0-15-0-0-0-13
+661,60,4,RequestNewWinCondition(),Can you give me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,3-0-0-0-0-4-0-0-0-0-10-0-0-0-0-12
+661,60,5,"Context Switch, Confirm(User_ID=1, Rotate(180))","Switch to this board, can I rotate the pieces by one eighty degrees?",NotSure(),"Sorry, I'm not sure.",Ruijie,4,5,Luke,,0-0-0-12-0-0-0-9-0-0-0-15-0-0-0-13
+661,60,6,RequestNewWinCondition(),Could you give me a new win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,13-0-0-0-0-11-0-0-0-0-9-0-0-0-0-10
+661,60,7,"Same, Confirm(User_ID=1, Hollowness)","For this board, does the hollowness of the pieces make it a win?
+",Negate(),"Well, you can see that only one of them is hollow, so it's not.",Ruijie,5,5,Luke,,13-0-0-0-0-11-0-0-0-0-9-0-0-0-0-10
+661,60,8,"Context Switch, Confirm(User_ID=1, AddPiece(0,0))","Switch to this board, can I add one more piece on the first row, the first column?",NotSure(),"Well, I'm not sure.",Ruijie,5,5,Luke,,0-0-0-12-0-0-0-9-0-0-0-15-0-0-0-13
+661,60,9,RequestNewWinCondition(),Can you give me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-3-0-0-0-9-0-0-0-1-0-0-0-4
+661,60,10,"Same, Confirm(User_ID=1, AddPiece(2,1))","For this board, can I add one more piece on the third row, the first column?",Affirm(),"Sure, that's still a win.",Ruijie,5,5,Luke,,0-0-0-3-0-0-0-9-0-0-0-1-0-0-0-4
+661,60,11,"Same, Request(User_ID=1, Translate)",Can I move the pieces to somewhere else and still have a win?,"Inform(['col1', 'col2'])","Yes, you can put them on the first column or the second column.",Ruijie,3,5,Luke,,0-0-0-3-0-0-0-9-0-0-0-1-0-0-0-4
+661,60,12,"Context Switch, Confirm(User_ID=1, Hollowness)","Switch to this board, does the hollowness of the pieces make it a win?",Negate(),"Well, it's not.",Ruijie,5,5,Luke,,3-0-0-0-0-4-0-0-0-0-10-0-0-0-0-12
+661,60,13,Finish(),Thank you so much! I've learned a lot from you!,Finish,You are welcome!,Ruijie,5,5,Luke,,3-0-0-0-0-4-0-0-0-0-10-0-0-0-0-12

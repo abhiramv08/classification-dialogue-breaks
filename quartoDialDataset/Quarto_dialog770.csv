@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+770,60,0,Start(),Can you teach me how to play Quarto?,Start,No problem. ,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+770,60,1,RequestNewWinCondition(),Please give me a win condition to start.,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-7-9-5-11
+770,60,2,"Same, Request(User_ID=1, Translate)",How can I shift all pieces and keep winning?,"Inform(['row1', 'row2', 'row3'])",You can shift all pieces up to any row in the board and keep winning.,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-7-9-5-11
+770,60,3,RequestNewWinCondition(),Can you show me another win condition?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-1-0-0-3-0-0-7-0-0-15-0-0-0
+770,60,4,"Same, Confirm(User_ID=1, RemovePiece(2,2))",Can I remove the second piece from top and keep winning?,Negate(),No you can not do that.,Derek,5,5,Shaobo,,0-0-0-1-0-0-3-0-0-7-0-0-15-0-0-0
+770,60,5,RequestNewWinCondition(),Can you show me another win condition?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,12-0-0-0-0-13-0-0-0-0-10-0-0-0-0-9
+770,60,6,"Same, Confirm(User_ID=1, RemovePiece(3,0))",Can I remove the top left piece and keep winning?,Negate(),"No, you can not remove any piece in that board.",Derek,5,5,Shaobo,,12-0-0-0-0-13-0-0-0-0-10-0-0-0-0-9
+770,60,7,"Same, Confirm(User_ID=1, Height)",Do you know if the height pattern is important for this win?,Affirm(),Yes you are correct this time. ,Derek,5,5,Shaobo,,12-0-0-0-0-13-0-0-0-0-10-0-0-0-0-9
+770,60,8,"Context Switch, Confirm(User_ID=1, Hollowness)","Switching to this winning board, is that a win because the hollowness pattern of all piece?",Negate(),No.,Derek,5,5,Shaobo,,0-0-0-1-0-0-3-0-0-7-0-0-15-0-0-0
+770,60,9,"Same, Request(User_ID=1, Rotate)",Do you know how can I rotate this board and keep winning?,Inform([90]),"Yes, you can place all pieces vertically.",Derek,5,5,Shaobo,,0-0-0-1-0-0-3-0-0-7-0-0-15-0-0-0
+770,60,10,"Context Switch, Confirm(User_ID=1, AddPiece(0,1))","Moving to this board, can I add a piece in first column, second block from bottom and keep winning?",NotSure(),Sorry I am not sure if that will influence the win.,Derek,3,5,Shaobo,,12-0-0-0-0-13-0-0-0-0-10-0-0-0-0-9
+770,60,11,Finish(),Thanks for teaching! I learned a lot today!,Finish,You are welcome. ,Derek,5,5,Shaobo,,12-0-0-0-0-13-0-0-0-0-10-0-0-0-0-9

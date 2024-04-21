@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+935,60,0,Start(),"Hi, please teach me how to play.",Start,"Okay, sure.",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+935,60,1,RequestNewWinCondition(),Please show me a win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-1-0-0-0-7-0-0-0-15-0-0-0-9-0
+935,60,2,RequestNewWinCondition(),Please show me another win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-10-2-9-5
+935,60,3,"Same, Confirm(User_ID=1, Color)",Is this a win because of the color of the pieces?,Negate(),"No, that's not why. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-10-2-9-5
+935,60,4,"Same, RequestOtherPlayers()",How can another player affect this win?,Inform([]),There's nothing they could do. ,Anthony,5,4,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-10-2-9-5
+935,60,5,"Same, Request(User_ID=1, Translate)",How could I shift these pieces?,"Inform(['row1', 'row2', 'row3'])",You could slide them up to any other row. ,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-10-2-9-5
+935,60,6,"Same, Confirm(User_ID=1, RemovePiece(0,0))",What if I were to remove the piece here?,NotSure(),I'm not sure what that would do to this win condition. ,Anthony,3,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-10-2-9-5
+935,60,7,"Same, Confirm(User_ID=1, Translate([3, 0]))",Could I shift the pieces to this spot?,Affirm(),"Yes, that's still a win condition. ",Anthony,3,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-10-2-9-5
+935,60,8,"Same, Confirm(User_ID=1, Height)",Is this a win because of the height of the pieces?,Negate(),"No, that's not why. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-10-2-9-5
+935,60,9,"Same, Confirm(User_ID=1, Shape)",Is this a win because of the pieces' shape. ,NotSure(),I'm not sure. ,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-10-2-9-5
+935,60,10,Finish(),Thanks for the help!,Finish,My pleasure!,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-10-2-9-5

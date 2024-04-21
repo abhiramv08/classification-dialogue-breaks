@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+266,50,0,Start(),Can you please teach me to play Quarto?,Start,"Yes, I'd be happy to.",Daniel,,,,,0-0-0-0-0-0-0-0-0-0-0-0-14-15-11-16
+266,50,1,RequestNewWinCondition(),Can you show me a board where someone wins?,Inform,Assume you demonstrate this win condition,Daniel,,,,,0-0-0-10-0-0-16-0-0-11-0-0-14-0-0-0
+266,50,2,"Same, Confirm(User_ID=1, Rotate(90))",If I rotate these pieces to the other diagonal is it still a win?,Affirm(),Yes,Daniel,,,,,0-0-0-10-0-0-16-0-0-11-0-0-14-0-0-0
+266,50,3,RequestNewWinCondition(),Can you show me a different board where someone wins please?,Inform,Assume you demonstrate this win condition,Daniel,,,,,0-0-0-5-0-0-2-0-0-7-0-0-6-0-0-0
+266,50,4,"Context Switch, RequestOtherPlayers()","For this other board, is there anything the other player can to to prevent the win?",Inform([]),"No, nothing.",Daniel,,,,,0-0-0-10-0-0-16-0-0-11-0-0-14-0-0-0
+266,50,5,RequestNewWinCondition(),Can you show me a new board where someone wins please?,Inform,Assume you demonstrate this win condition,Daniel,,,,,14-0-0-0-0-2-0-0-0-0-13-0-0-0-0-5
+266,50,6,RequestNewWinCondition(),And another board please?,Inform,Assume you demonstrate this win condition,Daniel,,,,,0-0-0-14-0-0-15-0-0-11-0-0-16-0-0-0
+266,50,7,"Same, Confirm(User_ID=1, RemovePiece(1,1))",If I remove the green triangle is this still a win?,NotSure(),I don't know,Daniel,,,,,0-0-0-14-0-0-15-0-0-11-0-0-16-0-0-0
+266,50,8,"Context Switch, Confirm(User_ID=1, Color)","For this board, is it a win because of the color of the pieces?",Negate(),No,Daniel,,,,,14-0-0-0-0-2-0-0-0-0-13-0-0-0-0-5
+266,50,9,RequestNewWinCondition(),Can you show me a new winning board please?,Inform,Assume you demonstrate this win condition,Daniel,,,,,0-0-0-0-0-0-0-0-0-0-0-0-16-15-7-13
+266,50,10,Finish(),Thank you!,Finish,No problem,Daniel,,,,,0-0-0-0-0-0-0-0-0-0-0-0-16-15-7-13

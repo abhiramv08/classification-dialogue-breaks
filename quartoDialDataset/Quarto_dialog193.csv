@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+193,100,0,Start(),"Hello, can you help me to learn Quarto?",Start,"Yes, what do you want to ask?",Yiyan,5,4,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+193,100,1,RequestNewWinCondition(),How can I win a game?,Inform(),Assume you demonstrate this win condition,Yiyan,3,3,Derek,,14-0-0-0-0-8-0-0-0-0-12-0-0-0-0-16
+193,100,2,RequestNewWinCondition(),Is there any other ways to win?,Inform(),Assume you demonstrate this win condition,Yiyan,5,4,Derek,,0-5-0-0-0-10-0-0-0-6-0-0-0-2-0-0
+193,100,3,"Context Switch, Confirm(User_ID=1, Rotate(90))","For this winning board you just showed to me, is it still a winning if I put all the pieces into a column?",Affirm(),"Yes, it will still be a winning.",Yiyan,4,4,Derek,,14-0-0-0-0-8-0-0-0-0-12-0-0-0-0-16
+193,100,4,RequestNewWinCondition(),Can you show me another way to win?,Inform(),Assume you demonstrate this win condition,Yiyan,5,4,Derek,,15-0-0-0-5-0-0-0-8-0-0-0-7-0-0-0
+193,100,5,RequestNewWinCondition(),Could you show me another winning condition?,Inform(),Assume you demonstrate this win condition,Yiyan,5,4,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-9-14-5-13
+193,100,6,RequestNewWinCondition(),Can you show me a different way to win?,Inform(),Assume you demonstrate this win condition,Yiyan,5,4,Derek,,10-0-0-0-0-13-0-0-0-0-16-0-0-0-0-9
+193,100,7,RequestNewWinCondition(),"I am still a little confused, can you show me another winning board?",Inform(),Assume you demonstrate this win condition,Yiyan,5,4,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-10-12-3-9
+193,100,8,RequestNewWinCondition(),Could you show me abother way to win?,Inform(),Assume you demonstrate this win condition,Yiyan,5,4,Derek,,0-6-0-0-0-5-0-0-0-1-0-0-0-8-0-0
+193,100,9,"Context Switch, Confirm(User_ID=1, Translate('col0'))","For this winning board you just demonstrated, can I move all the pieces one column left?",Affirm,"Yes, and it will still be a winning condition.",Yiyan,3,4,Derek,,0-5-0-0-0-10-0-0-0-6-0-0-0-2-0-0
+193,100,10,"Context Switch, Confirm(User_ID=1, Color)","For this winning board, it is a winning because of the color of pieces?",Negate(),"No, in this case, the color does not matter.",Yiyan,3,4,Derek,,10-0-0-0-0-13-0-0-0-0-16-0-0-0-0-9
+193,100,11,Finish(),"Thank you, I learnt a lot today!",Finish,You are welcome.,Yiyan,5,4,Derek,,10-0-0-0-0-13-0-0-0-0-16-0-0-0-0-9

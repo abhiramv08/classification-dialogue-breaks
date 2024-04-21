@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+908,60,0,Start(),"Hi, would you mind showing me how to play?",Start,"Sure, that sounds fun. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+908,60,1,RequestNewWinCondition(),Please show me a new win condition?,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-12-16-7-3
+908,60,2,RequestNewWinCondition(),Please show me another win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-11-13-7-5
+908,60,3,"Same, Confirm(User_ID=1, Quantity)",Is this win due to the number of pieces on the board?,Affirm(),"Yes, because there are four pieces. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-11-13-7-5
+908,60,4,"Same, Confirm(User_ID=1, Color)",Is this win also due to the color of the pieces?,NotSure(),"I'm not sure about that, though.",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-11-13-7-5
+908,60,5,"Same, Request(User_ID=1, Translate)",How could I shift these pieces around while still maintaining this win?,"Inform(['row1', 'row2', 'row3'])",You could align them in any other row. ,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-11-13-7-5
+908,60,6,"Same, Confirm(User_ID=1, RemovePiece(0,2))",Is this still a win if I remove the piece here?,Negate(),"No, that piece needs to stay.",Anthony,3,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-11-13-7-5
+908,60,7,"Context Switch, Confirm(User_ID=1, AddPiece(1,2))","Looking at this board now, could I add a piece here?",Affirm(),"Yes, that would be totally fine. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-12-16-7-3
+908,60,8,"Context Switch, Request(User_ID=1, Rotate)","Looking over at this board, how could I rotate the pieces?","Inform([45, 90])",You could put the pieces vertically or on the diagonal. ,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-11-13-7-5
+908,60,9,RequestNewWinCondition(),Please show me a new win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-8-7-13-5
+908,60,10,Finish(),"Actually, that's all I need for now, thanks. ",Finish,"No problem, have a nice day.",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-8-7-13-5

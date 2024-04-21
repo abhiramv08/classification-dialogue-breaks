@@ -1,0 +1,20 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+683,60,0,Start(),Hey! Can you show me how to play Quarto?,Start,"Yes, shall we begin?",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+683,60,1,RequestNewWinCondition(),Can you show me what a win condition looks like?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,5-0-0-0-0-3-0-0-0-0-4-0-0-0-0-2
+683,60,2,RequestNewWinCondition(),Can you show me a new win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-11-0-0-0-12-0-0-0-3-0-0-0-10
+683,60,3,"Same, Confirm(User_ID=1, Quantity)","For this board, is it a win because of the number of pieces?
+",Affirm(),"Yes, that's right.",Ruijie,4,5,Luke,,0-0-0-11-0-0-0-12-0-0-0-3-0-0-0-10
+683,60,4,"Same, Confirm(User_ID=1, Quantity)",Is it a win because of the number of pieces?,Affirm(),"Yes, that's the point.",Ruijie,5,5,Luke,,0-0-0-11-0-0-0-12-0-0-0-3-0-0-0-10
+683,60,5,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-6-16-14-13
+683,60,6,"Same, Confirm(User_ID=1, Rotate(90))",Can I rotate the pieces by ninety degrees and maintain the win?,Affirm(),"Sure, that's still a win.",Ruijie,5,4,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-6-16-14-13
+683,60,7,"Context Switch, Request(User_ID=1, Rotate)","Switch to this board, can I rotate the pieces by some degrees?
+","Inform([135, 180])","Sure, you can rotate them by one thirty five or one eighty degrees.
+",Ruijie,3,4,Luke,,0-0-0-11-0-0-0-12-0-0-0-3-0-0-0-10
+683,60,8,"Context Switch, Request(User_ID=1, Rotate)","Switch to this board, can I rotate the pieces by some degrees?
+",Inform([90]),"Sure, you can rotate them by ninety degrees.
+",Ruijie,4,5,Luke,,5-0-0-0-0-3-0-0-0-0-4-0-0-0-0-2
+683,60,9,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,7-0-0-0-0-11-0-0-0-0-16-0-0-0-0-4
+683,60,10,"Context Switch, Confirm(User_ID=1, Rotate(90))","Switch to this board, can I rotate the pieces by ninety degrees?
+",Affirm(),"Sure, you can do that.",Ruijie,4,5,Luke,,5-0-0-0-0-3-0-0-0-0-4-0-0-0-0-2
+683,60,11,"Context Switch, Confirm(User_ID=1, RemovePiece(3,0))","Switch to this board, can I remove the piece on the fourth row, the first column?",Negate(),"No, that will break the win condition.",Ruijie,5,5,Luke,,7-0-0-0-0-11-0-0-0-0-16-0-0-0-0-4
+683,60,12,Finish(),Thanks! I really learned a lot!,Finish,"Ok, see you next time!",Ruijie,5,5,Luke,,7-0-0-0-0-11-0-0-0-0-16-0-0-0-0-4

@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+216,100,0,Start(),"Hey, can you show we this Quarto game ?",Start,"Sure, let me teach you how to play it.",Dmytro,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+216,100,1,RequestNewWinCondition(),Can you show me what board one may have when they win ?,Inform(),Assume you demonstrate this win condition,Dmytro,5,5,Tianyi,,0-0-5-0-0-0-6-0-0-0-1-0-0-0-13-0
+216,100,2,RequestNewWinCondition(),Can you show one more example ?,Inform(),Assume you demonstrate this win condition,Dmytro,5,5,Tianyi,,0-0-0-2-0-0-3-0-0-12-0-0-10-0-0-0
+216,100,3,"Same , Confirm(User_ID=1, RemovePiece(0,0))","In this case, would I win after removing a piece on the bottom left ?",Negate(),"No, that would cause you to lose.",Dmytro,5,5,Tianyi,,0-0-0-2-0-0-3-0-0-12-0-0-10-0-0-0
+216,100,4,"Context Switch, Confirm(User_ID=1, Shape)",About that first board example; is it a win because shapes are both circles and a triangle ?,Negate(),"No, that is irrelevant.",Dmytro,5,5,Tianyi,,0-0-5-0-0-0-6-0-0-0-1-0-0-0-13-0
+216,100,5,"Context Switch, Confirm(User_ID=1, Height)",Back to another example you showed; am I winning here because of the height of the pieces ?,Negate(),"No, height plays no role in this case.",Dmytro,5,5,Tianyi,,0-0-0-2-0-0-3-0-0-12-0-0-10-0-0-0
+216,100,6,RequestNewWinCondition(),"Alright, I am ready for another winning condition example.",Inform(),Assume you demonstrate this win condition,Dmytro,5,5,Tianyi,,0-0-0-3-0-0-0-11-0-0-0-5-0-0-0-15
+216,100,7,"Context Switch, Confirm(User_ID=1, Quantity)",Back to the board you demonstrated earlier; does the number of the pieces matter here ?,Affirm(),"Yes, amount of the figures directly relate to whether you are winning here.",Dmytro,5,5,Tianyi,,0-0-5-0-0-0-6-0-0-0-1-0-0-0-13-0
+216,100,8,RequestNewWinCondition(),Can you do one more winning board demonstration ?,Inform(),Assume you demonstrate this win condition,Dmytro,5,4,Tianyi,,0-0-0-5-0-0-15-0-0-3-0-0-7-0-0-0
+216,100,9,"Context Switch, Confirm(User_ID=1, Rotate(90))","Back to earlier board, can I win after putting all 4 pieces in the first column ?",Affirm(),"Sure, you can win that way too.",Dmytro,4,5,Tianyi,,0-0-0-2-0-0-3-0-0-12-0-0-10-0-0-0
+216,100,10,"Win Same {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}",Is it a win in this case because these 2 triangles are hollow (robot points)?,Negate(),"No, that's not it.",Dmytro,5,4,Tianyi,,0-0-0-2-0-0-3-0-0-12-0-0-10-0-0-0
+216,100,11,Finish(),Ok; I ready to play.,Finish,Great; see you.,Dmytro,5,5,Tianyi,,0-0-0-2-0-0-3-0-0-12-0-0-10-0-0-0

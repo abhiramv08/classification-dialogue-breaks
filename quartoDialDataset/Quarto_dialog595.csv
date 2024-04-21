@@ -1,0 +1,18 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+595,60,0,Start(),Excuse me. Do you know how to play Quarto?,Start,"Yes, and I can show you how.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+595,60,1,RequestNewWinCondition(),"Thank you. Firstly, could you show me a win condition?",Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-11-7-4-3
+595,60,2,"Same, Request(User_ID=1, Rotate)","For the win you just showed,is there any way that I can rotate the pieces to get another win?","Inform([45, 90])",You can rotate the pieces to the first column or to the diagonal direction.,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-11-7-4-3
+595,60,3,RequestNewWinCondition(),Can you show me another way to win the game?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,6-0-0-0-0-16-0-0-0-0-15-0-0-0-0-5
+595,60,4,"Context Switch, Confirm(User_ID=1, Translate([1, 0]))","Let's consider this board, would it be a win if I shift all the pieces to the second row?",Affirm(),"Yes, as long as all the pieces are still in one row.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-11-7-4-3
+595,60,5,"Context Switch, Confirm(User_ID=1, AddPiece(2,0))","Let's switch to this board, would it be another win if I add a piece on the first position of the third row?",Affirm(),"Yes, it will be another win condition.",Yiyan,5,5,Tianyi,,6-0-0-0-0-16-0-0-0-0-15-0-0-0-0-5
+595,60,6,RequestNewWinCondition(),Is there any other way to win the game?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-12-0-0-0-14-0-0-0-9-0-0-0-16-0-0
+595,60,7,"Context Switch, Confirm(User_ID=1, AddPiece(2,3))","Let's switch to the previous board, can I get a new win case by adding a piece on the last position of the third row?",Affirm(),"Yes, you can.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-11-7-4-3
+595,60,8,"Context Switch, Confirm(User_ID=1, Color)","Let's switch to this board, is it a win because of the color of the pieces?",Negate(),"No, it is a win because all the pieces have the same height.",Yiyan,5,5,Tianyi,,0-12-0-0-0-14-0-0-0-9-0-0-0-16-0-0
+595,60,9,RequestNewWinCondition(),"Thank you. Firstly, could you show me a win condition?",Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-4-1-8-3
+595,60,10,RequestNewWinCondition(),Could you please show me one more win scenario?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,12-0-0-0-0-15-0-0-0-0-8-0-0-0-0-16
+595,60,11,"Same, Confirm(User_ID=1, Height)","For the win you just showed,
+is this a win because of the heights of the pieces?",Negate(),"No, it is a win because all the pieces have hollows.",Yiyan,5,5,Tianyi,,12-0-0-0-0-15-0-0-0-0-8-0-0-0-0-16
+595,60,12,RequestNewWinCondition(),Can you show me another way to win the game?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-7-0-0-5-0-0-14-0-0-13-0-0-0
+595,60,13,"Context Switch, Confirm(User_ID=1, Shape)","Let's turn to this board, do the shapes of the pieces matter?",NotSure(),I am not quite sure.,Yiyan,5,5,Tianyi,,0-12-0-0-0-14-0-0-0-9-0-0-0-16-0-0
+595,60,14,"Context Switch, Confirm(User_ID=1, RemovePiece(0,3))","Going back to this board, would it still be a win if I remove the piece on the first row?",Negate(),"No, since all the pieces are necessary to this win.",Yiyan,5,5,Tianyi,,6-0-0-0-0-16-0-0-0-0-15-0-0-0-0-5
+595,60,15,Finish(),"That's all the information I want to know, thank you.",Finish,I am glad to help.,Yiyan,5,4,Tianyi,,6-0-0-0-0-16-0-0-0-0-15-0-0-0-0-5

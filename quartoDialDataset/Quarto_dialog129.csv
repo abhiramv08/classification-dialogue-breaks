@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+129,100,0,Start(),Can you teach me how to play Quarto?,Start,"Yes, let's begin.",Yiyan,5,5,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+129,100,1,RequestNewWinCondition(),Can you show me a winning condition?,Inform(),Assume you demonstrate this win condition,Yiyan,5,4,Daniel,,0-3-0-0-0-7-0-0-0-4-0-0-0-15-0-0
+129,100,2,RequestNewWinCondition(),Can you show me another winning condition?,Inform(),Assume you demonstrate this win condition,Yiyan,5,4,Daniel,,7-0-0-0-0-15-0-0-0-0-16-0-0-0-0-3
+129,100,3,RequestNewWinCondition(),I am still a little confused. Can you show me another winning condition?,Inform(),Assume you demonstrate this win condition,Yiyan,5,4,Daniel,,14-0-0-0-15-0-0-0-5-0-0-0-16-0-0-0
+129,100,4,"Context Switch, Confirm(User_ID=1, Height)",Does the height of these pieces relate to the winning of the game?,Negate(),No. the height does not matter.,Yiyan,5,5,Daniel,,0-3-0-0-0-7-0-0-0-4-0-0-0-15-0-0
+129,100,5,"Context Switch, Confirm(User_ID=1, Shape)","I noticed that there are many different shapes, is it a winning condition because of the shapes?",Affirm(),"Yes, the shape matters.",Yiyan,5,5,Daniel,,14-0-0-0-15-0-0-0-5-0-0-0-16-0-0-0
+129,100,6,RequestNewWinCondition(),Can you show me another winning condition?,Inform(),Assume you demonstrate this win condition,Yiyan,5,4,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-2-10-9-12
+129,100,7,"Same, Request(User_ID=1, Translate)",How can I move these pieces to get another winning condition?,"Inform(['row1', 'row2', 'row3'])",You can either move these pieces to any other rows in the board.,Yiyan,4,5,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-2-10-9-12
+129,100,8,RequestNewWinCondition(),Can you show me a new winning condition?,Inform(),Assume you demonstrate this win condition,Yiyan,5,4,Daniel,,0-0-0-8-0-0-5-0-0-3-0-0-4-0-0-0
+129,100,9,RequestNewWinCondition(),Can you show me another winning condition?,Inform(),Assume you demonstrate this win condition,Yiyan,5,4,Daniel,,13-0-0-0-0-9-0-0-0-0-16-0-0-0-0-12
+129,100,10,"Context Switch, Confirm(User_ID=1, Quantity)",Does the number of piece relate to this winning?,Affirm(),"Yes, it does.",Yiyan,5,5,Daniel,,7-0-0-0-0-15-0-0-0-0-16-0-0-0-0-3
+129,100,11,"Context Switch, Confirm(User_ID=1, RemovePiece(1,0))","If I remove the piece with shadow green, will it still be a winning condition?",Negate(),"No, in that case it will not be a winning.",Yiyan,5,5,Daniel,,14-0-0-0-15-0-0-0-5-0-0-0-16-0-0-0
+129,100,12,"Context Switch, Confirm(User_ID=1, Shape)",Do the shapes of the pieces relate to the winning?,Negate(),"No, the shape does not matter.",Yiyan,5,5,Daniel,,0-3-0-0-0-7-0-0-0-4-0-0-0-15-0-0
+129,100,13,"Context Switch, RequestOtherPlayers()","In the current winning condition, how can the other player do to stop the winning?",Inform([]),"No, in this case the winning can not be changed any more.",Yiyan,4,3,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-2-10-9-12
+129,100,14,"Win Context Switch {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}",Is this a winning because we have a hollow peice?,Negate(),"No,  the hollowness does not matter.",Yiyan,4,5,Daniel,,14-0-0-0-15-0-0-0-5-0-0-0-16-0-0-0
+129,100,15,Finish(),Thank you for teachng me.,Finish,You are welcome.,Yiyan,5,5,Daniel,,14-0-0-0-15-0-0-0-5-0-0-0-16-0-0-0

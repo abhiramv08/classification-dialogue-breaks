@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Board
+354,50,0,Start(),I would like to learn how to play Quarto. Can you teach me?,Start,I certainly can.,Jacob,0-0-0-13-0-0-0-15-0-0-0-8-0-0-0-5
+354,50,1,RequestNewWinCondition(),Can you show me a winning board state?,Inform,Assume you demonstrate this win condition,Jacob,0-0-0-0-0-0-0-0-0-0-0-0-7-5-9-3
+354,50,2,"Same, Confirm(User_ID=1, Color)",Is this board a win because of the colors of the pieces?,NotSure(),"I don't know, sorry.",Jacob,0-0-0-0-0-0-0-0-0-0-0-0-7-5-9-3
+354,50,3,RequestNewWinCondition(),Could you show me another win condition?,Inform,Assume you demonstrate this win condition,Jacob,0-0-12-0-0-0-11-0-0-0-15-0-0-0-4-0
+354,50,4,"Context Switch, Confirm(User_ID=1, Shape)","Going to this board, is this a win because of the shapes of the pieces?",Negate(),"No, the shape is not important here.",Jacob,0-0-0-0-0-0-0-0-0-0-0-0-7-5-9-3
+354,50,5,RequestNewWinCondition(),Please show me another win condition.,Inform,Assume you demonstrate this win condition,Jacob,14-0-0-0-0-5-0-0-0-0-1-0-0-0-0-10
+354,50,6,"Context Switch, RequestOtherPlayers()","On this board, what actions could another player take to take away this win?",Inform([]),No player can take such an action.,Jacob,0-0-12-0-0-0-11-0-0-0-15-0-0-0-4-0
+354,50,7,"Context Switch, Confirm(User_ID=1, AddPiece(2,0))","If I were to, on this board, add a piece in the first column second from the top, would this still be a win?",NotSure(),I couldn't say.,Jacob,0-0-0-0-0-0-0-0-0-0-0-0-7-5-9-3
+354,50,8,"Context Switch, Confirm(User_ID=1, Height)","On this board, are the heights of the pieces what makes it a win?",NotSure(),I can't say for sure.,Jacob,14-0-0-0-0-5-0-0-0-0-1-0-0-0-0-10
+354,50,9,"Same, Confirm(User_ID=1, Height)",Do the heights of these pieces matter?,NotSure(),I still don't know.,Jacob,14-0-0-0-0-5-0-0-0-0-1-0-0-0-0-10
+354,50,10,RequestNewWinCondition(),Could you show me another winning board?,Inform,Assume you demonstrate this win condition,Jacob,0-0-0-10-0-0-13-0-0-2-0-0-9-0-0-0
+354,50,11,Finish(),I think I know enough now. Thanks.,Finish,No problem. Bye.,Jacob,0-0-0-10-0-0-13-0-0-2-0-0-9-0-0-0

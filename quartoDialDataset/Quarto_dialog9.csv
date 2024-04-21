@@ -1,0 +1,15 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+9,100,0,Start(),Hello! Can you teach me how to play Quarto?,Start,"Yes, sure!",Daniel,5,5,Anthony,Very usual start,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+9,100,1,RequestNewWinCondition(),Can you show me someone winning the game?,Inform(),Assume you demonstrate this win condition,Daniel,5,4,Anthony,"Is ""someone winning the game"" a natural way?",0-0-16-0-0-0-14-0-0-0-5-0-0-0-13-0
+9,100,2,RequestNewWinCondition(),Can you show me someone winning the game differently?,Inform(),Assume you demonstrate this win condition,Daniel,5,5,Anthony,"Use the word ""diffferently"" to split it from the first question.",0-0-0-0-0-0-0-0-0-0-0-0-14-9-13-11
+9,100,3,RequestNewWinCondition(),Can you show me one more win?,Inform(),Assume you demonstrate this win condition,Daniel,5,5,Anthony,,0-0-0-0-0-0-0-0-0-0-0-0-5-13-15-14
+9,100,4,"Same, Confirm(User_ID=1, Translate('row3'))",If I move the pieces to Row 3 is it still a win?,Affirm,Yes it is,Daniel,5,5,Anthony,,0-0-0-0-0-0-0-0-0-0-0-0-5-13-15-14
+9,100,5,RequestNewWinCondition(),Can you show me a different way of winning?,Inform(),Assume you demonstrate this win condition,Daniel,5,5,Anthony,,12-0-0-0-0-7-0-0-0-0-16-0-0-0-0-4
+9,100,6,"Context Switch, Confirm(User_ID=1, RemovePiece(0,2))","If I remove the piece at 0,2 is it still a win?",Negate(),No it isn't,Daniel,5,4,Anthony,"Always answer ""No it isn't"" or ""Yes it is"" may sound a little like a robot.",0-0-0-0-0-0-0-0-0-0-0-0-5-13-15-14
+9,100,7,"Same, Confirm(User_ID=1, Height)",Do the heights of my pieces make this a win?,Negate(),"No, the heights are irrelevant.",Daniel,5,5,Anthony,,0-0-0-0-0-0-0-0-0-0-0-0-5-13-15-14
+9,100,8,"Context Switch, Confirm(User_ID=1, Color)",Do the colors of my pieces make it a win?,Negate(),"No, the colors don't matter",Daniel,5,5,Anthony,,12-0-0-0-0-7-0-0-0-0-16-0-0-0-0-4
+9,100,9,"Context Switch, RequestOtherPlayers()",Is there anything the other player could do to win now?,Inform([]),"No, they have no moves left.",Daniel,5,5,Anthony,I think this response is better than just saying No.,0-0-0-0-0-0-0-0-0-0-0-0-5-13-15-14
+9,100,10,"Context Switch, Request(User_ID=1, Translate)",Where can I move the pieces and have it still be a win?,"Inform(['col0', 'col1', 'col3'])",You can move the pieces to any other column.,Daniel,5,5,Anthony,,0-0-16-0-0-0-14-0-0-0-5-0-0-0-13-0
+9,100,11,"Same, Confirm(User_ID=1, Quantity)",Does the number of pieces on the board make this a win?,Affirm(),Yes,Daniel,5,4,Anthony,,0-0-16-0-0-0-14-0-0-0-5-0-0-0-13-0
+9,100,12,RequestNewWinCondition(),Are there any other win conditions you can show me?,Inform(),Assume you demonstrate this win condition,Daniel,5,5,Anthony,,7-0-0-0-0-6-0-0-0-0-8-0-0-0-0-4
+9,100,13,Finish(),Thanks for the lesson!,Finish,No problem.,Daniel,5,5,Anthony,,7-0-0-0-0-6-0-0-0-0-8-0-0-0-0-4

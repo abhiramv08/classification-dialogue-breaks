@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+378,50,0,Start(),"Hi, could you please teach me how to play Quarto?",Start,Sure!,Shaobo,5,5,Jacob,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+378,50,1,RequestNewWinCondition(),Could you show me a win firstly?,Inform,Assume you demonstrate this win condition,Shaobo,5,4,Jacob,"""Firstly"" seems unnatural.",1-0-0-0-3-0-0-0-2-0-0-0-6-0-0-0
+378,50,2,"Same, Confirm(User_ID=1, Quantity)",Does the number of pieces matter in terms of the winning condition?,Affirm(),"Yes, you need at least four pieces for a win.",Shaobo,5,5,Jacob,,1-0-0-0-3-0-0-0-2-0-0-0-6-0-0-0
+378,50,3,"Same, Confirm(User_ID=1, Shape)",And is it a win because of the shape of the pieces?,NotSure(),I don't think so but I am not sure.,Shaobo,5,5,Jacob,,1-0-0-0-3-0-0-0-2-0-0-0-6-0-0-0
+378,50,4,"Same, Confirm(User_ID=1, Shape)",Are you really not sure about it?,Negate(),"Okay, now I know the answer. The shape of the pieces does not matter here.",Shaobo,5,5,Jacob,,1-0-0-0-3-0-0-0-2-0-0-0-6-0-0-0
+378,50,5,"Same, Confirm(User_ID=1, Height)",So is it a win because of the height of the pieces?,NotSure(),I think so but I am not sure.,Shaobo,5,5,Jacob,,1-0-0-0-3-0-0-0-2-0-0-0-6-0-0-0
+378,50,6,RequestNewWinCondition(),Could you show me another winning board?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,Jacob,,0-0-0-0-0-0-0-0-0-0-0-0-1-7-5-8
+378,50,7,"Context Switch, Confirm(User_ID=1, Height)","For this board, is it a win because of the height of the pieces?",NotSure(),I think so but I am not sure.,Shaobo,5,5,Jacob,,1-0-0-0-3-0-0-0-2-0-0-0-6-0-0-0
+378,50,8,"Same, Request(User_ID=1, Rotate)",And how could I rotate the pieces and still keep the win?,Inform([0]),You could rotate them to the bottom row.,Shaobo,3,5,Jacob,"""Rotate the pieces"" doesn't seem to convey the idea that the pattern of the pieces is being rotated as opposed to the individual pieces.",1-0-0-0-3-0-0-0-2-0-0-0-6-0-0-0
+378,50,9,"Same, Confirm(User_ID=1, AddPiece(2,1))",And is it still a win if I add a piece on the third row and the second column?,NotSure(),I think so but I am not sure.,Shaobo,5,5,Jacob,,1-0-0-0-3-0-0-0-2-0-0-0-6-0-0-0
+378,50,10,RequestNewWinCondition(),Could you show me one more winning condition?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,Jacob,,0-0-0-0-0-0-0-0-0-0-0-0-11-3-9-4
+378,50,11,Finish(),Thanks for the help! I learned a lot!,Finish,You are welcome!,Shaobo,5,5,Jacob,,0-0-0-0-0-0-0-0-0-0-0-0-11-3-9-4

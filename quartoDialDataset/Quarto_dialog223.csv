@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+223,100,0,Start(),Could you teach me how to play Quarto?,Start,I'd love to.,Jacob,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+223,100,1,RequestNewWinCondition(),Can you show me a winning board?,Inform(),Assume you demonstrate this win condition,Jacob,5,5,Yiyen,,6-0-0-0-0-13-0-0-0-0-14-0-0-0-0-16
+223,100,2,RequestNewWinCondition(),Thank you. Can I see another?,Inform(),Assume you demonstrate this win condition,Jacob,5,5,Yiyen,,0-0-0-16-0-0-10-0-0-12-0-0-8-0-0-0
+223,100,3,"Same, Confirm(User_ID=1, Quantity)",Does the number of pieces make this board a win?,Affirm(),"Yes, the number of pieces makes this a win.",Jacob,5,4,Yiyen,,0-0-0-16-0-0-10-0-0-12-0-0-8-0-0-0
+223,100,4,"Same, Confirm(User_ID=1, Height)",What about height? Does that contribute to this win?,Negate(),"No, the heights of these pieces do not matter.",Jacob,5,4,Yiyen,,0-0-0-16-0-0-10-0-0-12-0-0-8-0-0-0
+223,100,5,RequestNewWinCondition(),Can you show me another win condition?,Inform(),Assume you demonstrate this win condition,Jacob,5,5,Yiyen,,8-0-0-0-7-0-0-0-4-0-0-0-11-0-0-0
+223,100,6,"Context Switch, Confirm(User_ID=1, Shape)",Do the shapes of the pieces on this board matter?,Negate(),"No, they don't.",Jacob,5,5,Yiyen,,0-0-0-16-0-0-10-0-0-12-0-0-8-0-0-0
+223,100,7,"Context Switch, Confirm(User_ID=1, Height)",Let's move to this board. Do the heights of the pieces matter here?,Negate(),The heights of these pieces do not matter.,Jacob,5,5,Yiyen,,8-0-0-0-7-0-0-0-4-0-0-0-11-0-0-0
+223,100,8,"Context Switch, Confirm(User_ID=1, RemovePiece(0,3))","Going to this board, if the piece in the bottom right were removed, would it still be a win?",Negate(),"No, you need that piece to win.",Jacob,5,4,Yiyen,,6-0-0-0-0-13-0-0-0-0-14-0-0-0-0-16
+223,100,9,"Same , Confirm(User_ID=1, Shape)",Do the shapes of the pieces matter here?,Affirm(),Yes. The shapes of these pieces are vital to this win condition.,Jacob,5,5,Yiyen,,6-0-0-0-0-13-0-0-0-0-14-0-0-0-0-16
+223,100,10,"Same, Confirm(User_ID=1, Rotate(90))","If these pieces were aligned vertically, would it still be a win?",Affirm(),Yes.,Jacob,5,5,Yiyen,,6-0-0-0-0-13-0-0-0-0-14-0-0-0-0-16
+223,100,11,RequestNewWinCondition(),Could you please show me a new win condition?,Inform(),Assume you demonstrate this win condition,Jacob,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-16-4-3-7
+223,100,12,"Same , Confirm(User_ID=1, Shape)",Do the shapes of these pieces matter here?,Negate(),"No, they do not.",Jacob,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-16-4-3-7
+223,100,13,"Context Switch, Confirm(User_ID=1, Quantity)",Does the number of pieces on this board matter?,Affirm(),"Yes, you need four pieces to win.",Jacob,5,5,Yiyen,,0-0-0-16-0-0-10-0-0-12-0-0-8-0-0-0
+223,100,14,RequestNewWinCondition(),Could you show me another winning board?,Inform(),Assume you demonstrate this win condition,Jacob,5,5,Yiyen,,0-0-6-0-0-0-13-0-0-0-7-0-0-0-16-0
+223,100,15,Finish(),Thank you for teaching me Quarto.,Finish,You're welcome. Goodbye.,Jacob,5,5,Yiyen,,0-0-6-0-0-0-13-0-0-0-7-0-0-0-16-0

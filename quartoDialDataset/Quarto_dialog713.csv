@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+713,60,0,Start(),Hey! Can you show me how to play Quarto?,Start,Why not! Let's start!,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+713,60,1,RequestNewWinCondition(),Can you show me what a win condition looks like?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-3-0-0-16-0-0-12-0-0-7-0-0-0
+713,60,2,"Same, Confirm(User_ID=1, Shape)","For this board, does the shape of pieces make it a win?",Negate(),"Well, it's not. You can see that they are not even in the same shape.",Ruijie,5,5,Luke,,0-0-0-3-0-0-16-0-0-12-0-0-7-0-0-0
+713,60,3,"Same, Confirm(User_ID=1, Shape)","Is it a win because the pieces are of the same shape?
+",Negate(),That’s just wrong.,Ruijie,5,5,Luke,,0-0-0-3-0-0-16-0-0-12-0-0-7-0-0-0
+713,60,4,RequestNewWinCondition(),Can you give me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-5-1-7-4
+713,60,5,"Same, Request(User_ID=1, Translate)","For this board, can I put the pieces somewhere else and still have a win?","Inform(['row1', 'row2', 'row3'])","Sure, you can put them on the first row, the second row, or the third row.",Ruijie,3,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-5-1-7-4
+713,60,6,RequestNewWinCondition(),Can you show me a new win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-6-0-0-8-0-0-14-0-0-12-0-0-0
+713,60,7,"Same, Request(User_ID=1, Rotate)",Can I rotate the pieces by some degrees and still have a win?,Inform([90]),"Yes, you can do that by rotating them ninety degrees.",Ruijie,4,5,Luke,,0-0-0-6-0-0-8-0-0-14-0-0-12-0-0-0
+713,60,8,"Same, Confirm(User_ID=1, AddPiece(0,1))","Can I add one more piece on the first row, the second column and maintain the win?",NotSure(),"Well, I'm not sure.",Ruijie,5,5,Luke,,0-0-0-6-0-0-8-0-0-14-0-0-12-0-0-0
+713,60,9,"Same, Confirm(User_ID=1, Hollowness)","For this board, does the hollowness of the pieces make it a win?
+",Negate(),"No, that’s not the reason.",Ruijie,5,5,Luke,,0-0-0-6-0-0-8-0-0-14-0-0-12-0-0-0
+713,60,10,Finish(),Thank you! I've learned a lot!,Finish,You are welcome!,Ruijie,5,5,Luke,,0-0-0-6-0-0-8-0-0-14-0-0-12-0-0-0

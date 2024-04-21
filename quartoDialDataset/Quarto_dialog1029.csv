@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+1029,60,0,Start(),"Hi, can you teach me some strategies of Quarto.",Start,"Sure, let's start.",Tianyi,5,4,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+1029,60,1,RequestNewWinCondition(),Can you show me a winning board first?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,14-0-0-0-12-0-0-0-16-0-0-0-8-0-0-0
+1029,60,2,"Same, Confirm(User_ID=1, Color)","In this board, is it a win because all pieces are blue.",NotSure(),I have no idea about this. Maybe you are right.,Tianyi,5,5,Ruijie,,14-0-0-0-12-0-0-0-16-0-0-0-8-0-0-0
+1029,60,3,"Same, Confirm(User_ID=1, Quantity)","And, is it a win because there are four pieces on the board?",NotSure(),I am uncertain about this.,Tianyi,5,4,Ruijie,,14-0-0-0-12-0-0-0-16-0-0-0-8-0-0-0
+1029,60,4,"Same, Confirm(User_ID=1, RemovePiece(0,0))","If I remove the piece at the left corner, can it still be a win?",NotSure(),I cannot determine whether that is true.,Tianyi,5,5,Ruijie,,14-0-0-0-12-0-0-0-16-0-0-0-8-0-0-0
+1029,60,5,"Same, Confirm(User_ID=1, RemovePiece(3,0))","If I remove the piece at the upper left corner, can it still be a win?",Negate(),"No, it will no longer be a win if you do that.",Tianyi,4,5,Ruijie,,14-0-0-0-12-0-0-0-16-0-0-0-8-0-0-0
+1029,60,6,"Same, Confirm(User_ID=1, Hollowness)",Is it wins because most pieces are hollow?,Negate(),"No, that is not the reason.",Tianyi,5,5,Ruijie,,14-0-0-0-12-0-0-0-16-0-0-0-8-0-0-0
+1029,60,7,"Same, Confirm(User_ID=1, RemovePiece(2,0))","If I remove the piece at the third row, is it still a win?",Negate(),Nope.,Tianyi,5,5,Ruijie,,14-0-0-0-12-0-0-0-16-0-0-0-8-0-0-0
+1029,60,8,RequestNewWinCondition(),Can you show me a new winning board?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,0-0-0-16-0-0-3-0-0-11-0-0-12-0-0-0
+1029,60,9,RequestNewWinCondition(),Can you show me another new winning board?,Inform,Assume you demonstrate this win condition,Tianyi,5,4,Ruijie,,5-0-0-0-0-13-0-0-0-0-8-0-0-0-0-15
+1029,60,10,Finish(),Thank you so much.,Finish,You are welcome.,Tianyi,5,5,Ruijie,,5-0-0-0-0-13-0-0-0-0-8-0-0-0-0-15

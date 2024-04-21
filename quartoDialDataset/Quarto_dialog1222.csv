@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+1222,60,0,Start(),"Hi, do you have time to teach me how to play Quarto?",Start,Sure!,Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+1222,60,1,RequestNewWinCondition(),Could you show me a win first?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,5-0-0-0-3-0-0-0-9-0-0-0-1-0-0-0
+1222,60,2,RequestNewWinCondition(),Is there any other way to win?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,5-0-0-0-0-3-0-0-0-0-4-0-0-0-0-1
+1222,60,3,"Same, Confirm(User_ID=1, AddPiece(2,0))","And Switching to this board, is it still a win if I add a piece left to the green solid triangle?",NotSure(),"Sorry, I am not sure about it.",Shaobo,5,4,John,,5-0-0-0-0-3-0-0-0-0-4-0-0-0-0-1
+1222,60,4,"Context Switch, Confirm(User_ID=1, Color)","Switching to this board, is it a win because of the color of the pieces?",NotSure(),"Sorry, I am not sure about it.",Shaobo,5,4,John,,5-0-0-0-3-0-0-0-9-0-0-0-1-0-0-0
+1222,60,5,"Same, Confirm(User_ID=1, Hollowness)",And is it a win because of the hollowness of the pieces?,NotSure(),"Sorry, I am not sure about it.",Shaobo,5,4,John,,5-0-0-0-3-0-0-0-9-0-0-0-1-0-0-0
+1222,60,6,"Context Switch, Confirm(User_ID=1, AddPiece(0,0))","Switching to this board, is it still a win if I add a piece on the bottom left corner?",NotSure(),"Sorry, I am not sure about it.",Shaobo,5,4,John,,5-0-0-0-0-3-0-0-0-0-4-0-0-0-0-1
+1222,60,7,RequestNewWinCondition(),Could you show me one more winning board?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-0-0-1-0-0-13-0-0-15-0-0-5-0-0-0
+1222,60,8,"Context Switch, Confirm(User_ID=1, Color)","Switching to this board, is it a win because of the color of the pieces?",Negate(),"No, it is a win because all pieces have the same height.",Shaobo,5,5,John,,5-0-0-0-0-3-0-0-0-0-4-0-0-0-0-1
+1222,60,9,"Same, Confirm(User_ID=1, Shape)",How about the shape? Is it the reason why it is a win?,Negate(),"No, it is a win because all pieces have the same height!",Shaobo,5,5,John,,5-0-0-0-0-3-0-0-0-0-4-0-0-0-0-1
+1222,60,10,"Same, Request(User_ID=1, Rotate)",And how could I rotate the pieces and still keep the win?,Inform([90]),You could rotate them to the leftmost column.,Shaobo,5,5,John,,5-0-0-0-0-3-0-0-0-0-4-0-0-0-0-1
+1222,60,11,"Context Switch, Confirm(User_ID=1, Shape)","Switching to this board, is it a win because of the shape of the pieces?",Negate(),"No, it is a win because all pieces have the same color.",Shaobo,5,5,John,,0-0-0-1-0-0-13-0-0-15-0-0-5-0-0-0
+1222,60,12,"Same, Confirm(User_ID=1, Quantity)",And does the number of pieces matter?,Affirm(),"Yes, you need at least four pieces for a win.",Shaobo,5,5,John,,0-0-0-1-0-0-13-0-0-15-0-0-5-0-0-0
+1222,60,13,"Same, Request(User_ID=1, Rotate)",And how could I rotate the pieces and still keep the win?,Inform([90]),You could rotate them to the leftmost column.,Shaobo,5,5,John,,0-0-0-1-0-0-13-0-0-15-0-0-5-0-0-0
+1222,60,14,"Same, RequestOtherPlayers()",One more question about this board. How could another player revoke this win?,Inform([]),There is nothing that another player could do to prevent this win.,Shaobo,4,3,John,,0-0-0-1-0-0-13-0-0-15-0-0-5-0-0-0
+1222,60,15,Finish(),Thanks for the help! I have learned a lot!,Finish,You are welcome!,Shaobo,5,5,John,,0-0-0-1-0-0-13-0-0-15-0-0-5-0-0-0

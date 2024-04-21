@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+71,100,0,Start(),Can you show me how to play Quarto?,Start,Ok,Daniel,5,4,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+71,100,1,RequestNewWinCondition(),Can you show me a board where someone wins?,Inform(),Assume you demonstrate this win condition,Daniel,5,5,Derek,,16-0-0-0-15-0-0-0-13-0-0-0-12-0-0-0
+71,100,2,RequestNewWinCondition(),Can you show me a different board please?,Inform(),Assume you demonstrate this win condition,Daniel,5,5,Derek,,0-0-0-6-0-0-0-5-0-0-0-13-0-0-0-2
+71,100,3,"Context Switch, RequestOtherPlayers()",Can the other player make any moves to stop this win?,Inform([]),No,Daniel,3,3,Derek,,16-0-0-0-15-0-0-0-13-0-0-0-12-0-0-0
+71,100,4,RequestNewWinCondition(),Can you show me a new board please?,Inform(),Assume you demonstrate this win condition,Daniel,4,5,Derek,,16-0-0-0-0-11-0-0-0-0-7-0-0-0-0-4
+71,100,5,"Context Switch, Confirm(User_ID=1, AddPiece(2,0))","If I add a piece at 2,0 is this still a win?",Affirm(),Yes,Daniel,3,2,Derek,,0-0-0-6-0-0-0-5-0-0-0-13-0-0-0-2
+71,100,6,"Same, Confirm(User_ID=1, Height)",Is this a win because of the height of the pieces?,Negate(),No,Daniel,5,5,Derek,,0-0-0-6-0-0-0-5-0-0-0-13-0-0-0-2
+71,100,7,"Context Switch, Confirm(User_ID=1, RemovePiece(1,2))","If I remove the piece at 1,2 is this still a win?",Negate(),No,Daniel,2,2,Derek,,16-0-0-0-0-11-0-0-0-0-7-0-0-0-0-4
+71,100,8,"Same, Confirm(User_ID=1, Rotate(90))",If I rotate these pieces to the antidiagonal is this still a win?,Affirm(),Yes,Daniel,0,3,Derek,I am not sure but I remember Rotate(90) always means move to vertical,16-0-0-0-0-11-0-0-0-0-7-0-0-0-0-4
+71,100,9,"Context Switch, Confirm(User_ID=1, Height)",Is this a win because of the height of the pieces?,Affirm(),Yes,Daniel,2,4,Derek,,16-0-0-0-15-0-0-0-13-0-0-0-12-0-0-0
+71,100,10,"Context Switch, Confirm(User_ID=1, Shape)",Is this a win because of the shape of the pieces?,Negate(),No,Daniel,3,5,Derek,"I believe you miss the ""context switch"" part",0-0-0-6-0-0-0-5-0-0-0-13-0-0-0-2
+71,100,11,Finish(),Thank you!,Finish,No problem,Daniel,5,5,Derek,,0-0-0-6-0-0-0-5-0-0-0-13-0-0-0-2

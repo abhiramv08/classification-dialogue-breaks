@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+349,50,0,Start(),Let's learn some Quarto today,Start,"Sure, sounds like fun",Dmytro,,,,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+349,50,1,RequestNewWinCondition(),Could you show me a winning board example ?,Inform,Assume you demonstrate this win condition,Dmytro,,,,,0-0-0-0-0-0-0-0-0-0-0-0-8-11-16-4
+349,50,2,"Same, Confirm(User_ID=1, Color)",Does a color of the pieces make this board a winning one ?,NotSure(),I don't know.,Dmytro,,,,,0-0-0-0-0-0-0-0-0-0-0-0-8-11-16-4
+349,50,3,"Same, Confirm(User_ID=1, Shape)",What about figures' shape ?,Negate(),That one is definitive not; figures' shape make no difference here.,Dmytro,,,,,0-0-0-0-0-0-0-0-0-0-0-0-8-11-16-4
+349,50,4,RequestNewWinCondition(),Could you do one more winning board demo ?,Inform,Assume you demonstrate this win condition,Dmytro,,,,,0-0-0-5-0-0-14-0-0-8-0-0-16-0-0-0
+349,50,5,"Context Switch, Confirm(User_ID=1, Color)",Back to the first board; does the figure's color make it a win ?,Negate(),"No, it's not the color.",Dmytro,,,,,0-0-0-0-0-0-0-0-0-0-0-0-8-11-16-4
+349,50,6,"Same, RequestOtherPlayers()","At this point, is there anything another player can do ?",Inform([]),"No, you have certain victory here.",Dmytro,,,,,0-0-0-0-0-0-0-0-0-0-0-0-8-11-16-4
+349,50,7,"Same, Request(User_ID=1, Translate)",How can I move the pieces on this board ?,"Inform(['row1', 'row2'])",You could move them up a row or 2.,Dmytro,,,,,0-0-0-0-0-0-0-0-0-0-0-0-8-11-16-4
+349,50,8,"Context Switch, RequestOtherPlayers()","Back to your last example, anything another player can do here ?",Inform([]),"No, you win as soon as you get to this point.",Dmytro,,,,,0-0-0-5-0-0-14-0-0-8-0-0-16-0-0-0
+349,50,9,"Context Switch, Confirm(User_ID=1, Height)","Switching back, is height of the figures a factor in a win here ?",Negate(),"no, it is not.",Dmytro,,,,,0-0-0-0-0-0-0-0-0-0-0-0-8-11-16-4
+349,50,10,RequestNewWinCondition(),Can you make a new winning board example ?,Inform,Assume you demonstrate this win condition,Dmytro,,,,,0-0-0-0-0-0-0-0-0-0-0-0-16-14-8-13
+349,50,11,"Same, Request(User_ID=1, Translate)","Alright, any way I can move the figures in this board ?","Inform(['row1', 'row2'])","Just like before, you can move them up 1 or 2 rows.",Dmytro,,,,,0-0-0-0-0-0-0-0-0-0-0-0-16-14-8-13
+349,50,12,Finish(),I see; I think I am ready to play.,Finish,"Awesome, see you around.",Dmytro,,,,,0-0-0-0-0-0-0-0-0-0-0-0-16-14-8-13

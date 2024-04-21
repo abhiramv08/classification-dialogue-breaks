@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+282,50,0,Start(),Can you teach me Quarto ?,Start,"Sure, let's begin.",Dmytro,5,5,Yiyan,,6-0-0-0-14-0-0-0-10-0-0-0-9-0-0-0
+282,50,1,RequestNewWinCondition(),Show me please an example of a board to get for me to win,Inform,Assume you demonstrate this win condition,Dmytro,5,2,Yiyan,,0-0-0-0-0-0-0-0-0-0-0-0-15-7-11-1
+282,50,2,"Same, Request(User_ID=1, Translate)",Where else can I move these figures ?,"Inform(['row1', 'row2'])",possible choices include two rows above.,Dmytro,5,4,Yiyan,,0-0-0-0-0-0-0-0-0-0-0-0-15-7-11-1
+282,50,3,"Same, Confirm(User_ID=1, Height)",Is it the height of the pieces that make it a win ?,N(o),Height plays no role here.,Dmytro,5,5,Yiyan,,0-0-0-0-0-0-0-0-0-0-0-0-15-7-11-1
+282,50,4,"Same, Request(User_ID=1, Rotate)",How can I rotate figures on this board ?,Inform([45]),You could place them on a diagonal.,Dmytro,5,5,Yiyan,,0-0-0-0-0-0-0-0-0-0-0-0-15-7-11-1
+282,50,5,RequestNewWinCondition(),Show me please another winning board example.,Inform,Assume you demonstrate this win condition,Dmytro,5,5,Yiyan,,0-0-0-2-0-0-12-0-0-4-0-0-8-0-0-0
+282,50,6,"Context Switch, Confirm(User_ID=1, Height)","Back to a prior board, is winning determined by figures' height in this case ?",Negate(),"No, height doesn't affect that here",Dmytro,5,5,Yiyan,,0-0-0-0-0-0-0-0-0-0-0-0-15-7-11-1
+282,50,7,"Context Switch, Confirm(User_ID=1, Color)","Back to a previous board, do I win here because of pieces' color ?",Affirm(),"Yeah, color is important here.",Dmytro,5,5,Yiyan,,0-0-0-2-0-0-12-0-0-4-0-0-8-0-0-0
+282,50,8,RequestNewWinCondition(),"One more board example, please.",Inform,Assume you demonstrate this win condition,Dmytro,5,5,Yiyan,,0-0-0-0-0-0-0-0-0-0-0-0-12-11-10-1
+282,50,9,"Same , Confirm(User_ID=1, AddPiece(1,3))","Can I add a piece here (robot points at (1, 3) ) ?",Affirm(),"Sure, you would still win.",Dmytro,2,5,Yiyan,,0-0-0-0-0-0-0-0-0-0-0-0-12-11-10-1
+282,50,10,"Context Switch, Confirm(User_ID=1, Height)","About another board, what about the height of pieces ? Does it contribute to the win ?",N(o),"No, it's definitely not the height.",Dmytro,1,4,Yiyan,,0-0-0-2-0-0-12-0-0-4-0-0-8-0-0-0
+282,50,11,"Same , Confirm(User_ID=1, Color)","Ok, maybe it's the color ?",N(o),"No, and it's not the color.",Dmytro,1,5,Yiyan,,0-0-0-2-0-0-12-0-0-4-0-0-8-0-0-0
+282,50,12,Finish(),"Ok, I am ready.",Finish,"Great, my congrats.",Dmytro,5,2,Yiyan,,0-0-0-2-0-0-12-0-0-4-0-0-8-0-0-0

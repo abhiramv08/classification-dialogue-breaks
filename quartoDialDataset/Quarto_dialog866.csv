@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+866,60,0,Start(),"Hi there, would you please show me how to play?",Start,"Yeah, sure.",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+866,60,1,RequestNewWinCondition(),Please show me another win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-7-0-0-16-0-0-11-0-0-12-0-0-0
+866,60,2,RequestNewWinCondition(),Would you mind showing me another?,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-6-0-0-4-0-0-14-0-0-12-0-0-0
+866,60,3,"Same, Confirm(User_ID=1, Rotate(90))",Could I rotate the pieces like this?,NotSure(),I'm not sure. ,Anthony,3,5,Yiyen,,0-0-0-6-0-0-4-0-0-14-0-0-12-0-0-0
+866,60,4,"Context Switch, Request(User_ID=1, Rotate)","Looking over at this board, how could I rotate the pieces?",Inform([90]),You could rotate them to be aligned vertically. ,Anthony,4,5,Yiyen,,0-0-0-7-0-0-16-0-0-11-0-0-12-0-0-0
+866,60,5,"Same, Confirm(User_ID=1, RemovePiece(2,2))",Could I remove the piece here?,Negate(),"No, that piece needs to stay put. ",Anthony,3,5,Yiyen,,0-0-0-7-0-0-16-0-0-11-0-0-12-0-0-0
+866,60,6,"Same, Request(User_ID=1, Rotate)",How could I rotate these pieces?,Inform([90]),You could align them all vertically.,Anthony,4,5,Yiyen,,0-0-0-7-0-0-16-0-0-11-0-0-12-0-0-0
+866,60,7,"Context Switch, Request(User_ID=1, Rotate)",How could I rotate the pieces on this other board?,Inform([90]),These pieces could be aligned vertically too.,Anthony,4,5,Yiyen,,0-0-0-6-0-0-4-0-0-14-0-0-12-0-0-0
+866,60,8,"Context Switch, RequestOtherPlayers()","On this other board, how could another player undo this win?",Inform([]),There is nothing another player could do.,Anthony,5,5,Yiyen,,0-0-0-7-0-0-16-0-0-11-0-0-12-0-0-0
+866,60,9,"Context Switch, Confirm(User_ID=1, Height)","Looking over at this board, is this a win because of the height of the pieces?",Negate(),"No, that is not why. ",Anthony,5,5,Yiyen,,0-0-0-6-0-0-4-0-0-14-0-0-12-0-0-0
+866,60,10,RequestNewWinCondition(),Please show me another win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,12-0-0-0-1-0-0-0-2-0-0-0-3-0-0-0
+866,60,11,Finish(),Thanks for the help!,Finish,You're welcome!,Anthony,5,5,Yiyen,,12-0-0-0-1-0-0-0-2-0-0-0-3-0-0-0

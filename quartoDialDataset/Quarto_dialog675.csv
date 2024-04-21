@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+675,60,0,Start(),Hey! Can you teach me how to play Quarto?,Start,"Yes, I'd love to.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+675,60,1,RequestNewWinCondition(),Can you show me a win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-3-0-0-0-2-0-0-0-11-0-0-0-1
+675,60,2,"Same, Confirm(User_ID=1, Height)",Is it a win because the pieces are of the same height?,NotSure(),"You know what, I’m not quite sure.",Ruijie,5,5,Luke,,0-0-0-3-0-0-0-2-0-0-0-11-0-0-0-1
+675,60,3,"Same, Confirm(User_ID=1, Color)",Is it a win because the pieces are in the same color?,NotSure(),I’m not quite sure.,Ruijie,5,5,Luke,,0-0-0-3-0-0-0-2-0-0-0-11-0-0-0-1
+675,60,4,"Same, RequestOtherPlayers()","Switch to this board, can the other player undo this win?",Inform([]),"No, this win is absolute.",Ruijie,5,5,Luke,,0-0-0-3-0-0-0-2-0-0-0-11-0-0-0-1
+675,60,5,"Same, Confirm(User_ID=1, Height)",Is it a win because the pieces are of the same height?,Negate(),"No, that’s not the reason.",Ruijie,5,5,Luke,,0-0-0-3-0-0-0-2-0-0-0-11-0-0-0-1
+675,60,6,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-6-0-0-2-0-0-9-0-0-1-0-0-0
+675,60,7,"Same, Confirm(User_ID=1, Color)",Is it a win because the pieces are in the same color?,NotSure(),"I'm actually not quite sure.
+",Ruijie,5,5,Luke,,0-0-0-6-0-0-2-0-0-9-0-0-1-0-0-0
+675,60,8,"Context Switch, Confirm(User_ID=1, Color)","Switch to this board, is it a win because the pieces are of the same color?",NotSure(),"You know what, I’m not quite sure.",Ruijie,5,5,Luke,,0-0-0-3-0-0-0-2-0-0-0-11-0-0-0-1
+675,60,9,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-6-0-0-0-2-0-0-0-4-0-0-0-3-0-0
+675,60,10,Finish(),Thank you so much! I got it.,Finish,You are a fast learner!,Ruijie,5,5,Luke,,0-6-0-0-0-2-0-0-0-4-0-0-0-3-0-0

@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+862,60,0,Start(),"Hi, can you teach me Quarto?",Start,"Sure, let's start.",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+862,60,1,RequestNewWinCondition(),Please show me a win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-9-0-0-7-0-0-15-0-0-11-0-0-0
+862,60,2,RequestNewWinCondition(),How about a second?,Inform,Assume you demonstrate this win condition,Anthony,5,4,Yiyen,,0-0-0-2-0-0-6-0-0-9-0-0-10-0-0-0
+862,60,3,"Context Switch, RequestOtherPlayers()","Looking back to this board, how could another player undo this win?",Inform([]),There is nothing they could do. ,Anthony,5,5,Yiyen,,0-0-0-9-0-0-7-0-0-15-0-0-11-0-0-0
+862,60,4,"Same, Request(User_ID=1, Rotate)",How can I rotate these pieces?,Inform([90]),You rotate them so they are aligned vertically. ,Anthony,4,5,Yiyen,,0-0-0-9-0-0-7-0-0-15-0-0-11-0-0-0
+862,60,5,"Same, Confirm(User_ID=1, Quantity)",Is this a win because of the number of pieces on the board?,Affirm(),"Yes, there are four in a row. ",Anthony,5,5,Yiyen,,0-0-0-9-0-0-7-0-0-15-0-0-11-0-0-0
+862,60,6,"Same, Confirm(User_ID=1, Color)",Is this a win becasue of the pieces' color?,Affirm(),"Yeah, they are all green.",Anthony,5,5,Yiyen,,0-0-0-9-0-0-7-0-0-15-0-0-11-0-0-0
+862,60,7,RequestNewWinCondition(),Please show me another win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-11-9-10-16
+862,60,8,RequestNewWinCondition(),How about another?,Inform,Assume you demonstrate this win condition,Anthony,5,4,Yiyen,,0-0-8-0-0-0-5-0-0-0-2-0-0-0-4-0
+862,60,9,"Context Switch, Confirm(User_ID=1, Height)","Looking back to this board, is this a win because of the height of the pieces?",Affirm(),"Yeah, that's exactly why. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-11-9-10-16
+862,60,10,Finish(),"Okay, thanks for the help.",Finish,"My pleasure, bye!",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-11-9-10-16

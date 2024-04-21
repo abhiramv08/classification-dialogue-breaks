@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+287,50,0,Start(),Can you teach me how to play Quarto?,Start,Sure. Where would you like to begin?,Jacob,5,5,Anthony,,0-1-0-0-0-3-0-0-0-7-0-0-0-4-0-0
+287,50,1,RequestNewWinCondition(),Can you show me one way to win the game?,Inform,Assume you demonstrate this win condition,Jacob,5,5,Anthony,,0-0-0-0-0-0-0-0-0-0-0-0-1-11-3-15
+287,50,2,"Same, RequestOtherPlayers()",Is there any way another player could take away this win condition?,Inform([]),No player can take an action that would take away this win.,Jacob,5,4,Anthony,,0-0-0-0-0-0-0-0-0-0-0-0-1-11-3-15
+287,50,3,"Same, RequestOtherPlayers()",Could another player take any action to take away this win condition?,Inform([]),"As I said before, no player could take such an action.",Jacob,5,4,Anthony,,0-0-0-0-0-0-0-0-0-0-0-0-1-11-3-15
+287,50,4,"Same, Request(User_ID=1, Translate)",In what other rows could these pieces lie and remain a win condition?,"Inform(['row1', 'row2'])",These pieces could lie in the second and third rows from the bottom.,Jacob,5,4,Anthony,,0-0-0-0-0-0-0-0-0-0-0-0-1-11-3-15
+287,50,5,RequestNewWinCondition(),Can you show me another way to win?,Inform,Assume you demonstrate this win condition,Jacob,5,5,Anthony,,0-0-0-0-0-0-0-0-0-0-0-0-12-11-10-14
+287,50,6,"Same, Confirm(User_ID=1, RemovePiece(0,3))",Would this still be a win if the piece in the bottom right were removed?,Negate(),"No, this would no longer be a win.",Jacob,5,5,Anthony,,0-0-0-0-0-0-0-0-0-0-0-0-12-11-10-14
+287,50,7,RequestNewWinCondition(),Can you show me another way to win?,Inform,Assume you demonstrate this win condition,Jacob,5,5,Anthony,,0-0-0-9-0-0-5-0-0-2-0-0-1-0-0-0
+287,50,8,RequestNewWinCondition(),Might I see another?,Inform,Assume you demonstrate this win condition,Jacob,5,5,Anthony,,6-0-0-0-8-0-0-0-10-0-0-0-12-0-0-0
+287,50,9,"Same, Confirm(User_ID=1, RemovePiece(0,0))",Would this still be a win if the piece in the bottom left were removed?,Negate(),"No, that piece is vital to this win condition.",Jacob,5,5,Anthony,,6-0-0-0-8-0-0-0-10-0-0-0-12-0-0-0
+287,50,10,Finish(),I think I know enough now. Thank you for teaching me.,Finish,No problem. Bye.,Jacob,5,5,Anthony,,6-0-0-0-8-0-0-0-10-0-0-0-12-0-0-0

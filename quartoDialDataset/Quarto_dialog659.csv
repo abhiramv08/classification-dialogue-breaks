@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+659,60,0,Start(),What's up! Can you show me how to play Quarto?,Start,I'd love to!,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+659,60,1,RequestNewWinCondition(),Can you show me what a win condition looks like?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-5-0-0-0-10-0-0-0-14-0-0-0-6-0
+659,60,2,RequestNewWinCondition(),Can you show me a win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,12-0-0-0-0-3-0-0-0-0-8-0-0-0-0-7
+659,60,3,"Same, Request(User_ID=1, Rotate)",Can I rotate the pieces by some degrees?,Inform([90]),"Sure, you can rotate them by ninety degrees.",Ruijie,4,5,Luke,,12-0-0-0-0-3-0-0-0-0-8-0-0-0-0-7
+659,60,4,"Context Switch, Request(User_ID=1, Translate)","Switch to this board, can I put the pieces somewhere else?","Inform(['col1', 'col3'])","Yes, you can put them on the first column or the third column. ",Ruijie,3,5,Luke,,0-0-5-0-0-0-10-0-0-0-14-0-0-0-6-0
+659,60,5,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-14-0-0-12-0-0-11-0-0-10-0-0-0
+659,60,6,"Context Switch, Confirm(User_ID=1, Color)","Switch to this board, is it a win because the pieces are in the same color?",Negate(),"No, that’s not the reason.",Ruijie,5,5,Luke,,0-0-5-0-0-0-10-0-0-0-14-0-0-0-6-0
+659,60,7,"Same, Confirm(User_ID=1, Color)",Is it a win because the pieces are in the same color?,Negate(),That’s just wrong.,Ruijie,5,5,Luke,,0-0-5-0-0-0-10-0-0-0-14-0-0-0-6-0
+659,60,8,"Same, Confirm(User_ID=1, Shape)",Is it a win because the pieces are of the same shape?,NotSure(),"You know what, I’m not quite sure.",Ruijie,5,5,Luke,,0-0-5-0-0-0-10-0-0-0-14-0-0-0-6-0
+659,60,9,"Context Switch, Confirm(User_ID=1, Shape)","Switch to this board, is it a win because the pieces are of the same shape?",Negate(),That’s wrong.,Ruijie,5,5,Luke,,0-0-0-14-0-0-12-0-0-11-0-0-10-0-0-0
+659,60,10,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-7-6-5-2
+659,60,11,"Same, Confirm(User_ID=1, Color)",Is it a win because the pieces are in the same color?,NotSure(),I'm actually not quite sure.,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-7-6-5-2
+659,60,12,Finish(),Thank you! ,Finish,You are welcome!,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-7-6-5-2

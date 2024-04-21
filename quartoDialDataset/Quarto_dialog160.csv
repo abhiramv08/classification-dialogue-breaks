@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+160,100,0,Start(),Hi. Could you teach me how to play Quarto?,Start,Hello. I certainly can.,Jacob,,,,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+160,100,1,RequestNewWinCondition(),"To begin, can you show me a win condition?",Inform(),Assume you demonstrate this win condition,Jacob,,,,,0-0-0-9-0-0-0-11-0-0-0-15-0-0-0-7
+160,100,2,RequestNewWinCondition(),Thank you. May I see another?,Inform(),Assume you demonstrate this win condition,Jacob,,,,,0-0-0-0-0-0-0-0-0-0-0-0-1-4-2-11
+160,100,3,"Context Switch, RequestOtherPlayers()","Regarding this first board, what other actions can a player take to invalidate this win?",Inform([]),No opponent can take away this win.,Jacob,,,,,0-0-0-9-0-0-0-11-0-0-0-15-0-0-0-7
+160,100,4,RequestNewWinCondition(),Can I see another winning board?,Inform(),Assume you demonstrate this win condition,Jacob,,,,,5-0-0-0-0-6-0-0-0-0-2-0-0-0-0-4
+160,100,5,"Same, Confirm(User_ID=1, Quantity)",Is this a win condition because of the number of pieces on the board?,Affirm(),Yes.,Jacob,,,,,5-0-0-0-0-6-0-0-0-0-2-0-0-0-0-4
+160,100,6,"Same, Confirm(User_ID=1, Quantity)","Just to clarify, the number of pieces here is important, correct?",Affirm(),"Yes, that is correct.",Jacob,,,,,5-0-0-0-0-6-0-0-0-0-2-0-0-0-0-4
+160,100,7,"Win Same {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}",What about the hollowness of the pieces? Is that an important part of this win condition?,Negate(),"No, the hollowness of the pieces does not matter here.",Jacob,,,,,5-0-0-0-0-6-0-0-0-0-2-0-0-0-0-4
+160,100,8,"Context Switch, Confirm(User_ID=1, Height)","Regarding this board, do the heights of the pieces matter?",Negate(),No. Any height pieces could work here.,Jacob,,,,,0-0-0-0-0-0-0-0-0-0-0-0-1-4-2-11
+160,100,9,"Context Switch, Confirm(User_ID=1, AddPiece(0,0))","If I were to add a piece at the bottom left corner of this board, would it still be a winning board?",Affirm(),"Yes, it would.",Jacob,,,,,0-0-0-9-0-0-0-11-0-0-0-15-0-0-0-7
+160,100,10,RequestNewWinCondition(),Could you show me another win condition?,Inform(),Assume you demonstrate this win condition,Jacob,,,,,3-0-0-0-0-16-0-0-0-0-8-0-0-0-0-15
+160,100,11,Finish(),"Alright, thank you for teaching me. Goodbye.",Finish,No problem. Bye.,Jacob,,,,,3-0-0-0-0-16-0-0-0-0-8-0-0-0-0-15

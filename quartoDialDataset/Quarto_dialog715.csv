@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+715,60,0,Start(),"Hi, can you show me how to play Quarto?",Start,"Yes, let's do it!",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+715,60,1,RequestNewWinCondition(),Can you show me a win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,8-0-0-0-0-15-0-0-0-0-13-0-0-0-0-7
+715,60,2,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,12-0-0-0-0-11-0-0-0-0-15-0-0-0-0-3
+715,60,3,"Same, Confirm(User_ID=1, Rotate(90))",Can I rotate the pieces by ninety degrees?,Affirm(),"Sure, you can do that.",Ruijie,3,5,Luke,,12-0-0-0-0-11-0-0-0-0-15-0-0-0-0-3
+715,60,4,"Context Switch, Confirm(User_ID=1, AddPiece(2,3))","Switch to this board, can I add one more piece on the third row, the fourth column?",Affirm(),"Sure, that’s legit to do.",Ruijie,5,5,Luke,,8-0-0-0-0-15-0-0-0-0-13-0-0-0-0-7
+715,60,5,"Context Switch, Confirm(User_ID=1, Rotate(90))","Switch to this board, can I rotate the pieces by ninety degrees?",Affirm(),"Yes, you can.",Ruijie,3,5,Luke,,12-0-0-0-0-11-0-0-0-0-15-0-0-0-0-3
+715,60,6,"Same, Confirm(User_ID=1, RemovePiece(1,2))","Can I remove one piece from the second row, the third column?",Negate(),"No, that will break the win condition.",Ruijie,5,5,Luke,,12-0-0-0-0-11-0-0-0-0-15-0-0-0-0-3
+715,60,7,"Same, Confirm(User_ID=1, Rotate(90))",Can I rotate the pieces by ninety degrees?,Affirm(),"Sure, you can do that.",Ruijie,4,5,Luke,,12-0-0-0-0-11-0-0-0-0-15-0-0-0-0-3
+715,60,8,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,4-0-0-0-0-16-0-0-0-0-6-0-0-0-0-12
+715,60,9,"Same, Confirm(User_ID=1, Color)",Is it a win because the pieces are in the same color?,NotSure(),I'm actually not quite sure.,Ruijie,5,5,Luke,,4-0-0-0-0-16-0-0-0-0-6-0-0-0-0-12
+715,60,10,"Same, Confirm(User_ID=1, Shape)","Is it a win because the pieces are of the same shape?
+",Negate(),"No, that’s irrelevant.",Ruijie,5,5,Luke,,4-0-0-0-0-16-0-0-0-0-6-0-0-0-0-12
+715,60,11,Finish(),Thanks! I think I got it!,Finish,You are welcome.,Ruijie,5,5,Luke,,4-0-0-0-0-16-0-0-0-0-6-0-0-0-0-12

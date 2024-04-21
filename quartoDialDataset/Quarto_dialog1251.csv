@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+1251,60,0,Start(),"Hi, could you teach me how to play Quarto?",Start,"Sure, let's get started!",Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+1251,60,1,RequestNewWinCondition(),Could you show me a win first?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-0-0-4-0-0-1-0-0-6-0-0-8-0-0-0
+1251,60,2,RequestNewWinCondition(),"Could you show me another winning board?
+",Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-6-5-16-15
+1251,60,3,"Context Switch, Confirm(User_ID=1, Height)","Switching to this board, is it a win because of the height of the pieces?",Affirm(),Yes.,Shaobo,5,5,John,,0-0-0-4-0-0-1-0-0-6-0-0-8-0-0-0
+1251,60,4,"Same, Confirm(User_ID=1, Shape)",And is it a win because of the shape of the pieces?,Negate(),"No, it is a win because all pieces have the same height.",Shaobo,5,5,John,,0-0-0-4-0-0-1-0-0-6-0-0-8-0-0-0
+1251,60,5,"Context Switch, Confirm(User_ID=1, Color)","Switching to this board, is it a win because of the color of the pieces?
+",NotSure(),"Sorry, I am not sure about it.",Shaobo,5,4,John,,0-0-0-0-0-0-0-0-0-0-0-0-6-5-16-15
+1251,60,6,"Same, Confirm(User_ID=1, Hollowness)",And is it a win because of the hollowness of the pieces?,NotSure(),"Sorry, I am not sure about it.",Shaobo,5,4,John,,0-0-0-0-0-0-0-0-0-0-0-0-6-5-16-15
+1251,60,7,"Context Switch, Confirm(User_ID=1, Rotate(90))","Switching to this board, is it still a win if I rotate the pieces to the first column?",Affirm(),"Yes, it is still a win.",Shaobo,5,5,John,,0-0-0-4-0-0-1-0-0-6-0-0-8-0-0-0
+1251,60,8,RequestNewWinCondition(),Could you show me one more winning board?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-1-5-11-15
+1251,60,9,RequestNewWinCondition(),I need one more winning board for a better understanding.,Inform,Assume you demonstrate this win condition,Shaobo,5,4,John,,0-0-0-0-0-0-0-0-0-0-0-0-4-12-7-11
+1251,60,10,Finish(),Thanks for the help! I have learned a lot!,Finish,You are welcome!,Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-4-12-7-11

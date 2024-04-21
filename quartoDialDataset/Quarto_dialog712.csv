@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+712,60,0,Start(),"Hey, can you show me how to play Quarto?",Start,"Yes, it would be fun!",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+712,60,1,RequestNewWinCondition(),Can you show me what a win condition looks like?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-9-0-0-1-0-0-6-0-0-10-0-0-0
+712,60,2,RequestNewWinCondition(),Could you give me a win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-1-0-0-3-0-0-11-0-0-13-0-0-0
+712,60,3,"Context Switch, Confirm(User_ID=1, Hollowness)","Switch to this board, does the hollowness of the pieces make it a win?
+",Affirm(),"Yes, you’re right about that!",Ruijie,5,5,Luke,,0-0-0-9-0-0-1-0-0-6-0-0-10-0-0-0
+712,60,4,"Context Switch, Confirm(User_ID=1, RemovePiece(1,1))","Switch to this board, can I add one more piece on the second row, the second column?
+",Negate(),"No, that will break the win.",Ruijie,5,5,Luke,,0-0-0-1-0-0-3-0-0-11-0-0-13-0-0-0
+712,60,5,"Same, Confirm(User_ID=1, AddPiece(0,2))","Can I add one more piece on the first row, the third column?",NotSure(),"Well, I'm not sure.",Ruijie,5,5,Luke,,0-0-0-1-0-0-3-0-0-11-0-0-13-0-0-0
+712,60,6,"Same, RequestOtherPlayers()",Can the other player undo this win?,Inform([]),"No, this win is absolute.",Ruijie,5,5,Luke,,0-0-0-1-0-0-3-0-0-11-0-0-13-0-0-0
+712,60,7,"Same, Confirm(User_ID=1, Hollowness)",Does the hollowness of the pieces make it a win?,NotSure(),"Well, I'm not sure.",Ruijie,5,5,Luke,,0-0-0-1-0-0-3-0-0-11-0-0-13-0-0-0
+712,60,8,"Context Switch, Confirm(User_ID=1, Shape)","Switch to this board, is it a win because the pieces are of the same shape?
+",NotSure(),Nope. They are not in the same shape obviously.,Ruijie,5,5,Luke,,0-0-0-9-0-0-1-0-0-6-0-0-10-0-0-0
+712,60,9,"Context Switch, Request(User_ID=1, Rotate)","Switch to this board, can I rotate the pieces by some degrees?
+",Inform([90]),"Yes, you can rotate them by ninety degrees.
+",Ruijie,4,5,Luke,,0-0-0-1-0-0-3-0-0-11-0-0-13-0-0-0
+712,60,10,Finish(),Thanks! I got it!,Finish,You are a fast learner!,Ruijie,5,5,Luke,,0-0-0-1-0-0-3-0-0-11-0-0-13-0-0-0

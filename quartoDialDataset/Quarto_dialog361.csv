@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+361,50,0,Start(),"Hi, can you teach me to play Quarto?",Start,"Sure, let's play",John,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+361,50,1,RequestNewWinCondition(),Can you show me an example of a win?,Inform,Assume you demonstrate this win condition,John,5,5,Derek,,11-0-0-0-0-12-0-0-0-0-16-0-0-0-0-8
+361,50,2,"Same, Request(User_ID=1, Rotate)",How could I rotate these pieces and still have a win?,Inform([90]),"You could rotate the pieces to be 90 degrees from the horizontal, vertically in the first column",John,5,4,Derek,,11-0-0-0-0-12-0-0-0-0-16-0-0-0-0-8
+361,50,3,"Same, Confirm(User_ID=1, Color)",Is the color of the pieces the reason this is a win?,Negate(),"No, the pieces are not all the same color",John,5,5,Derek,,11-0-0-0-0-12-0-0-0-0-16-0-0-0-0-8
+361,50,4,RequestNewWinCondition(),Can I see another example of a win condition?,Inform,Assume you demonstrate this win condition,John,5,5,Derek,,14-0-0-0-0-16-0-0-0-0-10-0-0-0-0-6
+361,50,5,RequestNewWinCondition(),What is another example of a win?,Inform,Assume you demonstrate this win condition,John,5,4,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-9-14-1-2
+361,50,6,"Context Switch, Confirm(User_ID=1, Shape)","Now for this board, is the shape of the pieces important to this win?",NotSure(),I'm not sure how the shape affects this board,John,5,4,Derek,,11-0-0-0-0-12-0-0-0-0-16-0-0-0-0-8
+361,50,7,RequestNewWinCondition(),Can I see another win scenario?,Inform,Assume you demonstrate this win condition,John,5,5,Derek,,8-0-0-0-0-4-0-0-0-0-14-0-0-0-0-10
+361,50,8,"Context Switch, Confirm(User_ID=1, AddPiece(2,3))","Going to this board here, is it still a win if I add a piece in the second row from the top, rightmost column?",Affirm(),"Yes, that piece would have no effect on this win condition",John,5,3,Derek,feels little weird reading that,0-0-0-0-0-0-0-0-0-0-0-0-9-14-1-2
+361,50,9,RequestNewWinCondition(),Can I see another example of a win?,Inform,Assume you demonstrate this win condition,John,5,5,Derek,,0-0-0-12-0-0-16-0-0-14-0-0-2-0-0-0
+361,50,10,Finish(),"I think I have enough information for now, thanks for playing",Finish,"You're welcome, goodbye",John,5,5,Derek,,0-0-0-12-0-0-16-0-0-14-0-0-2-0-0-0

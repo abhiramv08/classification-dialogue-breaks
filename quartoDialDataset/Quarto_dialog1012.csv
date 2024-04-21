@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+1012,60,0,Start(),"Hi, can you teach me how to play Quarto?",Start,Sure.,Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+1012,60,1,RequestNewWinCondition(),Can you show me a winning board?,Inform,Assume you demonstrate this win condition,Tianyi,5,4,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-1-3-9-5
+1012,60,2,"Same, Confirm(User_ID=1, Color)","In this case, is it a win because all pieces have the same color?",Affirm(),"Yes, you are right.",Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-1-3-9-5
+1012,60,3,"Same, Confirm(User_ID=1, Height)","And, it is a win because most pieces are short right?",Negate(),"No, that is not the reason.",Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-1-3-9-5
+1012,60,4,RequestNewWinCondition(),Can you show me a new win pattern?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,0-0-0-1-0-0-6-0-0-2-0-0-14-0-0-0
+1012,60,5,"Context Switch, Confirm(User_ID=1, Rotate(90))","In that board, if I rotate all pieces 90 degrees to the rows and put them in the first column, can it still be a win?",NotSure(),"Sorry, I am uncertain about this.",Tianyi,5,4,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-1-3-9-5
+1012,60,6,"Same, Confirm(User_ID=1, Hollowness)","And, is it a win because most pieces are solid?",Negate(),Nope.,Tianyi,5,4,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-1-3-9-5
+1012,60,7,RequestNewWinCondition(),Can you show me another win pattern?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-12-10-14-15
+1012,60,8,"Context Switch, RequestOtherPlayers()","In this board, can someone take actions to prevent the win?",Inform([]),"No, there is nothing he/she can do.",Tianyi,5,4,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-1-3-9-5
+1012,60,9,"Context Switch, Confirm(User_ID=1, Height)","In this case, is it wins because most pieces are short?",NotSure(),I am not sure about this. Maybe you are right.,Tianyi,5,4,Ruijie,,0-0-0-1-0-0-6-0-0-2-0-0-14-0-0-0
+1012,60,10,"Context Switch, Confirm(User_ID=1, AddPiece(2,3))","For this board, if I put a new pieces at the rightmost column of the third row, can it still be a win?",NotSure(),I cannot determine whether that is true.,Tianyi,5,4,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-12-10-14-15
+1012,60,11,Finish(),"Thank you so much, I have got a lot of new stuff today.",Finish,You are welcome.,Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-12-10-14-15

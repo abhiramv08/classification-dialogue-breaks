@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+327,50,0,Start(),"Hi, would you teach me Quarto?",Start,"Yeah, sure thing. ",Anthony,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+327,50,1,RequestNewWinCondition(),Please show me a win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Ruijie,,0-0-0-1-0-0-5-0-0-9-0-0-2-0-0-0
+327,50,2,RequestNewWinCondition(),Please show me another win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-15-13-14-9
+327,50,3,RequestNewWinCondition(),Please show me a third win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,4,Ruijie,,9-0-0-0-3-0-0-0-1-0-0-0-12-0-0-0
+327,50,4,"Context Switch, Confirm(User_ID=1, Height)","Looking over at this board, is it a win because of the height the pieces are at?",Affirm(),"Yes, the pieces are the same height, so it's a win?",Anthony,5,4,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-15-13-14-9
+327,50,5,"Context Switch, Confirm(User_ID=1, Quantity)","Switching to this board, is it a win because of how many pieces there are?",Affirm(),"Yes, there are four triangles in a row, so it's a win. ",Anthony,5,5,Ruijie,,9-0-0-0-3-0-0-0-1-0-0-0-12-0-0-0
+327,50,6,"Context Switch, Confirm(User_ID=1, Color)","Let's switch to this board, is it a win because of the pieces' colors?",Negate(),"No, their color is not why this is a win. ",Anthony,5,4,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-15-13-14-9
+327,50,7,"Context Switch, Confirm(User_ID=1, AddPiece(2,0))","Switch over to this board now, could I add a piece here?",NotSure(),I'm not entirely sure. ,Anthony,4,4,Ruijie,,0-0-0-1-0-0-5-0-0-9-0-0-2-0-0-0
+327,50,8,"Same, Confirm(User_ID=1, RemovePiece(1,1))","Okay, well can I remove this piece?",NotSure(),I'm not sure about that either. ,Anthony,4,3,Ruijie,,0-0-0-1-0-0-5-0-0-9-0-0-2-0-0-0
+327,50,9,"Context Switch, Request(User_ID=1, Translate)",How can I shift the pieces of this other board?,"Inform(['col1', 'col2'])",For this board you could slide them over to column 1 or column 2. ,Anthony,4,3,Ruijie,,9-0-0-0-3-0-0-0-1-0-0-0-12-0-0-0
+327,50,10,Finish(),Thanks so much for the help!,Finish,It was my pleasure!,Anthony,5,5,Ruijie,,9-0-0-0-3-0-0-0-1-0-0-0-12-0-0-0

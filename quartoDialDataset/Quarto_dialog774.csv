@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+774,60,0,Start(),"Hey I really want to learn playing Quarto, can you teach me?",Start,Sure.,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+774,60,1,RequestNewWinCondition(),Can you show me a win condition to start?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-4-0-0-3-0-0-1-0-0-12-0-0-0
+774,60,2,"Same, Request(User_ID=1, Rotate)",How can I aline these pieces in different angle and keep winning?,Inform([90]),You can aline them vertically.,Derek,4,5,Shaobo,,0-0-0-4-0-0-3-0-0-1-0-0-12-0-0-0
+774,60,3,RequestNewWinCondition(),Can you show me one more winning board?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-9-14-15-12
+774,60,4,"Same, Request(User_ID=1, Translate)",Which row can I shift all piece to and keep winning.,"Inform(['row1', 'row2', 'row3'])",You can plecae them in any row.,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-9-14-15-12
+774,60,5,RequestNewWinCondition(),Can you show me one more winning board?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,12-0-0-0-2-0-0-0-16-0-0-0-4-0-0-0
+774,60,6,"Same, Confirm(User_ID=1, Quantity)",Do I have to have four pieces to win?,Affirm(),Sure.,Derek,5,4,Shaobo,,12-0-0-0-2-0-0-0-16-0-0-0-4-0-0-0
+774,60,7,"Context Switch, Confirm(User_ID=1, Quantity)","Switching to this board, do I have to have four pieces to win?",Affirm(),"Yes, that's the minimum requirement.",Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-9-14-15-12
+774,60,8,"Context Switch, Confirm(User_ID=1, Shape)",Moving to this board. is that a win because the shape pattern of all pieces?,NotSure(),"Sorry, I am not sure about that.",Derek,5,5,Shaobo,,0-0-0-4-0-0-3-0-0-1-0-0-12-0-0-0
+774,60,9,"Context Switch, Confirm(User_ID=1, Quantity)","Moving to this board, is the number of pieces important for the win?",NotSure(),It really depends on how you place these pieces.,Derek,4,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-9-14-15-12
+774,60,10,Finish(),Thank you for teaching me today!,Finish,Bye!,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-9-14-15-12

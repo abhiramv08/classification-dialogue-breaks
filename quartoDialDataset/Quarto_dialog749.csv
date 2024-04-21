@@ -1,0 +1,22 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+749,60,0,Start(),Hey! Can you show me how to play Quarto?,Start,"Sure, let's get started!",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+749,60,1,RequestNewWinCondition(),"Can you show me what a win condition looks like?
+",Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-14-0-0-1-0-0-13-0-0-9-0-0-0
+749,60,2,"Same, Confirm(User_ID=1, Hollowness)","For this board, does the hollowness of the pieces make it a win?
+",NotSure(),"Sorry, I don't know.",Ruijie,4,5,Luke,,0-0-0-14-0-0-1-0-0-13-0-0-9-0-0-0
+749,60,3,"Same, Confirm(User_ID=1, Color)","Does the color of pieces make it a win?
+",Negate(),"Nope, they are not even in the same color.",Ruijie,5,5,Luke,,0-0-0-14-0-0-1-0-0-13-0-0-9-0-0-0
+749,60,4,RequestNewWinCondition(),Can you show me a new win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-5-0-0-1-0-0-13-0-0-3-0-0-0
+749,60,5,"Same, Confirm(User_ID=1, AddPiece(1,2))","For this board, can I add one more piece on the second row, the third column?
+",Affirm(),"Sure, you can do that.",Ruijie,4,3,Luke,,0-0-0-5-0-0-1-0-0-13-0-0-3-0-0-0
+749,60,6,"Context Switch, Confirm(User_ID=1, Height)","Switch to this board, is it a win because the pieces are of the same height?
+",Negate(),"No, that’s not the reason.",Ruijie,5,5,Luke,,0-0-0-14-0-0-1-0-0-13-0-0-9-0-0-0
+749,60,7,"Same, Confirm(User_ID=1, Rotate(90))","Can I rotate the pieces by ninety degrees?
+",Affirm(),"Yes, that's still a win.",Ruijie,5,3,Luke,,0-0-0-14-0-0-1-0-0-13-0-0-9-0-0-0
+749,60,8,"Context Switch, RequestOtherPlayers()","Switch to this board, can the other player undo this win?
+",Inform([]),"No, this win is absolute.
+",Ruijie,5,5,Luke,,0-0-0-5-0-0-1-0-0-13-0-0-3-0-0-0
+749,60,9,RequestNewWinCondition(),"Can you give me a new win?
+",Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-9-7-11-1
+749,60,10,"Context Switch, Confirm(User_ID=1, RemovePiece(2,2))","Switch to this board, can I remove the piece on the third row, the third column and still have a win?",Negate(),"Nope, that will break it.",Ruijie,5,4,Luke,,0-0-0-5-0-0-1-0-0-13-0-0-3-0-0-0
+749,60,11,Finish(),Thanks! I've learned a lot!,Finish,You are welcome! Have a good one!,Ruijie,5,5,Luke,,0-0-0-5-0-0-1-0-0-13-0-0-3-0-0-0

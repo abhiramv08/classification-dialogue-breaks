@@ -1,0 +1,15 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+136,100,0,Start(),Can you please teach me how to play Quarto?,Start,"Sure, I'd be happy to",Daniel,,,,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+136,100,1,RequestNewWinCondition(),Can you show me a board where someone wins?,Inform(),Assume you demonstrate this win condition,Daniel,,,,,0-0-0-5-0-0-0-11-0-0-0-9-0-0-0-3
+136,100,2,RequestNewWinCondition(),Can you show me a different winning board?,Inform(),Assume you demonstrate this win condition,Daniel,,,,,12-0-0-0-0-14-0-0-0-0-6-0-0-0-0-8
+136,100,3,"Win Context Switch {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}",Is this a win because of the hollowniss of the pieces?,Negate(),No,Daniel,,,,,0-0-0-5-0-0-0-11-0-0-0-9-0-0-0-3
+136,100,4,RequestNewWinCondition(),Can you show me another winning board please?,Inform(),Assume you demonstrate this win condition,Daniel,,,,,1-0-0-0-0-13-0-0-0-0-5-0-0-0-0-6
+136,100,5,"Same, Request(User_ID=1, Translate)",Can I move these pieces and still win?,Inform([]),No,Daniel,,,,,1-0-0-0-0-13-0-0-0-0-5-0-0-0-0-6
+136,100,6,"Same, Confirm(User_ID=1, Quantity)",Is this a win becuase of the number of pieces?,Affirm(),Yes,Daniel,,,,,1-0-0-0-0-13-0-0-0-0-5-0-0-0-0-6
+136,100,7,"Context Switch, Confirm(User_ID=1, Shape)",Is this a win because of the shape of the pieces?,Negate(),No,Daniel,,,,,12-0-0-0-0-14-0-0-0-0-6-0-0-0-0-8
+136,100,8,"Context Switch, Request(User_ID=1, Rotate)",How can I rotate these pieces and still win?,Inform([90]),You can rotate them 90 degrees,Daniel,,,,,1-0-0-0-0-13-0-0-0-0-5-0-0-0-0-6
+136,100,9,"Same, Confirm(User_ID=1, Rotate(90))",If I rotate these pieces 90 degrees will I still win?,Affirm(),Yes,Daniel,,,,,1-0-0-0-0-13-0-0-0-0-5-0-0-0-0-6
+136,100,10,"Context Switch, Request(User_ID=1, Rotate)",How can I rotate these pieces and still win?,"Inform([135, 180])",You can rotate them horizontally or diagonally,Daniel,,,,,0-0-0-5-0-0-0-11-0-0-0-9-0-0-0-3
+136,100,11,"Same, Confirm(User_ID=1, Height)",Is this a win because of the height of the pieces?,Negate(),No,Daniel,,,,,0-0-0-5-0-0-0-11-0-0-0-9-0-0-0-3
+136,100,12,"Context Switch, Confirm(User_ID=1, AddPiece(3,2))","If I add a pieces at 3,2 is this still a win?",Affirm(),Yes,Daniel,,,,,1-0-0-0-0-13-0-0-0-0-5-0-0-0-0-6
+136,100,13,Finish(),Thank you!,Finish,No problem!,Daniel,,,,,1-0-0-0-0-13-0-0-0-0-5-0-0-0-0-6

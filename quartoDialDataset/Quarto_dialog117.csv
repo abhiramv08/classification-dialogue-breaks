@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+117,100,0,Start(),"Hello, could you tell me how to play Quarto?",Start,"Yes, sure!",Shaobo,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+117,100,1,RequestNewWinCondition(),Can you show me what a winning board looks like?,Inform(),Assume you demonstrate this win condition,Shaobo,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-9-1-11-5
+117,100,2,"Same , Confirm(User_ID=1, Shape)","For the board you juse showed me, is the shape of pieces the reason why it is a win?",Negate(),"No, the shape does not contribute to a win here.",Shaobo,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-9-1-11-5
+117,100,3,"Same , Confirm(User_ID=1, RemovePiece(0,0))","For the board you just showed, is it still a win if I remove the piece on the first row and the first column?",Negate(),"No, it will not be a winning board anymore.",Shaobo,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-9-1-11-5
+117,100,4,"Same, Confirm(User_ID=1, Quantity)","For the board you just showed, does the number of pieces affect the win?",Affirm(),"Yes, the number of pieces matters.",Shaobo,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-9-1-11-5
+117,100,5,RequestNewWinCondition(),Could you show me another winning board?,Inform(),Assume you demonstrate this win condition,Shaobo,5,5,Yiyen,,0-0-0-13-0-0-5-0-0-10-0-0-2-0-0-0
+117,100,6,RequestNewWinCondition(),Could you show me one more winning board?,Inform(),Assume you demonstrate this win condition,Shaobo,5,5,Yiyen,,3-0-0-0-0-5-0-0-0-0-11-0-0-0-0-1
+117,100,7,RequestNewWinCondition(),Could you give me another winning board?,Inform(),Assume you demonstrate this win condition,Shaobo,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-3-2-12-4
+117,100,8,RequestNewWinCondition(),Is there any other way to win?,Inform(),Assume you demonstrate this win condition,Shaobo,4,5,Yiyen,way -> ways,0-0-0-0-0-0-0-0-0-0-0-0-15-8-11-16
+117,100,9,"Context Switch, Request(User_ID=1, Rotate)","So for this board, how could I rotate the board so that it is still a win?",Inform([90]),"You could rotate the board 90 degrees, which means moving pieces to the first column.",Shaobo,5,4,Yiyen,,3-0-0-0-0-5-0-0-0-0-11-0-0-0-0-1
+117,100,10,"Context Switch, RequestOtherPlayers()","For this board, how could another player prevent the win?",Inform([]),There is no way to revoke this win.,Shaobo,5,5,Yiyen,,0-0-0-13-0-0-5-0-0-10-0-0-2-0-0-0
+117,100,11,Finish(),Thank you! That's all I want to ask.,Finish,You are welcome!,Shaobo,5,5,Yiyen,,0-0-0-13-0-0-5-0-0-10-0-0-2-0-0-0

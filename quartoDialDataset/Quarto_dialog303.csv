@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+303,50,0,Start(),Hi! Could you teach me Quarto?,Start,Yes of couse let's start.,Luke,5,5,Derek,,0-0-0-7-0-0-11-0-0-8-0-0-15-0-0-0
+303,50,1,RequestNewWinCondition(),Can you first show me a win condition?,Inform,Assume you demonstrate this win condition,Luke,5,5,Derek,,0-0-0-11-0-0-15-0-0-1-0-0-5-0-0-0
+303,50,2,"Same, Confirm(User_ID=1, AddPiece(2,0))",What if I add a piece to this location?,Affirm(),You are allowed to do this without losing the win condition.,Luke,2,3,Derek,,0-0-0-11-0-0-15-0-0-1-0-0-5-0-0-0
+303,50,3,RequestNewWinCondition(),Can you show me a new winning board?,Inform,Assume you demonstrate this win condition,Luke,5,5,Derek,,0-0-0-5-0-0-1-0-0-14-0-0-9-0-0-0
+303,50,4,"Same, Confirm(User_ID=1, Hollowness)",Is the reason for this specific win because of hollowness?,NotSure(),"If I knew, I would tell you, but I have no idea.",Luke,5,5,Derek,,0-0-0-5-0-0-1-0-0-14-0-0-9-0-0-0
+303,50,5,"Same, Confirm(User_ID=1, Shape)",Is the reason for this win condition because of the shape of the pieces?,NotSure(),I still don't know.,Luke,4,4,Derek,,0-0-0-5-0-0-1-0-0-14-0-0-9-0-0-0
+303,50,6,RequestNewWinCondition(),Can you provide me with a new win condition?,Inform,Assume you demonstrate this win condition,Luke,5,5,Derek,,8-0-0-0-0-15-0-0-0-0-7-0-0-0-0-3
+303,50,7,"Same, Confirm(User_ID=1, Hollowness)",Is the reason for this win the hollowness of the tiles?,NotSure(),"I don't know, maybe.",Luke,5,5,Derek,,8-0-0-0-0-15-0-0-0-0-7-0-0-0-0-3
+303,50,8,"Context Switch, Confirm(User_ID=1, Quantity)","For this board here, is the number of tiles the reason for the win?",Affirm(),"Yes, the number of tiles is important to the winning condition for this board.",Luke,5,5,Derek,,0-0-0-5-0-0-1-0-0-14-0-0-9-0-0-0
+303,50,9,"Same, Confirm(User_ID=1, Color)",Is the color also the reason for this win?,Negate(),No because one of them is blue.,Luke,4,4,Derek,,0-0-0-5-0-0-1-0-0-14-0-0-9-0-0-0
+303,50,10,"Context Switch, Confirm(User_ID=1, Hollowness)","Going back to this case, is hollowness a reason for this win condition?",Negate(),"No, hollowness of the tiles is irrelevant.",Luke,5,4,Derek,,0-0-0-11-0-0-15-0-0-1-0-0-5-0-0-0
+303,50,11,RequestNewWinCondition(),Can you show me a new win condition?,Inform,Assume you demonstrate this win condition,Luke,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-3-9-7-1
+303,50,12,RequestNewWinCondition(),Can I have another win condition?,Inform,Assume you demonstrate this win condition,Luke,5,5,Derek,,0-0-13-0-0-0-12-0-0-0-14-0-0-0-16-0
+303,50,13,"Context Switch, Confirm(User_ID=1, Rotate(90))",Am I permitted to rotate these tiles by 90 degrees?,Affirm(),"Yes, if you do so you will still have a winning board.",Luke,2,3,Derek,,0-0-0-5-0-0-1-0-0-14-0-0-9-0-0-0
+303,50,14,RequestNewWinCondition(),Can I see another win condition?,Inform,Assume you demonstrate this win condition,Luke,5,5,Derek,,3-0-0-0-10-0-0-0-11-0-0-0-12-0-0-0
+303,50,15,Finish(),"I learned a lot, thank you.",Finish,"No problem, enjoy the rest of your day.",Luke,5,5,Derek,,3-0-0-0-10-0-0-0-11-0-0-0-12-0-0-0

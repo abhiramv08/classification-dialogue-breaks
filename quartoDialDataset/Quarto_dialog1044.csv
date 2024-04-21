@@ -1,0 +1,15 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+1044,60,0,Start(),"Hello, can you give me some ideas on playing Quarto?",Start,"Sure, let's start.",Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+1044,60,1,RequestNewWinCondition(),Can you show me a winning board?,Inform,Assume you demonstrate this win condition,Tianyi,5,4,Ruijie,,0-0-0-8-0-0-7-0-0-15-0-0-14-0-0-0
+1044,60,2,"Same, Confirm(User_ID=1, Color)","In this case, is it a win because of the color of the pieces?",Negate(),"No, the color doesn't matter.",Tianyi,5,4,Ruijie,,0-0-0-8-0-0-7-0-0-15-0-0-14-0-0-0
+1044,60,3,"Same, Confirm(User_ID=1, AddPiece(0,1))","And, if I add a new piece at the second column of the first row, can it still be a win?",Affirm(),"Yes, of course.",Tianyi,4,4,Ruijie,,0-0-0-8-0-0-7-0-0-15-0-0-14-0-0-0
+1044,60,4,RequestNewWinCondition(),Can you show me a new win pattern?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,14-0-0-0-0-16-0-0-0-0-10-0-0-0-0-2
+1044,60,5,"Context Switch, Confirm(User_ID=1, Quantity)","Back to this board, is it wins because of the quantity of the pieces?",NotSure(),I have no idea about this. Maybe you are right.,Tianyi,4,4,Ruijie,,0-0-0-8-0-0-7-0-0-15-0-0-14-0-0-0
+1044,60,6,"Same, Request(User_ID=1, Rotate)","And, can I rotate some pieces and still maintain the win?",Inform([90]),"Yes, you can rotate all pieces 90 degrees to the rows and put them in the first column.",Tianyi,5,5,Ruijie,,0-0-0-8-0-0-7-0-0-15-0-0-14-0-0-0
+1044,60,7,"Same, Confirm(User_ID=1, Hollowness)",Is this wins because most pieces are solid?,Negate(),"No, that is not the reason here.",Tianyi,4,5,Ruijie,,0-0-0-8-0-0-7-0-0-15-0-0-14-0-0-0
+1044,60,8,"Same, Request(User_ID=1, Rotate)",Can I rotate some pieces and don't change the win condition.,Inform([90]),"Yes, same as before, you can rotate all pieces 90 degrees to the rows and put them in the first column.",Tianyi,5,4,Ruijie,,0-0-0-8-0-0-7-0-0-15-0-0-14-0-0-0
+1044,60,9,"Same, Confirm(User_ID=1, Hollowness)",Is it wins because there are only one solid piece?,Negate(),Nope.,Tianyi,5,5,Ruijie,,0-0-0-8-0-0-7-0-0-15-0-0-14-0-0-0
+1044,60,10,RequestNewWinCondition(),Can you show me a new winning board?,Inform,Assume you demonstrate this win condition,Tianyi,5,4,Ruijie,,8-0-0-0-0-14-0-0-0-0-15-0-0-0-0-16
+1044,60,11,"Context Switch, Confirm(User_ID=1, RemovePiece(0,0))","Back to this board, if I remove the piece at the first row, is it still a winning board?",Negate(),"No, it will no longer be a winning board if you do that.",Tianyi,5,5,Ruijie,,0-0-0-8-0-0-7-0-0-15-0-0-14-0-0-0
+1044,60,12,RequestNewWinCondition(),Can you show me another new winning board?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,0-0-0-11-0-0-13-0-0-16-0-0-14-0-0-0
+1044,60,13,Finish(),"Thank you, that really make sense.",Finish,That is great.,Tianyi,5,5,Ruijie,,0-0-0-11-0-0-13-0-0-16-0-0-14-0-0-0

@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+420,50,0,Start(),Hi. Can you teach me how to play Quarto?,Start,"Yes, I can.",Jacob,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+420,50,1,RequestNewWinCondition(),Can you show me a winning board state?,Inform,Assume you demonstrate this win condition,Jacob,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-2-12-10-1
+420,50,2,"Same, Confirm(User_ID=1, Height)",Is this board a win condition because of the heights of the pieces?,Negate(),"No, the height is not important here.",Jacob,5,4,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-2-12-10-1
+420,50,3,"Same, Request(User_ID=1, Translate)",In which other rows could these pieces lie and remain a winning condition?,"Inform(['row1', 'row2'])",These pieces could lie in the second or third rows.,Jacob,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-2-12-10-1
+420,50,4,"Same, Confirm(User_ID=1, Translate([1, 0]))",Would it still be a winning board if these pieces were in the second row from the bottom?,NotSure(),"I don't really know, sorry.",Jacob,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-2-12-10-1
+420,50,5,"Same, Confirm(User_ID=1, Height)",Are the heights of these pieces important to the win condition?,NotSure(),I don't know if the height matters or not.,Jacob,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-2-12-10-1
+420,50,6,RequestNewWinCondition(),Can you show me another winning board?,Inform,Assume you demonstrate this win condition,Jacob,5,5,Derek,,15-0-0-0-0-1-0-0-0-0-9-0-0-0-0-5
+420,50,7,"Context Switch, Request(User_ID=1, Rotate)","Going back to this first board, how could the pattern of pieces be rotated to yield a new win condition?",Inform([45]),These pieces could lie on the diagonal.,Jacob,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-2-12-10-1
+420,50,8,"Context Switch, RequestOtherPlayers()","On this board, which actions could another player take to revoke this win condition?",Inform([]),This win condition cannot be destroyed by another player.,Jacob,5,5,Derek,,15-0-0-0-0-1-0-0-0-0-9-0-0-0-0-5
+420,50,9,"Same, Confirm(User_ID=1, RemovePiece(3,0))",Would this still be a win if the top left piece were removed?,Negate(),"No, that piece is vital to this win.",Jacob,5,5,Derek,,15-0-0-0-0-1-0-0-0-0-9-0-0-0-0-5
+420,50,10,Finish(),Thank you for teaching me. Goodbye.,Finish,Bye.,Jacob,5,5,Derek,,15-0-0-0-0-1-0-0-0-0-9-0-0-0-0-5

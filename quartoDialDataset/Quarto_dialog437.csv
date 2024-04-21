@@ -1,0 +1,21 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+437,50,0,Start(),"Hello! Can you show me how to play Quarto?
+",Start,"Sure, let's get started!
+",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+437,50,1,RequestNewWinCondition(),Can you show me a win condition?,Inform,Assume you demonstrate this win condition,Ruijie,4,4,Luke,,0-1-0-0-0-6-0-0-0-8-0-0-0-4-0-0
+437,50,2,RequestNewWinCondition(),Can you show me a win condition?,Inform,Assume you demonstrate this win condition,Ruijie,4,5,Luke,,11-0-0-0-0-3-0-0-0-0-10-0-0-0-0-2
+437,50,3,"Same, Confirm(User_ID=1, AddPiece(2,2))",Am I allowed to add one more piece on the second piece along the diagonal?,Affirm(),"Yes, you can do that.",Ruijie,3,3,Luke,,11-0-0-0-0-3-0-0-0-0-10-0-0-0-0-2
+437,50,4,"Context Switch, Confirm(User_ID=1, Height)","Switch to this board, does the height of the pieces make it a win?",Affirm(),"Yes, that's correct.",Ruijie,5,5,Luke,,0-1-0-0-0-6-0-0-0-8-0-0-0-4-0-0
+437,50,5,"Context Switch, Confirm(User_ID=1, Color)","Switch to this board, does the color of the pieces make it a win?",Negate(),"No, that's unrelated.",Ruijie,4,4,Luke,,11-0-0-0-0-3-0-0-0-0-10-0-0-0-0-2
+437,50,6,"Same, Confirm(User_ID=1, Shape)","Switch to this board, is it a win because the pieces are of the same shape?",NotSure(),I'm actually not quite sure.,Ruijie,5,5,Luke,,11-0-0-0-0-3-0-0-0-0-10-0-0-0-0-2
+437,50,7,RequestNewWinCondition(),Can you show me a win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-11-4-8-3
+437,50,8,"Context Switch, Confirm(User_ID=1, Shape)","Switch to this board, is it a win because the pieces are of the same shape?",NotSure(),I'm actually not quite sure.,Ruijie,4,4,Luke,,11-0-0-0-0-3-0-0-0-0-10-0-0-0-0-2
+437,50,9,"Context Switch, Request(User_ID=1, Translate)","Switch to this board, can I put the pieces somewhere else?
+","Inform(['row1', 'row2'])","Sure, you can put the pieces on row one or row two.",Ruijie,5,4,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-11-4-8-3
+437,50,10,"Context Switch, Confirm(User_ID=1, RemovePiece(3,0))","Switch to this board, can I romove the piece on the upper left corner?",NotSure(),I'm actually not quite sure.,Ruijie,5,3,Luke,,11-0-0-0-0-3-0-0-0-0-10-0-0-0-0-2
+437,50,11,"Context Switch, Confirm(User_ID=1, AddPiece(3,2))","Switch to this board, can I add one more piece on the third row, the second column?",NotSure(),I'm actually not quite sure.,Ruijie,4,4,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-11-4-8-3
+437,50,12,"Context Switch, Confirm(User_ID=1, Color)","Switch to this board, is it a win because the pieces are of the same color?",NotSure(),I'm actually not quite sure.,Ruijie,5,5,Luke,,11-0-0-0-0-3-0-0-0-0-10-0-0-0-0-2
+437,50,13,"Context Switch, Request(User_ID=1, Translate)","Switch to this board, can I put the pieces somewhere else?","Inform(['row1', 'row2'])","Yes, you can put them on the first row or the second row.",Ruijie,3,3,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-11-4-8-3
+437,50,14,"Context Switch, Confirm(User_ID=1, Quantity)","Switch to this board, is it a win because there are four pieces?",NotSure(),I'm actually not quite sure.,Ruijie,5,5,Luke,,0-1-0-0-0-6-0-0-0-8-0-0-0-4-0-0
+437,50,15,Finish(),"Thank you so much! I think I've learned enough.
+",Finish,You're welcome!,Ruijie,5,3,Luke,,0-1-0-0-0-6-0-0-0-8-0-0-0-4-0-0

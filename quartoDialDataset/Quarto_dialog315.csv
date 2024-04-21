@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+315,50,0,Start(),"Hi, can you teach me how to play Quarto?",Start,Sure!,Shaobo,5,5,Dmytro,,0-0-0-13-0-0-15-0-0-9-0-0-14-0-0-0
+315,50,1,RequestNewWinCondition(),Can you show me a win first?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,Dmytro,,0-0-0-3-0-0-0-7-0-0-0-1-0-0-0-11
+315,50,2,RequestNewWinCondition(),Can you show me another winning board?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,Dmytro,,0-0-0-9-0-0-2-0-0-6-0-0-14-0-0-0
+315,50,3,"Same, Confirm(User_ID=1, Height)",And is it a win because of the height of pieces?,NotSure(),I don't think so but I am not sure. ,Shaobo,5,5,Dmytro,,0-0-0-9-0-0-2-0-0-6-0-0-14-0-0-0
+315,50,4,RequestNewWinCondition(),Could you show me one more winning board?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,Dmytro,,0-0-0-0-0-0-0-0-0-0-0-0-4-3-8-12
+315,50,5,"Context Switch, Confirm(User_ID=1, Color)","Switching to this board, is it a win because of the color of pieces?",NotSure(),I don't think so but I am not sure.,Shaobo,5,5,Dmytro,,0-0-0-9-0-0-2-0-0-6-0-0-14-0-0-0
+315,50,6,RequestNewWinCondition(),Could you show me one more board?,Inform,Assume you demonstrate this win condition,Shaobo,5,4,Dmytro,,0-0-0-13-0-0-0-6-0-0-0-9-0-0-0-1
+315,50,7,"Context Switch, Request(User_ID=1, Translate)","Switching to this board, how can I shift the pieces and still keep the win?",Inform(['col1']),You could shift them to the second column from left.,Shaobo,4,5,Dmytro,,0-0-0-3-0-0-0-7-0-0-0-1-0-0-0-11
+315,50,8,RequestNewWinCondition(),Could you show me one more winning board?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,Dmytro,,16-0-0-0-0-6-0-0-0-0-15-0-0-0-0-13
+315,50,9,"Same, Confirm(User_ID=1, Height)",And is it a win because of the height of the pieces?,NotSure(),I don't think so but I am not sure.,Shaobo,5,4,Dmytro,,16-0-0-0-0-6-0-0-0-0-15-0-0-0-0-13
+315,50,10,"Context Switch, Request(User_ID=1, Rotate)","Switching to this board, how could I rotate the pieces and still keep the win?",Inform([135]),You could rotate them to the anti-diagonal.,Shaobo,5,5,Dmytro,,0-0-0-13-0-0-0-6-0-0-0-9-0-0-0-1
+315,50,11,"Context Switch, Confirm(User_ID=1, RemovePiece(0,2))","And switching to this board, is it still a win if remove the third piece from left to right?",Negate(),"No, it will not be a win anymore.",Shaobo,5,4,Dmytro,,0-0-0-0-0-0-0-0-0-0-0-0-4-3-8-12
+315,50,12,"Context Switch, Confirm(User_ID=1, RemovePiece(2,1))","Switching to this board, is it still a win if I remove the piece on the second column ?",NotSure(),I don't think so but I am not sure.,Shaobo,5,3,Dmytro,"Translation ""I don't think so but I am not sure"" is repeated all the time",16-0-0-0-0-6-0-0-0-0-15-0-0-0-0-13
+315,50,13,"Context Switch, Confirm(User_ID=1, AddPiece(3,2))","And for this board, is it still a win if I add a piece left to the top right piece?",NotSure(),I don't think so but I am not sure.,Shaobo,5,3,Dmytro,,0-0-0-3-0-0-0-7-0-0-0-1-0-0-0-11
+315,50,14,"Same, Confirm(User_ID=1, Hollowness)",And is it a win because of the hollowness of the pieces?,NotSure(),I don't think so but I am not sure.,Shaobo,5,3,Dmytro,,0-0-0-3-0-0-0-7-0-0-0-1-0-0-0-11
+315,50,15,Finish(),I got a lot useful information. Thanks!,Finish,You are welcome!,Shaobo,5,5,Dmytro,,0-0-0-3-0-0-0-7-0-0-0-1-0-0-0-11

@@ -1,0 +1,15 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+619,60,0,Start(),"Hello, are you willing to teach me how to play Quarto?",Start,"Sure, let's begin.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+619,60,1,RequestNewWinCondition(),Thanks. Can you first show me one possible win condition?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,3-0-0-0-0-6-0-0-0-0-4-0-0-0-0-5
+619,60,2,"Same, Confirm(User_ID=1, AddPiece(0,0))","For this win condition you presented, will it still be a win if I add a piece on the bottom left corner?",NotSure(),I dare say.,Yiyan,5,5,Tianyi,,3-0-0-0-0-6-0-0-0-0-4-0-0-0-0-5
+619,60,3,"Same, Confirm(User_ID=1, RemovePiece(0,3))","Still for the same situation, will it still be a win if I get rid of the piece on the last column?",Negate(),"No, all the pieces here are necessary for the win.",Yiyan,5,5,Tianyi,,3-0-0-0-0-6-0-0-0-0-4-0-0-0-0-5
+619,60,4,RequestNewWinCondition(),Can you show me another way to win the game?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,2-0-0-0-0-16-0-0-0-0-12-0-0-0-0-10
+619,60,5,"Context Switch, Confirm(User_ID=1, Color)","Let's consider this board, 
+is it a win because of the color of the pieces?",Negate(),"No, it is a win because all the pieces have the same heights.",Yiyan,5,5,Tianyi,,3-0-0-0-0-6-0-0-0-0-4-0-0-0-0-5
+619,60,6,"Context Switch, Confirm(User_ID=1, Hollowness)","Cosidering this board, does the hollowness relate the win?",Negate(),"No, the actual reason is that all the pieces are blue.",Yiyan,5,5,Tianyi,,2-0-0-0-0-16-0-0-0-0-12-0-0-0-0-10
+619,60,7,"Context Switch, Confirm(User_ID=1, Color)","Let's turn to this board, is it a win because of the color of the pieces?",NotSure(),I am not sure.,Yiyan,5,5,Tianyi,,3-0-0-0-0-6-0-0-0-0-4-0-0-0-0-5
+619,60,8,"Same, Confirm(User_ID=1, Hollowness)","For the same board, is it a win because two of the pieces have hollows?",Negate(),"No, it is a win because all the pieces have the same height.",Yiyan,5,5,Tianyi,,3-0-0-0-0-6-0-0-0-0-4-0-0-0-0-5
+619,60,9,"Context Switch, Confirm(User_ID=1, Rotate(90))","Lert's turn to this board, will I get another win by rotating the pieces to the last column?",Affirm(),"Yes, that is another way to win.",Yiyan,5,5,Tianyi,,2-0-0-0-0-16-0-0-0-0-12-0-0-0-0-10
+619,60,10,"Context Switch, Confirm(User_ID=1, Rotate(90))","Going back to this board, will I get a win if I rotate the pieces to the last column?",Affirm(),"Yes, this is the same as the previous one.",Yiyan,5,5,Tianyi,,3-0-0-0-0-6-0-0-0-0-4-0-0-0-0-5
+619,60,11,RequestNewWinCondition(),Is there any other way to win?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-12-13-16-9
+619,60,12,Finish(),"I think I know enough about Quarto, thank you very much.",Finish,"You are welcome, see you next time!",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-12-13-16-9

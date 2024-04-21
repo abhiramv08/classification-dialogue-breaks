@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+374,50,0,Start(),"Hi, can you teach me how to play Quarto?",Start,"Ok, let's do it.",Ruijie,5,5,Jason,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+374,50,1,RequestNewWinCondition(),Can you show me a win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Jason,,0-0-0-13-0-0-0-6-0-0-0-9-0-0-0-10
+374,50,2,"Same, Confirm(User_ID=1, Quantity)",Is it a win because there are four pieces?,NotSure(),I'm not sure about this.,Ruijie,4,5,Jason,Need to specify it's the same board,0-0-0-13-0-0-0-6-0-0-0-9-0-0-0-10
+374,50,3,"Same, Request(User_ID=1, Translate)",Can I put the pieces elsewhere and still win?,Inform(['col1']),"Yes, you can put them on the first column.",Ruijie,4,5,Jason,"To player, it'd be the 2nd column. They might not start at 0.",0-0-0-13-0-0-0-6-0-0-0-9-0-0-0-10
+374,50,4,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Jason,,0-0-0-4-0-0-16-0-0-15-0-0-12-0-0-0
+374,50,5,"Context Switch, Confirm(User_ID=1, Shape)","Switch to this board, is it a win because the pieces are of the same shape?",NotSure(),"Sorry, I'm not sure about this one.",Ruijie,5,4,Jason,,0-0-0-13-0-0-0-6-0-0-0-9-0-0-0-10
+374,50,6,"Same, Confirm(User_ID=1, Hollowness)",Is it a win because of the hollowness of pieces?,Affirm(),"Yes, that right.",Ruijie,5,5,Jason,,0-0-0-13-0-0-0-6-0-0-0-9-0-0-0-10
+374,50,7,RequestNewWinCondition(),Can you show me a new win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Jason,,0-0-0-0-0-0-0-0-0-0-0-0-11-3-13-15
+374,50,8,"Context Switch, Confirm(User_ID=1, Height)","Switch to this board, is it a win because the pieces are of the same height?",Negate(),"No, I don't think that's the reason.",Ruijie,5,4,Jason,,0-0-0-13-0-0-0-6-0-0-0-9-0-0-0-10
+374,50,9,"Context Switch, RequestOtherPlayers()","Switch to this board, can the other player undo this win?",Inform([]),"No, this win is absolute.",Ruijie,5,4,Jason,,0-0-0-0-0-0-0-0-0-0-0-0-11-3-13-15
+374,50,10,Finish(),"Thank you so much, I think I've mastered this game!",Finish,"Really, let's do this again sometime!",Ruijie,5,5,Jason,,0-0-0-0-0-0-0-0-0-0-0-0-11-3-13-15

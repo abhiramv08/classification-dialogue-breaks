@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+655,60,0,Start(),"Hello, can you show me how to play Quarto?",Start,"Sure, let's begin",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+655,60,1,RequestNewWinCondition(),Can you first show me a win?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-2-0-0-0-12-0-0-0-14-0-0-0-8-0
+655,60,2,RequestNewWinCondition(),Could you show me one more please?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-12-0-0-0-15-0-0-0-16-0-0-0-7-0
+655,60,3,"Same, RequestOtherPlayers()","For the win board you just showed, how can the other player do to stop this win?",Inform([]),"Well, there is nothing he or she can do.",Yiyan,5,5,Tianyi,,0-0-12-0-0-0-15-0-0-0-16-0-0-0-7-0
+655,60,4,RequestNewWinCondition(),"Ok, is there any other way to win?",Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-5-14-10-9
+655,60,5,"Context Switch, Confirm(User_ID=1, Translate([0, 3]))","Go back to the previous win board, would it still be a win if I shift all the pieces to the last column?",NotSure(),"I am not quite sure, sorry.",Yiyan,5,5,Tianyi,,0-0-12-0-0-0-15-0-0-0-16-0-0-0-7-0
+655,60,6,"Same, Confirm(User_ID=1, Height)","For the same board, is it a win because of the heights of the pieces?",Negate(),"No, it is a win because all pieces have hollows.",Yiyan,5,5,Tianyi,,0-0-12-0-0-0-15-0-0-0-16-0-0-0-7-0
+655,60,7,"Context Switch, RequestOtherPlayers()","For this win condition, how can the other player do to prevent the win?",Inform([]),"This is similar to the previous one, there is nothing the other player can do.",Yiyan,5,5,Tianyi,,0-0-2-0-0-0-12-0-0-0-14-0-0-0-8-0
+655,60,8,RequestNewWinCondition(),Can you show me another win scenario?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-3-0-0-0-12-0-0-0-10-0-0-0-9-0
+655,60,9,"Context Switch, Confirm(User_ID=1, Quantity)","For this win board, iis it a win because of the number of the pieces?",Affirm(),"Yes, you must have four pieces in order to win.",Yiyan,4,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-5-14-10-9
+655,60,10,Finish(),"Thank you, I think I know enough infomation about Quarto now.",Finish,You are welcome.,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-5-14-10-9

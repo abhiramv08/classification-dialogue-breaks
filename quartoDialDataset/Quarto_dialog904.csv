@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+904,60,0,Start(),"Hi, please show me how to play Quarto.",Start,"Okay, no problem. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+904,60,1,RequestNewWinCondition(),Please show me the first win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,15-0-0-0-0-12-0-0-0-0-11-0-0-0-0-9
+904,60,2,"Same, Confirm(User_ID=1, Hollowness)",Is this a win condition because of the hollowness of the pieces?,Negate(),"No, that is not why, it has to be something else. ",Anthony,5,5,Yiyen,,15-0-0-0-0-12-0-0-0-0-11-0-0-0-0-9
+904,60,3,"Same, Confirm(User_ID=1, Shape)","Well, is it a win because of the shape of the pieces?",Negate(),"No, that is not why either. ",Anthony,5,5,Yiyen,,15-0-0-0-0-12-0-0-0-0-11-0-0-0-0-9
+904,60,4,"Same, Confirm(User_ID=1, Height)","Okay, how about the height? Is that why this is a win condition?",NotSure(),"I'm not sure, sorry.",Anthony,5,5,Yiyen,,15-0-0-0-0-12-0-0-0-0-11-0-0-0-0-9
+904,60,5,RequestNewWinCondition(),Please show me another win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,6-0-0-0-0-8-0-0-0-0-4-0-0-0-0-10
+904,60,6,"Same, Confirm(User_ID=1, Hollowness)",Is this one a win because of the hollowness of the pieces?,Negate(),"No, that is not why in this case.",Anthony,5,5,Yiyen,,6-0-0-0-0-8-0-0-0-0-4-0-0-0-0-10
+904,60,7,"Context Switch, RequestOtherPlayers()","Let's look at this board, how could another player undo this win?",Inform([]),There is nothing another player could do. ,Anthony,5,4,Yiyen,,15-0-0-0-0-12-0-0-0-0-11-0-0-0-0-9
+904,60,8,"Context Switch, Confirm(User_ID=1, Rotate(90))","How about on this board, could I rotate the pieces like this?",Affirm(),"Yeah, that's fine. ",Anthony,3,5,Yiyen,,6-0-0-0-0-8-0-0-0-0-4-0-0-0-0-10
+904,60,9,"Same, Confirm(User_ID=1, Shape)",Is this a win condition because of the pieces' shape?,NotSure(),I don't know. ,Anthony,5,5,Yiyen,,6-0-0-0-0-8-0-0-0-0-4-0-0-0-0-10
+904,60,10,Finish(),"Okay, well thanks for the help!",Finish,"Sure, have a good one!",Anthony,5,5,Yiyen,,6-0-0-0-0-8-0-0-0-0-4-0-0-0-0-10

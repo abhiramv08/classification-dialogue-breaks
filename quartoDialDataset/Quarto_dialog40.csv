@@ -1,0 +1,16 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+40,100,0,Start(),"Hi, let's play Quarto!",Start,"Hello, let's get started",John,5,4,Jason,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+40,100,1,RequestNewWinCondition(),Can you show me a winning board?,Inform(),Assume you demonstrate this win condition,John,5,5,Jason,,0-0-0-0-0-0-0-0-0-0-0-0-12-9-3-11
+40,100,2,RequestNewWinCondition(),Will you show me a different win scenario?,Inform(),Assume you demonstrate this win condition,John,5,4,Jason,"""Scenario"" kind of awkward terminology",16-0-0-0-12-0-0-0-15-0-0-0-8-0-0-0
+40,100,3,RequestNewWinCondition(),Can I see another winning layout?,Inform(),Assume you demonstrate this win condition,John,5,5,Jason,,5-0-0-0-2-0-0-0-4-0-0-0-8-0-0-0
+40,100,4,"Context Switch, Confirm(User_ID=1, AddPiece(3,3))","Let's talk about the first win you showed me. If I add a piece in the top right of the board, is it still a win?",Affirm(),"Yes, that is still a win",John,5,5,Jason,,0-0-0-0-0-0-0-0-0-0-0-0-12-9-3-11
+40,100,5,RequestNewWinCondition(),Could you show me another winning layout?,Inform(),Assume you demonstrate this win condition,John,5,5,Jason,,0-0-0-9-0-0-10-0-0-11-0-0-1-0-0-0
+40,100,6,RequestNewWinCondition(),What is a different winning layout?,Inform(),Assume you demonstrate this win condition,John,5,3,Jason,Awkwardly phrased system query,0-0-0-0-0-0-0-0-0-0-0-0-8-3-5-6
+40,100,7,"Same , Confirm(User_ID=1, Consistency)",Is the consistency of the pieces why this is a win?,Negate(),"No, the consistency is not the reason for the win",John,5,3,Jason,Phrased awkwardly,0-0-0-0-0-0-0-0-0-0-0-0-8-3-5-6
+40,100,8,"Context Switch, Confirm(User_ID=1, Height)","For the fourth win you showed me, is the height of the pieces the reason for the win?",Negate(),"No, the pieces are not all the same height",John,5,5,Jason,,0-0-0-9-0-0-10-0-0-11-0-0-1-0-0-0
+40,100,9,RequestNewWinCondition(),Can I see another winning board?,Inform(),Assume you demonstrate this win condition,John,5,5,Jason,,0-0-0-12-0-0-0-2-0-0-0-10-0-0-0-3
+40,100,10,RequestNewWinCondition(),Can I see another win condition?,Inform(),Assume you demonstrate this win condition,John,5,5,Jason,,8-0-0-0-0-15-0-0-0-0-14-0-0-0-0-13
+40,100,11,"Context Switch, Confirm(User_ID=1, Rotate(45))","In the fifth win you showed me, is it a win if the pieces are rotated to be on the antidiagonal?",Affirm(),"Yes, the pieces on the antidiagonal is still a win",John,3,5,Jason,Unsure if it's diagonal or antidiagonal,0-0-0-0-0-0-0-0-0-0-0-0-8-3-5-6
+40,100,12,"Context Switch, Confirm(User_ID=1, Quantity)","In the third win you showed me, is the number of pieces the reason for the win?",Affirm(),"Yes, all four pieces are needed to win",John,5,5,Jason,,5-0-0-0-2-0-0-0-4-0-0-0-8-0-0-0
+40,100,13,"Same , Confirm(User_ID=1, Color)",Is the color of the pieces the reason why it is a win?,Negate(),"No, the pieces are not the same color",John,5,5,Jason,,5-0-0-0-2-0-0-0-4-0-0-0-8-0-0-0
+40,100,14,Finish(),"Okay, I am done playing. Thank you!",Finish,Farewell,John,5,4,Jason,"Cute dialogue but most people don't respond to ""Thank you"" with ""Farewell""",5-0-0-0-2-0-0-0-4-0-0-0-8-0-0-0

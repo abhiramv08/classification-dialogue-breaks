@@ -1,0 +1,16 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+740,60,0,Start(),Hi! Can you show me how to play Quarto?,Start,"Yes, my pleasure.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+740,60,1,RequestNewWinCondition(),Can you show me a win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-2-0-0-7-0-0-8-0-0-3-0-0-0
+740,60,2,"Same, RequestOtherPlayers()","Can the other player undo this win?
+",Inform([]),"No, this win is absolute.",Ruijie,5,5,Luke,,0-0-0-2-0-0-7-0-0-8-0-0-3-0-0-0
+740,60,3,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-6-0-0-2-0-0-8-0-0-10-0-0-0
+740,60,4,"Context Switch, Confirm(User_ID=1, RemovePiece(0,0))","Switch to this board, can I remove the piece on the left corner and still have a win?",NotSure(),I'm actually not sure.,Ruijie,3,3,Luke,,0-0-0-2-0-0-7-0-0-8-0-0-3-0-0-0
+740,60,5,"Context Switch, Confirm(User_ID=1, Height)","Switch to this board, is it a win because the pieces are of the same height?",Negate(),"No, that’s not the reason.",Ruijie,5,5,Luke,,0-0-0-6-0-0-2-0-0-8-0-0-10-0-0-0
+740,60,6,"Same, Request(User_ID=1, Rotate)",Can I rotate the pieces by some degrees?,Inform([90]),"Sure, you can rotate them by ninety degrees.",Ruijie,5,3,Luke,,0-0-0-6-0-0-2-0-0-8-0-0-10-0-0-0
+740,60,7,"Context Switch, Confirm(User_ID=1, Hollowness)","Switch to this board, does the hollowness of the pieces make it a win?",Negate(),"No, that’s not the reason.",Ruijie,5,4,Luke,,0-0-0-2-0-0-7-0-0-8-0-0-3-0-0-0
+740,60,8,"Same, RequestOtherPlayers()",Can the other player break this win?,Inform([]),"No, this win is absolute.",Ruijie,5,5,Luke,,0-0-0-2-0-0-7-0-0-8-0-0-3-0-0-0
+740,60,9,"Same, Confirm(User_ID=1, AddPiece(0,2))","Can I add one more piece on the first row, the third column?",Affirm(),"Yes, you can do that.",Ruijie,5,3,Luke,,0-0-0-2-0-0-7-0-0-8-0-0-3-0-0-0
+740,60,10,"Same, RequestOtherPlayers()","Can the other player undo this win?
+",Inform([]),"No, this win is absolute.",Ruijie,5,5,Luke,,0-0-0-2-0-0-7-0-0-8-0-0-3-0-0-0
+740,60,11,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,14-0-0-0-0-13-0-0-0-0-2-0-0-0-0-5
+740,60,12,Finish(),Thanks! I think I got it!,Finish,See you next time!,Ruijie,5,5,Luke,,14-0-0-0-0-13-0-0-0-0-2-0-0-0-0-5

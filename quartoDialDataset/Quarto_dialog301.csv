@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+301,50,0,Start(),"Hi, could you teach me how to play Quarto?",Start,Yeah sure.,Luke,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-7-1-9-3
+301,50,1,RequestNewWinCondition(),Can you show me a win condition?,Inform,Assume you demonstrate this win condition,Luke,5,5,Derek,,11-0-0-0-0-1-0-0-0-0-2-0-0-0-0-4
+301,50,2,"Same, Request(User_ID=1, Translate)",How can I translate the pieces?,Inform([]),There are no ways to translate the board right now.,Luke,4,3,Derek,,11-0-0-0-0-1-0-0-0-0-2-0-0-0-0-4
+301,50,3,RequestNewWinCondition(),Can you give me a new win condition?,Inform,Assume you demonstrate this win condition,Luke,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-6-5-9-2
+301,50,4,RequestNewWinCondition(),Can I have another win condition?,Inform,Assume you demonstrate this win condition,Luke,5,5,Derek,,15-0-0-0-0-16-0-0-0-0-13-0-0-0-0-11
+301,50,5,"Context Switch, Confirm(User_ID=1, Height)","Going back to this board here, is it the height of the pieces that makes this a win?",NotSure(),I don't quite know.,Luke,5,5,Derek,,11-0-0-0-0-1-0-0-0-0-2-0-0-0-0-4
+301,50,6,"Context Switch, Confirm(User_ID=1, Height)",What about the height of the pieces in this case?,NotSure(),I still don't know.,Luke,5,5,Derek,,15-0-0-0-0-16-0-0-0-0-13-0-0-0-0-11
+301,50,7,"Context Switch, Confirm(User_ID=1, Height)","Going back to the triangles along the anti-diagonal, is it the height of the pieces that makes this a win?",Negate(),"No, the height of the pieces is irrelevant.",Luke,5,5,Derek,,11-0-0-0-0-1-0-0-0-0-2-0-0-0-0-4
+301,50,8,RequestNewWinCondition(),Can I have a new win condition?,Inform,Assume you demonstrate this win condition,Luke,5,5,Derek,,0-4-0-0-0-5-0-0-0-7-0-0-0-2-0-0
+301,50,9,"Context Switch, Confirm(User_ID=1, RemovePiece(0,1))","For this board here, can I remove that piece?",Negate(),"No, you cannot.",Luke,1,2,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-6-5-9-2
+301,50,10,Finish(),Thank you. I think I have learned enough.,Finish,Have a good day.,Luke,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-6-5-9-2

@@ -1,0 +1,16 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+738,60,0,Start(),Hi! Can you teach me how to play Quarto?,Start,"Yes, let's get started!",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+738,60,1,RequestNewWinCondition(),Can you show me what a win condition looks like?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-15-0-0-16-0-0-13-0-0-7-0-0-0
+738,60,2,RequestNewWinCondition(),What about another win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-12-0-0-9-0-0-4-0-0-3-0-0-0
+738,60,3,"Context Switch, Confirm(User_ID=1, Shape)","Switch to this board, is it a win because the pieces are of the same shape?
+",NotSure(),"You know what, I’m not quite sure.
+",Ruijie,5,5,Luke,,0-0-0-15-0-0-16-0-0-13-0-0-7-0-0-0
+738,60,4,"Context Switch, Confirm(User_ID=1, Height)","Switch to this board, is it a win because the pieces are of the same height?
+",NotSure(),"Sorry, I'm not quite sure.",Ruijie,5,5,Luke,,0-0-0-12-0-0-9-0-0-4-0-0-3-0-0-0
+738,60,5,"Same, Request(User_ID=1, Rotate)","For this board, can I rotate the pieces by some degrees?",Inform([90]),"Sure, you can rotate them by ninety degrees.",Ruijie,5,3,Luke,,0-0-0-12-0-0-9-0-0-4-0-0-3-0-0-0
+738,60,6,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,8-0-0-0-13-0-0-0-7-0-0-0-15-0-0-0
+738,60,7,"Same, Confirm(User_ID=1, Hollowness)","Does the hollowness of the pieces make it a win?
+",Negate(),"No, that’s not the reason.",Ruijie,5,5,Luke,,8-0-0-0-13-0-0-0-7-0-0-0-15-0-0-0
+738,60,8,"Same, Confirm(User_ID=1, Color)","For this board, is it a win because the pieces are in the same color?",Negate(),"No, that's not the reason.",Ruijie,5,5,Luke,,8-0-0-0-13-0-0-0-7-0-0-0-15-0-0-0
+738,60,9,"Same, Confirm(User_ID=1, AddPiece(3,2))","Can I add one more piece on the fourth row, the third column?",Affirm(),"Yes, you can do that.",Ruijie,4,4,Luke,,8-0-0-0-13-0-0-0-7-0-0-0-15-0-0-0
+738,60,10,Finish(),Thanks! I think I've learned a lot!,Finish,"Ok, see you next time.",Ruijie,5,5,Luke,,8-0-0-0-13-0-0-0-7-0-0-0-15-0-0-0

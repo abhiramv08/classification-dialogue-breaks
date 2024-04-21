@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+345,50,0,Start(),Can you please teach me how to play Quarto?,Start,Sure! Let's start.,Derek,,,,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+345,50,1,RequestNewWinCondition(),Please give me a win condition to start with.,Inform,Assume you demonstrate this win condition,Derek,,,,,0-0-0-10-0-0-2-0-0-4-0-0-11-0-0-0
+345,50,2,"Same, Confirm(User_ID=1, Color)","For this win condition, is that a win because the color pattern of pieces?",Negate(),"No, the color does not make this board win.",Derek,,,,,0-0-0-10-0-0-2-0-0-4-0-0-11-0-0-0
+345,50,3,"Same, Confirm(User_ID=1, Height)",How about the height of these pieces?,NotSure(),"Actually I am not sure about that, maybe.",Derek,,,,,0-0-0-10-0-0-2-0-0-4-0-0-11-0-0-0
+345,50,4,RequestNewWinCondition(),Can you show me another win condition?,Inform,Assume you demonstrate this win condition,Derek,,,,,0-14-0-0-0-9-0-0-0-1-0-0-0-2-0-0
+345,50,5,RequestNewWinCondition(),Please give me one more winning board.,Inform,Assume you demonstrate this win condition,Derek,,,,,0-2-0-0-0-6-0-0-0-10-0-0-0-16-0-0
+345,50,6,"Same, Confirm(User_ID=1, Shape)","For this winning board, is that a win because the shape of each piece?",NotSure(),"Sorry, I am not sure about that.",Derek,,,,,0-2-0-0-0-6-0-0-0-10-0-0-0-16-0-0
+345,50,7,"Context Switch, Request(User_ID=1, Rotate)","Let's move back to this win condition, how could I rotate this board and keep winning?",Inform([90]),You place them vertically and keep winning.,Derek,,,,,0-0-0-10-0-0-2-0-0-4-0-0-11-0-0-0
+345,50,8,"Context Switch, RequestOtherPlayers()","Switching to this winning board, how could another player prevent this win?",Inform([]),Another can not do anything to prevent this win. This win is absolute.,Derek,,,,,0-14-0-0-0-9-0-0-0-1-0-0-0-2-0-0
+345,50,9,"Context Switch, Confirm(User_ID=1, Height)",Let's go back to this win condition. Is this a win because the height of pieces?,Negate(),No.,Derek,,,,,0-2-0-0-0-6-0-0-0-10-0-0-0-16-0-0
+345,50,10,"Context Switch, Confirm(User_ID=1, Height)",How about the height in this winning board?,NotSure(),Actually I am not sure about that in this win condition.,Derek,,,,,0-0-0-10-0-0-2-0-0-4-0-0-11-0-0-0
+345,50,11,"Context Switch, Confirm(User_ID=1, Color)","For this win condition, is it a win because the color pattern of pieces?",NotSure(),Sorry I am not sure about that.,Derek,,,,,0-2-0-0-0-6-0-0-0-10-0-0-0-16-0-0
+345,50,12,"Same, Confirm(User_ID=1, Quantity)",How about the quantity of this board? Do I have to have four pieces to win?,Affirm(),Yes you need to have at least four pieces to win.,Derek,,,,,0-2-0-0-0-6-0-0-0-10-0-0-0-16-0-0
+345,50,13,"Context Switch, Confirm(User_ID=1, Translate([0, 3]))","Let's move to this win condition, can I shift all pieces to the 3rd column and keep winning?",NotSure(),Sorry I am not sure about that as well.,Derek,,,,,0-14-0-0-0-9-0-0-0-1-0-0-0-2-0-0
+345,50,14,"Same, Confirm(User_ID=1, RemovePiece(1,1))",How about remove the second piece from bottom. Can I do that but keep winning?,NotSure(),"I don't want to give you my assumption, I have no idea about that as well.",Derek,,,,,0-14-0-0-0-9-0-0-0-1-0-0-0-2-0-0
+345,50,15,Finish(),"It's fine, I still learned a lot today. Bye!",Finish,"Thanks, bye!",Derek,,,,,0-14-0-0-0-9-0-0-0-1-0-0-0-2-0-0

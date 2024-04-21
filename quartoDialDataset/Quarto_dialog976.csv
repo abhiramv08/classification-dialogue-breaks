@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+976,60,0,Start(),"Hello, can you teach me some Quarto Strategies?",Start,"Sure, what do you want to know?",Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+976,60,1,RequestNewWinCondition(),Can you show me a win pattern?,Inform,Assume you demonstrate this win condition,Tianyi,5,4,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-9-15-12-11
+976,60,2,"Same, Confirm(User_ID=1, Hollowness)","In this case, is it wins because most pieces are hollow?",Negate(),Nope.,Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-9-15-12-11
+976,60,3,"Same, Confirm(User_ID=1, Hollowness)","So, is it wins because there is a solid piece？",Negate(),"Nope, that is not related.",Tianyi,5,4,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-9-15-12-11
+976,60,4,"Same, Confirm(User_ID=1, Height)",Is it a win because some pieces are tall?,Affirm(),Yes.,Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-9-15-12-11
+976,60,5,RequestNewWinCondition(),Can you give me a new win?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,0-0-0-3-0-0-2-0-0-10-0-0-1-0-0-0
+976,60,6,"Context Switch, Confirm(User_ID=1, AddPiece(1,1))","In this board, if I put a new piece at the second column of the second row, can it still be a win?",Affirm(),"Yes, it will still be a win.",Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-9-15-12-11
+976,60,7,"Context Switch, Confirm(User_ID=1, Color)","For this board, is it wins because some pieces are green?",NotSure(),"Sorry, I am not sure about this.",Tianyi,5,4,Ruijie,,0-0-0-3-0-0-2-0-0-10-0-0-1-0-0-0
+976,60,8,RequestNewWinCondition(),Can you give me a new win?,Inform,Assume you demonstrate this win condition,Tianyi,5,4,Ruijie,,0-0-0-14-0-0-13-0-0-9-0-0-6-0-0-0
+976,60,9,"Same, Confirm(User_ID=1, Color)","In this win, is it wins because some pieces have the same color?",Negate(),No.,Tianyi,5,5,Ruijie,,0-0-0-14-0-0-13-0-0-9-0-0-6-0-0-0
+976,60,10,Finish(),Thank you.,Finish,You are welcome.,Tianyi,5,5,Ruijie,,0-0-0-14-0-0-13-0-0-9-0-0-6-0-0-0

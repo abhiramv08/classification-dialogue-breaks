@@ -1,0 +1,11 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+1206,60,0,Start(),"Hi, could you teach me how to play Quarto?",Start,"Sure, let's get started!",Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+1206,60,1,RequestNewWinCondition(),Could you show me a win first?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-16-15-12-8
+1206,60,2,"Same, Confirm(User_ID=1, AddPiece(1,2))",Is it still a win if I add a piece on the second bottom row and the third left column?,NotSure(),"Sorry, I am not sure about it.",Shaobo,5,4,John,,0-0-0-0-0-0-0-0-0-0-0-0-16-15-12-8
+1206,60,3,"Same, Confirm(User_ID=1, Hollowness)",And is it a win because of the hollowness of the pieces?,NotSure(),I think so but I am not very sure.,Shaobo,4,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-16-15-12-8
+1206,60,4,RequestNewWinCondition(),Is there any other way to win?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-11-10-3-2
+1206,60,5,RequestNewWinCondition(),Could you show me another winning board?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-8-0-0-0-7-0-0-0-2-0-0-0-3-0-0
+1206,60,6,RequestNewWinCondition(),Could you show me one more winning board?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-10-13-11-15
+1206,60,7,"Same, Confirm(User_ID=1, Hollowness)",And is it a win because of the hollowness of the pieces?,Negate(),"No, it is a win because all pieces have the same height.",Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-10-13-11-15
+1206,60,8,"Context Switch, Request(User_ID=1, Translate)","Switching to this board, how could I shift the pieces and still keep the win?","Inform(['col2', 'col3'])",You could shift them to the third or the rightmost column.,Shaobo,5,5,John,,0-8-0-0-0-7-0-0-0-2-0-0-0-3-0-0
+1206,60,9,Finish(),Thanks for the help! I have learned a lot!,Finish,You are welcome!,Shaobo,5,5,John,,0-8-0-0-0-7-0-0-0-2-0-0-0-3-0-0

@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+415,50,0,Start(),Could you teach me Quarto ?,Start,Absolutely !,Dmytro,,,,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+415,50,1,RequestNewWinCondition(),So what should my board be for me to win ?,Inform,Assume you demonstrate this win condition,Dmytro,,,,,13-0-0-0-0-9-0-0-0-0-10-0-0-0-0-15
+415,50,2,RequestNewWinCondition(),"Alright, could you show me another example ?",Inform,Assume you demonstrate this win condition,Dmytro,,,,,0-0-0-0-0-0-0-0-0-0-0-0-16-10-8-12
+415,50,3,"Context Switch, Confirm(User_ID=1, Rotate(90))","Back to the first board, can I place the figures on a first column ?",Affirm(),"Yeah, that works too.",Dmytro,,,,,13-0-0-0-0-9-0-0-0-0-10-0-0-0-0-15
+415,50,4,"Same, Confirm(User_ID=1, Rotate(90))","Putting figures on a first column doesn't affect me winning, right ?",Affirm(),"Sure, you would still win the game.",Dmytro,,,,,13-0-0-0-0-9-0-0-0-0-10-0-0-0-0-15
+415,50,5,RequestNewWinCondition(),Could you show me another winning board ?,Inform,Assume you demonstrate this win condition,Dmytro,,,,,0-0-0-0-0-0-0-0-0-0-0-0-1-4-8-7
+415,50,6,"Context Switch, Confirm(User_ID=1, Quantity)",Back to the second board example; is it the number of figures that make it a win ?,NotSure(),"Probably so, but I can't say for sure.",Dmytro,,,,,0-0-0-0-0-0-0-0-0-0-0-0-16-10-8-12
+415,50,7,"Context Switch, Confirm(User_ID=1, Height)","Switching to another board, is figures' height a decisive factor for a game win here?",Affirm(),Absolutely !,Dmytro,,,,,0-0-0-0-0-0-0-0-0-0-0-0-1-4-8-7
+415,50,8,"Same, Request(User_ID=1, Rotate)","How can I rotate figures, while keeping my win outcome ?",Inform([45]),You could put them in a diagonal.,Dmytro,,,,,0-0-0-0-0-0-0-0-0-0-0-0-1-4-8-7
+415,50,9,"Same, Confirm(User_ID=1, RemovePiece(0,2))",Would I still win after taking out this piece here (robot points to the location) ?,Negate(),"No, your win would be no longer.",Dmytro,,,,,0-0-0-0-0-0-0-0-0-0-0-0-1-4-8-7
+415,50,10,"Context Switch, Confirm(User_ID=1, Height)","Speaking of the second board example, is it a win due to all figures being tall ?",NotSure(),"I think so, but I might be wrong.",Dmytro,,,,,13-0-0-0-0-9-0-0-0-0-10-0-0-0-0-15
+415,50,11,RequestNewWinCondition(),Could you do another winning board demonstration ?,Inform,Assume you demonstrate this win condition,Dmytro,,,,,0-0-10-0-0-0-4-0-0-0-2-0-0-0-6-0
+415,50,12,"Context Switch, Confirm(User_ID=1, Quantity)",Let's go back once; is it that there's 4 figures that I am going to win ?,Affirm(),"Yes, number of figures matters.",Dmytro,,,,,13-0-0-0-0-9-0-0-0-0-10-0-0-0-0-15
+415,50,13,"Context Switch, Confirm(User_ID=1, Quantity)",How about this board ? Is quantity important here as well ?,NotSure(),"I do think it is, but I am not certain.",Dmytro,,,,,0-0-0-0-0-0-0-0-0-0-0-0-16-10-8-12
+415,50,14,RequestNewWinCondition(),"One more winning example, please.",Inform,Assume you demonstrate this win condition,Dmytro,,,,,0-0-0-0-0-0-0-0-0-0-0-0-7-8-16-12
+415,50,15,Finish(),I think I know Quarto now,Finish,Great; was happy to aid.,Dmytro,,,,,0-0-0-0-0-0-0-0-0-0-0-0-7-8-16-12

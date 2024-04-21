@@ -1,0 +1,16 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+780,60,0,Start(),Can you teach me how to play Quarto?,Start,Definately.,Derek,4,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+780,60,1,RequestNewWinCondition(),Can you show me a win condition to start?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-7-4-5-6
+780,60,2,"Same, Confirm(User_ID=1, Color)",Is that a win because the color pattern of all pieces?,Negate(),No. ,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-7-4-5-6
+780,60,3,RequestNewWinCondition(),Please show me one more win condition.,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-9-0-0-3-0-0-1-0-0-15-0-0-0
+780,60,4,"Same, Confirm(User_ID=1, AddPiece(3,2))",Can I add a piece below the top right trangle?,Affirm(),Yes. ,Derek,3,5,Shaobo,,0-0-0-9-0-0-3-0-0-1-0-0-15-0-0-0
+780,60,5,RequestNewWinCondition(),Can you show me one more winning board?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-6-0-0-8-0-0-14-0-0-7-0-0-0
+780,60,6,RequestNewWinCondition(),One more please.,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-14-0-0-13-0-0-16-0-0-9-0-0-0
+780,60,7,"Context Switch, RequestOtherPlayers()",How could another player undo this win?,Inform([]),There is nothing another player could do to prevent this win.,Derek,5,5,Shaobo,,0-0-0-6-0-0-8-0-0-14-0-0-7-0-0-0
+780,60,8,"Context Switch, Confirm(User_ID=1, AddPiece(1,0))","In this board, can I add a piece above the bottom left triangle?",Affirm(),"Yes, you can add a piece anywhere.",Derek,5,5,Shaobo,,0-0-0-14-0-0-13-0-0-16-0-0-9-0-0-0
+780,60,9,"Context Switch, Confirm(User_ID=1, Height)",Is the color of pieces important for this win?,Negate(),No. Their color are not identical.,Derek,2,5,Shaobo,,0-0-0-6-0-0-8-0-0-14-0-0-7-0-0-0
+780,60,10,"Context Switch, Confirm(User_ID=1, Height)",How about in this board?,Negate(),Still wrong.,Derek,3,5,Shaobo,,0-0-0-9-0-0-3-0-0-1-0-0-15-0-0-0
+780,60,11,"Context Switch, Request(User_ID=1, Rotate)","Go back to this winning board, how can I rotate this board and keep winning?","Inform([45, 90])",You can aline them diagonally or vertically.,Derek,4,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-7-4-5-6
+780,60,12,"Context Switch, Request(User_ID=1, Rotate)","Switching to this board, how can I aline these pieces in different angle and keep winning?",Inform([90]),You can aline them vertically.,Derek,4,5,Shaobo,,0-0-0-14-0-0-13-0-0-16-0-0-9-0-0-0
+780,60,13,"Context Switch, Confirm(User_ID=1, Color)",Switching to this board. is the color pattern the reason for this board to win?,NotSure(),I am not sure about that.,Derek,5,5,Shaobo,,0-0-0-6-0-0-8-0-0-14-0-0-7-0-0-0
+780,60,14,Finish(),Thank you for teaching me today! ,Finish,You are welcome!,Derek,5,5,Shaobo,,0-0-0-6-0-0-8-0-0-14-0-0-7-0-0-0

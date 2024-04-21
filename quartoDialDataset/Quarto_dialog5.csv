@@ -1,0 +1,11 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+5,100,0,Start(),"Hello, can you teach me Quarto?",Start,Yes,Anthony,,,,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+5,100,1,RequestNewWinCondition(),Can you show me a win condition?,Inform(),Assume you demonstrate this win condition,Anthony,,,,,0-0-0-0-0-0-0-0-0-0-0-0-1-2-9-11
+5,100,2,"Same , Confirm(User_ID=1, AddPiece(1,2))",If I add a piece here is it a win?,Affirm(),"Yes, correct",Anthony,,,,,0-0-0-0-0-0-0-0-0-0-0-0-1-2-9-11
+5,100,3,RequestNewWinCondition(),Can you show me a second win condition?,Inform(),Assume you demonstrate this win condition,Anthony,,,,,6-0-0-0-8-0-0-0-7-0-0-0-4-0-0-0
+5,100,4,"Context Switch, RequestOtherPlayers()",Go back to the first condition. Can a player undo this win?,Inform([]),"No, they could not.",Anthony,,,,,0-0-0-0-0-0-0-0-0-0-0-0-1-2-9-11
+5,100,5,"Same, Confirm(User_ID=1, Translate('row1'))",Is this a win if it were in the first row?,Affirm,Yes,Anthony,,,,,0-0-0-0-0-0-0-0-0-0-0-0-1-2-9-11
+5,100,6,"Context Switch, Confirm(User_ID=1, AddPiece(1,2))",Go to the second condition. Is it a win if I add a piece here?,Affirm(),"Yes, it is still a win.",Anthony,,,,,6-0-0-0-8-0-0-0-7-0-0-0-4-0-0-0
+5,100,7,"Same, Request(User_ID=1, Rotate)",How can I rotate the pieces to win?,"Inform([0, 45])","You can put them horizontally, or diagonal. ",Anthony,,,,,6-0-0-0-8-0-0-0-7-0-0-0-4-0-0-0
+5,100,8,RequestNewWinCondition(),Can you show me a third win condition?,Inform(),Assume you demonstrate this win condition,Anthony,,,,,0-0-0-14-0-0-8-0-0-16-0-0-2-0-0-0
+5,100,9,Finish(),Thanks for the help!,Finish,No problem!,Anthony,,,,,0-0-0-14-0-0-8-0-0-16-0-0-2-0-0-0

@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+897,60,0,Start(),Hello there! Could you teach me Quarto?,Start,Yeah sure.,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+897,60,1,RequestNewWinCondition(),Please show me a win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-14-0-0-0-10-0-0-0-8-0-0-0-16
+897,60,2,RequestNewWinCondition(),Please show me another win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,13-0-0-0-0-14-0-0-0-0-11-0-0-0-0-16
+897,60,3,"Same, Confirm(User_ID=1, Rotate(90))",Could I rotate the pieces like this?,NotSure(),I'm not sure. ,Anthony,3,5,Yiyen,,13-0-0-0-0-14-0-0-0-0-11-0-0-0-0-16
+897,60,4,RequestNewWinCondition(),Please show me a third win.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,2-0-0-0-0-1-0-0-0-0-5-0-0-0-0-10
+897,60,5,"Same, Confirm(User_ID=1, AddPiece(2,0))",Could I add a piece in this spot?,Affirm(),"Yes, that's totally fine and won't mess up the win condition. ",Anthony,3,5,Yiyen,,2-0-0-0-0-1-0-0-0-0-5-0-0-0-0-10
+897,60,6,"Same, Confirm(User_ID=1, Hollowness)",Is this a win because of the hollowness of the pieces?,Affirm(),"Yes, as you can see none of them are hollow.",Anthony,5,5,Yiyen,,2-0-0-0-0-1-0-0-0-0-5-0-0-0-0-10
+897,60,7,"Same, RequestOtherPlayers()",How can another player undo this win?,Inform([]),They cannot. ,Anthony,5,5,Yiyen,,2-0-0-0-0-1-0-0-0-0-5-0-0-0-0-10
+897,60,8,RequestNewWinCondition(),Please show me yet another win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-6-0-0-1-0-0-7-0-0-8-0-0-0
+897,60,9,"Context Switch, Confirm(User_ID=1, Shape)","Looking back to this board, is this a win because of the shape of the pieces?",Negate(),"No, that is not why this is a win. ",Anthony,5,5,Yiyen,,13-0-0-0-0-14-0-0-0-0-11-0-0-0-0-16
+897,60,10,Finish(),Thanks for all the help!,Finish,You're welcome.,Anthony,5,5,Yiyen,,13-0-0-0-0-14-0-0-0-0-11-0-0-0-0-16

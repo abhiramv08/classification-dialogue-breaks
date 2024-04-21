@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+2,100,0,Start(),"Hello, please teach me Quarto.",Start,Ok sure.,Anthony,,,,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+2,100,1,RequestNewWinCondition(),Please show me a win condition.,Inform(),Assume you demonstrate this win condition,Anthony,,,,,0-0-0-1-0-0-10-0-0-14-0-0-5-0-0-0
+2,100,2,RequestNewWinCondition(),Show me a second win condition too.,Inform(),Assume you demonstrate this win condition,Anthony,,,,,0-0-0-4-0-0-1-0-0-11-0-0-2-0-0-0
+2,100,3,RequestNewWinCondition(),Show me a third win condition as well.,Inform(),Assume you demonstrate this win condition,Anthony,,,,,0-0-0-0-0-0-0-0-0-0-0-0-5-9-11-13
+2,100,4,"Same, Confirm(User_ID=1, Rotate(45))",Can I move this to the diagonal and still win?,Affirm(),Yep.,Anthony,,,,,0-0-0-0-0-0-0-0-0-0-0-0-5-9-11-13
+2,100,5,"Context Switch, Confirm(User_ID=1, AddPiece(2,3))","Go to the second win. Can I add a piece at row 2, column 3 and still win?",Affirm(),Yes you can do that.,Anthony,,,,,0-0-0-4-0-0-1-0-0-11-0-0-2-0-0-0
+2,100,6,"Same , Confirm(User_ID=1, Shape)",Is this a win condition due to the shape of the pieces?,Affirm(),Yes the shape is an important factor.,Anthony,,,,,0-0-0-4-0-0-1-0-0-11-0-0-2-0-0-0
+2,100,7,"Same, Confirm(User_ID=1, Rotate(90))",Can I flip this to the other diagonal?,Affirm(),"Yes, that would still be a win?",Anthony,,,,,0-0-0-4-0-0-1-0-0-11-0-0-2-0-0-0
+2,100,8,"Same, RequestOtherPlayers()",Can another player undo this win?,Inform([]),"No, they cannot cover your pieces.",Anthony,,,,,0-0-0-4-0-0-1-0-0-11-0-0-2-0-0-0
+2,100,9,"Context Switch, Confirm(User_ID=1, Height)","Looking at the first condition, is it a win because of the pieces height?",Negate(),"No, the other factors are what determines a win. ",Anthony,,,,,0-0-0-1-0-0-10-0-0-14-0-0-5-0-0-0
+2,100,10,"Context Switch, Confirm(User_ID=1, Height)","How about the second, is that a win because of piece height?",Negate(),No not that one either. ,Anthony,,,,,0-0-0-4-0-0-1-0-0-11-0-0-2-0-0-0
+2,100,11,"Same, Confirm(User_ID=1, Quantity)",Is this a win because of how many pieces are on the board?,Affirm(),Yes. This game requires a certain amount in a row.,Anthony,,,,,0-0-0-4-0-0-1-0-0-11-0-0-2-0-0-0
+2,100,12,"Same, Confirm(User_ID=1, Height)",Is piece height a factor in being a win condition?,Negate(),No that is not at play.,Anthony,,,,,0-0-0-4-0-0-1-0-0-11-0-0-2-0-0-0
+2,100,13,"Context Switch, Confirm(User_ID=1, Height)",Go to the first win. Is this a win because of piece height?,Negate(),"No, it is not. Stop asking this question. ",Anthony,,,,,0-0-0-1-0-0-10-0-0-14-0-0-5-0-0-0
+2,100,14,RequestNewWinCondition(),"Show a fourth win condition, please. ",Inform(),Assume you demonstrate this win condition,Anthony,,,,,0-0-0-11-0-0-1-0-0-10-0-0-9-0-0-0
+2,100,15,Finish(),"Okay, thanks for that help!",Finish,"Sure, I hope you can play soon!",Anthony,,,,,0-0-0-11-0-0-1-0-0-10-0-0-9-0-0-0

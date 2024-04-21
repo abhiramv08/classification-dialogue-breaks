@@ -1,0 +1,11 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+20,100,0,Start(),Can you teach me how to play Quarto?,Start,Sure!,Derek,5,5,Dave,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+20,100,1,RequestNewWinCondition(),Can you show me a new win condition to start with?,Inform(),Assume you demonstrate this win condition,Derek,5,4,Dave,,2-0-0-0-0-14-0-0-0-0-10-0-0-0-0-9
+20,100,2,"Same, Request(User_ID=1, Translate)",Is that still a win with some translate?,Inform([]),Yes.,Derek,2,3,Dave,,2-0-0-0-0-14-0-0-0-0-10-0-0-0-0-9
+20,100,3,"Same, Confirm(User_ID=1, Rotate(90))",It that still a win if the pieces are vertically placed?,Affirm(),Yes.,Derek,4,5,Dave,,2-0-0-0-0-14-0-0-0-0-10-0-0-0-0-9
+20,100,4,RequestNewWinCondition(),Can you show me a new win condition?,Inform(),Assume you demonstrate this win condition,Derek,5,4,Dave,,0-0-0-0-0-0-0-0-0-0-0-0-3-5-9-15
+20,100,5,"Context Switch, Request(User_ID=1, Rotate)","Let's go back to the first win condition, can I rotate it in some angle and keeps winning?",Inform([90]),Yes you can rotate the pieces to vertical.,Derek,4,3,Dave,,2-0-0-0-0-14-0-0-0-0-10-0-0-0-0-9
+20,100,6,"Context Switch, Confirm(User_ID=1, Rotate(45))","For the second win condition, is that still a win if the pieces are placed diagonally?",Affirm(),Correct!,Derek,5,4,Dave,,0-0-0-0-0-0-0-0-0-0-0-0-3-5-9-15
+20,100,7,"Same, Request(User_ID=1, Rotate)",Is there any other angles I can rotate to keep winning?,"Inform([45, 90])",Yes you can rotate the pieces to vertical or diagonal.,Derek,5,4,Dave,,0-0-0-0-0-0-0-0-0-0-0-0-3-5-9-15
+20,100,8,"Same, RequestOtherPlayers()",Can another player move or replace these pieces?,Inform([]),"Yes, some how.",Derek,2,3,Dave,,0-0-0-0-0-0-0-0-0-0-0-0-3-5-9-15
+20,100,9,Finish(),Thanks! I learnede a lot through this conversation. ,Finish,No problem!,Derek,5,5,Dave,,0-0-0-0-0-0-0-0-0-0-0-0-3-5-9-15

@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+391,50,0,Start(),"Hi, could you please teach me the game of Quarto?",Start,I would love to. ,Anthony,,,,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+391,50,1,RequestNewWinCondition(),Please show me a win condition. ,Inform,Assume you demonstrate this win condition,Anthony,,,,,0-0-0-0-0-0-0-0-0-0-0-0-5-3-9-13
+391,50,2,"Same, Confirm(User_ID=1, Color)",Is the color of the pieces why this is a win?,Affirm(),"Yes, they are all green, so this is a win. ",Anthony,,,,,0-0-0-0-0-0-0-0-0-0-0-0-5-3-9-13
+391,50,3,"Same, Confirm(User_ID=1, Translate([2, 0]))",Could I shift the pieces to this position?,Affirm(),"Yes, that would be fine. ",Anthony,,,,,0-0-0-0-0-0-0-0-0-0-0-0-5-3-9-13
+391,50,4,"Same, Confirm(User_ID=1, Shape)",Is this a win because of the shape of the pieces?,NotSure(),"I'm not sure, sorry.",Anthony,,,,,0-0-0-0-0-0-0-0-0-0-0-0-5-3-9-13
+391,50,5,"Same, Confirm(User_ID=1, Translate([3, 0]))",Is this still a win if I move the pieces here?,NotSure(),I'm not sure if you can do that.,Anthony,,,,,0-0-0-0-0-0-0-0-0-0-0-0-5-3-9-13
+391,50,6,RequestNewWinCondition(),Please show me another win condition.,Inform,Assume you demonstrate this win condition,Anthony,,,,,14-0-0-0-0-16-0-0-0-0-4-0-0-0-0-8
+391,50,7,"Same, Request(User_ID=1, Rotate)",How could I rotate these pieces?,Inform([90]),One thing you could do is rotate them vertically so they all lie in the same column. ,Anthony,,,,,14-0-0-0-0-16-0-0-0-0-4-0-0-0-0-8
+391,50,8,"Same, Confirm(User_ID=1, Shape)",Is this a win because of the shapes of the pieces?,NotSure(),I don't know if that's why or not. ,Anthony,,,,,14-0-0-0-0-16-0-0-0-0-4-0-0-0-0-8
+391,50,9,"Context Switch, Confirm(User_ID=1, RemovePiece(0,3))",Could I remove the piece here and still have this be a win?,Negate(),"No, definitely not. ",Anthony,,,,,0-0-0-0-0-0-0-0-0-0-0-0-5-3-9-13
+391,50,10,"Same, Confirm(User_ID=1, Height)",Is this a win because of what height the pieces are?,NotSure(),"I'm not sure, sorry.",Anthony,,,,,0-0-0-0-0-0-0-0-0-0-0-0-5-3-9-13
+391,50,11,RequestNewWinCondition(),Please show me a new win condition. ,Inform,Assume you demonstrate this win condition,Anthony,,,,,0-0-0-12-0-0-15-0-0-16-0-0-14-0-0-0
+391,50,12,RequestNewWinCondition(),Please show me one more win condition. ,Inform,Assume you demonstrate this win condition,Anthony,,,,,0-0-15-0-0-0-12-0-0-0-10-0-0-0-14-0
+391,50,13,"Context Switch, Request(User_ID=1, Rotate)",Let's look at this board now. How can I rotate these pieces?,Inform([90]),You could rotate them so they are all in the same column. ,Anthony,,,,,0-0-0-12-0-0-15-0-0-16-0-0-14-0-0-0
+391,50,14,"Context Switch, Confirm(User_ID=1, Color)","Moving on to this board, is this a win because of the color of the pieces?",NotSure(),I'm not sure so I can't give a good answer. ,Anthony,,,,,0-0-0-0-0-0-0-0-0-0-0-0-5-3-9-13
+391,50,15,Finish(),Thanks for helping me! Bye!,Finish,See you later!,Anthony,,,,,0-0-0-0-0-0-0-0-0-0-0-0-5-3-9-13

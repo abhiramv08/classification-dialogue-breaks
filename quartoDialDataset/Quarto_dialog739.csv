@@ -1,0 +1,18 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+739,60,0,Start(),Hello! Can you show me how to play Quarto?,Start,Why not! Let's get started!,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+739,60,1,RequestNewWinCondition(),Can you show me what a win condition looks like?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-5-0-0-0-2-0-0-0-10-0-0-0-1
+739,60,2,"Same, Request(User_ID=1, Translate)","Can I put the pieces somewhere else and still have a win?
+","Inform(['col1', 'col2'])",Yes! Put them on the first or the second column.,Ruijie,3,3,Luke,,0-0-0-5-0-0-0-2-0-0-0-10-0-0-0-1
+739,60,3,"Same, Confirm(User_ID=1, Hollowness)","Does the hollowness of the pieces make it a win?
+",Affirm(),"Yes, you’re right.",Ruijie,5,5,Luke,,0-0-0-5-0-0-0-2-0-0-0-10-0-0-0-1
+739,60,4,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-13-16-12-15
+739,60,5,"Context Switch, RequestOtherPlayers()","Switch to this board, can the other player undo this win?
+",Inform([]),"No, this win is absolute.
+",Ruijie,5,5,Luke,,0-0-0-5-0-0-0-2-0-0-0-10-0-0-0-1
+739,60,6,"Context Switch, Confirm(User_ID=1, Height)","Switch to this board, is it a win because the pieces are of the same height?
+",Affirm(),"That’s right.
+",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-13-16-12-15
+739,60,7,"Context Switch, RequestOtherPlayers()","Switch to this board, can the other player do something to break the win condition?",Inform([]),"No, he can't. This win is absolute.",Ruijie,5,5,Luke,,0-0-0-5-0-0-0-2-0-0-0-10-0-0-0-1
+739,60,8,"Same, Request(User_ID=1, Translate)",Can I put the pieces somewhere else and still get a win?,"Inform(['col1', 'col2'])","Sure, you can put them on the first or the second column.",Ruijie,3,3,Luke,,0-0-0-5-0-0-0-2-0-0-0-10-0-0-0-1
+739,60,9,"Context Switch, Request(User_ID=1, Rotate)","Switch to this board, can I rotate the pieces by some degrees?","Inform([45, 90])","Sure, you can rotate them by forty five or ninety degrees.",Ruijie,5,3,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-13-16-12-15
+739,60,10,Finish(),Thanks! I got it!,Finish,You are welcome.,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-13-16-12-15

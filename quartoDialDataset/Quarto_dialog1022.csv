@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+1022,60,0,Start(),"Hi, can you show me how to play Quarto?",Start,"Yes, I will show you.",Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+1022,60,1,RequestNewWinCondition(),Can you show me a winning board?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,0-0-0-6-0-0-10-0-0-2-0-0-9-0-0-0
+1022,60,2,"Same, Confirm(User_ID=1, Shape)","In this board, is it wins because of the shape of pieces?",Negate(),No.,Tianyi,5,4,Ruijie,,0-0-0-6-0-0-10-0-0-2-0-0-9-0-0-0
+1022,60,3,RequestNewWinCondition(),Can you show me another winning board?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,0-0-0-6-0-0-0-16-0-0-0-4-0-0-0-12
+1022,60,4,RequestNewWinCondition(),Can you give me a new win pattern?,Inform,Assume you demonstrate this win condition,Tianyi,5,4,Ruijie,,0-0-5-0-0-0-16-0-0-0-15-0-0-0-7-0
+1022,60,5,RequestNewWinCondition(),Can you give me another new win pattern?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,9-0-0-0-0-13-0-0-0-0-10-0-0-0-0-5
+1022,60,6,"Same, RequestOtherPlayers()","In this case, can someone take actions to prevent the win?",Inform([]),"No, there is nothing he/she can do.",Tianyi,5,5,Ruijie,,9-0-0-0-0-13-0-0-0-0-10-0-0-0-0-5
+1022,60,7,"Context Switch, Request(User_ID=1, Rotate)","For this win, can I rotate some pieces and maintain the win condition?",Inform([90]),"Yes, you can rotate all pieces 90 degrees to the rows and put them in the first column.",Tianyi,5,4,Ruijie,,0-0-0-6-0-0-10-0-0-2-0-0-9-0-0-0
+1022,60,8,"Context Switch, Request(User_ID=1, Translate)","In this win, can I move some pieces and keep winning?",Inform(['col1']),"Yes, you can move all pieces to the second column.",Tianyi,5,5,Ruijie,,0-0-5-0-0-0-16-0-0-0-15-0-0-0-7-0
+1022,60,9,"Context Switch, Confirm(User_ID=1, Quantity)","In this board, is it wins because there are four pieces on the board?",NotSure(),"That is a good question, I cannot determine whether that is true.",Tianyi,5,5,Ruijie,,9-0-0-0-0-13-0-0-0-0-10-0-0-0-0-5
+1022,60,10,"Same, Confirm(User_ID=1, Height)","And, is it a win because most pieces are tall?",Negate(),"No, that is unrelated.",Tianyi,5,4,Ruijie,,9-0-0-0-0-13-0-0-0-0-10-0-0-0-0-5
+1022,60,11,Finish(),Thank you for your patient.,Finish,No problem.,Tianyi,5,5,Ruijie,,9-0-0-0-0-13-0-0-0-0-10-0-0-0-0-5

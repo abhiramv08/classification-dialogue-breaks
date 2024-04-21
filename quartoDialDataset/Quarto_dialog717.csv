@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+717,60,0,Start(),"Hi, I wish to learn how to play Quarto.",Start,I can teach you that.,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+717,60,1,RequestNewWinCondition(),Can you show me what a win condition looks like?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-9-0-0-12-0-0-16-0-0-11-0-0-0
+717,60,2,"Same, Request(User_ID=1, Rotate)",Can I rotate the pieces by some degrees?,Inform([90]),"Sure, you can rotate them by ninety degrees.",Ruijie,4,3,Luke,,0-0-0-9-0-0-12-0-0-16-0-0-11-0-0-0
+717,60,3,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-11-12-7-8
+717,60,4,"Same, Confirm(User_ID=1, Quantity)",Does the number of pieces make it a win?,NotSure(),"You know what, I’m not quite sure.",Ruijie,5,3,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-11-12-7-8
+717,60,5,"Same, Request(User_ID=1, Translate)","Can I put the pieces somewhere else?
+","Inform(['row1', 'row2', 'row3'])","Yes, you can put them on the first, the secondm or the third row.",Ruijie,3,3,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-11-12-7-8
+717,60,6,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-2-0-0-1-0-0-3-0-0-9-0-0-0
+717,60,7,"Context Switch, Confirm(User_ID=1, RemovePiece(0,0))","Switch to this board, can I remove the piece on the left corner and still have a win?",Negate(),"No, you can’t do that.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-11-12-7-8
+717,60,8,"Context Switch, Confirm(User_ID=1, Height)","Switch to this board, is it a win because the pieces are of the same height?",Affirm(),"Yes, that's correct!",Ruijie,5,5,Luke,,0-0-0-9-0-0-12-0-0-16-0-0-11-0-0-0
+717,60,9,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-16-0-0-0-6-0-0-0-13-0-0-0-14-0
+717,60,10,Finish(),Thanks! I got it.,Finish,You are so welcome.,Ruijie,5,5,Luke,,0-0-16-0-0-0-6-0-0-0-13-0-0-0-14-0

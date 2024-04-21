@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+388,50,0,Start(),"hello, can you teach me how to play Quarto?",Start,I am glad to help.,Yiyan,5,4,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+388,50,1,RequestNewWinCondition(),Could you firstly show me a win?,Inform,Assume you demonstrate this win condition,Yiyan,5,3,Luke,,3-0-0-0-0-1-0-0-0-0-9-0-0-0-0-13
+388,50,2,RequestNewWinCondition(),Is there any other way to win?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Luke,,2-0-0-0-0-13-0-0-0-0-6-0-0-0-0-1
+388,50,3,RequestNewWinCondition(),Could you please show me one more win?,Inform,Assume you demonstrate this win condition,Yiyan,4,4,Luke,,0-0-0-2-0-0-10-0-0-4-0-0-11-0-0-0
+388,50,4,"Context Switch, Confirm(User_ID=1, AddPiece(0,2))","For the seoncd win you just showed, would I get another win if I add a piece on the first row and third column?",Affirm(),"Yes, it will still be a win.",Yiyan,5,4,Luke,,2-0-0-0-0-13-0-0-0-0-6-0-0-0-0-1
+388,50,5,"Same, Confirm(User_ID=1, Color)","For the same board, is it a win because of the color of the pieces?",NotSure(),"Maybe not, but I am not quite sure.",Yiyan,5,3,Luke,,2-0-0-0-0-13-0-0-0-0-6-0-0-0-0-1
+388,50,6,"Context Switch, RequestOtherPlayers()","For this board, how can the other player do to prevent my win?",Inform([]),There is nothing he or she can do.,Yiyan,5,3,Luke,,3-0-0-0-0-1-0-0-0-0-9-0-0-0-0-13
+388,50,7,RequestNewWinCondition(),Can you please show me another win?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Luke,,0-0-0-11-0-0-12-0-0-4-0-0-9-0-0-0
+388,50,8,"Context Switch, Request(User_ID=1, Rotate)","For this condition, how can I rotate the pieces to get another win?",Inform([90]),You can rorate them to the first column.,Yiyan,5,5,Luke,,0-0-0-2-0-0-10-0-0-4-0-0-11-0-0-0
+388,50,9,"Same, Confirm(User_ID=1, Quantity)","For the same board, is it a win because of the number of the pieces?",NotSure(),"I don't know, sorry.",Yiyan,4,4,Luke,,0-0-0-2-0-0-10-0-0-4-0-0-11-0-0-0
+388,50,10,RequestNewWinCondition(),Could you show me a new win condition?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Luke,,0-13-0-0-0-9-0-0-0-12-0-0-0-10-0-0
+388,50,11,"Context Switch, Confirm(User_ID=1, Quantity)","For this win, is it a win because of the number of the pieces?",Affirm(),"Yes, you will need at least four pieces in order to win.",Yiyan,5,4,Luke,,2-0-0-0-0-13-0-0-0-0-6-0-0-0-0-1
+388,50,12,"Context Switch, Confirm(User_ID=1, Quantity)","For this board, is this a win because of the number of pieces?",Affirm(),"Yes, as I said previously, you must have at least four pieces to get a win.",Yiyan,5,5,Luke,,3-0-0-0-0-1-0-0-0-0-9-0-0-0-0-13
+388,50,13,"Context Switch, Request(User_ID=1, Rotate)","For this board, how can I rotate the pieces while still getting a win?",Inform([90]),You can rotate them to the last column.,Yiyan,5,5,Luke,,2-0-0-0-0-13-0-0-0-0-6-0-0-0-0-1
+388,50,14,RequestNewWinCondition(),Can you show me another way to win?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Luke,,0-14-0-0-0-6-0-0-0-12-0-0-0-2-0-0
+388,50,15,Finish(),Thanks for the help.,Finish,You are welcome.,Yiyan,5,4,Luke,,0-14-0-0-0-6-0-0-0-12-0-0-0-2-0-0

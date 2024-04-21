@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+377,50,0,Start(),"Hi, could you please teach me how to play Quarto?",Start,Sure!,Shaobo,5,5,Jacob,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+377,50,1,RequestNewWinCondition(),Could you show me a win firstly?,Inform,Assume you demonstrate this win condition,Shaobo,5,4,Jacob,,0-0-0-10-0-0-8-0-0-2-0-0-12-0-0-0
+377,50,2,"Same, Request(User_ID=1, Translate)",How could I shift the pieces and still keep the win?,Inform([]),There is nothing you could do.,Shaobo,4,5,Jacob,This should make reference to the fact that the pieces must remain in the same relative positions.,0-0-0-10-0-0-8-0-0-2-0-0-12-0-0-0
+377,50,3,RequestNewWinCondition(),Could you show me another win?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,Jacob,,0-0-0-14-0-0-0-12-0-0-0-11-0-0-0-9
+377,50,4,RequestNewWinCondition(),Are there other ways to win the game?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,Jacob,,0-0-0-12-0-0-10-0-0-16-0-0-11-0-0-0
+377,50,5,"Same, Request(User_ID=1, Rotate)",And how could I rotate the pieces and still keep the win?,Inform([90]),You could rotate them to the first column.,Shaobo,5,5,Jacob,,0-0-0-12-0-0-10-0-0-16-0-0-11-0-0-0
+377,50,6,"Context Switch, Confirm(User_ID=1, Height)","And for this board, is it a win because of the height of the pieces?",NotSure(),I don't think so but I am not sure.,Shaobo,5,5,Jacob,,0-0-0-10-0-0-8-0-0-2-0-0-12-0-0-0
+377,50,7,"Context Switch, RequestOtherPlayers()","For this board, how could another player revoke this win?",Inform([]),There is nothing another player could do to prevent the win.,Shaobo,5,5,Jacob,,0-0-0-14-0-0-0-12-0-0-0-11-0-0-0-9
+377,50,8,"Same, Confirm(User_ID=1, Translate([0, 1]))",And is it still a win if I shift the pieces to the second column from left?,NotSure(),I think so but I am not sure.,Shaobo,5,5,Jacob,,0-0-0-14-0-0-0-12-0-0-0-11-0-0-0-9
+377,50,9,"Context Switch, Confirm(User_ID=1, RemovePiece(3,3))","And for this board, is it still a win if I remove the top right piece?",Negate(),"No, it will not be a win anymore.",Shaobo,5,5,Jacob,,0-0-0-10-0-0-8-0-0-2-0-0-12-0-0-0
+377,50,10,"Context Switch, Confirm(User_ID=1, Color)","For this board, is it a win because of the color of the pieces?",Negate(),"No, it is a win because all pieces have the same height.",Shaobo,5,5,Jacob,,0-0-0-14-0-0-0-12-0-0-0-11-0-0-0-9
+377,50,11,RequestNewWinCondition(),Could you show me one more winning board?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,Jacob,,0-0-0-0-0-0-0-0-0-0-0-0-11-13-1-7
+377,50,12,"Context Switch, Confirm(User_ID=1, Height)","For this board, is it still a win because of the height of the pieces?",NotSure(),I think so but I am not sure.,Shaobo,5,5,Jacob,,0-0-0-14-0-0-0-12-0-0-0-11-0-0-0-9
+377,50,13,"Context Switch, Confirm(User_ID=1, Quantity)","For this board, does the number of pieces matter?",Affirm(),"Yes, you need at least four pieces for a win.",Shaobo,5,5,Jacob,,0-0-0-10-0-0-8-0-0-2-0-0-12-0-0-0
+377,50,14,"Context Switch, Confirm(User_ID=1, RemovePiece(0,1))","And for this board, is it still a win if I remove the second piece from left?",Negate(),"No, it will not be a win anymore.",Shaobo,5,5,Jacob,,0-0-0-0-0-0-0-0-0-0-0-0-11-13-1-7
+377,50,15,Finish(),Thanks for the help! I have learned a lot!,Finish,You are welcome!,Shaobo,5,5,Jacob,,0-0-0-0-0-0-0-0-0-0-0-0-11-13-1-7

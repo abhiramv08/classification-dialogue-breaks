@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+123,100,0,Start(),Can you teach me how to play Quarto?,Start,Sure.,Tianyi,5,5,Anthony,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+123,100,1,RequestNewWinCondition(),Can you tell me when I can win the game?,Inform(),Assume you demonstrate this win condition,Tianyi,3,5,Anthony,Not what this request means.,1-0-0-0-0-14-0-0-0-0-13-0-0-0-0-6
+123,100,2,RequestNewWinCondition(),Can you show me another win condition?,Inform(),Assume you demonstrate this win condition,Tianyi,5,5,Anthony,,13-0-0-0-1-0-0-0-10-0-0-0-2-0-0-0
+123,100,3,RequestNewWinCondition(),Is there some other cases to win?,Inform(),Assume you demonstrate this win condition,Tianyi,3,3,Anthony,,5-0-0-0-2-0-0-0-8-0-0-0-4-0-0-0
+123,100,4,"Win Same {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}","In that case, win3, is it wins because pieces are hollow?",Negate(),"Nope, not in this case.",Tianyi,5,3,Anthony,bad grammar,5-0-0-0-2-0-0-0-8-0-0-0-4-0-0-0
+123,100,5,"Same, RequestOtherPlayers()","And, can the action of another player prevent the win?",Inform([]),This can't happen.,Tianyi,5,5,Anthony,,5-0-0-0-2-0-0-0-8-0-0-0-4-0-0-0
+123,100,6,"Context Switch, Confirm(User_ID=1, RemovePiece(3,0))","In the second win, win2, if I remove the uppermost piece, will it still be a win?",Negate(),"No, it will not be a win.",Tianyi,5,5,Anthony,,13-0-0-0-1-0-0-0-10-0-0-0-2-0-0-0
+123,100,7,"Same, Confirm(User_ID=1, Translate('col2'))","So, what if I shift all pieces to column3, will it still be a win?",Affirm,"Yeah, it will still be a win.",Tianyi,1,5,Anthony,asking about column 2.,13-0-0-0-1-0-0-0-10-0-0-0-2-0-0-0
+123,100,8,"Context Switch, Confirm(User_ID=1, AddPiece(2,0))","In the first win, win1, can I add a piece at row3 column1 and maintain the win?",Affirm(),"Yep, it is still a win since the original win format is not affected.",Tianyi,5,5,Anthony,,1-0-0-0-0-14-0-0-0-0-13-0-0-0-0-6
+123,100,9,"Context Switch, Request(User_ID=1, Translate)","In win2, can I shift pieces to somewhere else and maintain the win?","Inform(['col1', 'col2', 'col3'])","You can shift all these pieces right 1, 2, or 3 blocks, and you should make sure all pieces are in the same column.",Tianyi,4,5,Anthony,,13-0-0-0-1-0-0-0-10-0-0-0-2-0-0-0
+123,100,10,Finish(),"Thanks, that is so helpful!",Finish,"Hehe, you are welcome.",Tianyi,5,5,Anthony,,13-0-0-0-1-0-0-0-10-0-0-0-2-0-0-0

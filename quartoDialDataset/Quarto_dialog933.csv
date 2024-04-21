@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+933,60,0,Start(),"Hello, there. Would you teach me how to play?",Start,"Okay, sure.",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+933,60,1,RequestNewWinCondition(),Please show me a win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,7-0-0-0-9-0-0-0-1-0-0-0-11-0-0-0
+933,60,2,"Same, Confirm(User_ID=1, Hollowness)",Is this a win because of the hollowness of all the pieces. ,Negate(),"No, the hollowness is not relevant.",Anthony,5,5,Yiyen,,7-0-0-0-9-0-0-0-1-0-0-0-11-0-0-0
+933,60,3,RequestNewWinCondition(),Please show me a new win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,4-0-0-0-0-7-0-0-0-0-8-0-0-0-0-12
+933,60,4,"Same, Confirm(User_ID=1, Color)",Is this a win because of the color of the pieces?,Negate(),"No, the color is not the same for every piece. ",Anthony,5,5,Yiyen,,4-0-0-0-0-7-0-0-0-0-8-0-0-0-0-12
+933,60,5,"Same, Request(User_ID=1, Rotate)",How could I rotate these pieces to keep this a win?,Inform([90]),One thing you might want to do is rotate all the pieces to be vertical.,Anthony,5,5,Yiyen,,4-0-0-0-0-7-0-0-0-0-8-0-0-0-0-12
+933,60,6,"Same, Confirm(User_ID=1, Quantity)",Is this win due to the number of pieces on the board?,NotSure(),"I'm not sure, sorry.",Anthony,5,5,Yiyen,,4-0-0-0-0-7-0-0-0-0-8-0-0-0-0-12
+933,60,7,"Same, Confirm(User_ID=1, AddPiece(1,1))",Could I add a piece here?,NotSure(),I'm not sure about that one. ,Anthony,3,5,Yiyen,,4-0-0-0-0-7-0-0-0-0-8-0-0-0-0-12
+933,60,8,"Same, Confirm(User_ID=1, AddPiece(0,0))","Could I add a piece here, though?",Affirm(),"Yes, that I know is fine. ",Anthony,3,5,Yiyen,,4-0-0-0-0-7-0-0-0-0-8-0-0-0-0-12
+933,60,9,RequestNewWinCondition(),Please show me a new win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-1-0-0-0-5-0-0-0-2-0-0-0-14-0
+933,60,10,"Context Switch, Request(User_ID=1, Rotate)","Going back to this board, how could I rotate these pieces?","Inform([0, 45])",You could put them horizontally or diagonally. ,Anthony,5,5,Yiyen,,7-0-0-0-9-0-0-0-1-0-0-0-11-0-0-0
+933,60,11,RequestNewWinCondition(),Please show me a new win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-6-9-10-1
+933,60,12,Finish(),"Thanks, have good day.",Finish,Bye bye!,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-6-9-10-1

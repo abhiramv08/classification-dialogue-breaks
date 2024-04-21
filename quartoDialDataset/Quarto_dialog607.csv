@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+607,60,0,Start(),Excuse me. Do you know how to play Quarto?,Start,"Yes, and I can show you how.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+607,60,1,RequestNewWinCondition(),"Thank you. Firstly, could you show me a win condition?",Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-12-15-7-16
+607,60,2,RequestNewWinCondition(),Is there any other way to win the game?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-3-0-0-7-0-0-5-0-0-4-0-0-0
+607,60,3,"Context Switch, RequestOtherPlayers()","Considering the previous board, how can the other player do to prevent the win?",Inform([]),"There is nothing he or she can do, since you have won the game.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-12-15-7-16
+607,60,4,"Same, Confirm(User_ID=1, Shape)","For the same board, do the shapes of the pieces relate to this win?",NotSure(),"I guess not, but I am not sure.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-12-15-7-16
+607,60,5,"Context Switch, RequestOtherPlayers()","Considering this board, how can the other player do to prevent the win?",Inform([]),"There is nothing he or she can do, since you have won the game.",Yiyan,5,4,Tianyi,,0-0-0-3-0-0-7-0-0-5-0-0-4-0-0-0
+607,60,6,"Context Switch, RequestOtherPlayers()","Let's switch to this board, how can the other player do to stop my win?",Inform([]),"This is the same as the previous one,  so there is nothing the other player can do.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-12-15-7-16
+607,60,7,"Same, Confirm(User_ID=1, Shape)","For the same board, is it a win because of the shapes of the pieces?",Negate(),"No, it is a win because all pieces have holes.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-12-15-7-16
+607,60,8,RequestNewWinCondition(),Could you please show me one more win case?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-1-0-0-7-0-0-15-0-0-9-0-0-0
+607,60,9,"Context Switch, RequestOtherPlayers()","
+Going back to this board, is there any method that the other player can use to stop this win?",Inform([]),"This is the same as the previous ones, so there is nothing he or she can do.",Yiyan,5,5,Tianyi,,0-0-0-3-0-0-7-0-0-5-0-0-4-0-0-0
+607,60,10,RequestNewWinCondition(),Could you please show me one more win case?,Inform,Assume you demonstrate this win condition,Yiyan,5,4,Tianyi,,0-4-0-0-0-10-0-0-0-12-0-0-0-8-0-0
+607,60,11,Finish(),"Wow, Quarto is really interesting, thanks for teaching me!",Finish,I am glad to help.,Yiyan,5,5,Tianyi,,0-4-0-0-0-10-0-0-0-12-0-0-0-8-0-0

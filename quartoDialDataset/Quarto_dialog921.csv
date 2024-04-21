@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+921,60,0,Start(),"Hi, will you please show me how to play Quarto?",Start,"Yes, I will. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+921,60,1,RequestNewWinCondition(),Please show me another win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-9-14-5-10
+921,60,2,RequestNewWinCondition(),How about another?,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,4-0-0-0-0-3-0-0-0-0-9-0-0-0-0-1
+921,60,3,"Same, Confirm(User_ID=1, Hollowness)",Is this win due to the hollowness of the pieces?,Negate(),"No, that's not why. ",Anthony,5,5,Yiyen,,4-0-0-0-0-3-0-0-0-0-9-0-0-0-0-1
+921,60,4,"Context Switch, Request(User_ID=1, Rotate)","Looking back to this board, how could I rotate the pieces?","Inform([45, 90])",You could put them vertically or diagonally. ,Anthony,4,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-9-14-5-10
+921,60,5,"Context Switch, Confirm(User_ID=1, Hollowness)","Looking to this board now, is this win due to the hollowness of the pieces?",Negate(),"No, that is not relevant in this case.",Anthony,5,4,Yiyen,,4-0-0-0-0-3-0-0-0-0-9-0-0-0-0-1
+921,60,6,"Same, Confirm(User_ID=1, Shape)",Is this a win because all the pieces are the same shape?,Affirm(),"Yes, that's correct. They're all triangles.",Anthony,5,5,Yiyen,,4-0-0-0-0-3-0-0-0-0-9-0-0-0-0-1
+921,60,7,"Context Switch, Confirm(User_ID=1, Shape)","Looking back at this board, is this a win becuase of the shape of the pieces?",Negate(),"No, that is not why.",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-9-14-5-10
+921,60,8,RequestNewWinCondition(),Please show me another win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-16-0-0-0-13-0-0-0-11-0-0-0-15-0-0
+921,60,9,"Same, RequestOtherPlayers()",How could another player affect this win?,Inform([]),They could not. ,Anthony,5,5,Yiyen,,0-16-0-0-0-13-0-0-0-11-0-0-0-15-0-0
+921,60,10,Finish(),"That is all for now, thanks.",Finish,"Okay, bye!",Anthony,5,5,Yiyen,,0-16-0-0-0-13-0-0-0-11-0-0-0-15-0-0

@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+407,50,0,Start(),Can you teach me how to play Quarto?,Start,Sure!,Derek,5,5,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+407,50,1,RequestNewWinCondition(),Can you give a win condition to start with?,Inform,Assume you demonstrate this win condition,Derek,5,5,Daniel,,0-0-0-10-0-0-5-0-0-1-0-0-2-0-0-0
+407,50,2,RequestNewWinCondition(),Please show me another one.,Inform,Assume you demonstrate this win condition,Derek,5,5,Daniel,,16-0-0-0-0-14-0-0-0-0-7-0-0-0-0-8
+407,50,3,"Same, RequestOtherPlayers()",How could another player undo this win?,Inform([]),Another player can not undo this win.,Derek,5,5,Daniel,,16-0-0-0-0-14-0-0-0-0-7-0-0-0-0-8
+407,50,4,RequestNewWinCondition(),Please give me another win condition.,Inform,Assume you demonstrate this win condition,Derek,5,4,Daniel,,14-0-0-0-0-16-0-0-0-0-5-0-0-0-0-7
+407,50,5,RequestNewWinCondition(),One more please.,Inform,Assume you demonstrate this win condition,Derek,5,5,Daniel,,1-0-0-0-0-2-0-0-0-0-5-0-0-0-0-9
+407,50,6,"Context Switch, Confirm(User_ID=1, Color)",For this winning board. Is that a win because the color pattern of all pieces?,NotSure(),Sorry I am not sure about that.,Derek,5,5,Daniel,,16-0-0-0-0-14-0-0-0-0-7-0-0-0-0-8
+407,50,7,"Same, Request(User_ID=1, Rotate)",How could I rotate this board and keep winning?,Inform([90]),You could put them vertically on first column.,Derek,5,5,Daniel,,16-0-0-0-0-14-0-0-0-0-7-0-0-0-0-8
+407,50,8,"Same, Confirm(User_ID=1, Quantity)",How about the quantity? Is that a reason to win?,NotSure(),I don't know.,Derek,5,5,Daniel,,16-0-0-0-0-14-0-0-0-0-7-0-0-0-0-8
+407,50,9,"Context Switch, Confirm(User_ID=1, Hollowness)","Switching to this board, is that a win because all pieces are not hollow?",Affirm(),You are totally correct.,Derek,5,5,Daniel,,0-0-0-10-0-0-5-0-0-1-0-0-2-0-0-0
+407,50,10,"Context Switch, Confirm(User_ID=1, Shape)","Moving to this board, is that a win because the shape pattern of all pieces?",Negate(),"No, the shape pattern does not make this board a win.",Derek,5,5,Daniel,,1-0-0-0-0-2-0-0-0-0-5-0-0-0-0-9
+407,50,11,"Context Switch, RequestOtherPlayers()",How could another player prevent this win shown on the board?,Inform([]),Another player could not prevent it. This win is absolute.,Derek,5,5,Daniel,,14-0-0-0-0-16-0-0-0-0-5-0-0-0-0-7
+407,50,12,"Same, Confirm(User_ID=1, Shape)",Do you know if that is a win due to shape pattern of all pieces?,Affirm(),Yes it is a win because all pieces have the same shape.,Derek,5,5,Daniel,,14-0-0-0-0-16-0-0-0-0-5-0-0-0-0-7
+407,50,13,"Context Switch, Confirm(User_ID=1, Rotate(90))",Can I place all pieces on this board vertically and keep winning?,NotSure(),Sorry I am not sure about that.,Derek,5,5,Daniel,,16-0-0-0-0-14-0-0-0-0-7-0-0-0-0-8
+407,50,14,"Context Switch, Confirm(User_ID=1, AddPiece(3,2))","On this board, could I add a piece on the first row and second column from left?",NotSure(),Sorry I am not sure about that as well.,Derek,5,5,Daniel,,1-0-0-0-0-2-0-0-0-0-5-0-0-0-0-9
+407,50,15,Finish(),Thanks! I still learned a lot today!,Finish,You are welcome!,Derek,5,5,Daniel,,1-0-0-0-0-2-0-0-0-0-5-0-0-0-0-9

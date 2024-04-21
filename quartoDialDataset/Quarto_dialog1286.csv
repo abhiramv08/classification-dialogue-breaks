@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+1286,60,0,Start(),"Hi, could you teach me how to play Quarto?",Start,Sure!,Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+1286,60,1,RequestNewWinCondition(),Could you show me a win first?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-0-0-15-0-0-9-0-0-3-0-0-5-0-0-0
+1286,60,2,"Same, Confirm(User_ID=1, Height)",And is it a win because of the height of the pieces?,NotSure(),I don't think so but I am not sure.,Shaobo,4,5,John,,0-0-0-15-0-0-9-0-0-3-0-0-5-0-0-0
+1286,60,3,RequestNewWinCondition(),Is there any other way to win?,Inform,Assume you demonstrate this win condition,Shaobo,4,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-7-12-3-4
+1286,60,4,"Context Switch, Confirm(User_ID=1, RemovePiece(3,3))","Switching to this board, is it still a win if I remove the top right piece?",Negate(),"No, you need at least four pieces for a win.",Shaobo,5,5,John,,0-0-0-15-0-0-9-0-0-3-0-0-5-0-0-0
+1286,60,5,"Same, Confirm(User_ID=1, Rotate(90))",And is it still a win if I rotate the pieces to the first column?,NotSure(),I think so but I am not very sure.,Shaobo,3,5,John,,0-0-0-15-0-0-9-0-0-3-0-0-5-0-0-0
+1286,60,6,RequestNewWinCondition(),Could you show me another winning board?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-11-0-0-0-1-0-0-0-7-0-0-0-3-0-0
+1286,60,7,"Same, RequestOtherPlayers()",And how could another player revoke this win?,Inform([]),There is nothing that another player could do to prevent this win.,Shaobo,5,5,John,,0-11-0-0-0-1-0-0-0-7-0-0-0-3-0-0
+1286,60,8,"Context Switch, Confirm(User_ID=1, Color)","Switching to this board, is it a win because of the color of the pieces?
+",Affirm(),"Yes, you got it!",Shaobo,5,5,John,,0-0-0-15-0-0-9-0-0-3-0-0-5-0-0-0
+1286,60,9,"Same, Confirm(User_ID=1, RemovePiece(0,0))",And is it still a win if I remove the bottom left piece?,Negate(),"No, you need at least four pieces for a win.",Shaobo,5,5,John,,0-0-0-15-0-0-9-0-0-3-0-0-5-0-0-0
+1286,60,10,Finish(),Thanks for the help! I have learned a lot!,Finish,You are welcome!,Shaobo,5,5,John,,0-0-0-15-0-0-9-0-0-3-0-0-5-0-0-0

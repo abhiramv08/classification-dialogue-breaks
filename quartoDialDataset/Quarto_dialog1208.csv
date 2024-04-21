@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+1208,60,0,Start(),"Hi, could you please tell me how to play Quarto?",Start,Sure!,Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+1208,60,1,RequestNewWinCondition(),Could you show me a win first?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-4-0-0-0-10-0-0-0-9-0-0-0-11-0-0
+1208,60,2,RequestNewWinCondition(),Is there any other way to win?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,13-0-0-0-0-7-0-0-0-0-8-0-0-0-0-5
+1208,60,3,"Same, Confirm(User_ID=1, Quantity)",And does the number of pieces matter for the board you just showed?,NotSure(),"Sorry, I am not sure about it.",Shaobo,5,4,John,,13-0-0-0-0-7-0-0-0-0-8-0-0-0-0-5
+1208,60,4,"Same, Confirm(User_ID=1, RemovePiece(1,2))",And is it still a win if I remove the blue piece?,NotSure(),"Sorry, I am not sure about it.",Shaobo,5,4,John,,13-0-0-0-0-7-0-0-0-0-8-0-0-0-0-5
+1208,60,5,"Context Switch, Request(User_ID=1, Translate)","Switching to this board, how could I shift the pieces and still keep the win?","Inform(['col2', 'col3'])",You could shift them to the third or the rightmost column.,Shaobo,5,5,John,,0-4-0-0-0-10-0-0-0-9-0-0-0-11-0-0
+1208,60,6,RequestNewWinCondition(),Could you show me another winning board?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,15-0-0-0-0-12-0-0-0-0-16-0-0-0-0-10
+1208,60,7,"Same, Request(User_ID=1, Rotate)",And how could I rotate the pieces and still keep the win?,Inform([90]),You could rotate them to the leftmost column.,Shaobo,5,5,John,,15-0-0-0-0-12-0-0-0-0-16-0-0-0-0-10
+1208,60,8,"Context Switch, RequestOtherPlayers()","Switching to this board, how could another player revoke this win?",Inform([]),There is nothing that another player could do to prevent this win.,Shaobo,5,5,John,,13-0-0-0-0-7-0-0-0-0-8-0-0-0-0-5
+1208,60,9,"Same, Confirm(User_ID=1, Color)",And is it a win because of the color of the pieces?,NotSure(),I don't think so but I am not sure.,Shaobo,4,5,John,,13-0-0-0-0-7-0-0-0-0-8-0-0-0-0-5
+1208,60,10,Finish(),Thanks for the help! I have learned a lot!,Finish,You are welcome!,Shaobo,5,5,John,,13-0-0-0-0-7-0-0-0-0-8-0-0-0-0-5

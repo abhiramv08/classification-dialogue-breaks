@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+46,100,0,Start(),What's up? Can you teach me how to play Quarto?,Start,"Sure, let's do this!",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+46,100,1,RequestNewWinCondition(),Can you show me a win condition?,Inform(),Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-16-14-12-13
+46,100,2,RequestNewWinCondition(),Can you show me another win condition?,Inform(),Assume you demonstrate this win condition,Ruijie,5,4,Luke,,0-0-0-1-0-0-11-0-0-9-0-0-2-0-0-0
+46,100,3,RequestNewWinCondition(),Can you show me another win condition?,Inform(),Assume you demonstrate this win condition,Ruijie,5,4,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-12-4-8-7
+46,100,4,"Context Switch, Confirm(User_ID=1, Height)","Back to the first win condition you just showed me, does the height of pieces matter?",Affirm(),"Yes, it does.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-16-14-12-13
+46,100,5,"Context Switch, RequestOtherPlayers()",Can the other player prevent this condition?,Inform([]),"No, this win is absolute.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-12-4-8-7
+46,100,6,"Same, Confirm(User_ID=1, Rotate(45))",Is it still a win if a rotate the pieces by 45 degrees?,Affirm(),"Yes, it is.",Ruijie,5,4,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-12-4-8-7
+46,100,7,RequestNewWinCondition(),What about a new win condition?,Inform(),Assume you demonstrate this win condition,Ruijie,5,5,Luke,,9-0-0-0-14-0-0-0-15-0-0-0-11-0-0-0
+46,100,8,"Context Switch, RequestOtherPlayers()",Can the opponent prevent this win condition?,Inform([]),"No, it is absolute.",Ruijie,5,5,Luke,,0-0-0-1-0-0-11-0-0-9-0-0-2-0-0-0
+46,100,9,RequestNewWinCondition(),Please show me a new win condition.,Inform(),Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-11-0-0-10-0-0-15-0-0-13-0-0-0
+46,100,10,"Context Switch, Confirm(User_ID=1, Shape)",Does the shape of pieces matter?,Negate(),"No, it's irrelevant.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-12-4-8-7
+46,100,11,"Same, Request(User_ID=1, Translate)","Back to the previous condition, can I translate the board and maintain the win condition?","Inform(['row1', 'row2', 'row3'])",You can put the pieces on the rest of the rows.,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-12-4-8-7
+46,100,12,"Same, Confirm(User_ID=1, Height)",Does the height of the pieces matter?,Negate(),No.,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-12-4-8-7
+46,100,13,"Context Switch, Request(User_ID=1, Translate)","Back to the previous one, can I translate the pieces and maintain the win.",Inform([])," No, you can't.",Ruijie,5,5,Luke,,0-0-0-1-0-0-11-0-0-9-0-0-2-0-0-0
+46,100,14,"Context Switch, Confirm(User_ID=1, RemovePiece(0,0))",Is it still a win if I remove the piece on the left corner?,Negate(),"No, it's not.",Ruijie,5,4,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-12-4-8-7
+46,100,15,Finish(),"Ok, I think I've learned enough, thanks!",Finish,No problem!,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-12-4-8-7

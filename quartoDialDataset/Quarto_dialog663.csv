@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+663,60,0,Start(),Hi! Can you show me how to play Quarto?,Start,Yes!,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+663,60,1,RequestNewWinCondition(),Can you show me what a win condition looks like?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,5-0-0-0-7-0-0-0-8-0-0-0-15-0-0-0
+663,60,2,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-11-0-0-0-5-0-0-0-3-0-0-0-13-0
+663,60,3,"Same, Request(User_ID=1, Translate)",Can I put the pieces somewhere else?,"Inform(['col1', 'col3'])",Yes! You can put them on the first or the third column.,Ruijie,3,5,Luke,,0-0-11-0-0-0-5-0-0-0-3-0-0-0-13-0
+663,60,4,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,1-0-0-0-0-2-0-0-0-0-6-0-0-0-0-7
+663,60,5,RequestNewWinCondition(),What about another win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,7-0-0-0-0-9-0-0-0-0-11-0-0-0-0-1
+663,60,6,"Context Switch, Request(User_ID=1, Translate)","Switch to this board, can I put the pieces somewhere else?","Inform(['col1', 'col2', 'col3'])","Yes, you can put them on the first, the second or the third column.",Ruijie,3,5,Luke,,5-0-0-0-7-0-0-0-8-0-0-0-15-0-0-0
+663,60,7,"Context Switch, Confirm(User_ID=1, Hollowness)","Switch to this board, does the hollowness of the pieces make it a win?",Negate(),"No, that’s not the reason.",Ruijie,5,5,Luke,,1-0-0-0-0-2-0-0-0-0-6-0-0-0-0-7
+663,60,8,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-5-0-0-4-0-0-3-0-0-7-0-0-0
+663,60,9,"Same, RequestOtherPlayers()","Can the other player break this win?
+",Inform([]),"No, this win is absolute.",Ruijie,5,5,Luke,,0-0-0-5-0-0-4-0-0-3-0-0-7-0-0-0
+663,60,10,Finish(),Thanks! I got a lot!,Finish,You are welcome.,Ruijie,5,5,Luke,,0-0-0-5-0-0-4-0-0-3-0-0-7-0-0-0

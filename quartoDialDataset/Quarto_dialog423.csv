@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+423,50,0,Start(),"Hi there, can you show me how to play Quarto?",Start,"Sure, let's get started.",Jason,,,,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+423,50,1,RequestNewWinCondition(),Can you show me an example of a win?,Inform,Assume you demonstrate this win condition,Jason,,,,,2-0-0-0-0-4-0-0-0-0-9-0-0-0-0-10
+423,50,2,RequestNewWinCondition(),Can you show me another example of a win?,Inform,Assume you demonstrate this win condition,Jason,,,,,0-0-0-0-0-0-0-0-0-0-0-0-13-5-15-9
+423,50,3,RequestNewWinCondition(),"Hmm, do you think you can show me another one?",Inform,Assume you demonstrate this win condition,Jason,,,,,15-0-0-0-0-7-0-0-0-0-16-0-0-0-0-14
+423,50,4,"Context Switch, Confirm(User_ID=1, Hollowness)","I think that's good for now. With the second board you showed me, can you tell me if it's a win because of the hollowness of the pieces?",Negate(),"No, the hollowness of the pieces have nothing to do with why it's a win.",Jason,,,,,0-0-0-0-0-0-0-0-0-0-0-0-13-5-15-9
+423,50,5,"Context Switch, Confirm(User_ID=1, Shape)","Switching to this board, can you tell me if the shape of the pieces are why it's a win?",NotSure(),"Hmm, I'm not too sure honestly.",Jason,,,,,15-0-0-0-0-7-0-0-0-0-16-0-0-0-0-14
+423,50,6,"Same, Confirm(User_ID=1, Height)","With that same board, do you know if the height of the pieces play a role in why it's a win?",Negate(),"No, the height of the pieces don't matter in this case.",Jason,,,,,15-0-0-0-0-7-0-0-0-0-16-0-0-0-0-14
+423,50,7,"Context Switch, Request(User_ID=1, Rotate)","Switching to this board, what ways could you rotate these pieces all at once and still have a win?",Inform([90]),"You could rotate them to be 90 degrees, vertically along the first column.",Jason,,,,,2-0-0-0-0-4-0-0-0-0-9-0-0-0-0-10
+423,50,8,RequestNewWinCondition(),Can you show me another example of a winning board?,Inform,Assume you demonstrate this win condition,Jason,,,,,0-0-0-2-0-0-5-0-0-9-0-0-6-0-0-0
+423,50,9,"Context Switch, Confirm(User_ID=1, Quantity)","Let's switch back to this board, do you know if the quantity of the pieces play a role in the validity of this win?",NotSure(),I'm not sure.,Jason,,,,,0-0-0-0-0-0-0-0-0-0-0-0-13-5-15-9
+423,50,10,RequestNewWinCondition(),Can you show me another example of a win?,Inform,Assume you demonstrate this win condition,Jason,,,,,0-0-10-0-0-0-4-0-0-0-12-0-0-0-14-0
+423,50,11,RequestNewWinCondition(),Can you show me a different example?,Inform,Assume you demonstrate this win condition,Jason,,,,,0-0-0-0-0-0-0-0-0-0-0-0-4-1-11-3
+423,50,12,"Context Switch, Confirm(User_ID=1, RemovePiece(3,2))","Switching to this board, could you remove the top most blue triangle and still have a win?",NotSure(),"Hmm, I wouldn't know honestly.",Jason,,,,,0-0-10-0-0-0-4-0-0-0-12-0-0-0-14-0
+423,50,13,RequestNewWinCondition(),Can you show me another example of a win?,Inform,Assume you demonstrate this win condition,Jason,,,,,2-0-0-0-0-14-0-0-0-0-12-0-0-0-0-8
+423,50,14,"Context Switch, Confirm(User_ID=1, AddPiece(3,0))",Let's switch to this board. Can you add a piece to the top left corner and still have a win?,Affirm(),"Yeah, you could do that and still win.",Jason,,,,,0-0-10-0-0-0-4-0-0-0-12-0-0-0-14-0
+423,50,15,Finish(),Alright I think I'm done. Thank you for the help!,Finish,"No problem, hope we can play soon.",Jason,,,,,0-0-10-0-0-0-4-0-0-0-12-0-0-0-14-0

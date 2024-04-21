@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+341,50,0,Start(),Can you teach me how to play Quarto?,Start,No problem!,Derek,,,,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+341,50,1,RequestNewWinCondition(),Please give me a win condition to start.,Inform,Assume you demonstrate this win condition,Derek,,,,,0-0-0-0-0-0-0-0-0-0-0-0-12-4-15-7
+341,50,2,"Same, Confirm(User_ID=1, Color)",Is that a win because the color pattern of pieces?,Negate(),Wrong.,Derek,,,,,0-0-0-0-0-0-0-0-0-0-0-0-12-4-15-7
+341,50,3,"Same, Confirm(User_ID=1, Translate([1, 0]))",Can I shift all pieces up by one and keep winning?,Affirm(),"Yes, you can do that. ",Derek,,,,,0-0-0-0-0-0-0-0-0-0-0-0-12-4-15-7
+341,50,4,"Same, Confirm(User_ID=1, Quantity)",Is this board a win because of there are four pieces?,NotSure(),Sorry I don't know about that.,Derek,,,,,0-0-0-0-0-0-0-0-0-0-0-0-12-4-15-7
+341,50,5,"Same, Request(User_ID=1, Translate)",How about translation. How could I shift all pieces but keep winning?,"Inform(['row1', 'row2'])",You can shift all pieces up by one or two and keep winning.,Derek,,,,,0-0-0-0-0-0-0-0-0-0-0-0-12-4-15-7
+341,50,6,"Same, Confirm(User_ID=1, Rotate(90))",Could I set all pieces vertically?,NotSure(),Sorry it really depends. I can not tell you the answer. ,Derek,,,,,0-0-0-0-0-0-0-0-0-0-0-0-12-4-15-7
+341,50,7,RequestNewWinCondition(),It's fine. Can you show me another win condition?,Inform,Assume you demonstrate this win condition,Derek,,,,,3-0-0-0-0-12-0-0-0-0-11-0-0-0-0-2
+341,50,8,"Same, RequestOtherPlayers()",How could another player prevent this win?,Inform([]),I believe another player can not do anything to prevent this win.,Derek,,,,,3-0-0-0-0-12-0-0-0-0-11-0-0-0-0-2
+341,50,9,RequestNewWinCondition(),Please show me one more win condition.,Inform,Assume you demonstrate this win condition,Derek,,,,,0-0-0-0-0-0-0-0-0-0-0-0-3-5-15-13
+341,50,10,RequestNewWinCondition(),Can I have one more?,Inform,Assume you demonstrate this win condition,Derek,,,,,0-0-0-6-0-0-3-0-0-8-0-0-5-0-0-0
+341,50,11,"Same, Request(User_ID=1, Translate)",How can I translate this board anywhere and keep winning?,Inform([]),You can not do any translation for this board.,Derek,,,,,0-0-0-6-0-0-3-0-0-8-0-0-5-0-0-0
+341,50,12,Finish(),Thanks! Bye!,Finish,Bye!,Derek,,,,,0-0-0-6-0-0-3-0-0-8-0-0-5-0-0-0

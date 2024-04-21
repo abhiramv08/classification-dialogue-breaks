@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+270,50,0,Start(),Can you teach me to play quarto please?,Start,Sure!,Daniel,,,,,9-0-0-0-13-0-0-0-7-0-0-0-3-0-0-0
+270,50,1,RequestNewWinCondition(),Can you show me a board where someone wins please?,Inform,Assume you demonstrate this win condition,Daniel,,,,,0-0-0-0-0-0-0-0-0-0-0-0-3-15-11-9
+270,50,2,RequestNewWinCondition(),Can you show me a different board?,Inform,Assume you demonstrate this win condition,Daniel,,,,,0-0-0-10-0-0-0-11-0-0-0-9-0-0-0-14
+270,50,3,RequestNewWinCondition(),How about another one?,Inform,Assume you demonstrate this win condition,Daniel,,,,,0-0-9-0-0-0-7-0-0-0-13-0-0-0-15-0
+270,50,4,"Context Switch, Confirm(User_ID=1, Shape)","For this board, is this a win because of the shape of the pieces?",Negate(),No,Daniel,,,,,0-0-0-10-0-0-0-11-0-0-0-9-0-0-0-14
+270,50,5,"Same, Request(User_ID=1, Rotate)",Can I rotate the pieces and still win?,Inform([135]),Yes you can place them on the diagonal,Daniel,,,,,0-0-0-10-0-0-0-11-0-0-0-9-0-0-0-14
+270,50,6,"Same, Confirm(User_ID=1, RemovePiece(2,3))",If I remove the hollow green triangle will I still win?,NotSure(),I don't know,Daniel,,,,,0-0-0-10-0-0-0-11-0-0-0-9-0-0-0-14
+270,50,7,"Same, RequestOtherPlayers()",Is there anything the other player can to to stop me from winning?,Inform([]),No,Daniel,,,,,0-0-0-10-0-0-0-11-0-0-0-9-0-0-0-14
+270,50,8,"Same, Confirm(User_ID=1, Hollowness)",Is it a win because of the hollowness of the pieces,Negate(),No,Daniel,,,,,0-0-0-10-0-0-0-11-0-0-0-9-0-0-0-14
+270,50,9,RequestNewWinCondition(),Can you show me one more new board please?,Inform,Assume you demonstrate this win condition,Daniel,,,,,0-0-0-0-0-0-0-0-0-0-0-0-11-15-4-3
+270,50,10,"Context Switch, Confirm(User_ID=1, Shape)",For this other board is it a win because of the shape of the pieces?,NotSure(),"I don't know, sorry",Daniel,,,,,0-0-9-0-0-0-7-0-0-0-13-0-0-0-15-0
+270,50,11,"Context Switch, Confirm(User_ID=1, Height)","And on this board, is it a win because of the heights of the pieces?",NotSure(),I'm not really sure,Daniel,,,,,0-0-0-10-0-0-0-11-0-0-0-9-0-0-0-14
+270,50,12,"Context Switch, Confirm(User_ID=1, Hollowness)","For this other board here, is it a win because of the hollowness of the pieces?",Negate(),No,Daniel,,,,,0-0-9-0-0-0-7-0-0-0-13-0-0-0-15-0
+270,50,13,"Context Switch, Confirm(User_ID=1, Translate([1, 0]))","On this other board, is it a win if I move the pieces one row above?",Affirm(),Yes,Daniel,,,,,0-0-0-0-0-0-0-0-0-0-0-0-11-15-4-3
+270,50,14,RequestNewWinCondition(),Can you show me another winning board please?,Inform,Assume you demonstrate this win condition,Daniel,,,,,0-0-0-2-0-0-6-0-0-16-0-0-14-0-0-0
+270,50,15,Finish(),Thank you for teaching me!,Finish,No problem,Daniel,,,,,0-0-0-2-0-0-6-0-0-16-0-0-14-0-0-0

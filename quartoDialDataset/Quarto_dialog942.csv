@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+942,60,0,Start(),Hi can you teach me Quarto?,Start,Sure.,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+942,60,1,RequestNewWinCondition(),Please show me a new win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-3-9-10-11
+942,60,2,"Same, RequestOtherPlayers()",How could another player affect this win?,Inform([]),They can't,Anthony,5,4,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-3-9-10-11
+942,60,3,RequestNewWinCondition(),Please show me another win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,8-0-0-0-0-2-0-0-0-0-5-0-0-0-0-1
+942,60,4,"Same, Confirm(User_ID=1, Hollowness)",Is this a win because of the hollowness of the pieces?,Negate(),"No, that's not why. ",Anthony,5,4,Yiyen,,8-0-0-0-0-2-0-0-0-0-5-0-0-0-0-1
+942,60,5,"Same, Confirm(User_ID=1, RemovePiece(2,1))",Is this still a win if I remove this piece?,Negate(),"No, it's not.",Anthony,3,5,Yiyen,,8-0-0-0-0-2-0-0-0-0-5-0-0-0-0-1
+942,60,6,RequestNewWinCondition(),Please give me another win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-10-12-8-16
+942,60,7,RequestNewWinCondition(),Please show me one more win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-14-5-9-10
+942,60,8,"Context Switch, Request(User_ID=1, Rotate)","Looking at this board, how can I rotate the pieces?","Inform([45, 90])",Two things you could do is rotate them to be diagonal or vertical.,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-10-12-8-16
+942,60,9,"Context Switch, Confirm(User_ID=1, Height)","Looking at this board, is it a win because  of the height of the pieces? ",Negate(),"No, that's not why.",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-3-9-10-11
+942,60,10,Finish(),Thanks bye!,Finish,See ya!,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-3-9-10-11

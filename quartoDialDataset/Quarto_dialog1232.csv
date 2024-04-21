@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+1232,60,0,Start(),"Hi, do you have time to teach me how to play Quarto?",Start,Sure!,Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+1232,60,1,RequestNewWinCondition(),Could you show me a win first?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-5-2-9-6
+1232,60,2,RequestNewWinCondition(),Could you show me another winning board?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-0-7-0-0-0-5-0-0-0-11-0-0-0-15-0
+1232,60,3,RequestNewWinCondition(),Could you show me one more winning board?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-0-7-0-0-0-8-0-0-0-15-0-0-0-6-0
+1232,60,4,"Same, Confirm(User_ID=1, AddPiece(1,1))","And for the board you just showed, is it still a win if I add a piece on the second row and the second column?",NotSure(),"Sorry, I am not sure about it.",Shaobo,5,4,John,,0-0-7-0-0-0-8-0-0-0-15-0-0-0-6-0
+1232,60,5,"Same, Request(User_ID=1, Translate)",And how could I shift the pieces and still keep the win?,"Inform(['col1', 'col3'])",You could shift them to the rightmost or the second left column.,Shaobo,5,3,John,,0-0-7-0-0-0-8-0-0-0-15-0-0-0-6-0
+1232,60,6,"Same, RequestOtherPlayers()",And how could another player revoke this win?,Inform([]),"There is nothing that another player could do to prevent this win.
+",Shaobo,5,5,John,,0-0-7-0-0-0-8-0-0-0-15-0-0-0-6-0
+1232,60,7,"Context Switch, Confirm(User_ID=1, Quantity)","Switching to this board, does the number of pieces matter?",Affirm(),"Yes, you need at least four pieces for a win.",Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-5-2-9-6
+1232,60,8,"Context Switch, Confirm(User_ID=1, RemovePiece(0,2))","Switching to this board, is it still a win if I remove the bottom piece?",Negate(),"No, you need at least four pieces for a win.",Shaobo,5,5,John,,0-0-7-0-0-0-5-0-0-0-11-0-0-0-15-0
+1232,60,9,"Context Switch, Confirm(User_ID=1, RemovePiece(0,3))","Switching to this board, is it still a win if I remove the blue circle?",Negate(),"No, you need at least four pieces for a win.",Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-5-2-9-6
+1232,60,10,Finish(),Thanks for the help! I have learned a lot!,Finish,You are welcome!,Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-5-2-9-6

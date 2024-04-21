@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+137,100,0,Start(),Could you please teach me how to play Quarto?,Start,"Sure, I'd be happy to",Daniel,,,,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+137,100,1,RequestNewWinCondition(),Can you show me a board where someone wins please?,Inform(),Assume you demonstrate this win condition,Daniel,,,,,0-0-0-0-0-0-0-0-0-0-0-0-2-13-14-5
+137,100,2,"Same, Confirm(User_ID=1, Height)",Is this a win because of the height of the pieces?,Negate(),No,Daniel,,,,,0-0-0-0-0-0-0-0-0-0-0-0-2-13-14-5
+137,100,3,"Same, RequestOtherPlayers()",Is there anything the other player can do to still win?,Inform([]),No,Daniel,,,,,0-0-0-0-0-0-0-0-0-0-0-0-2-13-14-5
+137,100,4,"Same, Confirm(User_ID=1, Quantity)",Is this a win because of the number of pieces on the board?,Affirm(),Yes,Daniel,,,,,0-0-0-0-0-0-0-0-0-0-0-0-2-13-14-5
+137,100,5,RequestNewWinCondition(),Can you show me a different winning board please?,Inform(),Assume you demonstrate this win condition,Daniel,,,,,14-0-0-0-0-16-0-0-0-0-12-0-0-0-0-13
+137,100,6,"Same , Confirm(User_ID=1, AddPiece(3,3))",If I add a piece in the top right corner is this still a win?,Affirm(),Yes,Daniel,,,,,14-0-0-0-0-16-0-0-0-0-12-0-0-0-0-13
+137,100,7,"Same, Confirm(User_ID=1, Rotate(90))",If I rotate the pieces 90 degrees is it still a win?,Affirm(),Yes,Daniel,,,,,14-0-0-0-0-16-0-0-0-0-12-0-0-0-0-13
+137,100,8,"Context Switch, Confirm(User_ID=1, RemovePiece(0,3))",If I remove the bottom right piece is it still a win?,Negate(),No,Daniel,,,,,0-0-0-0-0-0-0-0-0-0-0-0-2-13-14-5
+137,100,9,RequestNewWinCondition(),Can you show me another winning board?,Inform(),Assume you demonstrate this win condition,Daniel,,,,,0-0-0-3-0-0-11-0-0-13-0-0-15-0-0-0
+137,100,10,"Win Context Switch {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}",Is this a win because of the hollowness of the pieces?,Affirm(),Yes,Daniel,,,,,0-0-0-0-0-0-0-0-0-0-0-0-2-13-14-5
+137,100,11,"Same , Confirm(User_ID=1, RemovePiece(0,2))",If I remove the blue circle is it still a win?,Negate(),No,Daniel,,,,,0-0-0-0-0-0-0-0-0-0-0-0-2-13-14-5
+137,100,12,Finish(),Thank you!,Finish,No problem,Daniel,,,,,0-0-0-0-0-0-0-0-0-0-0-0-2-13-14-5

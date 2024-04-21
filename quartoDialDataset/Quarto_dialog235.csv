@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+235,100,0,Start(),"Hi, can you help me learn how to play Quarto?",Start,"Sure, let's get started",John,5,5,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+235,100,1,RequestNewWinCondition(),Can you show me an example of a win condition?,Inform(),Assume you demonstrate this win condition,John,5,4,Daniel,,0-0-0-9-0-0-14-0-0-15-0-0-16-0-0-0
+235,100,2,RequestNewWinCondition(),Can I see another example of a win?,Inform(),Assume you demonstrate this win condition,John,5,5,Daniel,,0-0-0-4-0-0-11-0-0-7-0-0-16-0-0-0
+235,100,3,RequestNewWinCondition(),Will you please show me another win scenario?,Inform(),Assume you demonstrate this win condition,John,5,5,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-6-2-7-5
+235,100,4,RequestNewWinCondition(),Could you give me another example of a winning board?,Inform(),Assume you demonstrate this win condition,John,5,5,Daniel,,16-0-0-0-0-10-0-0-0-0-6-0-0-0-0-14
+235,100,5,"Context Switch, Confirm(User_ID=1, Rotate(90))","For this win here, is it still a win if the pieces are rotated to all be in the first column?",Affirm(),"Yes, that would still be a win",John,4,5,Daniel,,0-0-0-4-0-0-11-0-0-7-0-0-16-0-0-0
+235,100,6,"Context Switch, Request(User_ID=1, Rotate)","For this board, are there any ways I can rotate these pieces and still have a win?","Inform([45, 90])","Yes, you can rotate them along the diagonal from top right to bottom left, as well as rotate them into the first column vertically.",John,5,5,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-6-2-7-5
+235,100,7,RequestNewWinCondition(),Could I see another example of a win?,Inform(),Assume you demonstrate this win condition,John,5,5,Daniel,,0-0-0-6-0-0-16-0-0-14-0-0-5-0-0-0
+235,100,8,RequestNewWinCondition(),Can you show me another win condition?,Inform(),Assume you demonstrate this win condition,John,5,5,Daniel,,0-0-1-0-0-0-11-0-0-0-15-0-0-0-7-0
+235,100,9,"Context Switch, Confirm(User_ID=1, Quantity)",Let's talk about this board here. Is the number of pieces important for this win?,Affirm(),"Yes, all four of these pieces are needed for this win.",John,5,5,Daniel,,16-0-0-0-0-10-0-0-0-0-6-0-0-0-0-14
+235,100,10,Finish(),"Okay, I am finished playing for now. Thank you",Finish,"You're welcome, goodbye!",John,5,5,Daniel,,16-0-0-0-0-10-0-0-0-0-6-0-0-0-0-14

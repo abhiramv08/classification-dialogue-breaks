@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+296,50,0,Start(),"Hi, can you teach me how to play Quarto?",Start,"Sure, let's play",John,,,,,0-0-0-0-0-0-0-0-0-0-0-0-14-7-15-8
+296,50,1,RequestNewWinCondition(),Can I see an example of a win?,Inform,Assume you demonstrate this win condition,John,,,,,0-0-0-0-0-0-0-0-0-0-0-0-16-7-8-5
+296,50,2,RequestNewWinCondition(),Can I see another example of a win condition?,Inform,Assume you demonstrate this win condition,John,,,,,0-0-0-0-0-0-0-0-0-0-0-0-11-10-16-12
+296,50,3,"Same, Confirm(User_ID=1, Rotate(45))",Is this still a win if I rotate the pieces 45 degrees along the diagonal?,NotSure(),I'm not sure if that would still be a win,John,,,,,0-0-0-0-0-0-0-0-0-0-0-0-11-10-16-12
+296,50,4,"Context Switch, Confirm(User_ID=1, Rotate(90))","Now for this board, is it a win if I rotate the pieces 90 degrees to the left column?",NotSure(),I'm not exactly sure if that is a win,John,,,,,0-0-0-0-0-0-0-0-0-0-0-0-16-7-8-5
+296,50,5,"Same, Confirm(User_ID=1, Color)",Is this a win because of the color of the pieces?,NotSure(),I'm not sure how color affects this win,John,,,,,0-0-0-0-0-0-0-0-0-0-0-0-16-7-8-5
+296,50,6,"Same, RequestOtherPlayers()",What moves can another player take to undo this win?,Inform([]),There are no moves another player could take to do that,John,,,,,0-0-0-0-0-0-0-0-0-0-0-0-16-7-8-5
+296,50,7,RequestNewWinCondition(),Can I see another example of a win scenario?,Inform,Assume you demonstrate this win condition,John,,,,,6-0-0-0-0-7-0-0-0-0-14-0-0-0-0-13
+296,50,8,"Same, Confirm(User_ID=1, RemovePiece(0,3))",Is this still a win if I remove the bottom right piece?,Negate(),"No, that piece is vital to this win",John,,,,,6-0-0-0-0-7-0-0-0-0-14-0-0-0-0-13
+296,50,9,"Same, Request(User_ID=1, Translate)",How could I translate all the pieces and still have a win?,Inform([]),There is no valid translation that is still a win,John,,,,,6-0-0-0-0-7-0-0-0-0-14-0-0-0-0-13
+296,50,10,"Same, Confirm(User_ID=1, Height)",Is the height of the pieces the reason for this win?,Negate(),"No, the pieces are not all the same height",John,,,,,6-0-0-0-0-7-0-0-0-0-14-0-0-0-0-13
+296,50,11,RequestNewWinCondition(),Can I see another win example?,Inform,Assume you demonstrate this win condition,John,,,,,0-0-0-6-0-0-2-0-0-4-0-0-3-0-0-0
+296,50,12,"Context Switch, Confirm(User_ID=1, Quantity)","For this board here, is the number of pieces important for the win?",Affirm(),"Yes, all 4 pieces are needed for this win",John,,,,,0-0-0-0-0-0-0-0-0-0-0-0-16-7-8-5
+296,50,13,"Context Switch, Confirm(User_ID=1, Hollowness)","Switching to this board, is the hollowness of the pieces important to this win?",NotSure(),I'm not sure how hollowness affects this win,John,,,,,0-0-0-6-0-0-2-0-0-4-0-0-3-0-0-0
+296,50,14,"Same, Confirm(User_ID=1, Rotate(90))",Is this still a win if the pieces are rotated to be vertical in the left column?,NotSure(),I'm not sure whether or not that is a win,John,,,,,0-0-0-6-0-0-2-0-0-4-0-0-3-0-0-0
+296,50,15,Finish(),"I'm done playing for now, goodbye!",Finish,Goodbye!,John,,,,,0-0-0-6-0-0-2-0-0-4-0-0-3-0-0-0

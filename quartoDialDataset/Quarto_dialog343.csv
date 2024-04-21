@@ -1,0 +1,15 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+343,50,0,Start(),Can you teach me how to play Quarto?,Start,No problem!,Derek,,,,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+343,50,1,RequestNewWinCondition(),Please give me a win condition to start with.,Inform,Assume you demonstrate this win condition,Derek,,,,,8-0-0-0-0-6-0-0-0-0-14-0-0-0-0-2
+343,50,2,RequestNewWinCondition(),Can you give me one more win condition?,Inform,Assume you demonstrate this win condition,Derek,,,,,0-12-0-0-0-11-0-0-0-14-0-0-0-9-0-0
+343,50,3,"Context Switch, Request(User_ID=1, Rotate)","For the first win condition you showed me, how could I rotate it and keep winning?",Inform([90]),You could place pieces vertically and keep winning.,Derek,,,,,8-0-0-0-0-6-0-0-0-0-14-0-0-0-0-2
+343,50,4,"Same, Confirm(User_ID=1, Hollowness)","How about the hollowness pattern of these pattern, is that a reason to win?",NotSure(),Sorry I am not sure about that.,Derek,,,,,8-0-0-0-0-6-0-0-0-0-14-0-0-0-0-2
+343,50,5,"Same, Confirm(User_ID=1, Rotate(90))",Can I place all pieces vertically and still win?,NotSure(),I am not sure what do you mean. Did you copy my words?,Derek,,,,,8-0-0-0-0-6-0-0-0-0-14-0-0-0-0-2
+343,50,6,"Context Switch, Request(User_ID=1, Rotate)","Alright, let's move to this win condition. How could I rotate the board and keep winning?",Inform([]),Yes you can rotate the board in some angel and keep winning.,Derek,,,,,0-12-0-0-0-11-0-0-0-14-0-0-0-9-0-0
+343,50,7,"Context Switch, Request(User_ID=1, Translate)",Switching to this win condition. How could I translate the pieces and keep winning?,Inform([]),No you can not translate it to anywhere.,Derek,,,,,8-0-0-0-0-6-0-0-0-0-14-0-0-0-0-2
+343,50,8,"Same, RequestOtherPlayers()",How could another player prevent this win?,Inform([]),Another player can not prevent this win.,Derek,,,,,8-0-0-0-0-6-0-0-0-0-14-0-0-0-0-2
+343,50,9,"Same, Confirm(User_ID=1, Quantity)",Do I have to have four pieces to win?,NotSure(),I am not sure about that as well.,Derek,,,,,8-0-0-0-0-6-0-0-0-0-14-0-0-0-0-2
+343,50,10,"Same, Confirm(User_ID=1, Quantity)",Do I have to have at least four pieces to win?,Affirm(),"Well if you say at least, I believe it is correct.",Derek,,,,,8-0-0-0-0-6-0-0-0-0-14-0-0-0-0-2
+343,50,11,"Same, Request(User_ID=1, Rotate)",How could I rotate this board and keep winning?,Inform([90]),You can place all pieces vertically.,Derek,,,,,8-0-0-0-0-6-0-0-0-0-14-0-0-0-0-2
+343,50,12,RequestNewWinCondition(),Can you give me another win condition?,Inform,Assume you demonstrate this win condition,Derek,,,,,0-0-0-0-0-0-0-0-0-0-0-0-5-2-4-7
+343,50,13,Finish(),Thanks for teaching today. I leaned a lot. Bye!,Finish,Bye!,Derek,,,,,0-0-0-0-0-0-0-0-0-0-0-0-5-2-4-7

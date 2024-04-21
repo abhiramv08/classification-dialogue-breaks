@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+731,60,0,Start(),Hi! Can you teach me how to play Quarto?,Start,"Sure, let's do it!",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+731,60,1,RequestNewWinCondition(),Can you show me a win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-9-1-11-10
+731,60,2,"Same, Confirm(User_ID=1, RemovePiece(0,0))",Can I remove the piece at the left corner and maintain the win?,Negate(),"No, you can't do that.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-9-1-11-10
+731,60,3,"Same, Confirm(User_ID=1, Rotate(90))",Can I rotate the pieces by ninety degrees and maintain the win?,Affirm(),"Sure, that's legit.",Ruijie,3,3,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-9-1-11-10
+731,60,4,RequestNewWinCondition(),Can you show me a new win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-9-0-0-0-5-0-0-0-7-0-0-0-11-0
+731,60,5,"Same, Request(User_ID=1, Translate)",Can I put the pieces somewhere else?,"Inform(['col1', 'col3'])","Sure, you can put them on the first or the third column.",Ruijie,5,3,Luke,,0-0-9-0-0-0-5-0-0-0-7-0-0-0-11-0
+731,60,6,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-9-0-0-0-14-0-0-0-5-0-0-0-2-0-0
+731,60,7,RequestNewWinCondition(),Can you show me another win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-16-8-11-7
+731,60,8,"Context Switch, Confirm(User_ID=1, Color)","Switch to this board, is it a win because of the color of pieces?",NotSure(),I'm actually not sure.,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-9-1-11-10
+731,60,9,"Context Switch, Request(User_ID=1, Translate)","Switch to this board, can I put the pieces somewhere else?","Inform(['col1', 'col3'])","Yes, you can put them on the first column or the third column.",Ruijie,3,3,Luke,,0-0-9-0-0-0-5-0-0-0-7-0-0-0-11-0
+731,60,10,"Context Switch, Confirm(User_ID=1, Height)","Switch to this board, is it a win because the pieces are of the same height?",Negate(),"No, it's unrelated.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-9-1-11-10
+731,60,11,Finish(),Thank you so much! I've learned a lot!,Finish,You're welcome.,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-9-1-11-10

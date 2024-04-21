@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+318,50,0,Start(),"Hi, can you teach me how to play Quarto?",Start,Sure.,Tianyi,5,5,Jason,,0-0-0-0-0-0-0-0-0-0-0-0-9-5-13-3
+318,50,1,RequestNewWinCondition(),Can give me a winning board as an example?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Jason,,0-0-0-0-0-0-0-0-0-0-0-0-8-7-12-3
+318,50,2,RequestNewWinCondition(),Can you show me another win pattern on the board?,Inform,Assume you demonstrate this win condition,Tianyi,5,4,Jason,,0-0-0-14-0-0-13-0-0-8-0-0-15-0-0-0
+318,50,3,RequestNewWinCondition(),What else can be a winning board?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Jason,,0-0-0-0-0-0-0-0-0-0-0-0-8-13-16-14
+318,50,4,RequestNewWinCondition(),Can you show me another way to win?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Jason,,0-0-0-0-0-0-0-0-0-0-0-0-10-8-2-14
+318,50,5,"Same, Confirm(User_ID=1, Shape)","In that case, is it a win because of the shapes of the pieces?",NotSure(),"Sorry, I am not very clear about this.",Tianyi,5,3,Jason,Awkwardly phrased response.,0-0-0-0-0-0-0-0-0-0-0-0-10-8-2-14
+318,50,6,"Same, Confirm(User_ID=1, AddPiece(2,2))","If I add a piece at the third column of the third row, can it still be a win?",NotSure(),I cannot determine that. Maybe you are right.,Tianyi,4,3,Jason,"Not sure if ""Maybe you are right"" is an appropriate response.",0-0-0-0-0-0-0-0-0-0-0-0-10-8-2-14
+318,50,7,"Same, Confirm(User_ID=1, Height)","And, it that a win because some pieces are short?",Negate(),"Nope, that is not the reason.",Tianyi,5,3,Jason,Awkwardly phrased question,0-0-0-0-0-0-0-0-0-0-0-0-10-8-2-14
+318,50,8,"Same, RequestOtherPlayers()",Can someone take actions to undo the win?,Inform([]),"No, there is not action they can take.",Tianyi,5,3,Jason,,0-0-0-0-0-0-0-0-0-0-0-0-10-8-2-14
+318,50,9,"Context Switch, Confirm(User_ID=1, Color)","In the second win, is it a win because some pieces share the same color?",NotSure(),"I am not sure, sorry.",Tianyi,5,5,Jason,,0-0-0-14-0-0-13-0-0-8-0-0-15-0-0-0
+318,50,10,"Same, Request(User_ID=1, Rotate)","And, can I rotate some pieces and still maintain the win?",Inform([90]),"Yeah, you can rotate all pieces to 90 degrees with respect to the rows and put these pieces at the first column.",Tianyi,5,4,Jason,,0-0-0-14-0-0-13-0-0-8-0-0-15-0-0-0
+318,50,11,Finish(),"Thanks, I have learned so much stuff.",Finish,You are welcome. Goodbye.,Tianyi,5,5,Jason,,0-0-0-14-0-0-13-0-0-8-0-0-15-0-0-0

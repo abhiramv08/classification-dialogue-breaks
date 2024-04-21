@@ -1,0 +1,16 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+680,60,0,Start(),Hey! Can you teach me how to play Quarto?,Start,Let's get started.,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+680,60,1,RequestNewWinCondition(),Can you show me a win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,14-0-0-0-0-11-0-0-0-0-9-0-0-0-0-13
+680,60,2,"Same, Request(User_ID=1, Rotate)",Can I rotate the pieces by some degrees?,Inform([90]),"Yes, you can rotate them by ninety degrees.",Ruijie,4,5,Luke,,14-0-0-0-0-11-0-0-0-0-9-0-0-0-0-13
+680,60,3,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-7-13-3-1
+680,60,4,"Same, Confirm(User_ID=1, Hollowness)","Does the hollowness of the pieces make it a win?
+",Negate(),"No, it’s unrelated.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-7-13-3-1
+680,60,5,"Context Switch, RequestOtherPlayers()","Switch to this board, can the other player undo this win?",Inform([]),"No, this win is absolute.",Ruijie,5,5,Luke,,14-0-0-0-0-11-0-0-0-0-9-0-0-0-0-13
+680,60,6,"Same, Confirm(User_ID=1, AddPiece(0,1))","Can I add one more piece on the first row, the second column?",Affirm(),"Sure, that’s legit.",Ruijie,5,5,Luke,,14-0-0-0-0-11-0-0-0-0-9-0-0-0-0-13
+680,60,7,"Context Switch, Request(User_ID=1, Translate)",Can I put the pieces somewhere else?,"Inform(['row1', 'row2', 'row3'])","Sure, you can put them on the first, the second or the third row.",Ruijie,3,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-7-13-3-1
+680,60,8,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-1-0-0-5-0-0-4-0-0-3-0-0-0
+680,60,9,"Context Switch, Confirm(User_ID=1, Rotate(45))","Switch to this board, can I rotate the pieces by fourty five degrees?",Affirm(),"Sure, you can do that.",Ruijie,4,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-7-13-3-1
+680,60,10,"Context Switch, Confirm(User_ID=1, Quantity)","Switch to this board, is it a win because there are four pieces?",NotSure(),"I’m not quite sure.
+",Ruijie,5,5,Luke,,14-0-0-0-0-11-0-0-0-0-9-0-0-0-0-13
+680,60,11,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-9-3-12-11
+680,60,12,Finish(),Thanks! I've learned a lot!,Finish,You're so welcome.,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-9-3-12-11

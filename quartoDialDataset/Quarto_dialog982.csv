@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+982,60,0,Start(),"Hi, do you have time to teach me Quarto?",Start,"Yes, let's start.",Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+982,60,1,RequestNewWinCondition(),Can you show me a winning board in Quarto?,Inform,Assume you demonstrate this win condition,Tianyi,5,4,Ruijie,,0-0-16-0-0-0-15-0-0-0-10-0-0-0-14-0
+982,60,2,"Same, Confirm(User_ID=1, Color)",Is the color of the pieces the reason why there is a win on this board?,NotSure(),"Sorry, I am not sure about this.",Tianyi,5,4,Ruijie,,0-0-16-0-0-0-15-0-0-0-10-0-0-0-14-0
+982,60,3,"Same, Confirm(User_ID=1, Height)",Is it wins because all pieces are tall?,NotSure(),I have no idea about this.,Tianyi,5,5,Ruijie,,0-0-16-0-0-0-15-0-0-0-10-0-0-0-14-0
+982,60,4,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,0-0-0-6-0-0-10-0-0-9-0-0-2-0-0-0
+982,60,5,RequestNewWinCondition(),Can you show me another win?,Inform,Assume you demonstrate this win condition,Tianyi,5,4,Ruijie,,0-0-0-13-0-0-15-0-0-10-0-0-9-0-0-0
+982,60,6,"Context Switch, Confirm(User_ID=1, Quantity)","Back to this board, is it wins because there are four pieces on the board?",NotSure(),"Sorry, I am uncertain about this.",Tianyi,5,5,Ruijie,,0-0-0-6-0-0-10-0-0-9-0-0-2-0-0-0
+982,60,7,"Context Switch, Confirm(User_ID=1, Hollowness)","For this win, is it a win because most pieces are solid?",Negate(),"No, that is not the reason.",Tianyi,5,5,Ruijie,,0-0-0-13-0-0-15-0-0-10-0-0-9-0-0-0
+982,60,8,"Context Switch, Confirm(User_ID=1, Color)","In this board, is it wins because of the color of the pieces?",NotSure(),I don't know. Maybe you are right.,Tianyi,4,4,Ruijie,,0-0-16-0-0-0-15-0-0-0-10-0-0-0-14-0
+982,60,9,"Context Switch, RequestOtherPlayers()","In this win, can someone take actions to prevent the win?",Inform([]),"No, there is nothing he/she can do.",Tianyi,5,4,Ruijie,,0-0-0-13-0-0-15-0-0-10-0-0-9-0-0-0
+982,60,10,"Same, RequestOtherPlayers()","So, nobody can prevent the win now?",Inform([]),"Yes, nobody.",Tianyi,5,4,Ruijie,,0-0-0-13-0-0-15-0-0-10-0-0-9-0-0-0
+982,60,11,"Context Switch, Confirm(User_ID=1, Translate([0, 3]))","In this case, if I move all pieces to the rightmost column, is it still a win?",Affirm(),Yes.,Tianyi,5,4,Ruijie,,0-0-16-0-0-0-15-0-0-0-10-0-0-0-14-0
+982,60,12,RequestNewWinCondition(),Can you show me a new winning board?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-8-6-4-5
+982,60,13,"Context Switch, Confirm(User_ID=1, RemovePiece(0,0))","Back to this board, if I remove the piece at the first row, it will no longer be a win right?",NotSure(),"Sorry, I am uncertain about this.",Tianyi,5,4,Ruijie,,0-0-0-13-0-0-15-0-0-10-0-0-9-0-0-0
+982,60,14,"Same, RequestOtherPlayers()","And, can someone do something to prevent the win?",Inform([]),Nope.,Tianyi,5,4,Ruijie,,0-0-0-13-0-0-15-0-0-10-0-0-9-0-0-0
+982,60,15,Finish(),"Thank you, really good learning experience.",Finish,You are welcome.,Tianyi,5,5,Ruijie,,0-0-0-13-0-0-15-0-0-10-0-0-9-0-0-0

@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+392,50,0,Start(),"Hi, would you teach me Quarto?",Start,"Yeah, sure. ",Anthony,,,,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+392,50,1,RequestNewWinCondition(),Please show me a win condition.,Inform,Assume you demonstrate this win condition,Anthony,,,,,0-0-0-0-0-0-0-0-0-0-0-0-4-10-11-9
+392,50,2,"Same, Confirm(User_ID=1, AddPiece(1,2))",Would it still be a win if I added a piece here?,Affirm(),"Yes, it would.",Anthony,,,,,0-0-0-0-0-0-0-0-0-0-0-0-4-10-11-9
+392,50,3,"Same, RequestOtherPlayers()",How can another player affect this win?,Inform([]),Another player can't do anything to this win. ,Anthony,,,,,0-0-0-0-0-0-0-0-0-0-0-0-4-10-11-9
+392,50,4,"Same, Confirm(User_ID=1, Hollowness)",Is this a win because of the hollowness of the pieces?,NotSure(),I'm not sure enough about that to give an answer. ,Anthony,,,,,0-0-0-0-0-0-0-0-0-0-0-0-4-10-11-9
+392,50,5,RequestNewWinCondition(),Could you show me a new win condition?,Inform,Assume you demonstrate this win condition,Anthony,,,,,0-0-0-8-0-0-7-0-0-1-0-0-6-0-0-0
+392,50,6,RequestNewWinCondition(),Please show me one more win condition. ,Inform,Assume you demonstrate this win condition,Anthony,,,,,5-0-0-0-0-9-0-0-0-0-14-0-0-0-0-1
+392,50,7,"Same, Confirm(User_ID=1, Rotate(90))",Could I rotate these pieces to be vertical in a column?,Affirm(),"Yes, that is fine.",Anthony,,,,,5-0-0-0-0-9-0-0-0-0-14-0-0-0-0-1
+392,50,8,"Same, Confirm(User_ID=1, Quantity)",Is this win due to the number of pieces that are on the board?,Affirm(),"Yep, that's exactly why. ",Anthony,,,,,5-0-0-0-0-9-0-0-0-0-14-0-0-0-0-1
+392,50,9,"Context Switch, Request(User_ID=1, Rotate)","Okay, let's move to this board. How can I rotate these pieces?",Inform([45]),You could rotate them to be diagonal on the board.,Anthony,,,,,0-0-0-0-0-0-0-0-0-0-0-0-4-10-11-9
+392,50,10,"Context Switch, Request(User_ID=1, Rotate)",Let's switch to this board now. How can I rotate these pieces?,Inform([90]),You could rotate these pieces to be vertical in a column. ,Anthony,,,,,5-0-0-0-0-9-0-0-0-0-14-0-0-0-0-1
+392,50,11,"Context Switch, Confirm(User_ID=1, Height)","Looking back to this board, is it a win because of the height of the pieces?",Negate(),"No, that's not why this is a win. ",Anthony,,,,,0-0-0-0-0-0-0-0-0-0-0-0-4-10-11-9
+392,50,12,"Same, Confirm(User_ID=1, AddPiece(3,3))",What if I added a piece here? Would it still be a win?,NotSure(),I'm not sure if that's okay.,Anthony,,,,,0-0-0-0-0-0-0-0-0-0-0-0-4-10-11-9
+392,50,13,"Context Switch, Confirm(User_ID=1, Rotate(90))","Looking at this board, could I align these pieces vertically and it would still be a win?",Affirm(),"Yes, that's one option. ",Anthony,,,,,5-0-0-0-0-9-0-0-0-0-14-0-0-0-0-1
+392,50,14,RequestNewWinCondition(),Please show me a new win condition. ,Inform,Assume you demonstrate this win condition,Anthony,,,,,0-0-0-0-0-0-0-0-0-0-0-0-8-6-2-1
+392,50,15,Finish(),"Okay, I've learned enough for now, thanks. ",Finish,You're welcome. Good Luck!,Anthony,,,,,0-0-0-0-0-0-0-0-0-0-0-0-8-6-2-1

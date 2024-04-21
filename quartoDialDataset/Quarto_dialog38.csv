@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+38,100,0,Start(),Can you teach me how to play Quarto?,Start,"Sure, let's play!",John,5,5,Jason,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+38,100,1,RequestNewWinCondition(),Can you show me a winning board layout?,Inform(),Assume you demonstrate this win condition,John,5,5,Jason,,0-0-0-0-0-0-0-0-0-0-0-0-10-14-9-11
+38,100,2,RequestNewWinCondition(),Can I see a different win scenario?,Inform(),Assume you demonstrate this win condition,John,5,5,Jason,,7-0-0-0-0-15-0-0-0-0-13-0-0-0-0-9
+38,100,3,"Same, Confirm(User_ID=1, Rotate(90))",Is this still a win if the pieces are rotated to all be in the first column?,Affirm(),"Yes, that would still be a win",John,2,5,Jason,Not sure if rotating to first column and not anti-diagonal,7-0-0-0-0-15-0-0-0-0-13-0-0-0-0-9
+38,100,4,RequestNewWinCondition(),Can I see another win condition?,Inform(),Assume you demonstrate this win condition,John,5,5,Jason,,0-0-0-4-0-0-5-0-0-8-0-0-3-0-0-0
+38,100,5,RequestNewWinCondition(),Can I see another example of a win?,Inform(),Assume you demonstrate this win condition,John,5,5,Jason,"Using ""example"" is nice and casual",0-0-0-12-0-0-4-0-0-8-0-0-11-0-0-0
+38,100,6,"Context Switch, Request(User_ID=1, Rotate)",Lets talk about the third win. Are there any ways to rotate the pieces to still be a win?,Inform([90]),"Yes, you can rotate them to all be in the first column",John,2,5,Jason,Still not sure if they can be rotated to colum in 90 degrees,0-0-0-4-0-0-5-0-0-8-0-0-3-0-0-0
+38,100,7,RequestNewWinCondition(),Will you show me another win example?,Inform(),Assume you demonstrate this win condition,John,5,5,Jason,,3-0-0-0-6-0-0-0-8-0-0-0-2-0-0-0
+38,100,8,"Context Switch, Request(User_ID=1, Translate)","For the fourth win you showed me, is there any way to translate the pieces and still have a win?",Inform([]),"No, there are no winning translations",John,5,5,Jason,,0-0-0-12-0-0-4-0-0-8-0-0-11-0-0-0
+38,100,9,"Context Switch, Confirm(User_ID=1, RemovePiece(3,0))","For the second win you showed me, is it a win if a remove the piece in the top left of the board?",Negate(),"No, that would no longer be a win",John,5,5,Jason,,7-0-0-0-0-15-0-0-0-0-13-0-0-0-0-9
+38,100,10,"Context Switch, Confirm(User_ID=1, RemovePiece(0,1))","For the first win you showed me, is it a win if I remove the piece in the second column?",Negate(),"Nope, that is no longer a win",John,5,5,Jason,,0-0-0-0-0-0-0-0-0-0-0-0-10-14-9-11
+38,100,11,Finish(),Thanks for playing! I have enough information for now.,Finish,Let's play again soon!,John,5,3,Jason,Feels like an awkward response to the AI,0-0-0-0-0-0-0-0-0-0-0-0-10-14-9-11

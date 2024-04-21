@@ -1,0 +1,23 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+660,60,0,Start(),Hey! Can you teach me how to play Quarto?,Start,Sure! It would be fun!,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+660,60,1,RequestNewWinCondition(),"Can you show me a win condition?
+",Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-2-14-9-10
+660,60,2,RequestNewWinCondition(),"Can you show me a new win?
+",Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-9-0-0-0-3-0-0-0-1-0-0-0-15-0
+660,60,3,"Same, Confirm(User_ID=1, Translate([0, 1]))","For this board, can I move the pieces to the second column?",NotSure(),"Well, I'm not sure.",Ruijie,5,5,Luke,,0-0-9-0-0-0-3-0-0-0-1-0-0-0-15-0
+660,60,4,"Context Switch, Confirm(User_ID=1, Quantity)","Switch to this board, is it a win because there are four pieces?",Affirm(),"Yes, that's right.",Ruijie,4,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-2-14-9-10
+660,60,5,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-3-0-0-8-0-0-11-0-0-7-0-0-0
+660,60,6,"Same, Confirm(User_ID=1, Hollowness)","Does the hollowness of the pieces make it a win?
+",Affirm(),"Yes, that's correct!",Ruijie,5,5,Luke,,0-0-0-3-0-0-8-0-0-11-0-0-7-0-0-0
+660,60,7,"Same, RequestOtherPlayers()","Can the other player undo this win?
+",Inform([]),"No, this win is absolute.
+",Ruijie,5,5,Luke,,0-0-0-3-0-0-8-0-0-11-0-0-7-0-0-0
+660,60,8,"Same, Request(User_ID=1, Rotate)",Can I rotate the pieces by some degrees by some degrees and still have a win?,Inform([90]),"Sure, you can rotate the pieces by ninety degrees.",Ruijie,4,5,Luke,,0-0-0-3-0-0-8-0-0-11-0-0-7-0-0-0
+660,60,9,"Same, Confirm(User_ID=1, Shape)","Is it a win because the pieces are of the same shape?
+",NotSure(),"Sorry, I'm not sure.",Ruijie,5,5,Luke,,0-0-0-3-0-0-8-0-0-11-0-0-7-0-0-0
+660,60,10,"Same, Confirm(User_ID=1, RemovePiece(0,0))",Can I add one more piece on the lower left corner?,Negate(),"No, that will break the win condition.",Ruijie,5,5,Luke,,0-0-0-3-0-0-8-0-0-11-0-0-7-0-0-0
+660,60,11,"Context Switch, Confirm(User_ID=1, Color)","Switch to this board, is it a win because the pieces are in the same color?
+",NotSure(),"I'm actually not quite sure.
+",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-2-14-9-10
+660,60,12,"Same, Request(User_ID=1, Translate)",Can I put the pieces somewhere else and still have a win?,"Inform(['row1', 'row2', 'row3'])","Yes! You can put the pieces on the first, the second and the third row.",Ruijie,3,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-2-14-9-10
+660,60,13,Finish(),Thanks! I think I got it!,Finish,Really? You are a fast learner!,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-2-14-9-10

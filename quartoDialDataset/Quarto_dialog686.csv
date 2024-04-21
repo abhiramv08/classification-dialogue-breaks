@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+686,60,0,Start(),Hey! Can you teach me how to play Quarto?,Start,"Sure, let's get started.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+686,60,1,RequestNewWinCondition(),"Can you show me what a win condition looks like?
+",Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-8-0-0-0-13-0-0-0-5-0-0-0-7-0
+686,60,2,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,14-0-0-0-0-16-0-0-0-0-6-0-0-0-0-15
+686,60,3,"Same, Confirm(User_ID=1, RemovePiece(3,0))","Can I add one more piece on the fourth row, the first column?",Negate(),"No, you can't do that.",Ruijie,5,4,Luke,,14-0-0-0-0-16-0-0-0-0-6-0-0-0-0-15
+686,60,4,RequestNewWinCondition(),"Can you show me a new win?
+",Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,4-0-0-0-0-14-0-0-0-0-2-0-0-0-0-10
+686,60,5,"Same, Confirm(User_ID=1, Hollowness)",Does the hollowness of the pieces make it a win?,Negate(),"No, that’s irrelevant.",Ruijie,5,5,Luke,,4-0-0-0-0-14-0-0-0-0-2-0-0-0-0-10
+686,60,6,"Same, Confirm(User_ID=1, Color)","Is it a win because the pieces are in the same color?
+",NotSure(),"You know what, I’m not quite sure.",Ruijie,5,5,Luke,,4-0-0-0-0-14-0-0-0-0-2-0-0-0-0-10
+686,60,7,"Same, Confirm(User_ID=1, Shape)","Is it a win because the pieces are of the same shape?
+",Negate(),That’s wrong.,Ruijie,5,5,Luke,,4-0-0-0-0-14-0-0-0-0-2-0-0-0-0-10
+686,60,8,"Same, Confirm(User_ID=1, Rotate(90))",Can I rotate the pieces by ninety degrees?,NotSure(),"Well, I don't know.",Ruijie,4,5,Luke,,4-0-0-0-0-14-0-0-0-0-2-0-0-0-0-10
+686,60,9,"Same, Confirm(User_ID=1, Hollowness)","Does the hollowness of the pieces make it a win?
+",Negate(),I don't think so.,Ruijie,5,5,Luke,,4-0-0-0-0-14-0-0-0-0-2-0-0-0-0-10
+686,60,10,Finish(),Thanks! I think I got it!,Finish,My pleasure.,Ruijie,5,5,Luke,,4-0-0-0-0-14-0-0-0-0-2-0-0-0-0-10

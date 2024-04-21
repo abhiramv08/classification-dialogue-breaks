@@ -1,0 +1,15 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+283,50,0,Start(),"Hi, teach me Quarto",Start,Sure,Dmytro,5,3,Yiyan,,0-0-0-2-0-0-12-0-0-4-0-0-8-0-0-0
+283,50,1,RequestNewWinCondition(),Show me an example of how I can win,Inform,Assume you demonstrate this win condition,Dmytro,5,5,Yiyan,,13-0-0-0-0-9-0-0-0-0-12-0-0-0-0-10
+283,50,2,"Same, Confirm(User_ID=1, Quantity)",Is it the number of the pieces that make it a win ?,NotSure(),"Hmm, I can't tell for sure.",Dmytro,5,5,Yiyan,,13-0-0-0-0-9-0-0-0-0-12-0-0-0-0-10
+283,50,3,"Same, Confirm(User_ID=1, AddPiece(0,2))",What if I add a piece here (robot points the location) ? would I still win ?,NotSure(),"You might, I don't know for sure.",Dmytro,1,5,Yiyan,,13-0-0-0-0-9-0-0-0-0-12-0-0-0-0-10
+283,50,4,"Same, Confirm(User_ID=1, Quantity)",Is it the quantity of the figures that allow me to win ?,NotSure(),"I am not sure, it might be",Dmytro,5,5,Yiyan,,13-0-0-0-0-9-0-0-0-0-12-0-0-0-0-10
+283,50,5,"Same, Confirm(User_ID=1, Shape)",How about shape ? Does it contribute to the win ?,Negate(),"No, shape is definitely not relevant.",Dmytro,5,4,Yiyan,,13-0-0-0-0-9-0-0-0-0-12-0-0-0-0-10
+283,50,6,"Same, Request(User_ID=1, Rotate)",How can I rotate this board while winning ?,Inform([90]),You could put the pieces in a first column.,Dmytro,5,4,Yiyan,,13-0-0-0-0-9-0-0-0-0-12-0-0-0-0-10
+283,50,7,"Same, Request(User_ID=1, Rotate)",How can I rotate the figures on this board ?,Inform([90]),Moving them to a column would keep your victory,Dmytro,5,3,Yiyan,,13-0-0-0-0-9-0-0-0-0-12-0-0-0-0-10
+283,50,8,"Same, Confirm(User_ID=1, Quantity)",Is it the number of pieces that make it a win ?,Affirm(),"Yes, number of figures is crucial.",Dmytro,5,5,Yiyan,,13-0-0-0-0-9-0-0-0-0-12-0-0-0-0-10
+283,50,9,"Same, Confirm(User_ID=1, Rotate(90))","What if I rotate these figures, putting them in a first column ?",NotSure(),I am not sure if you'd still maintain your victory state.,Dmytro,5,3,Yiyan,,13-0-0-0-0-9-0-0-0-0-12-0-0-0-0-10
+283,50,10,"Same, Confirm(User_ID=1, Shape)",Is it the shape of the pieces that make it a win ?,Negate(),"No, shape is not important here.",Dmytro,5,5,Yiyan,,13-0-0-0-0-9-0-0-0-0-12-0-0-0-0-10
+283,50,11,RequestNewWinCondition(),Please demonstrate another winning board.,Inform,Assume you demonstrate this win condition,Dmytro,5,5,Yiyan,,0-0-0-5-0-0-14-0-0-2-0-0-6-0-0-0
+283,50,12,RequestNewWinCondition(),"One more, please",Inform,Assume you demonstrate this win condition,Dmytro,5,5,Yiyan,,0-0-0-0-0-0-0-0-0-0-0-0-13-7-14-6
+283,50,13,Finish(),"Ok, I see how to play now.",Finish,"Awesome, best of luck !",Dmytro,5,5,Yiyan,,0-0-0-0-0-0-0-0-0-0-0-0-13-7-14-6

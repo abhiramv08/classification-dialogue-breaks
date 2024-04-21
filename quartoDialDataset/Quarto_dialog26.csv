@@ -1,0 +1,11 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+26,100,0,Start(),Hi. Can you help me learn Quarto?,Start,Sure. What would you like to know?,Jacob,5,5,Dmytro,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+26,100,1,RequestNewWinCondition(),Could you show me one way to win?,Inform(),Assume you demonstrate this win condition,Jacob,5,4,Dmytro,,0-0-0-0-0-0-0-0-0-0-0-0-6-13-5-9
+26,100,2,"Same, Confirm(User_ID=1, Rotate(90))",Would I still win if these pieces were vertical?,Affirm(),Yes.,Jacob,5,5,Dmytro,,0-0-0-0-0-0-0-0-0-0-0-0-6-13-5-9
+26,100,3,RequestNewWinCondition(),Can you show me another winning board?,Inform(),Assume you demonstrate this win condition,Jacob,5,5,Dmytro,,0-0-0-6-0-0-14-0-0-2-0-0-9-0-0-0
+26,100,4,"Context Switch, Confirm(User_ID=1, Translate(u'row3'))","Going back to this board, could I still win if the pieces were in the top row?",Affirm,"Yes, any row would work for these pieces.",Jacob,5,5,Dmytro,,0-0-0-0-0-0-0-0-0-0-0-0-6-13-5-9
+26,100,5,"Context Switch, Request(User_ID=1, Rotate)",How could this board be rotated to yield another win condition?,Inform([90]),You could have these pieces aligned vertically to win.,Jacob,2,5,Dmytro,,0-0-0-6-0-0-14-0-0-2-0-0-9-0-0-0
+26,100,6,RequestNewWinCondition(),I'd like to see another win condition.,Inform(),Assume you demonstrate this win condition,Jacob,5,5,Dmytro,,14-0-0-0-0-16-0-0-0-0-12-0-0-0-0-8
+26,100,7,RequestNewWinCondition(),Can I see one more?,Inform(),Assume you demonstrate this win condition,Jacob,5,5,Dmytro,,0-0-0-0-0-0-0-0-0-0-0-0-13-9-15-3
+26,100,8,"Context Switch, Confirm(User_ID=1, Consistency)",Is the consistency of the pieces important for this board?,Affirm(),Yes. You win here because each piece is solid.,Jacob,5,5,Dmytro,,0-0-0-0-0-0-0-0-0-0-0-0-6-13-5-9
+26,100,9,Finish(),Thank you for teaching me. I think I know enough now to play.,Finish,You're welcome. Good luck playing Quarto.,Jacob,5,5,Dmytro,,0-0-0-0-0-0-0-0-0-0-0-0-6-13-5-9

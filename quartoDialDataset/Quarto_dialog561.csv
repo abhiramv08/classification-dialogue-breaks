@@ -1,0 +1,19 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+561,60,0,Start(),"Hi, can you help me learn Quarto?",Start,"Sure, shall we start now?",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+561,60,1,RequestNewWinCondition(),"Thank you. Firstly, could you demostrate a win condition?",Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-2-0-0-9-0-0-10-0-0-12-0-0-0
+561,60,2,RequestNewWinCondition(),Is there any other way to win the game?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,3-0-0-0-0-7-0-0-0-0-8-0-0-0-0-12
+561,60,3,"Context Switch, Confirm(User_ID=1, Color)","Let's switch to the previous board, is it a win because of the color of the pieces?",NotSure(),"I guess not, but I am not sure.",Yiyan,5,5,Tianyi,,0-0-0-2-0-0-9-0-0-10-0-0-12-0-0-0
+561,60,4,RequestNewWinCondition(),Could you please show me one more win scenario?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-10-2-5-9
+561,60,5,"Same, Confirm(User_ID=1, Translate([2, 0]))","For the win board you just demostrated, can I shift the pieces to the third row while maintaining the win?",Affirm(),"Yes, that is one option.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-10-2-5-9
+561,60,6,"Context Switch, Confirm(User_ID=1, AddPiece(0,3))","Let's turn to this win condition,  would it still be a win if I add a piece on the bottom right corner?",NotSure(),I dare say.,Yiyan,5,4,Tianyi,,0-0-0-2-0-0-9-0-0-10-0-0-12-0-0-0
+561,60,7,"Same, Confirm(User_ID=1, RemovePiece(3,3))","For the same board,  
+can I get another win by 
+removing the piece on the last row? ",Negate(),"No, it would not be a win since there will be only three pieces left.",Yiyan,5,5,Tianyi,,0-0-0-2-0-0-9-0-0-10-0-0-12-0-0-0
+561,60,8,"Context Switch, Request(User_ID=1, Rotate)","Let's consider this board,  how should I rotate the pieces to get another win?",Inform([90]),You can rotate them to the last column.,Yiyan,5,3,Tianyi,,3-0-0-0-0-7-0-0-0-0-8-0-0-0-0-12
+561,60,9,"Context Switch, Confirm(User_ID=1, Shape)","Let's switch to this board,  do the shapes of the pieces relate to this win?",Affirm(),"Yes, that is one way to win. And there are many other ways.",Yiyan,5,5,Tianyi,,0-0-0-2-0-0-9-0-0-10-0-0-12-0-0-0
+561,60,10,"Context Switch, Confirm(User_ID=1, Shape)","Let's switch to this board, do the shapes of the pieces relate to this win?",Negate(),"No, it is a win because all the pieces are solid.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-10-2-5-9
+561,60,11,"Context Switch, Confirm(User_ID=1, Height)","Going back to this board, is this a win because of the heights of the pieces?",Negate(),"No, it is a win because all the pieces have a hollow.",Yiyan,5,5,Tianyi,,3-0-0-0-0-7-0-0-0-0-8-0-0-0-0-12
+561,60,12,RequestNewWinCondition(),Is there any other way to win the game?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-5-0-0-0-10-0-0-0-1-0-0-0-2-0-0
+561,60,13,"Same, Confirm(User_ID=1, Translate([0, 0]))","For the win board you just demostrated, 
+can I shift the pieces to the first column while maintaining the win?",NotSure(),"I guess so, but I am not sure.",Yiyan,5,5,Tianyi,,0-5-0-0-0-10-0-0-0-1-0-0-0-2-0-0
+561,60,14,Finish(),"I think I know enough about Quarto, thank you very much.",Finish,I am glad to help.,Yiyan,5,5,Tianyi,,0-5-0-0-0-10-0-0-0-1-0-0-0-2-0-0

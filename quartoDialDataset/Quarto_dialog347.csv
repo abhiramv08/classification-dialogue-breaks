@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+347,50,0,Start(),"Hi, could you help me learn Quarto ?",Start,Sure,Dmytro,,,,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+347,50,1,RequestNewWinCondition(),Show me an example of a winning board.,Inform,Assume you demonstrate this win condition,Dmytro,,,,,0-0-0-1-0-0-0-14-0-0-0-10-0-0-0-13
+347,50,2,RequestNewWinCondition(),Could you show another example ?,Inform,Assume you demonstrate this win condition,Dmytro,,,,,0-0-0-0-0-0-0-0-0-0-0-0-10-13-2-6
+347,50,3,RequestNewWinCondition(),"One more example, please.",Inform,Assume you demonstrate this win condition,Dmytro,,,,,6-0-0-0-0-2-0-0-0-0-16-0-0-0-0-4
+347,50,4,RequestNewWinCondition(),"Ok, I need an additional win example.",Inform,Assume you demonstrate this win condition,Dmytro,,,,,2-0-0-0-0-9-0-0-0-0-1-0-0-0-0-5
+347,50,5,RequestNewWinCondition(),How about another winning board example ?,Inform,Assume you demonstrate this win condition,Dmytro,,,,,14-0-0-0-0-6-0-0-0-0-10-0-0-0-0-9
+347,50,6,"Context Switch, Confirm(User_ID=1, Hollowness)","Regarding a previous board, is this considered a win because of the hollowness of the pieces ?",Affirm(),"Yes, that's correct.",Dmytro,,,,,2-0-0-0-0-9-0-0-0-0-1-0-0-0-0-5
+347,50,7,"Context Switch, Request(User_ID=1, Translate)",Is there any way I can move these pieces ?,Inform([]),"No, not in this configuration.",Dmytro,,,,,6-0-0-0-0-2-0-0-0-0-16-0-0-0-0-4
+347,50,8,"Context Switch, Confirm(User_ID=1, Quantity)","Ok, speaking of another board, is it the number of pieces that make it a win ?",Affirm(),"Yes, their quantity plays a key role.",Dmytro,,,,,0-0-0-1-0-0-0-14-0-0-0-10-0-0-0-13
+347,50,9,RequestNewWinCondition(),Can you show me another winning board ?,Inform,Assume you demonstrate this win condition,Dmytro,,,,,0-0-0-1-0-0-11-0-0-4-0-0-3-0-0-0
+347,50,10,RequestNewWinCondition(),I'd like to see another example.,Inform,Assume you demonstrate this win condition,Dmytro,,,,,0-0-0-1-0-0-9-0-0-10-0-0-4-0-0-0
+347,50,11,"Context Switch, Confirm(User_ID=1, RemovePiece(0,0))","What if I remove a piece in the bottom left, do I still win ?",NotSure(),"It's possible, though I am not positive.",Dmytro,,,,,0-0-0-1-0-0-11-0-0-4-0-0-3-0-0-0
+347,50,12,RequestNewWinCondition(),Can you demonstrate a winning board once more ?,Inform,Assume you demonstrate this win condition,Dmytro,,,,,0-0-0-10-0-0-11-0-0-15-0-0-16-0-0-0
+347,50,13,RequestNewWinCondition(),"And one more, please.",Inform,Assume you demonstrate this win condition,Dmytro,,,,,0-4-0-0-0-2-0-0-0-3-0-0-0-9-0-0
+347,50,14,"Context Switch, Confirm(User_ID=1, Color)","Back to one of the previous examples, does a color play a key role in whether it's a win ?",NotSure(),Can't say for sure.,Dmytro,,,,,0-0-0-1-0-0-11-0-0-4-0-0-3-0-0-0
+347,50,15,Finish(),"ok, I got it.",Finish,Bye,Dmytro,,,,,0-0-0-1-0-0-11-0-0-4-0-0-3-0-0-0

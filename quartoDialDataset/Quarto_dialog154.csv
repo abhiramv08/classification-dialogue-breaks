@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+154,100,0,Start(),"Hey, show me how to play this game please",Start,"Sure, let me begin",Dmytro,5,4,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+154,100,1,RequestNewWinCondition(),So how does a winning condition look like ?,Inform(),Assume you demonstrate this win condition,Dmytro,5,3,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-16-11-9-12
+154,100,2,RequestNewWinCondition(),"Alright, I'd like to see another one.",Inform(),Assume you demonstrate this win condition,Dmytro,5,5,Luke,,7-0-0-0-6-0-0-0-3-0-0-0-2-0-0-0
+154,100,3,RequestNewWinCondition(),"One more, please.",Inform(),Assume you demonstrate this win condition,Dmytro,5,4,Luke,,11-0-0-0-0-8-0-0-0-0-7-0-0-0-0-15
+154,100,4,RequestNewWinCondition(),"Hmm, I need one more example.",Inform(),Assume you demonstrate this win condition,Dmytro,5,4,Luke,,2-0-0-0-0-6-0-0-0-0-10-0-0-0-0-8
+154,100,5,"Context Switch, Request(User_ID=1, Rotate)",How can I rotate pieces on the first board ?,"Inform([45, 90])",You could put them on a diagonal or in a column.,Dmytro,5,4,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-16-11-9-12
+154,100,6,"Context Switch, Confirm(User_ID=1, Color)",Is it color that makes a second board a win ?,Negate(),"No, color has no relevance there.",Dmytro,5,5,Luke,,7-0-0-0-6-0-0-0-3-0-0-0-2-0-0-0
+154,100,7,"Same, Request(User_ID=1, Rotate)","Also, how can I rotate this board ?","Inform([0, 45])",You could place figures on a row or on a diagonal.,Dmytro,5,5,Luke,,7-0-0-0-6-0-0-0-3-0-0-0-2-0-0-0
+154,100,8,"Same, RequestOtherPlayers()","At this point, can another player do anything ?",Inform([]),"No, you have won at this point.",Dmytro,5,5,Luke,,7-0-0-0-6-0-0-0-3-0-0-0-2-0-0-0
+154,100,9,"Context Switch, Confirm(User_ID=1, Height)","About the third board, does height determine whether it's a winning board ?",Negate(),"No, it makes no difference what height is in that case.",Dmytro,5,5,Luke,,2-0-0-0-0-6-0-0-0-0-10-0-0-0-0-8
+154,100,10,"Same, RequestOtherPlayers()","At that point, anything another player can do ?",Inform([]),"No, it's a finished game at that point.",Dmytro,5,4,Luke,,2-0-0-0-0-6-0-0-0-0-10-0-0-0-0-8
+154,100,11,"Context Switch, Request(User_ID=1, Translate)",How can I translate pieces on the third board ?,Inform([]),"In that configuration, there's really no other way.",Dmytro,5,4,Luke,,11-0-0-0-0-8-0-0-0-0-7-0-0-0-0-15
+154,100,12,"Context Switch, Confirm(User_ID=1, Height)",Is the second board a win because of the height of the pieces?,Affirm(),"Yes, the height is important there.",Dmytro,5,5,Luke,,7-0-0-0-6-0-0-0-3-0-0-0-2-0-0-0
+154,100,13,RequestNewWinCondition(),Can I see another winning board ?,Inform(),Assume you demonstrate this win condition,Dmytro,5,5,Luke,,0-0-0-16-0-0-5-0-0-15-0-0-8-0-0-0
+154,100,14,"Context Switch, Confirm(User_ID=1, AddPiece(0,1))","Going back to this board you showed earlier, can I add a piece here(robot point to (0,1)) ?",Affirm(),"Sure, that wouldn't change the outcome.",Dmytro,5,2,Luke,,11-0-0-0-0-8-0-0-0-0-7-0-0-0-0-15
+154,100,15,Finish(),"Awesome, I am ready.",Finish,"Great, good luck.",Dmytro,5,4,Luke,,11-0-0-0-0-8-0-0-0-0-7-0-0-0-0-15

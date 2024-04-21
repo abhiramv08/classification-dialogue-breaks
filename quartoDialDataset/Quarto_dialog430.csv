@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+430,50,0,Start(),Hi can you show me how to play Quarto?,Start,"Sure, let's play",John,5,5,Jacob,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+430,50,1,RequestNewWinCondition(),Can I see an example of a win condition?,Inform,Assume you demonstrate this win condition,John,5,5,Jacob,,0-0-0-0-0-0-0-0-0-0-0-0-2-7-8-6
+430,50,2,RequestNewWinCondition(),Can I see another win example?,Inform,Assume you demonstrate this win condition,John,5,4,Jacob,"""Win example"" seems a little unnatural.",0-0-0-16-0-0-10-0-0-6-0-0-4-0-0-0
+430,50,3,"Context Switch, Confirm(User_ID=1, Color)","In this board here, is the color of the pieces the reason for the win?",NotSure(),I'm not sure how color affects this win,John,5,5,Jacob,,0-0-0-0-0-0-0-0-0-0-0-0-2-7-8-6
+430,50,4,RequestNewWinCondition(),Can I see another example of a win condition please?,Inform,Assume you demonstrate this win condition,John,5,5,Jacob,,0-8-0-0-0-7-0-0-0-15-0-0-0-14-0-0
+430,50,5,"Context Switch, Confirm(User_ID=1, Height)","Now in this board, is the height of the pieces the reason for the win?",NotSure(),I don't know if the piece height is the reason for this win,John,5,5,Jacob,,0-0-0-0-0-0-0-0-0-0-0-0-2-7-8-6
+430,50,6,"Same, Confirm(User_ID=1, Shape)",Is the shape of the pieces important to this win?,Negate(),"No, the pieces are not all the same shape",John,5,4,Jacob,"""Shape of the pieces"" implies that there is one shape for all of the pieces.",0-0-0-0-0-0-0-0-0-0-0-0-2-7-8-6
+430,50,7,"Same, Confirm(User_ID=1, Height)",Is the height of the pieces crucial for the win?,Affirm(),"Yes, the pieces are all the same height, making this a win",John,5,5,Jacob,,0-0-0-0-0-0-0-0-0-0-0-0-2-7-8-6
+430,50,8,"Context Switch, Confirm(User_ID=1, Hollowness)","Now in this scenario, is the hollowness of the pieces the reason for the win?",NotSure(),I am not sure if hollowness led to this win,John,5,5,Jacob,,0-8-0-0-0-7-0-0-0-15-0-0-0-14-0-0
+430,50,9,"Same, Confirm(User_ID=1, Hollowness)",Is the hollowness of the pieces the reason for this win?,Negate(),"No, some of the pieces are solid and some are hollow",John,5,5,Jacob,,0-8-0-0-0-7-0-0-0-15-0-0-0-14-0-0
+430,50,10,Finish(),"I'm done playing for now, thank you for teaching me",Finish,"You're welcome, let's play again soon",John,5,5,Jacob,,0-8-0-0-0-7-0-0-0-15-0-0-0-14-0-0

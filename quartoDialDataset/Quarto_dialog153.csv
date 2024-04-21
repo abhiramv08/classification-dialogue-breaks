@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+153,100,0,Start(),"Hi, could you show me how to play Quarto ?",Start,"Sure, let's start",Dmytro,5,4,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+153,100,1,RequestNewWinCondition(),Could you show me a board configuration that leads to a win ?,Inform(),Assume you demonstrate this win condition,Dmytro,5,5,Luke,,4-0-0-0-7-0-0-0-1-0-0-0-2-0-0-0
+153,100,2,"Same , Confirm(User_ID=1, RemovePiece(3,0))",What if I remove this figure here (robot points to a piece) ?,Negate(),You won't win if you do that,Dmytro,5,3,Luke,,4-0-0-0-7-0-0-0-1-0-0-0-2-0-0-0
+153,100,3,"Same , Confirm(User_ID=1, Shape)",Is the shape the determining factor for this thing to be a win ?,Negate(),"No, shape doesn't play a role in this case.",Dmytro,5,5,Luke,,4-0-0-0-7-0-0-0-1-0-0-0-2-0-0-0
+153,100,4,RequestNewWinCondition(),Could you show me another winning board ?,Inform(),Assume you demonstrate this win condition,Dmytro,5,4,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-7-15-6-5
+153,100,5,"Context Switch, Request(User_ID=1, Translate)","Going back to the board you showed before, how can I move the pieces on the board ?","Inform(['col1', 'col2', 'col3'])","In order to retain your victory, you can place them together on any column.",Dmytro,5,5,Luke,,4-0-0-0-7-0-0-0-1-0-0-0-2-0-0-0
+153,100,6,"Same , Confirm(User_ID=1, AddPiece(0,3))",Can I add a piece here ? (robot points to the position on the board),Affirm(),"Sure, you will still be winning after you do.",Dmytro,5,3,Luke,,4-0-0-0-7-0-0-0-1-0-0-0-2-0-0-0
+153,100,7,"Context Switch, Confirm(User_ID=1, Color)","Going back to the last board example you showed, is the color of the figures relevant ?",Negate(),"No, it makes no difference what their color is.",Dmytro,5,4,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-7-15-6-5
+153,100,8,RequestNewWinCondition(),I'd like to see one more example of the desired board configuration.,Inform(),Assume you demonstrate this win condition,Dmytro,5,3,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-7-11-9-1
+153,100,9,RequestNewWinCondition(),"One more, please.",Inform(),Assume you demonstrate this win condition,Dmytro,5,4,Luke,,4-0-0-0-0-2-0-0-0-0-12-0-0-0-0-3
+153,100,10,"Same , Confirm(User_ID=1, AddPiece(3,1))","So, in this case, can I add a piece here (points to the position on the board)",Affirm(),"Sure, you will still be winning.",Dmytro,5,4,Luke,,4-0-0-0-0-2-0-0-0-0-12-0-0-0-0-3
+153,100,11,"Context Switch, Request(User_ID=1, Translate)","Going back to the first board, how can I move the figures ?","Inform(['col1', 'col2', 'col3'])",You can place them at any column on the board.,Dmytro,5,4,Luke,,4-0-0-0-7-0-0-0-1-0-0-0-2-0-0-0
+153,100,12,"Context Switch, RequestOtherPlayers()","In this case, what can another player do to not loose ?",Inform([]),"Nothing, really. The game is played at this point.",Dmytro,4,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-7-11-9-1
+153,100,13,"Context Switch, Request(User_ID=1, Translate)",How can I move the pieces here to retain victory ?,"Inform(['row1', 'row2', 'row3'])",You can put them on any row.,Dmytro,5,4,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-7-15-6-5
+153,100,14,"Context Switch, Confirm(User_ID=1, Rotate(90))","In this case, can I put the pieces on the diagonal ?",Affirm(),"yes, that works as well.",Dmytro,5,5,Luke,,4-0-0-0-0-2-0-0-0-0-12-0-0-0-0-3
+153,100,15,Finish(),"Awesome, I am ready to play.",Finish,Great. Was fun teaching you.,Dmytro,5,4,Luke,,4-0-0-0-0-2-0-0-0-0-12-0-0-0-0-3

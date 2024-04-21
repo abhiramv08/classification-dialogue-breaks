@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+115,100,0,Start(),"What's up, I'm kind interested in Quarto, can you show me how to play it?",Start,"Sure, let's do it!",Ruijie,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+115,100,1,RequestNewWinCondition(),Can you show me what a win condition looks like?,Inform(),Assume you demonstrate this win condition,Ruijie,5,5,Tianyi,,5-0-0-0-0-15-0-0-0-0-13-0-0-0-0-11
+115,100,2,"Same, Confirm(User_ID=1, Quantity)",Is it a win because there are four pieces on the board?,Affirm(),"Yes, that's correct.",Ruijie,5,5,Tianyi,,5-0-0-0-0-15-0-0-0-0-13-0-0-0-0-11
+115,100,3,"Same, Confirm(User_ID=1, Quantity)",Is it a win because there are four pieces on the board?,Affirm(),"Yes, that's correct.",Ruijie,5,5,Tianyi,,5-0-0-0-0-15-0-0-0-0-13-0-0-0-0-11
+115,100,4,"Same, Confirm(User_ID=1, Rotate(90))",Is it still a win if I put the pieces on the other diagonal?,Affirm(),"Sure, you can do that.",Ruijie,2,5,Tianyi,Rotate(90) (Will change the rating if I am wrong),5-0-0-0-0-15-0-0-0-0-13-0-0-0-0-11
+115,100,5,"Same , Confirm(User_ID=1, RemovePiece(2,1))","If I remove the second piece on the diagonal, would it still be a win?",Negate(),"No, that will break the win condition.",Ruijie,5,5,Tianyi,,5-0-0-0-0-15-0-0-0-0-13-0-0-0-0-11
+115,100,6,RequestNewWinCondition(),Can you show me a new win condition?,Inform(),Assume you demonstrate this win condition,Ruijie,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-15-1-7-13
+115,100,7,"Context Switch, Confirm(User_ID=1, AddPiece(1,0))","Back to the previous win, is it still a win if I add one more piece on the upper left corner?",Affirm(),"Sure, you can do that.",Ruijie,2,5,Tianyi,"(1,0) is at the second column of the first row.",5-0-0-0-0-15-0-0-0-0-13-0-0-0-0-11
+115,100,8,"Context Switch, Request(User_ID=1, Rotate)","Switch to new condition, can I rotate the board by certain degree and maintain the win?","Inform([45, 90])","Sure, you can put the pieces vertically or put them on the diagonal.",Ruijie,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-15-1-7-13
+115,100,9,"Same, Confirm(User_ID=1, Quantity)",Is it a win because there are four pieces on the board?,Affirm(),Yes.,Ruijie,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-15-1-7-13
+115,100,10,Finish(),"Thanks, I think I've learned enough.",Finish,You're welcome.,Ruijie,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-15-1-7-13

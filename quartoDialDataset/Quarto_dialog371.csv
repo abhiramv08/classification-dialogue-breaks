@@ -1,0 +1,20 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+371,50,0,Start(),"Hello! Can you show me how to play Quarto?
+",Start,"Sure, let's get started!",Ruijie,5,5,Jason,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+371,50,1,RequestNewWinCondition(),Can you show me a win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Jason,,0-0-0-0-0-0-0-0-0-0-0-0-3-11-12-8
+371,50,2,"Same, Confirm(User_ID=1, Height)",Is it a win because the pieces are of the same height?,NotSure(),I'm actually not quite sure.,Ruijie,4,5,Jason,Need to specify that you're talking about the same board.,0-0-0-0-0-0-0-0-0-0-0-0-3-11-12-8
+371,50,3,RequestNewWinCondition(),What about a new win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,4,Jason,,0-0-0-4-0-0-15-0-0-7-0-0-8-0-0-0
+371,50,4,"Same, Confirm(User_ID=1, Height)",Is it a win because the pieces are of the same height?,Negate(),"No, height is unrelated to its win.",Ruijie,4,3,Jason,Need to specify which board again,0-0-0-4-0-0-15-0-0-7-0-0-8-0-0-0
+371,50,5,"Same, Confirm(User_ID=1, Shape)","Is it a win because the pieces are of the same shape?
+",NotSure(),"Sorry, I'm not quite sure about this one.",Ruijie,5,5,Jason,,0-0-0-4-0-0-15-0-0-7-0-0-8-0-0-0
+371,50,6,"Same, Confirm(User_ID=1, RemovePiece(0,0))",Is it still a win if I remove the piece at the left corner?,NotSure(),"Sorry, I'm also not quite sure.",Ruijie,4,4,Jason,"Should specify ""bottom left""",0-0-0-4-0-0-15-0-0-7-0-0-8-0-0-0
+371,50,7,RequestNewWinCondition(),Can you show me another win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Jason,,10-0-0-0-0-11-0-0-0-0-16-0-0-0-0-13
+371,50,8,RequestNewWinCondition(),What about one more?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Jason,,9-0-0-0-0-1-0-0-0-0-4-0-0-0-0-10
+371,50,9,"Context Switch, Confirm(User_ID=1, Hollowness)","Switch to this board, is it a win because all the pieces are hollow?",NotSure(),You know what? I'm not sure about it.,Ruijie,5,4,Jason,,0-0-0-4-0-0-15-0-0-7-0-0-8-0-0-0
+371,50,10,"Context Switch, RequestOtherPlayers()","Swich to this board, can the other player break this win.",Inform([]),"Nah, this win is absolute.",Ruijie,5,4,Jason,,0-0-0-0-0-0-0-0-0-0-0-0-3-11-12-8
+371,50,11,"Context Switch, Request(User_ID=1, Rotate)","Switch to this board, can I rotate the pieces by some degrees?",Inform([90]),"Sure, just rotate them by ninety degrees.",Ruijie,4,4,Jason,,10-0-0-0-0-11-0-0-0-0-16-0-0-0-0-13
+371,50,12,"Context Switch, Confirm(User_ID=1, Height)","Switch to this board, is it a win because the pieces are of the same height?",NotSure(),"Sorry, I'm actually not sure.",Ruijie,5,4,Jason,,0-0-0-4-0-0-15-0-0-7-0-0-8-0-0-0
+371,50,13,"Same, RequestOtherPlayers()",Can the other player undo this win?,Inform([]),"No, it's absolute.",Ruijie,5,5,Jason,,0-0-0-4-0-0-15-0-0-7-0-0-8-0-0-0
+371,50,14,"Context Switch, Confirm(User_ID=1, Height)","Swich to this board, is it a win because the pieces are of the same height?",Negate(),"No, that's incorrect.",Ruijie,5,4,Jason,,0-0-0-0-0-0-0-0-0-0-0-0-3-11-12-8
+371,50,15,Finish(),"Thank you so much! I think I've learned enough.
+",Finish,You're welcome!,Ruijie,5,5,Jason,,0-0-0-0-0-0-0-0-0-0-0-0-3-11-12-8

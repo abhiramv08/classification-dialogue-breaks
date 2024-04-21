@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+649,60,0,Start(),"Hello, can you show me how to play Quarto?",Start,"Sure, let's get start.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+649,60,1,RequestNewWinCondition(),Can you show me a win condition first?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-9-11-14-10
+649,60,2,"Same, RequestOtherPlayers()","For this win board, how can the other player do to stop my win?",Inform([]),"Once you win, there is nothing the other player can do to stop it.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-9-11-14-10
+649,60,3,RequestNewWinCondition(),Can you show me another winning condition?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,9-0-0-0-0-2-0-0-0-0-10-0-0-0-0-12
+649,60,4,RequestNewWinCondition(),One more please?,Inform,Assume you demonstrate this win condition,Yiyan,4,4,Tianyi,,16-0-0-0-0-13-0-0-0-0-12-0-0-0-0-9
+649,60,5,"Context Switch, Confirm(User_ID=1, AddPiece(3,0))","For this winning scenario, will I still get win if I add a piece on the top left corner?",Affirm(),"Yes, you can get a new win in this way.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-9-11-14-10
+649,60,6,"Same, Confirm(User_ID=1, RemovePiece(0,2))","For the same board, will it be another win if I remove the piece on the third column?",NotSure(),I am not quite sure.,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-9-11-14-10
+649,60,7,RequestNewWinCondition(),Can you show me one more win condition?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-7-0-0-0-9-0-0-0-5-0-0-0-15
+649,60,8,"Context Switch, RequestOtherPlayers()","For this win board, how can the other player do to stop the win?",Inform([]),There is nothing he or she can do.,Yiyan,5,5,Tianyi,,9-0-0-0-0-2-0-0-0-0-10-0-0-0-0-12
+649,60,9,"Context Switch, Confirm(User_ID=1, RemovePiece(2,1))","For this board, will it still be a win if I remove the green circle piece?",Negate(),"No, all the pieces are necessary for this win?",Yiyan,5,5,Tianyi,,16-0-0-0-0-13-0-0-0-0-12-0-0-0-0-9
+649,60,10,"Context Switch, Confirm(User_ID=1, Quantity)","Let's switch to this condition, is it a win because of the number of the pieces?",Affirm(),"Yes, you must have at least four pieces in order to win.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-9-11-14-10
+649,60,11,Finish(),Thank you very much. I learned a lot today.,Finish,You are welcome.,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-9-11-14-10

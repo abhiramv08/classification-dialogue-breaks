@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+385,50,0,Start(),"Hi, can you teach me how to play Quarto?",Start,"Ok, let's start.",Tianyi,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+385,50,1,RequestNewWinCondition(),Can you give me a example of win?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-1-4-7-8
+385,50,2,"Same, Confirm(User_ID=1, RemovePiece(0,1))","In this case, if I remove the piece at the second column, can it still be a win?",Negate(),"No, it can't be a win if you do that.",Tianyi,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-1-4-7-8
+385,50,3,RequestNewWinCondition(),Can you show me another example of win?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-12-7-4-3
+385,50,4,"Same, Confirm(User_ID=1, Hollowness)","In this example, is it a win because all pieces are hollow?",NotSure(),I am not sure about that.,Tianyi,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-12-7-4-3
+385,50,5,RequestNewWinCondition(),What else can be a winning board?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,John,,0-0-0-2-0-0-6-0-0-13-0-0-10-0-0-0
+385,50,6,"Context Switch, Confirm(User_ID=1, Hollowness)","In the first example, is it a win because some pieces are hollow?",NotSure(),I can't determine that. Maybe you are right.,Tianyi,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-1-4-7-8
+385,50,7,"Context Switch, Confirm(User_ID=1, Hollowness)","In the third win, it is a win because all pieces are solid right?",NotSure(),I am not sure about this.,Tianyi,5,4,John,,0-0-0-2-0-0-6-0-0-13-0-0-10-0-0-0
+385,50,8,"Same, Confirm(User_ID=1, Quantity)","And, it is a win because there are four pieces on the board right?",Affirm(),"Yes, that is.",Tianyi,5,4,John,,0-0-0-2-0-0-6-0-0-13-0-0-10-0-0-0
+385,50,9,"Same, Request(User_ID=1, Rotate)",Can I rotate some pieces and still maintain the win?,Inform([90]),You can rotate all pieces 90 degrees with respect to the rows and put them in the first column.,Tianyi,4,4,John,"The question is phrased as an affirmative, so technically someone could just answer ""yes"" or ""no""",0-0-0-2-0-0-6-0-0-13-0-0-10-0-0-0
+385,50,10,Finish(),Thank you so much. I have learned more than I expected.,Finish,"You are welcome, I am glad you have learned something.",Tianyi,5,5,John,,0-0-0-2-0-0-6-0-0-13-0-0-10-0-0-0

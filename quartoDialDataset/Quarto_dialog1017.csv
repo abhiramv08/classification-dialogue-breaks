@@ -1,0 +1,15 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+1017,60,0,Start(),"Hi, do you have time to teach me some rules about Quarto?",Start,Of course.,Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+1017,60,1,RequestNewWinCondition(),Can you give me a win?,Inform,Assume you demonstrate this win condition,Tianyi,5,4,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-7-4-6-1
+1017,60,2,"Same, Confirm(User_ID=1, Translate([3, 0]))","For this board, if I move all pieces three blocks up, can it still be a win?",Affirm(),"Yes, it will still be a win.",Tianyi,5,4,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-7-4-6-1
+1017,60,3,"Same, Confirm(User_ID=1, RemovePiece(0,3))","If I remove the piece at the rightmost column, is it still a win?",NotSure(),I cannot determine whether that is true.,Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-7-4-6-1
+1017,60,4,"Same, Confirm(User_ID=1, Shape)",Is it wins because somel pieces have the same shape?,NotSure(),"Sorry, I am not sure about this.",Tianyi,5,4,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-7-4-6-1
+1017,60,5,"Same, Confirm(User_ID=1, Height)",Is it a win because all pieces are short?,Affirm(),"Yes, you are right.",Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-7-4-6-1
+1017,60,6,RequestNewWinCondition(),Can you give me another win?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,10-0-0-0-12-0-0-0-1-0-0-0-4-0-0-0
+1017,60,7,RequestNewWinCondition(),Can you show me a new win pattern?,Inform,Assume you demonstrate this win condition,Tianyi,5,4,Ruijie,,0-0-0-8-0-0-3-0-0-6-0-0-4-0-0-0
+1017,60,8,"Context Switch, Request(User_ID=1, Translate)","For this board, can I move some pieces and still keep the win?","Inform(['col1', 'col2'])","Yes, you can either move all pieces to the second column or the third column.",Tianyi,5,5,Ruijie,,10-0-0-0-12-0-0-0-1-0-0-0-4-0-0-0
+1017,60,9,"Context Switch, Confirm(User_ID=1, Height)","In this case, is it a win because all pieces are short?",Affirm(),Yes.,Tianyi,5,5,Ruijie,,0-0-0-8-0-0-3-0-0-6-0-0-4-0-0-0
+1017,60,10,"Same, Confirm(User_ID=1, Height)",Is it a win because no pieces are tall?,NotSure(),"Sorry, I am uncertain about this.",Tianyi,5,5,Ruijie,,0-0-0-8-0-0-3-0-0-6-0-0-4-0-0-0
+1017,60,11,"Context Switch, Confirm(User_ID=1, Color)","In this win, is it wins because some pieces have the same color?",NotSure(),I have no idea about this. Maybe you are right.,Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-7-4-6-1
+1017,60,12,RequestNewWinCondition(),Can you show me a new win pattern?,Inform,Assume you demonstrate this win condition,Tianyi,5,4,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-3-1-7-9
+1017,60,13,Finish(),"Thank you for teaching me, I am much better in Quarto now.",Finish,You are welcome.,Tianyi,5,4,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-3-1-7-9

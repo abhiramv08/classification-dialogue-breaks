@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+382,50,0,Start(),"Hi, can you teach me how to play Quarto?",Start,"Sure, what you want to know?",Tianyi,5,4,John,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+382,50,1,RequestNewWinCondition(),Can you show me an example of win?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,John,,0-0-8-0-0-0-6-0-0-0-5-0-0-0-13-0
+382,50,2,RequestNewWinCondition(),Can you show me another example?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-3-15-9-5
+382,50,3,"Context Switch, RequestOtherPlayers()","In the first case, can someone take actions to prevent the win?",Inform([]),There is nothing he can do.,Tianyi,5,4,John,,0-0-8-0-0-0-6-0-0-0-5-0-0-0-13-0
+382,50,4,"Same, Confirm(User_ID=1, Shape)","And, is it a win because all pieces have the same shape?",Affirm(),"Yes, you are right.",Tianyi,5,5,John,,0-0-8-0-0-0-6-0-0-0-5-0-0-0-13-0
+382,50,5,"Context Switch, Confirm(User_ID=1, Hollowness)","In the second win, is it a win because some pieces are hollow?",Negate(),"No, that is not the reason.",Tianyi,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-3-15-9-5
+382,50,6,"Same, Confirm(User_ID=1, Hollowness)","So, it that win because some pieces are solid?",NotSure(),"Sorry, I am not sure.",Tianyi,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-3-15-9-5
+382,50,7,"Same, Confirm(User_ID=1, Hollowness)",Is that win because of the hollowness of some pieces?,Negate(),"No, it is not.",Tianyi,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-3-15-9-5
+382,50,8,"Context Switch, Confirm(User_ID=1, Translate([0, 1]))","Again, in the first win, is it still a win if I move all pieces to the second column.",NotSure(),I can't determine whether it is right.,Tianyi,5,5,John,,0-0-8-0-0-0-6-0-0-0-5-0-0-0-13-0
+382,50,9,RequestNewWinCondition(),Can you show me a new win pattern?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,John,,0-4-0-0-0-5-0-0-0-8-0-0-0-6-0-0
+382,50,10,"Context Switch, Confirm(User_ID=1, Shape)","In the first win, is it a win because of the shape of pieces?",Affirm(),"Yeah, exactly.",Tianyi,5,5,John,,0-0-8-0-0-0-6-0-0-0-5-0-0-0-13-0
+382,50,11,"Context Switch, RequestOtherPlayers()","In the second win, can someone do something to prevent the win?",Inform([]),"No, he can't.",Tianyi,5,4,John,,0-0-0-0-0-0-0-0-0-0-0-0-3-15-9-5
+382,50,12,"Context Switch, Request(User_ID=1, Translate)","In the first win, can I move some pleces and keep the win?",Inform(['col1']),You can move all pieces to the second column.,Tianyi,3,4,John,"I think saying ""move"" is confusing, i.e. that could mean just moving a single piece instead of all of them together",0-0-8-0-0-0-6-0-0-0-5-0-0-0-13-0
+382,50,13,"Context Switch, Confirm(User_ID=1, RemovePiece(0,0))","In the second win, can I remove the piece at the first column and still maintain the win?",Negate(),"No, you can't. If you do that, that will not be a win.",Tianyi,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-3-15-9-5
+382,50,14,"Same, Confirm(User_ID=1, Quantity)","And, is it a win because there are four pieces on the board?",Affirm(),"Yes, that is true.",Tianyi,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-3-15-9-5
+382,50,15,Finish(),"Thank you so much, I have learned a lot of things here.",Finish,You are welcome.,Tianyi,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-3-15-9-5

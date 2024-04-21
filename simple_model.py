@@ -67,7 +67,8 @@ test_data_loader = create_data_loader(test_df, tokenizer, MAX_LEN, BATCH_SIZE)
 model = BertForSequenceClassification.from_pretrained('bert-base-uncased', num_labels=2)
 
 # Define optimizer and move model to device
-device = torch.device('mps')
+#device = torch.device('mps')
+device = "cuda:1" if torch.cuda.is_available() else "cpu"
 model = model.to(device)
 optimizer = AdamW(model.parameters(), lr=2e-5)
 

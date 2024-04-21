@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+379,50,0,Start(),"Hi, are you willing to teach me how to play Quarto?",Start,Glad to help!,Shaobo,5,5,Jacob,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+379,50,1,RequestNewWinCondition(),Could you show me a win firstly?,Inform,Assume you demonstrate this win condition,Shaobo,5,4,Jacob,"""Firstly"" seems unnatural at the end of a sentence.",0-0-0-1-0-0-10-0-0-14-0-0-6-0-0-0
+379,50,2,"Same, Confirm(User_ID=1, Height)",Is it a win because of the height of the pieces?,NotSure(),I don't think so but I am not sure.,Shaobo,5,5,Jacob,,0-0-0-1-0-0-10-0-0-14-0-0-6-0-0-0
+379,50,3,RequestNewWinCondition(),Could you show me one more winning board?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,Jacob,,1-0-0-0-0-8-0-0-0-0-2-0-0-0-0-7
+379,50,4,"Context Switch, Confirm(User_ID=1, Hollowness)","For this board, is it a win because of the hollowness of the pieces?",NotSure(),I think so but I am not sure.,Shaobo,5,5,Jacob,,0-0-0-1-0-0-10-0-0-14-0-0-6-0-0-0
+379,50,5,"Context Switch, RequestOtherPlayers()","And for this board, how could another player revoke this win?",Inform([]),There is nothing another player could do to prevent the win.,Shaobo,5,5,Jacob,,1-0-0-0-0-8-0-0-0-0-2-0-0-0-0-7
+379,50,6,"Context Switch, Confirm(User_ID=1, Hollowness)","And for this board, is it a win because of the hollowness of the pieces?",Affirm(),"Yes, you got it.",Shaobo,5,5,Jacob,,0-0-0-1-0-0-10-0-0-14-0-0-6-0-0-0
+379,50,7,"Same, Request(User_ID=1, Rotate)",And how could I rotate the pieces and still keep the win?,Inform([90]),"As far as I have concerned, you could rotate them to the first column.",Shaobo,5,4,Jacob,"""As far as I have concerned"" is unnatural.",0-0-0-1-0-0-10-0-0-14-0-0-6-0-0-0
+379,50,8,"Context Switch, Confirm(User_ID=1, AddPiece(1,0))","For this board, is it still a win if I add a piece on the second row and the first column?",NotSure(),I think so but I am not sure.,Shaobo,5,5,Jacob,,1-0-0-0-0-8-0-0-0-0-2-0-0-0-0-7
+379,50,9,"Context Switch, Request(User_ID=1, Translate)","For this board, how could I shift the pieces and still keep the win?",Inform([]),There is nothing you could do.,Shaobo,5,5,Jacob,,0-0-0-1-0-0-10-0-0-14-0-0-6-0-0-0
+379,50,10,Finish(),I got a lot of useful information. Thanks!,Finish,You are welcome!,Shaobo,5,5,Jacob,,0-0-0-1-0-0-10-0-0-14-0-0-6-0-0-0

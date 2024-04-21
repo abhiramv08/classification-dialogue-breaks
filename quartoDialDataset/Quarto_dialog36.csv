@@ -1,0 +1,11 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+36,100,0,Start(),Hi. Can you teach me how to play Quarto?,Start,"Hello! Yes, let's get started!",John,5,5,Jason,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+36,100,1,RequestNewWinCondition(),Can you show me an example of a winning board?,Inform(),Assume you demonstrate this win condition,John,5,5,Jason,,0-0-0-0-0-0-0-0-0-0-0-0-6-8-7-15
+36,100,2,RequestNewWinCondition(),Will you please show me a different win scenario?,Inform(),Assume you demonstrate this win condition,John,5,5,Jason,,0-0-0-11-0-0-15-0-0-1-0-0-7-0-0-0
+36,100,3,"Context Switch, Confirm(User_ID=1, Color)","Going back to the first win you showed me, is it a win because of the color of the pieces?",Negate(),"No, the color is not why it is a win.",John,5,5,Jason,,0-0-0-0-0-0-0-0-0-0-0-0-6-8-7-15
+36,100,4,RequestNewWinCondition(),Will you show me another win condition please?,Inform(),Assume you demonstrate this win condition,John,5,5,Jason,,9-0-0-0-0-5-0-0-0-0-1-0-0-0-0-2
+36,100,5,"Context Switch, Confirm(User_ID=1, Shape)",Let's talk about the first win you showed me. Is the shape of the pieces the reason that it is a win?,Affirm(),"Yes, all the pieces being circular are why it is a win.",John,5,5,Jason,,0-0-0-0-0-0-0-0-0-0-0-0-6-8-7-15
+36,100,6,"Same, RequestOtherPlayers()",Could another player make some move to prevent this win?,Inform([]),"No, there are no other moves that could prevent this win.",John,5,5,Jason,,0-0-0-0-0-0-0-0-0-0-0-0-6-8-7-15
+36,100,7,"Context Switch, Confirm(User_ID=1, Shape)",Let's talk about the second win you showed to me. Is the shape of the pieces the reason why it is a win?,Negate(),"No, there are not four of the same shape here.",John,5,5,Jason,,0-0-0-11-0-0-15-0-0-1-0-0-7-0-0-0
+36,100,8,"Same, Confirm(User_ID=1, Rotate(90))","Is this still a win if the pieces are rotated to 90 degrees, putting them all vertically in the first column?",Affirm(),"Yes, this would still be a win.",John,5,5,Jason,,0-0-0-11-0-0-15-0-0-1-0-0-7-0-0-0
+36,100,9,Finish(),"Okay, I think I have enough information for now. Thank you!",Finish,Goodbye!,John,5,5,Jason,,0-0-0-11-0-0-15-0-0-1-0-0-7-0-0-0

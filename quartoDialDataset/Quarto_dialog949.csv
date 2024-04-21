@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+949,60,0,Start(),"Hi, would you please teach me Quarto?",Start,"Yes, of course. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+949,60,1,RequestNewWinCondition(),Please show me a new win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,3-0-0-0-0-5-0-0-0-0-8-0-0-0-0-6
+949,60,2,"Same, Request(User_ID=1, Rotate)",How can I rotate the pieces?,Inform([90]),You could choose to rotate them to be vertical. ,Anthony,5,5,Yiyen,,3-0-0-0-0-5-0-0-0-0-8-0-0-0-0-6
+949,60,3,"Same, Confirm(User_ID=1, Rotate(90))",Could I align these pieces vertically.,Affirm(),Yes. That's what I just told you. ,Anthony,5,5,Yiyen, . -> ？,3-0-0-0-0-5-0-0-0-0-8-0-0-0-0-6
+949,60,4,"Same, Confirm(User_ID=1, Quantity)",Is this a win because of the number of pieces?,Affirm(),"Yes, exactly. ",Anthony,5,5,Yiyen,,3-0-0-0-0-5-0-0-0-0-8-0-0-0-0-6
+949,60,5,"Same, RequestOtherPlayers()",How can another player affect this win?,Inform([]),They can't. ,Anthony,5,5,Yiyen,,3-0-0-0-0-5-0-0-0-0-8-0-0-0-0-6
+949,60,6,RequestNewWinCondition(),Please show me another win. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-5-1-11-3
+949,60,7,RequestNewWinCondition(),Please give me another winning board.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-16-0-0-13-0-0-9-0-0-11-0-0-0
+949,60,8,RequestNewWinCondition(),Can I see one more win condition?,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-4-8-1-6
+949,60,9,RequestNewWinCondition(),Please show me another win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,14-0-0-0-0-16-0-0-0-0-4-0-0-0-0-10
+949,60,10,"Context Switch, RequestOtherPlayers()","Looking back at this board, how could another player undo this win?",Inform([]),There's nothing they could do.,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-4-8-1-6
+949,60,11,Finish(),"Thank you, bye!",Finish,See you later.,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-4-8-1-6

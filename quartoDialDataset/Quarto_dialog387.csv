@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+387,50,0,Start(),"Hello, can you show me how to play Quarto?",Start,"Yes, let's begin.",Yiyan,5,4,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+387,50,1,RequestNewWinCondition(),Can you firstly show me a win condition?,Inform,Assume you demonstrate this win condition,Yiyan,4,3,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-12-16-13-15
+387,50,2,"Same, Request(User_ID=1, Translate)","For the condition you just showed, how can I shift the pieces to get another win?","Inform(['row1', 'row2'])",You can shift them to either the second or the third row.,Yiyan,5,4,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-12-16-13-15
+387,50,3,RequestNewWinCondition(),Is there any other way to win?,Inform,Assume you demonstrate this win condition,Yiyan,5,4,Luke,,0-0-0-4-0-0-12-0-0-10-0-0-3-0-0-0
+387,50,4,"Same, Confirm(User_ID=1, Color)","For the condition you just showed, is it a win because of the color of the pieces?",Negate(),"No, it is a win because all the pieces have the same shape.",Yiyan,5,5,Luke,,0-0-0-4-0-0-12-0-0-10-0-0-3-0-0-0
+387,50,5,"Context Switch, Confirm(User_ID=1, Hollowness)","For this board, does hollowness relate to the win?",NotSure(),I am not quite sure.,Yiyan,5,4,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-12-16-13-15
+387,50,6,"Context Switch, Confirm(User_ID=1, Rotate(90))","For this board, can I rorate the pieces to the first column while keeping my win?",Affirm(),"Yes, you can do that.",Yiyan,5,4,Luke,,0-0-0-4-0-0-12-0-0-10-0-0-3-0-0-0
+387,50,7,"Context Switch, Confirm(User_ID=1, Hollowness)","Let's take a look at this board, is it a win because of the hollowness of the pieces?",Negate(),"No, it is a win because they have the same height.",Yiyan,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-12-16-13-15
+387,50,8,RequestNewWinCondition(),Can you show me another way to win?,Inform,Assume you demonstrate this win condition,Yiyan,4,4,Luke,,5-0-0-0-0-3-0-0-0-0-7-0-0-0-0-11
+387,50,9,RequestNewWinCondition(),Could you please show me one more win condition?,Inform,Assume you demonstrate this win condition,Yiyan,5,4,Luke,,0-0-0-7-0-0-15-0-0-9-0-0-11-0-0-0
+387,50,10,"Context Switch, Confirm(User_ID=1, Height)","For this win, is it a win because of the heights of the pieces?",Negate(),"No, it is a win because all the pieces have the same shape.",Yiyan,5,4,Luke,,0-0-0-4-0-0-12-0-0-10-0-0-3-0-0-0
+387,50,11,"Context Switch, Request(User_ID=1, Rotate)","For this condition, how can I rotate the pieces to get another win?",Inform([45]),You can rotate the pieces to the diagonal.,Yiyan,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-12-16-13-15
+387,50,12,Finish(),Thank you for the help. I learned a lot today.,Finish,You are welcome.,Yiyan,4,4,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-12-16-13-15

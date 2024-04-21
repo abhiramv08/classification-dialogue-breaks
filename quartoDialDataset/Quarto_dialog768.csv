@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+768,60,0,Start(),Can you teach me how to play Quarto?,Start,Sure!,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+768,60,1,RequestNewWinCondition(),Please give me a win condition to start.,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-14-4-2-8
+768,60,2,"Same, Confirm(User_ID=1, Height)",Is that a win becasue the height pattern of all pieces?,Negate(),"No, since the height for them is differen.",Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-14-4-2-8
+768,60,3,"Same, Confirm(User_ID=1, RemovePiece(0,0))",Can I remove the bottom left piece and keep winning?,Negate(),No you can not  do that.,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-14-4-2-8
+768,60,4,RequestNewWinCondition(),Can you show me another win condition?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-15-7-13-16
+768,60,5,"Same, Confirm(User_ID=1, Hollowness)",Is that a win becasue the hollowness pattern of all pieces?,Negate(),No. ,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-15-7-13-16
+768,60,6,"Same, Confirm(User_ID=1, Color)",How about the color pattern.,NotSure(),"Sorry I am not sure about that,",Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-15-7-13-16
+768,60,7,RequestNewWinCondition(),Can you show me another win condition?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-6-0-0-0-9-0-0-0-5-0-0-0-13-0-0
+768,60,8,"Same, Confirm(User_ID=1, Color)",Does he color of each piece important for win?,Negate(),No,Derek,4,5,Shaobo,,0-6-0-0-0-9-0-0-0-5-0-0-0-13-0-0
+768,60,9,"Context Switch, Confirm(User_ID=1, Hollowness)","Switching to this winning baord, does the hollowness pattern of all piece important for win?",Negate(),"No, it is not the reason this board is winning.",Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-15-7-13-16
+768,60,10,Finish(),Thanks for teaching! I learned a lot today!,Finish,You are welcome.,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-15-7-13-16

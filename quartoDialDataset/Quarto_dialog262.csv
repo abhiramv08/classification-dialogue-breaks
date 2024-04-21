@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+262,50,0,Start(),"Hello, can you teach me Quarto?",Start,I definitely can!,Anthony,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-12-4-10-14
+262,50,1,RequestNewWinCondition(),Please show me the first win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-8-3-6-4
+262,50,2,"Same, Confirm(User_ID=1, Height)",Is this a win because the pieces are at this height?,NotSure(),I'm not sure if that is why. ,Anthony,4,4,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-8-3-6-4
+262,50,3,"Same, Confirm(User_ID=1, AddPiece(1,2))",Is it still a win if I add a piece in this spot?,Affirm(),"Yes, that would not undo this win. ",Anthony,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-8-3-6-4
+262,50,4,RequestNewWinCondition(),Can I see another win condition?,Inform,Assume you demonstrate this win condition,Anthony,4,4,Luke,,0-0-0-14-0-0-7-0-0-16-0-0-15-0-0-0
+262,50,5,"Same, Confirm(User_ID=1, Hollowness)",Is this a win because some pieces are hollow?,NotSure(),I don't actually know.,Anthony,5,5,Luke,,0-0-0-14-0-0-7-0-0-16-0-0-15-0-0-0
+262,50,6,"Context Switch, Confirm(User_ID=1, Hollowness)","Looking at this win, is it a win because some pieces are hollow?",NotSure(),"I'm not sure for this board either, sorry. ",Anthony,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-8-3-6-4
+262,50,7,"Context Switch, Confirm(User_ID=1, AddPiece(3,2))","Looking at this board now, can I add a piece here?",NotSure(),"I'm not totally sure, I can't give you an answer. ",Anthony,5,4,Luke,,0-0-0-14-0-0-7-0-0-16-0-0-15-0-0-0
+262,50,8,"Context Switch, Confirm(User_ID=1, AddPiece(1,3))","What about for this board, can I add a piece here?",Affirm(),Absolutely. That's fine. ,Anthony,5,4,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-8-3-6-4
+262,50,9,RequestNewWinCondition(),Please show me another win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-13-15-7-3
+262,50,10,Finish(),That's fine for today. Bye!,Finish,"Goodbye, see you later!",Anthony,5,4,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-13-15-7-3

@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+676,60,0,Start(),Hi! Can you show me how to play Quarto?,Start,Yes! I'd love to.,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+676,60,1,RequestNewWinCondition(),"Can you show me what a win condition looks like?
+",Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-11-15-16-9
+676,60,2,"Same, Request(User_ID=1, Rotate)",Can I rotate the pieces by some degrees and still have a win?,"Inform([45, 90])","Yes, you can rotate the pieces by forty five or ninety degrees.",Ruijie,5,4,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-11-15-16-9
+676,60,3,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,14-0-0-0-0-8-0-0-0-0-5-0-0-0-0-7
+676,60,4,"Same, RequestOtherPlayers()","Can the other player undo this win?
+",Inform([]),"Well, he can't. Because this win is absolute.",Ruijie,5,5,Luke,,14-0-0-0-0-8-0-0-0-0-5-0-0-0-0-7
+676,60,5,"Same, Confirm(User_ID=1, RemovePiece(1,2))","Can I remove the piece on the second row, the third column?",Negate(),"Np, that will break the win.",Ruijie,5,5,Luke,,14-0-0-0-0-8-0-0-0-0-5-0-0-0-0-7
+676,60,6,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,12-0-0-0-10-0-0-0-2-0-0-0-16-0-0-0
+676,60,7,RequestNewWinCondition(),What about another win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-5-15-1-11
+676,60,8,"Context Switch, Confirm(User_ID=1, Hollowness)","Switch to this board, does the hollowness of the pieces make it a win?
+",NotSure(),I'm actually not quite sure.,Ruijie,5,5,Luke,,14-0-0-0-0-8-0-0-0-0-5-0-0-0-0-7
+676,60,9,"Same, Confirm(User_ID=1, RemovePiece(0,3))","Can I remove the piece on the first row, the fourth column?",Negate(),"No, that will definitely break the win.",Ruijie,5,5,Luke,,14-0-0-0-0-8-0-0-0-0-5-0-0-0-0-7
+676,60,10,"Context Switch, Confirm(User_ID=1, Quantity)","Switch to this board, is it a win because of the number of pieces?
+",Affirm(),That’s right.,Ruijie,4,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-5-15-1-11
+676,60,11,Finish(),Thanks! I've learned a lot! ,Finish,Pleasure is mine!,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-5-15-1-11

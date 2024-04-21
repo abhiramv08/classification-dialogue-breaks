@@ -1,0 +1,21 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+716,60,0,Start(),"Hey, can you show me how to play Quarto?",Start,"Sure, let's get started.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+716,60,1,RequestNewWinCondition(),"Can you show me a win condition?
+",Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-16-14-10-11
+716,60,2,"Same, Confirm(User_ID=1, AddPiece(1,2))","Can I add one more piece on the second row, the third column?",Affirm(),"Yes, you can do that.",Ruijie,5,4,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-16-14-10-11
+716,60,3,"Same, Request(User_ID=1, Translate)","Can I put the pieces somewhere else?
+","Inform(['row1', 'row2', 'row3'])","Yes, you can put them on the first, the second or the third row.",Ruijie,3,3,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-16-14-10-11
+716,60,4,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-15-0-0-0-9-0-0-0-7-0-0-0-13-0-0
+716,60,5,"Same, Confirm(User_ID=1, Hollowness)","Does the hollowness of the pieces make it a win?
+",Negate(),"No, that’s not the reason.",Ruijie,5,5,Luke,,0-15-0-0-0-9-0-0-0-7-0-0-0-13-0-0
+716,60,6,"Context Switch, Confirm(User_ID=1, AddPiece(2,0))","Switch to this board, can I add one more piece on the third row, the first column?
+",NotSure(),"Well, I have no idea.",Ruijie,5,4,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-16-14-10-11
+716,60,7,"Context Switch, RequestOtherPlayers()","Switch to this board, can the other player undo this win?
+",Inform([]),"No, this win is absolute.
+",Ruijie,5,5,Luke,,0-15-0-0-0-9-0-0-0-7-0-0-0-13-0-0
+716,60,8,"Same, Confirm(User_ID=1, Color)","Is it a win because the pieces are in the same color?
+",NotSure(),"I’m not quite sure.
+",Ruijie,5,5,Luke,,0-15-0-0-0-9-0-0-0-7-0-0-0-13-0-0
+716,60,9,RequestNewWinCondition(),"Can you show me a new win?
+",Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-16-0-0-4-0-0-14-0-0-10-0-0-0
+716,60,10,Finish(),Thanks! I think I got it.,Finish,You are welcome.,Ruijie,5,5,Luke,,0-0-0-16-0-0-4-0-0-14-0-0-10-0-0-0

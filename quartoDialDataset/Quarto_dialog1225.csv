@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+1225,60,0,Start(),"Hi, do you have time to teach me how to play Quarto?",Start,"Sure, let's get started!",Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+1225,60,1,RequestNewWinCondition(),Could you show me a win first?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-16-0-0-0-9-0-0-0-13-0-0-0-14-0-0
+1225,60,2,"Same, Request(User_ID=1, Translate)",And how could I shift the pieces and still keep the win?,"Inform(['col2', 'col3'])",You could shift them to the third or the rightmost column.,Shaobo,5,5,John,,0-16-0-0-0-9-0-0-0-13-0-0-0-14-0-0
+1225,60,3,RequestNewWinCondition(),Is there any other way to win?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-13-15-7-16
+1225,60,4,RequestNewWinCondition(),Could you show me another winning board?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,7-0-0-0-0-6-0-0-0-0-14-0-0-0-0-16
+1225,60,5,RequestNewWinCondition(),Could you show me one more winning board?,Inform,Assume you demonstrate this win condition,Shaobo,5,5,John,,0-0-0-1-0-0-0-10-0-0-0-11-0-0-0-12
+1225,60,6,"Context Switch, Confirm(User_ID=1, Quantity)","Switching to this board, does the number of pieces matter?",NotSure(),"Sorry, I am not sure about it.",Shaobo,5,4,John,,0-0-0-0-0-0-0-0-0-0-0-0-13-15-7-16
+1225,60,7,"Context Switch, RequestOtherPlayers()","Switching to this board, how could another player revoke this win?",Inform([]),There is nothing that another player could do to prevent this win.,Shaobo,5,5,John,,0-16-0-0-0-9-0-0-0-13-0-0-0-14-0-0
+1225,60,8,"Context Switch, Confirm(User_ID=1, Hollowness)","Switching to this board, is it a win because of the hollowness of the pieces?",NotSure(),I don't think so but I am not sure.,Shaobo,4,5,John,,0-0-0-1-0-0-0-10-0-0-0-11-0-0-0-12
+1225,60,9,"Same, Confirm(User_ID=1, Hollowness)",And is it a win because of the hollowness of the pieces?,NotSure(),"Sorry, I am not sure about it.",Shaobo,5,4,John,,0-0-0-1-0-0-0-10-0-0-0-11-0-0-0-12
+1225,60,10,"Context Switch, Confirm(User_ID=1, Quantity)","Switching to this board, does the number of pieces matter?",Affirm(),"Yes, you need at least four pieces for a win.",Shaobo,5,5,John,,7-0-0-0-0-6-0-0-0-0-14-0-0-0-0-16
+1225,60,11,"Same, Confirm(User_ID=1, Shape)",And is it a win because of the shape of the pieces?,NotSure(),I think so but I am not very sure.,Shaobo,4,5,John,,7-0-0-0-0-6-0-0-0-0-14-0-0-0-0-16
+1225,60,12,"Context Switch, Confirm(User_ID=1, AddPiece(3,3))","Switching to this board, is it still a win if I add a piece on the top right corner?",NotSure(),"Sorry, I am not sure about it.",Shaobo,5,4,John,,0-0-0-0-0-0-0-0-0-0-0-0-13-15-7-16
+1225,60,13,"Context Switch, Confirm(User_ID=1, Height)","Switching to this board, is it a win because of the height of the pieces?",NotSure(),"Sorry, I am not sure about it.",Shaobo,5,4,John,,0-0-0-1-0-0-0-10-0-0-0-11-0-0-0-12
+1225,60,14,RequestNewWinCondition(),I need one more winning board for a better understanding.,Inform,Assume you demonstrate this win condition,Shaobo,5,4,John,,2-0-0-0-0-8-0-0-0-0-6-0-0-0-0-12
+1225,60,15,Finish(),Thanks for the help! I have learned a lot!,Finish,You are welcome!,Shaobo,5,5,John,,2-0-0-0-0-8-0-0-0-0-6-0-0-0-0-12

@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+4,100,0,Start(),Hello can you teach me the game of Quarto?,Start,Yep,Anthony,,,,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+4,100,1,RequestNewWinCondition(),Show me a win condition now.,Inform(),Assume you demonstrate this win condition,Anthony,,,,,11-0-0-0-0-4-0-0-0-0-2-0-0-0-0-10
+4,100,2,"Same, Confirm(User_ID=1, Height)",Is this a win condition because of the height of the pieces?,Negate(),"No, that is not why.",Anthony,,,,,11-0-0-0-0-4-0-0-0-0-2-0-0-0-0-10
+4,100,3,"Same , Confirm(User_ID=1, Consistency)",Is this always a win condition?,Negate(),No,Anthony,,,,,11-0-0-0-0-4-0-0-0-0-2-0-0-0-0-10
+4,100,4,RequestNewWinCondition(),Show me a second win condition. ,Inform(),Assume you demonstrate this win condition,Anthony,,,,,0-0-0-0-0-0-0-0-0-0-0-0-7-11-8-4
+4,100,5,"Context Switch, Confirm(User_ID=1, Rotate(90))",Can I rotate this board 90 degrees and it is still a win condition?,Affirm(),Yes you can.,Anthony,,,,,11-0-0-0-0-4-0-0-0-0-2-0-0-0-0-10
+4,100,6,"Context Switch, RequestOtherPlayers()",Go to the first win. Can a player undo this win?,Inform([]),Nope,Anthony,,,,,0-0-0-0-0-0-0-0-0-0-0-0-7-11-8-4
+4,100,7,RequestNewWinCondition(),Show me a third win condition.,Inform(),Assume you demonstrate this win condition,Anthony,,,,,0-0-0-2-0-0-8-0-0-16-0-0-10-0-0-0
+4,100,8,RequestNewWinCondition(),Show a fourth win condition.,Inform(),Assume you demonstrate this win condition,Anthony,,,,,4-0-0-0-0-11-0-0-0-0-8-0-0-0-0-15
+4,100,9,"Same, Request(User_ID=1, Translate)",CanI I move this orientation on the board?,Inform([]),"No, it is diagonal so it cannot be translated.",Anthony,,,,,4-0-0-0-0-11-0-0-0-0-8-0-0-0-0-15
+4,100,10,"Context Switch, Confirm(User_ID=1, Quantity)",Go to the first win. Is this a win because there are enough pieces?,Affirm(),That is correct.,Anthony,,,,,11-0-0-0-0-4-0-0-0-0-2-0-0-0-0-10
+4,100,11,Finish(),Thanks for teaching me!,Finish,Of course. ,Anthony,,,,,11-0-0-0-0-4-0-0-0-0-2-0-0-0-0-10

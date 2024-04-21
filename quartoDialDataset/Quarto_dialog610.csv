@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+610,60,0,Start(),"Hi, can I ask you some questions about Quarto?",Start,"Sure, what do you want to ask?",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+610,60,1,RequestNewWinCondition(),Thank you. Can you first show me one win condition?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-4-0-0-0-6-0-0-0-5-0-0-0-1
+610,60,2,RequestNewWinCondition(),Is there any other way to win the game?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-12-11-9-3
+610,60,3,"Context Switch, Confirm(User_ID=1, Translate([0, 0]))","For this first win you showed, will it still be a win if I shift all the pieces to the first column?",Affirm(),"Yes, since all the pieces are still in the same column.",Yiyan,5,5,Tianyi,,0-0-0-4-0-0-0-6-0-0-0-5-0-0-0-1
+610,60,4,"Context Switch, Request(User_ID=1, Translate)","For the second win you showed, how can I shift the pieces while keeping the win?","Inform(['row1', 'row2', 'row3'])",You can shift the pieces to any other rows as long as they remain in the same row.,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-12-11-9-3
+610,60,5,"Context Switch, Confirm(User_ID=1, Hollowness)","Let's take a look at this board, does the hollowness of the pieces matter?",Negate(),"No, the hollowness does not matter here.",Yiyan,5,5,Tianyi,,0-0-0-4-0-0-0-6-0-0-0-5-0-0-0-1
+610,60,6,RequestNewWinCondition(),Could you please show me one more win case?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-5-11-3-15
+610,60,7,"Context Switch, Confirm(User_ID=1, AddPiece(3,0))",Let's swotch to this board. Will it still be a win if I add a piece on the top left corner?,Affirm(),"Yes, as long as the rest four pieces remain the same.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-12-11-9-3
+610,60,8,RequestNewWinCondition(),Could you please show me one more win scenario?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-3-0-0-0-9-0-0-0-1-0-0-0-15
+610,60,9,"Same, Request(User_ID=1, Rotate)","For the last pieces you showed, how should I rotate the pieces in order to get more wins?","Inform([135, 180])",You can rotate the pieces to the anti-diagonal direction or to the first row.,Yiyan,4,4,Tianyi,,0-0-0-3-0-0-0-9-0-0-0-1-0-0-0-15
+610,60,10,RequestNewWinCondition(),Is there any other way to win the game?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-4-0-0-0-11-0-0-0-16-0-0-0-12-0
+610,60,11,Finish(),"Thank you very much, I learned a lot today.",Finish,You are welcome.,Yiyan,5,5,Tianyi,,0-0-4-0-0-0-11-0-0-0-16-0-0-0-12-0

@@ -1,0 +1,16 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+112,100,0,Start(),"Hi, can you show me how to play Quarto?",Start,"Sure, let's get started!",Ruijie,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+112,100,1,RequestNewWinCondition(),Can you show me what a win condition looks like?,Inform(),Assume you demonstrate this win condition,Ruijie,5,4,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-16-15-6-14
+112,100,2,"Same, Confirm(User_ID=1, Height)","For this one, is it a win because of the height of pieces?",Negate(),It's not.,Ruijie,5,4,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-16-15-6-14
+112,100,3,RequestNewWinCondition(),What about a new one?,Inform(),Assume you demonstrate this win condition,Ruijie,4,4,Tianyi,,15-0-0-0-0-11-0-0-0-0-16-0-0-0-0-4
+112,100,4,RequestNewWinCondition(),Can I get another one?,Inform(),Assume you demonstrate this win condition,Ruijie,4,4,Tianyi,,0-13-0-0-0-11-0-0-0-1-0-0-0-7-0-0
+112,100,5,RequestNewWinCondition(),"One more, please?",Inform(),Assume you demonstrate this win condition,Ruijie,4,4,Tianyi,,9-0-0-0-0-12-0-0-0-0-3-0-0-0-0-4
+112,100,6,RequestNewWinCondition(),"Don't be angry with me, I just wanna see as many conditions as I can, could you show me one more?",Inform(),Assume you demonstrate this win condition,Ruijie,5,4,Tianyi,,13-0-0-0-0-7-0-0-0-0-11-0-0-0-0-9
+112,100,7,"Context Switch, Confirm(User_ID=1, AddPiece(0,2))","Back to the third win, is it still a win if I add one more piece on the bottom one? ",Affirm(),"Yes, you can.",Ruijie,3,5,Tianyi,"(column,row), it should be at the third row.",0-13-0-0-0-11-0-0-0-1-0-0-0-7-0-0
+112,100,8,"Same , Confirm(User_ID=1, RemovePiece(2,1))","And if I remove the piece on the third row, is it still a win?",Negate(),"No, it won't be.",Ruijie,3,5,Tianyi,,0-13-0-0-0-11-0-0-0-1-0-0-0-7-0-0
+112,100,9,"Context Switch, Confirm(User_ID=1, Shape)","Switch to the fifth win you showed me, is it a win because of the shapes of pieces?",Negate(),"No, it's not because of that.",Ruijie,5,5,Tianyi,,13-0-0-0-0-7-0-0-0-0-11-0-0-0-0-9
+112,100,10,"Context Switch, Confirm(User_ID=1, Quantity)","Back to the second win you showed me, is it a win because of the number of pieces?",Affirm(),"Yes, you're right.",Ruijie,4,5,Tianyi,,15-0-0-0-0-11-0-0-0-0-16-0-0-0-0-4
+112,100,11,RequestNewWinCondition(),Can I get one more win condition?,Inform(),Assume you demonstrate this win condition,Ruijie,5,5,Tianyi,,4-0-0-0-0-3-0-0-0-0-5-0-0-0-0-6
+112,100,12,"Same, Request(User_ID=1, Rotate)","For this win condition, can I rotate the pieces by a certain degree and maintain the win?",Inform([90]),"Sure, you can rotate the pieces by 90 degrees.",Ruijie,4,5,Tianyi,,4-0-0-0-0-3-0-0-0-0-5-0-0-0-0-6
+112,100,13,"Context Switch, Confirm(User_ID=1, Translate('col0'))","For the third win you showed me, is it still a win if I place the pieces on the first column?",Affirm,"Yes, it is.",Ruijie,5,5,Tianyi,,0-13-0-0-0-11-0-0-0-1-0-0-0-7-0-0
+112,100,14,Finish(),Thanks! I think I've learned a lot.,Finish,My pleasure.,Ruijie,5,5,Tianyi,,0-13-0-0-0-11-0-0-0-1-0-0-0-7-0-0

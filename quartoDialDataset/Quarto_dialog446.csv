@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+446,50,0,Start(),"Hi, can you teach me how to play Quarto?",Start,Sure.,Tianyi,,,,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+446,50,1,RequestNewWinCondition(),Can you show me win pattern?,Inform,Assume you demonstrate this win condition,Tianyi,,,,,0-0-2-0-0-0-1-0-0-0-11-0-0-0-3-0
+446,50,2,RequestNewWinCondition(),Can you give me another win example?,Inform,Assume you demonstrate this win condition,Tianyi,,,,,0-0-0-0-0-0-0-0-0-0-0-0-9-5-2-14
+446,50,3,"Context Switch, Confirm(User_ID=1, Translate([0, 1]))","In the first win, is it still a win if I move all pieces to the second column?",NotSure(),"Sorry, I am not sure about this.",Tianyi,,,,,0-0-2-0-0-0-1-0-0-0-11-0-0-0-3-0
+446,50,4,"Same, Confirm(User_ID=1, Hollowness)","And, is this a win because some pieces are hollow?",Negate(),No.,Tianyi,,,,,0-0-2-0-0-0-1-0-0-0-11-0-0-0-3-0
+446,50,5,RequestNewWinCondition(),Can you give me a new winning board?,Inform,Assume you demonstrate this win condition,Tianyi,,,,,0-0-0-0-0-0-0-0-0-0-0-0-4-8-2-5
+446,50,6,RequestNewWinCondition(),Can you show me another win?,Inform,Assume you demonstrate this win condition,Tianyi,,,,,12-0-0-0-0-15-0-0-0-0-14-0-0-0-0-10
+446,50,7,"Context Switch, Confirm(User_ID=1, RemovePiece(0,2))","For the first win, if I remove the piece at the bottom, can it still be a win?",NotSure(),I am uncertain about this.,Tianyi,,,,,0-0-2-0-0-0-1-0-0-0-11-0-0-0-3-0
+446,50,8,"Same, Confirm(User_ID=1, Shape)","And, is it wins because of the shape of the pieces?",Affirm(),"Yes, that is the reason.",Tianyi,,,,,0-0-2-0-0-0-1-0-0-0-11-0-0-0-3-0
+446,50,9,"Context Switch, Confirm(User_ID=1, RemovePiece(1,2))","In the fourth win, if I remove the piece at the second row, is it still a win?",Negate(),"No, it will no longer be a win.",Tianyi,,,,,12-0-0-0-0-15-0-0-0-0-14-0-0-0-0-10
+446,50,10,"Context Switch, Request(User_ID=1, Translate)","Again, for the first win, can I move some pieces and still maintain the win condition?",Inform(['col1']),"Yeah, you can move all pieces one block left.",Tianyi,,,,,0-0-2-0-0-0-1-0-0-0-11-0-0-0-3-0
+446,50,11,"Context Switch, Request(User_ID=1, Rotate)","For the fourth win, can I rotate some pieces and keep winning?",Inform([90]),"Yes, you can rotate all pieces to 90 degrees witn respect to the rows and put all pieces in the first column.",Tianyi,,,,,12-0-0-0-0-15-0-0-0-0-14-0-0-0-0-10
+446,50,12,"Context Switch, Confirm(User_ID=1, Shape)","In the first win, is it a win because some pieces have the same shape?",Affirm(),"Yes, that is.",Tianyi,,,,,0-0-2-0-0-0-1-0-0-0-11-0-0-0-3-0
+446,50,13,"Same, Confirm(User_ID=1, Quantity)","And, it is a win because there are four pieces on the board right?",NotSure(),"Sorry, I am not sure.",Tianyi,,,,,0-0-2-0-0-0-1-0-0-0-11-0-0-0-3-0
+446,50,14,"Context Switch, Confirm(User_ID=1, Translate([1, 0]))","In the second win, can it still be a win if I move all piece one block up?",Affirm(),"Yes, it will still be a win.",Tianyi,,,,,0-0-0-0-0-0-0-0-0-0-0-0-9-5-2-14
+446,50,15,Finish(),Thank you so much for teaching me.,Finish,You are welcome.,Tianyi,,,,,0-0-0-0-0-0-0-0-0-0-0-0-9-5-2-14

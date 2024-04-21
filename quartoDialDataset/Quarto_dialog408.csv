@@ -1,0 +1,15 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+408,50,0,Start(),Can you teach me how to play Quarto?,Start,No problem!,Derek,5,5,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+408,50,1,RequestNewWinCondition(),Please give me a winning board to start with?,Inform,Assume you demonstrate this win condition,Derek,5,5,Daniel,,8-0-0-0-0-7-0-0-0-0-6-0-0-0-0-2
+408,50,2,"Same, Confirm(User_ID=1, Shape)",Does the shape of pieces make this board a win?,Negate(),No.,Derek,5,5,Daniel,,8-0-0-0-0-7-0-0-0-0-6-0-0-0-0-2
+408,50,3,RequestNewWinCondition(),Can you please give me another winning board?,Inform,Assume you demonstrate this win condition,Derek,5,5,Daniel,,0-6-0-0-0-8-0-0-0-5-0-0-0-15-0-0
+408,50,4,"Same, Request(User_ID=1, Translate)",How could I shift this board and keep winning?,Inform(['col2']),You can shift all piece to the right by one.,Derek,5,5,Daniel,,0-6-0-0-0-8-0-0-0-5-0-0-0-15-0-0
+408,50,5,RequestNewWinCondition(),Can you give me another win condition?,Inform,Assume you demonstrate this win condition,Derek,5,5,Daniel,,0-0-0-10-0-0-2-0-0-4-0-0-1-0-0-0
+408,50,6,"Context Switch, RequestOtherPlayers()","Actually I have a question about this board, how could another undo this win?",Inform([]),Another player can not do anything to undo it.,Derek,5,5,Daniel,,8-0-0-0-0-7-0-0-0-0-6-0-0-0-0-2
+408,50,7,"Context Switch, Confirm(User_ID=1, Shape)","Move back to this board, does the shape of this board make it a win?",Affirm(),"Yes, all pieces have the same shape. ",Derek,5,5,Daniel,,0-6-0-0-0-8-0-0-0-5-0-0-0-15-0-0
+408,50,8,"Same, Confirm(User_ID=1, AddPiece(0,2))",Can I add a piece on the second piece from left in bottom row?,NotSure(),Sorry I am not sure if it will influence the win.,Derek,5,5,Daniel,,0-6-0-0-0-8-0-0-0-5-0-0-0-15-0-0
+408,50,9,"Context Switch, Confirm(User_ID=1, RemovePiece(1,2))",How about remove the second piece from bottom in this board. Can I keep winning if I do so?,Negate(),"No, if you remove that piece, it will no longer be a winning board.",Derek,5,5,Daniel,,8-0-0-0-0-7-0-0-0-0-6-0-0-0-0-2
+408,50,10,"Context Switch, Confirm(User_ID=1, Height)","Switching to this winning board, is that a win because the height of each piece?",NotSure(),Sorry I am not sure about that.,Derek,5,5,Daniel,,0-0-0-10-0-0-2-0-0-4-0-0-1-0-0-0
+408,50,11,RequestNewWinCondition(),Can you show me another win condition?,Inform,Assume you demonstrate this win condition,Derek,5,4,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-14-16-8-15
+408,50,12,"Same, Confirm(User_ID=1, Shape)",Does the shpae pattern of all piece make it a win?,Affirm(),You are correct.,Derek,5,4,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-14-16-8-15
+408,50,13,Finish(),Thanks! I learned a lot today!,Finish,No problem!,Derek,5,5,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-14-16-8-15

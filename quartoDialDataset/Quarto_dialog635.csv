@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+635,60,0,Start(),"Hello, could you teach me how to play Quarto?",Start,I would love to.,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+635,60,1,RequestNewWinCondition(),Can you first show me a win condition?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-7-0-0-5-0-0-3-0-0-11-0-0-0
+635,60,2,RequestNewWinCondition(),Is there any other win condition?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-1-2-4-5
+635,60,3,RequestNewWinCondition(),Could you show me one more win case please?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-5-14-10-2
+635,60,4,"Same, Confirm(User_ID=1, Height)","For the last win condition you showed, is it a win becasuse of the heights of the pieces?",Negate(),"No, it is a win because all the pieces are solid.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-5-14-10-2
+635,60,5,RequestNewWinCondition(),"Well, can you show me another win condition?",Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-16-0-0-11-0-0-14-0-0-9-0-0-0
+635,60,6,"Same, Confirm(User_ID=1, Rotate(90))","For the board you just showed, can I put all the pieces to the first column to get another win case?",Affirm(),"Yes, you can do that.",Yiyan,5,5,Tianyi,,0-0-0-16-0-0-11-0-0-14-0-0-9-0-0-0
+635,60,7,"Same, Confirm(User_ID=1, Quantity)","For the same board, is it a win because of the number of the pieces?",Affirm(),"Yes, you must have four pieces in order to win.",Yiyan,5,5,Tianyi,,0-0-0-16-0-0-11-0-0-14-0-0-9-0-0-0
+635,60,8,RequestNewWinCondition(),Is there any other way to win?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-5-0-0-0-2-0-0-0-13-0-0-0-1
+635,60,9,"Context Switch, Confirm(User_ID=1, AddPiece(2,0))","Consider this win board, would it be another win if I add a piece on the first position of the third row?",NotSure(),"I am not quite sure, sorry.",Yiyan,5,5,Tianyi,,0-0-0-16-0-0-11-0-0-14-0-0-9-0-0-0
+635,60,10,Finish(),I learned a lot today. Thank you.,Finish,You are welcome.,Yiyan,5,5,Tianyi,,0-0-0-16-0-0-11-0-0-14-0-0-9-0-0-0

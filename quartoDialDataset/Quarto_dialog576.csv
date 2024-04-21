@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+576,60,0,Start(),"Hi, can you help me learn Quarto?",Start,"Sure, shall we start now?",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+576,60,1,RequestNewWinCondition(),Could you first show me one way to win the game?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-9-0-0-0-16-0-0-0-15-0-0-0-11
+576,60,2,"Same, Confirm(User_ID=1, Height)","For the win case you just showed, is this a win because of the heights of the pieces?",NotSure(),"I guess so, but I am not sure.",Yiyan,5,5,Tianyi,,0-0-0-9-0-0-0-16-0-0-0-15-0-0-0-11
+576,60,3,"Same, Confirm(User_ID=1, Hollowness)","For the same board,  does the hollowness relate to the win condition?",Negate(),"No, it is a win because all the pieces have the same heights.",Yiyan,5,5,Tianyi,,0-0-0-9-0-0-0-16-0-0-0-15-0-0-0-11
+576,60,4,RequestNewWinCondition(),Could you please show me one more win scenario?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,16-0-0-0-0-15-0-0-0-0-11-0-0-0-0-8
+576,60,5,RequestNewWinCondition(),Could you please show me one more win case?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,9-0-0-0-13-0-0-0-6-0-0-0-2-0-0-0
+576,60,6,"Context Switch, RequestOtherPlayers()","Let's turn to this win condition, is there any method that the other player can use to stop this win?",Inform([]),There is nothing the other player can do.,Yiyan,5,5,Tianyi,,16-0-0-0-0-15-0-0-0-0-11-0-0-0-0-8
+576,60,7,"Context Switch, Confirm(User_ID=1, Quantity)","Let's turn to this board, is it a win because of the number of the pieces?",Affirm(),"Yes,  you must have at least four pieces in order to win.",Yiyan,5,5,Tianyi,,9-0-0-0-13-0-0-0-6-0-0-0-2-0-0-0
+576,60,8,"Same, Confirm(User_ID=1, Hollowness)","For the same board,  does the hollowness relate to the win condition?",Affirm(),"Yes, as you can observe, all the pieces are solid.",Yiyan,5,5,Tianyi,,9-0-0-0-13-0-0-0-6-0-0-0-2-0-0-0
+576,60,9,"Same, Confirm(User_ID=1, Shape)","Still for this board, do the shapes of the pieces matter?",Negate(),"No, the shapes do not matter in this win condition.",Yiyan,5,5,Tianyi,,9-0-0-0-13-0-0-0-6-0-0-0-2-0-0-0
+576,60,10,"Context Switch, Request(User_ID=1, Rotate)","Going back to this board, how should I rotate the pieces to get another win?",Inform([90]),You can rotate them to the last column.,Yiyan,5,5,Tianyi,,16-0-0-0-0-15-0-0-0-0-11-0-0-0-0-8
+576,60,11,RequestNewWinCondition(),Is there any other way to win the game?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-11-0-0-15-0-0-13-0-0-14-0-0-0
+576,60,12,Finish(),"That's all the information I want to know, thank you.",Finish,You are welcome.,Yiyan,5,5,Tianyi,,0-0-0-11-0-0-15-0-0-13-0-0-14-0-0-0

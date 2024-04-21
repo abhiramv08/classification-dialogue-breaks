@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+945,60,0,Start(),"Hi, please teach me how to play.",Start,Okay sure.,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+945,60,1,RequestNewWinCondition(),Please show me the first win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,2-0-0-0-0-11-0-0-0-0-9-0-0-0-0-10
+945,60,2,RequestNewWinCondition(),How about a second win condition?,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,1-0-0-0-2-0-0-0-4-0-0-0-9-0-0-0
+945,60,3,"Same, Confirm(User_ID=1, Translate([0, 3]))",Can I move the pieces here?,Affirm(),"Yes, you can.",Anthony,3,5,Yiyen,,1-0-0-0-2-0-0-0-4-0-0-0-9-0-0-0
+945,60,4,"Context Switch, Confirm(User_ID=1, Height)","Looking at this board, is it a win because of the pieces' height?",Negate(),"No, that's not why.",Anthony,5,5,Yiyen,,2-0-0-0-0-11-0-0-0-0-9-0-0-0-0-10
+945,60,5,"Same, Confirm(User_ID=1, Quantity)",Is it a win because of the number of pieces?,Affirm(),"Yes, four in a row. ",Anthony,5,4,Yiyen,,2-0-0-0-0-11-0-0-0-0-9-0-0-0-0-10
+945,60,6,RequestNewWinCondition(),Please show me another win. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-12-0-0-0-10-0-0-0-15-0-0-0-11
+945,60,7,"Same, Request(User_ID=1, Rotate)",How can I rotate these pieces?,"Inform([135, 180])",You could move them to be on the antidiagonal or fully horizontal. ,Anthony,5,5,Yiyen,,0-0-0-12-0-0-0-10-0-0-0-15-0-0-0-11
+945,60,8,"Context Switch, Confirm(User_ID=1, Color)","Looking at this board now, is it a win because of the color of the pieces?",NotSure(),I'm not sure. ,Anthony,5,5,Yiyen,,1-0-0-0-2-0-0-0-4-0-0-0-9-0-0-0
+945,60,9,"Same, Confirm(User_ID=1, Height)",Is this a win because of the height of these pieces?,Negate(),"No, they are not all the same. ",Anthony,5,5,Yiyen,,1-0-0-0-2-0-0-0-4-0-0-0-9-0-0-0
+945,60,10,RequestNewWinCondition(),Please give me another winning board.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-4-0-0-2-0-0-7-0-0-3-0-0-0
+945,60,11,Finish(),"Thanks, bye.",Finish,Goodbye.,Anthony,5,5,Yiyen,,0-0-0-4-0-0-2-0-0-7-0-0-3-0-0-0

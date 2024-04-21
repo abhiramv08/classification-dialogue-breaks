@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+426,50,0,Start(),"Hi, can you teach me how to play Quarto?",Start,"Sure, let's play",John,5,5,Jacob,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+426,50,1,RequestNewWinCondition(),Can I see an example of a win?,Inform,Assume you demonstrate this win condition,John,5,5,Jacob,,0-6-0-0-0-5-0-0-0-7-0-0-0-16-0-0
+426,50,2,"Same, Confirm(User_ID=1, Shape)",Is this a win because of the shape of the pieces?,Affirm(),"Yes, the pieces are all circular, causing this win",John,5,5,Jacob,,0-6-0-0-0-5-0-0-0-7-0-0-0-16-0-0
+426,50,3,"Same, Confirm(User_ID=1, Quantity)",Is this a win because of the quantity of pieces?,NotSure(),I'm not sure how the number of pieces affects this win,John,5,5,Jacob,,0-6-0-0-0-5-0-0-0-7-0-0-0-16-0-0
+426,50,4,RequestNewWinCondition(),Could you please show me another win condition?,Inform,Assume you demonstrate this win condition,John,5,5,Jacob,,13-0-0-0-15-0-0-0-1-0-0-0-9-0-0-0
+426,50,5,"Same, Confirm(User_ID=1, Color)",Is this a win because of the color of the pieces?,Affirm(),"Yes, the pieces are all green, making this a win",John,5,5,Jacob,,13-0-0-0-15-0-0-0-1-0-0-0-9-0-0-0
+426,50,6,"Same, Confirm(User_ID=1, RemovePiece(3,0))",Is this still a win if I remove the piece in the top row?,NotSure(),I'm not sure if that would still be a win,John,5,5,Jacob,,13-0-0-0-15-0-0-0-1-0-0-0-9-0-0-0
+426,50,7,"Context Switch, Confirm(User_ID=1, Color)","Now for this board, is the color of the pieces the reason for the win?",NotSure(),I'm not completely sure if the color affects this win,John,5,5,Jacob,,0-6-0-0-0-5-0-0-0-7-0-0-0-16-0-0
+426,50,8,"Same, Request(User_ID=1, Translate)",What ways could I translate these pieces and still have a win?,Inform(['col2']),You could translate them one column to the right,John,4,5,Jacob,Translate should be more specific about relative positions.,0-6-0-0-0-5-0-0-0-7-0-0-0-16-0-0
+426,50,9,"Context Switch, Confirm(User_ID=1, Color)","In this board here, is the color of the pieces the reason for the win?",NotSure(),I'm not exactly sure if the color leads to this win,John,5,5,Jacob,,13-0-0-0-15-0-0-0-1-0-0-0-9-0-0-0
+426,50,10,RequestNewWinCondition(),Could I see another example of a win scenario?,Inform,Assume you demonstrate this win condition,John,5,5,Jacob,,10-0-0-0-0-16-0-0-0-0-2-0-0-0-0-6
+426,50,11,"Same, Confirm(User_ID=1, AddPiece(0,0))",Is this still a win if I add a piece in the bottom right corner?,Affirm(),"Yes, that piece would not affect this win",John,3,5,Jacob,This is the bottom left corner.,10-0-0-0-0-16-0-0-0-0-2-0-0-0-0-6
+426,50,12,"Context Switch, Confirm(User_ID=1, Color)","Now for this board here, is the color of the pieces crucial to this win?",NotSure(),"To be honest, I'm not sure if the color affects this win",John,5,5,Jacob,,13-0-0-0-15-0-0-0-1-0-0-0-9-0-0-0
+426,50,13,"Same, Confirm(User_ID=1, Rotate(45))",Is this still a win if I rotate the piece to be along the diagonal?,NotSure(),I don't know if that would be a win,John,5,4,Jacob,"""Pieces"" instead of ""piece.""",13-0-0-0-15-0-0-0-1-0-0-0-9-0-0-0
+426,50,14,RequestNewWinCondition(),Can I see another example of a win?,Inform,Assume you demonstrate this win condition,John,5,5,Jacob,,8-0-0-0-0-4-0-0-0-0-1-0-0-0-0-6
+426,50,15,Finish(),"Okay, I'm done playing for now, thank you",Finish,"You're welcome, goodbye",John,4,5,Jacob,The system is not playing but learning.,8-0-0-0-0-4-0-0-0-0-1-0-0-0-0-6

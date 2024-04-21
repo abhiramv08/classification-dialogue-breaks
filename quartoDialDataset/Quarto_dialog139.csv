@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+139,100,0,Start(),Can you teach me about Quarto please?,Start,Sure,Daniel,,,,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+139,100,1,RequestNewWinCondition(),Can you show me a board where someone wins please?,Inform(),Assume you demonstrate this win condition,Daniel,,,,,0-0-0-9-0-0-3-0-0-2-0-0-11-0-0-0
+139,100,2,RequestNewWinCondition(),Can you show me a different board please?,Inform(),Assume you demonstrate this win condition,Daniel,,,,,0-0-0-4-0-0-0-2-0-0-0-9-0-0-0-10
+139,100,3,"Same, RequestOtherPlayers()",Is there anything the other player can do to block this win?,Inform([]),No,Daniel,,,,,0-0-0-4-0-0-0-2-0-0-0-9-0-0-0-10
+139,100,4,"Context Switch, Confirm(User_ID=1, Color)",Is this a win because of the color of the pieces?,Negate(),No,Daniel,,,,,0-0-0-9-0-0-3-0-0-2-0-0-11-0-0-0
+139,100,5,"Same , Confirm(User_ID=1, RemovePiece(2,2))","If I remove the short, hollow, green, triangle is it still a win?",Negate(),No,Daniel,,,,,0-0-0-9-0-0-3-0-0-2-0-0-11-0-0-0
+139,100,6,RequestNewWinCondition(),Can you show me a new winning board?,Inform(),Assume you demonstrate this win condition,Daniel,,,,,0-0-0-0-0-0-0-0-0-0-0-0-4-6-7-2
+139,100,7,RequestNewWinCondition(),How about another board?,Inform(),Assume you demonstrate this win condition,Daniel,,,,,4-0-0-0-0-12-0-0-0-0-7-0-0-0-0-3
+139,100,8,RequestNewWinCondition(),One more?,Inform(),Assume you demonstrate this win condition,Daniel,,,,,6-0-0-0-0-1-0-0-0-0-4-0-0-0-0-3
+139,100,9,"Context Switch, Confirm(User_ID=1, Color)",Is this a win because of the colors?,Negate(),No,Daniel,,,,,4-0-0-0-0-12-0-0-0-0-7-0-0-0-0-3
+139,100,10,"Context Switch, RequestOtherPlayers()",Can the other player prevent this win?,Inform([]),No,Daniel,,,,,0-0-0-4-0-0-0-2-0-0-0-9-0-0-0-10
+139,100,11,"Same, Request(User_ID=1, Translate)",Where can I move these pieces and still win?,"Inform(['col0', 'col1', 'col2'])",You can move them to any other column and still win.,Daniel,,,,,0-0-0-4-0-0-0-2-0-0-0-9-0-0-0-10
+139,100,12,"Context Switch, Confirm(User_ID=1, Shape)",Is this a win because of the shape of the pieces?,Negate(),No,Daniel,,,,,4-0-0-0-0-12-0-0-0-0-7-0-0-0-0-3
+139,100,13,"Context Switch, Confirm(User_ID=1, Shape)",Is this a win because of the shape of the pieces?,Negate(),No,Daniel,,,,,6-0-0-0-0-1-0-0-0-0-4-0-0-0-0-3
+139,100,14,"Context Switch, Request(User_ID=1, Rotate)",How can I rotate these pieces and still win?,"Inform([135, 180])",You can rotate them diagonally,Daniel,,,,,0-0-0-4-0-0-0-2-0-0-0-9-0-0-0-10
+139,100,15,Finish(),Thanks for teaching me!,Finish,No problem,Daniel,,,,,0-0-0-4-0-0-0-2-0-0-0-9-0-0-0-10

@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+1055,60,0,Start(),"Hi, can you give me some advice on playing Quarto?",Start,Ok.,Tianyi,5,5,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+1055,60,1,RequestNewWinCondition(),Can you show me a winning board?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,0-0-0-3-0-0-4-0-0-7-0-0-5-0-0-0
+1055,60,2,RequestNewWinCondition(),Can you show me another winning board?,Inform,Assume you demonstrate this win condition,Tianyi,5,4,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-10-1-4-9
+1055,60,3,"Context Switch, Confirm(User_ID=1, Rotate(90))","For this board, If I rotate all pieces 90 degrees to the rows and put them in the first column, can it still be a winning board?",NotSure(),"That is a good question, I have no idea about this.",Tianyi,5,5,Ruijie,,0-0-0-3-0-0-4-0-0-7-0-0-5-0-0-0
+1055,60,4,"Context Switch, Confirm(User_ID=1, AddPiece(3,2))","In this case, if I put a new piece at the third column of the upmost row, can it still be a win?",Affirm(),"Yes, you can put the new piece anywhere.",Tianyi,5,4,Ruijie,,0-0-0-0-0-0-0-0-0-0-0-0-10-1-4-9
+1055,60,5,RequestNewWinCondition(),Can you give me an new example of win?,Inform,Assume you demonstrate this win condition,Tianyi,5,5,Ruijie,,0-0-0-7-0-0-11-0-0-9-0-0-13-0-0-0
+1055,60,6,"Same, Confirm(User_ID=1, RemovePiece(3,3))","In this win, if I remove the piece at the rightmost column, is it still a win?",Negate(),"No, it will no longer be a win if you do that.",Tianyi,5,5,Ruijie,,0-0-0-7-0-0-11-0-0-9-0-0-13-0-0-0
+1055,60,7,"Same, Confirm(User_ID=1, Rotate(90))","And, If I rotate all pieces 90 degrees to the rows and put them in the first column, can it still be a winning board?",NotSure(),"Sorry, I am not sure about this.",Tianyi,5,5,Ruijie,,0-0-0-7-0-0-11-0-0-9-0-0-13-0-0-0
+1055,60,8,"Context Switch, Confirm(User_ID=1, AddPiece(3,1))","In this case, if I put a new piece at the second column of the fourth row, can it still be a win?",Affirm(),"Yes, it will still be a win.",Tianyi,4,5,Ruijie,,0-0-0-3-0-0-4-0-0-7-0-0-5-0-0-0
+1055,60,9,"Context Switch, Confirm(User_ID=1, AddPiece(3,2))","In this board, if I put a new piece at the third column of the upmost row, can it still be a win?",Affirm(),Yes.,Tianyi,5,5,Ruijie,,0-0-0-7-0-0-11-0-0-9-0-0-13-0-0-0
+1055,60,10,Finish(),Thank you for your advice.,Finish,You are welcome.,Tianyi,5,5,Ruijie,,0-0-0-7-0-0-11-0-0-9-0-0-13-0-0-0

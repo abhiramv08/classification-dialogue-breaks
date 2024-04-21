@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+926,60,0,Start(),"Hi, would you show me how to play Quarto?",Start,"Yes, of course.",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+926,60,1,RequestNewWinCondition(),Please show me a new win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-6-2-10-5
+926,60,2,RequestNewWinCondition(),Please show me another win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-14-0-0-0-10-0-0-0-4-0-0-0-12
+926,60,3,"Context Switch, Confirm(User_ID=1, Color)","Looking back to the first board, is this a win because of the color of the pieces?",Negate(),"No, they all have to be the same color for that to be the case.",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-6-2-10-5
+926,60,4,"Context Switch, Request(User_ID=1, Translate)","Looking back to this board, how could I shift the pieces?","Inform(['col1', 'col2'])",You could move them left to columns 1 or 2.,Anthony,5,5,Yiyen,,0-0-0-14-0-0-0-10-0-0-0-4-0-0-0-12
+926,60,5,"Context Switch, RequestOtherPlayers()","Looking back to this board, how could another player affect this win?",Inform([]),Another player can't do anything here.,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-6-2-10-5
+926,60,6,"Same, Confirm(User_ID=1, Height)",Is this a win because of the height of the pieces?,NotSure(),I do not know. ,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-6-2-10-5
+926,60,7,"Same, Confirm(User_ID=1, Color)",Is this a win because of the color?,Negate(),"No, they are not all green or all blue. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-6-2-10-5
+926,60,8,RequestNewWinCondition(),Please show me a new winning board.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-6-16-8-12
+926,60,9,"Context Switch, Confirm(User_ID=1, Hollowness)","Looking back to this board, is this a win because of the hollowness of the pieces?",NotSure(),"I am not sure, sorry.",Anthony,5,5,Yiyen,,0-0-0-14-0-0-0-10-0-0-0-4-0-0-0-12
+926,60,10,"Context Switch, Confirm(User_ID=1, Color)","Switching back to this board, is this a win because of the color of the pieces?",Affirm(),"Yes, that's correct, they are all blue. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-6-16-8-12
+926,60,11,RequestNewWinCondition(),Please show me another win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-14-12-13-15
+926,60,12,Finish(),"Thanks for the tips, goodbye!",Finish,Bye bye!,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-14-12-13-15

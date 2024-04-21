@@ -1,0 +1,16 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+74,100,0,Start(),Can I please learn about quarto?,Start,Sure!,Daniel,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+74,100,1,RequestNewWinCondition(),Can you please show me a board where someone wins?,Inform(),Assume you demonstrate this win condition,Daniel,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-7-11-1-13
+74,100,2,RequestNewWinCondition(),Can you show me another board please?,Inform(),Assume you demonstrate this win condition,Daniel,5,4,Derek,,0-0-8-0-0-0-6-0-0-0-15-0-0-0-16-0
+74,100,3,RequestNewWinCondition(),Another?,Inform(),Assume you demonstrate this win condition,Daniel,4,4,Derek,,4-0-0-0-15-0-0-0-11-0-0-0-7-0-0-0
+74,100,4,RequestNewWinCondition(),Ok one more win please,Inform(),Assume you demonstrate this win condition,Daniel,4,5,Derek,,9-0-0-0-0-1-0-0-0-0-10-0-0-0-0-11
+74,100,5,"Same , Confirm(User_ID=1, RemovePiece(3,0))",If I remove the piece in the top left corner is this still a win?,Negate(),No,Daniel,5,5,Derek,,9-0-0-0-0-1-0-0-0-0-10-0-0-0-0-11
+74,100,6,"Context Switch, Confirm(User_ID=1, Shape)",Is this a win because of the shape of the pieces?,Affirm(),Yes,Daniel,3,4,Derek,,0-0-8-0-0-0-6-0-0-0-15-0-0-0-16-0
+74,100,7,RequestNewWinCondition(),Can you show me a different winning board please?,Inform(),Assume you demonstrate this win condition,Daniel,5,5,Derek,,0-16-0-0-0-15-0-0-0-13-0-0-0-9-0-0
+74,100,8,"Same, RequestOtherPlayers()",What can the other player do to prevent this win?,Inform([]),Nothing,Daniel,5,4,Derek,,0-16-0-0-0-15-0-0-0-13-0-0-0-9-0-0
+74,100,9,"Context Switch, Confirm(User_ID=1, AddPiece(1,1))","If I add a piece at 1,1 is this still a win?",Affirm(),Yes,Daniel,3,2,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-7-11-1-13
+74,100,10,"Same , Confirm(User_ID=1, AddPiece(1,3))","If I add a piece at 1,3 is this still a win?",Affirm(),Yes,Daniel,4,2,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-7-11-1-13
+74,100,11,RequestNewWinCondition(),Can I get another win condition please?,Inform(),Assume you demonstrate this win condition,Daniel,5,5,Derek,,0-0-0-0-0-0-0-0-0-0-0-0-1-2-5-14
+74,100,12,"Context Switch, Confirm(User_ID=1, RemovePiece(0,3))",If I remove the bottom right piece is this still a win?,Negate(),No,Daniel,3,5,Derek,,9-0-0-0-0-1-0-0-0-0-10-0-0-0-0-11
+74,100,13,"Win Context Switch {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}",Is this a win because of the hollowness of the pieces?,Affirm(),Yes,Daniel,2,5,Derek,,4-0-0-0-15-0-0-0-11-0-0-0-7-0-0-0
+74,100,14,Finish(),Thank you!,Finish,No problem,Daniel,5,5,Derek,,4-0-0-0-15-0-0-0-11-0-0-0-7-0-0-0

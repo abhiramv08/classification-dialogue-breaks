@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+180,100,0,Start(),"Hi, I want to know how to play Quarto.",Start,"Sure, I can show you how to play.",Ruijie,5,5,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+180,100,1,RequestNewWinCondition(),Can you show me what a win condition looks like?,Inform(),Assume you demonstrate this win condition,Ruijie,5,4,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-4-11-1-12
+180,100,2,"Same, Confirm(User_ID=1, Height)",Is it the height of the pieces that makes a win?,Negate(),"No, it's not.",Ruijie,5,5,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-4-11-1-12
+180,100,3,"Same, Request(User_ID=1, Translate)",Where else can I put the pieces and maintain the win?,"Inform(['row1', 'row2', 'row3'])","You can put them on the first, second and third row.",Ruijie,5,5,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-4-11-1-12
+180,100,4,"Same, Confirm(User_ID=1, Quantity)","For this win condtion, is it a win because of the quantity of pieces?",Affirm(),"Yes, you are right about that.",Ruijie,5,5,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-4-11-1-12
+180,100,5,"Same, Request(User_ID=1, Rotate)",Can I rotate the piece by a certain degree and maintain the win?,"Inform([45, 90])","Sure, you can put them vertically or put them on the diagonal.",Ruijie,5,4,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-4-11-1-12
+180,100,6,"Same, RequestOtherPlayers()",Can the other player prevent this win?,Inform([]),"No, this win is absolute.",Ruijie,5,4,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-4-11-1-12
+180,100,7,"Same, Request(User_ID=1, Rotate)",Can I rotate the pieces by a certain degree and maintain the win?,"Inform([45, 90])","Sure, you can put the on the diagonal or put them vertically.",Ruijie,5,4,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-4-11-1-12
+180,100,8,"Same , Confirm(User_ID=1, RemovePiece(0,2))",Is it still a win if I remove the second piece?,Negate(),"No, that will break it.",Ruijie,4,4,Daniel,Second piece is ambiguous.,0-0-0-0-0-0-0-0-0-0-0-0-4-11-1-12
+180,100,9,"Same, Confirm(User_ID=1, Translate('row1'))",Is it still a win if I put all the pieces on the first row?,Affirm,"Sure, you can do that.",Ruijie,5,5,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-4-11-1-12
+180,100,10,Finish(),"Thank you so much, I think I've learned enough.",Finish,You're welcome!,Ruijie,5,5,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-4-11-1-12

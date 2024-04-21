@@ -1,0 +1,18 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+734,60,0,Start(),Hi! Can you show me how to play Quarto?,Start,I'd love to!,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+734,60,1,RequestNewWinCondition(),Can you show me what a win condition looks like?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-4-0-0-0-2-0-0-0-6-0-0-0-16-0
+734,60,2,"Same, Confirm(User_ID=1, Translate([0, 1]))",Can I move the pieces to the second column without breaking the condition?,NotSure(),"I'm not sure, sorry.",Ruijie,5,5,Luke,,0-0-4-0-0-0-2-0-0-0-6-0-0-0-16-0
+734,60,3,"Same, Request(User_ID=1, Translate)","Can I put the pieces somewhere else?
+","Inform(['col1', 'col3'])","Well, you can put them on the first or the third column.",Ruijie,3,4,Luke,,0-0-4-0-0-0-2-0-0-0-6-0-0-0-16-0
+734,60,4,"Same, Confirm(User_ID=1, Shape)","Is it a win because the pieces are of the same shape?
+",Negate(),"No, that’s irrelevant.",Ruijie,5,5,Luke,,0-0-4-0-0-0-2-0-0-0-6-0-0-0-16-0
+734,60,5,"Same, Confirm(User_ID=1, Shape)","Is it a win because the pieces are of the same shape?
+",NotSure(),"I'm actually not quite sure.
+",Ruijie,5,4,Luke,,0-0-4-0-0-0-2-0-0-0-6-0-0-0-16-0
+734,60,6,"Same, Confirm(User_ID=1, Translate([0, 1]))",Can I move the pieces to the second column?,Affirm(),"Sure, you can do that.",Ruijie,5,5,Luke,,0-0-4-0-0-0-2-0-0-0-6-0-0-0-16-0
+734,60,7,"Same, Confirm(User_ID=1, Height)","Is it a win because the pieces are of the same height?
+",Negate(),"No, you can’t do that.",Ruijie,5,5,Luke,,0-0-4-0-0-0-2-0-0-0-6-0-0-0-16-0
+734,60,8,"Same, Confirm(User_ID=1, Hollowness)",Does the hollowness of the pieces make it a win?,NotSure(),"Sorry, I don't know.",Ruijie,5,5,Luke,,0-0-4-0-0-0-2-0-0-0-6-0-0-0-16-0
+734,60,9,"Same, Confirm(User_ID=1, Shape)","Is it a win because the pieces are of the same shape?
+",Negate(),"Well, that's not right.",Ruijie,5,5,Luke,,0-0-4-0-0-0-2-0-0-0-6-0-0-0-16-0
+734,60,10,Finish(),Thanks! I've learned a lot!,Finish,My pleasure!,Ruijie,5,5,Luke,,0-0-4-0-0-0-2-0-0-0-6-0-0-0-16-0

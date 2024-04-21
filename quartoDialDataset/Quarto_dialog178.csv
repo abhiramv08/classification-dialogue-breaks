@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+178,100,0,Start(),"Hi, can you show me how to play Quarto?",Start,Why not? I'd love to.,Ruijie,5,5,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+178,100,1,RequestNewWinCondition(),Can you show me a win condition?,Inform(),Assume you demonstrate this win condition,Ruijie,5,4,Daniel,,0-4-0-0-0-11-0-0-0-10-0-0-0-3-0-0
+178,100,2,"Same , Confirm(User_ID=1, Shape)",Is it the shapes of the pieces that make it a win?,Affirm(),"Yes, you're right about that.",Ruijie,5,5,Daniel,,0-4-0-0-0-11-0-0-0-10-0-0-0-3-0-0
+178,100,3,"Same, Confirm(User_ID=1, Quantity)",Is it the number of pieces that makes it a win?,Affirm(),Yes!,Ruijie,5,5,Daniel,,0-4-0-0-0-11-0-0-0-10-0-0-0-3-0-0
+178,100,4,RequestNewWinCondition(),Can you show me a new win condtion?,Inform(),Assume you demonstrate this win condition,Ruijie,5,4,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-12-4-11-15
+178,100,5,"Same , Confirm(User_ID=1, RemovePiece(0,1))","If I remove the first piece, will it still be a win?",Negate(),"No, that will break it.",Ruijie,4,5,Daniel,"""first"" is ambiguous",0-0-0-0-0-0-0-0-0-0-0-0-12-4-11-15
+178,100,6,"Context Switch, Confirm(User_ID=1, Translate('col2'))","Back to the previous win, is it still a win if I move the pieces to the second column?",Affirm,"Yes, you can do that.",Ruijie,4,5,Daniel,"""second"" is ambiguous",0-4-0-0-0-11-0-0-0-10-0-0-0-3-0-0
+178,100,7,RequestNewWinCondition(),Can you show me a new win condition?,Inform(),Assume you demonstrate this win condition,Ruijie,5,4,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-12-14-11-15
+178,100,8,"Context Switch, Confirm(User_ID=1, Shape)","Back to the previous win, Is it the shape of the pieces that makes the win?",Affirm(),"Yes, that's correct.",Ruijie,5,5,Daniel,,0-4-0-0-0-11-0-0-0-10-0-0-0-3-0-0
+178,100,9,"Same , Confirm(User_ID=1, AddPiece(3,3))","If I add one more piece on the third piece, will it still be a win?",Affirm(),"Yes, you can do that.",Ruijie,3,5,Daniel,"""third piece"" is ambiguous and also wrong",0-4-0-0-0-11-0-0-0-10-0-0-0-3-0-0
+178,100,10,"Context Switch, Confirm(User_ID=1, Quantity)","Back to the previous win, is it a win because there're four pieces?",Affirm(),"Yes, that's correct.",Ruijie,5,5,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-12-4-11-15
+178,100,11,RequestNewWinCondition(),Can you show me a new win condition?,Inform(),Assume you demonstrate this win condition,Ruijie,5,4,Daniel,,0-0-0-16-0-0-4-0-0-6-0-0-8-0-0-0
+178,100,12,"Context Switch, RequestOtherPlayers()",Can the other player prevent this win?,Inform([]),"No, this win is absolute.",Ruijie,5,4,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-12-14-11-15
+178,100,13,"Context Switch, Confirm(User_ID=1, Shape)","Back to the previous win you showed me, is it a win because of the shapes of pieces?",Negate(),"No, it's not because of that.",Ruijie,5,5,Daniel,,0-0-0-16-0-0-4-0-0-6-0-0-8-0-0-0
+178,100,14,"Context Switch, Confirm(User_ID=1, AddPiece(3,2))","Back to the other win, is it still a win if I put one more piece on the third piece?",Affirm(),"Sure, you can do that.",Ruijie,3,5,Daniel,,0-4-0-0-0-11-0-0-0-10-0-0-0-3-0-0
+178,100,15,Finish(),Thanks! I think I've learned enough.,Finish,You're welcome!,Ruijie,5,5,Daniel,,0-4-0-0-0-11-0-0-0-10-0-0-0-3-0-0

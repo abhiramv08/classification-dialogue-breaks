@@ -1,0 +1,15 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+128,100,0,Start(),Can you teach me Quarto?,Start,Sure,Yiyan,5,5,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+128,100,1,RequestNewWinCondition(),How can I win a game?,Inform(),Assume you demonstrate this win condition,Yiyan,5,4,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-1-4-2-12
+128,100,2,"Same, Confirm(User_ID=1, Quantity)",Is it a winning because we have four pieces?,Affirm(),"Yes, the number of the pieces matters.",Yiyan,5,4,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-1-4-2-12
+128,100,3,RequestNewWinCondition(),Can you show me another winning condition?,Inform(),Assume you demonstrate this win condition,Yiyan,5,4,Daniel,,0-0-0-3-0-0-7-0-0-8-0-0-5-0-0-0
+128,100,4,"Context Switch, Confirm(User_ID=1, Quantity)",Is this a winning condition because we have four pieces?,Affirm(),"Yes, and I have told you this just now. ",Yiyan,5,5,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-1-4-2-12
+128,100,5,"Same, Request(User_ID=1, Rotate)","In this winning condition, how can I rotate all the pieces to get another winning condition?","Inform([45, 90])",You can put them vertically or diagonally.,Yiyan,5,4,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-1-4-2-12
+128,100,6,RequestNewWinCondition(),Can you show me another winning condition?,Inform(),Assume you demonstrate this win condition,Yiyan,5,4,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-7-1-15-9
+128,100,7,"Context Switch, RequestOtherPlayers()",How can the other player do to stop this winning condition.,Inform([]),"No, there is nothing he or she can do.",Yiyan,5,3,Daniel,,0-0-0-3-0-0-7-0-0-8-0-0-5-0-0-0
+128,100,8,"Context Switch, Confirm(User_ID=1, Translate('row2'))",Will it still be a winning if I move all the pieces one row up?,Affirm,"Yes, it will still be your winning.",Yiyan,5,3,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-7-1-15-9
+128,100,9,"Context Switch, Confirm(User_ID=1, Shape)",Is it a winning because they have the same shape?,Affirm(),"Yes, it is.",Yiyan,5,4,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-1-4-2-12
+128,100,10,"Win Context Switch {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}",Does the hollowness of pieces relate to my  winning?,Negate(),"No, it doesn't.",Yiyan,5,5,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-7-1-15-9
+128,100,11,"Same, Confirm(User_ID=1, Height)",Is it a winning because of the heights of pieces?,Negate(),"No, the winning has nothing to do with the heights of pieces.",Yiyan,5,5,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-7-1-15-9
+128,100,12,"Context Switch, Confirm(User_ID=1, AddPiece(0,2))","If I add a piece on the third column of the first row, will it still a winning? ",Affirm(),"Yes, it will.",Yiyan,5,5,Daniel,,0-0-0-3-0-0-7-0-0-8-0-0-5-0-0-0
+128,100,13,Finish(),"Thank you, I learnt a lot today.",Finish,You are welcome.,Yiyan,5,5,Daniel,,0-0-0-3-0-0-7-0-0-8-0-0-5-0-0-0

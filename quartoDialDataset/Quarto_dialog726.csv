@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+726,60,0,Start(),How's it going? Can you show me how to play Quarto?,Start,Yes! Let's begin!,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+726,60,1,RequestNewWinCondition(),Can you show me what a win condition looks like?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-12-0-0-8-0-0-15-0-0-4-0-0-0
+726,60,2,"Same, Confirm(User_ID=1, Quantity)",Does the number of pieces make it a win?,Affirm(),"Yes, you’re right about that!",Ruijie,5,5,Luke,,0-0-0-12-0-0-8-0-0-15-0-0-4-0-0-0
+726,60,3,"Same, Confirm(User_ID=1, Color)",Is it a win because the pieces are in the same color?,NotSure(),I'm actually not quite sure.,Ruijie,5,5,Luke,,0-0-0-12-0-0-8-0-0-15-0-0-4-0-0-0
+726,60,4,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-1-15-9-11
+726,60,5,RequestNewWinCondition(),What about another win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,16-0-0-0-0-14-0-0-0-0-13-0-0-0-0-9
+726,60,6,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-15-0-0-0-5-0-0-0-14-0-0-0-13-0
+726,60,7,"Context Switch, Confirm(User_ID=1, Shape)","Switch to this board, is it a win because the pieces are of the same shape?",Negate(),That’s just wrong.,Ruijie,5,5,Luke,,16-0-0-0-0-14-0-0-0-0-13-0-0-0-0-9
+726,60,8,"Context Switch, Confirm(User_ID=1, Shape)","Switch to this board, is it a win because the pieces are of the same shape?",Affirm(),That’s right.,Ruijie,5,5,Luke,,0-0-15-0-0-0-5-0-0-0-14-0-0-0-13-0
+726,60,9,"Context Switch, Confirm(User_ID=1, Height)","Switch to this board, is it a win because the pieces are of the same height?",Affirm(),"Yes, you’re right about that.",Ruijie,5,5,Luke,,16-0-0-0-0-14-0-0-0-0-13-0-0-0-0-9
+726,60,10,Finish(),Thanks! I think I got it!,Finish,You are welcome!,Ruijie,5,5,Luke,,16-0-0-0-0-14-0-0-0-0-13-0-0-0-0-9

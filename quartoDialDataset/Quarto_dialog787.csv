@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+787,60,0,Start(),"
+Hey I really want to learn playing Quarto, can you teach me?",Start,"
+Definately.",Derek,4,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+787,60,1,RequestNewWinCondition(),Can you show me a win condition to start?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,5-0-0-0-0-15-0-0-0-0-13-0-0-0-0-14
+787,60,2,RequestNewWinCondition(),Can you show me one more winning board?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-5-7-3-4
+787,60,3,"Same, Confirm(User_ID=1, Hollowness)",Is that a win because the hollowness pattern of all pieces?,Negate(),No.,Derek,5,4,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-5-7-3-4
+787,60,4,"Same, RequestOtherPlayers()",How could another player undo this win?,Inform([]),There is nothing another player could do to prevent this win.,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-5-7-3-4
+787,60,5,"Same, Confirm(User_ID=1, Hollowness)",Is the hollowness of pieces important for this win?,Negate(),No. I think I have answered this question before.,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-5-7-3-4
+787,60,6,"Context Switch, Confirm(User_ID=1, Quantity)",Do I have to have four pieces to win?,Affirm(),"Yes, it is the minimum requirement.",Derek,5,5,Shaobo,,5-0-0-0-0-15-0-0-0-0-13-0-0-0-0-14
+787,60,7,RequestNewWinCondition(),Can you show me one more winning board?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,13-0-0-0-2-0-0-0-10-0-0-0-1-0-0-0
+787,60,8,RequestNewWinCondition(),One more please.,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,2-0-0-0-0-5-0-0-0-0-9-0-0-0-0-1
+787,60,9,"Same, Request(User_ID=1, Rotate)",Do you know how can I aline these pieces in different angle and keep winning?,Inform([90]),You can aline them vertically.,Derek,4,5,Shaobo,,2-0-0-0-0-5-0-0-0-0-9-0-0-0-0-1
+787,60,10,Finish(),Thanks for your teaching today!,Finish,No problem.,Derek,5,5,Shaobo,,2-0-0-0-0-5-0-0-0-0-9-0-0-0-0-1

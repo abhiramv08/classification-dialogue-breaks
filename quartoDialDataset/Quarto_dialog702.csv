@@ -1,0 +1,15 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+702,60,0,Start(),"Hi, can you teach me how to play Quarto?",Start,Why not! Let's do it!,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+702,60,1,RequestNewWinCondition(),Can you show me what a win condition looks like?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-1-2-6-9
+702,60,2,"Same, Request(User_ID=1, Rotate)",Can I rotate the pieces by some degrees and still have a win?,"Inform([45, 90])","Yes, you can do that by rotating the pieces by forty five or ninety degrees.",Ruijie,4,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-1-2-6-9
+702,60,3,"Same, Confirm(User_ID=1, Color)","Is it a win because the pieces are in the same color?
+",Negate(),"No, that’s just wrong.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-1-2-6-9
+702,60,4,"Same, Request(User_ID=1, Rotate)",Can I rotate the pieces by some degrees?,"Inform([45, 90])","Sure, you can rotate them by forty five or ninety degrees.
+",Ruijie,4,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-1-2-6-9
+702,60,5,"Same, Confirm(User_ID=1, Translate([1, 0]))",Can I move the pieces to the second row and still have a win?,Affirm(),"Sure, that will still be a win.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-1-2-6-9
+702,60,6,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-11-0-0-0-12-0-0-0-13-0-0-0-15-0-0
+702,60,7,"Context Switch, Request(User_ID=1, Rotate)","Switch to this board, can I rotate the pieces by some degrees?","Inform([45, 90])","Yes, you can rotate them by forty five or ninety degrees.",Ruijie,4,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-1-2-6-9
+702,60,8,RequestNewWinCondition(),Can you show me a new win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,11-0-0-0-0-13-0-0-0-0-14-0-0-0-0-10
+702,60,9,"Same, Confirm(User_ID=1, Hollowness)","Does the hollowness of the pieces make it a win?
+",NotSure(),I'm actually not quite sure.,Ruijie,5,5,Luke,,11-0-0-0-0-13-0-0-0-0-14-0-0-0-0-10
+702,60,10,Finish(),Thank you so much for teaching me!,Finish,You are welcome!,Ruijie,5,5,Luke,,11-0-0-0-0-13-0-0-0-0-14-0-0-0-0-10

@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+907,60,0,Start(),"Hi, would you mind teaching me Quarto?",Start,"Sure, that's not a problem. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+907,60,1,RequestNewWinCondition(),Please show me another win conditon.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-13-0-0-0-15-0-0-0-10-0-0-0-16
+907,60,2,RequestNewWinCondition(),How about one more?,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-14-16-11-13
+907,60,3,"Same, Confirm(User_ID=1, Hollowness)",Is this win due to the pieces' hollowness?,NotSure(),"I'm not sure, sorry. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-14-16-11-13
+907,60,4,RequestNewWinCondition(),Please let me see another winning board.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-10-0-0-2-0-0-5-0-0-13-0-0-0
+907,60,5,"Same, Confirm(User_ID=1, Height)",Is this board a win because of the height of the pieces?,NotSure(),I'm not sure. ,Anthony,5,4,Yiyen,,0-0-0-10-0-0-2-0-0-5-0-0-13-0-0-0
+907,60,6,"Context Switch, Request(User_ID=1, Rotate)","Looking at this board, how could I rotate the pieces?","Inform([135, 180])",You could spin the pieces to be on the antidiagonal or horizontal. ,Anthony,5,5,Yiyen,,0-0-0-13-0-0-0-15-0-0-0-10-0-0-0-16
+907,60,7,"Context Switch, Confirm(User_ID=1, Color)","Looking over at this board, is this a win because of the color of the pieces?",Negate(),"No, they'd all have to be the same color.",Anthony,5,4,Yiyen,,0-0-0-10-0-0-2-0-0-5-0-0-13-0-0-0
+907,60,8,"Context Switch, Confirm(User_ID=1, AddPiece(1,0))","Looking at this board now, could I add a piece here?",NotSure(),I'm not so sure. ,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-14-16-11-13
+907,60,9,"Same, Confirm(User_ID=1, RemovePiece(0,2))",Could I remove this piece?,Negate(),"No, that's an important piece.",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-14-16-11-13
+907,60,10,Finish(),Thanks for all your help. ,Finish,No problem. ,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-14-16-11-13

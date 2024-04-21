@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+880,60,0,Start(),Hi could you please teacch me Quarto?,Start,Sure. ,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+880,60,1,RequestNewWinCondition(),Please show me a win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,8-0-0-0-12-0-0-0-3-0-0-0-7-0-0-0
+880,60,2,"Same, Confirm(User_ID=1, Translate([0, 2]))",Is it still a win if I shift the pieces here?,Affirm(),"Yes, that's fine.",Anthony,3,5,Yiyen,,8-0-0-0-12-0-0-0-3-0-0-0-7-0-0-0
+880,60,3,"Same, Confirm(User_ID=1, Color)",Is this a win because of the color of the pieces?,Negate(),"No, they need to be the same color. ",Anthony,5,5,Yiyen,,8-0-0-0-12-0-0-0-3-0-0-0-7-0-0-0
+880,60,4,"Same, Confirm(User_ID=1, Height)",Is this a win because of the height of the pieces?,NotSure(),"I'm not sure, sorry. ",Anthony,5,5,Yiyen,,8-0-0-0-12-0-0-0-3-0-0-0-7-0-0-0
+880,60,5,"Same, Confirm(User_ID=1, Height)",Is this a win because of the height of the pieces?,Negate(),"No, the height is not why this is a win. ",Anthony,5,5,Yiyen,,8-0-0-0-12-0-0-0-3-0-0-0-7-0-0-0
+880,60,6,"Same, RequestOtherPlayers()",What ways could another player undo this win?,Inform([]),There are no ways for that to happen.,Anthony,5,4,Yiyen,,8-0-0-0-12-0-0-0-3-0-0-0-7-0-0-0
+880,60,7,"Same, Confirm(User_ID=1, AddPiece(1,2))",Could I add a piece here?,NotSure(),I'm not sure.,Anthony,3,5,Yiyen,,8-0-0-0-12-0-0-0-3-0-0-0-7-0-0-0
+880,60,8,"Same, Confirm(User_ID=1, Height)",Is the height of the pieces what makes this a win?,Negate(),"No, they would have to be at the same height. ",Anthony,5,5,Yiyen,,8-0-0-0-12-0-0-0-3-0-0-0-7-0-0-0
+880,60,9,"Same, Confirm(User_ID=1, Color)",Is this a win because of the pieces' color. ,NotSure(),I do not know. ,Anthony,5,5,Yiyen,,8-0-0-0-12-0-0-0-3-0-0-0-7-0-0-0
+880,60,10,Finish(),"Okay, thanks for all the help!",Finish,No problem. ,Anthony,5,5,Yiyen,,8-0-0-0-12-0-0-0-3-0-0-0-7-0-0-0

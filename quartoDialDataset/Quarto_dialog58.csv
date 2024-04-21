@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+58,100,0,Start(),Do you have time? Could you teach me how to play Quarto?,Start,"Sure, we can start now!",Tianyi,,,,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+58,100,1,RequestNewWinCondition(),Give me a win condition please?,Inform(),Assume you demonstrate this win condition,Tianyi,,,,,0-0-0-0-0-0-0-0-0-0-0-0-4-11-9-3
+58,100,2,"Same, Request(User_ID=1, Translate)",Can I put the pieces in other positions?,"Inform(['row1', 'row2', 'row3'])","Of course, you can put them in either row1 row2 or row3.",Tianyi,,,,,0-0-0-0-0-0-0-0-0-0-0-0-4-11-9-3
+58,100,3,RequestNewWinCondition(),Interesting. Could you give me another condition for winning?,Inform(),Assume you demonstrate this win condition,Tianyi,,,,,0-0-0-13-0-0-15-0-0-16-0-0-5-0-0-0
+58,100,4,RequestNewWinCondition(),Any more win conditons?,Inform(),Assume you demonstrate this win condition,Tianyi,,,,,0-0-0-11-0-0-0-15-0-0-0-7-0-0-0-1
+58,100,5,RequestNewWinCondition(),I think I need to learn more patterns. Do you have more of them?,Inform(),Assume you demonstrate this win condition,Tianyi,,,,,0-0-0-0-0-0-0-0-0-0-0-0-9-14-10-5
+58,100,6,RequestNewWinCondition(),Give me one more please!,Inform(),Assume you demonstrate this win condition,Tianyi,,,,,10-0-0-0-0-9-0-0-0-0-14-0-0-0-0-2
+58,100,7,"Context Switch, Confirm(User_ID=1, Color)","For win2, is that wins because of the color?",Negate(),"Nope, not in this case.",Tianyi,,,,,0-0-0-13-0-0-15-0-0-16-0-0-5-0-0-0
+58,100,8,"Context Switch, Confirm(User_ID=1, Consistency)",Is that consistent?,Negate(),"No, that’s not.",Tianyi,,,,,0-0-0-11-0-0-0-15-0-0-0-7-0-0-0-1
+58,100,9,"Context Switch, Request(User_ID=1, Translate)",Any other win patterns for win4?,"Inform(['row1', 'row2', 'row3'])","You can move 4 pieces to any row above, as long as they are in a line.",Tianyi,,,,,0-0-0-0-0-0-0-0-0-0-0-0-9-14-10-5
+58,100,10,RequestNewWinCondition(),"Ok, are there any other win conditions?",Inform(),Assume you demonstrate this win condition,Tianyi,,,,,3-0-0-0-0-15-0-0-0-0-8-0-0-0-0-16
+58,100,11,"Context Switch, Confirm(User_ID=1, Shape)","One question from win3, is it wins becasue of the shape?",Negate(),"Nope, shape is not the case here.",Tianyi,,,,,0-0-0-11-0-0-0-15-0-0-0-7-0-0-0-1
+58,100,12,"Context Switch, Confirm(User_ID=1, Color)","For win5, the color is the win condition right?",Negate(),"Unfortunately, the color is not.",Tianyi,,,,,10-0-0-0-0-9-0-0-0-0-14-0-0-0-0-2
+58,100,13,"Context Switch, Confirm(User_ID=1, AddPiece(1,2))","Ok... How about adding one piece at position(1,2) for win 3.",Affirm(),"You can do that, since you have already won the game.",Tianyi,,,,,0-0-0-11-0-0-0-15-0-0-0-7-0-0-0-1
+58,100,14,"Context Switch, Request(User_ID=1, Rotate)","Can I put pieces of win5 in other patterns? I mean, something like direction...",Inform([90]),"Definitely you can put them in the other diagonal, from bottom left to top right. In other words, rotate the current form by 90 degrees.",Tianyi,,,,,10-0-0-0-0-9-0-0-0-0-14-0-0-0-0-2
+58,100,15,Finish(),I think I understand the rule. Do you want to play with me now?,Finish,"Glad you have learned something. Sorry, I am busy, maybe next time.",Tianyi,,,,,10-0-0-0-0-9-0-0-0-0-14-0-0-0-0-2

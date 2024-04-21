@@ -1,0 +1,20 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+656,60,0,Start(),Hello! Can you show me how to play Quarto?,Start,Yes! Let's do this!,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+656,60,1,RequestNewWinCondition(),Can you show me a win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-14-0-0-0-1-0-0-0-2-0-0-0-6-0-0
+656,60,2,"Same, Confirm(User_ID=1, Color)","For this board you showed me, does the color of the pieces make it a win?",Negate(),"No, obviously the colors are different.",Ruijie,5,5,Luke,,0-14-0-0-0-1-0-0-0-2-0-0-0-6-0-0
+656,60,3,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-4-0-0-2-0-0-8-0-0-7-0-0-0
+656,60,4,RequestNewWinCondition(),What about another win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-15-0-0-11-0-0-8-0-0-3-0-0-0
+656,60,5,RequestNewWinCondition(),Can you show me one more win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,10-0-0-0-0-4-0-0-0-0-16-0-0-0-0-8
+656,60,6,"Context Switch, Confirm(User_ID=1, Quantity)","Switch to this board, is it a win because of the number of pieces?
+",NotSure(),"Well, I'm not sure.",Ruijie,5,5,Luke,,0-14-0-0-0-1-0-0-0-2-0-0-0-6-0-0
+656,60,7,RequestNewWinCondition(),Can you show me a win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,9-0-0-0-13-0-0-0-5-0-0-0-7-0-0-0
+656,60,8,"Context Switch, Confirm(User_ID=1, Translate([0, 0]))","Switch to this board, can I move the pieces to the first column?",NotSure(),"Sorry, I'm not quite sure.",Ruijie,5,5,Luke,,0-14-0-0-0-1-0-0-0-2-0-0-0-6-0-0
+656,60,9,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-3-0-0-0-1-0-0-0-4-0-0-0-12-0
+656,60,10,"Context Switch, Confirm(User_ID=1, Shape)","Switch to this board, is it a win because the pieces are of the same shape?
+",Negate(),"Well, it's not. You can see that the pieces are not in the same shape.",Ruijie,5,5,Luke,,9-0-0-0-13-0-0-0-5-0-0-0-7-0-0-0
+656,60,11,"Context Switch, Request(User_ID=1, Translate)","Switch to this board, can I put the pieces somewhere else and still have a win?","Inform(['col1', 'col3'])","Yes, you can put them on the first column or the third column.",Ruijie,3,5,Luke,,0-0-3-0-0-0-1-0-0-0-4-0-0-0-12-0
+656,60,12,"Same, Confirm(User_ID=1, Height)","For this board, is it a win because the pieces are of the same height.",Negate(),"No, I don't think so.",Ruijie,5,5,Luke,,0-0-3-0-0-0-1-0-0-0-4-0-0-0-12-0
+656,60,13,"Same, Confirm(User_ID=1, Translate([0, 1]))",Can I move the pieces to the second column and maintain the win?,Affirm(),"Yes, that will still be a win.",Ruijie,5,5,Luke,,0-0-3-0-0-0-1-0-0-0-4-0-0-0-12-0
+656,60,14,"Same, Confirm(User_ID=1, Height)","Is it a win because the pieces are of the same height?
+",Negate(),"No, that's not the reason.",Ruijie,5,5,Luke,,0-0-3-0-0-0-1-0-0-0-4-0-0-0-12-0
+656,60,15,Finish(),Thanks! I got it!,Finish,You are welcome!,Ruijie,5,5,Luke,,0-0-3-0-0-0-1-0-0-0-4-0-0-0-12-0

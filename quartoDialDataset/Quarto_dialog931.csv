@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+931,60,0,Start(),"Hello, please teach me how to play Quarto.",Start,"Okay, let's start.",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+931,60,1,RequestNewWinCondition(),Please show me my first win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-14-9-1-5
+931,60,2,"Same, Confirm(User_ID=1, Shape)",Is this a win because of the shape of the pieces?,Negate(),"No, they are not the same shape. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-14-9-1-5
+931,60,3,"Same, RequestOtherPlayers()",How might another player be able to affect this win?,Inform([]),There is nothing they could do. ,Anthony,5,4,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-14-9-1-5
+931,60,4,"Same, Confirm(User_ID=1, AddPiece(2,3))",Would it be okay if I added a piece here?,Affirm(),"Yes, that's fine. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-14-9-1-5
+931,60,5,RequestNewWinCondition(),Please show me a new win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,11-0-0-0-0-8-0-0-0-0-16-0-0-0-0-4
+931,60,6,"Same, Confirm(User_ID=1, Hollowness)",Is this one a win because of the hollowness of the pieces?,NotSure(),I don't know.,Anthony,5,5,Yiyen,,11-0-0-0-0-8-0-0-0-0-16-0-0-0-0-4
+931,60,7,"Context Switch, RequestOtherPlayers()","Looking over at this board, how could another player affect this win. ",Inform([]),"There is no way another player could affect this win, either.",Anthony,5,4,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-14-9-1-5
+931,60,8,RequestNewWinCondition(),Please show me another new win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-16-12-10-4
+931,60,9,"Context Switch, Confirm(User_ID=1, Hollowness)","Looking back at this board, is this a win because all the pieces are hollow?",Affirm(),"Yes, that is exactly correct.",Anthony,5,5,Yiyen,,11-0-0-0-0-8-0-0-0-0-16-0-0-0-0-4
+931,60,10,Finish(),Thanks for your help.,Finish,"You're welcome, good luck. ",Anthony,5,5,Yiyen,,11-0-0-0-0-8-0-0-0-0-16-0-0-0-0-4

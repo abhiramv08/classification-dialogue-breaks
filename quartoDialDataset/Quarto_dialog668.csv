@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+668,60,0,Start(),Hey! Can you show me how to play Quarto?,Start,"Yes, let's begin!",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+668,60,1,RequestNewWinCondition(),Can you show me what a win condition looks like?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-3-1-2-5
+668,60,2,"Same, RequestOtherPlayers()","Can the other player undo this win?
+",Inform([]),"No, this win is absolute.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-3-1-2-5
+668,60,3,"Same, Confirm(User_ID=1, Rotate(45))",Can I rotate the pieces by forty five degrees?,Affirm(),"Sure, you can do that.",Ruijie,5,4,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-3-1-2-5
+668,60,4,"Same, Confirm(User_ID=1, AddPiece(1,3))","Can I add one more piece on the second row, the fourth column?",Affirm(),"Sure, that’s legit.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-3-1-2-5
+668,60,5,"Same, Request(User_ID=1, Rotate)",Can I rotate the pieces by some degrees and still have a win?,"Inform([45, 90])","Yes, you can rotate the pieces by forty five or ninety degrees.",Ruijie,5,4,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-3-1-2-5
+668,60,6,"Same, Request(User_ID=1, Rotate)",Can I rotate the pieces by some degrees and maintain the win?,"Inform([45, 90])","Yes, you can rotate the pieces by forty five or ninety degrees.",Ruijie,5,4,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-3-1-2-5
+668,60,7,"Same, Confirm(User_ID=1, Quantity)",Does the number of pieces make it a win?,Affirm(),"Yes, that's correct!",Ruijie,4,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-3-1-2-5
+668,60,8,"Same, Confirm(User_ID=1, Rotate(90))",Can I rotate the pieces by ninety degrees?,Affirm(),"Sure, you can do that.",Ruijie,5,4,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-3-1-2-5
+668,60,9,RequestNewWinCondition(),Can you show me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-13-0-0-0-2-0-0-0-10-0-0-0-5-0
+668,60,10,Finish(),Thanks! I got it!,Finish,My pleasure.,Ruijie,5,5,Luke,,0-0-13-0-0-0-2-0-0-0-10-0-0-0-5-0

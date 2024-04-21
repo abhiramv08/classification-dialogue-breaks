@@ -1,0 +1,15 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+219,100,0,Start(),Ready to tutor me in Quarto ?,Start,You bet !,Dmytro,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+219,100,1,RequestNewWinCondition(),Show me an example of how one can win.,Inform(),Assume you demonstrate this win condition,Dmytro,5,5,Tianyi,,0-3-0-0-0-8-0-0-0-4-0-0-0-16-0-0
+219,100,2,RequestNewWinCondition(),Alright; can you show me another board example ?,Inform(),Assume you demonstrate this win condition,Dmytro,5,5,Tianyi,,0-0-0-15-0-0-12-0-0-13-0-0-11-0-0-0
+219,100,3,"Context Switch, Confirm(User_ID=1, Color)","Back to the first example, is it the color of the pieces that determine whether I win ?",Negate(),"No, color makes no difference.",Dmytro,5,4,Tianyi,,0-3-0-0-0-8-0-0-0-4-0-0-0-16-0-0
+219,100,4,"Same, Request(User_ID=1, Translate)","Where else can I move these pieces, keeping them chained together as they currently are ?","Inform(['col0', 'col2', 'col3'])",You can move them to any of the vacant column.,Dmytro,5,5,Tianyi,,0-3-0-0-0-8-0-0-0-4-0-0-0-16-0-0
+219,100,5,RequestNewWinCondition(),Can you do one more winning board demo ?,Inform(),Assume you demonstrate this win condition,Dmytro,5,5,Tianyi,,3-0-0-0-0-5-0-0-0-0-13-0-0-0-0-15
+219,100,6,"Same , Confirm(User_ID=1, RemovePiece(1,2))",Can I win after removing this solid tall circle ? ,Negate(),"No, that would prevent you from winning.",Dmytro,5,5,Tianyi,,3-0-0-0-0-5-0-0-0-0-13-0-0-0-0-15
+219,100,7,RequestNewWinCondition(),I would like to see one more example of a winning board.,Inform(),Assume you demonstrate this win condition,Dmytro,5,4,Tianyi,,0-0-0-3-0-0-5-0-0-13-0-0-7-0-0-0
+219,100,8,"Context Switch, RequestOtherPlayers()","At this point, is there anything another player do to not lose ?",Inform([]),"No, no actions can be taken; you will definitely win.",Dmytro,5,4,Tianyi,,0-0-0-15-0-0-12-0-0-13-0-0-11-0-0-0
+219,100,9,"Same, Request(User_ID=1, Translate)","How can I move these pieces on the board, keeping them together same way ?",Inform([]),No such move is possible.,Dmytro,4,3,Tianyi,"Need to further explain ""same way""",0-0-0-15-0-0-12-0-0-13-0-0-11-0-0-0
+219,100,10,"Win Context Switch {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}","Moving on to another board, is this win in this board due to all pieces being hollow ?",Affirm(),Yup; that plays a role.,Dmytro,5,4,Tianyi,,0-3-0-0-0-8-0-0-0-4-0-0-0-16-0-0
+219,100,11,"Same, Request(User_ID=1, Translate)","Speaking of this configuration, how else can I move these pieces, preserving their relation to each other ?","Inform(['col0', 'col2', 'col3'])",You can put them on any empty column.,Dmytro,5,4,Tianyi,,0-3-0-0-0-8-0-0-0-4-0-0-0-16-0-0
+219,100,12,RequestNewWinCondition(),Can you provide me with another win board example ?,Inform(),Assume you demonstrate this win condition,Dmytro,5,5,Tianyi,,13-0-0-0-0-6-0-0-0-0-9-0-0-0-0-10
+219,100,13,Finish(),Thanks for the effort.,Finish,"Sure, any time.",Dmytro,5,5,Tianyi,,13-0-0-0-0-6-0-0-0-0-9-0-0-0-0-10

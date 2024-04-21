@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Board
+352,50,0,Start(),Could you please teach me the game of Quarto?,Start,I would be delighted.,Jacob,0-0-0-14-0-0-0-13-0-0-0-9-0-0-0-2
+352,50,1,RequestNewWinCondition(),Can you show me one way to win this game?,Inform,Assume you demonstrate this win condition,Jacob,0-0-0-0-0-0-0-0-0-0-0-0-6-10-2-8
+352,50,2,RequestNewWinCondition(),"Could you show me another, please?",Inform,Assume you demonstrate this win condition,Jacob,0-0-0-4-0-0-3-0-0-6-0-0-1-0-0-0
+352,50,3,RequestNewWinCondition(),Might I see another?,Inform,Assume you demonstrate this win condition,Jacob,0-0-0-6-0-0-0-4-0-0-0-16-0-0-0-12
+352,50,4,RequestNewWinCondition(),Could you show me one more?,Inform,Assume you demonstrate this win condition,Jacob,0-0-0-3-0-0-9-0-0-1-0-0-5-0-0-0
+352,50,5,RequestNewWinCondition(),I think I'm starting to understand. Can you show me another?,Inform,Assume you demonstrate this win condition,Jacob,0-0-0-0-0-0-0-0-0-0-0-0-7-15-5-8
+352,50,6,"Same, Confirm(User_ID=1, Hollowness)",Is this board a win because of the hollowness of the pieces?,Negate(),"No, these pieces could be hollow or solid and it would not matter.",Jacob,0-0-0-0-0-0-0-0-0-0-0-0-7-15-5-8
+352,50,7,"Context Switch, Confirm(User_ID=1, RemovePiece(1,1))","On this board, If the piece in the second row of the second column were removed, would this still be a win?",Negate(),"No, you need that piece for the win condition.",Jacob,0-0-0-3-0-0-9-0-0-1-0-0-5-0-0-0
+352,50,8,RequestNewWinCondition(),Can you show me a new winning board?,Inform,Assume you demonstrate this win condition,Jacob,11-0-0-0-0-8-0-0-0-0-12-0-0-0-0-16
+352,50,9,"Context Switch, RequestOtherPlayers()","On this board, what actions could another player make to take away this win?",Inform([]),There are no such actions that can be made by any player.,Jacob,0-0-0-0-0-0-0-0-0-0-0-0-7-15-5-8
+352,50,10,Finish(),I think I know enough now. Thank you for teaching me.,Finish,You're welcome. Goodbye.,Jacob,0-0-0-0-0-0-0-0-0-0-0-0-7-15-5-8

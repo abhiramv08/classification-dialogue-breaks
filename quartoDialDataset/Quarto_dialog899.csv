@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+899,60,0,Start(),"Hi, will you please teach me how to play Quarto?",Start,"Sure, let's get started. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+899,60,1,RequestNewWinCondition(),Pleas show me a new win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,4-0-0-0-6-0-0-0-2-0-0-0-10-0-0-0
+899,60,2,"Same, Request(User_ID=1, Translate)",How could I shift these pieces?,"Inform(['col1', 'col2', 'col3'])",You could slide them over to any other column.,Anthony,5,5,Yiyen,,4-0-0-0-6-0-0-0-2-0-0-0-10-0-0-0
+899,60,3,RequestNewWinCondition(),Please show me a new win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,9-0-0-0-0-12-0-0-0-0-10-0-0-0-0-13
+899,60,4,"Same, Confirm(User_ID=1, Rotate(90))",Could I rotate these pieces to be aligned vertically?,Affirm(),"Yes, that's fine. ",Anthony,4,5,Yiyen,,9-0-0-0-0-12-0-0-0-0-10-0-0-0-0-13
+899,60,5,"Same, Confirm(User_ID=1, Rotate(90))",Could I rotate these pieces to be vertical?,NotSure(),Now I'm not so sure. ,Anthony,5,5,Yiyen,,9-0-0-0-0-12-0-0-0-0-10-0-0-0-0-13
+899,60,6,"Same, Confirm(User_ID=1, Color)",Is this a win because of the color of the pieces?,Negate(),"No, color has nothing to do with this win. ",Anthony,5,5,Yiyen,,9-0-0-0-0-12-0-0-0-0-10-0-0-0-0-13
+899,60,7,"Context Switch, Confirm(User_ID=1, Quantity)","Looking back at this board, is it a win because of the number of pieces?",NotSure(),"I'm not sure about this either, sorry. ",Anthony,5,5,Yiyen,,4-0-0-0-6-0-0-0-2-0-0-0-10-0-0-0
+899,60,8,RequestNewWinCondition(),Please let me see another win.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-9-0-0-7-0-0-1-0-0-3-0-0-0
+899,60,9,"Context Switch, Confirm(User_ID=1, Rotate(90))","Looking back to this board again, could I rotate these pieces to be aligned in a vertical line?",Affirm(),"Yes, that's fine.",Anthony,5,5,Yiyen,,9-0-0-0-0-12-0-0-0-0-10-0-0-0-0-13
+899,60,10,Finish(),"Okay, thanks for the help!",Finish,Good luck!,Anthony,5,5,Yiyen,,9-0-0-0-0-12-0-0-0-0-10-0-0-0-0-13

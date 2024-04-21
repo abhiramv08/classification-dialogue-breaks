@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+399,50,0,Start(),Can you teach me about Quarto please?,Start,Sure,Daniel,,,,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+399,50,1,RequestNewWinCondition(),Can you show me a board where someone wins please?,Inform,Assume you demonstrate this win condition,Daniel,,,,,2-0-0-0-10-0-0-0-6-0-0-0-1-0-0-0
+399,50,2,"Same, Request(User_ID=1, Translate)",Can I slide these pieces somewhere and still win?,"Inform(['col1', 'col2'])",Yes you can move them one or two columns to the right.,Daniel,,,,,2-0-0-0-10-0-0-0-6-0-0-0-1-0-0-0
+399,50,3,RequestNewWinCondition(),Can you show me a different way to win?,Inform,Assume you demonstrate this win condition,Daniel,,,,,0-7-0-0-0-11-0-0-0-5-0-0-0-9-0-0
+399,50,4,"Context Switch, Confirm(User_ID=1, AddPiece(1,1))",For this other board if I add a piece to the right of the circle is it still a win?,NotSure(),I don't know,Daniel,,,,,2-0-0-0-10-0-0-0-6-0-0-0-1-0-0-0
+399,50,5,"Context Switch, Confirm(User_ID=1, Translate([0, 0]))","For this other board, is it still a win if I move the pieces one column to the left?",NotSure(),I don't know.,Daniel,,,,,0-7-0-0-0-11-0-0-0-5-0-0-0-9-0-0
+399,50,6,"Same, RequestOtherPlayers()",Can the other player prevent this win?,Inform([]),No,Daniel,,,,,0-7-0-0-0-11-0-0-0-5-0-0-0-9-0-0
+399,50,7,"Same, RequestOtherPlayers()",Can the other player prevent this win?,Inform([]),"No, you already asked that.",Daniel,,,,,0-7-0-0-0-11-0-0-0-5-0-0-0-9-0-0
+399,50,8,"Same, Confirm(User_ID=1, Color)",Is this a win because of the color of the pieces?,NotSure(),I don't know,Daniel,,,,,0-7-0-0-0-11-0-0-0-5-0-0-0-9-0-0
+399,50,9,RequestNewWinCondition(),Can you show me a different way to win?,Inform,Assume you demonstrate this win condition,Daniel,,,,,0-0-0-0-0-0-0-0-0-0-0-0-8-1-2-3
+399,50,10,"Same, Confirm(User_ID=1, Rotate(45))",If I rotate the pieces to the diagonal is it still a win?,Affirm(),Yes,Daniel,,,,,0-0-0-0-0-0-0-0-0-0-0-0-8-1-2-3
+399,50,11,"Context Switch, RequestOtherPlayers()","For this other board, can the other player stop the win?",Inform([]),No,Daniel,,,,,0-7-0-0-0-11-0-0-0-5-0-0-0-9-0-0
+399,50,12,"Same, Confirm(User_ID=1, Translate([0, 0]))",If I slide the pieces one column to the left is it still a win?,Affirm(),Yes,Daniel,,,,,0-7-0-0-0-11-0-0-0-5-0-0-0-9-0-0
+399,50,13,"Context Switch, Confirm(User_ID=1, Translate([1, 0]))","For this other board, if I move the pieces up one row is it still a win?",NotSure(),I don't know.,Daniel,,,,,0-0-0-0-0-0-0-0-0-0-0-0-8-1-2-3
+399,50,14,"Same, Confirm(User_ID=1, Height)",Is this a win because of the height of the pieces?,Affirm(),Yes,Daniel,,,,,0-0-0-0-0-0-0-0-0-0-0-0-8-1-2-3
+399,50,15,Finish(),Thank you!,Finish,No problem!,Daniel,,,,,0-0-0-0-0-0-0-0-0-0-0-0-8-1-2-3

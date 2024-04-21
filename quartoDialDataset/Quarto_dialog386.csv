@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+386,50,0,Start(),"Hi, could you teach me how to play Quarto?",Start,"Yes, let's begin!",Yiyan,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+386,50,1,RequestNewWinCondition(),Can you firstly demostrate a win conditon?,Inform,Assume you demonstrate this win condition,Yiyan,4,5,Luke,,1-0-0-0-0-6-0-0-0-0-4-0-0-0-0-3
+386,50,2,RequestNewWinCondition(),Could you please show me one more win condition?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Luke,,0-0-0-15-0-0-5-0-0-8-0-0-16-0-0-0
+386,50,3,"Context Switch, Request(User_ID=1, Translate)","For the first win you showed, how can I shift the pieces to get another win?",Inform([]),There is no way to do that.,Yiyan,4,5,Luke,,1-0-0-0-0-6-0-0-0-0-4-0-0-0-0-3
+386,50,4,"Same, Confirm(User_ID=1, AddPiece(3,1))","For the same board, would I still get a win if I add a piece on the forth row and second column?",Affirm(),"Yes, as long as you do not remove any other pieces.",Yiyan,5,4,Luke,,1-0-0-0-0-6-0-0-0-0-4-0-0-0-0-3
+386,50,5,"Context Switch, Request(User_ID=1, Rotate)","For this board, how can I rotate the pieces while still getting a win?",Inform([90]),You can rotate them to the first column.,Yiyan,5,5,Luke,,0-0-0-15-0-0-5-0-0-8-0-0-16-0-0-0
+386,50,6,RequestNewWinCondition(),Is there any other way to win?,Inform,Assume you demonstrate this win condition,Yiyan,5,4,Luke,,1-0-0-0-10-0-0-0-2-0-0-0-13-0-0-0
+386,50,7,"Context Switch, Confirm(User_ID=1, Height)","For this board, is it a win because of the heights of the pieces?",Affirm(),"Yes, as you can observe, all the pieces have the same height.",Yiyan,4,4,Luke,,1-0-0-0-0-6-0-0-0-0-4-0-0-0-0-3
+386,50,8,"Same, Confirm(User_ID=1, Color)","For the same board, is it a win because of the color of the pieces?",NotSure(),You got me. I do not know the answer.,Yiyan,5,4,Luke,,1-0-0-0-0-6-0-0-0-0-4-0-0-0-0-3
+386,50,9,"Context Switch, Confirm(User_ID=1, AddPiece(0,3))","Ok, let's turn to this board, will it still be a win if I add a piece on the bottom right corner?",Affirm(),"Yes, can you get another win condition by doing so.",Yiyan,5,4,Luke,,1-0-0-0-10-0-0-0-2-0-0-0-13-0-0-0
+386,50,10,Finish(),Thanks for your help!,Finish,You are welcome!,Yiyan,4,4,Luke,,1-0-0-0-10-0-0-0-2-0-0-0-13-0-0-0

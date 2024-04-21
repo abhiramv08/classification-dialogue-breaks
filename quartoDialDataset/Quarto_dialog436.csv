@@ -1,0 +1,20 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+436,50,0,Start(),Hello! Can you show me how to play Quarto?,Start,"Sure, let's get started!",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+436,50,1,RequestNewWinCondition(),Can you show me a win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,12-0-0-0-10-0-0-0-6-0-0-0-8-0-0-0
+436,50,2,RequestNewWinCondition(),Can you show me a win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,4,Luke,,6-0-0-0-3-0-0-0-7-0-0-0-8-0-0-0
+436,50,3,RequestNewWinCondition(),Can you show me a win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,3,Luke,,0-0-13-0-0-0-9-0-0-0-2-0-0-0-5-0
+436,50,4,"Context Switch, Confirm(User_ID=1, Quantity)","Switch to this board, is it a win because there are four pieces?",NotSure(),I'm actually not quite sure.,Ruijie,5,4,Luke,,12-0-0-0-10-0-0-0-6-0-0-0-8-0-0-0
+436,50,5,"Context Switch, Confirm(User_ID=1, Height)","Switch to this board, is it a win because they are of the same height?",Negate(),"No, it's not.",Ruijie,5,5,Luke,,0-0-13-0-0-0-9-0-0-0-2-0-0-0-5-0
+436,50,6,"Context Switch, Confirm(User_ID=1, Quantity)","Switch to this board, is it a win because there are four pieces?",Affirm(),"Yes, you are right about it.",Ruijie,5,2,Luke,,12-0-0-0-10-0-0-0-6-0-0-0-8-0-0-0
+436,50,7,RequestNewWinCondition(),Can you show me a win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,3,Luke,,0-0-0-1-0-0-5-0-0-2-0-0-3-0-0-0
+436,50,8,"Context Switch, Request(User_ID=1, Translate)","Switch to this board, can I put the pieces somewhere else?","Inform(['col1', 'col2'])","Sure, you can put them on column one ore column two.",Ruijie,5,5,Luke,,6-0-0-0-3-0-0-0-7-0-0-0-8-0-0-0
+436,50,9,"Context Switch, Confirm(User_ID=1, Rotate(90))","Switch to this board, can I rotate the pieces by ninety degrees?",Affirm(),"Sure, you can do that.",Ruijie,5,4,Luke,,0-0-0-1-0-0-5-0-0-2-0-0-3-0-0-0
+436,50,10,"Same, Request(User_ID=1, Rotate)",Can rotate the pieces by some degrees?,Inform([90]),"Sure, just rotate them by 90 degrees.",Ruijie,5,2,Luke,,0-0-0-1-0-0-5-0-0-2-0-0-3-0-0-0
+436,50,11,"Same, Confirm(User_ID=1, Quantity)","Is it a win because there are four pieces?
+",NotSure(),I'm actually not quite sure.,Ruijie,5,3,Luke,,0-0-0-1-0-0-5-0-0-2-0-0-3-0-0-0
+436,50,12,"Context Switch, Confirm(User_ID=1, Shape)","Switch to this board, does the shape of the pieces make it a win?
+",NotSure(),I'm actually not quite sure.,Ruijie,5,5,Luke,,0-0-13-0-0-0-9-0-0-0-2-0-0-0-5-0
+436,50,13,RequestNewWinCondition(),Can you show me a win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,4,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-7-8-6-4
+436,50,14,"Context Switch, Request(User_ID=1, Rotate)","Switch to this board, can I rotate the pieces and maintain the win?
+",Inform([0]),"No, you can't rotate them.",Ruijie,5,5,Luke,,12-0-0-0-10-0-0-0-6-0-0-0-8-0-0-0
+436,50,15,Finish(),Thank you so much! I think I've learned enough.,Finish,You're welcome!,Ruijie,5,4,Luke,,12-0-0-0-10-0-0-0-6-0-0-0-8-0-0-0

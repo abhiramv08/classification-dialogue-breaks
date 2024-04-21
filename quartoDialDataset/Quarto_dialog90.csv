@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+90,100,0,Start(),"Hi, I'd like to learn how to play Quarto",Start,"Sure, let me teach you",Dmytro,5,5,Jason,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+90,100,1,RequestNewWinCondition(),I would like for you to show me a board that makes it so that I win,Inform(),Assume you demonstrate this win condition,Dmytro,5,5,Jason,,0-0-0-0-0-0-0-0-0-0-0-0-4-6-2-14
+90,100,2,"Win Same {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}",Is it the hollowness that makes this board winning ?,Negate(),"No, it is not.",Dmytro,5,4,Jason,Awkwardly phrased question,0-0-0-0-0-0-0-0-0-0-0-0-4-6-2-14
+90,100,3,"Same, Confirm(User_ID=1, Translate('row1'))",Can I move all of these pieces to the first row ?,Affirm,"Yes, you would still win if you do.",Dmytro,4,5,Jason,Should ask if it would still be a win if you move all the pieces.,0-0-0-0-0-0-0-0-0-0-0-0-4-6-2-14
+90,100,4,RequestNewWinCondition(),I would like for you to show me a winning board once more.,Inform(),Assume you demonstrate this win condition,Dmytro,5,5,Jason,,8-0-0-0-0-1-0-0-0-0-5-0-0-0-0-4
+90,100,5,"Context Switch, Request(User_ID=1, Rotate)","Speaking of the first winning board, how can I rotate the pieces ?","Inform([45, 90])",You can place them vertically or put them on a diagonal.,Dmytro,5,5,Jason,,0-0-0-0-0-0-0-0-0-0-0-0-4-6-2-14
+90,100,6,"Context Switch, Confirm(User_ID=1, Color)","In regards of the last board you showed me, is it the color of the pieces that makes me win ?",Negate(),"No, color does not count here",Dmytro,5,5,Jason,,8-0-0-0-0-1-0-0-0-0-5-0-0-0-0-4
+90,100,7,"Same, RequestOtherPlayers()",What can another player do to prevent me from winning ?,Inform([]),You are guaranteed to win here.,Dmytro,4,4,Jason,Should mention explicitly that nothing can be done to prevent win.,8-0-0-0-0-1-0-0-0-0-5-0-0-0-0-4
+90,100,8,"Same, Confirm(User_ID=1, Height)",Is it the height of the pieces that make it a winning board ?,Affirm(),Height does matter here.,Dmytro,5,5,Jason,,8-0-0-0-0-1-0-0-0-0-5-0-0-0-0-4
+90,100,9,RequestNewWinCondition(),Can you show me yet another example of a board where I win ?,Inform(),Assume you demonstrate this win condition,Dmytro,5,5,Jason,,0-0-0-0-0-0-0-0-0-0-0-0-14-15-10-13
+90,100,10,RequestNewWinCondition(),"Could you do that once more, please ?",Inform(),Assume you demonstrate this win condition,Dmytro,5,5,Jason,,6-0-0-0-0-8-0-0-0-0-14-0-0-0-0-7
+90,100,11,Finish(),"Alright, I think I am ready.",Finish,Good. See you,Dmytro,5,5,Jason,,6-0-0-0-0-8-0-0-0-0-14-0-0-0-0-7

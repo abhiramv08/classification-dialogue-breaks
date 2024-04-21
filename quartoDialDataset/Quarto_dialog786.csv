@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+786,60,0,Start(),"
+Can you teach me how to play Quarto?",Start,"
+Sure, let's start.",Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+786,60,1,RequestNewWinCondition(),Can you show me a win condition to start?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-13-0-0-16-0-0-11-0-0-12-0-0-0
+786,60,2,RequestNewWinCondition(),Please show me one more win condition.,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,3-0-0-0-0-11-0-0-0-0-1-0-0-0-0-4
+786,60,3,RequestNewWinCondition(),Can you show me one more winning board?,Inform,Assume you demonstrate this win condition,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-2-6-5-14
+786,60,4,"Same, Request(User_ID=1, Rotate)",Do you know how can I aline these pieces in different angle and keep winning?,"Inform([45, 90])",You can pleace them vertically or diagonally.,Derek,4,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-2-6-5-14
+786,60,5,"Same, Confirm(User_ID=1, Color)",Is the color of pieces important for this win?,Negate(),No.,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-2-6-5-14
+786,60,6,"Same, Confirm(User_ID=1, Shape)",Is the shape of pieces important for this win?,NotSure(),I am not sure about that.,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-2-6-5-14
+786,60,7,"Same, Confirm(User_ID=1, AddPiece(2,2))",Can I add a piece at second block from top and right.,Affirm(),Sure. You can do that.,Derek,5,4,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-2-6-5-14
+786,60,8,"Same, Confirm(User_ID=1, Color)",Is the color of pieces important for this win?,NotSure(),I don't know.,Derek,5,4,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-2-6-5-14
+786,60,9,"Same, Confirm(User_ID=1, Height)",How about the height.,Negate(),Still wrong.,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-2-6-5-14
+786,60,10,Finish(),Thank you for teaching me today! ,Finish,You are welcome!,Derek,5,5,Shaobo,,0-0-0-0-0-0-0-0-0-0-0-0-2-6-5-14

@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+182,100,0,Start(),I want to learn how to play Quarto!,Start,I am willing to teach you!,Shaobo,5,4,Anthony,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+182,100,1,RequestNewWinCondition(),Could you show me a win?,Inform(),Assume you demonstrate this win condition,Shaobo,5,5,Anthony,,0-0-9-0-0-0-5-0-0-0-1-0-0-0-3-0
+182,100,2,"Same , Confirm(User_ID=1, Shape)",Is it a win because of the shapes of pieces?,Negate(),"No, it is a win because all pieces are green.",Shaobo,5,5,Anthony,,0-0-9-0-0-0-5-0-0-0-1-0-0-0-3-0
+182,100,3,"Same , Confirm(User_ID=1, AddPiece(1,3))",And is it still a win if I add a piece on the third row and the first column?,Affirm(),"Yes, it is still a win.",Shaobo,1,5,Anthony,"would this be second column, third row?",0-0-9-0-0-0-5-0-0-0-1-0-0-0-3-0
+182,100,4,"Same , Confirm(User_ID=1, RemovePiece(3,2))",And is it still a win if I remove the piece on the third column and the second row?,Negate(),"No, it will nor be a win anymore.",Shaobo,5,1,Anthony,typo. also I now see my rating for the previous dialog was wrong. ,0-0-9-0-0-0-5-0-0-0-1-0-0-0-3-0
+182,100,5,"Same, Confirm(User_ID=1, Height)",And is it a win because of the height of the pieces?,Negate(),"No, it is because all pieces are green.",Shaobo,5,5,Anthony,,0-0-9-0-0-0-5-0-0-0-1-0-0-0-3-0
+182,100,6,"Same, Confirm(User_ID=1, Quantity)","Also, does the number of pieces on the board affect the win?",Affirm(),"Yes, the number of pieces matters.",Shaobo,5,5,Anthony,,0-0-9-0-0-0-5-0-0-0-1-0-0-0-3-0
+182,100,7,RequestNewWinCondition(),Could you show me a new win?,Inform(),Assume you demonstrate this win condition,Shaobo,5,5,Anthony,,0-0-0-0-0-0-0-0-0-0-0-0-9-11-10-16
+182,100,8,RequestNewWinCondition(),Could you show me one more winning board?,Inform(),Assume you demonstrate this win condition,Shaobo,5,5,Anthony,,12-0-0-0-0-10-0-0-0-0-13-0-0-0-0-11
+182,100,9,"Context Switch, Confirm(User_ID=1, AddPiece(1,3))",Is it still a win if I add a piece on the first column and the third row?,Affirm(),"Yes, it is still a win.",Shaobo,5,5,Anthony,,0-0-0-0-0-0-0-0-0-0-0-0-9-11-10-16
+182,100,10,RequestNewWinCondition(),Could you show me another win condition?,Inform(),Assume you demonstrate this win condition,Shaobo,5,5,Anthony,,0-11-0-0-0-4-0-0-0-10-0-0-0-2-0-0
+182,100,11,"Same, RequestOtherPlayers()","For this board, what actions could another player take to revoke this win?",Inform([]),There is nothing that he or she could do to revoke the win.,Shaobo,5,5,Anthony,,0-11-0-0-0-4-0-0-0-10-0-0-0-2-0-0
+182,100,12,RequestNewWinCondition(),Can you show me one more winning board?,Inform(),Assume you demonstrate this win condition,Shaobo,5,5,Anthony,,0-0-0-11-0-0-2-0-0-10-0-0-12-0-0-0
+182,100,13,"Same , Confirm(User_ID=1, AddPiece(2,1))",Is it still a win if I add a piece on the second column and the first row?,Affirm(),"Yes, it is still a win.",Shaobo,5,5,Anthony,,0-0-0-11-0-0-2-0-0-10-0-0-12-0-0-0
+182,100,14,RequestNewWinCondition(),Is there any other way to win?,Inform(),Assume you demonstrate this win condition,Shaobo,5,5,Anthony,,11-0-0-0-0-3-0-0-0-0-2-0-0-0-0-9
+182,100,15,Finish(),Thanks! I learned a lot!,Finish,You are welcome!,Shaobo,5,5,Anthony,,11-0-0-0-0-3-0-0-0-0-2-0-0-0-0-9

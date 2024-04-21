@@ -1,0 +1,18 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+708,60,0,Start(),"Hi, can you show me how to play Quarto?",Start,"Sure, let's start.",Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+708,60,1,RequestNewWinCondition(),Can you show me what a win condition looks like?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-6-7-8-13
+708,60,2,"Same, Confirm(User_ID=1, Shape)","For this board, is it a win because the pieces are of the same shape?
+",Affirm(),That's right. You can see that they are all circles.,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-6-7-8-13
+708,60,3,RequestNewWinCondition(),Could you give me a win condition?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-0-0-12-0-0-2-0-0-4-0-0-8-0-0-0
+708,60,4,"Context Switch, Request(User_ID=1, Translate)","Switch to this board, can I put the pieces somewhere else and still have a win?","Inform(['row1', 'row2', 'row3'])","Yes, you can put them on the first, the second or the third row.",Ruijie,3,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-6-7-8-13
+708,60,5,RequestNewWinCondition(),Can you give me a new win?,Inform,Assume you demonstrate this win condition,Ruijie,5,5,Luke,,0-4-0-0-0-5-0-0-0-2-0-0-0-8-0-0
+708,60,6,"Context Switch, Confirm(User_ID=1, Shape)","Switch to this board, is it a win because the pieces are of the same shape?",Negate(),"Nope, you can see that the one on the lower left corner is a circle while the rest of them are triangles.",Ruijie,5,5,Luke,,0-0-0-12-0-0-2-0-0-4-0-0-8-0-0-0
+708,60,7,"Context Switch, Confirm(User_ID=1, Shape)","Switch to this board, is it a win because the pieces are of the same shape?
+",NotSure(),"Sorry, I'm not sure.",Ruijie,5,5,Luke,,0-4-0-0-0-5-0-0-0-2-0-0-0-8-0-0
+708,60,8,"Context Switch, Confirm(User_ID=1, Color)","Switch to this board, is it a win because the pieces are in the same color?",NotSure(),"Well, I'm not sure.",Ruijie,5,5,Luke,,0-0-0-12-0-0-2-0-0-4-0-0-8-0-0-0
+708,60,9,"Same, Confirm(User_ID=1, Color)",Do the colors of the pieces make it a win?,Affirm(),"Yup, you can see that they are all in blue.",Ruijie,5,5,Luke,,0-0-0-12-0-0-2-0-0-4-0-0-8-0-0-0
+708,60,10,"Context Switch, Confirm(User_ID=1, AddPiece(1,2))","Switch to this board, can I add one more piece on the second row, the third column?",Affirm(),That's right.,Ruijie,5,5,Luke,,0-4-0-0-0-5-0-0-0-2-0-0-0-8-0-0
+708,60,11,"Context Switch, Request(User_ID=1, Rotate)","Switch to this board, can I rotate the pieces by some degrees?
+","Inform([45, 90])","Yes, you can rotate the pieces by forty five or ninety degrees.
+",Ruijie,4,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-6-7-8-13
+708,60,12,Finish(),Thanks! I think I got it!,Finish,You are welcome!,Ruijie,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-6-7-8-13

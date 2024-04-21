@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+856,60,0,Start(),"Hi, would you show me how to play Quarto?",Start,"Sure, let's begin.",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+856,60,1,RequestNewWinCondition(),Please show me another win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,10-0-0-0-0-16-0-0-0-0-4-0-0-0-0-2
+856,60,2,"Same, RequestOtherPlayers()",How could another player undo this win?,Inform([]),There is nothing they could do. ,Anthony,5,5,Yiyen,,10-0-0-0-0-16-0-0-0-0-4-0-0-0-0-2
+856,60,3,RequestNewWinCondition(),Please show me another win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-5-0-0-0-16-0-0-0-15-0-0-0-14-0-0
+856,60,4,"Context Switch, Confirm(User_ID=1, Quantity)","Looking back to this win, is the number of pieces important?",NotSure(),"I don't know, sorry. ",Anthony,5,5,Yiyen,,10-0-0-0-0-16-0-0-0-0-4-0-0-0-0-2
+856,60,5,"Same, Confirm(User_ID=1, Color)",Is this a win because of the color of the pieces?,Affirm(),"Yes, they are all the same color. ",Anthony,5,5,Yiyen,,10-0-0-0-0-16-0-0-0-0-4-0-0-0-0-2
+856,60,6,"Context Switch, Confirm(User_ID=1, Translate([0, 0]))","Let's look at this board, is this still a win if I shift the pieces like this?",NotSure(),I'm not sure about that either.,Anthony,5,4,Yiyen,,0-5-0-0-0-16-0-0-0-15-0-0-0-14-0-0
+856,60,7,"Same, Confirm(User_ID=1, Height)",Is this a win because of the height of the pieces?,Negate(),"No, that is not why. ",Anthony,5,4,Yiyen,,0-5-0-0-0-16-0-0-0-15-0-0-0-14-0-0
+856,60,8,RequestNewWinCondition(),Please show me another win.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-5-16-13-15
+856,60,9,RequestNewWinCondition(),How about one more win?,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-13-2-5-10
+856,60,10,"Context Switch, Confirm(User_ID=1, Height)","Looking back to this board, is the height of the pieces what determines this win?",NotSure(),I'm not sure about that. ,Anthony,5,4,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-5-16-13-15
+856,60,11,"Context Switch, Request(User_ID=1, Rotate)","Looking at this other board, how could I rotate the pieces?","Inform([45, 90])",You could rotate them to be diagonal or vertical.,Anthony,4,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-13-2-5-10
+856,60,12,Finish(),Thanks for the help.,Finish,Of course!,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-13-2-5-10

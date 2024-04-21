@@ -1,0 +1,15 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+130,100,0,Start(),"Hi, can you show me how to play Quarto?",Start,"Sure, let's start.",Yiyan,5,5,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+130,100,1,RequestNewWinCondition(),"So first, can you show me a winning condition?",Inform(),Assume you demonstrate this win condition,Yiyan,5,4,Daniel,,2-0-0-0-10-0-0-0-14-0-0-0-9-0-0-0
+130,100,2,RequestNewWinCondition(),"Maybe I still need a new winning condition, can you show me another one?",Inform(),Assume you demonstrate this win condition,Yiyan,5,4,Daniel,,0-0-0-0-0-0-0-0-0-0-0-0-10-13-1-6
+130,100,3,RequestNewWinCondition(),Sorry but I still need more winning condition?,Inform(),Assume you demonstrate this win condition,Yiyan,5,4,Daniel,,0-0-0-4-0-0-2-0-0-1-0-0-11-0-0-0
+130,100,4,"Same, Confirm(User_ID=1, Height)","I noticed that these pieces have different heights, does it matter?",Negate(),"No, the heights have nothing to do with the winning.",Yiyan,5,5,Daniel,,0-0-0-4-0-0-2-0-0-1-0-0-11-0-0-0
+130,100,5,"Same, Request(User_ID=1, Translate)",Can I move all the pieces around to get another winning condition?,Inform([]),"No, in this case you can not move these pieces any more.",Yiyan,5,5,Daniel,,0-0-0-4-0-0-2-0-0-1-0-0-11-0-0-0
+130,100,6,RequestNewWinCondition(),Can you show me another winning condition?,Inform(),Assume you demonstrate this win condition,Yiyan,5,4,Daniel,,13-0-0-0-0-11-0-0-0-0-15-0-0-0-0-16
+130,100,7,"Context Switch, RequestOtherPlayers()","In this case, how can the other player move to stop my winning?",Inform([]),"No, there is no way to stop this winning condition.",Yiyan,5,4,Daniel,,0-0-0-4-0-0-2-0-0-1-0-0-11-0-0-0
+130,100,8,"Context Switch, Confirm(User_ID=1, RemovePiece(0,1))","If I remove the green piece, will it still be a winning?",Negate(),"No, you must have all these pieces .",Yiyan,2,5,Daniel,There is more than 1 green piece,0-0-0-0-0-0-0-0-0-0-0-0-10-13-1-6
+130,100,9,"Context Switch, Confirm(User_ID=1, Shape)",Do the shapes of these pieces matter?,Affirm(),"Yes, they do.",Yiyan,5,5,Daniel,,0-0-0-4-0-0-2-0-0-1-0-0-11-0-0-0
+130,100,10,"Context Switch, Confirm(User_ID=1, Shape)","In this case, does the shape of pieces matter?",Negate(),No it does not.,Yiyan,5,5,Daniel,,2-0-0-0-10-0-0-0-14-0-0-0-9-0-0-0
+130,100,11,"Context Switch, Confirm(User_ID=1, RemovePiece(2,2))","In this winning condition, what if I remove the piece on the top right corner?",Negate(),Then it will not be a winning conditon.,Yiyan,3,4,Daniel,"2,2 is not the top right corner",0-0-0-4-0-0-2-0-0-1-0-0-11-0-0-0
+130,100,12,"Context Switch, Confirm(User_ID=1, Color)",Are the colors of these pieces related to this winning condition?,Negate(),"No, the color does not matter.",Yiyan,5,4,Daniel,,13-0-0-0-0-11-0-0-0-0-15-0-0-0-0-16
+130,100,13,Finish(),Thank you for answering me so many questinos.,Finish,You are welcome.,Yiyan,5,5,Daniel,,13-0-0-0-0-11-0-0-0-0-15-0-0-0-0-16

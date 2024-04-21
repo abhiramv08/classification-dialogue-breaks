@@ -1,0 +1,17 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+16,100,0,Start(),Can you teach me how to play Quarto?,Start,Yes! I will like to do that. ,Derek,5,4,Dave,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+16,100,1,RequestNewWinCondition(),Can you show me a win condition to start?,Inform(),Assume you demonstrate this win condition,Derek,5,4,Dave,,7-0-0-0-16-0-0-0-6-0-0-0-14-0-0-0
+16,100,2,"Same , Confirm(User_ID=1, RemovePiece(1,0))","Can I remove the piece at (1,0) and keep winning?",Negate(),No it will no longer be a win condition if you do that.,Derek,5,4,Dave,,7-0-0-0-16-0-0-0-6-0-0-0-14-0-0-0
+16,100,3,RequestNewWinCondition(),Can you show me another win condition.,Inform(),Assume you demonstrate this win condition,Derek,5,4,Dave,,0-0-0-0-0-0-0-0-0-0-0-0-12-10-1-9
+16,100,4,RequestNewWinCondition(),Can you show me one more win condition?,Inform(),Assume you demonstrate this win condition,Derek,5,4,Dave,,0-0-0-5-0-0-15-0-0-7-0-0-3-0-0-0
+16,100,5,"Context Switch, Confirm(User_ID=1, RemovePiece(0,3))","For the second win condition, can I remove the piece at (0,3)?",Negate(),No the board will no longer be a win condition if you do that.,Derek,5,4,Dave,,0-0-0-0-0-0-0-0-0-0-0-0-12-10-1-9
+16,100,6,"Same, Confirm(User_ID=1, Quantity)","For that win condition, do I have to have 4 pieces to win?",Affirm(),Yes you must have 4 pieces to win.,Derek,5,5,Dave,,0-0-0-0-0-0-0-0-0-0-0-0-12-10-1-9
+16,100,7,"Context Switch, Confirm(User_ID=1, Quantity)","For the thrid win condition, is that a win because of the quantity of pieces.",Affirm(),Yes.,Derek,5,5,Dave,,0-0-0-5-0-0-15-0-0-7-0-0-3-0-0-0
+16,100,8,"Context Switch, Confirm(User_ID=1, Consistency)","For the first win condition, is that a win because of the consistency of pieces.",Negate(),No that not the reason to win.,Derek,5,5,Dave,,7-0-0-0-16-0-0-0-6-0-0-0-14-0-0-0
+16,100,9,"Context Switch, Confirm(User_ID=1, Rotate(45))","For the second win condition, can I place these pieces diagonally and keep winning?",Affirm(),Yes.,Derek,5,5,Dave,,0-0-0-0-0-0-0-0-0-0-0-0-12-10-1-9
+16,100,10,"Same , Confirm(User_ID=1, Shape)",Is that a win because of the shape of pieces?,Affirm(),Yes the shape is a reason to win in that case.,Derek,5,4,Dave,,0-0-0-0-0-0-0-0-0-0-0-0-12-10-1-9
+16,100,11,"Context Switch, Confirm(User_ID=1, Height)","For the firsts win condition, is that a win because of the height of the pieces?",Negate(),No.,Derek,5,5,Dave,,7-0-0-0-16-0-0-0-6-0-0-0-14-0-0-0
+16,100,12,"Same, Confirm(User_ID=1, Quantity)","How about the quantity of the pieces, is that a reason to win?",Affirm(),Yes you win because you have four pieces in a column.,Derek,5,4,Dave,,7-0-0-0-16-0-0-0-6-0-0-0-14-0-0-0
+16,100,13,"Same , Confirm(User_ID=1, Consistency)",Is that a win because of the consistency of pieces?,Negate(),No.,Derek,5,4,Dave,,7-0-0-0-16-0-0-0-6-0-0-0-14-0-0-0
+16,100,14,"Same , Confirm(User_ID=1, AddPiece(3,3))","If I add a piece at (3,3) in that board, is that still going to be a win?",Affirm(),Sure. ,Derek,5,5,Dave,,7-0-0-0-16-0-0-0-6-0-0-0-14-0-0-0
+16,100,15,Finish(),Thanks for teaching me about Quarto! Bye!,Finish,You are welcome. Bye!,Derek,5,5,Dave,,7-0-0-0-16-0-0-0-6-0-0-0-14-0-0-0

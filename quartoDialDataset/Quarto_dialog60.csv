@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+60,100,0,Start(),Do you know Quartos?,Start,"Yeah, that is a fun game.",Tianyi,,,,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+60,100,1,RequestNewWinCondition(),How can I win in this funny game?,Inform(),Assume you demonstrate this win condition,Tianyi,,,,,0-0-0-4-0-0-0-10-0-0-0-2-0-0-0-3
+60,100,2,"Same , Confirm(User_ID=1, Shape)","Triangles! So, that shape brings the victory?",Affirm(),"Right! The shape matters, Mr. genius.",Tianyi,,,,,0-0-0-4-0-0-0-10-0-0-0-2-0-0-0-3
+60,100,3,RequestNewWinCondition(),Love that! Any other condition for wining?,Inform(),Assume you demonstrate this win condition,Tianyi,,,,,0-0-0-0-0-0-0-0-0-0-0-0-12-4-8-15
+60,100,4,"Context Switch, Confirm(User_ID=1, Rotate(135))","Interesting, the direction changed. What if I put win1 in that direction? Is that still a win?",Affirm(),That is.,Tianyi,,,,,0-0-0-4-0-0-0-10-0-0-0-2-0-0-0-3
+60,100,5,"Same, Request(User_ID=1, Rotate)",That is not the only win direction for win1 right?,"Inform([135, 180])","Yeah, you can also put it in diagonal or reverse the order of the triangles.",Tianyi,,,,,0-0-0-4-0-0-0-10-0-0-0-2-0-0-0-3
+60,100,6,"Same, Request(User_ID=1, Rotate)",What?,"Inform([135, 180])","I mean, direction is not a necessary win condition. You can put it in direction like the diagonal from bottom left to top right or in reversed direction.",Tianyi,,,,,0-0-0-4-0-0-0-10-0-0-0-2-0-0-0-3
+60,100,7,"Context Switch, RequestOtherPlayers()","Ok. And, will the win condition in win2 be changed by someone?",Inform([]),"No, no one can change it.",Tianyi,,,,,0-0-0-0-0-0-0-0-0-0-0-0-12-4-8-15
+60,100,8,"Context Switch, Confirm(User_ID=1, Height)","Got it! So, still for win1, does the height plays a role in the win?",Negate(),"No, it is unnecessary.",Tianyi,,,,,0-0-0-4-0-0-0-10-0-0-0-2-0-0-0-3
+60,100,9,"Context Switch, RequestOtherPlayers()","For win2, does the win condition be affected by other players?",Inform([]),"Yes, the piece you got is chosen by your opponent. That is the charm of the game!",Tianyi,,,,,0-0-0-0-0-0-0-0-0-0-0-0-12-4-8-15
+60,100,10,RequestNewWinCondition(),Any more wins? I want to learn more!,Inform(),Assume you demonstrate this win condition,Tianyi,,,,,0-0-0-0-0-0-0-0-0-0-0-0-7-5-3-11
+60,100,11,Finish(),"Yeah, you are right. That a really funny game! I can't wait to show you my STRATAGY!",Finish,Come on! GAME START NOW!,Tianyi,,,,,0-0-0-0-0-0-0-0-0-0-0-0-7-5-3-11

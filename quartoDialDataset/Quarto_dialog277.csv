@@ -1,0 +1,14 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+277,50,0,Start(),Can you teach me how to plar Quarto today?,Start,No problem!,Derek,5,5,Tianyi,,0-0-13-0-0-0-6-0-0-0-8-0-0-0-14-0
+277,50,1,RequestNewWinCondition(),Can you give me a win condition to start?,Inform,Assume you demonstrate this win condition,Derek,5,5,Tianyi,,0-0-0-3-0-0-0-13-0-0-0-1-0-0-0-11
+277,50,2,"Same, Confirm(User_ID=1, Translate([0, 1]))","Can I move the piece to (0,1) amd keep winnig?",NotSure(),Sorry I am not sure what are you asking.,Derek,2,4,Tianyi,It is asking to move all pieces to the second column.,0-0-0-3-0-0-0-13-0-0-0-1-0-0-0-11
+277,50,3,RequestNewWinCondition(),Can you give me another win condition?,Inform,Assume you demonstrate this win condition,Derek,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-3-12-9-10
+277,50,4,RequestNewWinCondition(),One more please.,Inform,Assume you demonstrate this win condition,Derek,5,4,Tianyi,,4-0-0-0-0-5-0-0-0-0-3-0-0-0-0-2
+277,50,5,RequestNewWinCondition(),Actually I need one more win condition.,Inform,Assume you demonstrate this win condition,Derek,5,5,Tianyi,,0-0-0-5-0-0-0-8-0-0-0-6-0-0-0-14
+277,50,6,"Same, Confirm(User_ID=1, Quantity)",For the last board you showed me. Do I need to have at least four peices to win?,Affirm(),Yes.,Derek,5,5,Tianyi,,0-0-0-5-0-0-0-8-0-0-0-6-0-0-0-14
+277,50,7,"Context Switch, Confirm(User_ID=1, Rotate(90))",Switching to this board. Is that still a win if I rotate the board by 90 degree and place them vertically.,Affirm(),"Sure, you can do that and keep winning.",Derek,4,5,Tianyi,,4-0-0-0-0-5-0-0-0-0-3-0-0-0-0-2
+277,50,8,"Context Switch, Confirm(User_ID=1, Shape)","Let's switching to this win condition, is that a win becase all pieces have a circle shape?",Affirm(),Yes.,Derek,5,5,Tianyi,,0-0-0-5-0-0-0-8-0-0-0-6-0-0-0-14
+277,50,9,"Context Switch, Confirm(User_ID=1, RemovePiece(1,2))",In this win condition. Can I remove the second piece from top and keep winning?,NotSure(),"Sorry, I am not sure about that.",Derek,3,5,Tianyi,That is the second piece from bottom.,4-0-0-0-0-5-0-0-0-0-3-0-0-0-0-2
+277,50,10,"Same, Confirm(User_ID=1, Hollowness)",How about the hollowness of these pieces. Is that the reason it's a win condition?,NotSure(),"Sorry, I am not sure about that as well.",Derek,5,5,Tianyi,,4-0-0-0-0-5-0-0-0-0-3-0-0-0-0-2
+277,50,11,"Same, Confirm(User_ID=1, Quantity)",It't ok. Do you know if I need to have at least 4 pieces to win?,Affirm(),"Yes, you are correct.",Derek,4,4,Tianyi,,4-0-0-0-0-5-0-0-0-0-3-0-0-0-0-2
+277,50,12,Finish(),Thanks for teaching me today! Bye!,Finish,No problem!,Derek,5,5,Tianyi,,4-0-0-0-0-5-0-0-0-0-3-0-0-0-0-2

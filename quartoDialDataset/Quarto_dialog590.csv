@@ -1,0 +1,15 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+590,60,0,Start(),Excuse me. Do you know how to play Quarto?,Start,"Yes, and I can show you how.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+590,60,1,RequestNewWinCondition(),Great. Could you firstly show me a win condition?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-8-13-7-16
+590,60,2,"Same, Confirm(User_ID=1, Quantity)","For the win you just showed, does the number of the pieces relate to the win?",NotSure(),I dare say.,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-8-13-7-16
+590,60,3,RequestNewWinCondition(),Is there any other way to win the game?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-13-0-0-0-6-0-0-0-15-0-0-0-7-0-0
+590,60,4,RequestNewWinCondition(),Could you please show me one more win scenario?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-1-0-0-0-6-0-0-0-14-0-0-0-10-0
+590,60,5,"Same, Confirm(User_ID=1, Translate([0, 1]))","For the win you just showed, can I shift the pieces to the second column while maintaining the win?",Affirm(),"Yes, actually you can shift the pieces to any other columns.",Yiyan,5,5,Tianyi,,0-0-1-0-0-0-6-0-0-0-14-0-0-0-10-0
+590,60,6,"Same, Confirm(User_ID=1, Quantity)","For the same board, does the number of the pieces relate to the win?",Affirm(),You are right. You must have at least four pieces in order to win.,Yiyan,5,5,Tianyi,,0-0-1-0-0-0-6-0-0-0-14-0-0-0-10-0
+590,60,7,RequestNewWinCondition(),Can you show me another way to win the game?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,3-0-0-0-0-1-0-0-0-0-7-0-0-0-0-13
+590,60,8,RequestNewWinCondition(),Could you please show me one more win case?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,0-0-0-15-0-0-14-0-0-8-0-0-6-0-0-0
+590,60,9,"Same, Confirm(User_ID=1, Height)","For the same board, is this a win because of the heights of the pieces?",NotSure(),"I guess not, but I am not sure.",Yiyan,5,5,Tianyi,,0-0-0-15-0-0-14-0-0-8-0-0-6-0-0-0
+590,60,10,"Same, RequestOtherPlayers()","For the same board, how can the other player do to stop this win?	",Inform([]),"There is nothing he or she can do, since you have won the game.",Yiyan,5,5,Tianyi,,0-0-0-15-0-0-14-0-0-8-0-0-6-0-0-0
+590,60,11,RequestNewWinCondition(),Could you first show me one way to win the game?,Inform,Assume you demonstrate this win condition,Yiyan,5,5,Tianyi,,10-0-0-0-0-2-0-0-0-0-5-0-0-0-0-13
+590,60,12,"Context Switch, Confirm(User_ID=1, Quantity)","Let's switch to this board, does the number of the pieces relate to the win?",Affirm(),"Yes, four pieces are necessary to the win.",Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-8-13-7-16
+590,60,13,Finish(),"That's all the information I want to know, thank you.",Finish,You are welcome.,Yiyan,5,5,Tianyi,,0-0-0-0-0-0-0-0-0-0-0-0-8-13-7-16

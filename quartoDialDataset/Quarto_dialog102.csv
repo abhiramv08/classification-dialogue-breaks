@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+102,100,0,Start(),"Hi, can you teach me how to play Quarto?",Start,"Sure, let's get started",John,,,,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+102,100,1,RequestNewWinCondition(),Can you please show me an example of a winning board?,Inform(),Assume you demonstrate this win condition,John,,,,,0-0-0-3-0-0-0-1-0-0-0-8-0-0-0-4
+102,100,2,RequestNewWinCondition(),Can you show me another win condition?,Inform(),Assume you demonstrate this win condition,John,,,,,0-0-6-0-0-0-2-0-0-0-5-0-0-0-13-0
+102,100,3,RequestNewWinCondition(),Can I please see a different winning scenario?,Inform(),Assume you demonstrate this win condition,John,,,,,0-0-0-0-0-0-0-0-0-0-0-0-14-6-12-8
+102,100,4,"Same, Request(User_ID=1, Translate)","For this board, which rows can the all the pieces be translated to and still be a win?","Inform(['row1', 'row2', 'row3'])","The pieces can be moved to any other row and still be a winning scenario. This would be the top row, second row, and third row",John,,,,,0-0-0-0-0-0-0-0-0-0-0-0-14-6-12-8
+102,100,5,"Context Switch, Confirm(User_ID=1, Height)","Back to this board, is the height of the pieces the reason why this is a win?",Affirm(),"Yes, the height of the pieces was the cause for the win.",John,,,,,0-0-0-3-0-0-0-1-0-0-0-8-0-0-0-4
+102,100,6,"Context Switch, Confirm(User_ID=1, Translate('row2'))","For this board, is it still a win if all the pieces were moved into the second row from the top?",Affirm,"Yes, that would still be a win",John,,,,,0-0-0-0-0-0-0-0-0-0-0-0-14-6-12-8
+102,100,7,"Context Switch, Confirm(User_ID=1, AddPiece(2,0))","For the board here, is it still a win if a piece is added in the leftmost column, second row from the top?",Affirm(),"Yes, that would still be a win.",John,,,,,0-0-6-0-0-0-2-0-0-0-5-0-0-0-13-0
+102,100,8,RequestNewWinCondition(),Can you show me another win condition?,Inform(),Assume you demonstrate this win condition,John,,,,,0-0-0-9-0-0-3-0-0-12-0-0-4-0-0-0
+102,100,9,"Same , Confirm(User_ID=1, RemovePiece(2,2))","For this board, is it still a win if I remove the piece in the third column and third row from the bottom?",Negate(),"No, removing that piece would no longer be a win",John,,,,,0-0-0-9-0-0-3-0-0-12-0-0-4-0-0-0
+102,100,10,Finish(),"Okay, I am done playing for now. Thank you!",Finish,"You're welcome, bye!",John,,,,,0-0-0-9-0-0-3-0-0-12-0-0-4-0-0-0

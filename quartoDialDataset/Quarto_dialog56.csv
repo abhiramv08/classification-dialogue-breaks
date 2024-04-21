@@ -1,0 +1,13 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+56,100,0,Start(),Could you tell me how to play Quarto?,Start,Sure.,Tianyi,,,,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+56,100,1,RequestNewWinCondition(),"So, how can I win in the Quarto?",Inform(),Assume you demonstrate this win condition,Tianyi,,,,,8-0-0-0-0-4-0-0-0-0-3-0-0-0-0-6
+56,100,2,RequestNewWinCondition(),Is there any other ways to win?,Inform(),Assume you demonstrate this win condition,Tianyi,,,,,0-13-0-0-0-11-0-0-0-3-0-0-0-1-0-0
+56,100,3,"Same, Confirm(User_ID=1, Translate('col0'))","For win2, what if I put that form of pieces in the first column? Would it still be a win condition.",Affirm,"Yeah, if you do that you can still win the game.",Tianyi,,,,,0-13-0-0-0-11-0-0-0-3-0-0-0-1-0-0
+56,100,4,"Same, Confirm(User_ID=1, Translate('col2'))","Ok, how about move it right for one column?",Affirm,"Same thing, it is still a win.",Tianyi,,,,,0-13-0-0-0-11-0-0-0-3-0-0-0-1-0-0
+56,100,5,"Same , Confirm(User_ID=1, Color)","Got it. And, does the color matter in win2?",Affirm(),"It matters, In this case, that is exactly the win condition.",Tianyi,,,,,0-13-0-0-0-11-0-0-0-3-0-0-0-1-0-0
+56,100,6,"Context Switch, Request(User_ID=1, Rotate)","I feel like I have learned something. So, for win1, can I put the pieces in different form?",Inform([90]),"You can put them in the other diagonal, and you should still keep them in a line.",Tianyi,,,,,8-0-0-0-0-4-0-0-0-0-3-0-0-0-0-6
+56,100,7,"Same, Confirm(User_ID=1, Height)","Seems like the height is one conditon for win, is it?",Affirm(),"Yep, you are right.",Tianyi,,,,,8-0-0-0-0-4-0-0-0-0-3-0-0-0-0-6
+56,100,8,"Same, Confirm(User_ID=1, Rotate(90))",You just said I can put the pieces in the other diagonal right?,Affirm(),"Right, and that is still a win condtion.",Tianyi,,,,,8-0-0-0-0-4-0-0-0-0-3-0-0-0-0-6
+56,100,9,"Same , Confirm(User_ID=1, Shape)",Is it wins because of the height?,Negate(),No.,Tianyi,,,,,8-0-0-0-0-4-0-0-0-0-3-0-0-0-0-6
+56,100,10,"Context Switch, Confirm(User_ID=1, Height)","Really? And, does it win in win2 becasue of the height?",Negate(),"No, its not.",Tianyi,,,,,0-13-0-0-0-11-0-0-0-3-0-0-0-1-0-0
+56,100,11,Finish(),"Ok, I thought I have made some misunderstanding. But I still have learned a lot. Thanks!",Finish,You are weicome!,Tianyi,,,,,0-13-0-0-0-11-0-0-0-3-0-0-0-1-0-0

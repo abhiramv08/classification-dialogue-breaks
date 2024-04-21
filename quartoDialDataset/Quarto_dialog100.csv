@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+100,100,0,Start(),"Hi, do you think you can teach me how to play Quarto?",Start,"Of course, let's get started.",Jason,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+100,100,1,RequestNewWinCondition(),Can you show me a way to win the game?,Inform(),Assume you demonstrate this win condition,Jason,4,3,Luke,,10-0-0-0-0-13-0-0-0-0-6-0-0-0-0-5
+100,100,2,RequestNewWinCondition(),Can you show me another way to win the game?,Inform(),Assume you demonstrate this win condition,Jason,5,4,Luke,,9-0-0-0-0-16-0-0-0-0-12-0-0-0-0-14
+100,100,3,RequestNewWinCondition(),"Sorry for repeatedly asking, can you show me another way to win?",Inform(),Assume you demonstrate this win condition,Jason,4,4,Luke,,0-5-0-0-0-13-0-0-0-16-0-0-0-8-0-0
+100,100,4,"Context Switch, Request(User_ID=1, Translate)","Alright that's good enough for now. With that win condition you showed me, how could you move the pieces around the board all at once and still have a win?",Inform([]),There are no possible ways to move these pieces around and still have a win.,Jason,5,4,Luke,,9-0-0-0-0-16-0-0-0-0-12-0-0-0-0-14
+100,100,5,RequestNewWinCondition(),Gotcha. Do you think you can show me another way to win?,Inform(),Assume you demonstrate this win condition,Jason,5,3,Luke,,0-0-0-15-0-0-16-0-0-13-0-0-5-0-0-0
+100,100,6,RequestNewWinCondition(),How about another way to win?,Inform(),Assume you demonstrate this win condition,Jason,5,4,Luke,,1-0-0-0-4-0-0-0-3-0-0-0-5-0-0-0
+100,100,7,"Context Switch, Request(User_ID=1, Translate)","Alright so with that other win you just showed me, is there anyway the pieces in this pattern can be moved around all at once and still have a win?",Inform([]),"No, there are no possible ways.",Jason,5,3,Luke,,0-0-0-15-0-0-16-0-0-13-0-0-5-0-0-0
+100,100,8,RequestNewWinCondition(),Can you show me another way to win?,Inform(),Assume you demonstrate this win condition,Jason,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-14-13-10-16
+100,100,9,"Win Same {u'ActionName': u'Confirm_Hollowness', u'FirstPart': None, u'ID': 1, u'SecondPart': None}",Is this a valid win because of the hollowness of the pieces?,Negate(),"No, this has nothing to do with the hollowness.",Jason,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-14-13-10-16
+100,100,10,Finish(),Okay I think I know enough to play now. Thank you for the help!,Finish,"No problem, I hope we can play soon.",Jason,5,5,Luke,,0-0-0-0-0-0-0-0-0-0-0-0-14-13-10-16

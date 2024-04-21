@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+938,60,0,Start(),"Hi, please show me how to play.",Start,"Okay, let's start. ",Anthony,4,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+938,60,1,RequestNewWinCondition(),Please show me a new win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-14-7-8-6
+938,60,2,RequestNewWinCondition(),Please show me another win.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-1-0-0-4-0-0-2-0-0-10-0-0-0
+938,60,3,"Same, Confirm(User_ID=1, Rotate(90))",Could I put these pieces vertically?,NotSure(),"I do not know, sorry. ",Anthony,4,5,Yiyen,,0-0-0-1-0-0-4-0-0-2-0-0-10-0-0-0
+938,60,4,RequestNewWinCondition(),Please show me a new win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-12-0-0-0-2-0-0-0-8-0-0-0-14-0-0
+938,60,5,"Same, RequestOtherPlayers()",How can another player affect this win?,Inform([]),They can't do anything.,Anthony,4,5,Yiyen,,0-12-0-0-0-2-0-0-0-8-0-0-0-14-0-0
+938,60,6,"Same, Confirm(User_ID=1, Color)",Is this a win because of the color of the pieces?,NotSure(),"Uh, I'm not sure.",Anthony,5,5,Yiyen,,0-12-0-0-0-2-0-0-0-8-0-0-0-14-0-0
+938,60,7,"Same, Confirm(User_ID=1, Color)",Is this a win because of the color of the pieces?,Affirm(),I'm sure it is. ,Anthony,5,5,Yiyen,,0-12-0-0-0-2-0-0-0-8-0-0-0-14-0-0
+938,60,8,"Same, Request(User_ID=1, Translate)",How can I shift these pieces?,"Inform(['col2', 'col3'])",Two options are to move them to columns two and three. ,Anthony,5,4,Yiyen,,0-12-0-0-0-2-0-0-0-8-0-0-0-14-0-0
+938,60,9,"Same, Confirm(User_ID=1, AddPiece(2,3))",Could I add a piece here?,NotSure(),I'm not sure. ,Anthony,3,5,Yiyen,,0-12-0-0-0-2-0-0-0-8-0-0-0-14-0-0
+938,60,10,Finish(),Thanks for the help. ,Finish,"No problem, robot. ",Anthony,5,5,Yiyen,,0-12-0-0-0-2-0-0-0-8-0-0-0-14-0-0

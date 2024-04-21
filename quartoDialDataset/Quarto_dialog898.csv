@@ -1,0 +1,12 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+898,60,0,Start(),Hi would you mind teaching me Quarto?,Start,"Sure, that's no problem. ",Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+898,60,1,RequestNewWinCondition(),Please show me a win condition.,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-16-0-0-0-15-0-0-0-4-0-0-0-8-0-0
+898,60,2,"Same, Confirm(User_ID=1, Hollowness)",Is this a win because of the hollowness of the pieces?,Affirm(),"Yes, they are all hollow.",Anthony,5,4,Yiyen,allow -> allowed,0-16-0-0-0-15-0-0-0-4-0-0-0-8-0-0
+898,60,3,"Same, Request(User_ID=1, Translate)",How could I shift these pieces and keep the win?,"Inform(['col2', 'col3'])",You could slide them over into any column to the right.,Anthony,5,5,Yiyen,,0-16-0-0-0-15-0-0-0-4-0-0-0-8-0-0
+898,60,4,RequestNewWinCondition(),"Let me see a new winning board, please.",Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-14-0-0-0-10-0-0-0-9-0-0-0-15-0-0
+898,60,5,"Same, Confirm(User_ID=1, Translate([0, 2]))",Could I slide the pieces over here?,NotSure(),I'm not sure about that.,Anthony,3,5,Yiyen,,0-14-0-0-0-10-0-0-0-9-0-0-0-15-0-0
+898,60,6,RequestNewWinCondition(),Please show me another new win condition. ,Inform,Assume you demonstrate this win condition,Anthony,5,5,Yiyen,,0-0-0-0-0-0-0-0-0-0-0-0-11-15-3-12
+898,60,7,"Context Switch, Confirm(User_ID=1, Quantity)","Looking at this board, is this a win because of the number of pieces on the board?",Affirm(),"Yes, there must always be four. ",Anthony,3,5,Yiyen,,0-16-0-0-0-15-0-0-0-4-0-0-0-8-0-0
+898,60,8,"Same, Confirm(User_ID=1, Translate([0, 3]))",Could I slide the pieces over to this location?,NotSure(),I'm not sure.,Anthony,3,5,Yiyen,,0-16-0-0-0-15-0-0-0-4-0-0-0-8-0-0
+898,60,9,"Context Switch, Confirm(User_ID=1, AddPiece(0,3))","Looking at this board, could I add a piece here?",NotSure(),I'm not sure about that either.,Anthony,3,5,Yiyen,,0-14-0-0-0-10-0-0-0-9-0-0-0-15-0-0
+898,60,10,Finish(),"Okay, well thanks for helping me.",Finish,No problemo!,Anthony,5,5,Yiyen,,0-14-0-0-0-10-0-0-0-9-0-0-0-15-0-0

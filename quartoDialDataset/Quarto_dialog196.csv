@@ -1,0 +1,16 @@
+dialog_id,CooperativityRate,Turn Exchange,Formal System Query,NL System Query,Formal User Response,User Response,NL_Student,Correctness Rate,Naturalness Rate,Evaluator,Comments,Board
+196,100,0,Start(),"Hi, can you teach me how to play Quarto?",Start,"Sure, let's start.",Anthony,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+196,100,1,RequestNewWinCondition(),Please demonstrate the first win condition. ,Inform(),Assume you demonstrate this win condition,Anthony,5,5,John,,0-0-0-10-0-0-5-0-0-6-0-0-2-0-0-0
+196,100,2,"Win Same {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}",Is this a win because none of the pieces are hollow?,Affirm(),"Yes, that is actually correct.",Anthony,5,5,John,,0-0-0-10-0-0-5-0-0-6-0-0-2-0-0-0
+196,100,3,RequestNewWinCondition(),Let's have another win condition please.,Inform(),Assume you demonstrate this win condition,Anthony,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-5-15-11-3
+196,100,4,"Win Same {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}",Is this a win because some pieces are hollow?,Negate(),"No, that is not why in this case. ",Anthony,5,5,John,,0-0-0-0-0-0-0-0-0-0-0-0-5-15-11-3
+196,100,5,"Context Switch, Confirm(User_ID=1, Shape)","Looking here at this other board, is it a win because of what shape the pieces are?",Negate(),"No, the shape is not what makes this a win. ",Anthony,5,5,John,,0-0-0-10-0-0-5-0-0-6-0-0-2-0-0-0
+196,100,6,"Win Same {'ActionName': 'Confirm_Hollowness', 'FirstPart': None, 'ID': 1, 'SecondPart': None}","Is the hollowness of the pieces, or lack of it, why this is a win?",Affirm(),"Yep, they are all totally solid, therefore this can be a win. ",Anthony,5,5,John,I like the way this question was phrased,0-0-0-10-0-0-5-0-0-6-0-0-2-0-0-0
+196,100,7,RequestNewWinCondition(),Please show me a new win condition. ,Inform(),Assume you demonstrate this win condition,Anthony,5,5,John,,10-0-0-0-0-11-0-0-0-0-2-0-0-0-0-1
+196,100,8,RequestNewWinCondition(),Please show me another new win condition. ,Inform(),Assume you demonstrate this win condition,Anthony,5,5,John,,0-0-0-1-0-0-5-0-0-11-0-0-3-0-0-0
+196,100,9,"Context Switch, Confirm(User_ID=1, Quantity)","Looking at this board, is it a win becaus of the amount of pieces?",Affirm(),"Yes, that would be correct. ",Anthony,5,5,John,,10-0-0-0-0-11-0-0-0-0-2-0-0-0-0-1
+196,100,10,"Context Switch, Request(User_ID=1, Rotate)","Looking at this other board, how can I rotate the pieces?",Inform([90]),You could move them to a vertical column.,Anthony,4,5,John,Maybe specify which vertical column for 90 degrees,0-0-0-10-0-0-5-0-0-6-0-0-2-0-0-0
+196,100,11,RequestNewWinCondition(),Show me a new win condition. ,Inform(),Assume you demonstrate this win condition,Anthony,5,5,John,,9-0-0-0-0-13-0-0-0-0-14-0-0-0-0-2
+196,100,12,"Context Switch, RequestOtherPlayers()","In this board, how can other players affect the win?",Inform([]),There is no way for them to do that. ,Anthony,4,4,John,,0-0-0-10-0-0-5-0-0-6-0-0-2-0-0-0
+196,100,13,"Context Switch, Confirm(User_ID=1, Rotate(90))","Switching to this board, can I rotate the pieces to be at a 90 degree angle?",Affirm(),You can definitely do that. ,Anthony,5,4,John,,0-0-0-1-0-0-5-0-0-11-0-0-3-0-0-0
+196,100,14,Finish(),"Wow, thank you so much!",Finish,Of course. Good luck in the future!,Anthony,5,5,John,,0-0-0-1-0-0-5-0-0-11-0-0-3-0-0-0
