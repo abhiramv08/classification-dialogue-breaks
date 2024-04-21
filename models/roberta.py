@@ -68,7 +68,7 @@ test_data_loader = create_data_loader(test_df, tokenizer, MAX_LEN, BATCH_SIZE)
 
 model =RobertaForSequenceClassification.from_pretrained('roberta-base', num_labels=2)
 
-device = "cuda:0" if torch.cuda.is_available() else "mps"
+device = "cuda:0" if torch.cuda.is_available() else "cpu"
 model = model.to(device)
 optimizer = AdamW(model.parameters(), lr=2e-5)
 
