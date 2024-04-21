@@ -6,8 +6,8 @@ from sklearn.metrics import accuracy_score, precision_recall_fscore_support
 import argparse
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--train_data', type=str, default='../train.csv')
-parser.add_argument('--test_data', type=str, default='../test.csv')
+parser.add_argument('--train_data', type=str, default='train.csv')
+parser.add_argument('--test_data', type=str, default='test.csv')
 parser.add_argument('--epochs', type=int, default=50)
 args = parser.parse_args()
 
