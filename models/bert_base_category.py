@@ -4,10 +4,16 @@ from transformers import BertTokenizer, BertForSequenceClassification, AdamW, Be
 import pandas as pd
 import numpy as np
 from sklearn.metrics import classification_report
-from transformers import BertModel
+import argparse
 
-train_file_path = 'train.csv'  # Update this path
-test_file_path = 'test.csv'    # Update this path
+parser = argparse.ArgumentParser()
+parser.add_argument('--train_data', type=str, default='train.csv')
+parser.add_argument('--test_data', type=str, default='test.csv')
+parser.add_argument('--epochs', type=int, default=13)
+args = parser.parse_args()
+
+train_file_path = args.train_data
+test_file_path = args.test_data
 train_df = pd.read_csv(train_file_path)
 test_df = pd.read_csv(test_file_path)
 
@@ -106,7 +112,7 @@ def create_data_loader(df, tokenizer, max_len, batch_size):
 
 
 BATCH_SIZE = 256
-EPOCHS = 13  # Define the number of epochs
+EPOCHS = args.epochs  # Define the number of epochs
 
 train_data_loader = create_data_loader(train_df, tokenizer, MAX_LEN, BATCH_SIZE)
 test_data_loader = create_data_loader(test_df, tokenizer, MAX_LEN, BATCH_SIZE)
@@ -115,7 +121,7 @@ test_data_loader = create_data_loader(test_df, tokenizer, MAX_LEN, BATCH_SIZE)
 model = BertForSequenceClassification.from_pretrained('bert-base-uncased', num_labels=2)
 
 # Define optimizer and move model to device
-device = torch.device('cuda')
+device = "cuda:1" if torch.cuda.is_available() else "cpu"
 model = model.to(device)
 num_categories = len(set(train_df['category']))
 
@@ -226,13 +232,15 @@ def get_predictions(model, data_loader, device):
             inputs = d['input_ids'].to(device)
             attention_mask = d['attention_mask'].to(device)
             labels = d['labels'].to(device)
+            categories = d['category'].to(device)
 
             outputs = model(
                 input_ids=inputs,
-                attention_mask=attention_mask
+                attention_mask=attention_mask,
+                category=categories
             )
 
-            _, preds = torch.max(outputs.logits, dim=1)
+            _, preds = torch.max(outputs, dim=1)
 
             predictions.extend(preds.cpu())
             real_values.extend(labels.cpu())
