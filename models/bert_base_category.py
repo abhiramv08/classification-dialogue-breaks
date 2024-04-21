@@ -121,7 +121,7 @@ test_data_loader = create_data_loader(test_df, tokenizer, MAX_LEN, BATCH_SIZE)
 model = BertForSequenceClassification.from_pretrained('bert-base-uncased', num_labels=2)
 
 # Define optimizer and move model to device
-device = "cuda:1" if torch.cuda.is_available() else "cpu"
+device = "cuda:0" if torch.cuda.is_available() else "cpu"
 model = model.to(device)
 num_categories = len(set(train_df['category']))
 

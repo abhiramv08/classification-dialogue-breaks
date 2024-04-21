@@ -109,9 +109,7 @@ MAX_LEN = 128
 
 def create_data_loader(df, tokenizer, max_len, batch_size):
     ds = DialogueDataset(
-        # utterances="[CLS] " + df['text1'] + " [" + df['user1'] + "]" + " [" + df['intent1'] + "]" + " [SEP] " +  
-        # df['text2'] + " [" + df['user2'] + "]" + " [" + df['intent2'] + "]",
-        utterances="[CLS] " + df['user1'] + " : " +  df['utterance1'] + " [SEP] "  + df['user1'] + " : " + df['utterance2'],  # Concatenate utterances
+        utterances="[CLS] " + df['user1'] + " : " +  df['utterance1'] + " [SEP] "  + df['user1'] + " : " + df['utterance2'],
         labels=df['label'],
         intents1=df['intent1'],
         intents2=df['intent2'],
@@ -133,7 +131,7 @@ model = RobertaModel.from_pretrained('roberta-base',
         hidden_dropout_prob=0.2
     )
 
-device = "cuda:4" if torch.cuda.is_available() else "cpu"
+device = "cuda:0" if torch.cuda.is_available() else "cpu"
 # model = model.to(device)
 model = RobertaWithCategory(model, num_categories).to(device)
 optimizer = AdamW(model.parameters(), lr=1e-5)

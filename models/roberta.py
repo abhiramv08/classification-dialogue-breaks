@@ -4,11 +4,16 @@ from transformers import RobertaTokenizer, RobertaForSequenceClassification, Ada
 import pandas as pd
 import numpy as np
 from sklearn.metrics import classification_report
+import argparse
 
-train_file_path = 'augmented dataset/train_augmented_mlm_bert.csv'
-# train_file_path = 'augmented dataset/train_paraphrase_augmented_chatgpt.csv'
+parser = argparse.ArgumentParser()
+parser.add_argument('--train_data', type=str, default='train.csv')
+parser.add_argument('--test_data', type=str, default='test.csv')
+parser.add_argument('--epochs', type=int, default=10)
+args = parser.parse_args()
 
-test_file_path = 'test.csv' 
+train_file_path = args.train_data
+test_file_path = args.test_data
 train_df = pd.read_csv(train_file_path)
 test_df = pd.read_csv(test_file_path)
 
@@ -56,14 +61,14 @@ def create_data_loader(df, tokenizer, max_len, batch_size):
     return DataLoader(ds, batch_size=batch_size, num_workers=0)
 
 BATCH_SIZE = 256
-EPOCHS = 10 
+EPOCHS = args.epochs 
 
 train_data_loader = create_data_loader(train_df, tokenizer, MAX_LEN, BATCH_SIZE)
 test_data_loader = create_data_loader(test_df, tokenizer, MAX_LEN, BATCH_SIZE)
 
-model =RobertaForSequenceClassification.from_pretrained('roberta-base', num_labels=2)  # Update num_labels accordingly
+model =RobertaForSequenceClassification.from_pretrained('roberta-base', num_labels=2)
 
-device = torch.device('cuda')
+device = "cuda:0" if torch.cuda.is_available() else "mps"
 model = model.to(device)
 optimizer = AdamW(model.parameters(), lr=2e-5)
 

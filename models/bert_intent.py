@@ -133,7 +133,7 @@ model = BertModel.from_pretrained('bert-base-uncased',
         hidden_dropout_prob=0.3
     )
 
-device = "cuda:4" if torch.cuda.is_available() else "cpu"
+device = "cuda:0" if torch.cuda.is_available() else "cpu"
 # model = model.to(device)
 model = BertWithCategory(model, num_categories).to(device)
 optimizer = AdamW(model.parameters(), lr=5e-6)
