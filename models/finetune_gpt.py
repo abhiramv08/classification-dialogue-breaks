@@ -3,6 +3,14 @@ import torch
 import pandas as pd
 from datasets import Dataset
 from sklearn.metrics import accuracy_score, precision_recall_fscore_support
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument('--train_data', type=str, default='../train.csv')
+parser.add_argument('--test_data', type=str, default='../test.csv')
+parser.add_argument('--epochs', type=int, default=50)
+args = parser.parse_args()
+
 def prepare_data(file_path, tokenizer):
     data = pd.read_csv(file_path)
     data['inputs'] = "Utterance1: " + data['utterance1'].astype(str) + " Utterance2: " + data['utterance2'].astype(str)
@@ -27,8 +35,8 @@ tokenizer.pad_token = tokenizer.eos_token
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model.to(device)
 
-train_data = prepare_data('../train.csv', tokenizer)
-test_data = prepare_data('../test.csv', tokenizer)
+train_data = prepare_data(args.train_data, tokenizer)
+test_data = prepare_data(args.test_data, tokenizer)
 train_dataset = Dataset.from_pandas(train_data)
 test_dataset = Dataset.from_pandas(test_data)
 
@@ -37,7 +45,7 @@ tokenized_test_datasets = test_dataset.map(tokenize_function, batched=True)
 
 training_args = TrainingArguments(
     output_dir='./generated_results',
-    num_train_epochs=50,
+    num_train_epochs=args.epochs,
     per_device_train_batch_size=50,
     logging_dir='./logs',
 )
